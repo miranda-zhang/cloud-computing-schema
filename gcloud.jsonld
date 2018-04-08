@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "cocoon": "TODO",
+    "gr": "http://purl.org/goodrelations/v1#"
+  },
+
+  "@id": "https://cloud.google.com",
+  "@type": "gr:Offering",
+  "gr:name": "Google Cloud",
+  "gr:description": "Google Cloud Computing Services",
+  "gr:hasBusinessFunction": "gr:Sell",
+  "gr:acceptedPaymentMethods": "gr:Cash",
+  "gr:includes": {
+    "@type": "cocoon:Compute",
+    "gr:name": "Google Cloud Compute Engine",
+    "cocoon:page": "https://cloud.google.com/compute/",
+    "gr:hasPriceSpecification": {
+      "gr:hasCurrencyValue": "TODO",
+      "gr:hasCurrency": "USD"
+    }
+  }
+}
