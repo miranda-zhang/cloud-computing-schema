@@ -35,3 +35,7 @@ schema.org++                aws.jsonld?     <-------+ aws.js
 ```
 
 Drawn with http://asciiflow.com/
+
+# JSON Linked Data
+
+https://json-ld.org/
