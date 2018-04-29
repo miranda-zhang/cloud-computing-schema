@@ -29,7 +29,7 @@ crossorigin="anonymous"></script>
                         }else if( $(this).is(":contains('LODE')") ){                         
                         }else if( $(this).is(":contains('Silvio Peroni')") ){
                         }else if( $(this).is(":contains('Ontology source')") ){
-                            this.href="../cocoon.rdf"; 
+                            this.href="ontology/cocoon.rdf"; 
                         }else{
                             this.href="#toc";
                         }
