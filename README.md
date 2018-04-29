@@ -2,6 +2,14 @@
 
 Intended as a Schema.org extension.
 
+# Github page documentation
+
+https://miranda-zhang.github.io/cloud-computing-schema/
+
+# w3id.org Permanent Identifier
+
+under construction
+
 # Workflow
 
 ```
