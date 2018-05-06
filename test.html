@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+$.ajax({
+    url: "http://localhost/def", 
+    type: 'GET',
+    contentType: "application/rdf+xml",
+    dataType: "text",
+    success : function(text) {
+        $('textarea').val(text);
+    },
+    error : function (xhr, ajaxOptions, thrownError){  
+        console.log(xhr.status);          
+        console.log(thrownError);
+    } 
+});	
+</script>
+</head>
+<body>
+<textarea cols="100" rows="100"></textarea>
+</body>
+</html>
