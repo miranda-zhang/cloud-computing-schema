@@ -2,9 +2,11 @@
 
 Intended as a Schema.org extension.
 
-# Github page documentation
+# Github page
 
 https://miranda-zhang.github.io/cloud-computing-schema/
+
+Source code in the `gh-page` branch.
 
 # w3id.org Permanent Identifier
 
