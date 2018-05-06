@@ -11,7 +11,7 @@ $.ajax({
     url: "http://localhost/def", 
     type: 'GET',
     contentType: "application/rdf+xml",
-    dataType: "text",
+    dataType: "rdf+xml",
     success : function(text) {
         $('textarea').val(text);
     },
