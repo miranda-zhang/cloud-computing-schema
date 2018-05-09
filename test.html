@@ -8,10 +8,14 @@
   crossorigin="anonymous"></script>
 <script>
 $.ajax({
-    url: "http://localhost/def", 
+    url: "http://150.203.212.159/cocoon/def",
+    headers: {          
+      // Accept: "application/rdf+xml",
+      Accept: "text/turtle",
+      // Accept: "owl", 
+    }, 
     type: 'GET',
-    contentType: "application/rdf+xml",
-    dataType: "rdf+xml",
+    cache: false,
     success : function(text) {
         $('textarea').val(text);
     },
