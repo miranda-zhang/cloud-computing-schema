@@ -6,12 +6,14 @@ Intended as a Schema.org extension.
 
 https://miranda-zhang.github.io/cloud-computing-schema/
 
-Source code in the `gh-page` branch.
+Source code is in the `gh-page` branch.
 
 # w3id.org Permanent Identifier
 
-Entry for this project:
-https://github.com/miranda-zhang/w3id.org/tree/master/cocoon
+https://w3id.org/cocoon/def
+
+w3id.org entry for this project:
+https://github.com/perma-id/w3id.org/tree/master/cocoon
 
 # Examples
 
