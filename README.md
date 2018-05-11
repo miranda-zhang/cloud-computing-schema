@@ -10,7 +10,8 @@ Source code in the `gh-page` branch.
 
 # w3id.org Permanent Identifier
 
-under construction
+Added folder to w3id
+https://github.com/miranda-zhang/w3id.org/tree/master/cocoon
 
 # Workflow
 
