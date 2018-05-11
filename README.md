@@ -10,8 +10,12 @@ Source code in the `gh-page` branch.
 
 # w3id.org Permanent Identifier
 
-Added folder to w3id
+Entry for this project:
 https://github.com/miranda-zhang/w3id.org/tree/master/cocoon
+
+# Examples
+
+Code in [example folder](example/) shows some ways to obtain, use this ontology.
 
 # Workflow
 
@@ -47,6 +51,6 @@ schema.org++                aws.jsonld?     <-------+ aws.js
 
 Drawn with http://asciiflow.com/
 
-# JSON Linked Data
+# Ref
 
-https://json-ld.org/
+JSON Linked Data https://json-ld.org/
