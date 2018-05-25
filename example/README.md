@@ -1,4 +1,4 @@
-# request ontology from url
+# Request ontology from url
 [GET rdf/ttl via Ajax](ajax.html)
 
 # SPARQL
@@ -14,7 +14,6 @@ WHERE { ?subject rdfs:subClassOf ?object }
 ```
 
 What `subject`s are `subClassOf` `cocoon:IaaS`?
-
 ```
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX cocoon: <https://w3id.org/cocoon/def#>
