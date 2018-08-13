@@ -20,3 +20,8 @@ PREFIX cocoon: <https://w3id.org/cocoon/def#>
 SELECT ?subject 
 WHERE { ?subject rdfs:subClassOf cocoon:IaaS}
 ```
+
+# JSON-LD Macros example
+https://miranda-zhang.github.io/cloud-computing-schema/json-ld-macros/gcloud.html
+
+Created with https://github.com/ariutta/json-ld-macros
