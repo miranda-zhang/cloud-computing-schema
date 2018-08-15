@@ -53,6 +53,4 @@ schema.org++                aws.jsonld?     <-------+ aws.js
 
 Drawn with http://asciiflow.com/
 
-# Ref
-
-JSON Linked Data https://json-ld.org/
+[Publications BibTeX](BibTeX.md)
