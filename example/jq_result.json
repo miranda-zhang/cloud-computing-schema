@@ -1,0 +1,5246 @@
+[
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-F1-MICRO",
+    "cores": "shared",
+    "memory": "0.6",
+    "gceu": "Shared CPU, not guaranteed",
+    "price": [
+      {
+        "region": "us",
+        "price": 0.0076
+      },
+      {
+        "region": "us-central1",
+        "price": 0.0076
+      },
+      {
+        "region": "us-east1",
+        "price": 0.0076
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0086
+      },
+      {
+        "region": "us-west1",
+        "price": 0.0076
+      },
+      {
+        "region": "us-west2",
+        "price": 0.0091
+      },
+      {
+        "region": "europe",
+        "price": 0.0086
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.0086
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0096
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0096
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0084
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0084
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0084
+      },
+      {
+        "region": "asia",
+        "price": 0.009
+      },
+      {
+        "region": "asia-east",
+        "price": 0.009
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.0092
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0092
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.0106
+      },
+      {
+        "region": "australia",
+        "price": 0.0106
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.0118
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.0091
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-G1-SMALL",
+    "cores": "shared",
+    "memory": "1.7",
+    "gceu": 1.38,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.027
+      },
+      {
+        "region": "us-central1",
+        "price": 0.027
+      },
+      {
+        "region": "us-east1",
+        "price": 0.027
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0289
+      },
+      {
+        "region": "us-west1",
+        "price": 0.027
+      },
+      {
+        "region": "us-west2",
+        "price": 0.0308
+      },
+      {
+        "region": "europe",
+        "price": 0.0285
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.0285
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0324
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0324
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0283
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0283
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0283
+      },
+      {
+        "region": "asia",
+        "price": 0.03
+      },
+      {
+        "region": "asia-east",
+        "price": 0.03
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.0322
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0311
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.0357
+      },
+      {
+        "region": "australia",
+        "price": 0.0357
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.04
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.0308
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-1",
+    "cores": "1",
+    "memory": "3.75",
+    "gceu": 2.75,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.0475
+      },
+      {
+        "region": "us-central1",
+        "price": 0.0475
+      },
+      {
+        "region": "us-east1",
+        "price": 0.0475
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0535
+      },
+      {
+        "region": "us-west1",
+        "price": 0.0475
+      },
+      {
+        "region": "us-west2",
+        "price": 0.0571
+      },
+      {
+        "region": "europe",
+        "price": 0.0523
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.0523
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0612
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0612
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0523
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0523
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0523
+      },
+      {
+        "region": "asia",
+        "price": 0.055
+      },
+      {
+        "region": "asia-east",
+        "price": 0.055
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.061
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0586
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.0674
+      },
+      {
+        "region": "australia",
+        "price": 0.0674
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.0754
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.057
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-2",
+    "cores": "2",
+    "memory": "7.5",
+    "gceu": 5.5,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.095
+      },
+      {
+        "region": "us-central1",
+        "price": 0.095
+      },
+      {
+        "region": "us-east1",
+        "price": 0.095
+      },
+      {
+        "region": "us-east4",
+        "price": 0.107
+      },
+      {
+        "region": "us-west1",
+        "price": 0.095
+      },
+      {
+        "region": "us-west2",
+        "price": 0.1142
+      },
+      {
+        "region": "europe",
+        "price": 0.1046
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.1046
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.1224
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.1224
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.1046
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.1046
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.1046
+      },
+      {
+        "region": "asia",
+        "price": 0.11
+      },
+      {
+        "region": "asia-east",
+        "price": 0.11
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.122
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.1172
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.1348
+      },
+      {
+        "region": "australia",
+        "price": 0.1348
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.1508
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.1141
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-4",
+    "cores": "4",
+    "memory": "15",
+    "gceu": 11,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.19
+      },
+      {
+        "region": "us-central1",
+        "price": 0.19
+      },
+      {
+        "region": "us-east1",
+        "price": 0.19
+      },
+      {
+        "region": "us-east4",
+        "price": 0.214
+      },
+      {
+        "region": "us-west1",
+        "price": 0.19
+      },
+      {
+        "region": "us-west2",
+        "price": 0.2284
+      },
+      {
+        "region": "europe",
+        "price": 0.2092
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.2092
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.2448
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.2448
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.2092
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.2092
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.2092
+      },
+      {
+        "region": "asia",
+        "price": 0.22
+      },
+      {
+        "region": "asia-east",
+        "price": 0.22
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.244
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.2344
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.2697
+      },
+      {
+        "region": "australia",
+        "price": 0.2697
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.3017
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.2282
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8",
+    "cores": "8",
+    "memory": "30",
+    "gceu": 22,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.38
+      },
+      {
+        "region": "us-central1",
+        "price": 0.38
+      },
+      {
+        "region": "us-east1",
+        "price": 0.38
+      },
+      {
+        "region": "us-east4",
+        "price": 0.428
+      },
+      {
+        "region": "us-west1",
+        "price": 0.38
+      },
+      {
+        "region": "us-west2",
+        "price": 0.4568
+      },
+      {
+        "region": "europe",
+        "price": 0.4184
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.4184
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.4896
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.4896
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.4184
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.4184
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.4184
+      },
+      {
+        "region": "asia",
+        "price": 0.44
+      },
+      {
+        "region": "asia-east",
+        "price": 0.44
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.488
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.4688
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.5393
+      },
+      {
+        "region": "australia",
+        "price": 0.5393
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.6034
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.4564
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-16",
+    "cores": "16",
+    "memory": "60",
+    "gceu": 44,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.76
+      },
+      {
+        "region": "us-central1",
+        "price": 0.76
+      },
+      {
+        "region": "us-east1",
+        "price": 0.76
+      },
+      {
+        "region": "us-east4",
+        "price": 0.856
+      },
+      {
+        "region": "us-west1",
+        "price": 0.76
+      },
+      {
+        "region": "us-west2",
+        "price": 0.9136
+      },
+      {
+        "region": "europe",
+        "price": 0.8368
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.8368
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.9792
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.9792
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.8368
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.8368
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.8368
+      },
+      {
+        "region": "asia",
+        "price": 0.88
+      },
+      {
+        "region": "asia-east",
+        "price": 0.88
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.976
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.9376
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 1.0787
+      },
+      {
+        "region": "australia",
+        "price": 1.0787
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 1.2068
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.9127
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-32",
+    "cores": "32",
+    "memory": "120",
+    "gceu": 88,
+    "price": [
+      {
+        "region": "us",
+        "price": 1.52
+      },
+      {
+        "region": "us-central1",
+        "price": 1.52
+      },
+      {
+        "region": "us-east1",
+        "price": 1.52
+      },
+      {
+        "region": "us-east4",
+        "price": 1.712
+      },
+      {
+        "region": "us-west1",
+        "price": 1.52
+      },
+      {
+        "region": "us-west2",
+        "price": 1.8272
+      },
+      {
+        "region": "europe",
+        "price": 1.6736
+      },
+      {
+        "region": "europe-west1",
+        "price": 1.6736
+      },
+      {
+        "region": "europe-west2",
+        "price": 1.9584
+      },
+      {
+        "region": "europe-west3",
+        "price": 1.9584
+      },
+      {
+        "region": "europe-west4",
+        "price": 1.6736
+      },
+      {
+        "region": "europe-north1",
+        "price": 1.6736
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 1.6736
+      },
+      {
+        "region": "asia",
+        "price": 1.76
+      },
+      {
+        "region": "asia-east",
+        "price": 1.76
+      },
+      {
+        "region": "asia-northeast",
+        "price": 1.952
+      },
+      {
+        "region": "asia-southeast",
+        "price": 1.8752
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 2.1574
+      },
+      {
+        "region": "australia",
+        "price": 2.1574
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 2.4136
+      },
+      {
+        "region": "asia-south1",
+        "price": 1.8255
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-64",
+    "cores": "64",
+    "memory": "240",
+    "gceu": 176,
+    "price": [
+      {
+        "region": "us",
+        "price": 3.04
+      },
+      {
+        "region": "us-central1",
+        "price": 3.04
+      },
+      {
+        "region": "us-east1",
+        "price": 3.04
+      },
+      {
+        "region": "us-east4",
+        "price": 3.424
+      },
+      {
+        "region": "us-west1",
+        "price": 3.04
+      },
+      {
+        "region": "us-west2",
+        "price": 3.6544
+      },
+      {
+        "region": "europe",
+        "price": 3.3472
+      },
+      {
+        "region": "europe-west1",
+        "price": 3.3472
+      },
+      {
+        "region": "europe-west2",
+        "price": 3.9168
+      },
+      {
+        "region": "europe-west3",
+        "price": 3.9168
+      },
+      {
+        "region": "europe-west4",
+        "price": 3.3472
+      },
+      {
+        "region": "europe-north1",
+        "price": 3.3472
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 3.3472
+      },
+      {
+        "region": "asia",
+        "price": 3.52
+      },
+      {
+        "region": "asia-east",
+        "price": 3.52
+      },
+      {
+        "region": "asia-northeast",
+        "price": 3.904
+      },
+      {
+        "region": "asia-southeast",
+        "price": 3.7504
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 4.3147
+      },
+      {
+        "region": "australia",
+        "price": 4.3147
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 4.8271
+      },
+      {
+        "region": "asia-south1",
+        "price": 3.651
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-96",
+    "cores": "96",
+    "memory": "360",
+    "gceu": 264,
+    "price": [
+      {
+        "region": "us",
+        "price": 4.56
+      },
+      {
+        "region": "us-central1",
+        "price": 4.56
+      },
+      {
+        "region": "us-east1",
+        "price": 4.56
+      },
+      {
+        "region": "us-east4",
+        "price": 5.136
+      },
+      {
+        "region": "us-west1",
+        "price": 4.56
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 5.0208
+      },
+      {
+        "region": "europe-west1",
+        "price": 5.0208
+      },
+      {
+        "region": "europe-west2",
+        "price": 5.8752
+      },
+      {
+        "region": "europe-west3",
+        "price": 5.8752
+      },
+      {
+        "region": "europe-west4",
+        "price": 5.020032
+      },
+      {
+        "region": "europe-north1",
+        "price": 5.020032
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 5.020032
+      },
+      {
+        "region": "asia",
+        "price": 5.28
+      },
+      {
+        "region": "asia-east",
+        "price": 5.28
+      },
+      {
+        "region": "asia-northeast",
+        "price": 5.856
+      },
+      {
+        "region": "asia-southeast",
+        "price": 5.6256
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 6.48
+      },
+      {
+        "region": "australia",
+        "price": 6.48
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 7.24068
+      },
+      {
+        "region": "asia-south1",
+        "price": 5.48
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-2",
+    "cores": "2",
+    "memory": "13",
+    "gceu": 5.5,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.1184
+      },
+      {
+        "region": "us-central1",
+        "price": 0.1184
+      },
+      {
+        "region": "us-east1",
+        "price": 0.1184
+      },
+      {
+        "region": "us-east4",
+        "price": 0.1348
+      },
+      {
+        "region": "us-west1",
+        "price": 0.1184
+      },
+      {
+        "region": "us-west2",
+        "price": 0.1421
+      },
+      {
+        "region": "europe",
+        "price": 0.1302
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.1302
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.1523
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.1523
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.1303
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.1303
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.1303
+      },
+      {
+        "region": "asia",
+        "price": 0.137
+      },
+      {
+        "region": "asia-east",
+        "price": 0.137
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.1517
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.146
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.1679
+      },
+      {
+        "region": "australia",
+        "price": 0.1679
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.1879
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.1421
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-4",
+    "cores": "4",
+    "memory": "26",
+    "gceu": 11,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.2368
+      },
+      {
+        "region": "us-central1",
+        "price": 0.2368
+      },
+      {
+        "region": "us-east1",
+        "price": 0.2368
+      },
+      {
+        "region": "us-east4",
+        "price": 0.2696
+      },
+      {
+        "region": "us-west1",
+        "price": 0.2368
+      },
+      {
+        "region": "us-west2",
+        "price": 0.2842
+      },
+      {
+        "region": "europe",
+        "price": 0.2604
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.2604
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.3046
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.3046
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.2606
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.2606
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.2606
+      },
+      {
+        "region": "asia",
+        "price": 0.274
+      },
+      {
+        "region": "asia-east",
+        "price": 0.274
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.3034
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.292
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.3358
+      },
+      {
+        "region": "australia",
+        "price": 0.3358
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.3757
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.2842
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-8",
+    "cores": "8",
+    "memory": "52",
+    "gceu": 22,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.4736
+      },
+      {
+        "region": "us-central1",
+        "price": 0.4736
+      },
+      {
+        "region": "us-east1",
+        "price": 0.4736
+      },
+      {
+        "region": "us-east4",
+        "price": 0.5393
+      },
+      {
+        "region": "us-west1",
+        "price": 0.4736
+      },
+      {
+        "region": "us-west2",
+        "price": 0.5684
+      },
+      {
+        "region": "europe",
+        "price": 0.5208
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.5208
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.6092
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.6092
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.5212
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.5212
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.5212
+      },
+      {
+        "region": "asia",
+        "price": 0.548
+      },
+      {
+        "region": "asia-east",
+        "price": 0.548
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.6068
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.584
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.6716
+      },
+      {
+        "region": "australia",
+        "price": 0.6716
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.7514
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.5683
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-16",
+    "cores": "16",
+    "memory": "104",
+    "gceu": 44,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.9472
+      },
+      {
+        "region": "us-central1",
+        "price": 0.9472
+      },
+      {
+        "region": "us-east1",
+        "price": 0.9472
+      },
+      {
+        "region": "us-east4",
+        "price": 1.0786
+      },
+      {
+        "region": "us-west1",
+        "price": 0.9472
+      },
+      {
+        "region": "us-west2",
+        "price": 1.1368
+      },
+      {
+        "region": "europe",
+        "price": 1.0416
+      },
+      {
+        "region": "europe-west1",
+        "price": 1.0416
+      },
+      {
+        "region": "europe-west2",
+        "price": 1.2184
+      },
+      {
+        "region": "europe-west3",
+        "price": 1.2184
+      },
+      {
+        "region": "europe-west4",
+        "price": 1.0424
+      },
+      {
+        "region": "europe-north1",
+        "price": 1.0424
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 1.0424
+      },
+      {
+        "region": "asia",
+        "price": 1.096
+      },
+      {
+        "region": "asia-east",
+        "price": 1.096
+      },
+      {
+        "region": "asia-northeast",
+        "price": 1.2136
+      },
+      {
+        "region": "asia-southeast",
+        "price": 1.168
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 1.3431
+      },
+      {
+        "region": "australia",
+        "price": 1.3431
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 1.5029
+      },
+      {
+        "region": "asia-south1",
+        "price": 1.1366
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-32",
+    "cores": "32",
+    "memory": "208",
+    "gceu": 88,
+    "price": [
+      {
+        "region": "us",
+        "price": 1.8944
+      },
+      {
+        "region": "us-central1",
+        "price": 1.8944
+      },
+      {
+        "region": "us-east1",
+        "price": 1.8944
+      },
+      {
+        "region": "us-east4",
+        "price": 2.1571
+      },
+      {
+        "region": "us-west1",
+        "price": 1.8944
+      },
+      {
+        "region": "us-west2",
+        "price": 2.2736
+      },
+      {
+        "region": "europe",
+        "price": 2.0832
+      },
+      {
+        "region": "europe-west1",
+        "price": 2.0832
+      },
+      {
+        "region": "europe-west2",
+        "price": 2.4368
+      },
+      {
+        "region": "europe-west3",
+        "price": 2.4368
+      },
+      {
+        "region": "europe-west4",
+        "price": 2.0848
+      },
+      {
+        "region": "europe-north1",
+        "price": 2.0848
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 2.0848
+      },
+      {
+        "region": "asia",
+        "price": 2.192
+      },
+      {
+        "region": "asia-east",
+        "price": 2.192
+      },
+      {
+        "region": "asia-northeast",
+        "price": 2.4272
+      },
+      {
+        "region": "asia-southeast",
+        "price": 2.336
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 2.6862
+      },
+      {
+        "region": "australia",
+        "price": 2.6862
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 3.0057
+      },
+      {
+        "region": "asia-south1",
+        "price": 2.2732
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-64",
+    "cores": "64",
+    "memory": "416",
+    "gceu": 176,
+    "price": [
+      {
+        "region": "us",
+        "price": 3.7888
+      },
+      {
+        "region": "us-central1",
+        "price": 3.7888
+      },
+      {
+        "region": "us-east1",
+        "price": 3.7888
+      },
+      {
+        "region": "us-east4",
+        "price": 4.3142
+      },
+      {
+        "region": "us-west1",
+        "price": 3.7888
+      },
+      {
+        "region": "us-west2",
+        "price": 4.5472
+      },
+      {
+        "region": "europe",
+        "price": 4.1664
+      },
+      {
+        "region": "europe-west1",
+        "price": 4.1664
+      },
+      {
+        "region": "europe-west2",
+        "price": 4.8736
+      },
+      {
+        "region": "europe-west3",
+        "price": 4.8736
+      },
+      {
+        "region": "europe-west4",
+        "price": 4.1696
+      },
+      {
+        "region": "europe-north1",
+        "price": 4.1696
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 4.1696
+      },
+      {
+        "region": "asia",
+        "price": 4.384
+      },
+      {
+        "region": "asia-east",
+        "price": 4.384
+      },
+      {
+        "region": "asia-northeast",
+        "price": 4.8544
+      },
+      {
+        "region": "asia-southeast",
+        "price": 4.672
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 5.3725
+      },
+      {
+        "region": "australia",
+        "price": 5.3725
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 6.0114
+      },
+      {
+        "region": "asia-south1",
+        "price": 4.5465
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-96",
+    "cores": "96",
+    "memory": "624",
+    "gceu": 264,
+    "price": [
+      {
+        "region": "us",
+        "price": 5.6832
+      },
+      {
+        "region": "us-central1",
+        "price": 5.6832
+      },
+      {
+        "region": "us-east1",
+        "price": 5.6832
+      },
+      {
+        "region": "us-east4",
+        "price": 6.4716
+      },
+      {
+        "region": "us-west1",
+        "price": 5.6832
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 6.2496
+      },
+      {
+        "region": "europe-west1",
+        "price": 6.2496
+      },
+      {
+        "region": "europe-west2",
+        "price": 7.3104
+      },
+      {
+        "region": "europe-west3",
+        "price": 7.3104
+      },
+      {
+        "region": "europe-west4",
+        "price": 6.251328
+      },
+      {
+        "region": "europe-north1",
+        "price": 6.251328
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 6.251328
+      },
+      {
+        "region": "asia",
+        "price": 6.576
+      },
+      {
+        "region": "asia-east",
+        "price": 6.576
+      },
+      {
+        "region": "asia-northeast",
+        "price": 7.2816
+      },
+      {
+        "region": "asia-southeast",
+        "price": 7.008
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 8.0592
+      },
+      {
+        "region": "australia",
+        "price": 8.0592
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 9.017136
+      },
+      {
+        "region": "asia-south1",
+        "price": 6.82
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-2",
+    "cores": "2",
+    "memory": "1.8",
+    "gceu": 5.5,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.0709
+      },
+      {
+        "region": "us-central1",
+        "price": 0.0709
+      },
+      {
+        "region": "us-east1",
+        "price": 0.0709
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0813
+      },
+      {
+        "region": "us-west1",
+        "price": 0.0709
+      },
+      {
+        "region": "us-west2",
+        "price": 0.0851
+      },
+      {
+        "region": "europe",
+        "price": 0.078
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.078
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0912
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0912
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0781
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0781
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0781
+      },
+      {
+        "region": "asia",
+        "price": 0.0821
+      },
+      {
+        "region": "asia-east",
+        "price": 0.0821
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.091
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0874
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.1006
+      },
+      {
+        "region": "australia",
+        "price": 0.1006
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.1125
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.0851
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-4",
+    "cores": "4",
+    "memory": "3.6",
+    "gceu": 11,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.1418
+      },
+      {
+        "region": "us-central1",
+        "price": 0.1418
+      },
+      {
+        "region": "us-east1",
+        "price": 0.1418
+      },
+      {
+        "region": "us-east4",
+        "price": 0.1626
+      },
+      {
+        "region": "us-west1",
+        "price": 0.1418
+      },
+      {
+        "region": "us-west2",
+        "price": 0.1702
+      },
+      {
+        "region": "europe",
+        "price": 0.156
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.156
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.1824
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.1824
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.1562
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.1562
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.1562
+      },
+      {
+        "region": "asia",
+        "price": 0.1642
+      },
+      {
+        "region": "asia-east",
+        "price": 0.1642
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.182
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.1748
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.2012
+      },
+      {
+        "region": "australia",
+        "price": 0.2012
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.225
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.1702
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-8",
+    "cores": "8",
+    "memory": "7.2",
+    "gceu": 22,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.2836
+      },
+      {
+        "region": "us-central1",
+        "price": 0.2836
+      },
+      {
+        "region": "us-east1",
+        "price": 0.2836
+      },
+      {
+        "region": "us-east4",
+        "price": 0.3253
+      },
+      {
+        "region": "us-west1",
+        "price": 0.2836
+      },
+      {
+        "region": "us-west2",
+        "price": 0.3404
+      },
+      {
+        "region": "europe",
+        "price": 0.312
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.312
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.3648
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.3648
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.3124
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.3124
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.3124
+      },
+      {
+        "region": "asia",
+        "price": 0.3284
+      },
+      {
+        "region": "asia-east",
+        "price": 0.3284
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.364
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.3496
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.4023
+      },
+      {
+        "region": "australia",
+        "price": 0.4023
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.45
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.3404
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-16",
+    "cores": "16",
+    "memory": "14.40",
+    "gceu": 44,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.5672
+      },
+      {
+        "region": "us-central1",
+        "price": 0.5672
+      },
+      {
+        "region": "us-east1",
+        "price": 0.5672
+      },
+      {
+        "region": "us-east4",
+        "price": 0.6506
+      },
+      {
+        "region": "us-west1",
+        "price": 0.5672
+      },
+      {
+        "region": "us-west2",
+        "price": 0.6808
+      },
+      {
+        "region": "europe",
+        "price": 0.624
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.624
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.7296
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.7296
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.6248
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.6248
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.6248
+      },
+      {
+        "region": "asia",
+        "price": 0.6568
+      },
+      {
+        "region": "asia-east",
+        "price": 0.6568
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.728
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.6992
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.8046
+      },
+      {
+        "region": "australia",
+        "price": 0.8046
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.8999
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.6807
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-32",
+    "cores": "32",
+    "memory": "28.80",
+    "gceu": 88,
+    "price": [
+      {
+        "region": "us",
+        "price": 1.1344
+      },
+      {
+        "region": "us-central1",
+        "price": 1.1344
+      },
+      {
+        "region": "us-east1",
+        "price": 1.1344
+      },
+      {
+        "region": "us-east4",
+        "price": 1.3011
+      },
+      {
+        "region": "us-west1",
+        "price": 1.1344
+      },
+      {
+        "region": "us-west2",
+        "price": 1.3616
+      },
+      {
+        "region": "europe",
+        "price": 1.248
+      },
+      {
+        "region": "europe-west1",
+        "price": 1.248
+      },
+      {
+        "region": "europe-west2",
+        "price": 1.4592
+      },
+      {
+        "region": "europe-west3",
+        "price": 1.4592
+      },
+      {
+        "region": "europe-west4",
+        "price": 1.2496
+      },
+      {
+        "region": "europe-north1",
+        "price": 1.2496
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 1.2496
+      },
+      {
+        "region": "asia",
+        "price": 1.3136
+      },
+      {
+        "region": "asia-east",
+        "price": 1.3136
+      },
+      {
+        "region": "asia-northeast",
+        "price": 1.456
+      },
+      {
+        "region": "asia-southeast",
+        "price": 1.3984
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 1.6092
+      },
+      {
+        "region": "australia",
+        "price": 1.6092
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 1.7999
+      },
+      {
+        "region": "asia-south1",
+        "price": 1.3615
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-64",
+    "cores": "64",
+    "memory": "57.6",
+    "gceu": 176,
+    "price": [
+      {
+        "region": "us",
+        "price": 2.2688
+      },
+      {
+        "region": "us-central1",
+        "price": 2.2688
+      },
+      {
+        "region": "us-east1",
+        "price": 2.2688
+      },
+      {
+        "region": "us-east4",
+        "price": 2.6022
+      },
+      {
+        "region": "us-west1",
+        "price": 2.2688
+      },
+      {
+        "region": "us-west2",
+        "price": 2.7232
+      },
+      {
+        "region": "europe",
+        "price": 2.496
+      },
+      {
+        "region": "europe-west1",
+        "price": 2.496
+      },
+      {
+        "region": "europe-west2",
+        "price": 2.9184
+      },
+      {
+        "region": "europe-west3",
+        "price": 2.9184
+      },
+      {
+        "region": "europe-west4",
+        "price": 2.4992
+      },
+      {
+        "region": "europe-north1",
+        "price": 2.4992
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 2.4992
+      },
+      {
+        "region": "asia",
+        "price": 2.6272
+      },
+      {
+        "region": "asia-east",
+        "price": 2.6272
+      },
+      {
+        "region": "asia-northeast",
+        "price": 2.912
+      },
+      {
+        "region": "asia-southeast",
+        "price": 2.7968
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 3.2185
+      },
+      {
+        "region": "australia",
+        "price": 3.2185
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 3.5998
+      },
+      {
+        "region": "asia-south1",
+        "price": 2.7229
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-96",
+    "cores": "96",
+    "memory": "86.4",
+    "gceu": 264,
+    "price": [
+      {
+        "region": "us",
+        "price": 3.4032
+      },
+      {
+        "region": "us-central1",
+        "price": 3.4032
+      },
+      {
+        "region": "us-east1",
+        "price": 3.4032
+      },
+      {
+        "region": "us-east4",
+        "price": 3.9036
+      },
+      {
+        "region": "us-west1",
+        "price": 3.4032
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 3.744
+      },
+      {
+        "region": "europe-west1",
+        "price": 3.744
+      },
+      {
+        "region": "europe-west2",
+        "price": 4.3776
+      },
+      {
+        "region": "europe-west3",
+        "price": 4.3776
+      },
+      {
+        "region": "europe-west4",
+        "price": 3.743962
+      },
+      {
+        "region": "europe-north1",
+        "price": 3.743962
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 3.7439616
+      },
+      {
+        "region": "asia",
+        "price": 3.9408
+      },
+      {
+        "region": "asia-east",
+        "price": 3.9408
+      },
+      {
+        "region": "asia-northeast",
+        "price": 4.368
+      },
+      {
+        "region": "asia-southeast",
+        "price": 4.1952
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 4.8288
+      },
+      {
+        "region": "australia",
+        "price": 4.8288
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 5.399625
+      },
+      {
+        "region": "asia-south1",
+        "price": 4.08
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-MEGAMEM-96",
+    "cores": "96",
+    "memory": "1433.6",
+    "gceu": 264,
+    "price": [
+      {
+        "region": "us",
+        "price": 10.674
+      },
+      {
+        "region": "us-central1",
+        "price": 10.674
+      },
+      {
+        "region": "us-east1",
+        "price": 0
+      },
+      {
+        "region": "us-east4",
+        "price": 0
+      },
+      {
+        "region": "us-west1",
+        "price": 10.674
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 11.743
+      },
+      {
+        "region": "europe-west1",
+        "price": 11.743
+      },
+      {
+        "region": "europe-west2",
+        "price": 0
+      },
+      {
+        "region": "europe-west3",
+        "price": 0
+      },
+      {
+        "region": "europe-west4",
+        "price": 0
+      },
+      {
+        "region": "europe-north1",
+        "price": 0
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0
+      },
+      {
+        "region": "asia",
+        "price": 12.362
+      },
+      {
+        "region": "asia-east",
+        "price": 12.362
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0
+      },
+      {
+        "region": "australia",
+        "price": 0
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0
+      },
+      {
+        "region": "asia-south1",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-40",
+    "cores": "40",
+    "memory": "938",
+    "gceu": 110,
+    "price": [
+      {
+        "region": "us",
+        "price": 6.3039
+      },
+      {
+        "region": "us-central1",
+        "price": 6.3039
+      },
+      {
+        "region": "us-east1",
+        "price": 6.3039
+      },
+      {
+        "region": "us-east4",
+        "price": 0
+      },
+      {
+        "region": "us-west1",
+        "price": 6.3039
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 6.9389
+      },
+      {
+        "region": "europe-west1",
+        "price": 6.9389
+      },
+      {
+        "region": "europe-west2",
+        "price": 0
+      },
+      {
+        "region": "europe-west3",
+        "price": 0
+      },
+      {
+        "region": "europe-west4",
+        "price": 0
+      },
+      {
+        "region": "europe-north1",
+        "price": 0
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0
+      },
+      {
+        "region": "asia",
+        "price": 0
+      },
+      {
+        "region": "asia-east",
+        "price": 0
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0
+      },
+      {
+        "region": "australia",
+        "price": 0
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0
+      },
+      {
+        "region": "asia-south1",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-80",
+    "cores": "80",
+    "memory": "1922",
+    "gceu": 220,
+    "price": [
+      {
+        "region": "us",
+        "price": 12.6078
+      },
+      {
+        "region": "us-central1",
+        "price": 12.6078
+      },
+      {
+        "region": "us-east1",
+        "price": 12.6078
+      },
+      {
+        "region": "us-east4",
+        "price": 0
+      },
+      {
+        "region": "us-west1",
+        "price": 12.6078
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 13.8779
+      },
+      {
+        "region": "europe-west1",
+        "price": 13.8779
+      },
+      {
+        "region": "europe-west2",
+        "price": 0
+      },
+      {
+        "region": "europe-west3",
+        "price": 0
+      },
+      {
+        "region": "europe-west4",
+        "price": 0
+      },
+      {
+        "region": "europe-north1",
+        "price": 0
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0
+      },
+      {
+        "region": "asia",
+        "price": 0
+      },
+      {
+        "region": "asia-east",
+        "price": 0
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0
+      },
+      {
+        "region": "australia",
+        "price": 0
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0
+      },
+      {
+        "region": "asia-south1",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160",
+    "cores": "160",
+    "memory": "3844",
+    "gceu": 440,
+    "price": [
+      {
+        "region": "us",
+        "price": 25.2156
+      },
+      {
+        "region": "us-central1",
+        "price": 25.2156
+      },
+      {
+        "region": "us-east1",
+        "price": 25.2156
+      },
+      {
+        "region": "us-east4",
+        "price": 0
+      },
+      {
+        "region": "us-west1",
+        "price": 25.2156
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 27.7557
+      },
+      {
+        "region": "europe-west1",
+        "price": 27.7557
+      },
+      {
+        "region": "europe-west2",
+        "price": 0
+      },
+      {
+        "region": "europe-west3",
+        "price": 0
+      },
+      {
+        "region": "europe-west4",
+        "price": 0
+      },
+      {
+        "region": "europe-north1",
+        "price": 0
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0
+      },
+      {
+        "region": "asia",
+        "price": 0
+      },
+      {
+        "region": "asia-east",
+        "price": 0
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0
+      },
+      {
+        "region": "australia",
+        "price": 0
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0
+      },
+      {
+        "region": "asia-south1",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-F1-MICRO-PREEMPTIBLE",
+    "cores": "shared",
+    "memory": "0.6",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.0035
+      },
+      {
+        "region": "us-central1",
+        "price": 0.0035
+      },
+      {
+        "region": "us-east1",
+        "price": 0.0035
+      },
+      {
+        "region": "us-east4",
+        "price": 0.00375
+      },
+      {
+        "region": "us-west1",
+        "price": 0.0035
+      },
+      {
+        "region": "us-west2",
+        "price": 0.0042
+      },
+      {
+        "region": "europe",
+        "price": 0.0039
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.0039
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0042
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0042
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0039
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0039
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0039
+      },
+      {
+        "region": "asia",
+        "price": 0.0039
+      },
+      {
+        "region": "asia-east",
+        "price": 0.0039
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.005
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.004
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.0046
+      },
+      {
+        "region": "australia",
+        "price": 0.0046
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.0052
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.0042
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-G1-SMALL-PREEMPTIBLE",
+    "cores": "shared",
+    "memory": "1.7",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.007
+      },
+      {
+        "region": "us-central1",
+        "price": 0.007
+      },
+      {
+        "region": "us-east1",
+        "price": 0.007
+      },
+      {
+        "region": "us-east4",
+        "price": 0.00749
+      },
+      {
+        "region": "us-west1",
+        "price": 0.007
+      },
+      {
+        "region": "us-west2",
+        "price": 0.0084
+      },
+      {
+        "region": "europe",
+        "price": 0.0077
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.0077
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0084
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0084
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0077
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0077
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0077
+      },
+      {
+        "region": "asia",
+        "price": 0.0077
+      },
+      {
+        "region": "asia-east",
+        "price": 0.0077
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.01
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0081
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.0093
+      },
+      {
+        "region": "australia",
+        "price": 0.0093
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.0104
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.0084
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-1-PREEMPTIBLE",
+    "cores": "1",
+    "memory": "3.75",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.01
+      },
+      {
+        "region": "us-central1",
+        "price": 0.01
+      },
+      {
+        "region": "us-east1",
+        "price": 0.01
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0107
+      },
+      {
+        "region": "us-west1",
+        "price": 0.01
+      },
+      {
+        "region": "us-west2",
+        "price": 0.01202
+      },
+      {
+        "region": "europe",
+        "price": 0.011
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.011
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0123
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0123
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.011
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.011
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.011
+      },
+      {
+        "region": "asia",
+        "price": 0.011
+      },
+      {
+        "region": "asia-east",
+        "price": 0.011
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.01325
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0118
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.01349
+      },
+      {
+        "region": "australia",
+        "price": 0.01349
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.0151
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.01203
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-2-PREEMPTIBLE",
+    "cores": "2",
+    "memory": "7.5",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.02
+      },
+      {
+        "region": "us-central1",
+        "price": 0.02
+      },
+      {
+        "region": "us-east1",
+        "price": 0.02
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0214
+      },
+      {
+        "region": "us-west1",
+        "price": 0.02
+      },
+      {
+        "region": "us-west2",
+        "price": 0.02405
+      },
+      {
+        "region": "europe",
+        "price": 0.022
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.022
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0246
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0246
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0221
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0221
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0221
+      },
+      {
+        "region": "asia",
+        "price": 0.022
+      },
+      {
+        "region": "asia-east",
+        "price": 0.022
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.0265
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0236
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.02698
+      },
+      {
+        "region": "australia",
+        "price": 0.02698
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.0302
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.02405
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-4-PREEMPTIBLE",
+    "cores": "4",
+    "memory": "15",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.04
+      },
+      {
+        "region": "us-central1",
+        "price": 0.04
+      },
+      {
+        "region": "us-east1",
+        "price": 0.04
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0428
+      },
+      {
+        "region": "us-west1",
+        "price": 0.04
+      },
+      {
+        "region": "us-west2",
+        "price": 0.04809
+      },
+      {
+        "region": "europe",
+        "price": 0.044
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.044
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0492
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0492
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0441
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0441
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0441
+      },
+      {
+        "region": "asia",
+        "price": 0.044
+      },
+      {
+        "region": "asia-east",
+        "price": 0.044
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.053
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0472
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.05397
+      },
+      {
+        "region": "australia",
+        "price": 0.05397
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.0604
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.04811
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8-PREEMPTIBLE",
+    "cores": "8",
+    "memory": "30",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.08
+      },
+      {
+        "region": "us-central1",
+        "price": 0.08
+      },
+      {
+        "region": "us-east1",
+        "price": 0.08
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0856
+      },
+      {
+        "region": "us-west1",
+        "price": 0.08
+      },
+      {
+        "region": "us-west2",
+        "price": 0.09618
+      },
+      {
+        "region": "europe",
+        "price": 0.088
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.088
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0984
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0984
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0882
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0882
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0882
+      },
+      {
+        "region": "asia",
+        "price": 0.088
+      },
+      {
+        "region": "asia-east",
+        "price": 0.088
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.106
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0944
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.10793
+      },
+      {
+        "region": "australia",
+        "price": 0.10793
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.1208
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.09622
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-16-PREEMPTIBLE",
+    "cores": "16",
+    "memory": "60",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.16
+      },
+      {
+        "region": "us-central1",
+        "price": 0.16
+      },
+      {
+        "region": "us-east1",
+        "price": 0.16
+      },
+      {
+        "region": "us-east4",
+        "price": 0.1712
+      },
+      {
+        "region": "us-west1",
+        "price": 0.16
+      },
+      {
+        "region": "us-west2",
+        "price": 0.19236
+      },
+      {
+        "region": "europe",
+        "price": 0.176
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.176
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.1968
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.1968
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.1764
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.1764
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.1764
+      },
+      {
+        "region": "asia",
+        "price": 0.176
+      },
+      {
+        "region": "asia-east",
+        "price": 0.176
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.212
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.1888
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.21586
+      },
+      {
+        "region": "australia",
+        "price": 0.21586
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.2416
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.19243
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-32-PREEMPTIBLE",
+    "cores": "32",
+    "memory": "120",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.32
+      },
+      {
+        "region": "us-central1",
+        "price": 0.32
+      },
+      {
+        "region": "us-east1",
+        "price": 0.32
+      },
+      {
+        "region": "us-east4",
+        "price": 0.3424
+      },
+      {
+        "region": "us-west1",
+        "price": 0.32
+      },
+      {
+        "region": "us-west2",
+        "price": 0.38472
+      },
+      {
+        "region": "europe",
+        "price": 0.352
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.352
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.3936
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.3936
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.3528
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.3528
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.3528
+      },
+      {
+        "region": "asia",
+        "price": 0.352
+      },
+      {
+        "region": "asia-east",
+        "price": 0.352
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.424
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.3776
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.43172
+      },
+      {
+        "region": "australia",
+        "price": 0.43172
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.4832
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.38486
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-64-PREEMPTIBLE",
+    "cores": "64",
+    "memory": "240",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.64
+      },
+      {
+        "region": "us-central1",
+        "price": 0.64
+      },
+      {
+        "region": "us-east1",
+        "price": 0.64
+      },
+      {
+        "region": "us-east4",
+        "price": 0.6848
+      },
+      {
+        "region": "us-west1",
+        "price": 0.64
+      },
+      {
+        "region": "us-west2",
+        "price": 0.76944
+      },
+      {
+        "region": "europe",
+        "price": 0.704
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.704
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.7872
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.7872
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.7057
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.7057
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.7057
+      },
+      {
+        "region": "asia",
+        "price": 0.704
+      },
+      {
+        "region": "asia-east",
+        "price": 0.704
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.848
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.7552
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.86344
+      },
+      {
+        "region": "australia",
+        "price": 0.86344
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.9664
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.76973
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-96-PREEMPTIBLE",
+    "cores": "96",
+    "memory": "360",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.96
+      },
+      {
+        "region": "us-central1",
+        "price": 0.96
+      },
+      {
+        "region": "us-east1",
+        "price": 0.96
+      },
+      {
+        "region": "us-east4",
+        "price": 1.0272
+      },
+      {
+        "region": "us-west1",
+        "price": 0.96
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 1.056
+      },
+      {
+        "region": "europe-west1",
+        "price": 1.056
+      },
+      {
+        "region": "europe-west2",
+        "price": 1.1808
+      },
+      {
+        "region": "europe-west3",
+        "price": 1.1808
+      },
+      {
+        "region": "europe-west4",
+        "price": 1.05852
+      },
+      {
+        "region": "europe-north1",
+        "price": 1.05852
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 1.05852
+      },
+      {
+        "region": "asia",
+        "price": 1.056
+      },
+      {
+        "region": "asia-east",
+        "price": 1.056
+      },
+      {
+        "region": "asia-northeast",
+        "price": 1.272
+      },
+      {
+        "region": "asia-southeast",
+        "price": 1.1328
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 1.296
+      },
+      {
+        "region": "australia",
+        "price": 1.296
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 1.4496
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.96
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-2-PREEMPTIBLE",
+    "cores": "2",
+    "memory": "13",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.025
+      },
+      {
+        "region": "us-central1",
+        "price": 0.025
+      },
+      {
+        "region": "us-east1",
+        "price": 0.025
+      },
+      {
+        "region": "us-east4",
+        "price": 0.02675
+      },
+      {
+        "region": "us-west1",
+        "price": 0.025
+      },
+      {
+        "region": "us-west2",
+        "price": 0.02996
+      },
+      {
+        "region": "europe",
+        "price": 0.0275
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.0275
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0305
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0305
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0275
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0275
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0275
+      },
+      {
+        "region": "asia",
+        "price": 0.0275
+      },
+      {
+        "region": "asia-east",
+        "price": 0.0275
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.033
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0292
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.0336
+      },
+      {
+        "region": "australia",
+        "price": 0.0336
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.03757
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.02997
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-4-PREEMPTIBLE",
+    "cores": "4",
+    "memory": "26",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.05
+      },
+      {
+        "region": "us-central1",
+        "price": 0.05
+      },
+      {
+        "region": "us-east1",
+        "price": 0.05
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0535
+      },
+      {
+        "region": "us-west1",
+        "price": 0.05
+      },
+      {
+        "region": "us-west2",
+        "price": 0.05992
+      },
+      {
+        "region": "europe",
+        "price": 0.055
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.055
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.061
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.061
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.055
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.055
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.055
+      },
+      {
+        "region": "asia",
+        "price": 0.055
+      },
+      {
+        "region": "asia-east",
+        "price": 0.055
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.066
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0584
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.0672
+      },
+      {
+        "region": "australia",
+        "price": 0.0672
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.07515
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.05994
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-8-PREEMPTIBLE",
+    "cores": "8",
+    "memory": "52",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.1
+      },
+      {
+        "region": "us-central1",
+        "price": 0.1
+      },
+      {
+        "region": "us-east1",
+        "price": 0.1
+      },
+      {
+        "region": "us-east4",
+        "price": 0.107
+      },
+      {
+        "region": "us-west1",
+        "price": 0.1
+      },
+      {
+        "region": "us-west2",
+        "price": 0.11985
+      },
+      {
+        "region": "europe",
+        "price": 0.11
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.11
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.122
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.122
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.1099
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.1099
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.1099
+      },
+      {
+        "region": "asia",
+        "price": 0.11
+      },
+      {
+        "region": "asia-east",
+        "price": 0.11
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.132
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.1168
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.1344
+      },
+      {
+        "region": "australia",
+        "price": 0.1344
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.1503
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.11989
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-16-PREEMPTIBLE",
+    "cores": "16",
+    "memory": "104",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.2
+      },
+      {
+        "region": "us-central1",
+        "price": 0.2
+      },
+      {
+        "region": "us-east1",
+        "price": 0.2
+      },
+      {
+        "region": "us-east4",
+        "price": 0.214
+      },
+      {
+        "region": "us-west1",
+        "price": 0.2
+      },
+      {
+        "region": "us-west2",
+        "price": 0.2397
+      },
+      {
+        "region": "europe",
+        "price": 0.22
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.22
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.244
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.244
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.2198
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.2198
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.2198
+      },
+      {
+        "region": "asia",
+        "price": 0.22
+      },
+      {
+        "region": "asia-east",
+        "price": 0.22
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.264
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.2336
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.26879
+      },
+      {
+        "region": "australia",
+        "price": 0.26879
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.30059
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.23978
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-32-PREEMPTIBLE",
+    "cores": "32",
+    "memory": "208",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.4
+      },
+      {
+        "region": "us-central1",
+        "price": 0.4
+      },
+      {
+        "region": "us-east1",
+        "price": 0.4
+      },
+      {
+        "region": "us-east4",
+        "price": 0.428
+      },
+      {
+        "region": "us-west1",
+        "price": 0.4
+      },
+      {
+        "region": "us-west2",
+        "price": 0.47939
+      },
+      {
+        "region": "europe",
+        "price": 0.44
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.44
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.488
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.488
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.4397
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.4397
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.4397
+      },
+      {
+        "region": "asia",
+        "price": 0.44
+      },
+      {
+        "region": "asia-east",
+        "price": 0.44
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.528
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.4672
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.53758
+      },
+      {
+        "region": "australia",
+        "price": 0.53758
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.60118
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.47955
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-64-PREEMPTIBLE",
+    "cores": "64",
+    "memory": "416",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.8
+      },
+      {
+        "region": "us-central1",
+        "price": 0.8
+      },
+      {
+        "region": "us-east1",
+        "price": 0.8
+      },
+      {
+        "region": "us-east4",
+        "price": 0.856
+      },
+      {
+        "region": "us-west1",
+        "price": 0.8
+      },
+      {
+        "region": "us-west2",
+        "price": 0.95878
+      },
+      {
+        "region": "europe",
+        "price": 0.88
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.88
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.976
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.976
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.8793
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.8793
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.8793
+      },
+      {
+        "region": "asia",
+        "price": 0.88
+      },
+      {
+        "region": "asia-east",
+        "price": 0.88
+      },
+      {
+        "region": "asia-northeast",
+        "price": 1.056
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.9344
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 1.07517
+      },
+      {
+        "region": "australia",
+        "price": 1.07517
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 1.20237
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.9591
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-96-PREEMPTIBLE",
+    "cores": "96",
+    "memory": "624",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 1.2
+      },
+      {
+        "region": "us-central1",
+        "price": 1.2
+      },
+      {
+        "region": "us-east1",
+        "price": 1.2
+      },
+      {
+        "region": "us-east4",
+        "price": 1.284
+      },
+      {
+        "region": "us-west1",
+        "price": 1.2
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 1.32
+      },
+      {
+        "region": "europe-west1",
+        "price": 1.32
+      },
+      {
+        "region": "europe-west2",
+        "price": 1.464
+      },
+      {
+        "region": "europe-west3",
+        "price": 1.464
+      },
+      {
+        "region": "europe-west4",
+        "price": 1.319088
+      },
+      {
+        "region": "europe-north1",
+        "price": 1.319088
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 1.319088
+      },
+      {
+        "region": "asia",
+        "price": 1.32
+      },
+      {
+        "region": "asia-east",
+        "price": 1.32
+      },
+      {
+        "region": "asia-northeast",
+        "price": 1.584
+      },
+      {
+        "region": "asia-southeast",
+        "price": 1.4016
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 1.6128
+      },
+      {
+        "region": "australia",
+        "price": 1.6128
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 1.803552
+      },
+      {
+        "region": "asia-south1",
+        "price": 1.2
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-2-PREEMPTIBLE",
+    "cores": "2",
+    "memory": "1.8",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.015
+      },
+      {
+        "region": "us-central1",
+        "price": 0.015
+      },
+      {
+        "region": "us-east1",
+        "price": 0.015
+      },
+      {
+        "region": "us-east4",
+        "price": 0.01605
+      },
+      {
+        "region": "us-west1",
+        "price": 0.015
+      },
+      {
+        "region": "us-west2",
+        "price": 0.01791
+      },
+      {
+        "region": "europe",
+        "price": 0.0165
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.0165
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0183
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0183
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0164
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0164
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0164
+      },
+      {
+        "region": "asia",
+        "price": 0.0165
+      },
+      {
+        "region": "asia-east",
+        "price": 0.0165
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.0198
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.0175
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.02013
+      },
+      {
+        "region": "australia",
+        "price": 0.02013
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.0225
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.01792
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-4-PREEMPTIBLE",
+    "cores": "4",
+    "memory": "3.6",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.03
+      },
+      {
+        "region": "us-central1",
+        "price": 0.03
+      },
+      {
+        "region": "us-east1",
+        "price": 0.03
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0321
+      },
+      {
+        "region": "us-west1",
+        "price": 0.03
+      },
+      {
+        "region": "us-west2",
+        "price": 0.03583
+      },
+      {
+        "region": "europe",
+        "price": 0.033
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.033
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0366
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0366
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0329
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0329
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0329
+      },
+      {
+        "region": "asia",
+        "price": 0.033
+      },
+      {
+        "region": "asia-east",
+        "price": 0.033
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.0396
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.035
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.04025
+      },
+      {
+        "region": "australia",
+        "price": 0.04025
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.045
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.03584
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-8-PREEMPTIBLE",
+    "cores": "8",
+    "memory": "7.2",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.06
+      },
+      {
+        "region": "us-central1",
+        "price": 0.06
+      },
+      {
+        "region": "us-east1",
+        "price": 0.06
+      },
+      {
+        "region": "us-east4",
+        "price": 0.0642
+      },
+      {
+        "region": "us-west1",
+        "price": 0.06
+      },
+      {
+        "region": "us-west2",
+        "price": 0.07165
+      },
+      {
+        "region": "europe",
+        "price": 0.066
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.066
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.0732
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.0732
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.0657
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.0657
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.0657
+      },
+      {
+        "region": "asia",
+        "price": 0.066
+      },
+      {
+        "region": "asia-east",
+        "price": 0.066
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.0792
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.07
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.0805
+      },
+      {
+        "region": "australia",
+        "price": 0.0805
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.09
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.07168
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-16-PREEMPTIBLE",
+    "cores": "16",
+    "memory": "14.40",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.12
+      },
+      {
+        "region": "us-central1",
+        "price": 0.12
+      },
+      {
+        "region": "us-east1",
+        "price": 0.12
+      },
+      {
+        "region": "us-east4",
+        "price": 0.1284
+      },
+      {
+        "region": "us-west1",
+        "price": 0.12
+      },
+      {
+        "region": "us-west2",
+        "price": 0.14331
+      },
+      {
+        "region": "europe",
+        "price": 0.132
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.132
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.1464
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.1464
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.1314
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.1314
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.1314
+      },
+      {
+        "region": "asia",
+        "price": 0.132
+      },
+      {
+        "region": "asia-east",
+        "price": 0.132
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.1584
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.14
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.161
+      },
+      {
+        "region": "australia",
+        "price": 0.161
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.17999
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.14337
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-32-PREEMPTIBLE",
+    "cores": "32",
+    "memory": "28.80",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.24
+      },
+      {
+        "region": "us-central1",
+        "price": 0.24
+      },
+      {
+        "region": "us-east1",
+        "price": 0.24
+      },
+      {
+        "region": "us-east4",
+        "price": 0.2568
+      },
+      {
+        "region": "us-west1",
+        "price": 0.24
+      },
+      {
+        "region": "us-west2",
+        "price": 0.28661
+      },
+      {
+        "region": "europe",
+        "price": 0.264
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.264
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.2928
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.2928
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.2629
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.2629
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.2629
+      },
+      {
+        "region": "asia",
+        "price": 0.264
+      },
+      {
+        "region": "asia-east",
+        "price": 0.264
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.3168
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.28
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.32201
+      },
+      {
+        "region": "australia",
+        "price": 0.32201
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.35998
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.28673
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-64-PREEMPTIBLE",
+    "cores": "64",
+    "memory": "57.6",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.48
+      },
+      {
+        "region": "us-central1",
+        "price": 0.48
+      },
+      {
+        "region": "us-east1",
+        "price": 0.48
+      },
+      {
+        "region": "us-east4",
+        "price": 0.5136
+      },
+      {
+        "region": "us-west1",
+        "price": 0.48
+      },
+      {
+        "region": "us-west2",
+        "price": 0.57322
+      },
+      {
+        "region": "europe",
+        "price": 0.528
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.528
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.5856
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.5856
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.5257
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.5257
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.5257
+      },
+      {
+        "region": "asia",
+        "price": 0.528
+      },
+      {
+        "region": "asia-east",
+        "price": 0.528
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.6336
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.56
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.64401
+      },
+      {
+        "region": "australia",
+        "price": 0.64401
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0.71996
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.57347
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-96-PREEMPTIBLE",
+    "cores": "96",
+    "memory": "86.4",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 0.72
+      },
+      {
+        "region": "us-central1",
+        "price": 0.72
+      },
+      {
+        "region": "us-east1",
+        "price": 0.72
+      },
+      {
+        "region": "us-east4",
+        "price": 0.7704
+      },
+      {
+        "region": "us-west1",
+        "price": 0.72
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 0.792
+      },
+      {
+        "region": "europe-west1",
+        "price": 0.792
+      },
+      {
+        "region": "europe-west2",
+        "price": 0.8784
+      },
+      {
+        "region": "europe-west3",
+        "price": 0.8784
+      },
+      {
+        "region": "europe-west4",
+        "price": 0.7884768
+      },
+      {
+        "region": "europe-north1",
+        "price": 0.7884768
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0.7884768
+      },
+      {
+        "region": "asia",
+        "price": 0.792
+      },
+      {
+        "region": "asia-east",
+        "price": 0.792
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0.9504
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0.84
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0.9696
+      },
+      {
+        "region": "australia",
+        "price": 0.9696
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 1.079943
+      },
+      {
+        "region": "asia-south1",
+        "price": 0.72
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-MEGAMEM-96-PREEMPTIBLE",
+    "cores": "96",
+    "memory": "1433.6",
+    "gceu": null,
+    "price": [
+      {
+        "region": "us",
+        "price": 2.26
+      },
+      {
+        "region": "us-central1",
+        "price": 2.26
+      },
+      {
+        "region": "us-east1",
+        "price": 0
+      },
+      {
+        "region": "us-east4",
+        "price": 0
+      },
+      {
+        "region": "us-west1",
+        "price": 2.26
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 2.48
+      },
+      {
+        "region": "europe-west1",
+        "price": 2.48
+      },
+      {
+        "region": "europe-west2",
+        "price": 0
+      },
+      {
+        "region": "europe-west3",
+        "price": 0
+      },
+      {
+        "region": "europe-west4",
+        "price": 0
+      },
+      {
+        "region": "europe-north1",
+        "price": 0
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0
+      },
+      {
+        "region": "asia",
+        "price": 2.48
+      },
+      {
+        "region": "asia-east",
+        "price": 2.48
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0
+      },
+      {
+        "region": "australia",
+        "price": 0
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0
+      },
+      {
+        "region": "asia-south1",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-40-PREEMPTIBLE",
+    "cores": "40",
+    "memory": "938",
+    "gceu": 110,
+    "price": [
+      {
+        "region": "us",
+        "price": 1.3311
+      },
+      {
+        "region": "us-central1",
+        "price": 1.3311
+      },
+      {
+        "region": "us-east1",
+        "price": 1.3311
+      },
+      {
+        "region": "us-east4",
+        "price": 0
+      },
+      {
+        "region": "us-west1",
+        "price": 1.3311
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 1.4564
+      },
+      {
+        "region": "europe-west1",
+        "price": 1.4564
+      },
+      {
+        "region": "europe-west2",
+        "price": 0
+      },
+      {
+        "region": "europe-west3",
+        "price": 0
+      },
+      {
+        "region": "europe-west4",
+        "price": 0
+      },
+      {
+        "region": "europe-north1",
+        "price": 0
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0
+      },
+      {
+        "region": "asia",
+        "price": 0
+      },
+      {
+        "region": "asia-east",
+        "price": 0
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0
+      },
+      {
+        "region": "australia",
+        "price": 0
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0
+      },
+      {
+        "region": "asia-south1",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-80-PREEMPTIBLE",
+    "cores": "80",
+    "memory": "1922",
+    "gceu": 220,
+    "price": [
+      {
+        "region": "us",
+        "price": 2.6622
+      },
+      {
+        "region": "us-central1",
+        "price": 2.6622
+      },
+      {
+        "region": "us-east1",
+        "price": 2.6622
+      },
+      {
+        "region": "us-east4",
+        "price": 0
+      },
+      {
+        "region": "us-west1",
+        "price": 2.6622
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 2.9128
+      },
+      {
+        "region": "europe-west1",
+        "price": 2.9128
+      },
+      {
+        "region": "europe-west2",
+        "price": 0
+      },
+      {
+        "region": "europe-west3",
+        "price": 0
+      },
+      {
+        "region": "europe-west4",
+        "price": 0
+      },
+      {
+        "region": "europe-north1",
+        "price": 0
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0
+      },
+      {
+        "region": "asia",
+        "price": 0
+      },
+      {
+        "region": "asia-east",
+        "price": 0
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0
+      },
+      {
+        "region": "australia",
+        "price": 0
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0
+      },
+      {
+        "region": "asia-south1",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160-PREEMPTIBLE",
+    "cores": "160",
+    "memory": "3844",
+    "gceu": 440,
+    "price": [
+      {
+        "region": "us",
+        "price": 5.3244
+      },
+      {
+        "region": "us-central1",
+        "price": 5.3244
+      },
+      {
+        "region": "us-east1",
+        "price": 5.3244
+      },
+      {
+        "region": "us-east4",
+        "price": 0
+      },
+      {
+        "region": "us-west1",
+        "price": 5.3244
+      },
+      {
+        "region": "us-west2",
+        "price": 0
+      },
+      {
+        "region": "europe",
+        "price": 5.8255
+      },
+      {
+        "region": "europe-west1",
+        "price": 5.8255
+      },
+      {
+        "region": "europe-west2",
+        "price": 0
+      },
+      {
+        "region": "europe-west3",
+        "price": 0
+      },
+      {
+        "region": "europe-west4",
+        "price": 0
+      },
+      {
+        "region": "europe-north1",
+        "price": 0
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 0
+      },
+      {
+        "region": "asia",
+        "price": 0
+      },
+      {
+        "region": "asia-east",
+        "price": 0
+      },
+      {
+        "region": "asia-northeast",
+        "price": 0
+      },
+      {
+        "region": "asia-southeast",
+        "price": 0
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 0
+      },
+      {
+        "region": "australia",
+        "price": 0
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 0
+      },
+      {
+        "region": "asia-south1",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "name": "CP-COMPUTEENGINE-VMIMAGE-N1-NODE-96-624",
+    "cores": "96",
+    "memory": "624",
+    "gceu": 264,
+    "price": [
+      {
+        "region": "us",
+        "price": 6.2463984
+      },
+      {
+        "region": "us-central1",
+        "price": 6.2463984
+      },
+      {
+        "region": "us-east1",
+        "price": 6.2463984
+      },
+      {
+        "region": "us-east4",
+        "price": 7.60716
+      },
+      {
+        "region": "us-west1",
+        "price": 6.2463984
+      },
+      {
+        "region": "us-west2",
+        "price": 7.5027216
+      },
+      {
+        "region": "europe",
+        "price": 6.8713392
+      },
+      {
+        "region": "europe-west1",
+        "price": 6.8713392
+      },
+      {
+        "region": "europe-west2",
+        "price": 8.0151984
+      },
+      {
+        "region": "europe-west3",
+        "price": 8.0151984
+      },
+      {
+        "region": "europe-west4",
+        "price": 6.8713392
+      },
+      {
+        "region": "europe-north1",
+        "price": 6.8713392
+      },
+      {
+        "region": "northamerica-northeast1",
+        "price": 6.8713392
+      },
+      {
+        "region": "asia",
+        "price": 7.2326496
+      },
+      {
+        "region": "asia-east",
+        "price": 7.2326496
+      },
+      {
+        "region": "asia-northeast",
+        "price": 8.0088624
+      },
+      {
+        "region": "asia-southeast",
+        "price": 7.7026752
+      },
+      {
+        "region": "australia-southeast1",
+        "price": 8.8881408
+      },
+      {
+        "region": "australia",
+        "price": 8.8881408
+      },
+      {
+        "region": "southamerica-east1",
+        "price": 9.3695976
+      },
+      {
+        "region": "asia-south1",
+        "price": 7.50281664
+      }
+    ]
+  }
+]

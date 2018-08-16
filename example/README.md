@@ -30,40 +30,11 @@ Created with https://github.com/ariutta/json-ld-macros
 
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
-```json
-    "CP-COMPUTEENGINE-VMIMAGE-F1-MICRO": {
-      "us": 0.0076,
-      "us-central1": 0.0076,
-      "us-east1": 0.0076,
-      "us-east4": 0.0086,
-      "us-west1": 0.0076,
-      "us-west2": 0.0091,
-      "europe": 0.0086,
-      "europe-west1": 0.0086,
-      "europe-west2": 0.0096,
-      "europe-west3": 0.0096,
-      "europe-west4": 0.0084,
-      "europe-north1": 0.0084,
-      "northamerica-northeast1": 0.0084,
-      "asia": 0.0090,
-      "asia-east": 0.0090,
-      "asia-northeast": 0.0092,
-      "asia-southeast": 0.0092,
-      "australia-southeast1": 0.0106,
-      "australia": 0.0106,
-      "southamerica-east1": 0.0118,
-      "asia-south1": 0.0091,
-      "cores": "shared",
-      "memory": "0.6",
-      "gceu": "Shared CPU, not guaranteed",
-      "maxNumberOfPd": 16,
-      "maxPdSize": 64,
-      "ssd": [0]
-    }
+[A cached version of the json input.](pricelist.json)
+
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19tnmhr2
 ```
-Apply transformation for cosumpition by mapper
-```
-.gcp_price_list | del(.sustained_use_base,.sustained_use_tiers, .CP-COMPUTEENGINE-OS) | 
+.gcp_price_list | . |=with_entries(select(.key|contains("VMIMAGE"))) | 
 [ to_entries[] | 
     {
         "name": .key,
@@ -81,18 +52,7 @@ Apply transformation for cosumpition by mapper
     } 
 ]
 ```
-
-```
-.gcp_price_list | del(.sustained_use_base,.sustained_use_tiers) | 
-[ to_entries[] | 
-    {
-        "name": .key,
-        "cores": .cores,
-        "memory": .memory,
-        "gceu": .gceu       
-    } 
-]
-```
+[A cached version of the result after transformation.](jq_result.json)
 
 Mapper
 http://w3id.org/sparql-generate/
@@ -108,16 +68,16 @@ PREFIX cocoon: <https://w3id.org/cocoon/def>
 GENERATE { 
   ?IRI a cocoon:IaaS;
             rdfs:label ?name;
-            cocoon:Price ?price .
+            a gr:Offering 
+            cocoon:hasPrice ?price .
     
 }
 SOURCE <https://cloudpricingcalculator.appspot.com/static/data/pricelist.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$..gcp_price_list") AS ?gloudPrice
 WHERE {
-    BIND (fun:JSONPath(?gloudPrice,"|keys") AS ?name)
+    BIND (fun:JSONPath(?gloudPrice,".name") AS ?name)
     BIND (IRI( REPLACE( CONCAT("http://ex.com/",?name) , " " , "_" ) ) as ?IRI)
-
-    BIND (fun:JSONPath(?gloudPrice,".us") AS ?price)
+    BIND (fun:JSONPath(?gloudPrice,".price") AS ?price)
 }
 ```
 
