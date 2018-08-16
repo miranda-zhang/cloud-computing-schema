@@ -52,7 +52,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19
     } 
 ]
 ```
-[A cached version of the result after transformation.](jq_result.json)
+[A cached version of the result after transformation.](jq/gcloud_vm.json)
 
 Mapper
 http://w3id.org/sparql-generate/
