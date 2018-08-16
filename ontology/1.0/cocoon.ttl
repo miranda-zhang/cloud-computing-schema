@@ -24,6 +24,10 @@
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/terms/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
 ###  http://xmlns.com/foaf/0.1/homepage
 foaf:homepage rdf:type owl:AnnotationProperty .
 
@@ -58,6 +62,10 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/cocoon/def#hasCPU
 :hasCPU rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/cocoon/def#hasCPUcapacity
+:hasCPUcapacity rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/def#hasCapacity
@@ -380,10 +388,6 @@ foaf:Person rdf:type owl:Class .
                        owl:someValuesFrom :LocalStorage
                      ] ,
                      [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasMemory ;
-                       owl:someValuesFrom :PhysicalQuantity
-                     ] ,
-                     [ rdf:type owl:Restriction ;
                        owl:onProperty :CPUFamily ;
                        owl:someValuesFrom xsd:string
                      ] ,
@@ -446,35 +450,6 @@ foaf:Person rdf:type owl:Class .
 ###  https://w3id.org/cocoon/def#CommunityCloud
 :CommunityCloud rdf:type owl:Class ;
                 rdfs:subClassOf :DeploymentModel .
-
-
-###  https://w3id.org/cocoon/def#Compute
-:Compute rdf:type owl:Class ;
-         rdfs:subClassOf :IaaS ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasCPU ;
-                           owl:someValuesFrom :CPU
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasIOConfiguration ;
-                           owl:someValuesFrom :Attribute
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasMemoryAddressSize ;
-                           owl:someValuesFrom :PhysicalQuantity
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasNetworkStorage ;
-                           owl:someValuesFrom :Storage
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasOS ;
-                           owl:someValuesFrom :OperatingSystem
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasVirtualization ;
-                           owl:someValuesFrom :Virtualization
-                         ] .
 
 
 ###  https://w3id.org/cocoon/def#Credential
@@ -585,7 +560,7 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/def#LocalStorage
 :LocalStorage rdf:type owl:Class ;
-              rdfs:subClassOf :Compute .
+              rdfs:subClassOf :VM .
 
 
 ###  https://w3id.org/cocoon/def#Location
@@ -644,10 +619,6 @@ foaf:Person rdf:type owl:Class .
                                 ] .
 
 
-###  https://w3id.org/cocoon/def#NonFunctionalProperty
-:NonFunctionalProperty rdf:type owl:Class .
-
-
 ###  https://w3id.org/cocoon/def#OperatingSystem
 :OperatingSystem rdf:type owl:Class ;
                  rdfs:subClassOf :SoftwareType .
@@ -688,10 +659,6 @@ foaf:Person rdf:type owl:Class .
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onDataRange xsd:double
                                   ] .
-
-
-###  https://w3id.org/cocoon/def#Price
-:Price rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/def#PrivateCloud
@@ -792,10 +759,6 @@ foaf:Person rdf:type owl:Class .
 ###  https://w3id.org/cocoon/def#Service
 :Service rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasNonFunctionalProperty ;
-                           owl:someValuesFrom :NonFunctionalProperty
-                         ] ,
-                         [ rdf:type owl:Restriction ;
                            owl:onProperty :hasOrchestrationInterface ;
                            owl:someValuesFrom :Interface
                          ] ,
@@ -864,6 +827,43 @@ foaf:Person rdf:type owl:Class .
 :User rdf:type owl:Class .
 
 
+###  https://w3id.org/cocoon/def#VM
+:VM rdf:type owl:Class ;
+    rdfs:subClassOf :IaaS ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasCPU ;
+                      owl:someValuesFrom :CPU
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasCPUcapacity ;
+                      owl:someValuesFrom :PhysicalQuantity
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasIOConfiguration ;
+                      owl:someValuesFrom :Attribute
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasMemory ;
+                      owl:someValuesFrom :PhysicalQuantity
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasNetworkStorage ;
+                      owl:someValuesFrom :Storage
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasOS ;
+                      owl:someValuesFrom :OperatingSystem
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasVirtualization ;
+                      owl:someValuesFrom :Virtualization
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :numberOfCores ;
+                      owl:someValuesFrom xsd:decimal
+                    ] .
+
+
 ###  https://w3id.org/cocoon/def#VNC
 :VNC rdf:type owl:Class ;
      rdfs:subClassOf :Protocol .
@@ -871,7 +871,7 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/def#Virtualization
 :Virtualization rdf:type owl:Class ;
-                rdfs:subClassOf :Compute .
+                rdfs:subClassOf :VM .
 
 
 ###  https://w3id.org/cocoon/def#VirtualizationFormat
@@ -891,6 +891,13 @@ foaf:Person rdf:type owl:Class .
 #################################################################
 #    Individuals
 #################################################################
+
+###  https://w3id.org/cocoon/def#gceu
+:gceu rdf:type owl:NamedIndividual ,
+               :UnitOfMeasure ;
+      dc:description "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ’s to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
+      rdfs:label "Google Compute Engine Unit"@en .
+
 
 ###  https://w3id.org/cocoon/def#mirandazhangqian
 :mirandazhangqian rdf:type owl:NamedIndividual ,

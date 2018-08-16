@@ -63,7 +63,7 @@ PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX cocoon: <https://w3id.org/cocoon/def>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology/1.0/cocoon.ttl>
 
 GENERATE { 
   ?IRI a cocoon:IaaS;
