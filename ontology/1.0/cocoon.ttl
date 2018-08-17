@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/cocoon/def> .
+@base <https://w3id.org/cocoon/def#> .
 
 <https://w3id.org/cocoon/def> rdf:type owl:Ontology ;
                                dc:creator :mirandazhangqian ;
