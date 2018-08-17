@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/cocoon/def#> .
+@prefix : <https://w3id.org/cocoon/v1.0#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix gr: <http://purl.org/goodrelations/v1#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -7,14 +7,13 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/cocoon/def#> .
 
-<https://w3id.org/cocoon/def> rdf:type owl:Ontology ;
+<https://w3id.org/cocoon/v1.0#> rdf:type owl:Ontology ;
                                dc:creator :mirandazhangqian ;
                                dc:issued "2018-09-20"^^xsd:date ;
                                dc:title "Vocabulary in Cloud Computing Services"@en ;
                                owl:versionInfo 1.0 ;
-                               dc:modified "2018-08-13"^^xsd:date ;
+                               dc:modified "2018-08-17"^^xsd:date ;
                                dc:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
                                dc:rights "Copyright © 2018 Miranda ZHANG Qian" ;
                                dc:created "2012-10-01"^^xsd:date ;
