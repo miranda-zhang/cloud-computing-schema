@@ -30,6 +30,7 @@ Created with https://github.com/ariutta/json-ld-macros
 ## Getting Input
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
+
 [A cached version of the json input.](pricelist.json)
 
 ## Cleaning and Transformation
