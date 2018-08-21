@@ -27,11 +27,12 @@ https://miranda-zhang.github.io/cloud-computing-schema/json-ld-macros/gcloud.htm
 Created with https://github.com/ariutta/json-ld-macros
 
 # Define custom mapper
-
+## Getting Input
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 [A cached version of the json input.](pricelist.json)
 
+## Cleaning and Transformation
 Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19tnmhr2
 ```
 .gcp_price_list | . |=with_entries(select(.key|contains("VMIMAGE"))) | 
@@ -54,7 +55,8 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19
 ```
 [A cached version of the result after transformation.](data/gcloud_vm.json)
 
-Mapper
+## Mapping to ontology
+Mapper library
 http://w3id.org/sparql-generate/
 ```rq
 BASE <https://w3id.org/cocoon/> 
@@ -107,5 +109,6 @@ WHERE {
     BIND (fun:JSONPath(?price,".region") AS ?region)
 }
 ```
-Result: RDF turtle
+
+## Result
 [RDF turtle](data/gcloud_vm.ttl)
