@@ -31,7 +31,7 @@ Created with https://github.com/ariutta/json-ld-macros
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 
-[A cached version of the json input.](pricelist.json)
+[A cached version of the json input.](data/pricelist.json)
 
 ## Cleaning and Transformation
 Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19tnmhr2
