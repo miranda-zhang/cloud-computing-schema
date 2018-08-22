@@ -3,15 +3,17 @@
 Intended as a Schema.org extension.
 
 # URL
-Default uri to the latest version of the ontology
-https://w3id.org/cocoon#
+https://w3id.org/cocoon/v1.0
 
-Versioned
-https://w3id.org/cocoon/v0.1#
+Prefered to be used as:
 
-https://w3id.org/cocoon/v1.0#
+    @prefix cocoon: <https://w3id.org/cocoon/v1.0#>
+
+Old Version
+https://w3id.org/cocoon/v0.1
 
 https://w3id.org entry for this project:
+
 https://github.com/perma-id/w3id.org/tree/master/cocoon
 
 # Site
@@ -22,7 +24,7 @@ Source code is in the `gh-page` branch.
 
 # Examples
 
-Code in [example folder](example/) shows some ways to obtain, use this ontology.
+Code in [example folder](example/) shows some ways to access, use this ontology.
 
 # Publications
 [BibTeX](BibTeX.md)
