@@ -27,7 +27,7 @@ https://miranda-zhang.github.io/cloud-computing-schema/json-ld-macros/gcloud.htm
 Created with https://github.com/ariutta/json-ld-macros
 
 # Define custom mapper
-![Workflow](/cococon_usage_workflow.png "Workflow Overview")
+![Workflow](cococon_usage_workflow.png "Workflow Overview")
 
 ## Getting Input
 Data: original json for Google Cloud
