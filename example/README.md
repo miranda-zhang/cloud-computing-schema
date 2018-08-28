@@ -61,7 +61,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19
 ## Mapping to ontology
 Mapper library
 http://w3id.org/sparql-generate/
-```rq
+```rqg
 BASE <https://w3id.org/cocoon/> 
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>

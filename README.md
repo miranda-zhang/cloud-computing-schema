@@ -23,7 +23,7 @@ Source code is in the `gh-page` branch.
 
 # Examples
 
-Code in [example folder](example/) shows some ways to access, use this ontology.
+Code in [example folder](example/) shows some ways to access and use this ontology.
 
 # Publications
 [BibTeX](BibTeX.md)
