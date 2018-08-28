@@ -1,3 +1,4 @@
+# Data Mapping Example: Google Cloud Storage
 ## Getting Input
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json

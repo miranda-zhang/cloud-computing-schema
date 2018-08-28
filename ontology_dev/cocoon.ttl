@@ -23,7 +23,7 @@
                                 dc:rights "Copyright © 2018 Miranda ZHANG Qian" ;
                                 vann:preferredNamespacePrefix "cocoon" ;
                                 dc:created "2012-10-01"^^xsd:date ;
-                                rdfs:label "Cloud Computing Services"@en .
+                                rdfs:label "Cloud Computing Services Ontology"@en .
 
 #################################################################
 #    Annotation properties
@@ -51,6 +51,10 @@ foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/goodrelations/v1#hasPriceSpecification
 gr:hasPriceSpecification rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#canBeInstalledWith
+:canBeInstalledWith rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasApplianceType
@@ -127,11 +131,6 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/cocoon/v1.0#hasNonFunctionalProperty
 :hasNonFunctionalProperty rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasOS
-:hasOS rdf:type owl:ObjectProperty ;
-       rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasOperatingSystem
@@ -316,6 +315,10 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
+###  http://purl.org/goodrelations/v1#BusinessEntity
+gr:BusinessEntity rdf:type owl:Class .
+
+
 ###  http://purl.org/goodrelations/v1#UnitPriceSpecification
 gr:UnitPriceSpecification rdf:type owl:Class ;
                           rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -430,12 +433,13 @@ foaf:Person rdf:type owl:Class .
                                 owl:someValuesFrom :Location
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasProvider ;
-                                owl:someValuesFrom :Provider
-                              ] ,
-                              [ rdf:type owl:Restriction ;
                                 owl:onProperty :isAvailableIn ;
                                 owl:someValuesFrom :Location
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasProvider ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass gr:BusinessEntity
                               ] .
 
 
@@ -486,7 +490,7 @@ foaf:Person rdf:type owl:Class .
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty :hasOperatingSystem ;
                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                         owl:onClass :OperatingSystem
+                                         owl:onClass :SystemImage
                                        ] .
 
 
@@ -624,11 +628,6 @@ foaf:Person rdf:type owl:Class .
                                 ] .
 
 
-###  https://w3id.org/cocoon/v1.0#OperatingSystem
-:OperatingSystem rdf:type owl:Class ;
-                 rdfs:subClassOf :SoftwareType .
-
-
 ###  https://w3id.org/cocoon/v1.0#Operation
 :Operation rdf:type owl:Class .
 
@@ -675,23 +674,6 @@ foaf:Person rdf:type owl:Class .
 :Protocol rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :protocolVersion ;
-                            owl:someValuesFrom xsd:string
-                          ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Provider
-:Provider rdf:type owl:Class ;
-          rdfs:subClassOf :ServiceLevelAgreement ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :URI ;
-                            owl:someValuesFrom xsd:anyURI
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :providerDescription ;
-                            owl:someValuesFrom rdfs:Literal
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :providerName ;
                             owl:someValuesFrom xsd:string
                           ] .
 
@@ -810,6 +792,11 @@ foaf:Person rdf:type owl:Class .
                          ] .
 
 
+###  https://w3id.org/cocoon/v1.0#SystemImage
+:SystemImage rdf:type owl:Class ;
+             rdfs:subClassOf :Software .
+
+
 ###  https://w3id.org/cocoon/v1.0#Telnet
 :Telnet rdf:type owl:Class ;
         rdfs:subClassOf :Protocol .
@@ -836,6 +823,10 @@ foaf:Person rdf:type owl:Class .
 :VM rdf:type owl:Class ;
     rdfs:subClassOf :IaaS ,
                     [ rdf:type owl:Restriction ;
+                      owl:onProperty :canBeInstalledWith ;
+                      owl:someValuesFrom :SystemImage
+                    ] ,
+                    [ rdf:type owl:Restriction ;
                       owl:onProperty :hasCPU ;
                       owl:someValuesFrom :CPU
                     ] ,
@@ -854,10 +845,6 @@ foaf:Person rdf:type owl:Class .
                     [ rdf:type owl:Restriction ;
                       owl:onProperty :hasNetworkStorage ;
                       owl:someValuesFrom :Storage
-                    ] ,
-                    [ rdf:type owl:Restriction ;
-                      owl:onProperty :hasOS ;
-                      owl:someValuesFrom :OperatingSystem
                     ] ,
                     [ rdf:type owl:Restriction ;
                       owl:onProperty :hasVirtualization ;
@@ -918,5 +905,8 @@ foaf:Person rdf:type owl:Class .
                   foaf:mbox "miranda.zhang.q@gmail.com" ;
                   foaf:name "Miranda ZHANG Qian" .
 
+:gcloud a gr:BusinessEntity;
+  gr:name "Google Cloud";
+  foaf:page <https://cloud.google.com/> .
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
