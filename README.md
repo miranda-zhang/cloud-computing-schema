@@ -15,7 +15,7 @@ https://github.com/perma-id/w3id.org/tree/master/cocoon
 
 Old Version https://w3id.org/cocoon/v0.1
 
-The development version of the ontology is in [ontology_dev folder](ontology_dev/).
+The development version of the ontology is in [ontology_dev](ontology_dev/) folder.
 
 # Site
 The actual site is hosted via [Github page](https://miranda-zhang.github.io/cloud-computing-schema/v1.0/index-en.html)

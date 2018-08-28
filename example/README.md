@@ -67,9 +67,8 @@ PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology/1.0/cocoon.ttl>
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0#>
 
 GENERATE { 
   <data#{?name}> a cocoon:VM;
@@ -89,7 +88,7 @@ GENERATE {
         <data#{?name}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue "{?regionalPrice}"^^xsd:float; 
+                gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double; 
                 gr:hasRegion "{?region}"^^xsd:string;
         ] 
     } 

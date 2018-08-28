@@ -5,7 +5,7 @@ https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 [A cached version of the json input.](data/pricelist.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet 
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/tt302_aTzV
 ```
 .gcp_price_list | . |=with_entries
 ( 
@@ -16,26 +16,24 @@ Apply transformation using `jq`, view the live snippet
             contains("SSD")
         ) 
     )
-) | [ to_entries[] | 
+) | 
+[ to_entries[] | 
     {
         "name": .key,
-        "price": 
+        "prices": 
          [ 
-            .value | del(
-                .cores, .memory, .gceu,
-                .fixed, .maxNumberOfPd, .maxPdSize, .ssd,
-                .nam3)
-            | to_entries[] | { "region": .key, "price": .value }
+            .value | to_entries[] |
+            { "region": .key, "price": .value }
          ] 
     } 
 ]
 ```
-[A cached version of the result after transformation.](data/gcloud_vm.json)
+[A cached version of the result after transformation.](data/gcloud_storage.json)
 
 ## Mapping to ontology
 Mapper library
 http://w3id.org/sparql-generate/
-```rq
+```rqg
 
 ```
 
