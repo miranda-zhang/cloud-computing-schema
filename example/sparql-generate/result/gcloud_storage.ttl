@@ -1,0 +1,905 @@
+@base          <http://example.org/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data#CP-COMPUTEENGINE-LOCAL-SSD-PREEMPTIBLE>
+        a                         cocoon:Storage ;
+        rdfs:label                "CP-COMPUTEENGINE-LOCAL-SSD-PREEMPTIBLE" ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      9.589E-5 ;
+                                    gr:hasRegion             "us-east4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      7.94536E-5 ;
+                                    gr:hasRegion             "us-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      6.5754E-5 ;
+                                    gr:hasRegion             "asia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      7.9453E-5 ;
+                                    gr:hasRegion             "europe-west3" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      8.90411E-5 ;
+                                    gr:hasRegion             "australia-southeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      9.589E-5 ;
+                                    gr:hasRegion             "northamerica-northeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      9.589E-5 ;
+                                    gr:hasRegion             "asia-southeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      6.5754E-5 ;
+                                    gr:hasRegion             "us-central1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      9.8631E-5 ;
+                                    gr:hasRegion             "southamerica-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      9.589E-5 ;
+                                    gr:hasRegion             "europe-west4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      6.5754E-5 ;
+                                    gr:hasRegion             "us-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      8.90411E-5 ;
+                                    gr:hasRegion             "australia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      8.4932E-5 ;
+                                    gr:hasRegion             "asia-northeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      7.9453E-5 ;
+                                    gr:hasRegion             "asia-south1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      7.9453E-5 ;
+                                    gr:hasRegion             "europe-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      6.5754E-5 ;
+                                    gr:hasRegion             "europe-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      6.5754E-5 ;
+                                    gr:hasRegion             "asia-east" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      6.5754E-5 ;
+                                    gr:hasRegion             "us-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      6.5754E-5 ;
+                                    gr:hasRegion             "us" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      9.589E-5 ;
+                                    gr:hasRegion             "europe-north1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      6.5754E-5 ;
+                                    gr:hasRegion             "europe" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
+<https://w3id.org/cocoon/data#CP-COMPUTEENGINE-STORAGE-PD-CAPACITY>
+        a                         cocoon:Storage ;
+        rdfs:label                "CP-COMPUTEENGINE-STORAGE-PD-CAPACITY" ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.044"^^xsd:double ;
+                                    gr:hasRegion             "asia-southeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.044"^^xsd:double ;
+                                    gr:hasRegion             "europe-north1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.052"^^xsd:double ;
+                                    gr:hasRegion             "asia-northeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.04"^^xsd:double ;
+                                    gr:hasRegion             "us-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.04"^^xsd:double ;
+                                    gr:hasRegion             "europe" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.06"^^xsd:double ;
+                                    gr:hasRegion             "southamerica-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.054"^^xsd:double ;
+                                    gr:hasRegion             "australia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.048"^^xsd:double ;
+                                    gr:hasRegion             "europe-west3" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.048"^^xsd:double ;
+                                    gr:hasRegion             "asia-south1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.048"^^xsd:double ;
+                                    gr:hasRegion             "us-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.04"^^xsd:double ;
+                                    gr:hasRegion             "us-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.044"^^xsd:double ;
+                                    gr:hasRegion             "us-east4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.04"^^xsd:double ;
+                                    gr:hasRegion             "us" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.048"^^xsd:double ;
+                                    gr:hasRegion             "europe-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.04"^^xsd:double ;
+                                    gr:hasRegion             "asia-east" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.04"^^xsd:double ;
+                                    gr:hasRegion             "us-central1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.054"^^xsd:double ;
+                                    gr:hasRegion             "australia-southeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.044"^^xsd:double ;
+                                    gr:hasRegion             "northamerica-northeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.04"^^xsd:double ;
+                                    gr:hasRegion             "europe-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.044"^^xsd:double ;
+                                    gr:hasRegion             "europe-west4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
+<https://w3id.org/cocoon/data#CP-COMPUTEENGINE-STORAGE-PD-SNAPSHOT>
+        a                         cocoon:Storage ;
+        rdfs:label                "CP-COMPUTEENGINE-STORAGE-PD-SNAPSHOT" ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.029"^^xsd:double ;
+                                    gr:hasRegion             "northamerica-northeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.035"^^xsd:double ;
+                                    gr:hasRegion             "australia-southeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.026"^^xsd:double ;
+                                    gr:hasRegion             "europe-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.034"^^xsd:double ;
+                                    gr:hasRegion             "asia-northeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.026"^^xsd:double ;
+                                    gr:hasRegion             "asia-east" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.031"^^xsd:double ;
+                                    gr:hasRegion             "asia-south1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.039"^^xsd:double ;
+                                    gr:hasRegion             "southamerica-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.029"^^xsd:double ;
+                                    gr:hasRegion             "europe-north1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.029"^^xsd:double ;
+                                    gr:hasRegion             "europe-west4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.31"^^xsd:double ;
+                                    gr:hasRegion             "us-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.035"^^xsd:double ;
+                                    gr:hasRegion             "australia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.031"^^xsd:double ;
+                                    gr:hasRegion             "europe-west3" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.031"^^xsd:double ;
+                                    gr:hasRegion             "europe-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.026"^^xsd:double ;
+                                    gr:hasRegion             "europe" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.026"^^xsd:double ;
+                                    gr:hasRegion             "us-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.026"^^xsd:double ;
+                                    gr:hasRegion             "us-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.039"^^xsd:double ;
+                                    gr:hasRegion             "asia-southeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.026"^^xsd:double ;
+                                    gr:hasRegion             "us" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.026"^^xsd:double ;
+                                    gr:hasRegion             "us-central1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.029"^^xsd:double ;
+                                    gr:hasRegion             "us-east4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
+<https://w3id.org/cocoon/data#CP-COMPUTEENGINE-PD-IO-REQUEST>
+        a                         cocoon:Storage ;
+        rdfs:label                "CP-COMPUTEENGINE-PD-IO-REQUEST" ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0"^^xsd:double ;
+                                    gr:hasRegion             "us" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
+<https://w3id.org/cocoon/data#CP-COMPUTEENGINE-STORAGE-PD-SSD-REGIONAL>
+        a                         cocoon:Storage ;
+        rdfs:label                "CP-COMPUTEENGINE-STORAGE-PD-SSD-REGIONAL" ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.24"^^xsd:double ;
+                                    gr:hasRegion             "us-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.26"^^xsd:double ;
+                                    gr:hasRegion             "northamerica-northeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.24"^^xsd:double ;
+                                    gr:hasRegion             "us-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.29"^^xsd:double ;
+                                    gr:hasRegion             "asia-south1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.24"^^xsd:double ;
+                                    gr:hasRegion             "asia-east" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.32"^^xsd:double ;
+                                    gr:hasRegion             "asia-northeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.26"^^xsd:double ;
+                                    gr:hasRegion             "europe-west4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.24"^^xsd:double ;
+                                    gr:hasRegion             "europe" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.26"^^xsd:double ;
+                                    gr:hasRegion             "asia-southeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0"^^xsd:double ;
+                                    gr:hasRegion             "us-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.24"^^xsd:double ;
+                                    gr:hasRegion             "us" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.32"^^xsd:double ;
+                                    gr:hasRegion             "australia-southeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.29"^^xsd:double ;
+                                    gr:hasRegion             "europe-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.26"^^xsd:double ;
+                                    gr:hasRegion             "europe-north1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.26"^^xsd:double ;
+                                    gr:hasRegion             "us-east4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.29"^^xsd:double ;
+                                    gr:hasRegion             "europe-west3" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.24"^^xsd:double ;
+                                    gr:hasRegion             "us-central1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.36"^^xsd:double ;
+                                    gr:hasRegion             "southamerica-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.32"^^xsd:double ;
+                                    gr:hasRegion             "australia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.24"^^xsd:double ;
+                                    gr:hasRegion             "europe-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
+<https://w3id.org/cocoon/data#CP-COMPUTEENGINE-STORAGE-PD-CAPACITY-REGIONAL>
+        a                         cocoon:Storage ;
+        rdfs:label                "CP-COMPUTEENGINE-STORAGE-PD-CAPACITY-REGIONAL" ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.08"^^xsd:double ;
+                                    gr:hasRegion             "asia-east" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.08"^^xsd:double ;
+                                    gr:hasRegion             "us-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.12"^^xsd:double ;
+                                    gr:hasRegion             "southamerica-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.088"^^xsd:double ;
+                                    gr:hasRegion             "northamerica-northeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.08"^^xsd:double ;
+                                    gr:hasRegion             "us-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.088"^^xsd:double ;
+                                    gr:hasRegion             "asia-southeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.096"^^xsd:double ;
+                                    gr:hasRegion             "europe-west3" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.096"^^xsd:double ;
+                                    gr:hasRegion             "asia-south1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.104"^^xsd:double ;
+                                    gr:hasRegion             "asia-northeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.108"^^xsd:double ;
+                                    gr:hasRegion             "australia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.08"^^xsd:double ;
+                                    gr:hasRegion             "europe" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.088"^^xsd:double ;
+                                    gr:hasRegion             "us-east4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.096"^^xsd:double ;
+                                    gr:hasRegion             "europe-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0"^^xsd:double ;
+                                    gr:hasRegion             "us-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.088"^^xsd:double ;
+                                    gr:hasRegion             "europe-north1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.08"^^xsd:double ;
+                                    gr:hasRegion             "us-central1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.088"^^xsd:double ;
+                                    gr:hasRegion             "europe-west4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.08"^^xsd:double ;
+                                    gr:hasRegion             "europe-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.08"^^xsd:double ;
+                                    gr:hasRegion             "us" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.108"^^xsd:double ;
+                                    gr:hasRegion             "australia-southeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
+<https://w3id.org/cocoon/data#CP-COMPUTEENGINE-LOCAL-SSD>
+        a                         cocoon:Storage ;
+        rdfs:label                "CP-COMPUTEENGINE-LOCAL-SSD" ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.0959E-4 ;
+                                    gr:hasRegion             "us-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.4247E-4 ;
+                                    gr:hasRegion             "asia-northeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.0959E-4 ;
+                                    gr:hasRegion             "europe" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.3151E-4 ;
+                                    gr:hasRegion             "europe-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.0959E-4 ;
+                                    gr:hasRegion             "europe-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.2055E-4 ;
+                                    gr:hasRegion             "europe-west4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.0959E-4 ;
+                                    gr:hasRegion             "us-central1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.0959E-4 ;
+                                    gr:hasRegion             "asia-east" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.0959E-4 ;
+                                    gr:hasRegion             "asia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.0959E-4 ;
+                                    gr:hasRegion             "us-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.2055E-4 ;
+                                    gr:hasRegion             "europe-north1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.3151E-4 ;
+                                    gr:hasRegion             "europe-west3" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.2055E-4 ;
+                                    gr:hasRegion             "us-east4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.2055E-4 ;
+                                    gr:hasRegion             "northamerica-northeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.0959E-4 ;
+                                    gr:hasRegion             "us" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.4795E-4 ;
+                                    gr:hasRegion             "australia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.4795E-4 ;
+                                    gr:hasRegion             "australia-southeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.2055E-4 ;
+                                    gr:hasRegion             "asia-southeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.64385E-4 ;
+                                    gr:hasRegion             "southamerica-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.3151E-4 ;
+                                    gr:hasRegion             "asia-south1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      1.31507E-4 ;
+                                    gr:hasRegion             "us-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
+<https://w3id.org/cocoon/data#CP-COMPUTEENGINE-STORAGE-PD-SSD>
+        a                         cocoon:Storage ;
+        rdfs:label                "CP-COMPUTEENGINE-STORAGE-PD-SSD" ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.187"^^xsd:double ;
+                                    gr:hasRegion             "us-east4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.204"^^xsd:double ;
+                                    gr:hasRegion             "europe-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.17"^^xsd:double ;
+                                    gr:hasRegion             "us" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.17"^^xsd:double ;
+                                    gr:hasRegion             "europe-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.204"^^xsd:double ;
+                                    gr:hasRegion             "europe-west3" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.23"^^xsd:double ;
+                                    gr:hasRegion             "australia" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.204"^^xsd:double ;
+                                    gr:hasRegion             "asia-south1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.17"^^xsd:double ;
+                                    gr:hasRegion             "us-central1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.17"^^xsd:double ;
+                                    gr:hasRegion             "asia-east" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.17"^^xsd:double ;
+                                    gr:hasRegion             "us-west1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.187"^^xsd:double ;
+                                    gr:hasRegion             "europe-north1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.17"^^xsd:double ;
+                                    gr:hasRegion             "us-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.187"^^xsd:double ;
+                                    gr:hasRegion             "northamerica-northeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.187"^^xsd:double ;
+                                    gr:hasRegion             "europe-west4" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.255"^^xsd:double ;
+                                    gr:hasRegion             "southamerica-east1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.204"^^xsd:double ;
+                                    gr:hasRegion             "us-west2" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.187"^^xsd:double ;
+                                    gr:hasRegion             "asia-southeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.17"^^xsd:double ;
+                                    gr:hasRegion             "europe" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.221"^^xsd:double ;
+                                    gr:hasRegion             "asia-northeast" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.23"^^xsd:double ;
+                                    gr:hasRegion             "australia-southeast1" ;
+                                    gr:hasUnitOfMeasurement  "GB per month"
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
