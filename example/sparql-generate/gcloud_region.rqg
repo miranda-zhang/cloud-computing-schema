@@ -1,16 +1,12 @@
 BASE <https://w3id.org/cocoon/> 
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
-PREFIX gn: <http://www.geonames.org/ontology#>
 
 GENERATE {
     GENERATE {
         <data/region/gcloud#{?region}> a cocoon:Region;
-            cocoon:inJurisdiction ?geoname_iri;
+            cocoon:inJurisdiction <http://{?geoname_uri_base}/{?uri_id}/>;
     } 
   	ITERATOR iter:JSONElement(?geoname,".regions[*]") AS ?regionJSONElement
     WHERE {
@@ -19,7 +15,8 @@ GENERATE {
   	.
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_region.json> AS ?source
-ITERATOR iter:JSONPath(?source,"$[*]") AS ?geoname
+ITERATOR iter:JSONPath(?source,".geoname_features") AS ?geoname
 WHERE {
-    BIND (IRI(fun:JSONPath(?geoname,".geoname_uri")) AS ?geoname_iri)
+    BIND (fun:JSONPath(?geoname,".uri_id") AS ?uri_id)
+    BIND (fun:JSONPath(?source,".geoname_uri_base") AS ?geoname_uri_base)
 }

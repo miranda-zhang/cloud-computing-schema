@@ -1,5 +1,5 @@
 {
-    "geoname_uri_base" : "http://sws.geonames.org/",
+    "geoname_uri_base" : "sws.geonames.org",
     "geoname_features" :     
     [
         {
