@@ -8,7 +8,29 @@ https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 ## Cleaning and Transformation
 Apply transformation using `jq`, view the live snippet https://jqplay.org/s/zZcN03Tdyp
 ```
-.gcp_price_list | ."CP-COMPUTEENGINE-OS"
+.gcp_price_list | . |=with_entries
+( 
+    select(
+        .key |
+        contains("CP-COMPUTEENGIN") and (
+            contains("PD") or
+            contains("SSD")
+        ) 
+    )
+) 
+
+.gcp_price_list | ."CP-COMPUTEENGINE-OS" |
+[ to_entries[] | 
+    {
+        "name": .key,
+        "low": [
+            "price": .low,
+            vm : [
+                .gcp_price_list |
+            ]
+        ]
+    } 
+]
 ```
 [A cached version of the result after transformation.](data/gcloud_os.json)
 

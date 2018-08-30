@@ -7,7 +7,7 @@ PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 
 GENERATE { 
-  <data#{?name}> a cocoon:Storage;
+  <data#{?name}> a cocoon:SystemImage;
     rdfs:label ?name;
     cocoon:hasProvider cocoon:gcloud;
     GENERATE {

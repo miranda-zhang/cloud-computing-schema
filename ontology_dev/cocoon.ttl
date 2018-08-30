@@ -206,6 +206,10 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 :hasVirtualizationFormat rdf:type owl:ObjectProperty .
 
 
+###  https://w3id.org/cocoon/v1.0#inJurisdiction
+:inJurisdiction rdf:type owl:ObjectProperty .
+
+
 ###  https://w3id.org/cocoon/v1.0#isAvailableIn
 :isAvailableIn rdf:type owl:ObjectProperty .
 
@@ -331,8 +335,12 @@ gr:BusinessEntity rdf:type owl:Class .
 gr:UnitPriceSpecification rdf:type owl:Class ;
                           rdfs:subClassOf [ rdf:type owl:Restriction ;
                                             owl:onProperty :hasRegion ;
-                                            owl:someValuesFrom xsd:string
+                                            owl:someValuesFrom :Region
                                           ] .
+
+
+###  http://www.geonames.org/ontology#Feature
+<http://www.geonames.org/ontology#Feature> rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -724,7 +732,11 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0#Region
 :Region rdf:type owl:Class ;
-        rdfs:subClassOf :Location .
+        rdfs:subClassOf :Location ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :inJurisdiction ;
+                          owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
+                        ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#SCP
@@ -803,7 +815,7 @@ foaf:Person rdf:type owl:Class .
 ###  https://w3id.org/cocoon/v1.0#SystemImage
 :SystemImage rdf:type owl:Class ;
              rdfs:subClassOf :PaaS ;
-             rdfs:comment """A system image is a serialized copy of the entire state of a computer system.
+             dc:description """A system image is a serialized copy of the entire state of a computer system.
 System images can be used for backup.""" .
 
 
