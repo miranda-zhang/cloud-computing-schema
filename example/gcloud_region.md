@@ -72,39 +72,13 @@ $ gn_search dsoprea -p query "europe" -p max_rows 5
 [http://sws.geonames.org/6255148/]: [Europe]
 [http://sws.geonames.org/7729883/]: [Northern Europe]
 ```
-Map region with country
-```
-[
-  {
-    name : "United States",
-    geoname_uri : "http://sws.geonames.org/6252001/",
-    regions : [
-      "us",
-      "us-central1",
-      "us-east1",
-      "us-east4",
-      "us-west1",
-      "us-west2",
-      "northamerica-northeast1",
-    ]
-  },
-  {
-    name : "Europe",
-    geoname_uri : "http://sws.geonames.org/6255148/",
-    regions : [
-      "europe",
-      "europe-west1",
-      "europe-west2",
-      "europe-west3",
-      "europe-west4",
-      "europe-north1",
-    ]
-  },
-]
-```
+Map region with country 
 
-[http://sws.geonames.org/6252001/]: [United States]
+[Google Cloud Regions relation to GeoNames](data/gcloud_region.json)
 
 ## SPARQL-Generate
-[SPARQL-Generate Queries](sparql-generate/gcloud_storage.rqg)
-[RDF turtle](sparql-generate/result/gcloud_storage.ttl)
+[SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+
+[Queries](sparql-generate/gcloud_region.rqg)
+
+[Results in RDF turtle](sparql-generate/result/gcloud_storage.ttl)

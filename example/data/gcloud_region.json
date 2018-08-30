@@ -1,0 +1,27 @@
+[
+    {
+      "name" : "United States",
+      "geoname_uri" : "http://sws.geonames.org/6252001/",
+      "regions" : [
+        "us",
+        "us-central1",
+        "us-east1",
+        "us-east4",
+        "us-west1",
+        "us-west2",
+        "northamerica-northeast1"
+      ]
+    },
+    {
+      "name" : "Europe",
+      "geoname_uri" : "http://sws.geonames.org/6255148/",
+      "regions" : [
+        "europe",
+        "europe-west1",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-north1"
+      ]
+    }
+  ]
