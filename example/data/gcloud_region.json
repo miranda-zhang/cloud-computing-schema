@@ -1,7 +1,7 @@
 [
     {
       "name" : "United States",
-      "geoname_uri" : "http://sws.geonames.org/6252001/",
+      "geoname_uri" : "sws.geonames.org/6252001/",
       "regions" : [
         "us",
         "us-central1",
@@ -14,7 +14,7 @@
     },
     {
       "name" : "Europe",
-      "geoname_uri" : "http://sws.geonames.org/6255148/",
+      "geoname_uri" : "sws.geonames.org/6255148/",
       "regions" : [
         "europe",
         "europe-west1",
