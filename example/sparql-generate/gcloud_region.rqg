@@ -5,30 +5,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+PREFIX gn: <http://www.geonames.org/ontology#>
 
-GENERATE { 
-  <data/region/gcloud#{?name}> a cocoon:Region;
-    rdfs:label ?name;
-    cocoon:hasProvider cocoon:gcloud;
+GENERATE {
     GENERATE {
-        <data#{?name}> gr:hasPriceSpecification [ 
-            a gr:UnitPriceSpecification ; 
-                gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double;
-                gr:hasUnitOfMeasurement "GB per month"^^xsd:string ;
-                gr:hasRegion "{?region}"^^xsd:string;
-        ] 
+        <data/region/gcloud#{?region}> a cocoon:Region;
+            cocoon:inJurisdiction ?geoname_iri;
     } 
-  	ITERATOR iter:JSONPath(?gcloudStorage,".prices[*]") AS ?prices
+  	ITERATOR iter:JSONElement(?geoname,".regions[*]") AS ?regionJSONElement
     WHERE {
-        BIND (fun:JSONPath(?prices,".price") AS ?regionalPrice)
-        BIND (fun:JSONPath(?prices,".region") AS ?region)
-    }   
+        BIND (fun:JSONPath(?regionJSONElement,".element") AS ?region)
+    }
   	.
- 
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_storage.json> AS ?source
-ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudStorage
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_region.json> AS ?source
+ITERATOR iter:JSONPath(?source,"$[*]") AS ?geoname
 WHERE {
-    BIND (fun:JSONPath(?gcloudStorage,".name") AS ?name)
+    BIND (IRI(fun:JSONPath(?geoname,".geoname_uri")) AS ?geoname_iri)
 }

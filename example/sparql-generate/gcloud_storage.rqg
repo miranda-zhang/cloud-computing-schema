@@ -16,7 +16,7 @@ GENERATE {
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double;
                 gr:hasUnitOfMeasurement "GB per month"^^xsd:string ;
-                gr:hasRegion "{?region}"^^xsd:string;
+                cocoon:hasRegion "{?region}"^^xsd:string;
         ] 
     } 
   	ITERATOR iter:JSONPath(?gcloudStorage,".prices[*]") AS ?prices
