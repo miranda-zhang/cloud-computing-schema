@@ -149,10 +149,6 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 :hasPassword rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasPhysicalLocation
-:hasPhysicalLocation rdf:type owl:ObjectProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#hasProtocol
 :hasProtocol rdf:type owl:ObjectProperty .
 
@@ -204,6 +200,10 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/cocoon/v1.0#inJurisdiction
 :inJurisdiction rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#inPhysicalLocation
+:inPhysicalLocation rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#isAvailableIn
@@ -726,13 +726,24 @@ foaf:Person rdf:type owl:Class .
 :Region rdf:type owl:Class ;
         rdfs:subClassOf :Location ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasPhysicalLocation ;
+                          owl:onProperty :inJurisdiction ;
                           owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
                         ] ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty :inJurisdiction ;
-                          owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
+                          owl:onProperty :inPhysicalLocation ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass <http://www.geonames.org/ontology#Feature>
                         ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Region ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty :inJurisdiction ;
+                         owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
+                       ] ;
+   rdfs:comment "For regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
+ ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#SCP

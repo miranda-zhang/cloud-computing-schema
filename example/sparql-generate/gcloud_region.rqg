@@ -15,8 +15,9 @@ GENERATE {
   	.
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_region.json> AS ?source
-ITERATOR iter:JSONPath(?source,".geoname_features") AS ?geoname
+ITERATOR iter:JSONPath(?source,"$[*]") AS ?region
 WHERE {
-    BIND (fun:JSONPath(?geoname,".uri_id") AS ?uri_id)
-    BIND (fun:JSONPath(?source,".geoname_uri_base") AS ?geoname_uri_base)
+    BIND (fun:JSONPath(?region,".region_code") AS ?region_code)
+    BIND (fun:JSONPath(?region,".name") AS ?name)
+    BIND (fun:JSONPath(?region,".geoname") AS ?geoname)
 }

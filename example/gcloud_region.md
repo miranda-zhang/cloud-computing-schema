@@ -1,6 +1,6 @@
 # Data Mapping Example: Google Cloud Regions
 
-[Programtically extract region codes from json imput](gcloud_region_jq)
+[Programtically extract region codes from json imput](gcloud_region_jq.md)
 can only obtain region codes,
 by inspecting the documentation https://cloud.google.com/about/locations/,
 more detailed mapping can be manually constructed.
