@@ -117,10 +117,6 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 :hasLocalStorage rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasLocation
-:hasLocation rdf:type owl:ObjectProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#hasMemory
 :hasMemory rdf:type owl:ObjectProperty .
 
@@ -445,10 +441,6 @@ foaf:Person rdf:type owl:Class .
                                 owl:someValuesFrom :DeploymentModel
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasPhysicalLocation ;
-                                owl:someValuesFrom :Location
-                              ] ,
-                              [ rdf:type owl:Restriction ;
                                 owl:onProperty :isAvailableIn ;
                                 owl:someValuesFrom :Location
                               ] ,
@@ -733,6 +725,10 @@ foaf:Person rdf:type owl:Class .
 ###  https://w3id.org/cocoon/v1.0#Region
 :Region rdf:type owl:Class ;
         rdfs:subClassOf :Location ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasPhysicalLocation ;
+                          owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
+                        ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :inJurisdiction ;
                           owl:someValuesFrom <http://www.geonames.org/ontology#Feature>

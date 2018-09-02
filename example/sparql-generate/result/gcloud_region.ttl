@@ -1,0 +1,56 @@
+@base          <http://example.org/> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#us-central1>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#us>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#europe-west3>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#europe>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#europe-west1>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#us-east1>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#northamerica-northeast1>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#europe-west4>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#us-west1>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#us-east4>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#europe-north1>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#europe-west2>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .
+
+<https://w3id.org/cocoon/data/region/gcloud#us-west2>
+        a                      cocoon:Region ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6252001/> .

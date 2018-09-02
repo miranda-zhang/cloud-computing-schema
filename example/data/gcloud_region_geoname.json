@@ -1,0 +1,70 @@
+{
+    "geoname_uri_base" : "sws.geonames.org",
+    "geoname_features" :     
+    [
+        {
+          "name" : "United States",
+          "uri_id" : "6252001",
+          "regions" : [
+            "us",
+            "us-central1",
+            "us-east1",
+            "us-east4",
+            "us-west1",
+            "us-west2"
+          ]
+        },
+        {
+          "name" : "Europe",
+          "uri_id" : "6255148",
+          "regions" : [
+            "europe",
+            "europe-west1",
+            "europe-west2",
+            "europe-west3",
+            "europe-west4",
+            "europe-north1",
+            "nam-eur-asia1"
+          ]
+        },
+        {
+          "name" : "Asia",
+          "uri_id" : "6255147",
+          "regions" : [
+            "asia",
+            "asia-east",
+            "asia-northeast",
+            "asia-southeast",
+            "asia-south1",
+            "asia-east1",
+            "asia-northeast1",
+            "asia-southeast1",
+            "nam-eur-asia1"
+          ]
+        },
+        {
+          "name" : "Australia",
+          "uri_id" : "2077456",
+          "regions" : [
+            "australia-southeast1",
+            "australia"
+          ]
+        },
+        {
+          "name" : "South America",
+          "uri_id" : "6255150",
+          "regions" : [
+            "southamerica-east1"
+          ]
+        },
+        {
+          "name" : "North America",
+          "uri_id" : "6255149",
+          "regions" : [
+            "northamerica-northeast1",
+            "nam3",
+            "nam-eur-asia1"
+          ]
+        }
+    ]
+}

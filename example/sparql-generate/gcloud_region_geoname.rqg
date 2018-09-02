@@ -5,7 +5,7 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 
 GENERATE {
     GENERATE {
-        <data/region/gcloud/{?region}> a cocoon:Region;
+        <data/region/gcloud#{?region}> a cocoon:Region;
             cocoon:inJurisdiction <http://{?geoname_uri_base}/{?uri_id}/>;
     } 
   	ITERATOR iter:JSONElement(?geoname,".regions[*]") AS ?regionJSONElement
@@ -14,7 +14,7 @@ GENERATE {
     }
   	.
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_region.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_region_geoname.json> AS ?source
 ITERATOR iter:JSONPath(?source,".geoname_features") AS ?geoname
 WHERE {
     BIND (fun:JSONPath(?geoname,".uri_id") AS ?uri_id)

@@ -1,31 +1,87 @@
-{
-    "geoname_uri_base" : "sws.geonames.org",
-    "geoname_features" :     
-    [
-        {
-          "name" : "United States",
-          "uri_id" : "6252001",
-          "regions" : [
-            "us",
-            "us-central1",
-            "us-east1",
-            "us-east4",
-            "us-west1",
-            "us-west2",
-            "northamerica-northeast1"
-          ]
-        },
-        {
-          "name" : "Europe",
-          "uri_id" : "6255148",
-          "regions" : [
-            "europe",
-            "europe-west1",
-            "europe-west2",
-            "europe-west3",
-            "europe-west4",
-            "europe-north1"
-          ]
-        }
-    ]
-}
+[
+    {
+      "region_code" : "us-west1",
+      "name" : "Oregon",
+      "geoname" : "6252001"
+    },
+    {
+      "region_code" : "us-west2",
+      "name" : "Los Angeles",
+      "geoname" : "5368361"
+    },
+    {
+      "region_code" : "us-central1",
+      "name" : "Iowa",
+      "geoname" : "4862182"
+    },
+    {
+      "region_code" : "us-east1",
+      "name" : "South Carolina",
+      "geoname" : "4597040"
+    },
+    {
+      "region_code" : "us-east4",
+      "name" : "N. VIRGINIA",
+      "geoname" : "6254928"
+    },
+    {
+      "region_code" : "northamerica-northeast1",
+      "name" : "MONTRÉAL",
+      "geoname" : "6077243"
+    },   	 
+    {
+      "region_code" : "southamerica-east1",
+      "name" : "SÃO PAULO",
+      "geoname" : "3448439"
+    },   	 
+    {
+      "region_code" : "europe-west2",
+      "name" : "London",
+      "geoname" : "2643743"
+    },
+    {
+      "region_code" : "europe-west1",
+      "name" : "Belgium",
+      "geoname" : "2802361"
+    },   	 
+    {
+      "region_code" : "europe-west4",
+      "name" : "Netherlands",
+      "geoname" : "2750405"
+    },   	 
+    {
+      "region_code" : "europe-west3",
+      "name" : "FRANKFURT",
+      "geoname" : "2925533"
+    },   	 
+    {
+      "region_code" : "europe-north1",
+      "name" : "Finland",
+      "geoname" : "660013"
+    },   	 
+    {
+      "region_code" : "asia-south1",
+      "name" : "Mumbai",
+      "geoname" : "1275339"
+    },   	 
+    {
+      "region_code" : "asia-southeast1",
+      "name" : "Singapore",
+      "geoname" : "1880252"
+    },   	 
+    {
+      "region_code" : "asia-east1",
+      "name" : "Taiwan",
+      "geoname" : "1668284"
+    },   	 
+    {
+      "region_code" : "asia-northeast1",
+      "name" : "Tokyo",
+      "geoname" : "1850147"
+    },   	 
+    {
+      "region_code" : "australia-southeast1",
+      "name" : "Sydney",
+      "geoname" : "2147714"
+    }
+]

@@ -27,3 +27,11 @@ Code in [example folder](example/) shows some ways to access and use this ontolo
 
 # Publications
 [BibTeX](BibTeX.md)
+
+# Dependencies
+This project used solutions from the following projects:
+* https://github.com/perma-id/w3id.org/
+* https://github.com/stedolan/jq
+* https://github.com/sparql-generate/sparql-generate
+* https://github.com/dgarijo/Widoco
+  
