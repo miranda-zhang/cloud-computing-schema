@@ -20,15 +20,17 @@ $ gn_search dsoprea -p query "europe" -p max_rows 5
 ```
 Site http://www.geonames.org/
 
-[Map region location with GeoNames features](data/gcloud_region_geoname.json)
+[Region inJurisdiction example mapping (json)](data/gcloud_region_inJurisdiction.json)
+
+This is most useful for 
+[multi-region .](https://cloud.google.com/spanner/docs/instances#available-configurations-multi-region)
+
+[Example queries for this input.](gcloud_region_jq.md#SPARQL-Generate)
 
 ## Additional inforamtion from documentation
-[Googel Cloud region additional information](data/gcloud_region.json)
+[Region inPhysicalLocation example mapping (json)](data/gcloud_region.json)
 
 ## SPARQL-Generate
 Run [queries](sparql-generate/gcloud_region.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](sparql-generate/result/gcloud_region.ttl)
-
-## Reference
-1. https://cloud.google.com/spanner/docs/instances#available-configurations-multi-region

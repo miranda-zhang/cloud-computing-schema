@@ -268,7 +268,8 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#numberOfCores
-:numberOfCores rdf:type owl:DatatypeProperty .
+:numberOfCores rdf:type owl:DatatypeProperty ;
+               rdfs:comment "For Google Cloud, cores and vCPU referes to the same thing." .
 
 
 ###  https://w3id.org/cocoon/v1.0#numericValue
@@ -333,6 +334,11 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
                                             owl:onProperty :hasRegion ;
                                             owl:someValuesFrom :Region
                                           ] .
+
+
+###  http://qudt.org/schema/qudt#Unit
+<http://qudt.org/schema/qudt#Unit> rdf:type owl:Class ;
+                                   owl:equivalentClass :UnitOfMeasure .
 
 
 ###  http://www.geonames.org/ontology#Feature
@@ -876,12 +882,9 @@ System images can be used for backup.""" .
                       owl:someValuesFrom :Storage
                     ] ,
                     [ rdf:type owl:Restriction ;
-                      owl:onProperty :hasVirtualization ;
-                      owl:someValuesFrom :Virtualization
-                    ] ,
-                    [ rdf:type owl:Restriction ;
                       owl:onProperty :numberOfCores ;
-                      owl:someValuesFrom xsd:decimal
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onDataRange xsd:string
                     ] .
 
 

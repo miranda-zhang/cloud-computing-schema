@@ -32,6 +32,7 @@ Code in [example folder](example/) shows some ways to access and use this ontolo
 This project used solutions from the following projects:
 * https://github.com/perma-id/w3id.org/
 * https://github.com/stedolan/jq
+    * Doc https://stedolan.github.io/jq/manual/
 * https://github.com/sparql-generate/sparql-generate
+    * Doc https://ci.mines-stetienne.fr/sparql-generate/apidocs/com/github/thesmartenergy/sparql/generate/jena/iterator/library/package-summary.html
 * https://github.com/dgarijo/Widoco
-  

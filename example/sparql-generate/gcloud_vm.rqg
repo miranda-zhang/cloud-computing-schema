@@ -4,10 +4,11 @@ PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX unit: <http://qudt.org/vocab/unit#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 
 GENERATE { 
-  <data#{?name}> a cocoon:VM;
+  <data/vm/gcloud/{?name}> a cocoon:VM;
     rdfs:label ?name;
     cocoon:numberOfCores ?cores;
     cocoon:hasCPUcapacity[
@@ -21,12 +22,12 @@ GENERATE {
             cocoon:hasUnitOfMeasurement cocoon:GB;
     ];
     GENERATE {
-        <data#{?name}> gr:hasPriceSpecification [ 
+        <data/vm/gcloud/{?name}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double; 
-                gr:hasRegion "{?region}"^^xsd:string;
-                gr:hasUnitOfMeasurement "hour"^^xsd:string ;
+                cocoon:hasRegion <data/region/gcloud/{?region}>;
+                gr:hasUnitOfMeasurement unit:Hour ;
         ] 
     } 
   	ITERATOR iter:JSONPath(?gcloudVM,".price[*]") AS ?price

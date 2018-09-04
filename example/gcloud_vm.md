@@ -19,8 +19,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19
          [ 
             .value | del(
                 .cores, .memory, .gceu,
-                .fixed, .maxNumberOfPd, .maxPdSize, .ssd,
-                .nam3)
+                .fixed, .maxNumberOfPd, .maxPdSize, .ssd)
             | to_entries[] | { "region": .key, "price": .value }
          ] 
     } 

@@ -4,20 +4,12 @@ PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 
 GENERATE {
-    GENERATE {
-        <data/region/gcloud/{?region}> a cocoon:Region;
-            cocoon:inJurisdiction <http://{?geoname_uri_base}/{?uri_id}/>;
-    } 
-  	ITERATOR iter:JSONElement(?geoname,".regions[*]") AS ?regionJSONElement
-    WHERE {
-        BIND (fun:JSONPath(?regionJSONElement,".element") AS ?region)
-    }
-  	.
+    <data/region/gcloud/{?region_code}> a cocoon:Region;
+        cocoon:inPhysicalLocation <http://sws.geonames.org/{?uri_id}/>;
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_region.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?region
 WHERE {
     BIND (fun:JSONPath(?region,".region_code") AS ?region_code)
-    BIND (fun:JSONPath(?region,".name") AS ?name)
-    BIND (fun:JSONPath(?region,".geoname") AS ?geoname)
+    BIND (fun:JSONPath(?region,".geoname") AS ?uri_id)
 }
