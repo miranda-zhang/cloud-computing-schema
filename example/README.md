@@ -1,36 +1,6 @@
 # Request ontology from url
 [GET rdf/ttl via Ajax](ajax.html)
 
-# SPARQL
-
-Default Protégé Example:
-```
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT ?subject ?object
-WHERE { ?subject rdfs:subClassOf ?object }
-```
-
-What `subject`s are `subClassOf` `cocoon:IaaS`?
-```
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX cocoon: <https://w3id.org/cocoon/def#>
-SELECT ?subject 
-WHERE { ?subject rdfs:subClassOf cocoon:IaaS}
-```
-
-```
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
-
-SELECT ?VM ?cores
-WHERE {
-	?VM a cocoon:VM ;
-		cocoon:numberOfCores ?cores.
-}
-```
-
 # JSON-LD Macros example
 https://miranda-zhang.github.io/cloud-computing-schema/json-ld-macros/gcloud.html
 
@@ -53,3 +23,36 @@ are exlained in:
 CoCoOn used vocabularies from [QUDT Unit ontology](QUDT_unit.md).
 And [defined additional units](cocoon_units.md)
 with reference to QUDT.
+
+# SPARQL
+Default Protégé Example
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?subject ?object
+WHERE { ?subject rdfs:subClassOf ?object }
+```
+
+Data set [gcloud_vm.ttl](sparql-generate/result/gcloud_vm.ttl)
+```
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+
+SELECT ?VM ?cores
+WHERE {
+    ?VM a cocoon:VM ;
+        cocoon:numberOfCores ?cores .
+	FILTER( ?cores > 4) .
+}
+ORDER BY DESC(?cores) 
+LIMIT 5
+```
+Results:
+```
+https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160-PREEMPTIBLE	"160"^^<http://www.w3.org/2001/XMLSchema#decimal>	
+https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160	"160"^^<http://www.w3.org/2001/XMLSchema#decimal>	
+https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-96-PREEMPTIBLE	"96"^^<http://www.w3.org/2001/XMLSchema#decimal>	
+https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-96	"96"^^<http://www.w3.org/2001/XMLSchema#decimal>	
+https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-96	"96"^^<http://www.w3.org/2001/XMLSchema#decimal>
+```
