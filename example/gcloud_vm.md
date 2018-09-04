@@ -6,15 +6,27 @@ https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 [A cached version of the json input.](data/pricelist.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19tnmhr2
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/lJ-NVTdFf1
 ```
-.gcp_price_list | . |=with_entries(select(.key|contains("VMIMAGE"))) | 
+.gcp_price_list | . |=with_entries(select(.key| contains("VMIMAGE") )) | 
 [ to_entries[] | 
     {
         "name": .key,
-        "cores": .value.cores,
+        "cores":(
+            if (.key|contains("F1-MICRO")) then
+                0.2 
+            elif (.key|contains("G1-SMALL")) then
+                0.5
+            else .value.cores end
+        ),
         "memory": .value.memory,
-        "gceu": .value.gceu,
+        "gceu": (
+            if .value.gceu="Shared CPU, not guaranteed" then
+                0
+            else .value.gceu end
+        ),
+        "maxNumberOfPd": .value.maxNumberOfPd,
+        "maxPdSize": .value.maxPdSize,
         "price": 
          [ 
             .value | del(
@@ -26,6 +38,10 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/OM19
 ]
 ```
 [A cached version of the result after transformation.](data/gcloud_vm.json)
+
+### Shared-core machine types
+Get the **vCPUs** values for *F1-MICRO* and *G1-SMALL*
+from doc https://cloud.google.com/compute/docs/machine-types
 
 ## Mapping to ontology
 Mapper library

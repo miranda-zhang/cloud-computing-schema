@@ -10,16 +10,25 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 GENERATE { 
   <data/vm/gcloud/{?name}> a cocoon:VM;
     rdfs:label ?name;
-    cocoon:numberOfCores ?cores;
+    cocoon:numberOfCores "{?cores}"^^xsd:decimal;
     cocoon:hasCPUcapacity[
-        a cocoon:PhysicalQuantity;
+        a cocoon:QuantityOfThings;
             cocoon:numericValue ?gceu;
             cocoon:hasUnitOfMeasurement cocoon:gceu;
     ];
     cocoon:hasMemory [
-        a cocoon:PhysicalQuantity;
+        a cocoon:QuantityOfThings;
             cocoon:numericValue ?memory;
             cocoon:hasUnitOfMeasurement cocoon:GB;
+    ];
+    cocoon:hasMaxNumberOfDisk [
+        a cocoon:QuantityOfThings;
+            cocoon:numericValue ?maxNumberOfPd;
+    ];
+    cocoon:hasMaxStorageSize [
+        a cocoon:QuantityOfThings;
+            cocoon:numericValue ?maxPdSize;
+            cocoon:hasUnitOfMeasurement cocoon:TB;
     ];
     GENERATE {
         <data/vm/gcloud/{?name}> gr:hasPriceSpecification [ 
@@ -45,4 +54,6 @@ WHERE {
     BIND (fun:JSONPath(?gcloudVM,".cores") AS ?cores)
     BIND (fun:JSONPath(?gcloudVM,".memory") AS ?memory)
     BIND (fun:JSONPath(?gcloudVM,".gceu") AS ?gceu)
+    BIND (fun:JSONPath(?gcloudVM,".maxNumberOfPd") AS ?maxNumberOfPd)
+    BIND (fun:JSONPath(?gcloudVM,".maxPdSize") AS ?maxPdSize)
 }

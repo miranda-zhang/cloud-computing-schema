@@ -22,15 +22,12 @@ WHERE { ?subject rdfs:subClassOf cocoon:IaaS}
 ```
 
 ```
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT ?subject ?object
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+
+SELECT ?VM ?cores
 WHERE {
-	?subject a cocoon:VM 
+	?VM a cocoon:VM ;
 		cocoon:numberOfCores ?cores.
-	FILTER (?cores > 2) .
 }
 ```
 
@@ -43,9 +40,10 @@ Created with https://github.com/ariutta/json-ld-macros
 ![Workflow](cococon_usage_workflow.png "Workflow Overview")
 
 List of examples:
-1. [Google Cloud VM](gcloud_vm.md)
+1. [Google Cloud VM instance](gcloud_vm.md)
 2. [Google Cloud Storage](gcloud_storage.md)
-
+3. [Google Cloud OS images](gcloud_os.md)
+   
 ## Link Regions with GeoNames Ontology
 How regions from each Cloud provider are linked to GeoNames
 are exlained in:

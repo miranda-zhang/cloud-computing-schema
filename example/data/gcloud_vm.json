@@ -1,9 +1,11 @@
 [
   {
     "name": "CP-COMPUTEENGINE-VMIMAGE-F1-MICRO",
-    "cores": "shared",
+    "cores": 0.2,
     "memory": "0.6",
-    "gceu": "Shared CPU, not guaranteed",
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -93,9 +95,11 @@
   },
   {
     "name": "CP-COMPUTEENGINE-VMIMAGE-G1-SMALL",
-    "cores": "shared",
+    "cores": 0.5,
     "memory": "1.7",
-    "gceu": 1.38,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -187,7 +191,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-1",
     "cores": "1",
     "memory": "3.75",
-    "gceu": 2.75,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -279,7 +285,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-2",
     "cores": "2",
     "memory": "7.5",
-    "gceu": 5.5,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -371,7 +379,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-4",
     "cores": "4",
     "memory": "15",
-    "gceu": 11,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -463,7 +473,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8",
     "cores": "8",
     "memory": "30",
-    "gceu": 22,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -555,7 +567,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-16",
     "cores": "16",
     "memory": "60",
-    "gceu": 44,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -647,7 +661,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-32",
     "cores": "32",
     "memory": "120",
-    "gceu": 88,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -739,7 +755,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-64",
     "cores": "64",
     "memory": "240",
-    "gceu": 176,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -831,7 +849,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-96",
     "cores": "96",
     "memory": "360",
-    "gceu": 264,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -923,7 +943,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-2",
     "cores": "2",
     "memory": "13",
-    "gceu": 5.5,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1015,7 +1037,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-4",
     "cores": "4",
     "memory": "26",
-    "gceu": 11,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1107,7 +1131,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-8",
     "cores": "8",
     "memory": "52",
-    "gceu": 22,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1199,7 +1225,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-16",
     "cores": "16",
     "memory": "104",
-    "gceu": 44,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1291,7 +1319,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-32",
     "cores": "32",
     "memory": "208",
-    "gceu": 88,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1383,7 +1413,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-64",
     "cores": "64",
     "memory": "416",
-    "gceu": 176,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1475,7 +1507,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-96",
     "cores": "96",
     "memory": "624",
-    "gceu": 264,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1567,7 +1601,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-2",
     "cores": "2",
     "memory": "1.8",
-    "gceu": 5.5,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1659,7 +1695,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-4",
     "cores": "4",
     "memory": "3.6",
-    "gceu": 11,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1751,7 +1789,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-8",
     "cores": "8",
     "memory": "7.2",
-    "gceu": 22,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1843,7 +1883,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-16",
     "cores": "16",
     "memory": "14.40",
-    "gceu": 44,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -1935,7 +1977,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-32",
     "cores": "32",
     "memory": "28.80",
-    "gceu": 88,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -2027,7 +2071,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-64",
     "cores": "64",
     "memory": "57.6",
-    "gceu": 176,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -2119,7 +2165,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-96",
     "cores": "96",
     "memory": "86.4",
-    "gceu": 264,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -2211,7 +2259,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-MEGAMEM-96",
     "cores": "96",
     "memory": "1433.6",
-    "gceu": 264,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -2303,7 +2353,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-40",
     "cores": "40",
     "memory": "938",
-    "gceu": 110,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -2395,7 +2447,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-80",
     "cores": "80",
     "memory": "1922",
-    "gceu": 220,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -2487,7 +2541,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160",
     "cores": "160",
     "memory": "3844",
-    "gceu": 440,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -2577,9 +2633,11 @@
   },
   {
     "name": "CP-COMPUTEENGINE-VMIMAGE-F1-MICRO-PREEMPTIBLE",
-    "cores": "shared",
+    "cores": 0.2,
     "memory": "0.6",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -2669,9 +2727,11 @@
   },
   {
     "name": "CP-COMPUTEENGINE-VMIMAGE-G1-SMALL-PREEMPTIBLE",
-    "cores": "shared",
+    "cores": 0.5,
     "memory": "1.7",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -2763,7 +2823,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-1-PREEMPTIBLE",
     "cores": "1",
     "memory": "3.75",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -2855,7 +2917,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-2-PREEMPTIBLE",
     "cores": "2",
     "memory": "7.5",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -2947,7 +3011,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-4-PREEMPTIBLE",
     "cores": "4",
     "memory": "15",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3039,7 +3105,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8-PREEMPTIBLE",
     "cores": "8",
     "memory": "30",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3131,7 +3199,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-16-PREEMPTIBLE",
     "cores": "16",
     "memory": "60",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3223,7 +3293,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-32-PREEMPTIBLE",
     "cores": "32",
     "memory": "120",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3315,7 +3387,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-64-PREEMPTIBLE",
     "cores": "64",
     "memory": "240",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3407,7 +3481,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-96-PREEMPTIBLE",
     "cores": "96",
     "memory": "360",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3499,7 +3575,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-2-PREEMPTIBLE",
     "cores": "2",
     "memory": "13",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3591,7 +3669,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-4-PREEMPTIBLE",
     "cores": "4",
     "memory": "26",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3683,7 +3763,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-8-PREEMPTIBLE",
     "cores": "8",
     "memory": "52",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3775,7 +3857,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-16-PREEMPTIBLE",
     "cores": "16",
     "memory": "104",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3867,7 +3951,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-32-PREEMPTIBLE",
     "cores": "32",
     "memory": "208",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -3959,7 +4045,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-64-PREEMPTIBLE",
     "cores": "64",
     "memory": "416",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4051,7 +4139,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-96-PREEMPTIBLE",
     "cores": "96",
     "memory": "624",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4143,7 +4233,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-2-PREEMPTIBLE",
     "cores": "2",
     "memory": "1.8",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4235,7 +4327,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-4-PREEMPTIBLE",
     "cores": "4",
     "memory": "3.6",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4327,7 +4421,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-8-PREEMPTIBLE",
     "cores": "8",
     "memory": "7.2",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4419,7 +4515,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-16-PREEMPTIBLE",
     "cores": "16",
     "memory": "14.40",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4511,7 +4609,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-32-PREEMPTIBLE",
     "cores": "32",
     "memory": "28.80",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4603,7 +4703,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-64-PREEMPTIBLE",
     "cores": "64",
     "memory": "57.6",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4695,7 +4797,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-96-PREEMPTIBLE",
     "cores": "96",
     "memory": "86.4",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4787,7 +4891,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-MEGAMEM-96-PREEMPTIBLE",
     "cores": "96",
     "memory": "1433.6",
-    "gceu": null,
+    "gceu": 0,
+    "maxNumberOfPd": null,
+    "maxPdSize": null,
     "price": [
       {
         "region": "us",
@@ -4879,7 +4985,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-40-PREEMPTIBLE",
     "cores": "40",
     "memory": "938",
-    "gceu": 110,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -4971,7 +5079,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-80-PREEMPTIBLE",
     "cores": "80",
     "memory": "1922",
-    "gceu": 220,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -5063,7 +5173,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160-PREEMPTIBLE",
     "cores": "160",
     "memory": "3844",
-    "gceu": 440,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",
@@ -5155,7 +5267,9 @@
     "name": "CP-COMPUTEENGINE-VMIMAGE-N1-NODE-96-624",
     "cores": "96",
     "memory": "624",
-    "gceu": 264,
+    "gceu": 0,
+    "maxNumberOfPd": 16,
+    "maxPdSize": 64,
     "price": [
       {
         "region": "us",

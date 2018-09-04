@@ -61,10 +61,6 @@ foaf:page rdf:type owl:AnnotationProperty .
 gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#canInstall
-:canInstall rdf:type owl:ObjectProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#hasApplianceType
 :hasApplianceType rdf:type owl:ObjectProperty .
 
@@ -113,8 +109,13 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 :hasIOConfiguration rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasLocalStorage
-:hasLocalStorage rdf:type owl:ObjectProperty .
+###  https://w3id.org/cocoon/v1.0#hasMaxNumberOfDisk
+:hasMaxNumberOfDisk rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#hasMaxStorageSize
+:hasMaxStorageSize rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasMemory
@@ -216,6 +217,10 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/cocoon/v1.0#isSoftwareType
 :isSoftwareType rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#ofObjectType
+:ofObjectType rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -407,15 +412,11 @@ foaf:Person rdf:type owl:Class .
 :CPU rdf:type owl:Class ;
      rdfs:subClassOf [ rdf:type owl:Restriction ;
                        owl:onProperty :hasBenchmark ;
-                       owl:someValuesFrom :PhysicalQuantity
+                       owl:someValuesFrom :QuantityOfThings
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasClockRate ;
-                       owl:someValuesFrom :PhysicalQuantity
-                     ] ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasLocalStorage ;
-                       owl:someValuesFrom :LocalStorage
+                       owl:someValuesFrom :QuantityOfThings
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :CPUFamily ;
@@ -544,27 +545,7 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0#IaaS
 :IaaS rdf:type owl:Class ;
-      rdfs:subClassOf :CloudService ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasStorage ;
-                        owl:someValuesFrom :Storage
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :fileSystem ;
-                        owl:someValuesFrom xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :persistence ;
-                        owl:someValuesFrom xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :storageFormat ;
-                        owl:someValuesFrom xsd:decimal
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :storageSizeMax ;
-                        owl:someValuesFrom xsd:decimal
-                      ] .
+      rdfs:subClassOf :CloudService .
 
 
 ###  https://w3id.org/cocoon/v1.0#Input
@@ -583,27 +564,18 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0#LocalStorage
 :LocalStorage rdf:type owl:Class ;
-              rdfs:subClassOf :VM .
+              rdfs:subClassOf :Storage .
 
 
 ###  https://w3id.org/cocoon/v1.0#Location
 :Location rdf:type owl:Class .
 
 
-###  https://w3id.org/cocoon/v1.0#MeasurableAttribute
-:MeasurableAttribute rdf:type owl:Class ;
-                     rdfs:subClassOf :Attribute ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :hasMetric ;
-                                       owl:someValuesFrom :Metric
-                                     ] .
-
-
 ###  https://w3id.org/cocoon/v1.0#Metric
 :Metric rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :hasQuantity ;
-                          owl:someValuesFrom :PhysicalQuantity
+                          owl:someValuesFrom :QuantityOfThings
                         ] .
 
 
@@ -617,7 +589,7 @@ foaf:Person rdf:type owl:Class .
          rdfs:subClassOf :IaaS ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasBandwidth ;
-                           owl:someValuesFrom :PhysicalQuantity
+                           owl:someValuesFrom :QuantityOfThings
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :bandwidth ;
@@ -631,11 +603,7 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0#NetworkStorage
 :NetworkStorage rdf:type owl:Class ;
-                rdfs:subClassOf :Network ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasCapacity ;
-                                  owl:someValuesFrom :PhysicalQuantity
-                                ] ,
+                rdfs:subClassOf :Storage ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :hasProtocol ;
                                   owl:someValuesFrom :Protocol
@@ -665,20 +633,6 @@ foaf:Person rdf:type owl:Class .
                           ] .
 
 
-###  https://w3id.org/cocoon/v1.0#PhysicalQuantity
-:PhysicalQuantity rdf:type owl:Class ;
-                  rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasUnitOfMeasurement ;
-                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass :UnitOfMeasure
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :numericValue ;
-                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:double
-                                  ] .
-
-
 ###  https://w3id.org/cocoon/v1.0#PrivateCloud
 :PrivateCloud rdf:type owl:Class ;
               rdfs:subClassOf :DeploymentModel .
@@ -699,6 +653,26 @@ foaf:Person rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0#QualityOfService
 :QualityOfService rdf:type owl:Class .
+
+
+###  https://w3id.org/cocoon/v1.0#QuantityOfThings
+:QuantityOfThings rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasUnitOfMeasurement ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :UnitOfMeasure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :ofObjectType ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :CloudService
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :numericValue ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:double
+                                  ] ;
+                  rdfs:comment "Quantify things, i.e. 3 TB of SSD Storage, 8 GB of Memory" .
 
 
 ###  https://w3id.org/cocoon/v1.0#RDP
@@ -841,11 +815,6 @@ System images can be used for backup.""" .
 :UnitOfMeasure rdf:type owl:Class .
 
 
-###  https://w3id.org/cocoon/v1.0#UnmeasurableAttribute
-:UnmeasurableAttribute rdf:type owl:Class ;
-                       rdfs:subClassOf :Attribute .
-
-
 ###  https://w3id.org/cocoon/v1.0#UsageType
 :UsageType rdf:type owl:Class .
 
@@ -858,33 +827,29 @@ System images can be used for backup.""" .
 :VM rdf:type owl:Class ;
     rdfs:subClassOf :IaaS ,
                     [ rdf:type owl:Restriction ;
-                      owl:onProperty :canInstall ;
-                      owl:someValuesFrom :SystemImage
-                    ] ,
-                    [ rdf:type owl:Restriction ;
-                      owl:onProperty :hasCPU ;
-                      owl:someValuesFrom :CPU
-                    ] ,
-                    [ rdf:type owl:Restriction ;
                       owl:onProperty :hasCPUcapacity ;
-                      owl:someValuesFrom :PhysicalQuantity
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass :QuantityOfThings
                     ] ,
                     [ rdf:type owl:Restriction ;
-                      owl:onProperty :hasIOConfiguration ;
-                      owl:someValuesFrom :Attribute
+                      owl:onProperty :hasMaxNumberOfDisk ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass :QuantityOfThings
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasMaxStorageSize ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass :QuantityOfThings
                     ] ,
                     [ rdf:type owl:Restriction ;
                       owl:onProperty :hasMemory ;
-                      owl:someValuesFrom :PhysicalQuantity
-                    ] ,
-                    [ rdf:type owl:Restriction ;
-                      owl:onProperty :hasNetworkStorage ;
-                      owl:someValuesFrom :Storage
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass :QuantityOfThings
                     ] ,
                     [ rdf:type owl:Restriction ;
                       owl:onProperty :numberOfCores ;
                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                      owl:onDataRange xsd:string
+                      owl:onDataRange xsd:decimal
                     ] .
 
 
@@ -921,6 +886,12 @@ System images can be used for backup.""" .
              :UnitOfMeasure ;
     dc:description "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
     rdfs:label "Gigabyte"@en .
+
+
+:TB rdf:type owl:NamedIndividual ,
+             :UnitOfMeasure ;
+    dc:description "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
+    rdfs:label "Terabyte"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#gceu

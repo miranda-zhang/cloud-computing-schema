@@ -15,7 +15,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/zZcN
 ## Additional inforamtion from documentation 
 https://cloud.google.com/compute/pricing
 
-*Premium images*
+**Premium images**
 
 The price for a premium image is different depending on which machine type you use. For example, a standard SUSE image costs $0.02 per hour to run on an f1-micro instance, but the same image costs $0.11 per hour to run on an n1-standard-8 instance. The prices for premium images are the same worldwide and *do not differ based on zones or regions*.
 
