@@ -21,7 +21,7 @@ are exlained in:
 
 ## Units of Measure
 CoCoOn used vocabularies from [QUDT Unit ontology](QUDT_unit.md).
-And [defined additional units](cocoon_units.md)
+And [defined additional units](unit.md)
 with reference to QUDT.
 
 # SPARQL

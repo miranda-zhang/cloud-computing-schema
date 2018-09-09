@@ -9,6 +9,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vaem: <http://www.linkedmodel.org/schema/vaem> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
 @base <https://w3id.org/cocoon/v1.0> .
 
 <https://w3id.org/cocoon/v1.0> rdf:type owl:Ontology ;
@@ -883,16 +884,21 @@ System images can be used for backup.""" .
 
 ###  https://w3id.org/cocoon/v1.0#GB
 :GB rdf:type owl:NamedIndividual ,
-             :UnitOfMeasure ;
+             :UnitOfMeasure ,
+             qudt:InformationEntropyUnit , qudt:DerivedUnit ;
     dc:description "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
     rdfs:label "Gigabyte"@en .
 
-
 :TB rdf:type owl:NamedIndividual ,
-             :UnitOfMeasure ;
+             :UnitOfMeasure ,
+             qudt:InformationEntropyUnit , qudt:DerivedUnit ;
     dc:description "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
     rdfs:label "Terabyte"@en .
 
+:GBPerMonth
+      rdf:type qudt:DerivedUnit , qudt:DataRateUnit ;
+      rdfs:label "Gigabyte per Month"@en ;
+      dc:description "Often describe 1 GB per Month usage."@en .
 
 ###  https://w3id.org/cocoon/v1.0#gceu
 :gceu rdf:type owl:NamedIndividual ,

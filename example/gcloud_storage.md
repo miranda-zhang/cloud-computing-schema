@@ -32,10 +32,6 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/tt30
 [A cached version of the result after transformation.](data/gcloud_storage.json)
 
 ## Mapping to ontology
-Mapper library
-http://w3id.org/sparql-generate/
-
-[SPARQL-Generate Queries](sparql-generate/gcloud_storage.rqg)
-
-## Result
-[RDF turtle](sparql-generate/result/gcloud_storage.ttl)
+Run [queries](sparql-generate/gcloud_storage.rqg)
+in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+to get [results (RDF turtle)](sparql-generate/result/gcloud_storage.ttl)
