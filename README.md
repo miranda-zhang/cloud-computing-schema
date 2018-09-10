@@ -28,7 +28,7 @@ Code in [example folder](example/) shows some ways to access and use this ontolo
 # Publications
 [BibTeX](BibTeX.md)
 
-# Dependencies
+# References
 This project used solutions from the following projects:
 * https://github.com/perma-id/w3id.org/
 * https://github.com/stedolan/jq
@@ -36,3 +36,7 @@ This project used solutions from the following projects:
 * https://github.com/sparql-generate/sparql-generate
     * Doc https://ci.mines-stetienne.fr/sparql-generate/apidocs/com/github/thesmartenergy/sparql/generate/jena/iterator/library/package-summary.html
 * https://github.com/dgarijo/Widoco
+
+OWL Specifications
+* OWL2 https://www.w3.org/TR/owl2-overview/
+* OWL https://www.w3.org/TR/owl-ref/

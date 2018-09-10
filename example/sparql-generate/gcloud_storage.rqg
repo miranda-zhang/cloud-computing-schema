@@ -1,4 +1,4 @@
-BASE <https://w3id.org/cocoon/> 
+BASE <https://w3id.org/cocoon/data/> 
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +7,16 @@ PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 
 GENERATE { 
-  <data#{?name}> a cocoon:Storage;
+  <storage/gcloud/{?name}> a cocoon:Storage;
     rdfs:label ?name;
     cocoon:hasProvider cocoon:gcloud;
     GENERATE {
-        <data#{?name}> gr:hasPriceSpecification [ 
+        <storage/gcloud/{?name}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
-                cocoon:hasRegion <data/region/gcloud/{?region}>;
+                cocoon:hasRegion <region/gcloud/{?region}>;
         ]
     }
   	ITERATOR iter:JSONPath(?gcloudStorage,".prices[*]") AS ?prices

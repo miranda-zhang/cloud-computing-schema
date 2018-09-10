@@ -9,7 +9,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vaem: <http://www.linkedmodel.org/schema/vaem> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix qudt: <http://qudt.org/schema/qudt#> .
 @base <https://w3id.org/cocoon/v1.0> .
 
 <https://w3id.org/cocoon/v1.0> rdf:type owl:Ontology ;
@@ -249,12 +248,27 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 :bandwidth rdf:type owl:DatatypeProperty .
 
 
+###  https://w3id.org/cocoon/v1.0#chargedPerCore
+:chargedPerCore rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :numberOfCores .
+
+
 ###  https://w3id.org/cocoon/v1.0#description
 :description rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#fileSystem
 :fileSystem rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#forCoresLessEqual
+:forCoresLessEqual rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :numberOfCores .
+
+
+###  https://w3id.org/cocoon/v1.0#forCoresMoreThan
+:forCoresMoreThan rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :numberOfCores .
 
 
 ###  https://w3id.org/cocoon/v1.0#genericName
@@ -342,6 +356,18 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
                                           ] .
 
 
+###  http://qudt.org/schema/qudt#DataRateUnit
+<http://qudt.org/schema/qudt#DataRateUnit> rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt#DerivedUnit
+<http://qudt.org/schema/qudt#DerivedUnit> rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt#InformationEntropyUnit
+<http://qudt.org/schema/qudt#InformationEntropyUnit> rdf:type owl:Class .
+
+
 ###  http://qudt.org/schema/qudt#Unit
 <http://qudt.org/schema/qudt#Unit> rdf:type owl:Class ;
                                    owl:equivalentClass :UnitOfMeasure .
@@ -394,14 +420,6 @@ foaf:Person rdf:type owl:Class .
 ###  https://w3id.org/cocoon/v1.0#BlockDeviceStorage
 :BlockDeviceStorage rdf:type owl:Class ;
                     rdfs:subClassOf :NetworkStorage .
-
-
-###  https://w3id.org/cocoon/v1.0#Bus
-:Bus rdf:type owl:Class ;
-     rdfs:subClassOf [ rdf:type owl:Restriction ;
-                       owl:onProperty :onChip ;
-                       owl:someValuesFrom xsd:boolean
-                     ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#CIFS
@@ -462,10 +480,6 @@ foaf:Person rdf:type owl:Class .
 ###  https://w3id.org/cocoon/v1.0#ClusteredCPU
 :ClusteredCPU rdf:type owl:Class ;
               rdfs:subClassOf :CPU ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasCommunicationBus ;
-                                owl:someValuesFrom :Bus
-                              ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :CPUClockSpeed ;
                                 owl:someValuesFrom xsd:decimal
@@ -609,6 +623,26 @@ foaf:Person rdf:type owl:Class .
                                   owl:onProperty :hasProtocol ;
                                   owl:someValuesFrom :Protocol
                                 ] .
+
+
+###  https://w3id.org/cocoon/v1.0#OSPriceSpecification
+:OSPriceSpecification rdf:type owl:Class ;
+                      rdfs:subClassOf gr:UnitPriceSpecification ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :chargedPerCore ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:boolean
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :forCoresLessEqual ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:decimal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :forCoresMoreThan ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:decimal
+                                      ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#Operation
@@ -884,21 +918,29 @@ System images can be used for backup.""" .
 
 ###  https://w3id.org/cocoon/v1.0#GB
 :GB rdf:type owl:NamedIndividual ,
-             :UnitOfMeasure ,
-             qudt:InformationEntropyUnit , qudt:DerivedUnit ;
+             <http://qudt.org/schema/qudt#DerivedUnit> ,
+             <http://qudt.org/schema/qudt#InformationEntropyUnit> ,
+             :UnitOfMeasure ;
     dc:description "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
     rdfs:label "Gigabyte"@en .
 
+
+###  https://w3id.org/cocoon/v1.0#GBPerMonth
+:GBPerMonth rdf:type owl:NamedIndividual ,
+                     <http://qudt.org/schema/qudt#DataRateUnit> ,
+                     <http://qudt.org/schema/qudt#DerivedUnit> ;
+            dc:description "Often describe 1 GB per Month usage."@en ;
+            rdfs:label "Gigabyte per Month"@en .
+
+
+###  https://w3id.org/cocoon/v1.0#TB
 :TB rdf:type owl:NamedIndividual ,
-             :UnitOfMeasure ,
-             qudt:InformationEntropyUnit , qudt:DerivedUnit ;
+             <http://qudt.org/schema/qudt#DerivedUnit> ,
+             <http://qudt.org/schema/qudt#InformationEntropyUnit> ,
+             :UnitOfMeasure ;
     dc:description "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
     rdfs:label "Terabyte"@en .
 
-:GBPerMonth
-      rdf:type qudt:DerivedUnit , qudt:DataRateUnit ;
-      rdfs:label "Gigabyte per Month"@en ;
-      dc:description "Often describe 1 GB per Month usage."@en .
 
 ###  https://w3id.org/cocoon/v1.0#gceu
 :gceu rdf:type owl:NamedIndividual ,

@@ -25,7 +25,8 @@ And [defined additional units](unit.md)
 with reference to QUDT.
 
 # SPARQL
-Default Protégé Example
+Tested with Protégé.
+Default Example:
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -35,24 +36,9 @@ SELECT ?subject ?object
 WHERE { ?subject rdfs:subClassOf ?object }
 ```
 
-Data set [gcloud_vm.ttl](sparql-generate/result/gcloud_vm.ttl)
-```
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+Examples with the following keywords:
+1. [SELECT FILTER ORDER BY LIMIT](sparql/filter_vm_order_desc_limit.md)
+2. [DISTINCT](sparql/vm_less_or_equal_4cores.md)
 
-SELECT ?VM ?cores
-WHERE {
-    ?VM a cocoon:VM ;
-        cocoon:numberOfCores ?cores .
-	FILTER( ?cores > 4) .
-}
-ORDER BY DESC(?cores) 
-LIMIT 5
-```
-Results:
-```
-https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160-PREEMPTIBLE	"160"^^<http://www.w3.org/2001/XMLSchema#decimal>	
-https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160	"160"^^<http://www.w3.org/2001/XMLSchema#decimal>	
-https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-96-PREEMPTIBLE	"96"^^<http://www.w3.org/2001/XMLSchema#decimal>	
-https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-HIGHMEM-96	"96"^^<http://www.w3.org/2001/XMLSchema#decimal>	
-https://w3id.org/cocoon/data/vm/gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-96	"96"^^<http://www.w3.org/2001/XMLSchema#decimal>
-```
+Additional external examples
+https://www.w3.org/2009/Talks/0615-qbe/

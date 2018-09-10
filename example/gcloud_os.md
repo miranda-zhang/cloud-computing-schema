@@ -6,10 +6,17 @@ https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 [A cached version of the json input.](data/pricelist.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/zZcN03Tdyp
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/jKLnwAJagL
 ```
-.gcp_price_list | ."CP-COMPUTEENGINE-OS"
+.gcp_price_list | ."CP-COMPUTEENGINE-OS" | map_values(
+    if .cores == "shared" 
+    then .cores = 0.5 
+    else . end 
+)
 ```
+Replace all "shared" with 0.5. According to
+[additional info from doc](#Additional-inforamtion-from-documentation).
+
 [A cached version of the result after transformation.](data/gcloud_os.json)
 
 ## Additional inforamtion from documentation 
@@ -72,10 +79,6 @@ Google recommends that you do not use SQL Server images on f1-micro or g1-small 
 Unlike other premium images, SQL Server images are charged a 10 minute minimum. After 10 minutes, SQL Server images are charged in 1 minute increments.
 
 ## Mapping to ontology
-Mapper library
-http://w3id.org/sparql-generate/
-
-[SPARQL-Generate Queries](sparql-generate/gcloud_os.rqg)
-
-## Result
-[RDF turtle](sparql-generate/result/gcloud_os.ttl)
+Run [queries](sparql-generate/gcloud_os.rqg)
+in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+to get [results (RDF turtle)](sparql-generate/result/gcloud_os.ttl)

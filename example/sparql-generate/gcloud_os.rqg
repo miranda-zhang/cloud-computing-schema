@@ -1,4 +1,4 @@
-BASE <https://w3id.org/cocoon/> 
+BASE <https://w3id.org/cocoon/data/> 
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,27 +7,51 @@ PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 
 GENERATE { 
-  <data#{?name}> a cocoon:SystemImage;
+  <os/glcoud/{?name}> a cocoon:SystemImage;
     rdfs:label ?name;
     cocoon:hasProvider cocoon:gcloud;
-    GENERATE {
-        <data#{?name}> gr:hasPriceSpecification [ 
-            a gr:UnitPriceSpecification ; 
+    <os/glcoud/{?name}> gr:hasPriceSpecification [ 
+        a cocoon:OSPriceSpecification ; 
+            gr:hasCurrency "USD"^^xsd:string; 
+            gr:hasCurrencyValue "{?low}"^^xsd:double;
+            cocoon:forCoresLessEqual "{?cores}"^^xsd:decimal;
+            cocoon:chargedPerCore "{?percore}"^^xsd:boolean;
+    ] 
+    IF(bound(?highest),
+        <os/glcoud/{?name}> gr:hasPriceSpecification [ 
+            a cocoon:OSPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double; 
-                gr:hasRegion "{?region}"^^xsd:string;
-        ] 
-    } 
-  	ITERATOR iter:JSONPath(?gcloudStorage,".prices[*]") AS ?prices
-    WHERE {
-        BIND (fun:JSONPath(?prices,".price") AS ?regionalPrice)
-        BIND (fun:JSONPath(?prices,".region") AS ?region)
-    }   
-  	.
- 
+                gr:hasCurrencyValue "{?high}"^^xsd:double;
+                cocoon:forCoresMoreThan "{?cores}"^^xsd:decimal;
+                cocoon:chargedPerCore "{?percore}"^^xsd:boolean;
+                cocoon:forCoresLessEqual "{?cores2Times}"^^xsd:decimal;
+        ]
+        <os/glcoud/{?name}> gr:hasPriceSpecification [ 
+            a cocoon:OSPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue "{?highest}"^^xsd:double;
+                cocoon:forCoresMoreThan "{?cores2Times}"^^xsd:decimal;
+                cocoon:chargedPerCore "{?percore}"^^xsd:boolean;
+        ]
+    ,
+        <os/glcoud/{?name}> gr:hasPriceSpecification [ 
+            a cocoon:OSPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue "{?high}"^^xsd:double;
+                cocoon:forCoresMoreThan "{?cores}"^^xsd:decimal;
+                cocoon:chargedPerCore "{?percore}"^^xsd:boolean;
+        ]
+    )
+
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_storage.json> AS ?source
-ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudStorage
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_os.json> AS ?source
+ITERATOR  iter:JSONListKeys(?source) AS ?key
 WHERE {
-    BIND (fun:JSONPath(?gcloudStorage,".name") AS ?name)
+    BIND(fun:JSONPath(?source, '$.{?key}' ) AS ?OSPriceSpec)
+    BIND(fun:JSONPath(?OSPriceSpec, '.low' ) AS ?low)
+    BIND(fun:JSONPath(?OSPriceSpec, '.high' ) AS ?high)
+    BIND(fun:JSONPath(?OSPriceSpec, '.percore' ) AS ?percore)
+    BIND(fun:JSONPath(?OSPriceSpec, '.cores' ) AS ?cores)
+    BIND(fun:JSONPath(?OSPriceSpec, '.highest' ) AS ?highest)
+    BIND(?cores * 2) AS ?cores2Times)
 }

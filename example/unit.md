@@ -13,7 +13,7 @@
     dc:description "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
     rdfs:label "Terabyte"@en .
 
-unit:GBPerMonth
+:GBPerMonth
       rdf:type qudt:DerivedUnit , qudt:DataRateUnit ;
       rdfs:label "Gigabyte per Month"@en ;
       dc:description "Often describe 1 GB per Month usage."@en .
