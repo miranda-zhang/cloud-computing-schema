@@ -6,9 +6,10 @@ https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 [A cached version of the json input.](data/pricelist.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/lnIN3Yr4Xm
+
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/1s7kQ1l13V
 ```
-.gcp_price_list | ."CP-COMPUTEENGINE-OS" | del( ."suse-sap") | map_values(
+.gcp_price_list | ."CP-COMPUTEENGINE-OS" | map_values(
     if .cores == "shared" 
     then .cores = 0.5 
     else . end 
@@ -16,21 +17,6 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/lnIN
 
 ```
 [A cached version of the result after transformation.](data/gcloud_os.json)
-
-[suse-sap](#SUSE-images-and-SLES-for-SAP-images) is charged a bit different from other images,
-so it is [mapped separately](#suse-sap-mapping).
-```
-.gcp_price_list."CP-COMPUTEENGINE-OS"."suse-sap"
-```
-```
-{
-  "low": 0.17,
-  "high": 0.34,
-  "highest": 0.41,
-  "cores": "2",
-  "percore": false
-}
-```
 
 Replace all "shared" with 0.5. According to
 [additional info from doc](#Additional-inforamtion-from-documentation).
@@ -100,11 +86,25 @@ Google recommends that you do not use SQL Server images on f1-micro or g1-small 
 Unlike other premium images, SQL Server images are charged a 10 minute minimum. After 10 minutes, SQL Server images are charged in 1 minute increments.
 
 ## Mapping to ontology
-Run [queries](sparql-generate/gcloud_os.rqg)
+Run [simple queries with data without suse-sap](sparql-generate/gcloud_os.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](sparql-generate/result/gcloud_os.ttl)
 
-### suse-sap mapping
+### suse-sap mapping explained
+[suse-sap](#SUSE-images-and-SLES-for-SAP-images) is charged a bit different from other images.
+```
+.gcp_price_list."CP-COMPUTEENGINE-OS"."suse-sap"
+```
+```
+{
+  "low": 0.17,
+  "high": 0.34,
+  "highest": 0.41,
+  "cores": "2",
+  "percore": false
+}
+```
+
 ```
 <https://w3id.org/cocoon/data/os/glcoud/suse-sap>
         a                         cocoon:SystemImage ;

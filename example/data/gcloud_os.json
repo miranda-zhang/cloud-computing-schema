@@ -29,6 +29,13 @@
     "cores": 0.5,
     "percore": false
   },
+  "suse-sap": {
+    "low": 0.17,
+    "high": 0.34,
+    "highest": 0.41,
+    "cores": "2",
+    "percore": false
+  },
   "sql-standard": {
     "low": 0.1645,
     "high": 0.1645,

@@ -1,4 +1,6 @@
 # CoCoOn Units
+Defined with reference to
+[QUDT Unit ontology](QUDT_unit.md)
 
 ```
 :GB rdf:type owl:NamedIndividual ,
@@ -22,4 +24,3 @@
 Tenative
 * dollar per hour
 * USD per core/hour
-* 

@@ -14,25 +14,41 @@ GENERATE {
     <os/glcoud/{?key}> gr:hasPriceSpecification [ 
         a cocoon:OSPriceSpecification ; 
             gr:hasCurrency "USD"^^xsd:string; 
-            gr:hasCurrencyValue "{?low}"^^xsd:double;
-            cocoon:forCoresLessEqual "{?cores}"^^xsd:decimal;
-            cocoon:chargedPerCore "{?percore}"^^xsd:boolean;
+            gr:hasCurrencyValue ?low;
+            cocoon:forCoresLessEqual ?cores;
+            cocoon:chargedPerCore ?percore;
     ] .
 
     <os/glcoud/{?key}> gr:hasPriceSpecification [ 
         a cocoon:OSPriceSpecification ; 
             gr:hasCurrency "USD"^^xsd:string; 
-            gr:hasCurrencyValue "{?high}"^^xsd:double;
-            cocoon:forCoresMoreThan "{?cores}"^^xsd:decimal;
-            cocoon:chargedPerCore "{?percore}"^^xsd:boolean;
+            gr:hasCurrencyValue ?high;
+            cocoon:forCoresMoreThan ?cores;
+            cocoon:chargedPerCore ?percore;
+            cocoon:forCoresLessEqual ?cores2Times;
     ] .
+
+    GENERATE {
+        <os/glcoud/{?key}> gr:hasPriceSpecification [ 
+            a cocoon:OSPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?highest;
+                cocoon:forCoresMoreThan ?cores2Times;
+                cocoon:chargedPerCore ?percore;
+        ] .
+    } WHERE {
+        FILTER( BOUND(?highest) )
+    }    .
+
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_os.json> AS ?source
 ITERATOR  iter:JSONListKeys(?source) AS ?key
 WHERE {
     BIND(fun:JSONPath(?source, '$.{?key}' ) AS ?OSPriceSpec)
-    BIND(fun:JSONPath(?OSPriceSpec, '.low' ) AS ?low)
-    BIND(fun:JSONPath(?OSPriceSpec, '.high' ) AS ?high)
-    BIND(fun:JSONPath(?OSPriceSpec, '.percore' ) AS ?percore)
-    BIND(fun:JSONPath(?OSPriceSpec, '.cores' ) AS ?cores)
+    BIND( xsd:double( fun:JSONPath(?OSPriceSpec, '.low' ) ) AS ?low)
+    BIND( xsd:double( fun:JSONPath(?OSPriceSpec, '.high' ) ) AS ?high)
+    BIND( xsd:boolean( fun:JSONPath(?OSPriceSpec, '.percore' ) ) AS ?percore)
+    BIND( xsd:decimal( fun:JSONPath(?OSPriceSpec, '.cores' ) ) AS ?cores)
+    BIND( xsd:decimal( fun:JSONPath(?OSPriceSpec, '.highest' ) ) AS ?highest)
+    BIND( xsd:decimal( IF( BOUND(?highest) , ?cores * 2 , ?undef ) ) AS ?cores2Times)
 }
