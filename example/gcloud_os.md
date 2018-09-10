@@ -6,18 +6,39 @@ https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 [A cached version of the json input.](data/pricelist.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/jKLnwAJagL
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/lnIN3Yr4Xm
 ```
-.gcp_price_list | ."CP-COMPUTEENGINE-OS" | map_values(
+.gcp_price_list | ."CP-COMPUTEENGINE-OS" | del( ."suse-sap") | map_values(
     if .cores == "shared" 
     then .cores = 0.5 
     else . end 
-)
+) | ."windows-server-core" = ."win"
+
 ```
+[A cached version of the result after transformation.](data/gcloud_os.json)
+
+[suse-sap](#SUSE-images-and-SLES-for-SAP-images) is charged a bit different from other images,
+so it is [mapped separately](#suse-sap-mapping).
+```
+.gcp_price_list."CP-COMPUTEENGINE-OS"."suse-sap"
+```
+```
+{
+  "low": 0.17,
+  "high": 0.34,
+  "highest": 0.41,
+  "cores": "2",
+  "percore": false
+}
+```
+
 Replace all "shared" with 0.5. According to
 [additional info from doc](#Additional-inforamtion-from-documentation).
 
-[A cached version of the result after transformation.](data/gcloud_os.json)
+Because [windows-server-core](#windows-server-core-mapping) has 'null' value from json input.
+We process it separately. 
+From the [doc](#-Windows-Server-images), it seems `windows-server-core`
+and `win` have the same price spec.
 
 ## Additional inforamtion from documentation 
 https://cloud.google.com/compute/pricing
@@ -82,3 +103,30 @@ Unlike other premium images, SQL Server images are charged a 10 minute minimum. 
 Run [queries](sparql-generate/gcloud_os.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](sparql-generate/result/gcloud_os.ttl)
+
+### suse-sap mapping
+```
+<https://w3id.org/cocoon/data/os/glcoud/suse-sap>
+        a                         cocoon:SystemImage ;
+        rdfs:label                "suse-sap" ;
+        gr:hasPriceSpecification  [ a                         cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasCurrencyValue       "0.17"^^xsd:double ;
+                                    cocoon:chargedPerCore     false ;
+                                    cocoon:forCoresLessEqual  "2"^^xsd:decimal
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.34"^^xsd:double ;
+                                    cocoon:chargedPerCore    false ;
+                                    cocoon:forCoresMoreThan  "2"^^xsd:decimal;
+                                    cocoon:forCoresLessEqual "4"^^xsd:decimal
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.41"^^xsd:double ;
+                                    cocoon:chargedPerCore    false ;
+                                    cocoon:forCoresMoreThan  "4"^^xsd:decimal
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+```

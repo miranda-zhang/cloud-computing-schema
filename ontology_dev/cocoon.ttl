@@ -250,7 +250,8 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/cocoon/v1.0#chargedPerCore
 :chargedPerCore rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf :numberOfCores .
+                rdfs:subPropertyOf :numberOfCores ;
+                rdfs:comment "For Google Cloud, cost of SQL server image is charged on per core basis."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#description
@@ -263,12 +264,14 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/cocoon/v1.0#forCoresLessEqual
 :forCoresLessEqual rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :numberOfCores .
+                   rdfs:subPropertyOf :numberOfCores ;
+                   rdfs:comment "Google Cloud OS price for VM with different number of cores are different."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#forCoresMoreThan
 :forCoresMoreThan rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf :numberOfCores .
+                  rdfs:subPropertyOf :numberOfCores ;
+                  rdfs:comment "Google Cloud OS price for VM with different number of cores are different."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#genericName

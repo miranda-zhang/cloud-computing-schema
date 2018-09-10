@@ -5,7 +5,12 @@
     "cores": 0.5,
     "percore": true
   },
-  "windows-server-core": null,
+  "windows-server-core": {
+    "low": 0.02,
+    "high": 0.04,
+    "cores": 0.5,
+    "percore": true
+  },
   "rhel": {
     "low": 0.06,
     "high": 0.13,
@@ -22,13 +27,6 @@
     "low": 0.02,
     "high": 0.11,
     "cores": 0.5,
-    "percore": false
-  },
-  "suse-sap": {
-    "low": 0.17,
-    "high": 0.34,
-    "highest": 0.41,
-    "cores": "2",
     "percore": false
   },
   "sql-standard": {

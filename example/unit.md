@@ -19,5 +19,7 @@
       dc:description "Often describe 1 GB per Month usage."@en .
 
 ```
-
-dollor per hour
+Tenative
+* dollar per hour
+* USD per core/hour
+* 
