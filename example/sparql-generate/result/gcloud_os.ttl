@@ -57,14 +57,44 @@
                                   ] ;
         cocoon:hasProvider        cocoon:gcloud .
 
+<https://w3id.org/cocoon/data/os/glcoud/suse-sap>
+        a                         cocoon:SystemImage ;
+        rdfs:label                "suse-sap" ;
+        gr:hasPriceSpecification  [ a                        cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.41 ;
+                                    cocoon:chargedPerCore    false ;
+                                    cocoon:forCoresMoreThan  "4"^^xsd:decimal
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasCurrencyValue       "0.34"^^xsd:double ;
+                                    cocoon:chargedPerCore     false ;
+                                    cocoon:forCoresLessEqual  "4"^^xsd:decimal ;
+                                    cocoon:forCoresMoreThan   "2"^^xsd:decimal
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasCurrencyValue       "0.17"^^xsd:double ;
+                                    cocoon:chargedPerCore     false ;
+                                    cocoon:forCoresLessEqual  "2"^^xsd:decimal
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
 <https://w3id.org/cocoon/data/os/glcoud/windows-server-core>
         a                         cocoon:SystemImage ;
         rdfs:label                "windows-server-core" ;
-        gr:hasPriceSpecification  [ a               cocoon:OSPriceSpecification ;
-                                    gr:hasCurrency  "USD"
+        gr:hasPriceSpecification  [ a                        cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.04"^^xsd:double ;
+                                    cocoon:chargedPerCore    true ;
+                                    cocoon:forCoresMoreThan  0.5
                                   ] ;
-        gr:hasPriceSpecification  [ a               cocoon:OSPriceSpecification ;
-                                    gr:hasCurrency  "USD"
+        gr:hasPriceSpecification  [ a                         cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasCurrencyValue       "0.02"^^xsd:double ;
+                                    cocoon:chargedPerCore     true ;
+                                    cocoon:forCoresLessEqual  0.5
                                   ] ;
         cocoon:hasProvider        cocoon:gcloud .
 

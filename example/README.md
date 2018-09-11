@@ -10,19 +10,21 @@ Created with https://github.com/ariutta/json-ld-macros
 ![Workflow](cococon_usage_workflow.png "Workflow Overview")
 
 List of examples:
-1. [Google Cloud VM instance](gcloud_vm.md)
-2. [Google Cloud Storage](gcloud_storage.md)
-3. [Google Cloud OS images](gcloud_os.md)
+1. [Google Cloud VM instance](gcloud/vm.md)
+2. [Google Cloud Storage](gcloud/storage.md)
+3. [Google Cloud OS images](gcloud/os.md)
+4. [Microsoft Azure VM instance](azure/vm.md)
    
 ## Link Regions with GeoNames Ontology
 How regions from each Cloud provider are linked to GeoNames
 are exlained in:
-1. [Google Cloud Region](gcloud_region.md) 
+1. [Google Cloud Region](gcloud/region.md) 
 
 ## Units of Measure
-CoCoOn used vocabularies from [QUDT Unit ontology](QUDT_unit.md).
-And [defined additional units](unit.md)
-with reference to QUDT.
+CoCoOn used vocabularies from:
+* [QUDT Unit ontology](unit/QUDT.md)
+* [cdt:ucum](unit/cdt.md)
+And [defined additional units](unit/README.md)
 
 # SPARQL
 Tested with Protégé.

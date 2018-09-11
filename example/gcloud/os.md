@@ -3,7 +3,7 @@
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 
-[A cached version of the json input.](data/pricelist.json)
+[A cached version of the json input.](../data/pricelist.json)
 
 ## Cleaning and Transformation
 
@@ -16,7 +16,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/1s7k
 ) | ."windows-server-core" = ."win"
 
 ```
-[A cached version of the result after transformation.](data/gcloud_os.json)
+[A cached version of the result after transformation.](../data/gcloud_os.json)
 
 Replace all "shared" with 0.5. According to
 [additional info from doc](#Additional-inforamtion-from-documentation).
@@ -86,15 +86,17 @@ Google recommends that you do not use SQL Server images on f1-micro or g1-small 
 Unlike other premium images, SQL Server images are charged a 10 minute minimum. After 10 minutes, SQL Server images are charged in 1 minute increments.
 
 ## Mapping to ontology
-Run [simple queries with data without suse-sap](sparql-generate/gcloud_os.rqg)
+Run [queries](../sparql-generate/gcloud_os.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](sparql-generate/result/gcloud_os.ttl)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud_os.ttl)
 
-### suse-sap mapping explained
+### suse-sap mapping
 [suse-sap](#SUSE-images-and-SLES-for-SAP-images) is charged a bit different from other images.
+jq
 ```
 .gcp_price_list."CP-COMPUTEENGINE-OS"."suse-sap"
 ```
+jq result
 ```
 {
   "low": 0.17,
@@ -104,29 +106,29 @@ to get [results (RDF turtle)](sparql-generate/result/gcloud_os.ttl)
   "percore": false
 }
 ```
-
+sparql result
 ```
 <https://w3id.org/cocoon/data/os/glcoud/suse-sap>
         a                         cocoon:SystemImage ;
         rdfs:label                "suse-sap" ;
+        gr:hasPriceSpecification  [ a                        cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.41 ;
+                                    cocoon:chargedPerCore    false ;
+                                    cocoon:forCoresMoreThan  "4"^^xsd:decimal
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:OSPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasCurrencyValue       "0.34"^^xsd:double ;
+                                    cocoon:chargedPerCore     false ;
+                                    cocoon:forCoresLessEqual  "4"^^xsd:decimal ;
+                                    cocoon:forCoresMoreThan   "2"^^xsd:decimal
+                                  ] ;
         gr:hasPriceSpecification  [ a                         cocoon:OSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
                                     gr:hasCurrencyValue       "0.17"^^xsd:double ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "2"^^xsd:decimal
-                                  ] ;
-        gr:hasPriceSpecification  [ a                        cocoon:OSPriceSpecification ;
-                                    gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.34"^^xsd:double ;
-                                    cocoon:chargedPerCore    false ;
-                                    cocoon:forCoresMoreThan  "2"^^xsd:decimal;
-                                    cocoon:forCoresLessEqual "4"^^xsd:decimal
-                                  ] ;
-        gr:hasPriceSpecification  [ a                        cocoon:OSPriceSpecification ;
-                                    gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.41"^^xsd:double ;
-                                    cocoon:chargedPerCore    false ;
-                                    cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         cocoon:hasProvider        cocoon:gcloud .
 ```

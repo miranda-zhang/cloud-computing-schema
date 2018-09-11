@@ -1,6 +1,6 @@
 # CoCoOn Units
 Defined with reference to
-[QUDT Unit ontology](QUDT_unit.md)
+[QUDT Unit ontology](QUDT.md)
 
 ```
 :GB rdf:type owl:NamedIndividual ,
