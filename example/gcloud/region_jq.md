@@ -1,6 +1,6 @@
 # Google Cloud: extract region codes from json imput useing jq
 Related topics:
-[Manually mapping Google Cloud regions](gcloud_region.md)
+[Manually mapping Google Cloud regions](region.md)
 
 ## Getting Input
 Data: original json for Google Cloud
@@ -58,7 +58,7 @@ Result
 ```
 
 ## SPARQL-Generate
-[Construct Geonames mapping](gcloud_region.md#GeoNames)
+[Construct Geonames mapping](region.md#GeoNames)
 Run [queries](sparql-generate/gcloud_region_inJurisdiction.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](sparql-generate/result/gcloud_region_inJurisdiction.ttl)

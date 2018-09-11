@@ -29,7 +29,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/tt30
     } 
 ]
 ```
-[A cached version of the result after transformation.](../data/gcloud_storage.json)
+[A cached version of the result after transformation.](../data/jq/gcloud/storage.json)
 
 ## Mapping to ontology
 Run [queries](../sparql-generate/gcloud_storage.rqg)

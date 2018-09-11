@@ -1,0 +1,23 @@
+{
+    "payg-one-year-subscription": {
+        "offers": {}
+    },
+    "payg-three-year-subscription": {
+        "offers": {}
+    },
+    "one-year-one-year-subscription": {
+        "offers": {}
+    },
+    "one-year-three-year-subscription": {
+        "offers": {}
+    },
+    "three-year-one-year-subscription": {
+        "offers": {}
+    },
+    "three-year-three-year-subscription": {
+        "offers": {}
+    },
+    "discounts": [
+        "mosp"
+    ]
+}

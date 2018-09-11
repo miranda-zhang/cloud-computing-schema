@@ -1,6 +1,6 @@
 # Data Mapping Example: Google Cloud Regions
 
-[Programtically extract region codes from json imput](gcloud_region_jq.md)
+[Programtically extract region codes from json imput](region_jq.md)
 can only obtain region codes,
 by inspecting the documentation https://cloud.google.com/about/locations/,
 more detailed mapping can be manually constructed.
@@ -20,15 +20,15 @@ $ gn_search dsoprea -p query "europe" -p max_rows 5
 ```
 Site http://www.geonames.org/
 
-[Region inJurisdiction example mapping (json)](data/gcloud_region_inJurisdiction.json)
+[Region inJurisdiction example mapping (json)](data/jq/gcloud/region_inJurisdiction.json)
 
 This is most useful for 
 [multi-region .](https://cloud.google.com/spanner/docs/instances#available-configurations-multi-region)
 
-[Example queries for this input.](gcloud_region_jq.md#SPARQL-Generate)
+[Example queries for this input.](region_jq.md#SPARQL-Generate)
 
 ## Additional inforamtion from documentation
-[Region inPhysicalLocation example mapping (json)](data/gcloud_region.json)
+[Region inPhysicalLocation example mapping (json)](../data/jq/gcloud/region.json)
 
 ## SPARQL-Generate
 Run [queries](sparql-generate/gcloud_region.rqg)
