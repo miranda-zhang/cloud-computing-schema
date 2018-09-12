@@ -34,7 +34,7 @@ This project used solutions from the following projects:
 * https://github.com/stedolan/jq
     * Doc https://stedolan.github.io/jq/manual/
 * https://github.com/sparql-generate/sparql-generate
-    * Doc https://ci.mines-stetienne.fr/sparql-generate/apidocs/com/github/thesmartenergy/sparql/generate/jena/iterator/library/package-summary.html
+    * Doc https://ci.mines-stetienne.fr/sparql-generate/apidocs/allclasses-noframe.html
 * https://github.com/dgarijo/Widoco
 
 OWL Specifications

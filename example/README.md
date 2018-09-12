@@ -18,7 +18,8 @@ List of examples:
 ## Link Regions with GeoNames Ontology
 How regions from each Cloud provider are linked to GeoNames
 are exlained in:
-1. [Google Cloud Region](gcloud/region.md) 
+1. [Google Cloud Region](gcloud/region.md)
+2. [Microsoft Azure Cloud Region](azure/region.md) 
 
 ## Units of Measure
 CoCoOn used vocabularies from:

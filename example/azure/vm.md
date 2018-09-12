@@ -5,11 +5,11 @@ https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?cul
 [A cached version of the json input.](../data/azure/vm_base.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/lJ-NVTdFf1
+Apply transformation using `jq`, view the live snippet 
 ```
 
 ```
-[A cached version of the result after transformation.](../data/gcloud_vm.json)
+[A cached version of the result after transformation.]()
 
 ## Mapping to ontology
 Run [queries](../sparql-generate/gcloud_vm.rqg)
