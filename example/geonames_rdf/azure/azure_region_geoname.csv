@@ -1,0 +1,52 @@
+Region;Location;Continent;geoname_id
+North Central US;Illinois;Americas;4896861
+South Central US;Texas;Americas;4736286
+West US;California;Americas;5332921
+North Europe;Ireland;Europe;2963597
+West Europe;Netherlands;Europe;2750405
+France Central;Paris;Europe;2988507
+France South;Marseille;Europe;2995469
+Germany Northeast;Magdeburg;Europe;2874545
+Norway East;Norway;Europe;3144096
+Norway West;Norway;Europe;3144096
+Australia East;New South Wales;Asia Pacific;2155400
+South India;Chennai;Asia Pacific;1264527
+Japan West;Osaka;Asia Pacific;1853909
+US Gov. Arizona;Arizona;North America;5551752
+US Gov. Texas;Texas;North America;4736286
+South Africa West;Cape Town;Middle East and Africa;3369157
+South Africa North;Johannesburg;Middle East and Africa;993800
+East US 2;Virginia;Americas;10861432
+Central US;Iowa;Americas;10861432
+West Central US;Wyoming;Americas;10861432
+West US 2;Washington;Americas;10861432
+Canada East;Quebec City;Americas;10861432
+Canada Central;Toronto;Americas;10861432
+Brazil South;Sao Paulo State;Americas;10861432
+UK West;Cardiff;Europe;6255148
+UK South;London;Europe;6255148
+Germany Central;Frankfurt;Europe;6255148
+Germany North;Germany North;Europe;6255148
+Germany West Central;Germany West Central;Europe;6255148
+Switzerland North;Zurich;Europe;6255148
+Switzerland West;Geneva;Europe;6255148
+US Gov. Virginia;Virginia;North America;6255149
+US Gov. Iowa;Iowa;North America;6255149
+US DoD East;Virginia;North America;6255149
+US DoD Central;Iowa;North America;6255149
+US Sec East;Undisclosed;North America;6255149
+US Sec West;Undisclosed;North America;6255149
+East Asia;Hong Kong;Asia;6255147
+Australia Southeast;Victoria;Asia;6255147
+Australia Central;Canberra;Asia;6255147
+Australia Central 2;Canberra;Asia;6255147
+China East;Shanghai;Asia;6255147
+China North;Beijing;Asia;6255147
+China East 2;Shanghai;Asia;6255147
+China North 2;Beijing;Asia;6255147
+Central India;Pune;Asia;6255147
+West India;Mumbai;Asia;6255147
+Japan East;Tokyo, Saitama;Asia;6255147
+Korea Central;Seoul;Asia;6255147
+Korea South;Busan;Asia;6255147
+UAE North;Dubai;Middle East;6269133

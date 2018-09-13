@@ -9,27 +9,30 @@ echo "-----------Searching--------------"
 inputfile=$1
 column_input=$2
 column_output=$3
-matched_output=$4
-not_matched_output=$5
+matched_output_file=$4
+not_matched_output_file=$5
+isNewOutput=$6
 separator=";"
 tempfile1="temp1"
 tempfile2="temp2"
 
 # remove empty lines
 sed -i.bak '/^$/d' $inputfile
+header=$(sed 1q $inputfile)
+# remove header
+sed 1d $inputfile > $tempfile1
 if [ $column_input -eq $column_output ]; then
-    awk -F ""$separator"" "{print $"$column_input"}" "$inputfile" > "$tempfile1"
-    cat "$tempfile1" | sort | uniq > $tempfile2
+    awk -F ""$separator"" "{print $"$column_input"}" "$tempfile1" > "$tempfile2"
     # remove the following words
-    sed -i 's/\<Location\>//g' $tempfile2
-    sed -i 's/\<Continent\>//g' $tempfile2
     sed -i 's/\<Undisclosed\>//g' $tempfile2
-else
-    cat $inputfile > $tempfile2
+    cat "$tempfile2" | sort | uniq > $tempfile1
 fi
 
 # clear output doc
-> $not_matched_output
+> $not_matched_output_file
+if $isNewOutput ; then
+    echo "$header;geoname_id" > $matched_output_file
+fi
 not_matched=0
 matched=0
 while IFS="" read -r line || [ -n "$line" ]
@@ -42,21 +45,21 @@ do
         name_original=$(awk -F ""$separator"" "{print $"$column_output"}" <<< "$line" | xargs)
     fi
 
-    gn_search dsoprea -p query "$name_to_search" -p max_rows 10 > $tempfile1
-    occurrence=$(grep -Ec "\[$name_to_search\]" $tempfile1)
+    gn_search dsoprea -p query "$name_to_search" -p max_rows 10 > $tempfile2
+    occurrence=$(grep -Ec "\[$name_to_search\]" $tempfile2)
 
     if [ $occurrence -eq 1 ]; then 
-        geoname_uri_no=$(grep -E "\[$name_to_search\]" $tempfile1 | grep -Eo "\/[0-9]+\/" | grep -Eo "[0-9]+")
-        result="$name_original$separator$geoname_uri_no"
-        echo "$name_to_search: $result"
-        echo $result >> $matched_output
+        geoname_uri_no=$(grep -E "\[$name_to_search\]" $tempfile2 | grep -Eo "\/[0-9]+\/" | grep -Eo "[0-9]+")
+        echo "$name_to_search: $geoname_uri_no"
+        result="$line$separator$geoname_uri_no"
+        echo $result >> $matched_output_file
         ((matched++))
     else
         echo "$line"
-        echo "$line" >> $not_matched_output
+        echo "$line" >> $not_matched_output_file
         ((not_matched++))
     fi
-done < $tempfile2
+done < $tempfile1
 
 echo "-------------------------"
 echo "Matched:"$matched

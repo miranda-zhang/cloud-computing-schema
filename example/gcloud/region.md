@@ -31,6 +31,6 @@ This is most useful for
 [Region inPhysicalLocation example mapping (json)](../data/jq/gcloud/region.json)
 
 ## SPARQL-Generate
-Run [queries](sparql-generate/gcloud_region.rqg)
+Run [queries](../sparql-generate/gcloud/region.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](sparql-generate/result/gcloud_region.ttl)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/region.ttl)
