@@ -1,0 +1,21 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+
+GENERATE {
+    <region/azure/{?region_code}> a cocoon:Region;
+        rdfs:label ?RegionHumanReadable;
+        cocoon:location ?Location;
+        cocoon:continent ?Continent;
+        cocoon:inJurisdiction <http://sws.geonames.org/{?geoname_id}/>;
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/geonames_rdf/azure/azure_region_out.csv> AS ?csv
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/geonames_rdf/azure/azure_region_out.csv> AS ?csv
+ITERATOR iter:CSV(?csv) AS ?region
+WHERE {
+    BIND (fun:CSV(?region,"Region") AS ?RegionHumanReadable)
+    BIND (fun:CSV(?region,"Location") AS ?Location)
+    BIND (fun:CSV(?region,"Continent") AS ?Continent)
+    BIND (fun:CSV(?region,"geoname_id") AS ?geoname_id)
+}

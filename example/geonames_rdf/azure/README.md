@@ -28,6 +28,7 @@
     i.e. bulk edit the *Continent* column:
     `Asia Pacific`->`Asia`
     `Middle East and Africa`->`Middle East`
+    
     `. search_geoname_id.sh "guess_mapping.txt" 3 1 "azure_region_geoname.csv" "not_matched_locations.txt" false`
    2. If data left is small, each entry can be inspected manually
     i.e. for some names there are multiple entries associated with it 
@@ -40,4 +41,5 @@
 6. Result is the combination of
    [azure_region_geoname.csv](azure_region_geoname.csv) and
    [manually_matched.csv](manually_matched.csv)
+
    `cat "azure_region_geoname.csv" "manually_matched.csv" > "azure_region_out.csv"`

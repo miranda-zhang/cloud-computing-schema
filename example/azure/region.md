@@ -151,6 +151,10 @@ Obtained by run `jq '.regions'` on [vm_base.json](../data/azure/vm_base.json)
 
 ```
 
+```
+.regions | to_entries[] | {(.value.displayName): .value.slug}
+```
+
 ## Documentation
 https://azure.microsoft.com/en-au/global-infrastructure/locations/
 

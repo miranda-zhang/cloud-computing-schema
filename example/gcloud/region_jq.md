@@ -59,6 +59,6 @@ Result
 
 ## SPARQL-Generate
 [Construct Geonames mapping](region.md#GeoNames)
-Run [queries](sparql-generate/gcloud_region_inJurisdiction.rqg)
+Run [queries](../sparql-generate/gcloud/region_inJurisdiction.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](sparql-generate/result/gcloud_region_inJurisdiction.ttl)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/region_inJurisdiction.ttl)

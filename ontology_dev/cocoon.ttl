@@ -254,6 +254,12 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
                 rdfs:comment "For Google Cloud, cost of SQL server image is charged on per core basis."@en .
 
 
+###  https://w3id.org/cocoon/v1.0#continent
+:continent rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :location ;
+           rdfs:comment "Similar to location, this property specifies the continent."@en .
+
+
 ###  https://w3id.org/cocoon/v1.0#description
 :description rdf:type owl:DatatypeProperty .
 
@@ -284,6 +290,11 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/cocoon/v1.0#latency
 :latency rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The human-readable name for the actual location of region data center, this is more useful when an accurate linking to Geoname ontology haven't been established."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#method
@@ -751,6 +762,16 @@ foaf:Person rdf:type owl:Class .
                           owl:onProperty :inPhysicalLocation ;
                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                           owl:onClass <http://www.geonames.org/ontology#Feature>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :continent ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :location ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
                         ] .
 
 [ rdf:type owl:Axiom ;
@@ -760,7 +781,7 @@ foaf:Person rdf:type owl:Class .
                          owl:onProperty :inJurisdiction ;
                          owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
                        ] ;
-   rdfs:comment "For regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
+   rdfs:comment "Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
  ] .
 
 

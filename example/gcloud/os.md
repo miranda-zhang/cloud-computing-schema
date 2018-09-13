@@ -86,7 +86,7 @@ Google recommends that you do not use SQL Server images on f1-micro or g1-small 
 Unlike other premium images, SQL Server images are charged a 10 minute minimum. After 10 minutes, SQL Server images are charged in 1 minute increments.
 
 ## Mapping to ontology
-Run [queries](../sparql-generate/gcloud_os.rqg)
+Run [queries](../sparql-generate/gcloud/os.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](../sparql-generate/result/gcloud_os.ttl)
 
