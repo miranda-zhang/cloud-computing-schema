@@ -12,7 +12,7 @@ to get [result](../jq/azure/vm_base_offers.json).
 ## SPARQL-Generat Executable
 https://ci.mines-stetienne.fr/sparql-generate/language-cli.html
 ```
-java -jar sparql-generate-jena.jar --output result/azure/vm_base.ttl --query-file azure/vm_base.rqg
+java -jar sparql-generate-jena.jar --output result/azure/vm_base.ttl --query-file azure/vm_base.rqg --log-level ERROR
 ```
 
 ## Mapping to ontology
