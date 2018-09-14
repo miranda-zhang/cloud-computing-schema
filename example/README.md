@@ -14,6 +14,7 @@ List of examples:
 2. [Google Cloud Storage](gcloud/storage.md)
 3. [Google Cloud OS images](gcloud/os.md)
 4. [Microsoft Azure VM instance](azure/vm.md)
+5. [Microsoft Azure Storage](azure/storage.md)
    
 ## Link Regions with GeoNames Ontology
 How regions from each Cloud provider are linked to GeoNames

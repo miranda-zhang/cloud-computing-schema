@@ -9,20 +9,17 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 GENERATE { 
   <price_specification/azure/storage_transaction> a cocoon:StorageTransactionsPriceSpecification;
     rdfs:label "Azure VM Storage transactions price specification";
-    GENERATE {
-        <price_specification/azure/storage_transaction> gr:hasPriceSpecification [ 
-            a gr:UnitPriceSpecification ; 
-                gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?value; 
-                cocoon:hasRegion <region/azure/{?region_slug}>;
-                gr:billingIncrement "10000"^^xsd:int ]
-        ] 
-    }
+    gr:hasPriceSpecification [ 
+        a gr:UnitPriceSpecification ; 
+            gr:hasCurrency "USD"^^xsd:string; 
+            gr:hasCurrencyValue ?value; 
+            cocoon:hasRegion <region/azure/{?region_slug}>;
+    ] 
  
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/vm_base_storageTransactions.json> AS ?source
 BIND (fun:JSONPath(?source,"$.prices") AS ?prices)
-ITERATOR iter:JSONListKeys(??prices) AS ?region_slug
+ITERATOR iter:JSONListKeys(?prices) AS ?region_slug
 WHERE {
-    BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region_slug}.value") ) AS ?value)
+    BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region_slug}.value") / 10000 ) AS ?value)
 }

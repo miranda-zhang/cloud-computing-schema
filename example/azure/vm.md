@@ -41,9 +41,5 @@ to get [result](../jq/azure/vm_base_storageTransactions.json).
 
 ## Mapping to ontology
 Run [queries](../sparql-generate/azure/vm_base_storageTransactions.rqg)
-with [SPARQL-Generate Executable](#SPARQL-Generate-Executable)
-```
-java -jar sparql-generate-jena.jar --output result/azure/vm_base.ttl --query-file azure/vm_base.rqg --log-level ERROR
-```
-to get [results (RDF turtle)](../sparql-generate/result/azure/vm_base.ttl)
-
+in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+to get [results (RDF turtle)](../sparql-generate/result/azure/vm_base_storageTransactions.ttl)

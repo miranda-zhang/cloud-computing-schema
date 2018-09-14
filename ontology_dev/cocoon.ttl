@@ -396,10 +396,6 @@ foaf:Person rdf:type owl:Class .
      rdfs:subClassOf :Software .
 
 
-###  https://w3id.org/cocoon/v1.0#AccessControl
-:AccessControl rdf:type owl:Class .
-
-
 ###  https://w3id.org/cocoon/v1.0#Appliance
 :Appliance rdf:type owl:Class ;
            rdfs:subClassOf :PaaS ,
@@ -416,10 +412,6 @@ foaf:Person rdf:type owl:Class .
 ###  https://w3id.org/cocoon/v1.0#Application
 :Application rdf:type owl:Class ;
              rdfs:subClassOf :SoftwareType .
-
-
-###  https://w3id.org/cocoon/v1.0#Attribute
-:Attribute rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#BLOBStorage
@@ -489,26 +481,12 @@ foaf:Person rdf:type owl:Class .
                 rdfs:subClassOf :DeploymentModel .
 
 
-###  https://w3id.org/cocoon/v1.0#Credential
-:Credential rdf:type owl:Class ;
-            rdfs:subClassOf :AccessControl ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasPassword ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass :Password
-                            ] .
-
-
 ###  https://w3id.org/cocoon/v1.0#CustomizableAppliance
 :CustomizableAppliance rdf:type owl:Class ;
                        rdfs:subClassOf :Appliance ,
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty :hasScript ;
                                          owl:someValuesFrom :Script
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasVirtualizationFormat ;
-                                         owl:someValuesFrom :VirtualizationFormat
                                        ] ,
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty :hasOperatingSystem ;
@@ -853,10 +831,6 @@ System images can be used for backup.""" .
 :UnitOfMeasure rdf:type owl:Class .
 
 
-###  https://w3id.org/cocoon/v1.0#UsageType
-:UsageType rdf:type owl:Class .
-
-
 ###  https://w3id.org/cocoon/v1.0#VM
 :VM rdf:type owl:Class ;
     rdfs:subClassOf :IaaS ,
@@ -904,10 +878,6 @@ System images can be used for backup.""" .
 ###  https://w3id.org/cocoon/v1.0#Virtualization
 :Virtualization rdf:type owl:Class ;
                 rdfs:subClassOf :Software .
-
-
-###  https://w3id.org/cocoon/v1.0#VirtualizationFormat
-:VirtualizationFormat rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#WSDL
