@@ -88,7 +88,7 @@ Unlike other premium images, SQL Server images are charged a 10 minute minimum. 
 ## Mapping to ontology
 Run [queries](../sparql-generate/gcloud/os.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud_os.ttl)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/os.ttl)
 
 ### suse-sap mapping
 [suse-sap](#SUSE-images-and-SLES-for-SAP-images) is charged a bit different from other images.

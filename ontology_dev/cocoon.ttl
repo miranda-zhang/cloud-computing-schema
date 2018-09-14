@@ -130,10 +130,6 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 :hasMetric rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasNetworkStorage
-:hasNetworkStorage rdf:type owl:ObjectProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#hasNonFunctionalProperty
 :hasNonFunctionalProperty rdf:type owl:ObjectProperty .
 
@@ -879,6 +875,10 @@ System images can be used for backup.""" .
 :VM rdf:type owl:Class ;
     rdfs:subClassOf :IaaS ,
                     [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasStorage ;
+                      owl:someValuesFrom :QuantityOfThings
+                    ] ,
+                    [ rdf:type owl:Restriction ;
                       owl:onProperty :hasCPUcapacity ;
                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                       owl:onClass :QuantityOfThings
@@ -959,6 +959,13 @@ System images can be used for backup.""" .
     rdfs:label "Terabyte"@en .
 
 
+###  https://w3id.org/cocoon/v1.0#azure
+:azure rdf:type owl:NamedIndividual ,
+                gr:BusinessEntity ;
+       gr:name "Microsoft Azure Cloud" ;
+       foaf:page <https://azure.microsoft.com/> .
+
+
 ###  https://w3id.org/cocoon/v1.0#gceu
 :gceu rdf:type owl:NamedIndividual ,
                :UnitOfMeasure ;
@@ -971,11 +978,6 @@ System images can be used for backup.""" .
                  gr:BusinessEntity ;
         gr:name "Google Cloud" ;
         foaf:page <https://cloud.google.com/> .
-
-:azure rdf:type owl:NamedIndividual ,
-                 gr:BusinessEntity ;
-        gr:name "Microsoft Azure Cloud" ;
-        foaf:page <https://azure.microsoft.com/> .
 
 
 ###  https://w3id.org/cocoon/v1.0#mirandazhangqian

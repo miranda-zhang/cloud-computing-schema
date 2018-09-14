@@ -1,0 +1,50 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX unit: <http://qudt.org/vocab/unit#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+
+GENERATE { 
+  <vm/azure/{?vm_key}> a cocoon:VM;
+    rdfs:label ?vm_key;
+    cocoon:numberOfCores ?cores;
+    cocoon:hasMemory [
+        a cocoon:QuantityOfThings;
+            cocoon:numericValue ?memory;
+            cocoon:hasUnitOfMeasurement cocoon:GB;
+    ];
+    cocoon:hasStorage [
+        a cocoon:QuantityOfThings;
+            cocoon:numericValue ?diskSize;
+            cocoon:hasUnitOfMeasurement cocoon:GB;
+            cocoon:ofObjectType cocoon:LocalStorage;
+    ];
+
+    GENERATE {
+        <vm/azure/{?vm_key}> gr:hasPriceSpecification [ 
+            a gr:UnitPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?value; 
+                cocoon:hasRegion <region/azure/{?region_slug}>;
+                gr:hasUnitOfMeasurement unit:Hour ;
+        ] 
+    }
+    ITERATOR iter:JSONListKeys(?prices) AS ?region_slug
+    WHERE {
+        BIND (xsd:double ( fun:JSONPath(?prices,".{?region_slug}.value") ) AS ?value)
+    }   
+  	.
+ 
+}
+SOURCE <https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?culture=en-au&discount=mosp> AS ?source
+ITERATOR iter:JSONListKeys(?offers) AS ?vm_key
+WHERE {
+    BIND ( fun:JSONPath(?source,"$.offers") AS ?offers)
+    BIND (xsd:decimal ( fun:JSONPath(?source,".{?vm_key}.cores") ) AS ?cores)
+    BIND (xsd:decimal ( fun:JSONPath(?source,".{?vm_key}.ram") ) AS ?memory)
+    BIND (xsd:decimal ( fun:JSONPath(?source,".{?vm_key}.diskSize") ) AS ?diskSize)
+    BIND (fun:JSONPath(?source,".{?vm_key}.prices") AS ?prices)
+}
