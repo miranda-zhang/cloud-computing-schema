@@ -28,7 +28,7 @@ This is most useful for
 [Example queries for this input.](region_jq.md#SPARQL-Generate)
 
 ## Additional inforamtion from documentation
-[Region inPhysicalLocation example mapping (json)](../data/jq/gcloud/region.json)
+[Region inPhysicalLocation example mapping (json)](../jq/gcloud/region.json)
 
 ## SPARQL-Generate
 Run [queries](../sparql-generate/gcloud/region.rqg)

@@ -16,7 +16,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/1s7k
 ) | ."windows-server-core" = ."win"
 
 ```
-[A cached version of the result after transformation.](../data/jq/gcloud/os.json)
+[A cached version of the result after transformation.](../jq/gcloud/os.json)
 
 Replace all "shared" with 0.5. According to
 [additional info from doc](#Additional-inforamtion-from-documentation).

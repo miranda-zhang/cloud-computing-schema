@@ -11,7 +11,7 @@ GENERATE {
         cocoon:inJurisdiction <http://sws.geonames.org/{?geoname_id}/>;
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/geonames_rdf/azure/azure_region_out.csv> AS ?csv
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/geonames_rdf/azure/azure_region_out.csv> AS ?csv
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/region.json> AS ?json
 ITERATOR iter:CSV(?csv) AS ?region
 WHERE {
     BIND (fun:CSV(?region,"Region") AS ?RegionHumanReadable)

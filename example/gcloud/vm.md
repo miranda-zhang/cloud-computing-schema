@@ -37,7 +37,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/lJ-N
     } 
 ]
 ```
-[A cached version of the result after transformation.](../data/jq/gcloud/vm.json)
+[A cached version of the result after transformation.](../jq/gcloud/vm.json)
 
 ### Shared-core machine types
 Get the **vCPUs** values for *F1-MICRO* and *G1-SMALL*
