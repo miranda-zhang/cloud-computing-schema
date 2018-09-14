@@ -496,11 +496,6 @@ foaf:Person rdf:type owl:Class .
                               owl:onProperty :hasPassword ;
                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                               owl:onClass :Password
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasUser ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass :User
                             ] .
 
 
@@ -559,11 +554,6 @@ foaf:Person rdf:type owl:Class .
 ###  https://w3id.org/cocoon/v1.0#IaaS
 :IaaS rdf:type owl:Class ;
       rdfs:subClassOf :CloudService .
-
-
-###  https://w3id.org/cocoon/v1.0#Input
-:Input rdf:type owl:Class ;
-       rdfs:subClassOf :Operation .
 
 
 ###  https://w3id.org/cocoon/v1.0#Interface
@@ -641,15 +631,6 @@ foaf:Person rdf:type owl:Class .
                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onDataRange xsd:decimal
                                       ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Operation
-:Operation rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#Output
-:Output rdf:type owl:Class ;
-        rdfs:subClassOf :Operation .
 
 
 ###  https://w3id.org/cocoon/v1.0#PaaS
@@ -847,6 +828,15 @@ foaf:Person rdf:type owl:Class .
                          ] .
 
 
+###  https://w3id.org/cocoon/v1.0#StorageTransactionsPriceSpecification
+:StorageTransactionsPriceSpecification rdf:type owl:Class ;
+                                       rdfs:subClassOf gr:UnitPriceSpecification ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty gr:hasPriceSpecification ;
+                                                         owl:someValuesFrom gr:UnitPriceSpecification
+                                                       ] .
+
+
 ###  https://w3id.org/cocoon/v1.0#SystemImage
 :SystemImage rdf:type owl:Class ;
              rdfs:subClassOf :PaaS ;
@@ -867,16 +857,17 @@ System images can be used for backup.""" .
 :UsageType rdf:type owl:Class .
 
 
-###  https://w3id.org/cocoon/v1.0#User
-:User rdf:type owl:Class .
-
-
 ###  https://w3id.org/cocoon/v1.0#VM
 :VM rdf:type owl:Class ;
     rdfs:subClassOf :IaaS ,
                     [ rdf:type owl:Restriction ;
                       owl:onProperty :hasStorage ;
                       owl:someValuesFrom :QuantityOfThings
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty gr:hasPriceSpecification ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass :StorageTransactionsPriceSpecification
                     ] ,
                     [ rdf:type owl:Restriction ;
                       owl:onProperty :hasCPUcapacity ;

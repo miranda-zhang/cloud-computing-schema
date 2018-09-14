@@ -1,0 +1,28 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+
+GENERATE { 
+  <price_specification/azure/storage_transaction> a cocoon:StorageTransactionsPriceSpecification;
+    rdfs:label "Azure VM Storage transactions price specification";
+    GENERATE {
+        <price_specification/azure/storage_transaction> gr:hasPriceSpecification [ 
+            a gr:UnitPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?value; 
+                cocoon:hasRegion <region/azure/{?region_slug}>;
+                gr:billingIncrement "10000"^^xsd:int ]
+        ] 
+    }
+ 
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/vm_base_storageTransactions.json> AS ?source
+BIND (fun:JSONPath(?source,"$.prices") AS ?prices)
+ITERATOR iter:JSONListKeys(??prices) AS ?region_slug
+WHERE {
+    BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region_slug}.value") ) AS ?value)
+}
