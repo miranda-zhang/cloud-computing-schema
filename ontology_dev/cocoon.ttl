@@ -294,7 +294,7 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/cocoon/v1.0#location
 :location rdf:type owl:DatatypeProperty ;
-          rdfs:comment "The human-readable name for the actual location of region data center, this is more useful when an accurate linking to Geoname ontology haven't been established."@en .
+          rdfs:comment "The human-readable name for the actual location of the data center in a region, this is the original value used to generate the linking to Geoname ontology."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#method
@@ -471,18 +471,6 @@ foaf:Person rdf:type owl:Class .
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty gr:hasPriceSpecification ;
                                 owl:someValuesFrom gr:UnitPriceSpecification
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasCredential ;
-                                owl:someValuesFrom :Credential
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasDeploymentModel ;
-                                owl:someValuesFrom :DeploymentModel
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :isAvailableIn ;
-                                owl:someValuesFrom :Location
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasProvider ;
@@ -759,6 +747,11 @@ foaf:Person rdf:type owl:Class .
                           owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
                         ] ,
                         [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasProvider ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass gr:BusinessEntity
+                        ] ,
+                        [ rdf:type owl:Restriction ;
                           owl:onProperty :inPhysicalLocation ;
                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                           owl:onClass <http://www.geonames.org/ontology#Feature>
@@ -978,6 +971,11 @@ System images can be used for backup.""" .
                  gr:BusinessEntity ;
         gr:name "Google Cloud" ;
         foaf:page <https://cloud.google.com/> .
+
+:azure rdf:type owl:NamedIndividual ,
+                 gr:BusinessEntity ;
+        gr:name "Microsoft Azure Cloud" ;
+        foaf:page <https://azure.microsoft.com/> .
 
 
 ###  https://w3id.org/cocoon/v1.0#mirandazhangqian

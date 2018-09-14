@@ -1,6 +1,7 @@
 BASE <https://w3id.org/cocoon/data/> 
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 
 GENERATE {
@@ -9,13 +10,16 @@ GENERATE {
         cocoon:location ?Location;
         cocoon:continent ?Continent;
         cocoon:inJurisdiction <http://sws.geonames.org/{?geoname_id}/>;
+        cocoon:hasProvider cocoon:azure;
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/geonames_rdf/azure/azure_region_out.csv> AS ?csv
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/region.json> AS ?json
-ITERATOR iter:CSV(?csv) AS ?region
+ITERATOR iter:CustomCSV(?csv, '"', ";", "\n",true ) AS ?region
 WHERE {
-    BIND (fun:CSV(?region,"Region") AS ?RegionHumanReadable)
-    BIND (fun:CSV(?region,"Location") AS ?Location)
-    BIND (fun:CSV(?region,"Continent") AS ?Continent)
-    BIND (fun:CSV(?region,"geoname_id") AS ?geoname_id)
+    BIND (fun:CustomCSV(?region,"Region",'"',";", "\n",true) AS ?RegionHumanReadable)
+    BIND (fun:CustomCSV(?region,"Location",'"',";", "\n",true) AS ?Location)
+    BIND (fun:CustomCSV(?region,"Continent",'"',";", "\n",true) AS ?Continent)
+    BIND (fun:CustomCSV(?region,"geoname_id",'"',";", "\n",true) AS ?geoname_id)
+    BIND (fun:JSONPath(?json,"$.['{?RegionHumanReadable}']") AS ?slug)
+    BIND ( IF( BOUND(?slug) , ?slug , ?RegionHumanReadable ) AS ?region_code)
 }

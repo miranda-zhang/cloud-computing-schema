@@ -2,9 +2,18 @@
 ## human-readbale name to slug mapping
 Obtained by run
 ```
-.regions | [to_entries[] | {"key": .value.displayName, "value": .value.slug}]|from_entries
+.regions | 
+[
+  to_entries[] |
+  {
+    "key": .value.displayName, 
+    "value": .value.slug
+  }
+] | from_entries
 ```
 on [vm_base.json](../data/azure/vm_base.json)
+
+Try live on jq playground https://jqplay.org/s/eRBisoYbDb
 
 Result: [region.json](../jq/azure/region.json)
 
