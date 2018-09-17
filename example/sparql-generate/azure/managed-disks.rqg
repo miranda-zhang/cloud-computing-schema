@@ -1,0 +1,51 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+
+GENERATE { 
+  <storage/azure/{?managed_disk}> a cocoon:NetworkStorage;
+    rdfs:label ?name;
+    cocoon:hasProvider cocoon:azure;
+    cocoon:hasStorageIOMax [
+        a cocoon:QuantityOfThings;
+            cocoon:numericValue ?iops;
+            cocoon:hasUnitOfMeasurement cocoon:IOPs;
+    ];
+    cocoon:hasStorageSize [
+        a cocoon:QuantityOfThings;
+            cocoon:numericValue ?size;
+            cocoon:hasUnitOfMeasurement cocoon:GB;
+    ];
+    cocoon:hasStorageThroughputMax [
+        a cocoon:QuantityOfThings;
+            cocoon:numericValue ?speed;
+            cocoon:hasUnitOfMeasurement cocoon:MBPerSec;
+    ];
+    GENERATE {
+        <storage/azure/{?managed_disk}> gr:hasPriceSpecification [ 
+            a gr:UnitPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?value;
+                gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
+                cocoon:hasRegion <region/azure/{?region}>;
+        ]
+    }
+  	ITERATOR iter:JSONListKeys(?prices) AS ?region
+    WHERE {
+        BIND (xsd:double( fun:JSONPath(?source,"$.{?region_slug}.value") ) AS ?value )
+    }   
+  	.
+ 
+}
+SOURCE <https://azure.microsoft.com/api/v2/pricing/managed-disks/calculator/?culture=en-au&discount=mosp> AS ?source
+ITERATOR iter:JSONListKeys(?source) AS ?managed_disk
+WHERE {
+    BIND (xsd:int( fun:JSONPath(?source,"$.{?vm_key}.iops") ) AS ?iops )
+    BIND (xsd:int( fun:JSONPath(?source,"$.{?vm_key}.size") ) AS ?size)
+    BIND (xsd:int( fun:JSONPath(?source,"$.{?vm_key}.speed") ) AS ?speed)
+    BIND (fun:JSONPath(?source,"$.{?vm_key}.prices") AS ?prices)
+}

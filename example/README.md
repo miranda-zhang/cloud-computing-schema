@@ -25,8 +25,9 @@ are exlained in:
 ## Units of Measure
 CoCoOn used vocabularies from:
 * [QUDT Unit ontology](unit/QUDT.md)
-* [cdt:ucum](unit/cdt.md)
 And [defined additional units](unit/README.md)
+
+Using [cdt:ucum](unit/cdt.md) could be a future work.
 
 # SPARQL
 Tested with Protégé.

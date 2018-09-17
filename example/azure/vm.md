@@ -5,17 +5,18 @@ https://ci.mines-stetienne.fr/sparql-generate/language-cli.html
 # Getting Input
 Data: original json for Azure Cloud
 https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?culture=en-au&discount=mosp
+
 [A cached version of the json input.](../data/azure/vm_base.json)
 
 # VM Basic
 ## Data extraction
 Apply transformation `jq '.offers | del( .transactions)'`
-on [input](#Getting-Input)
+on [input](#getting-input)
 to get [result](../jq/azure/vm_base_offers.json).
 
 ## Mapping to ontology
 Run [queries](../sparql-generate/azure/vm_base.rqg)
-with [SPARQL-Generate Executable](#SPARQL-Generate-Executable)
+with [SPARQL-Generate Executable](#sparql-generate-executable)
 ```
 java -jar sparql-generate-jena.jar --output result/azure/vm_base.ttl --query-file azure/vm_base.rqg --log-level ERROR
 ```
@@ -36,7 +37,7 @@ https://www.rhipe.com/azure-storage-transactions/
 
 ## Data extraction
 Apply transformation `jq '.offers.transactions'`
-on [input](#Getting-Input)
+on [input](#getting-input)
 to get [result](../jq/azure/vm_base_storageTransactions.json).
 
 ## Mapping to ontology
