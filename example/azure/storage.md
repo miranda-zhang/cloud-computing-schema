@@ -16,11 +16,8 @@ to get [result](../jq/azure/managed-disks.json).
 
 ## Mapping to ontology
 Run [queries](../sparql-generate/azure/managed-disks.rqg)
-with [SPARQL-Generate Executable](#SPARQL-Generate-Executable)
-```
-java -jar sparql-generate-jena.jar --output result/azure/vm_base.ttl --query-file azure/vm_base.rqg --log-level ERROR
-```
-to get [results (RDF turtle)](../sparql-generate/result/azure/vm_base.ttl)
+in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+to get [results (RDF turtle)](../sparql-generate/result/azure/managed-disks.ttl)
 
 # Data transactions cost
 From the [doc](#doc)
@@ -29,7 +26,14 @@ From the [doc](#doc)
 >We charge $0.0005 per 10,000 transactions for Standard HDD Managed Disks. Any type of operation against the storage is counted as a transaction, including reads, writes and deletes.
 
 ## Transform input
-Apply transformation
+Apply the following transformations on [input](#input)
+```
+.offers | . |=with_entries(
+    select ( .key |contains("transactions"))
+)
+```
+Result: [managed-disk-transactions.json](../jq/azure/managed-disk-transactions.json)
+
 ```
 .offers | . |=with_entries(
     select ( .key |
@@ -39,13 +43,34 @@ Apply transformation
             (contains("transactions") | not)
         )
     )
-) |
-{
-    "hdd-disks" : [to_entries[] | .key]
-}
+) | [to_entries[] | .key]
 ```
-on [input](#input)
-to get [result](../jq/azure/managed-disks-hdd.json).
+Result: [managed-disk-hdd.json](../jq/azure/managed-disk-hdd.json)
+
+```
+.offers | . |=with_entries(
+    select ( .key |
+        (
+            contains("ssd") and
+            (contains("snapshot") | not) and
+            (contains("transactions") | not)
+        )
+    )
+) | [to_entries[] | .key]
+```
+Result: [managed-disk-ssd.json](../jq/azure/managed-disk-ssd.json)
+
+## Mapping to ontology
+In [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+run the following queries: 
+1. [map storage transactions price spec(json) to](../sparql-generate/azure/managed-disk-transactions.rqg)
+   [RDF](../sparql-generate/result/azure/managed-disk-transactions.ttl)
+2. [map hdd storage to its transaction price](../sparql-generate/azure/managed-disk-hdd.rqg)
+   : [View result RDF (turtle)](../sparql-generate/result/azure/managed-disks.ttl)
+3. [map ssd storage to its transaction price](../sparql-generate/azure/managed-disk-hdd.rqg)
+   : [View result RDF (turtle)](../sparql-generate/result/azure/managed-disks.ttl)
+
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/managed-disks-hdd.json> AS ?managed-disks-hdd
 
 # Disk Snapshots
 From the [doc](#doc)

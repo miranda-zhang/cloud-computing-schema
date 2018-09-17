@@ -7,8 +7,8 @@ PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 
 GENERATE { 
-  <price_specification/azure/storage_transaction/vm_base> a cocoon:StorageTransactionsPriceSpecification;
-    rdfs:label "Azure VM Storage transactions price specification";
+  <price_specification/azure/storage_transaction/managed_disk> a cocoon:StorageTransactionsPriceSpecification;
+    rdfs:label "Azure managed disks storage transactions price specification";
     gr:hasPriceSpecification [ 
         a gr:UnitPriceSpecification ; 
             gr:hasCurrency "USD"^^xsd:string; 
@@ -17,9 +17,10 @@ GENERATE {
     ] 
  
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/vm_base_storageTransactions.json> AS ?source
-BIND (fun:JSONPath(?source,"$.prices") AS ?prices)
-ITERATOR iter:JSONListKeys(?prices) AS ?region_slug
+SOURCE <https://azure.microsoft.com/api/v2/pricing/managed-disks/calculator/?culture=en-au&discount=mosp> AS ?source
+BIND (fun:JSONPath(?source,"$.offers.['transactions-hdd']") AS ?transactions_hdd)
+
+ITERATOR iter:JSONPath(?managed-disks-hdd,"$[*]") AS ?hdd
 WHERE {
     BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region_slug}.value") / 10000 ) AS ?value)
 }

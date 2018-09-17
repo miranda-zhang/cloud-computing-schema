@@ -1,6 +1,6 @@
 # SPARQL example
 ## Data set 
-[gcloud_vm.ttl](../sparql-generate/result/gcloud_vm.ttl)
+[gcloud_vm.ttl](../sparql-generate/result/gcloud/vm.ttl)
 
 ## Query
 ```

@@ -8,23 +8,9 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 
 GENERATE { 
   <storage/azure/{?managed_disk}> a cocoon:NetworkStorage;
-    rdfs:label ?name;
+    rdfs:label ?managed_disk;
     cocoon:hasProvider cocoon:azure;
-    cocoon:hasStorageIOMax [
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?iops;
-            cocoon:hasUnitOfMeasurement cocoon:IOPs;
-    ];
-    cocoon:hasStorageSize [
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?size;
-            cocoon:hasUnitOfMeasurement cocoon:GB;
-    ];
-    cocoon:hasStorageThroughputMax [
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?speed;
-            cocoon:hasUnitOfMeasurement cocoon:MBPerSec;
-    ];
+    
     GENERATE {
         <storage/azure/{?managed_disk}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
@@ -36,16 +22,37 @@ GENERATE {
     }
   	ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
-        BIND (xsd:double( fun:JSONPath(?source,"$.{?region_slug}.value") ) AS ?value )
-    }   
-  	.
- 
+        BIND (xsd:double( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
+    } .
+
+    GENERATE {
+        <storage/azure/{?managed_disk}>
+        cocoon:hasStorageIOMax [
+            a cocoon:QuantityOfThings;
+                cocoon:numericValue ?iops;
+                cocoon:hasUnitOfMeasurement cocoon:IOPs;
+        ];
+        cocoon:hasStorageSize [
+            a cocoon:QuantityOfThings;
+                cocoon:numericValue ?size;
+                cocoon:hasUnitOfMeasurement cocoon:GB;
+        ];
+        cocoon:hasStorageThroughputMax [
+            a cocoon:QuantityOfThings;
+                cocoon:numericValue ?speed;
+                cocoon:hasUnitOfMeasurement cocoon:MBPerSec;
+        ];
+    } WHERE {
+        BIND (xsd:int( fun:JSONPath(?managed_disk_json,"$.iops") ) AS ?iops )
+        BIND (xsd:int( fun:JSONPath(?managed_disk_json,"$.size") ) AS ?size)
+        BIND (xsd:int( fun:JSONPath(?managed_disk_json,"$.speed") ) AS ?speed)        
+        FILTER( BOUND(?iops) )
+        # either ?iops ?size ?speed are all bound or non is bound
+    } .
 }
-SOURCE <https://azure.microsoft.com/api/v2/pricing/managed-disks/calculator/?culture=en-au&discount=mosp> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/managed-disks.json> AS ?source
 ITERATOR iter:JSONListKeys(?source) AS ?managed_disk
 WHERE {
-    BIND (xsd:int( fun:JSONPath(?source,"$.{?vm_key}.iops") ) AS ?iops )
-    BIND (xsd:int( fun:JSONPath(?source,"$.{?vm_key}.size") ) AS ?size)
-    BIND (xsd:int( fun:JSONPath(?source,"$.{?vm_key}.speed") ) AS ?speed)
-    BIND (fun:JSONPath(?source,"$.{?vm_key}.prices") AS ?prices)
+    BIND (fun:JSONPath(?source,"$.['{?managed_disk}']") AS ?managed_disk_json)
+    BIND (fun:JSONPath(?managed_disk_json,"$.prices") AS ?prices)
 }

@@ -14,10 +14,10 @@
 <https://w3id.org/cocoon/v1.0> rdf:type owl:Ontology ;
                                 rdfs:seeAlso <https://github.com/miranda-zhang/cloud-computing-schema> ;
                                 dc:issued "2018-09-20"^^xsd:date ;
-                                dc:modified "2018-08-17"^^xsd:date ;
                                 dc:title "Vocabulary in Cloud Computing Services"@en ;
                                 owl:versionInfo 1.0 ;
                                 dc:creator :mirandazhangqian ;
+                                dc:modified "2018-09-17" ;
                                 vann:preferredNamespaceUri "https://w3id.org/cocoon/v1.0#" ;
                                 dc:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
                                 dc:rights "Copyright © 2018 Miranda ZHANG Qian" ;
@@ -736,7 +736,10 @@ quantifies the type of object should be `LocalStorage`"""@en
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty gr:hasPriceSpecification ;
                                                          owl:someValuesFrom gr:UnitPriceSpecification
-                                                       ] .
+                                                       ] ;
+                                       rdfs:comment """Can be used to define a common price spec for multiple cloud service individuals,
+i.e. the storage transaction spec has a different price in a different region,
+but there is a common transaction price spec for a group of cloud storage offers."""@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#SystemImage

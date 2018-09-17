@@ -1,9 +1,10 @@
 # SPARQL example
 ## Data set 
-[gcloud_vm.ttl](../sparql-generate/result/gcloud_vm.ttl)
+[gcloud_vm.ttl](../sparql-generate/result/gcloud/vm.ttl)
 
 ## Query
 ```
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 SELECT DISTINCT ?VM 
 WHERE {
     ?VM a cocoon:VM ;
