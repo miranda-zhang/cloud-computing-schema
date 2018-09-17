@@ -1,0 +1,29 @@
+{
+    "transactions-hdd": [
+      "standardhdd-s4",
+      "standardhdd-s6",
+      "standardhdd-s10",
+      "standardhdd-s15",
+      "standardhdd-s20",
+      "standardhdd-s30",
+      "standardhdd-s40",
+      "standardhdd-s50"
+    ],
+    "transactions-ssd": [
+      "premiumssd-p4",
+      "premiumssd-p6",
+      "premiumssd-p10",
+      "premiumssd-p15",
+      "premiumssd-p20",
+      "premiumssd-p30",
+      "premiumssd-p40",
+      "premiumssd-p50",
+      "standardssd-e10",
+      "standardssd-e15",
+      "standardssd-e20",
+      "standardssd-e30",
+      "standardssd-e40",
+      "standardssd-e50"
+    ]
+}
+  

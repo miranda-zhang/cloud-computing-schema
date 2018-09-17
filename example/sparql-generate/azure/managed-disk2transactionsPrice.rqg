@@ -1,0 +1,21 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+
+GENERATE {
+    GENERATE {
+        <storage/azure/{?disk}> a cocoon:NetworkStorage;
+            gr:hasPriceSpecification <price_specification/azure/storage_transaction/managed_disk/{?transaction}>
+    }
+    ITERATOR iter:JSONPath(?disk_list,"$[*]") AS ?disk
+    . 
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/managed-disk2transactionsPrice.json> AS ?source
+ITERATOR iter:JSONListKeys(?source) AS ?transaction
+WHERE {
+    BIND (fun:JSONPath(?source,"$.['{?transaction}']") AS ?disk_list)
+}

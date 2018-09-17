@@ -35,40 +35,40 @@ Apply the following transformations on [input](#input)
 Result: [managed-disk-transactions.json](../jq/azure/managed-disk-transactions.json)
 
 ```
-.offers | . |=with_entries(
-    select ( .key |
-        (
-            contains("hdd") and
-            (contains("snapshot") | not) and
-            (contains("transactions") | not)
-        )
+{
+    "transactions-hdd":(
+        .offers | . |=with_entries(
+            select ( .key |
+                (
+                    contains("hdd") and
+                    (contains("snapshot") | not) and
+                    (contains("transactions") | not)
+                )
+            )
+        ) | [to_entries[] | .key]      
+    ),
+    "transactions-ssd":(
+        .offers | . |=with_entries(
+            select ( .key |
+                (
+                    contains("ssd") and
+                    (contains("snapshot") | not) and
+                    (contains("transactions") | not)
+                )
+            )
+        ) | [to_entries[] | .key]
     )
-) | [to_entries[] | .key]
+}
 ```
-Result: [managed-disk-hdd.json](../jq/azure/managed-disk-hdd.json)
-
-```
-.offers | . |=with_entries(
-    select ( .key |
-        (
-            contains("ssd") and
-            (contains("snapshot") | not) and
-            (contains("transactions") | not)
-        )
-    )
-) | [to_entries[] | .key]
-```
-Result: [managed-disk-ssd.json](../jq/azure/managed-disk-ssd.json)
+Result: [managed-disk2transactionsPrice.json](../jq/azure/managed-disk2transactionsPrice.json)
 
 ## Mapping to ontology
 In [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 run the following queries: 
 1. [map storage transactions price spec(json) to](../sparql-generate/azure/managed-disk-transactions.rqg)
    [RDF](../sparql-generate/result/azure/managed-disk-transactions.ttl)
-2. [map hdd storage to its transaction price](../sparql-generate/azure/managed-disk-hdd.rqg)
-   : [View result RDF (turtle)](../sparql-generate/result/azure/managed-disks.ttl)
-3. [map ssd storage to its transaction price](../sparql-generate/azure/managed-disk-hdd.rqg)
-   : [View result RDF (turtle)](../sparql-generate/result/azure/managed-disks.ttl)
+2. [map transaction price to its storage types](../sparql-generate/azure/managed-disk2transactionsPrice.rqg)
+   : [View result RDF (turtle)](../sparql-generate/result/azure/managed-disk2transactionsPrice.ttl)
 
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/managed-disks-hdd.json> AS ?managed-disks-hdd
 

@@ -22,7 +22,7 @@ GENERATE {
             cocoon:hasUnitOfMeasurement cocoon:GB;
             cocoon:ofObjectType cocoon:LocalStorage;
     ];
-    gr:hasPriceSpecification <price_specification/azure/storage_transaction>;
+    gr:hasPriceSpecification <price_specification/azure/storage_transaction/vm_base>;
 
     GENERATE {
         <vm/azure/{?vm_key}> gr:hasPriceSpecification [ 
