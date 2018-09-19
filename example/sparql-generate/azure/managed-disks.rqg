@@ -49,6 +49,27 @@ GENERATE {
         FILTER( BOUND(?iops) )
         # either ?iops ?size ?speed are all bound or non is bound
     } .
+
+    GENERATE {
+        <storage/azure/{?managed_disk}>
+            gr:hasPriceSpecification <price_specification/azure/storage_transaction/managed_disk/transactions-{?type}>;
+    } WHERE {
+        FILTER( ! CONTAINS(?managed_disk,"snapshot") )
+        FILTER( CONTAINS(?managed_disk,"hdd") || CONTAINS(?managed_disk,"ssd") )
+        BIND ( IF( CONTAINS(?managed_disk,"hdd") , "hdd" ,"ssd" ) AS ?type )        
+    } .
+
+    GENERATE {
+        <storage/azure/{?managed_disk}>
+            cocoon:canHaveSnapshot <storage/azure/standardssd-snapshot>;
+            cocoon:canHaveSnapshot <storage/azure/standardhdd-snapshot-lrs>;
+            cocoon:canHaveSnapshot <storage/azure/standardhdd-snapshot-zrs>;
+            cocoon:canHaveSnapshot <storage/azure/{?premiumssd_snapshot}>;
+    } WHERE {
+        FILTER( !CONTAINS(?managed_disk,"snapshot") )
+        FILTER( CONTAINS(?managed_disk,"premiumssd") || CONTAINS(?managed_disk,"standardssd"))
+        BIND ( IF( CONTAINS(?managed_disk, "premiumssd") , "premiumssd-snapshot" , ?undefined ) AS ?premiumssd_snapshot )    
+    } .
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/managed-disks.json> AS ?source
 ITERATOR iter:JSONListKeys(?source) AS ?managed_disk

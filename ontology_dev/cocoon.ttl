@@ -1,28 +1,27 @@
 @prefix : <https://w3id.org/cocoon/v1.0#> .
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
 @prefix gr: <http://purl.org/goodrelations/v1#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vaem: <http://www.linkedmodel.org/schema/vaem> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/cocoon/v1.0> .
 
 <https://w3id.org/cocoon/v1.0> rdf:type owl:Ontology ;
                                 rdfs:seeAlso <https://github.com/miranda-zhang/cloud-computing-schema> ;
-                                dc:issued "2018-09-20"^^xsd:date ;
-                                dc:title "Vocabulary in Cloud Computing Services"@en ;
+                                dcterms:issued "2018-09-20"^^xsd:date ;
+                                dcterms:title "Vocabulary in Cloud Computing Services"@en ;
                                 owl:versionInfo 1.0 ;
-                                dc:creator :mirandazhangqian ;
-                                dc:modified "2018-09-17" ;
+                                dcterms:creator :mirandazhangqian ;
+                                dcterms:modified "2018-09-17" ;
                                 vann:preferredNamespaceUri "https://w3id.org/cocoon/v1.0#" ;
-                                dc:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
-                                dc:rights "Copyright © 2018 Miranda ZHANG Qian" ;
+                                dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
+                                dcterms:rights "Copyright © 2018 Miranda ZHANG Qian" ;
                                 vann:preferredNamespacePrefix "cocoon" ;
-                                dc:created "2012-10-01"^^xsd:date ;
+                                dcterms:created "2012-10-01"^^xsd:date ;
                                 rdfs:label "Cloud Computing Services Ontology"@en .
 
 #################################################################
@@ -30,7 +29,7 @@
 #################################################################
 
 ###  http://purl.org/dc/terms/description
-dc:description rdf:type owl:AnnotationProperty .
+dcterms:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/goodrelations/v1#name
@@ -303,7 +302,7 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
 
 
 ###  http://www.geonames.org/ontology#Feature
-<http://www.geonames.org/ontology#Feature> rdf:type owl:Class .
+gn:Feature rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -590,7 +589,7 @@ quantifies the type of object should be `LocalStorage`"""@en
         rdfs:subClassOf :Location ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :inJurisdiction ;
-                          owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
+                          owl:someValuesFrom gn:Feature
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasProvider ;
@@ -600,7 +599,7 @@ quantifies the type of object should be `LocalStorage`"""@en
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :inPhysicalLocation ;
                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onClass <http://www.geonames.org/ontology#Feature>
+                          owl:onClass gn:Feature
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :continent ;
@@ -618,7 +617,7 @@ quantifies the type of object should be `LocalStorage`"""@en
    owl:annotatedProperty rdfs:subClassOf ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
                          owl:onProperty :inJurisdiction ;
-                         owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
+                         owl:someValuesFrom gn:Feature
                        ] ;
    rdfs:comment "Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
  ] .
@@ -745,7 +744,7 @@ but there is a common transaction price spec for a group of cloud storage offers
 ###  https://w3id.org/cocoon/v1.0#SystemImage
 :SystemImage rdf:type owl:Class ;
              rdfs:subClassOf :PaaS ;
-             dc:description """A system image is a serialized copy of the entire state of a computer system.
+             dcterms:description """A system image is a serialized copy of the entire state of a computer system.
 System images can be used for backup.""" .
 
 
@@ -892,7 +891,7 @@ System images can be used for backup.""" .
              <http://qudt.org/schema/qudt#DerivedUnit> ,
              <http://qudt.org/schema/qudt#InformationEntropyUnit> ,
              :UnitOfMeasure ;
-    dc:description "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
+    dcterms:description "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
     rdfs:label "Gigabyte"@en .
 
 
@@ -901,7 +900,7 @@ System images can be used for backup.""" .
                      <http://qudt.org/schema/qudt#DataRateUnit> ,
                      <http://qudt.org/schema/qudt#DerivedUnit> ,
                      :UnitOfMeasure ;
-            dc:description "Often describe 1 GB per Month usage."@en ;
+            dcterms:description "Often describe 1 GB per Month usage."@en ;
             rdfs:label "Gigabyte per Month"@en .
 
 
@@ -910,7 +909,7 @@ System images can be used for backup.""" .
                <http://qudt.org/schema/qudt#DataRateUnit> ,
                <http://qudt.org/schema/qudt#DerivedUnit> ,
                :UnitOfMeasure ;
-      dc:description "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en ;
+      dcterms:description "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en ;
       rdfs:label "Input/output operations per sec"@en .
 
 
@@ -919,7 +918,7 @@ System images can be used for backup.""" .
                    <http://qudt.org/schema/qudt#DataRateUnit> ,
                    <http://qudt.org/schema/qudt#DerivedUnit> ,
                    :UnitOfMeasure ;
-          dc:description "Azure Managed Disks throughput caps per disk."@en ;
+          dcterms:description "Azure Managed Disks throughput caps per disk."@en ;
           rdfs:label "MB/second"@en .
 
 
@@ -928,7 +927,7 @@ System images can be used for backup.""" .
              <http://qudt.org/schema/qudt#DerivedUnit> ,
              <http://qudt.org/schema/qudt#InformationEntropyUnit> ,
              :UnitOfMeasure ;
-    dc:description "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
+    dcterms:description "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
     rdfs:label "Terabyte"@en .
 
 
@@ -942,7 +941,7 @@ System images can be used for backup.""" .
 ###  https://w3id.org/cocoon/v1.0#gceu
 :gceu rdf:type owl:NamedIndividual ,
                :UnitOfMeasure ;
-      dc:description "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ’s to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
+      dcterms:description "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ’s to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
       rdfs:label "Google Compute Engine Unit"@en .
 
 

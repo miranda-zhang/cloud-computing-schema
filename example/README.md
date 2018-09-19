@@ -45,6 +45,7 @@ Examples with the following keywords:
 1. [SELECT FILTER ORDER BY LIMIT](sparql/filter_vm_order_desc_limit.md)
 2. [DISTINCT](sparql/vm_less_or_equal_4cores.md)
 3. [ORDER BY ASC](sparql/storage_size_greater_than.md)
+4. [COUNT Nested query VALUES](sparql/gcloud_stat_count.md)
 
 Additional external examples
 https://www.w3.org/2009/Talks/0615-qbe/
