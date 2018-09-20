@@ -1,12 +1,12 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<null> a prov:Entity;
+<https://w3id.org/cocoon/v1.0#> a prov:Entity;
 	 dc:title "Vocabulary in Cloud Computing Services";
 	 prov:wasAttributedTo <https://w3id.org/cocoon/v1.0#mirandazhangqian>;
 	 dc:creator <https://w3id.org/cocoon/v1.0#mirandazhangqian>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://w3id.org/cocoon/v1.0#>;
 	 prov:wasRevisionOf <https://w3id.org/cocoon/v0.1#>;
-	 prov:wasGeneratedAt "2018-08-17";
+	 prov:wasGeneratedAt "2018-09-17";
 .

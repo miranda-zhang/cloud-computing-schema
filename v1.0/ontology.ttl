@@ -1,40 +1,56 @@
-@prefix : <https://w3id.org/cocoon/v1.0##> .
+@prefix cocoon: <https://w3id.org/cocoon/v1.0#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/cocoon/v1.0#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@base <https://w3id.org/cocoon/v1.0> .
 
-<https://w3id.org/cocoon/v1.0#> rdf:type owl:Ontology ;
-                                 <http://purl.org/dc/terms/created> "2012-10-01"^^xsd:date ;
-                                 <http://purl.org/dc/terms/creator> <https://w3id.org/cocoon/v1.0#mirandazhangqian> ;
-                                 <http://purl.org/dc/terms/description> "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
-                                 <http://purl.org/dc/terms/issued> "2018-09-20"^^xsd:date ;
-                                 <http://purl.org/dc/terms/modified> "2018-08-17"^^xsd:date ;
-                                 <http://purl.org/dc/terms/rights> "Copyright © 2018 Miranda ZHANG Qian"^^xsd:string ;
-                                 <http://purl.org/dc/terms/title> "Vocabulary in Cloud Computing Services"@en ;
-                                 rdfs:label "Cloud Computing Services"@en ;
-                                 owl:versionInfo 1.0 .
+<https://w3id.org/cocoon/v1.0> rdf:type owl:Ontology ;
+                                rdfs:seeAlso <https://github.com/miranda-zhang/cloud-computing-schema> ;
+                                dcterms:issued "2018-09-20"^^xsd:date ;
+                                dcterms:title "Vocabulary in Cloud Computing Services"@en ;
+                                owl:versionInfo 1.0 ;
+                                dcterms:creator cocoon:mirandazhangqian ;
+                                dcterms:modified "2018-09-17" ;
+                                vann:preferredNamespaceUri "https://w3id.org/cocoon/v1.0#" ;
+                                dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
+                                dcterms:rights "Copyright © 2018 Miranda ZHANG Qian" ;
+                                vann:preferredNamespacePrefix "cocoon" ;
+                                dcterms:created "2012-10-01"^^xsd:date ;
+                                rdfs:label "Cloud Computing Services Ontology"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/goodrelations/v1#name
+gr:name rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/homepage
-<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
+foaf:homepage rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/mbox
-<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+foaf:mbox rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/name
-<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/page
+foaf:page rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -42,847 +58,582 @@
 #################################################################
 
 ###  http://purl.org/goodrelations/v1#hasPriceSpecification
-<http://purl.org/goodrelations/v1#hasPriceSpecification> rdf:type owl:ObjectProperty .
+gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasApplianceType
-<https://w3id.org/cocoon/v1.0#hasApplianceType> rdf:type owl:ObjectProperty .
+###  https://w3id.org/cocoon/v1.0#canHaveSnapshot
+cocoon:canHaveSnapshot rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasBandwidth
-<https://w3id.org/cocoon/v1.0#hasBandwidth> rdf:type owl:ObjectProperty .
+cocoon:hasBandwidth rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasBenchmark
-<https://w3id.org/cocoon/v1.0#hasBenchmark> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasCPU
-<https://w3id.org/cocoon/v1.0#hasCPU> rdf:type owl:ObjectProperty .
+cocoon:hasBenchmark rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasCPUcapacity
-<https://w3id.org/cocoon/v1.0#hasCPUcapacity> rdf:type owl:ObjectProperty .
+cocoon:hasCPUcapacity rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasCapacity
-<https://w3id.org/cocoon/v1.0#hasCapacity> rdf:type owl:ObjectProperty .
+###  https://w3id.org/cocoon/v1.0#hasMaxNumberOfDisk
+cocoon:hasMaxNumberOfDisk rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasClockRate
-<https://w3id.org/cocoon/v1.0#hasClockRate> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasCommunicationBus
-<https://w3id.org/cocoon/v1.0#hasCommunicationBus> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasCredential
-<https://w3id.org/cocoon/v1.0#hasCredential> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasDeploymentModel
-<https://w3id.org/cocoon/v1.0#hasDeploymentModel> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasFunctionality
-<https://w3id.org/cocoon/v1.0#hasFunctionality> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasIOConfiguration
-<https://w3id.org/cocoon/v1.0#hasIOConfiguration> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasLocalStorage
-<https://w3id.org/cocoon/v1.0#hasLocalStorage> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasLocation
-<https://w3id.org/cocoon/v1.0#hasLocation> rdf:type owl:ObjectProperty .
+###  https://w3id.org/cocoon/v1.0#hasMaxStorageSize
+cocoon:hasMaxStorageSize rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasMemory
-<https://w3id.org/cocoon/v1.0#hasMemory> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasMemoryAddressSize
-<https://w3id.org/cocoon/v1.0#hasMemoryAddressSize> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasMetric
-<https://w3id.org/cocoon/v1.0#hasMetric> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasNetworkStorage
-<https://w3id.org/cocoon/v1.0#hasNetworkStorage> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasNonFunctionalProperty
-<https://w3id.org/cocoon/v1.0#hasNonFunctionalProperty> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasOS
-<https://w3id.org/cocoon/v1.0#hasOS> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf owl:topObjectProperty .
+cocoon:hasMemory rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasOperatingSystem
-<https://w3id.org/cocoon/v1.0#hasOperatingSystem> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasOrchestrationInterface
-<https://w3id.org/cocoon/v1.0#hasOrchestrationInterface> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasPassword
-<https://w3id.org/cocoon/v1.0#hasPassword> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasPhysicalLocation
-<https://w3id.org/cocoon/v1.0#hasPhysicalLocation> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasProtocol
-<https://w3id.org/cocoon/v1.0#hasProtocol> rdf:type owl:ObjectProperty .
+cocoon:hasOperatingSystem rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasProvider
-<https://w3id.org/cocoon/v1.0#hasProvider> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#hasQuantity
-<https://w3id.org/cocoon/v1.0#hasQuantity> rdf:type owl:ObjectProperty .
+cocoon:hasProvider rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasRegion
-<https://w3id.org/cocoon/v1.0#hasRegion> rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf <http://purl.org/goodrelations/v1#hasPriceSpecification> .
-
-
-###  https://w3id.org/cocoon/v1.0#hasScript
-<https://w3id.org/cocoon/v1.0#hasScript> rdf:type owl:ObjectProperty .
+cocoon:hasRegion rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement
-<https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement> rdf:type owl:ObjectProperty .
+cocoon:hasServiceLevelAgreement rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasStorage
-<https://w3id.org/cocoon/v1.0#hasStorage> rdf:type owl:ObjectProperty .
+cocoon:hasStorage rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasSupportedProtocol
-<https://w3id.org/cocoon/v1.0#hasSupportedProtocol> rdf:type owl:ObjectProperty .
+###  https://w3id.org/cocoon/v1.0#hasStorageIOMax
+cocoon:hasStorageIOMax rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#hasStorageSize
+cocoon:hasStorageSize rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#hasStorageThroughputMax
+cocoon:hasStorageThroughputMax rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement
-<https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement> rdf:type owl:ObjectProperty .
+cocoon:hasUnitOfMeasurement rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasUser
-<https://w3id.org/cocoon/v1.0#hasUser> rdf:type owl:ObjectProperty .
+###  https://w3id.org/cocoon/v1.0#inJurisdiction
+cocoon:inJurisdiction rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasVirtualization
-<https://w3id.org/cocoon/v1.0#hasVirtualization> rdf:type owl:ObjectProperty .
+###  https://w3id.org/cocoon/v1.0#inPhysicalLocation
+cocoon:inPhysicalLocation rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#hasVirtualizationFormat
-<https://w3id.org/cocoon/v1.0#hasVirtualizationFormat> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#isAvailableIn
-<https://w3id.org/cocoon/v1.0#isAvailableIn> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#isSoftware
-<https://w3id.org/cocoon/v1.0#isSoftware> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#isSoftwareType
-<https://w3id.org/cocoon/v1.0#isSoftwareType> rdf:type owl:ObjectProperty .
+###  https://w3id.org/cocoon/v1.0#ofObjectType
+cocoon:ofObjectType rdf:type owl:ObjectProperty .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://w3id.org/cocoon/v1.0#CPUClockSpeed
-<https://w3id.org/cocoon/v1.0#CPUClockSpeed> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#CPUFamily
-<https://w3id.org/cocoon/v1.0#CPUFamily> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#URI
-<https://w3id.org/cocoon/v1.0#URI> rdf:type owl:DatatypeProperty ;
-                                   rdfs:range xsd:anyURI .
-
-
-###  https://w3id.org/cocoon/v1.0#accessNumber
-<https://w3id.org/cocoon/v1.0#accessNumber> rdf:type owl:DatatypeProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#bandwidth
-<https://w3id.org/cocoon/v1.0#bandwidth> rdf:type owl:DatatypeProperty .
+cocoon:bandwidth rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#description
-<https://w3id.org/cocoon/v1.0#description> rdf:type owl:DatatypeProperty .
+###  https://w3id.org/cocoon/v1.0#chargedPerCore
+cocoon:chargedPerCore rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :numberOfCores ;
+                rdfs:comment "For Google Cloud, cost of SQL server image is charged on per core basis."@en .
 
 
-###  https://w3id.org/cocoon/v1.0#fileSystem
-<https://w3id.org/cocoon/v1.0#fileSystem> rdf:type owl:DatatypeProperty .
+###  https://w3id.org/cocoon/v1.0#continent
+cocoon:continent rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :location ;
+           rdfs:comment "Similar to location, this property specifies the continent."@en .
 
 
-###  https://w3id.org/cocoon/v1.0#genericName
-<https://w3id.org/cocoon/v1.0#genericName> rdf:type owl:DatatypeProperty .
+###  https://w3id.org/cocoon/v1.0#forCoresLessEqual
+cocoon:forCoresLessEqual rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :numberOfCores ;
+                   rdfs:comment "Google Cloud OS price for VM with different number of cores are different."@en .
 
 
-###  https://w3id.org/cocoon/v1.0#hash
-<https://w3id.org/cocoon/v1.0#hash> rdf:type owl:DatatypeProperty .
+###  https://w3id.org/cocoon/v1.0#forCoresMoreThan
+cocoon:forCoresMoreThan rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :numberOfCores ;
+                  rdfs:comment "Google Cloud OS price for VM with different number of cores are different."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#latency
-<https://w3id.org/cocoon/v1.0#latency> rdf:type owl:DatatypeProperty .
+cocoon:latency rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#method
-<https://w3id.org/cocoon/v1.0#method> rdf:type owl:DatatypeProperty .
+###  https://w3id.org/cocoon/v1.0#location
+cocoon:location rdf:type owl:DatatypeProperty ;
+          rdfs:comment "The human-readable name for the actual location of the data center in a region, this is the original value used to generate the linking to Geoname ontology."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#numberOfCores
-<https://w3id.org/cocoon/v1.0#numberOfCores> rdf:type owl:DatatypeProperty .
+cocoon:numberOfCores rdf:type owl:DatatypeProperty ;
+               rdfs:comment "For Google Cloud, cores and vCPU referes to the same thing." .
 
 
 ###  https://w3id.org/cocoon/v1.0#numericValue
-<https://w3id.org/cocoon/v1.0#numericValue> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#onChip
-<https://w3id.org/cocoon/v1.0#onChip> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#persistence
-<https://w3id.org/cocoon/v1.0#persistence> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#protocolVersion
-<https://w3id.org/cocoon/v1.0#protocolVersion> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#providerDescription
-<https://w3id.org/cocoon/v1.0#providerDescription> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#providerName
-<https://w3id.org/cocoon/v1.0#providerName> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#requestPayload
-<https://w3id.org/cocoon/v1.0#requestPayload> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#resourceRecord
-<https://w3id.org/cocoon/v1.0#resourceRecord> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#responsePayload
-<https://w3id.org/cocoon/v1.0#responsePayload> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#storageFormat
-<https://w3id.org/cocoon/v1.0#storageFormat> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#storageSizeMax
-<https://w3id.org/cocoon/v1.0#storageSizeMax> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#storageSizeMin
-<https://w3id.org/cocoon/v1.0#storageSizeMin> rdf:type owl:DatatypeProperty .
+cocoon:numericValue rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
+###  http://purl.org/goodrelations/v1#BusinessEntity
+gr:BusinessEntity rdf:type owl:Class .
+
+
 ###  http://purl.org/goodrelations/v1#UnitPriceSpecification
-<http://purl.org/goodrelations/v1#UnitPriceSpecification> rdf:type owl:Class ;
-                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/cocoon/v1.0#hasRegion> ;
-                                                                            owl:someValuesFrom xsd:string
-                                                                          ] .
+gr:UnitPriceSpecification rdf:type owl:Class ;
+                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                            owl:onProperty cocoon:hasRegion ;
+                                            owl:someValuesFrom cocoon:Region
+                                          ] .
+
+
+###  http://qudt.org/schema/qudt#Unit
+qudt:Unit rdf:type owl:Class ;
+                                   owl:equivalentClass cocoon:UnitOfMeasure .
+
+
+###  http://www.geonames.org/ontology#Feature
+gn:Feature rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#API
-<https://w3id.org/cocoon/v1.0#API> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Software> .
-
-
-###  https://w3id.org/cocoon/v1.0#AccessControl
-<https://w3id.org/cocoon/v1.0#AccessControl> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#Appliance
-<https://w3id.org/cocoon/v1.0#Appliance> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/cocoon/v1.0#PaaS> ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <https://w3id.org/cocoon/v1.0#hasApplianceType> ;
-                                                           owl:someValuesFrom <https://w3id.org/cocoon/v1.0#SaaS>
-                                                         ] ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <https://w3id.org/cocoon/v1.0#genericName> ;
-                                                           owl:someValuesFrom xsd:string
-                                                         ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Application
-<https://w3id.org/cocoon/v1.0#Application> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/cocoon/v1.0#SoftwareType> .
-
-
-###  https://w3id.org/cocoon/v1.0#Attribute
-<https://w3id.org/cocoon/v1.0#Attribute> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#BLOBStorage
-<https://w3id.org/cocoon/v1.0#BLOBStorage> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/cocoon/v1.0#NetworkStorage> .
-
-
-###  https://w3id.org/cocoon/v1.0#BlockDeviceStorage
-<https://w3id.org/cocoon/v1.0#BlockDeviceStorage> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://w3id.org/cocoon/v1.0#NetworkStorage> .
-
-
-###  https://w3id.org/cocoon/v1.0#Bus
-<https://w3id.org/cocoon/v1.0#Bus> rdf:type owl:Class ;
-                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/cocoon/v1.0#onChip> ;
-                                                     owl:someValuesFrom xsd:boolean
-                                                   ] .
-
-
-###  https://w3id.org/cocoon/v1.0#CIFS
-<https://w3id.org/cocoon/v1.0#CIFS> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
-
-
-###  https://w3id.org/cocoon/v1.0#CPU
-<https://w3id.org/cocoon/v1.0#CPU> rdf:type owl:Class ;
-                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/cocoon/v1.0#hasBenchmark> ;
-                                                     owl:someValuesFrom <https://w3id.org/cocoon/v1.0#PhysicalQuantity>
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/cocoon/v1.0#hasClockRate> ;
-                                                     owl:someValuesFrom <https://w3id.org/cocoon/v1.0#PhysicalQuantity>
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/cocoon/v1.0#hasLocalStorage> ;
-                                                     owl:someValuesFrom <https://w3id.org/cocoon/v1.0#LocalStorage>
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/cocoon/v1.0#CPUFamily> ;
-                                                     owl:someValuesFrom xsd:string
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/cocoon/v1.0#numberOfCores> ;
-                                                     owl:someValuesFrom xsd:decimal
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty <https://w3id.org/cocoon/v1.0#resourceRecord> ;
-                                                     owl:someValuesFrom xsd:anyURI
-                                                   ] .
+foaf:Person rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#CloudService
-<https://w3id.org/cocoon/v1.0#CloudService> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Service> ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <http://purl.org/goodrelations/v1#hasPriceSpecification> ;
-                                                              owl:someValuesFrom <http://purl.org/goodrelations/v1#UnitPriceSpecification>
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <https://w3id.org/cocoon/v1.0#hasCredential> ;
-                                                              owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Credential>
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <https://w3id.org/cocoon/v1.0#hasDeploymentModel> ;
-                                                              owl:someValuesFrom <https://w3id.org/cocoon/v1.0#DeploymentModel>
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <https://w3id.org/cocoon/v1.0#hasPhysicalLocation> ;
-                                                              owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Location>
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <https://w3id.org/cocoon/v1.0#hasProvider> ;
-                                                              owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Provider>
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <https://w3id.org/cocoon/v1.0#isAvailableIn> ;
-                                                              owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Location>
-                                                            ] .
+cocoon:CloudService rdf:type owl:Class ;
+              rdfs:subClassOf cocoon:Service ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty gr:hasPriceSpecification ;
+                                owl:someValuesFrom gr:UnitPriceSpecification
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty cocoon:hasProvider ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass gr:BusinessEntity
+                              ] .
 
-
-###  https://w3id.org/cocoon/v1.0#ClusteredCPU
-<https://w3id.org/cocoon/v1.0#ClusteredCPU> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://w3id.org/cocoon/v1.0#CPU> ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <https://w3id.org/cocoon/v1.0#hasCommunicationBus> ;
-                                                              owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Bus>
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <https://w3id.org/cocoon/v1.0#CPUClockSpeed> ;
-                                                              owl:someValuesFrom xsd:decimal
-                                                            ] .
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:CloudService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty gr:hasPriceSpecification ;
+                         owl:someValuesFrom gr:UnitPriceSpecification
+                       ] ;
+   rdfs:comment "Price specification for Cloud Service"@en
+ ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#CommunityCloud
-<https://w3id.org/cocoon/v1.0#CommunityCloud> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/cocoon/v1.0#DeploymentModel> .
+cocoon:CommunityCloud rdf:type owl:Class ;
+                rdfs:subClassOf cocoon:DeploymentModel .
 
 
-###  https://w3id.org/cocoon/v1.0#Credential
-<https://w3id.org/cocoon/v1.0#Credential> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://w3id.org/cocoon/v1.0#AccessControl> ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <https://w3id.org/cocoon/v1.0#hasPassword> ;
-                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                            owl:onClass <https://w3id.org/cocoon/v1.0#Password>
-                                                          ] ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <https://w3id.org/cocoon/v1.0#hasUser> ;
-                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                            owl:onClass <https://w3id.org/cocoon/v1.0#User>
-                                                          ] .
-
-
-###  https://w3id.org/cocoon/v1.0#CustomizableAppliance
-<https://w3id.org/cocoon/v1.0#CustomizableAppliance> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Appliance> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <https://w3id.org/cocoon/v1.0#hasScript> ;
-                                                                       owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Script>
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <https://w3id.org/cocoon/v1.0#hasVirtualizationFormat> ;
-                                                                       owl:someValuesFrom <https://w3id.org/cocoon/v1.0#VirtualizationFormat>
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <https://w3id.org/cocoon/v1.0#hasOperatingSystem> ;
-                                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <https://w3id.org/cocoon/v1.0#OperatingSystem>
-                                                                     ] .
+###  https://w3id.org/cocoon/v1.0#Database
+cocoon:Database rdf:type owl:Class ;
+          rdfs:subClassOf cocoon:SaaS .
 
 
 ###  https://w3id.org/cocoon/v1.0#DeploymentModel
-<https://w3id.org/cocoon/v1.0#DeploymentModel> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#FTP
-<https://w3id.org/cocoon/v1.0#FTP> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
-
-
-###  https://w3id.org/cocoon/v1.0#HTTP
-<https://w3id.org/cocoon/v1.0#HTTP> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
+cocoon:DeploymentModel rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#HybridCloud
-<https://w3id.org/cocoon/v1.0#HybridCloud> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/cocoon/v1.0#DeploymentModel> .
-
-
-###  https://w3id.org/cocoon/v1.0#IP
-<https://w3id.org/cocoon/v1.0#IP> rdf:type owl:Class ;
-                                  rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
-
-
-###  https://w3id.org/cocoon/v1.0#IPv4
-<https://w3id.org/cocoon/v1.0#IPv4> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#IP> .
-
-
-###  https://w3id.org/cocoon/v1.0#IPv6
-<https://w3id.org/cocoon/v1.0#IPv6> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#IP> .
+cocoon:HybridCloud rdf:type owl:Class ;
+             rdfs:subClassOf cocoon:DeploymentModel .
 
 
 ###  https://w3id.org/cocoon/v1.0#IaaS
-<https://w3id.org/cocoon/v1.0#IaaS> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#CloudService> ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#hasStorage> ;
-                                                      owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Storage>
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#fileSystem> ;
-                                                      owl:someValuesFrom xsd:string
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#persistence> ;
-                                                      owl:someValuesFrom xsd:string
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#storageFormat> ;
-                                                      owl:someValuesFrom xsd:decimal
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#storageSizeMax> ;
-                                                      owl:someValuesFrom xsd:decimal
-                                                    ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Input
-<https://w3id.org/cocoon/v1.0#Input> rdf:type owl:Class ;
-                                     rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Operation> .
-
-
-###  https://w3id.org/cocoon/v1.0#Interface
-<https://w3id.org/cocoon/v1.0#Interface> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#Key
-<https://w3id.org/cocoon/v1.0#Key> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/cocoon/v1.0#API> .
+cocoon:IaaS rdf:type owl:Class ;
+      rdfs:subClassOf cocoon:CloudService .
 
 
 ###  https://w3id.org/cocoon/v1.0#LocalStorage
-<https://w3id.org/cocoon/v1.0#LocalStorage> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://w3id.org/cocoon/v1.0#VM> .
+cocoon:LocalStorage rdf:type owl:Class ;
+              rdfs:subClassOf cocoon:Storage ;
+              rdfs:comment "Storage that is not detachable from VM"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#Location
-<https://w3id.org/cocoon/v1.0#Location> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#MeasurableAttribute
-<https://w3id.org/cocoon/v1.0#MeasurableAttribute> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Attribute> ,
-                                                                   [ rdf:type owl:Restriction ;
-                                                                     owl:onProperty <https://w3id.org/cocoon/v1.0#hasMetric> ;
-                                                                     owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Metric>
-                                                                   ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Metric
-<https://w3id.org/cocoon/v1.0#Metric> rdf:type owl:Class ;
-                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                        owl:onProperty <https://w3id.org/cocoon/v1.0#hasQuantity> ;
-                                                        owl:someValuesFrom <https://w3id.org/cocoon/v1.0#PhysicalQuantity>
-                                                      ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Name
-<https://w3id.org/cocoon/v1.0#Name> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#API> .
+cocoon:Location rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#Network
-<https://w3id.org/cocoon/v1.0#Network> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/cocoon/v1.0#IaaS> ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://w3id.org/cocoon/v1.0#hasBandwidth> ;
-                                                         owl:someValuesFrom <https://w3id.org/cocoon/v1.0#PhysicalQuantity>
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://w3id.org/cocoon/v1.0#bandwidth> ;
-                                                         owl:someValuesFrom xsd:string
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://w3id.org/cocoon/v1.0#latency> ;
-                                                         owl:someValuesFrom xsd:string
-                                                       ] .
+cocoon:Network rdf:type owl:Class ;
+         rdfs:subClassOf cocoon:IaaS ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty cocoon:hasBandwidth ;
+                           owl:someValuesFrom cocoon:QuantityOfThings
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty cocoon:bandwidth ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty cocoon:latency ;
+                           owl:someValuesFrom xsd:string
+                         ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#NetworkStorage
-<https://w3id.org/cocoon/v1.0#NetworkStorage> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Network> ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty <https://w3id.org/cocoon/v1.0#hasCapacity> ;
-                                                                owl:someValuesFrom <https://w3id.org/cocoon/v1.0#PhysicalQuantity>
-                                                              ] ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty <https://w3id.org/cocoon/v1.0#hasProtocol> ;
-                                                                owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Protocol>
-                                                              ] .
+cocoon:NetworkStorage rdf:type owl:Class ;
+                rdfs:subClassOf cocoon:Storage ;
+                rdfs:comment "Storage can exist independent from VM"@en .
 
 
-###  https://w3id.org/cocoon/v1.0#OperatingSystem
-<https://w3id.org/cocoon/v1.0#OperatingSystem> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/cocoon/v1.0#SoftwareType> .
-
-
-###  https://w3id.org/cocoon/v1.0#Operation
-<https://w3id.org/cocoon/v1.0#Operation> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#Output
-<https://w3id.org/cocoon/v1.0#Output> rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Operation> .
+###  https://w3id.org/cocoon/v1.0#OSPriceSpecification
+cocoon:OSPriceSpecification rdf:type owl:Class ;
+                      rdfs:subClassOf gr:UnitPriceSpecification ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:chargedPerCore ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:boolean
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:forCoresLessEqual ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:decimal
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:forCoresMoreThan ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:decimal
+                                      ] ;
+                      owl:disjointWith cocoon:StorageTransactionsPriceSpecification .
 
 
 ###  https://w3id.org/cocoon/v1.0#PaaS
-<https://w3id.org/cocoon/v1.0#PaaS> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#CloudService> .
-
-
-###  https://w3id.org/cocoon/v1.0#Password
-<https://w3id.org/cocoon/v1.0#Password> rdf:type owl:Class ;
-                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/cocoon/v1.0#hash> ;
-                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                          owl:onDataRange xsd:string
-                                                        ] .
-
-
-###  https://w3id.org/cocoon/v1.0#PhysicalQuantity
-<https://w3id.org/cocoon/v1.0#PhysicalQuantity> rdf:type owl:Class ;
-                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty <https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement> ;
-                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                  owl:onClass <https://w3id.org/cocoon/v1.0#UnitOfMeasure>
-                                                                ] ,
-                                                                [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty <https://w3id.org/cocoon/v1.0#numericValue> ;
-                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                  owl:onDataRange xsd:double
-                                                                ] .
+cocoon:PaaS rdf:type owl:Class ;
+      rdfs:subClassOf cocoon:CloudService .
 
 
 ###  https://w3id.org/cocoon/v1.0#PrivateCloud
-<https://w3id.org/cocoon/v1.0#PrivateCloud> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://w3id.org/cocoon/v1.0#DeploymentModel> .
-
-
-###  https://w3id.org/cocoon/v1.0#Protocol
-<https://w3id.org/cocoon/v1.0#Protocol> rdf:type owl:Class ;
-                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/cocoon/v1.0#protocolVersion> ;
-                                                          owl:someValuesFrom xsd:string
-                                                        ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Provider
-<https://w3id.org/cocoon/v1.0#Provider> rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://w3id.org/cocoon/v1.0#ServiceLevelAgreement> ,
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/cocoon/v1.0#URI> ;
-                                                          owl:someValuesFrom xsd:anyURI
-                                                        ] ,
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/cocoon/v1.0#providerDescription> ;
-                                                          owl:someValuesFrom rdfs:Literal
-                                                        ] ,
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/cocoon/v1.0#providerName> ;
-                                                          owl:someValuesFrom xsd:string
-                                                        ] .
+cocoon:PrivateCloud rdf:type owl:Class ;
+              rdfs:subClassOf cocoon:DeploymentModel .
 
 
 ###  https://w3id.org/cocoon/v1.0#PublicCloud
-<https://w3id.org/cocoon/v1.0#PublicCloud> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/cocoon/v1.0#DeploymentModel> .
+cocoon:PublicCloud rdf:type owl:Class ;
+             rdfs:subClassOf cocoon:DeploymentModel .
 
 
 ###  https://w3id.org/cocoon/v1.0#QualityOfService
-<https://w3id.org/cocoon/v1.0#QualityOfService> rdf:type owl:Class .
+cocoon:QualityOfService rdf:type owl:Class .
 
 
-###  https://w3id.org/cocoon/v1.0#RDP
-<https://w3id.org/cocoon/v1.0#RDP> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
+###  https://w3id.org/cocoon/v1.0#QuantityOfThings
+cocoon:QuantityOfThings rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty cocoon:hasUnitOfMeasurement ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass cocoon:UnitOfMeasure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cocoon:ofObjectType ;
+                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cocoon:numericValue ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                      owl:unionOf ( xsd:decimal
+                                                                    xsd:double
+                                                                    xsd:int
+                                                                    xsd:integer
+                                                                  )
+                                                    ]
+                                  ] ;
+                  rdfs:comment "Quantify things, i.e. 3 TB of SSD Storage, 8 GB of Memory" .
 
-
-###  https://w3id.org/cocoon/v1.0#REST
-<https://w3id.org/cocoon/v1.0#REST> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Interface> ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#method> ;
-                                                      owl:someValuesFrom xsd:string
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#requestPayload> ;
-                                                      owl:someValuesFrom xsd:string
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#responsePayload> ;
-                                                      owl:someValuesFrom xsd:string
-                                                    ] .
-
-
-###  https://w3id.org/cocoon/v1.0#RSync
-<https://w3id.org/cocoon/v1.0#RSync> rdf:type owl:Class ;
-                                     rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:QuantityOfThings ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:ofObjectType ;
+                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                       ] ;
+   rdfs:comment """Optional, if not sure the exact type of thing,
+like only know it is 8GB of Memory, but there is not a definition in ontology for the exact memory type.
+One usage example, `cocoon:ofObjectType cocoon:LocalStorage` ,
+quantifies the type of object should be `LocalStorage`"""@en
+ ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#Region
-<https://w3id.org/cocoon/v1.0#Region> rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Location> .
+cocoon:Region rdf:type owl:Class ;
+        rdfs:subClassOf cocoon:Location ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty cocoon:inJurisdiction ;
+                          owl:allValuesFrom gn:Feature
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty cocoon:hasProvider ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass gr:BusinessEntity
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty cocoon:inPhysicalLocation ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass gn:Feature
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty cocoon:continent ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty cocoon:location ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
+                        ] .
 
-
-###  https://w3id.org/cocoon/v1.0#SCP
-<https://w3id.org/cocoon/v1.0#SCP> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
-
-
-###  https://w3id.org/cocoon/v1.0#SSH
-<https://w3id.org/cocoon/v1.0#SSH> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:Region ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:inJurisdiction ;
+                         owl:allValuesFrom gn:Feature
+                       ] ;
+   rdfs:comment "Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
+ ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#SaaS
-<https://w3id.org/cocoon/v1.0#SaaS> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#CloudService> ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <https://w3id.org/cocoon/v1.0#isSoftware> ;
-                                                      owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Software>
-                                                    ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Script
-<https://w3id.org/cocoon/v1.0#Script> rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://w3id.org/cocoon/v1.0#SoftwareType> .
+cocoon:SaaS rdf:type owl:Class ;
+      rdfs:subClassOf cocoon:CloudService .
 
 
 ###  https://w3id.org/cocoon/v1.0#Service
-<https://w3id.org/cocoon/v1.0#Service> rdf:type owl:Class ;
-                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://w3id.org/cocoon/v1.0#hasOrchestrationInterface> ;
-                                                         owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Interface>
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement> ;
-                                                         owl:someValuesFrom <https://w3id.org/cocoon/v1.0#ServiceLevelAgreement>
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://w3id.org/cocoon/v1.0#hasSupportedProtocol> ;
-                                                         owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Protocol>
-                                                       ] .
+cocoon:Service rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty cocoon:hasServiceLevelAgreement ;
+                           owl:someValuesFrom cocoon:ServiceLevelAgreement
+                         ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#ServiceLevelAgreement
-<https://w3id.org/cocoon/v1.0#ServiceLevelAgreement> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#Software
-<https://w3id.org/cocoon/v1.0#Software> rdf:type owl:Class ;
-                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/cocoon/v1.0#hasFunctionality> ;
-                                                          owl:someValuesFrom <https://w3id.org/cocoon/v1.0#SoftwareFunctionality>
-                                                        ] ,
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <https://w3id.org/cocoon/v1.0#isSoftwareType> ;
-                                                          owl:someValuesFrom <https://w3id.org/cocoon/v1.0#SoftwareType>
-                                                        ] .
-
-
-###  https://w3id.org/cocoon/v1.0#SoftwareFunctionality
-<https://w3id.org/cocoon/v1.0#SoftwareFunctionality> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#SoftwareType
-<https://w3id.org/cocoon/v1.0#SoftwareType> rdf:type owl:Class .
+cocoon:ServiceLevelAgreement rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#Storage
-<https://w3id.org/cocoon/v1.0#Storage> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/cocoon/v1.0#IaaS> ,
+cocoon:Storage rdf:type owl:Class ;
+         rdfs:subClassOf cocoon:IaaS ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty cocoon:canHaveSnapshot ;
+                           owl:someValuesFrom cocoon:Storage
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty cocoon:hasStorageIOMax ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass cocoon:QuantityOfThings
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty cocoon:hasStorageSize ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass cocoon:QuantityOfThings
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty cocoon:hasStorageThroughputMax ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass cocoon:QuantityOfThings
+                         ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:Storage ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:canHaveSnapshot ;
+                         owl:someValuesFrom cocoon:Storage
+                       ] ;
+   rdfs:comment "Available snapshot options"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:Storage ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasStorageIOMax ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Disks can have different input/output operations per sec (IOPs)."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:Storage ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasStorageThroughputMax ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Disks can have different throughput caps, i.e. 200 MB/second"@en
+ ] .
+
+
+###  https://w3id.org/cocoon/v1.0#StorageTransactionsPriceSpecification
+cocoon:StorageTransactionsPriceSpecification rdf:type owl:Class ;
+                                       rdfs:subClassOf gr:UnitPriceSpecification ,
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://w3id.org/cocoon/v1.0#storageSizeMin> ;
-                                                         owl:someValuesFrom xsd:decimal
-                                                       ] .
+                                                         owl:onProperty gr:hasPriceSpecification ;
+                                                         owl:someValuesFrom gr:UnitPriceSpecification
+                                                       ] ;
+                                       rdfs:comment """Can be used to define a common price spec for multiple cloud service individuals,
+i.e. the storage transaction spec has a different price in a different region,
+but there is a common transaction price spec for a group of cloud storage offers."""@en .
 
 
-###  https://w3id.org/cocoon/v1.0#Telnet
-<https://w3id.org/cocoon/v1.0#Telnet> rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
+###  https://w3id.org/cocoon/v1.0#SystemImage
+cocoon:SystemImage rdf:type owl:Class ;
+             rdfs:subClassOf cocoon:PaaS ;
+             dcterms:description """A system image is a serialized copy of the entire state of a computer system.
+System images can be used for backup.""" .
 
 
 ###  https://w3id.org/cocoon/v1.0#UnitOfMeasure
-<https://w3id.org/cocoon/v1.0#UnitOfMeasure> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#UnmeasurableAttribute
-<https://w3id.org/cocoon/v1.0#UnmeasurableAttribute> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Attribute> .
-
-
-###  https://w3id.org/cocoon/v1.0#UsageType
-<https://w3id.org/cocoon/v1.0#UsageType> rdf:type owl:Class .
-
-
-###  https://w3id.org/cocoon/v1.0#User
-<https://w3id.org/cocoon/v1.0#User> rdf:type owl:Class .
+cocoon:UnitOfMeasure rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#VM
-<https://w3id.org/cocoon/v1.0#VM> rdf:type owl:Class ;
-                                  rdfs:subClassOf <https://w3id.org/cocoon/v1.0#IaaS> ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/cocoon/v1.0#hasCPU> ;
-                                                    owl:someValuesFrom <https://w3id.org/cocoon/v1.0#CPU>
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/cocoon/v1.0#hasCPUcapacity> ;
-                                                    owl:someValuesFrom <https://w3id.org/cocoon/v1.0#PhysicalQuantity>
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/cocoon/v1.0#hasIOConfiguration> ;
-                                                    owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Attribute>
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/cocoon/v1.0#hasMemory> ;
-                                                    owl:someValuesFrom <https://w3id.org/cocoon/v1.0#PhysicalQuantity>
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/cocoon/v1.0#hasNetworkStorage> ;
-                                                    owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Storage>
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/cocoon/v1.0#hasOS> ;
-                                                    owl:someValuesFrom <https://w3id.org/cocoon/v1.0#OperatingSystem>
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/cocoon/v1.0#hasVirtualization> ;
-                                                    owl:someValuesFrom <https://w3id.org/cocoon/v1.0#Virtualization>
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <https://w3id.org/cocoon/v1.0#numberOfCores> ;
-                                                    owl:someValuesFrom xsd:decimal
-                                                  ] .
+cocoon:VM rdf:type owl:Class ;
+    rdfs:subClassOf cocoon:IaaS ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty cocoon:hasStorage ;
+                      owl:someValuesFrom cocoon:QuantityOfThings
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty gr:hasPriceSpecification ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass cocoon:StorageTransactionsPriceSpecification
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty cocoon:hasCPUcapacity ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass cocoon:QuantityOfThings
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty cocoon:hasMaxNumberOfDisk ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass cocoon:QuantityOfThings
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty cocoon:hasMaxStorageSize ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass cocoon:QuantityOfThings
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty cocoon:hasMemory ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass cocoon:QuantityOfThings
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty cocoon:numberOfCores ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onDataRange xsd:decimal
+                    ] .
 
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:VM ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasStorage ;
+                         owl:someValuesFrom cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Local storage included with this VM"@en
+ ] .
 
-###  https://w3id.org/cocoon/v1.0#VNC
-<https://w3id.org/cocoon/v1.0#VNC> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Protocol> .
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:VM ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty gr:hasPriceSpecification ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:StorageTransactionsPriceSpecification
+                       ] ;
+   rdfs:comment "VM storage transaction price specification"@en
+ ] .
 
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:VM ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasCPUcapacity ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "CPU power of VM"@en
+ ] .
 
-###  https://w3id.org/cocoon/v1.0#Virtualization
-<https://w3id.org/cocoon/v1.0#Virtualization> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/cocoon/v1.0#VM> .
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:VM ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasMaxNumberOfDisk ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Maximum number of disk allowed to attach to a VM"@en
+ ] .
 
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:VM ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasMaxStorageSize ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Maximum total disk size allowed to attach to a VM"@en
+ ] .
 
-###  https://w3id.org/cocoon/v1.0#VirtualizationFormat
-<https://w3id.org/cocoon/v1.0#VirtualizationFormat> rdf:type owl:Class .
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:VM ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasMemory ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Size of Memory"@en
+ ] .
 
-
-###  https://w3id.org/cocoon/v1.0#WSDL
-<https://w3id.org/cocoon/v1.0#WSDL> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Interface> .
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:VM ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:numberOfCores ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:decimal
+                       ] ;
+   rdfs:comment "Number of Cores available in this VM"@en
+ ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#Zone
-<https://w3id.org/cocoon/v1.0#Zone> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/cocoon/v1.0#Region> .
+cocoon:Zone rdf:type owl:Class ;
+      rdfs:subClassOf cocoon:Region .
 
 
 #################################################################
@@ -890,25 +641,92 @@
 #################################################################
 
 ###  https://w3id.org/cocoon/v1.0#GB
-<https://w3id.org/cocoon/v1.0#GB> rdf:type owl:NamedIndividual ,
-                                           <https://w3id.org/cocoon/v1.0#UnitOfMeasure> ;
-                                  <http://purl.org/dc/terms/description> "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
-                                  rdfs:label "Gigabyte"@en .
+cocoon:GB rdf:type owl:NamedIndividual ,
+             qudt:DerivedUnit ,
+             qudt:InformationEntropyUnit ,
+             cocoon:UnitOfMeasure ;
+    dcterms:description "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
+    rdfs:label "Gigabyte"@en .
+
+
+###  https://w3id.org/cocoon/v1.0#GBPerMonth
+cocoon:GBPerMonth rdf:type owl:NamedIndividual ,
+                     qudt:DataRateUnit ,
+                     qudt:DerivedUnit ,
+                     cocoon:UnitOfMeasure ;
+            dcterms:description "Often describe 1 GB per Month usage."@en ;
+            rdfs:label "Gigabyte per Month"@en .
+
+
+###  https://w3id.org/cocoon/v1.0#IOPs
+cocoon:IOPs rdf:type owl:NamedIndividual ,
+               qudt:DataRateUnit ,
+               qudt:DerivedUnit ,
+               cocoon:UnitOfMeasure ;
+      dcterms:description "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en ;
+      rdfs:label "Input/output operations per sec"@en .
+
+
+###  https://w3id.org/cocoon/v1.0#MBPerSec
+cocoon:MBPerSec rdf:type owl:NamedIndividual ,
+                   qudt:DataRateUnit ,
+                   qudt:DerivedUnit ,
+                   cocoon:UnitOfMeasure ;
+          dcterms:description "Azure Managed Disks throughput caps per disk."@en ;
+          rdfs:label "MB/second"@en .
+
+
+###  https://w3id.org/cocoon/v1.0#TB
+cocoon:TB rdf:type owl:NamedIndividual ,
+             qudt:DerivedUnit ,
+             qudt:InformationEntropyUnit ,
+             cocoon:UnitOfMeasure ;
+    dcterms:description "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
+    rdfs:label "Terabyte"@en .
+
+
+###  https://w3id.org/cocoon/v1.0#azure
+cocoon:azure rdf:type owl:NamedIndividual ,
+                gr:BusinessEntity ;
+       gr:name "Microsoft Azure Cloud" ;
+       rdfs:label "Azure"@en ;
+       foaf:page <https://azure.microsoft.com/> .
 
 
 ###  https://w3id.org/cocoon/v1.0#gceu
-<https://w3id.org/cocoon/v1.0#gceu> rdf:type owl:NamedIndividual ,
-                                             <https://w3id.org/cocoon/v1.0#UnitOfMeasure> ;
-                                    <http://purl.org/dc/terms/description> "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ’s to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
-                                    rdfs:label "Google Compute Engine Unit"@en .
+cocoon:gceu rdf:type owl:NamedIndividual ,
+               cocoon:UnitOfMeasure ;
+      dcterms:description "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ’s to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
+      rdfs:label "Google Compute Engine Unit"@en .
+
+
+###  https://w3id.org/cocoon/v1.0#gcloud
+cocoon:gcloud rdf:type owl:NamedIndividual ,
+                 gr:BusinessEntity ;
+        gr:name "Google Cloud" ;
+        rdfs:label "Gcloud"@en ;
+        foaf:page <https://cloud.google.com/> .
 
 
 ###  https://w3id.org/cocoon/v1.0#mirandazhangqian
-<https://w3id.org/cocoon/v1.0#mirandazhangqian> rdf:type owl:NamedIndividual ,
-                                                         <http://xmlns.com/foaf/0.1/Person> ;
-                                                <http://xmlns.com/foaf/0.1/homepage> <https://github.com/miranda-zhang> ;
-                                                <http://xmlns.com/foaf/0.1/mbox> "miranda.zhang.q@gmail.com"^^xsd:string ;
-                                                <http://xmlns.com/foaf/0.1/name> "Miranda ZHANG Qian"^^xsd:string .
+cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
+                           foaf:Person ;
+                  foaf:homepage <https://github.com/miranda-zhang> ;
+                  foaf:mbox "miranda.zhang.q@gmail.com" ;
+                  foaf:name "Miranda ZHANG Qian" .
 
 
-###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cocoon:CommunityCloud
+                cocoon:HybridCloud
+                cocoon:PrivateCloud
+                cocoon:PublicCloud
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
