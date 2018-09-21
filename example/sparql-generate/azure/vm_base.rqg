@@ -5,7 +5,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX unit: <http://qudt.org/vocab/unit#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0#>
 
 GENERATE { 
   <vm/azure/{?vm_key}> a cocoon:VM;
@@ -29,13 +29,13 @@ GENERATE {
             a gr:UnitPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?value; 
-                cocoon:hasRegion <region/azure/{?region_slug}>;
+                cocoon:hasRegion <region/azure/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour ;
         ] 
     }
-    ITERATOR iter:JSONListKeys(?prices) AS ?region_slug
+    ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
-        BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region_slug}.value") ) AS ?value)
+        BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region}.value") ) AS ?value)
     }   
   	.
  

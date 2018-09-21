@@ -3,6 +3,7 @@
 @prefix gr: <http://purl.org/goodrelations/v1#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix qudt: <http://qudt.org/schema/qudt#> .
@@ -289,7 +290,8 @@ cocoon:HybridCloud rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0#IaaS
 cocoon:IaaS rdf:type owl:Class ;
-            rdfs:subClassOf cocoon:CloudService .
+            rdfs:subClassOf cocoon:CloudService ;
+            rdfs:comment "Infrastructure as a Service"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#LocalStorage
@@ -348,7 +350,8 @@ cocoon:OSPriceSpecification rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0#PaaS
 cocoon:PaaS rdf:type owl:Class ;
-            rdfs:subClassOf cocoon:CloudService .
+            rdfs:subClassOf cocoon:CloudService ;
+            rdfs:comment "Platform as a Service"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#PrivateCloud
@@ -387,7 +390,7 @@ cocoon:QuantityOfThings rdf:type owl:Class ;
                                                                         )
                                                           ]
                                         ] ;
-                        rdfs:comment "Quantify things, i.e. 3 TB of SSD Storage, 8 GB of Memory" .
+                        rdfs:comment "Quantify things, i.e. 2 GB of Memory, 10 GB of local storage, 3 TB of network storage"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource cocoon:QuantityOfThings ;
@@ -408,7 +411,7 @@ cocoon:Region rdf:type owl:Class ;
               rdfs:subClassOf cocoon:Location ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:inJurisdiction ;
-                                owl:allValuesFrom gn:Feature
+                                owl:someValuesFrom gn:Feature
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:hasProvider ;
@@ -436,15 +439,27 @@ cocoon:Region rdf:type owl:Class ;
    owl:annotatedProperty rdfs:subClassOf ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
                          owl:onProperty cocoon:inJurisdiction ;
-                         owl:allValuesFrom gn:Feature
+                         owl:someValuesFrom gn:Feature
                        ] ;
    rdfs:comment "Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:Region ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:inPhysicalLocation ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass gn:Feature
+                       ] ;
+   rdfs:comment "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately"@en
  ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#SaaS
 cocoon:SaaS rdf:type owl:Class ;
-            rdfs:subClassOf cocoon:CloudService .
+            rdfs:subClassOf cocoon:CloudService ;
+            rdfs:comment "Software as a Service"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#Service
