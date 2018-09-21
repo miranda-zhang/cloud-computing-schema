@@ -12,10 +12,9 @@ volume = {4},
 year = {2013}
 }
 
-@inproceedings{MirandaZhangQianCoCoOn2012,
-author = {Zhang, Miranda and Ranjan, Rajiv and Haller, Armin and {Georgakopoulos, Dimitrios Menzel}, Michael and Nepal, Surya},
+@inproceedings{CoCoOn2012,
+author = {Zhang, Miranda and Ranjan, Rajiv and Haller, Armin and Georgakopoulos, Dimitrios and Menzel, Michael and Nepal, Surya},
 booktitle = {CollaborateCom},
-file = {:C$\backslash$:/Users/admin-u5214628/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Zhang et al. - 2012 - An Ontology based System for Cloud Infrastructure Services Discovery.pdf:pdf},
 title = {{An ontology-based system for Cloud infrastructure services' discovery}},
 url = {http://ieeexplore.ieee.org/document/6450944/},
 year = {2012}
