@@ -400,7 +400,9 @@
     <!-- http://qudt.org/schema/qudt#InformationEntropyUnit -->
 
 
-    <owl:Class rdf:about="http://qudt.org/schema/qudt#InformationEntropyUnit"/>
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#InformationEntropyUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0#DeploymentModel"/>
+    </owl:Class>
     
 
 
@@ -499,6 +501,7 @@
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0#IaaS">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0#CloudService"/>
+        <rdfs:comment xml:lang="en">Infrastructure as a Service</rdfs:comment>
     </owl:Class>
     
 
@@ -593,6 +596,7 @@
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0#PaaS">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0#CloudService"/>
+        <rdfs:comment xml:lang="en">Platform as a Service</rdfs:comment>
     </owl:Class>
     
 
@@ -655,7 +659,7 @@
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantify things, i.e. 3 TB of SSD Storage, 8 GB of Memory</rdfs:comment>
+        <rdfs:comment xml:lang="en">Quantify things, i.e. 2 GB of Memory, 10 GB of local storage, 3 TB of network storage</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/cocoon/v1.0#QuantityOfThings"/>
@@ -682,7 +686,7 @@ quantifies the type of object should be `LocalStorage`</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0#inJurisdiction"/>
-                <owl:allValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -720,10 +724,22 @@ quantifies the type of object should be `LocalStorage`</rdfs:comment>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0#inJurisdiction"/>
-                <owl:allValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/cocoon/v1.0#Region"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0#inPhysicalLocation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately</rdfs:comment>
     </owl:Axiom>
     
 
@@ -733,6 +749,7 @@ quantifies the type of object should be `LocalStorage`</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0#SaaS">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0#CloudService"/>
+        <rdfs:comment xml:lang="en">Software as a Service</rdfs:comment>
     </owl:Class>
     
 

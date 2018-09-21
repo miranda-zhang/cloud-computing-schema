@@ -29,6 +29,12 @@ This section provides details for each class and property defined by Cloud Compu
          </a>
       </li>
       <li>
+         <a href="#http://qudt.org/schema/qudt#InformationEntropyUnit"
+            title="http://qudt.org/schema/qudt#InformationEntropyUnit">
+            <span>information entropy unit</span>
+         </a>
+      </li>
+      <li>
          <a href="#LocalStorage" title="https://w3id.org/cocoon/v1.0#LocalStorage">
             <span>local storage</span>
          </a>
@@ -225,6 +231,9 @@ This section provides details for each class and property defined by Cloud Compu
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#IaaS</p>
+      <div class="comment">
+         <span class="markdown">Infrastructure as a Service</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -237,6 +246,27 @@ This section provides details for each class and property defined by Cloud Compu
             <sup class="type-c" title="class">c</sup>, <a href="#Storage" title="https://w3id.org/cocoon/v1.0#Storage">storage</a>
             <sup class="type-c" title="class">c</sup>, <a href="#VM" title="https://w3id.org/cocoon/v1.0#VM">v m</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://qudt.org/schema/qudt#InformationEntropyUnit">
+      <h3>information entropy unit<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://qudt.org/schema/qudt#InformationEntropyUnit</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#DeploymentModel">deployment model</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#GB" title="https://w3id.org/cocoon/v1.0#GB">Gigabyte</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#TB" title="https://w3id.org/cocoon/v1.0#TB">Terabyte</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -351,6 +381,9 @@ This section provides details for each class and property defined by Cloud Compu
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#PaaS</p>
+      <div class="comment">
+         <span class="markdown">Platform as a Service</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -416,7 +449,7 @@ This section provides details for each class and property defined by Cloud Compu
       <p>
          <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#QuantityOfThings</p>
       <div class="comment">
-         <span class="markdown">Quantify things, i.e. 3 TB of SSD Storage, 8 GB of Memory</span>
+         <span class="markdown">Quantify things, i.e. 2 GB of Memory, 10 GB of local storage, 3 TB of network storage</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -453,7 +486,7 @@ This section provides details for each class and property defined by Cloud Compu
          <dd>
             <span class="dotted" title="https://w3id.org/cocoon/v1.0#inJurisdiction">in jurisdiction</span>
             <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">only</span> 
+            <span class="logic">some</span> 
             <span class="dotted" title="http://www.geonames.org/ontology#Feature">feature</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -491,6 +524,9 @@ This section provides details for each class and property defined by Cloud Compu
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#SaaS</p>
+      <div class="comment">
+         <span class="markdown">Software as a Service</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1012,6 +1048,88 @@ but there is a common transaction price spec for a group of cloud storage offers
          <span class="markdown">For Google Cloud, cores and vCPU referes to the same thing.</span>
       </div>
    </div>
+</div><div id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/homepage" title="http://xmlns.com/foaf/0.1/homepage">
+            <span>homepage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/mbox" title="http://xmlns.com/foaf/0.1/mbox">
+            <span>mbox</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/goodrelations/v1#name" title="http://purl.org/goodrelations/v1#name">
+            <span>name</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/name" title="http://xmlns.com/foaf/0.1/name">
+            <span>name</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/page" title="http://xmlns.com/foaf/0.1/page">
+            <span>page</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/description">
+      <h3>description<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/homepage">
+      <h3>homepage<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/homepage</p>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/mbox">
+      <h3>mbox<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/mbox</p>
+   </div>
+   <div class="entity" id="http://purl.org/goodrelations/v1#name">
+      <h3>name<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/goodrelations/v1#name</p>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/name">
+      <h3>name<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/name</p>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/page">
+      <h3>page<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/page</p>
+   </div>
 </div><div id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
@@ -1089,8 +1207,8 @@ but there is a common transaction price spec for a group of cloud storage offers
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <span class="dotted"
-                  title="http://qudt.org/schema/qudt#InformationEntropyUnit">information entropy unit</span>
+            <a href="#http://qudt.org/schema/qudt#InformationEntropyUnit"
+               title="http://qudt.org/schema/qudt#InformationEntropyUnit">information entropy unit</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
@@ -1212,8 +1330,8 @@ but there is a common transaction price spec for a group of cloud storage offers
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <span class="dotted"
-                  title="http://qudt.org/schema/qudt#InformationEntropyUnit">information entropy unit</span>
+            <a href="#http://qudt.org/schema/qudt#InformationEntropyUnit"
+               title="http://qudt.org/schema/qudt#InformationEntropyUnit">information entropy unit</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>

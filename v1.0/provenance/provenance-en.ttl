@@ -7,6 +7,6 @@
 	 dc:creator <https://w3id.org/cocoon/v1.0#mirandazhangqian>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://w3id.org/cocoon/v1.0#>;
-	 prov:wasRevisionOf <https://w3id.org/cocoon/v0.1#>;
+	 prov:wasRevisionOf <https://miranda-zhang.github.io/cloud-computing-schema/v0.1/ontology/cocoon.owl>;
 	 prov:wasGeneratedAt "2018-09-17";
 .

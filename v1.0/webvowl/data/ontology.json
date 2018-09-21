@@ -28,16 +28,16 @@
         "value" : "2012-10-01",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "cocoon",
-        "type" : "label"
-      } ],
       "rights" : [ {
         "identifier" : "rights",
         "language" : "undefined",
         "value" : "Copyright © 2018 Miranda ZHANG Qian",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "cocoon",
         "type" : "label"
       } ],
       "modified" : [ {
@@ -46,16 +46,16 @@
         "value" : "2018-09-17",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/cocoon/v1.0#",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/cocoon/v1.0#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -134,6 +134,9 @@
     "id" : "9",
     "type" : "owl:Thing"
   }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
@@ -161,7 +164,7 @@
     "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "56",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
     "id" : "27",
@@ -179,7 +182,7 @@
     "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "88",
+    "id" : "90",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "1",
@@ -197,31 +200,28 @@
     "id" : "68",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "96",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "97",
+    "id" : "62",
     "type" : "owl:Class"
   }, {
     "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
-    "type" : "owl:Class"
-  }, {
-    "id" : "60",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
     "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "105",
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -340,6 +340,9 @@
       "IRI-based" : "PaaS"
     },
     "subClasses" : [ "5" ],
+    "comment" : {
+      "en" : "Platform as a Service"
+    },
     "id" : "6",
     "superClasses" : [ "24" ]
   }, {
@@ -434,7 +437,7 @@
     "label" : {
       "IRI-based" : "Unit"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "31"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -444,6 +447,13 @@
       "undefined" : "Thing"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
     "iri" : "https://w3id.org/cocoon/v1.0#SaaS",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
     "instances" : 0,
@@ -451,6 +461,9 @@
       "IRI-based" : "SaaS"
     },
     "subClasses" : [ "1" ],
+    "comment" : {
+      "en" : "Software as a Service"
+    },
     "id" : "2",
     "superClasses" : [ "24" ]
   }, {
@@ -531,7 +544,7 @@
     "label" : {
       "IRI-based" : "DeploymentModel"
     },
-    "subClasses" : [ "54", "55", "49", "56" ],
+    "subClasses" : [ "54", "55", "56", "49", "57" ],
     "id" : "50"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#StorageTransactionsPriceSpecification",
@@ -541,7 +554,7 @@
       "IRI-based" : "StorageTransactionsPriceSpecification"
     },
     "comment" : {
-      "en" : "Can be used to define a common price spec for multiple cloud service individuals,\ni.e. the storage transaction spec has a different price in a different region,\nbut there is a common transaction price spec for a group of cloud storage offers."
+      "en" : "Can be used to define a common price spec for multiple cloud service individuals,\r\ni.e. the storage transaction spec has a different price in a different region,\r\nbut there is a common transaction price spec for a group of cloud storage offers."
     },
     "id" : "35",
     "superClasses" : [ "36" ]
@@ -561,7 +574,7 @@
     "label" : {
       "IRI-based" : "PrivateCloud"
     },
-    "id" : "56",
+    "id" : "57",
     "superClasses" : [ "50" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#IaaS",
@@ -571,6 +584,9 @@
       "IRI-based" : "IaaS"
     },
     "subClasses" : [ "26", "43", "30" ],
+    "comment" : {
+      "en" : "Infrastructure as a Service"
+    },
     "id" : "27",
     "superClasses" : [ "24" ]
   }, {
@@ -590,9 +606,9 @@
     "label" : {
       "IRI-based" : "Region"
     },
-    "subClasses" : [ "63" ],
+    "subClasses" : [ "70" ],
     "id" : "38",
-    "superClasses" : [ "60" ]
+    "superClasses" : [ "64" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#ServiceLevelAgreement",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -608,7 +624,7 @@
     "label" : {
       "IRI-based" : "Storage"
     },
-    "subClasses" : [ "68", "66" ],
+    "subClasses" : [ "68", "62" ],
     "id" : "43",
     "superClasses" : [ "27" ]
   }, {
@@ -681,7 +697,7 @@
       }
     } ],
     "attributes" : [ "equivalent" ],
-    "id" : "88"
+    "id" : "90"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#Database",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -705,7 +721,7 @@
     "baseIri" : "https://w3id.org/cocoon/v1.0",
     "instances" : 0,
     "description" : {
-      "undefined" : "A system image is a serialized copy of the entire state of a computer system.\nSystem images can be used for backup."
+      "undefined" : "A system image is a serialized copy of the entire state of a computer system.\r\nSystem images can be used for backup."
     },
     "label" : {
       "IRI-based" : "SystemImage"
@@ -720,7 +736,7 @@
       "IRI-based" : "QuantityOfThings"
     },
     "comment" : {
-      "undefined" : "Quantify things, i.e. 3 TB of SSD Storage, 8 GB of Memory"
+      "en" : "Quantify things, i.e. 2 GB of Memory, 10 GB of local storage, 3 TB of network storage"
     },
     "id" : "33"
   }, {
@@ -745,15 +761,8 @@
     "comment" : {
       "en" : "Storage can exist independent from VM"
     },
-    "id" : "66",
+    "id" : "62",
     "superClasses" : [ "43" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "96",
-    "label" : {
-      "IRI-based" : "string"
-    }
   }, {
     "iri" : "http://qudt.org/schema/qudt#InformationEntropyUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
@@ -783,7 +792,8 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "97"
+    "id" : "54",
+    "superClasses" : [ "50" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#CommunityCloud",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -791,7 +801,7 @@
     "label" : {
       "IRI-based" : "CommunityCloud"
     },
-    "id" : "54",
+    "id" : "55",
     "superClasses" : [ "50" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#QualityOfService",
@@ -800,7 +810,7 @@
     "label" : {
       "IRI-based" : "QualityOfService"
     },
-    "id" : "101"
+    "id" : "102"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#Location",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -809,7 +819,7 @@
       "IRI-based" : "Location"
     },
     "subClasses" : [ "38" ],
-    "id" : "60"
+    "id" : "64"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#Zone",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -817,17 +827,8 @@
     "label" : {
       "IRI-based" : "Zone"
     },
-    "id" : "63",
+    "id" : "70",
     "superClasses" : [ "38" ]
-  }, {
-    "iri" : "https://w3id.org/cocoon/v1.0#HybridCloud",
-    "baseIri" : "https://w3id.org/cocoon/v1.0",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "HybridCloud"
-    },
-    "id" : "55",
-    "superClasses" : [ "50" ]
   }, {
     "iri" : "http://qudt.org/schema/qudt#DataRateUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
@@ -867,7 +868,16 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "105"
+    "id" : "106"
+  }, {
+    "iri" : "https://w3id.org/cocoon/v1.0#HybridCloud",
+    "baseIri" : "https://w3id.org/cocoon/v1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HybridCloud"
+    },
+    "id" : "56",
+    "superClasses" : [ "50" ]
   } ],
   "property" : [ {
     "id" : "0",
@@ -892,7 +902,7 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "37",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "40",
     "type" : "owl:disjointWith"
@@ -906,101 +916,95 @@
     "id" : "47",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "48",
-    "type" : "owl:someValuesFrom"
-  }, {
     "id" : "53",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "57",
+    "id" : "58",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "58",
+    "id" : "59",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "59",
+    "id" : "60",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "61",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "62",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "64",
+    "id" : "63",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "65",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "12",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "69",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "70",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "71",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "72",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "73",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "74",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "75",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "76",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "77",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "78",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "79",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "80",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "81",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "82",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "83",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "84",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "85",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "86",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
     "type" : "owl:objectProperty"
   }, {
     "id" : "89",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "90",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "91",
     "type" : "owl:disjointWith"
@@ -1015,33 +1019,42 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "95",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "98",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "13",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "98",
-    "type" : "owl:someValuesFrom"
-  }, {
     "id" : "99",
     "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "100",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "14",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "100",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "102",
+    "id" : "103",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "103",
+    "id" : "104",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "104",
+    "id" : "105",
     "type" : "owl:objectProperty"
   }, {
     "id" : "15",
@@ -1050,12 +1063,12 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "range" : "6",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "4"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -1117,12 +1130,12 @@
       "IRI-based" : "inJurisdiction"
     },
     "domain" : "38",
-    "attributes" : [ "object", "allValues" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "37"
   }, {
     "range" : "41",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#canHaveSnapshot",
@@ -1159,24 +1172,14 @@
     "attributes" : [ "datatype" ],
     "id" : "47"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0#hasBandwidth",
-    "baseIri" : "https://w3id.org/cocoon/v1.0",
-    "range" : "33",
-    "label" : {
-      "IRI-based" : "hasBandwidth"
-    },
-    "domain" : "26",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "48"
-  }, {
-    "iri" : "https://w3id.org/cocoon/v1.0#latency",
+    "iri" : "https://w3id.org/cocoon/v1.0#bandwidth",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
     "range" : "52",
     "label" : {
-      "IRI-based" : "latency"
+      "IRI-based" : "bandwidth"
     },
     "domain" : "26",
-    "attributes" : [ "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype" ],
     "id" : "53"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#inPhysicalLocation",
@@ -1187,7 +1190,7 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "57"
+    "id" : "58"
   }, {
     "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#location",
     "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
@@ -1197,37 +1200,42 @@
     },
     "domain" : "9",
     "attributes" : [ "datatype", "external" ],
-    "id" : "58"
-  }, {
-    "range" : "60",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
     "range" : "45",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "43",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
-    "range" : "38",
-    "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "62"
+    "range" : "64",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
   }, {
     "range" : "24",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "64"
-  }, {
-    "range" : "43",
-    "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
+  }, {
+    "range" : "24",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
   }, {
     "range" : "43",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "67"
+  }, {
+    "range" : "38",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasStorageIOMax",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1241,19 +1249,19 @@
     "id" : "12"
   }, {
     "range" : "24",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "69"
-  }, {
-    "range" : "24",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "70"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
   }, {
     "range" : "27",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "71"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "27",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasCPUcapacity",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1263,17 +1271,17 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "72"
-  }, {
-    "range" : "50",
-    "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "73"
+    "id" : "74"
   }, {
     "range" : "50",
     "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "74"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "50",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasOperatingSystem",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1283,22 +1291,22 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "75"
-  }, {
-    "range" : "27",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "76"
+    "id" : "77"
   }, {
     "range" : "27",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "77"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "50",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
   }, {
     "range" : "36",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#chargedPerCore",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1312,22 +1320,22 @@
       "en" : "For Google Cloud, cost of SQL server image is charged on per core basis."
     },
     "attributes" : [ "datatype" ],
-    "id" : "79"
+    "id" : "81"
   }, {
     "range" : "36",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "80"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
   }, {
     "range" : "50",
     "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "81"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
   }, {
     "range" : "50",
     "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "82"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#numberOfCores",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1341,7 +1349,7 @@
       "undefined" : "For Google Cloud, cores and vCPU referes to the same thing."
     },
     "attributes" : [ "datatype" ],
-    "id" : "83"
+    "id" : "85"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#forCoresLessEqual",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1355,7 +1363,7 @@
       "en" : "Google Cloud OS price for VM with different number of cores are different."
     },
     "attributes" : [ "datatype" ],
-    "id" : "84"
+    "id" : "86"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#location",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1369,7 +1377,7 @@
       "en" : "The human-readable name for the actual location of the data center in a region, this is the original value used to generate the linking to Geoname ontology."
     },
     "attributes" : [ "datatype" ],
-    "id" : "85"
+    "id" : "87"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasProvider",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1379,7 +1387,7 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "86"
+    "id" : "88"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasBenchmark",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1389,47 +1397,57 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "87"
-  }, {
-    "range" : "55",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "89"
   }, {
     "range" : "56",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "90"
-  }, {
-    "range" : "49",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "91"
   }, {
-    "range" : "56",
+    "range" : "57",
     "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "92"
   }, {
     "range" : "49",
     "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "93"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
   }, {
     "range" : "49",
     "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "94"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0#bandwidth",
+    "range" : "49",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/cocoon/v1.0#hasBandwidth",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
-    "range" : "96",
+    "range" : "33",
     "label" : {
-      "IRI-based" : "bandwidth"
+      "IRI-based" : "hasBandwidth"
     },
     "domain" : "26",
-    "attributes" : [ "datatype", "someValues" ],
-    "id" : "95"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/cocoon/v1.0#latency",
+    "baseIri" : "https://w3id.org/cocoon/v1.0",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "latency"
+    },
+    "domain" : "26",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "98"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasStorageSize",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1451,7 +1469,7 @@
     "superproperty" : [ "8" ],
     "domain" : "36",
     "attributes" : [ "object", "someValues" ],
-    "id" : "98"
+    "id" : "99"
   }, {
     "iri" : "http://purl.org/goodrelations/v1#hasPriceSpecification",
     "baseIri" : "http://purl.org/goodrelations/v1",
@@ -1461,7 +1479,17 @@
     },
     "domain" : "24",
     "attributes" : [ "object", "someValues", "external" ],
-    "id" : "99"
+    "id" : "100"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "numberOfCores"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "101"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasStorageThroughputMax",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1473,16 +1501,6 @@
     "domain" : "9",
     "attributes" : [ "object" ],
     "id" : "14"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "numberOfCores"
-    },
-    "domain" : "9",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "100"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#forCoresMoreThan",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1496,7 +1514,7 @@
       "en" : "Google Cloud OS price for VM with different number of cores are different."
     },
     "attributes" : [ "datatype" ],
-    "id" : "102"
+    "id" : "103"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasMaxStorageSize",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1517,7 +1535,7 @@
     },
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "103"
+    "id" : "104"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#ofObjectType",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -1528,7 +1546,7 @@
     "maxCardinality" : "1",
     "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "104"
+    "id" : "105"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasMaxNumberOfDisk",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
