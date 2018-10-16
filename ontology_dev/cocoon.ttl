@@ -199,6 +199,10 @@ This is used to describe the price for machines with more than specified
 number of cores."""@en .
 
 
+###  https://w3id.org/cocoon/v1.0#hasCurrencyValue
+cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty .
+
+
 ###  https://w3id.org/cocoon/v1.0#latency
 cocoon:latency rdf:type owl:DatatypeProperty .
 
@@ -229,7 +233,13 @@ gr:BusinessEntity rdf:type owl:Class .
 gr:UnitPriceSpecification rdf:type owl:Class ;
                           rdfs:subClassOf [ rdf:type owl:Restriction ;
                                             owl:onProperty cocoon:hasRegion ;
-                                            owl:someValuesFrom cocoon:Region
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass cocoon:Region
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty cocoon:hasCurrencyValue ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onDataRange xsd:double
                                           ] .
 
 
@@ -365,6 +375,20 @@ cocoon:OSPriceSpecification rdf:type owl:Class ;
    owl:annotatedSource cocoon:OSPriceSpecification ;
    owl:annotatedProperty rdfs:subClassOf ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:chargedPerCore ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:boolean
+                       ] ;
+   rdfs:comment """For example on Google Cloud, Windows Server images on some machine types are charged based on the number of CPUs, i.e., n1-standard-4, n1-highcpu-4, and n1-highmem-4 are machine-types with 4 vCPUs,
+and are charged at $0.16 USD/hour (4 times $0.04 USD/hour).
+
+https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gcloud/os.md#windows-server-images"""@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:OSPriceSpecification ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
                          owl:onProperty cocoon:forCoresLessEqual ;
                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onDataRange xsd:decimal
@@ -381,20 +405,6 @@ cocoon:OSPriceSpecification rdf:type owl:Class ;
                          owl:onDataRange xsd:decimal
                        ] ;
    rdfs:comment "Describe  the price  for  machines  with  more  than  specified  number  of  cores."@en
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:OSPriceSpecification ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:chargedPerCore ;
-                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onDataRange xsd:boolean
-                       ] ;
-   rdfs:comment """For example on Google Cloud, Windows Server images on some machine types are charged based on the number of CPUs, i.e., n1-standard-4, n1-highcpu-4, and n1-highmem-4 are machine-types with 4 vCPUs,
-and are charged at $0.16 USD/hour (4 times $0.04 USD/hour).
-
-https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gcloud/os.md#windows-server-images"""@en
  ] .
 
 
@@ -435,8 +445,7 @@ cocoon:QuantityOfThings rdf:type owl:Class ;
                                           owl:onDataRange [ rdf:type rdfs:Datatype ;
                                                             owl:unionOf ( xsd:decimal
                                                                           xsd:double
-                                                                          xsd:int
-                                                                          xsd:integer
+                                                                          xsd:nonNegativeInteger
                                                                         )
                                                           ]
                                         ] ;
@@ -554,7 +563,7 @@ cocoon:Storage rdf:type owl:Class ;
                          owl:onProperty cocoon:canHaveSnapshot ;
                          owl:someValuesFrom cocoon:Storage
                        ] ;
-   rdfs:comment "Available snapshot options"@en
+   rdfs:comment "Available snapshot options."@en
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -649,7 +658,7 @@ cocoon:VM rdf:type owl:Class ;
                          owl:onProperty cocoon:hasStorage ;
                          owl:someValuesFrom cocoon:QuantityOfThings
                        ] ;
-   rdfs:comment "Local storage included with this VM"@en
+   rdfs:comment "Local storage   available on this VM, or netowrk storage attached to this VM."@en
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -720,7 +729,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onDataRange xsd:decimal
                        ] ;
-   rdfs:comment "Number of Cores available in this VM"@en
+   rdfs:comment "The number of cores available on this VM."@en
  ] .
 
 

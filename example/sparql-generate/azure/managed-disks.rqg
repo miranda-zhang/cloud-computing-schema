@@ -22,7 +22,7 @@ GENERATE {
     }
   	ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
-        BIND (xsd:double( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
+        BIND (xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
     } .
 
     GENERATE {
@@ -43,9 +43,9 @@ GENERATE {
                 cocoon:hasUnitOfMeasurement cocoon:MBPerSec;
         ];
     } WHERE {
-        BIND (xsd:int( fun:JSONPath(?managed_disk_json,"$.iops") ) AS ?iops )
-        BIND (xsd:int( fun:JSONPath(?managed_disk_json,"$.size") ) AS ?size)
-        BIND (xsd:int( fun:JSONPath(?managed_disk_json,"$.speed") ) AS ?speed)        
+        BIND (xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.iops") ) AS ?iops )
+        BIND (xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.size") ) AS ?size)
+        BIND (xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.speed") ) AS ?speed)        
         FILTER( BOUND(?iops) )
         # either ?iops ?size ?speed are all bound or non is bound
     } .

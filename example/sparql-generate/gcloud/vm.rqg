@@ -11,25 +11,40 @@ GENERATE {
   <data/vm/gcloud/{?name}> a cocoon:VM;
     rdfs:label ?name;
     cocoon:numberOfCores ?cores;
-    cocoon:hasCPUcapacity[
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?gceu;
-            cocoon:hasUnitOfMeasurement cocoon:gceu;
-    ];
     cocoon:hasMemory [
         a cocoon:QuantityOfThings;
             cocoon:numericValue ?memory;
             cocoon:hasUnitOfMeasurement cocoon:GB;
     ];
-    cocoon:hasMaxNumberOfDisk [
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?maxNumberOfPd;
-    ];
-    cocoon:hasMaxStorageSize [
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?maxPdSize;
-            cocoon:hasUnitOfMeasurement cocoon:TB;
-    ];
+    GENERATE {
+        <data/vm/gcloud/{?name}> cocoon:hasMaxStorageSize [
+            a cocoon:QuantityOfThings;
+                cocoon:numericValue ?maxPdSize;
+                cocoon:hasUnitOfMeasurement cocoon:TB;
+        ];
+    } 
+    WHERE {
+        FILTER( BOUND(?maxPdSize) )
+    } .
+    GENERATE {
+        <data/vm/gcloud/{?name}> cocoon:hasMaxNumberOfDisk [
+            a cocoon:QuantityOfThings;
+                cocoon:numericValue ?maxNumberOfPd;
+        ];
+    } 
+    WHERE {
+        FILTER( BOUND(?maxNumberOfPd) )
+    } .
+    GENERATE {
+        <data/vm/gcloud/{?name}> cocoon:hasCPUcapacity[
+            a cocoon:QuantityOfThings;
+                cocoon:numericValue ?gceu;
+                cocoon:hasUnitOfMeasurement cocoon:gceu;
+        ];
+    } 
+    WHERE {
+        FILTER( BOUND(?gceu) )
+    } .
     GENERATE {
         <data/vm/gcloud/{?name}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
@@ -54,6 +69,6 @@ WHERE {
     BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".cores" ) ) AS ?cores )
     BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".memory") ) AS ?memory )
     BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".gceu") ) AS ?gceu )
-    BIND ( xsd:int( fun:JSONPath(?gcloudVM,".maxNumberOfPd") ) AS ?maxNumberOfPd )
-    BIND ( xsd:int( fun:JSONPath(?gcloudVM,".maxPdSize") ) AS ?maxPdSize )
+    BIND ( xsd:nonNegativeInteger ( fun:JSONPath(?gcloudVM,".maxNumberOfPd") ) AS ?maxNumberOfPd )
+    BIND ( xsd:nonNegativeInteger ( fun:JSONPath(?gcloudVM,".maxPdSize") ) AS ?maxPdSize )
 }
