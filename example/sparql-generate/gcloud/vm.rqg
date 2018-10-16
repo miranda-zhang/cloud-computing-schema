@@ -56,7 +56,7 @@ GENERATE {
     } 
   	ITERATOR iter:JSONPath(?gcloudVM,".price[*]") AS ?price
     WHERE {
-        BIND ( xsd:double( fun:JSONPath(?price,".price") ) AS ?regionalPrice )
+        BIND ( xsd:float( fun:JSONPath(?price,".price") ) AS ?regionalPrice )
         BIND ( fun:JSONPath(?price,".region") AS ?region )
     }   
   	.
