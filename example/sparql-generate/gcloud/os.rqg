@@ -41,7 +41,7 @@ GENERATE {
     }    .
 
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_os.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/os.json> AS ?source
 ITERATOR  iter:JSONListKeys(?source) AS ?key
 WHERE {
     BIND(fun:JSONPath(?source, '$.{?key}' ) AS ?OSPriceSpec)

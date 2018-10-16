@@ -17,8 +17,10 @@ Old Version https://w3id.org/cocoon/v0.1
 
 The development version of the ontology is in [ontology_dev](ontology_dev/) folder.
 
+We have also registerd an entry at http://prefix.cc
+
 # Site
-The actual site is hosted via [Github page](https://miranda-zhang.github.io/cloud-computing-schema/v1.0/index-en.html)
+The actual site is hosted via Github page.
 Source code is in the `gh-page` branch.
 
 # Examples

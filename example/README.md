@@ -23,9 +23,8 @@ are exlained in:
 2. [Microsoft Azure Cloud Region](azure/region.md) 
 
 ## Units of Measure
-CoCoOn used vocabularies from:
-* [QUDT Unit ontology](unit/QUDT.md)
-And [defined additional units](unit/README.md)
+CoCoOn used vocabularies from [QUDT Unit ontology](unit/QUDT.md)
+and [defined additional units](unit/README.md)
 
 Using [cdt:ucum](unit/cdt.md) could be a future work.
 

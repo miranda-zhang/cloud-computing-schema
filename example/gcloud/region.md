@@ -20,7 +20,7 @@ $ gn_search dsoprea -p query "europe" -p max_rows 5
 ```
 Site http://www.geonames.org/
 
-[Region inJurisdiction example mapping (json)](data/jq/gcloud/region_inJurisdiction.json)
+[Region inJurisdiction example mapping (json)](../jq/gcloud/region_inJurisdiction.json)
 
 This is most useful for 
 [multi-region .](https://cloud.google.com/spanner/docs/instances#available-configurations-multi-region)

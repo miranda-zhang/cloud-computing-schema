@@ -64,19 +64,23 @@ gr:hasPriceSpecification rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#canHaveSnapshot
-cocoon:canHaveSnapshot rdf:type owl:ObjectProperty .
+cocoon:canHaveSnapshot rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasBandwidth
-cocoon:hasBandwidth rdf:type owl:ObjectProperty .
+cocoon:hasBandwidth rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasBenchmark
-cocoon:hasBenchmark rdf:type owl:ObjectProperty .
+cocoon:hasBenchmark rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasCPUcapacity
-cocoon:hasCPUcapacity rdf:type owl:ObjectProperty .
+cocoon:hasCPUcapacity rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasMaxNumberOfDisk
@@ -90,15 +94,18 @@ cocoon:hasMaxStorageSize rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0#hasMemory
-cocoon:hasMemory rdf:type owl:ObjectProperty .
+cocoon:hasMemory rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasOperatingSystem
-cocoon:hasOperatingSystem rdf:type owl:ObjectProperty .
+cocoon:hasOperatingSystem rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasProvider
-cocoon:hasProvider rdf:type owl:ObjectProperty .
+cocoon:hasProvider rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasRegion
@@ -107,11 +114,13 @@ cocoon:hasRegion rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement
-cocoon:hasServiceLevelAgreement rdf:type owl:ObjectProperty .
+cocoon:hasServiceLevelAgreement rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasStorage
-cocoon:hasStorage rdf:type owl:ObjectProperty .
+cocoon:hasStorage rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasStorageIOMax
@@ -130,19 +139,23 @@ cocoon:hasStorageThroughputMax rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement
-cocoon:hasUnitOfMeasurement rdf:type owl:ObjectProperty .
+cocoon:hasUnitOfMeasurement rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#inJurisdiction
-cocoon:inJurisdiction rdf:type owl:ObjectProperty .
+cocoon:inJurisdiction rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#inPhysicalLocation
-cocoon:inPhysicalLocation rdf:type owl:ObjectProperty .
+cocoon:inPhysicalLocation rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#ofObjectType
-cocoon:ofObjectType rdf:type owl:ObjectProperty .
+cocoon:ofObjectType rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty .
 
 
 #################################################################
@@ -153,17 +166,13 @@ cocoon:ofObjectType rdf:type owl:ObjectProperty .
 <http://www.semanticweb.org/owl/owlapi/turtle#location> rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores
-<http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores> rdf:type owl:DatatypeProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#bandwidth
 cocoon:bandwidth rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#chargedPerCore
 cocoon:chargedPerCore rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf <http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores> ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:comment "For Google Cloud, cost of SQL server image is charged on per core basis."@en .
 
 
@@ -175,14 +184,18 @@ cocoon:continent rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/cocoon/v1.0#forCoresLessEqual
 cocoon:forCoresLessEqual rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf <http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores> ;
-                         rdfs:comment "Google Cloud OS price for VM with different number of cores are different."@en .
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:comment """Google Cloud OS price for VM with different number of cores are different.
+It is used to describe price for machines with less than or
+equal to the specified number of cores."""@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#forCoresMoreThan
 cocoon:forCoresMoreThan rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf <http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores> ;
-                        rdfs:comment "Google Cloud OS price for VM with different number of cores are different."@en .
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:comment """Google Cloud OS price for VM with different number of cores are different.
+This is used to describe the price for machines with more than specified
+number of cores."""@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#latency
@@ -332,7 +345,7 @@ cocoon:OSPriceSpecification rdf:type owl:Class ;
                             rdfs:subClassOf gr:UnitPriceSpecification ,
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty cocoon:chargedPerCore ;
-                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                               owl:onDataRange xsd:boolean
                                             ] ,
                                             [ rdf:type owl:Restriction ;
@@ -452,7 +465,7 @@ cocoon:Region rdf:type owl:Class ;
                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onClass gn:Feature
                        ] ;
-   rdfs:comment "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately"@en
+   rdfs:comment "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately."@en
  ] .
 
 

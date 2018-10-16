@@ -1,7 +1,7 @@
 BASE <https://w3id.org/cocoon/> 
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0#>
 
 GENERATE {
     GENERATE {
@@ -14,7 +14,7 @@ GENERATE {
     }
   	.
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_region_geoname.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/region_inJurisdiction.json> AS ?source
 ITERATOR iter:JSONPath(?source,".geoname_features") AS ?geoname
 WHERE {
     BIND (fun:JSONPath(?geoname,".uri_id") AS ?uri_id)

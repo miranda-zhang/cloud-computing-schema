@@ -4,7 +4,7 @@ PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0#>
 
 GENERATE { 
   <storage/azure/{?managed_disk}> a cocoon:NetworkStorage;
