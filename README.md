@@ -64,38 +64,13 @@ WantedBy=multi-user.target
 
 https://github.com/LinkedDataFragments/Server.js/wiki/Deployment-as-Linux-service
 
+### Setup git repo
+
+    ssh-keygen -t rsa -C "admin-u5214628@instance-1"
+    sudo apt install git
+    git clone --single-branch -b ldf-server git@github.com:miranda-zhang/cloud-computing-schema.git ldf-server
+
 # Multiple files as a datasource 
 https://github.com/LinkedDataFragments/Server.js/issues/34
 
 https://github.com/LinkedDataFragments/Server.js/blob/master/config/config-composite.json
-
-```json
-{
-  "title": "Composite Linked Data Fragments server",
-
-  "datasources": {
-    "test-composite": {
-      "title": "CoCoOn v1.0 dataset",
-      "type": "CompositeDatasource",
-      "description": "A composite datasource for CoCoOn v1.0 2018",
-      "settings": {
-        "references": [ "azure", "gcloud"]
-      }
-    },
-    "azure": {
-      "hide": true,
-      "title": "Turtle",
-      "type": "TurtleDatasource",
-      "description": "Azure turtle datasource",
-      "settings": { "file": "result/azure/azure.ttl" }
-    },
-    "glcoud": {
-      "hide": true,
-      "title": "Turtle",
-      "type": "TurtleDatasource",
-      "description": "Azure turtle datasource",
-      "settings": { "file": "result/glcoud/glcoud.ttl" }
-    }
-  }
-}
-```
