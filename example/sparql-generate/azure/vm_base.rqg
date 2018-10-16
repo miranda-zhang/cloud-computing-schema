@@ -35,7 +35,7 @@ GENERATE {
     }
     ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
-        BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region}.value") ) AS ?value)
+        BIND (xsd:float ( fun:JSONPath(?prices,"$.{?region}.value") ) AS ?value)
     }   
   	.
  
