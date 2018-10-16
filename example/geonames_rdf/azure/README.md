@@ -1,7 +1,7 @@
 # Script Example: Microsoft Azure Regions
 
 1. [Input](azure_region_in.csv)
-2. Run script, default search depths **10**, i.e.
+2. Run [script](../search_geoname_id.sh), default search depths **10**, i.e.
    ```
    . search_geoname_id.sh "azure_region_in.csv" 2 1 "azure_region_geoname.csv" "not_matched_locations.txt" true
    ```
