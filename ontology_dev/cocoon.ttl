@@ -563,7 +563,8 @@ System images can be used for backup.""" .
 
 
 ###  https://w3id.org/cocoon/v1.0#UnitOfMeasure
-cocoon:UnitOfMeasure rdf:type owl:Class .
+cocoon:UnitOfMeasure rdf:type owl:Class ;
+                     rdfs:comment "Defines custome units."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#VM

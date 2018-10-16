@@ -1,15 +1,14 @@
 # QUDT Units
-
-    @prefix qudt:      <http://qudt.org/schema/qudt#> .
-    @prefix unit:    <http://qudt.org/vocab/unit#> .
-
 Schema Doc
 http://www.qudt.org/qudt/owl/1.0.0/qudt/index.html
 
 Vocabulary Version 1.1
 http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
 
-## Relavent Vocabularies
+    @prefix qudt:      <http://qudt.org/schema/qudt#> .
+    @prefix unit:    <http://qudt.org/vocab/unit#> .
+
+## Eelevant Vocabularies
 Individuals
 ```
 unit:Byte
