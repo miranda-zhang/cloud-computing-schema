@@ -23,6 +23,11 @@ We have also registerd an entry at http://prefix.cc
 The actual site is hosted via Github page.
 Source code is in the `gh-page` branch.
 
+Linked Data Fragments Server hosted on Google Cloud:
+http://35.227.26.187:5000/cocoon_v1.0#dataset
+
+Source code is in the `ldf-server` branch.
+
 # Examples
 
 Code in [example folder](example/) shows some ways to access and use this ontology.
@@ -38,7 +43,7 @@ This project used solutions from the following projects:
 * https://github.com/sparql-generate/sparql-generate
     * Doc https://ci.mines-stetienne.fr/sparql-generate/apidocs/allclasses-noframe.html
 * https://github.com/dgarijo/Widoco
-
+* https://github.com/LinkedDataFragments/Server.js/
 OWL Specifications
 * OWL2 https://www.w3.org/TR/owl2-overview/
 * OWL https://www.w3.org/TR/owl-ref/
