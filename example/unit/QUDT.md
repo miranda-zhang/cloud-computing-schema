@@ -8,7 +8,7 @@ http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
     @prefix qudt:      <http://qudt.org/schema/qudt#> .
     @prefix unit:    <http://qudt.org/vocab/unit#> .
 
-## Eelevant Vocabularies
+## Relevant Vocabularies
 Individuals
 ```
 unit:Byte
