@@ -6,7 +6,7 @@ https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 [A cached version of the json input.](../data/pricelist.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/-VomPTdtFI
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/8bvhcfLZV4
 ```
 .gcp_price_list | . |=with_entries(select(.key| contains("VMIMAGE") )) | 
 [ to_entries[] | 
@@ -22,7 +22,7 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/-Vom
         "memory": .value.memory,
         "gceu": (
             if .value.gceu == "Shared CPU, not guaranteed" then
-                0
+                null
             else .value.gceu end
         ),
         "maxNumberOfPd": .value.maxNumberOfPd,

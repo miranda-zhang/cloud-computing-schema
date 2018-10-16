@@ -34,15 +34,15 @@ GENERATE {
         <data/vm/gcloud/{?name}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double; 
+                gr:hasCurrencyValue ?regionalPrice; 
                 cocoon:hasRegion <data/region/gcloud/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour ;
         ] 
     } 
   	ITERATOR iter:JSONPath(?gcloudVM,".price[*]") AS ?price
     WHERE {
-        BIND (fun:JSONPath(?price,".price") AS ?regionalPrice)
-        BIND (fun:JSONPath(?price,".region") AS ?region)
+        BIND ( xsd:double( fun:JSONPath(?price,".price") ) AS ?regionalPrice )
+        BIND ( fun:JSONPath(?price,".region") AS ?region )
     }   
   	.
  
@@ -50,10 +50,10 @@ GENERATE {
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/vm.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudVM
 WHERE {
-    BIND (fun:JSONPath(?gcloudVM,".name") AS ?name)
-    BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".cores" ) ) AS ?cores)
-    BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".memory") ) AS ?memory)
-    BIND (fun:JSONPath(?gcloudVM,".gceu") AS ?gceu)
-    BIND (fun:JSONPath(?gcloudVM,".maxNumberOfPd") AS ?maxNumberOfPd)
-    BIND (fun:JSONPath(?gcloudVM,".maxPdSize") AS ?maxPdSize)
+    BIND ( fun:JSONPath(?gcloudVM,".name") AS ?name )
+    BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".cores" ) ) AS ?cores )
+    BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".memory") ) AS ?memory )
+    BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".gceu") ) AS ?gceu )
+    BIND ( xsd:int( fun:JSONPath(?gcloudVM,".maxNumberOfPd") ) AS ?maxNumberOfPd )
+    BIND ( xsd:int( fun:JSONPath(?gcloudVM,".maxPdSize") ) AS ?maxPdSize )
 }
