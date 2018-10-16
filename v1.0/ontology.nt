@@ -4,7 +4,7 @@
 <https://w3id.org/cocoon/v1.0> <http://purl.org/dc/terms/description> "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en .
 <https://w3id.org/cocoon/v1.0> <http://purl.org/dc/terms/issued> "2018-09-20"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/cocoon/v1.0> <http://purl.org/dc/terms/modified> "2018-09-17" .
-<https://w3id.org/cocoon/v1.0> <http://purl.org/dc/terms/rights> "Copyright \u00A9 2018 Miranda ZHANG Qian" .
+<https://w3id.org/cocoon/v1.0> <http://purl.org/dc/terms/rights> "Copyright © 2018 Miranda ZHANG Qian" .
 <https://w3id.org/cocoon/v1.0> <http://purl.org/dc/terms/title> "Vocabulary in Cloud Computing Services"@en .
 <https://w3id.org/cocoon/v1.0> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cocoon" .
 <https://w3id.org/cocoon/v1.0> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/cocoon/v1.0#" .
@@ -52,15 +52,19 @@
 # 
 # https://w3id.org/cocoon/v1.0#canHaveSnapshot
 <https://w3id.org/cocoon/v1.0#canHaveSnapshot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#canHaveSnapshot> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasBandwidth
 <https://w3id.org/cocoon/v1.0#hasBandwidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasBandwidth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasBenchmark
 <https://w3id.org/cocoon/v1.0#hasBenchmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasBenchmark> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasCPUcapacity
 <https://w3id.org/cocoon/v1.0#hasCPUcapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasCPUcapacity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasMaxNumberOfDisk
 <https://w3id.org/cocoon/v1.0#hasMaxNumberOfDisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -72,12 +76,15 @@
 # 
 # https://w3id.org/cocoon/v1.0#hasMemory
 <https://w3id.org/cocoon/v1.0#hasMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasMemory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasOperatingSystem
 <https://w3id.org/cocoon/v1.0#hasOperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasProvider
 <https://w3id.org/cocoon/v1.0#hasProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasProvider> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasRegion
 <https://w3id.org/cocoon/v1.0#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -85,9 +92,11 @@
 # 
 # https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement
 <https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasStorage
 <https://w3id.org/cocoon/v1.0#hasStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasStorage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#hasStorageIOMax
 <https://w3id.org/cocoon/v1.0#hasStorageIOMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -103,15 +112,19 @@
 # 
 # https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement
 <https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#inJurisdiction
 <https://w3id.org/cocoon/v1.0#inJurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#inJurisdiction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#inPhysicalLocation
 <https://w3id.org/cocoon/v1.0#inPhysicalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#inPhysicalLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#ofObjectType
 <https://w3id.org/cocoon/v1.0#ofObjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0#ofObjectType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # 
 # 
@@ -125,15 +138,12 @@
 # http://www.semanticweb.org/owl/owlapi/turtle#location
 <http://www.semanticweb.org/owl/owlapi/turtle#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores
-<http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # https://w3id.org/cocoon/v1.0#bandwidth
 <https://w3id.org/cocoon/v1.0#bandwidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # https://w3id.org/cocoon/v1.0#chargedPerCore
 <https://w3id.org/cocoon/v1.0#chargedPerCore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/cocoon/v1.0#chargedPerCore> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores> .
+<https://w3id.org/cocoon/v1.0#chargedPerCore> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://w3id.org/cocoon/v1.0#chargedPerCore> <http://www.w3.org/2000/01/rdf-schema#comment> "For Google Cloud, cost of SQL server image is charged on per core basis."@en .
 # 
 # https://w3id.org/cocoon/v1.0#continent
@@ -143,13 +153,13 @@
 # 
 # https://w3id.org/cocoon/v1.0#forCoresLessEqual
 <https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores> .
-<https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different."@en .
+<https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\nIt is used to describe price for machines with less than or\nequal to the specified number of cores."@en .
 # 
 # https://w3id.org/cocoon/v1.0#forCoresMoreThan
 <https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores> .
-<https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different."@en .
+<https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\nThis is used to describe the price for machines with more than specified\nnumber of cores."@en .
 # 
 # https://w3id.org/cocoon/v1.0#latency
 <https://w3id.org/cocoon/v1.0#latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -277,7 +287,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/
 <https://w3id.org/cocoon/v1.0#OSPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0#chargedPerCore> .
-_:genid8 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid8 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/cocoon/v1.0#OSPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
@@ -380,7 +390,7 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid24 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0#Region> .
 _:genid24 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
 _:genid24 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid23 .
-_:genid24 <http://www.w3.org/2000/01/rdf-schema#comment> "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately"@en .
+_:genid24 <http://www.w3.org/2000/01/rdf-schema#comment> "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately."@en .
 # 
 # https://w3id.org/cocoon/v1.0#SaaS
 <https://w3id.org/cocoon/v1.0#SaaS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -588,7 +598,7 @@ _:genid49 <http://www.w3.org/2000/01/rdf-schema#comment> "Number of Cores availa
 # https://w3id.org/cocoon/v1.0#gceu
 <https://w3id.org/cocoon/v1.0#gceu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cocoon/v1.0#gceu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0#UnitOfMeasure> .
-<https://w3id.org/cocoon/v1.0#gceu> <http://purl.org/dc/terms/description> "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ\u2019s to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en .
+<https://w3id.org/cocoon/v1.0#gceu> <http://purl.org/dc/terms/description> "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ’s to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en .
 <https://w3id.org/cocoon/v1.0#gceu> <http://www.w3.org/2000/01/rdf-schema#label> "Google Compute Engine Unit"@en .
 # 
 # https://w3id.org/cocoon/v1.0#gcloud
@@ -629,4 +639,4 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0#PublicCloud> .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

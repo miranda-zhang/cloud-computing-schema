@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/cocoon/v1.0#"
      xml:base="https://w3id.org/cocoon/v1.0"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:v1="http://purl.org/goodrelations/v1#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:v1="http://purl.org/goodrelations/v1#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/cocoon/v1.0">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-10-01</terms:created>
         <terms:creator rdf:resource="https://w3id.org/cocoon/v1.0#mirandazhangqian"/>
         <terms:description xml:lang="en">Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. </terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-09-20</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-17</terms:modified>
-        <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2018 Miranda ZHANG Qian</terms:rights>
+        <terms:modified>2018-09-17</terms:modified>
+        <terms:rights>Copyright © 2018 Miranda ZHANG Qian</terms:rights>
         <terms:title xml:lang="en">Vocabulary in Cloud Computing Services</terms:title>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cocoon</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/cocoon/v1.0#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>cocoon</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/cocoon/v1.0#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">Cloud Computing Services Ontology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/miranda-zhang/cloud-computing-schema"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
@@ -103,28 +103,36 @@
     <!-- https://w3id.org/cocoon/v1.0#canHaveSnapshot -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#canHaveSnapshot"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#canHaveSnapshot">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#hasBandwidth -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasBandwidth"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasBandwidth">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#hasBenchmark -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasBenchmark"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasBenchmark">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#hasCPUcapacity -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasCPUcapacity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasCPUcapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -149,21 +157,27 @@
     <!-- https://w3id.org/cocoon/v1.0#hasMemory -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasMemory"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasMemory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#hasOperatingSystem -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasOperatingSystem"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasOperatingSystem">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#hasProvider -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasProvider"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasProvider">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -179,14 +193,18 @@
     <!-- https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasServiceLevelAgreement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#hasStorage -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasStorage"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasStorage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -220,28 +238,36 @@
     <!-- https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#inJurisdiction -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#inJurisdiction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#inJurisdiction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#inPhysicalLocation -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#inPhysicalLocation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#inPhysicalLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0#ofObjectType -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#ofObjectType"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0#ofObjectType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -264,13 +290,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores"/>
-    
-
-
     <!-- https://w3id.org/cocoon/v1.0#bandwidth -->
 
 
@@ -282,7 +301,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0#chargedPerCore">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:comment xml:lang="en">For Google Cloud, cost of SQL server image is charged on per core basis.</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -302,8 +321,10 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0#forCoresLessEqual">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores"/>
-        <rdfs:comment xml:lang="en">Google Cloud OS price for VM with different number of cores are different.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment xml:lang="en">Google Cloud OS price for VM with different number of cores are different.
+It is used to describe price for machines with less than or
+equal to the specified number of cores.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -312,8 +333,10 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0#forCoresMoreThan">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#numberOfCores"/>
-        <rdfs:comment xml:lang="en">Google Cloud OS price for VM with different number of cores are different.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment xml:lang="en">Google Cloud OS price for VM with different number of cores are different.
+This is used to describe the price for machines with more than specified
+number of cores.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -338,7 +361,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0#numberOfCores">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Google Cloud, cores and vCPU referes to the same thing.</rdfs:comment>
+        <rdfs:comment>For Google Cloud, cores and vCPU referes to the same thing.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -568,7 +591,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0#chargedPerCore"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -727,7 +750,7 @@ quantifies the type of object should be `LocalStorage`</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it.</rdfs:comment>
+        <rdfs:comment>Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it.</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/cocoon/v1.0#Region"/>
@@ -739,7 +762,7 @@ quantifies the type of object should be `LocalStorage`</rdfs:comment>
                 <owl:onClass rdf:resource="http://www.geonames.org/ontology#Feature"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <rdfs:comment xml:lang="en">If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately</rdfs:comment>
+        <rdfs:comment xml:lang="en">If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately.</rdfs:comment>
     </owl:Axiom>
     
 
@@ -869,7 +892,7 @@ but there is a common transaction price spec for a group of cloud storage offers
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0#SystemImage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0#PaaS"/>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A system image is a serialized copy of the entire state of a computer system.
+        <terms:description>A system image is a serialized copy of the entire state of a computer system.
 System images can be used for backup.</terms:description>
     </owl:Class>
     
@@ -1113,7 +1136,7 @@ System images can be used for backup.</terms:description>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cocoon/v1.0#azure">
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
-        <v1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microsoft Azure Cloud</v1:name>
+        <v1:name>Microsoft Azure Cloud</v1:name>
         <rdfs:label xml:lang="en">Azure</rdfs:label>
         <foaf:page rdf:resource="https://azure.microsoft.com/"/>
     </owl:NamedIndividual>
@@ -1136,7 +1159,7 @@ System images can be used for backup.</terms:description>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cocoon/v1.0#gcloud">
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
-        <v1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google Cloud</v1:name>
+        <v1:name>Google Cloud</v1:name>
         <rdfs:label xml:lang="en">Gcloud</rdfs:label>
         <foaf:page rdf:resource="https://cloud.google.com/"/>
     </owl:NamedIndividual>
@@ -1149,8 +1172,8 @@ System images can be used for backup.</terms:description>
     <owl:NamedIndividual rdf:about="https://w3id.org/cocoon/v1.0#mirandazhangqian">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <foaf:homepage rdf:resource="https://github.com/miranda-zhang"/>
-        <foaf:mbox rdf:datatype="http://www.w3.org/2001/XMLSchema#string">miranda.zhang.q@gmail.com</foaf:mbox>
-        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miranda ZHANG Qian</foaf:name>
+        <foaf:mbox>miranda.zhang.q@gmail.com</foaf:mbox>
+        <foaf:name>Miranda ZHANG Qian</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -1177,6 +1200,6 @@ System images can be used for backup.</terms:description>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
 
 
