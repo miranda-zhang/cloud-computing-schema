@@ -1,0 +1,95 @@
+{
+  "title": "Composite Linked Data Fragments server",
+
+  "datasources": {
+    "cocoonv1.0": {
+      "title": "CoCoOn v1.0 dataset",
+      "type": "CompositeDatasource",
+      "description": "A composite datasource for CoCoOn v1.0 2018",
+      "settings": {
+        "references": [
+          "azure_vm_base",
+          "azure_managed-disk-transactions",
+          "azure_managed-disks",
+          "azure_region",
+          "azure_vm_base_storageTransactions",
+          "gcloud_os",
+          "gcloud_region",
+          "gcloud_region_inJurisdiction",
+          "gcloud_storage",
+          "gcloud_vm"
+        ]
+      }
+    },
+    "azure_vm_base": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Azure vm_base turtle datasource",
+      "settings": { "file": "result/azure/vm_base.ttl" }
+    },
+    "azure_managed-disk-transactions": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Azure managed-disk-transactions turtle datasource",
+      "settings": { "file": "result/azure/managed-disk-transactions.ttl" }
+    },
+    "azure_managed-disks": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Azure managed-disks turtle datasource",
+      "settings": { "file": "result/azure/managed-disks.ttl" }
+    },
+    "azure_region": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Azure region turtle datasource",
+      "settings": { "file": "result/azure/region.ttl" }
+    },
+    "azure_vm_base_storageTransactions": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Azure vm_base_storageTransactions turtle datasource",
+      "settings": { "file": "result/azure/vm_base_storageTransactions.ttl" }
+    },    
+    "gcloud_os": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Gcloud os turtle datasource",
+      "settings": { "file": "result/gcloud/os.ttl" }
+    },    
+    "gcloud_region": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Gcloud region turtle datasource",
+      "settings": { "file": "result/gcloud/region.ttl" }
+    },    
+    "gcloud_region_inJurisdiction": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Gcloud region_inJurisdiction turtle datasource",
+      "settings": { "file": "result/gcloud/region_inJurisdiction.ttl" }
+    },    
+    "gcloud_storage": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Gcloud storage turtle datasource",
+      "settings": { "file": "result/gcloud/storage.ttl" }
+    },    
+    "gcloud_vm": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Gcloud vm turtle datasource",
+      "settings": { "file": "result/gcloud/vm.ttl" }
+    }
+  }
+}

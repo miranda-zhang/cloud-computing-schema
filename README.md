@@ -1,44 +1,101 @@
-# Cloud IaaS Schema
+# Linked Data Fragments Server
+https://github.com/LinkedDataFragments/Server.js
 
-Intended as a Schema.org extension.
+# Ubuntu
+Installation (need `sudo` access):
 
-# URL
-https://w3id.org/cocoon/v1.0
+    apt update
+    apt upgrade
+    apt install npm
+    npm install -g ldf-server
 
-Prefered to be used as:
+Start the server
 
-    @prefix cocoon: <https://w3id.org/cocoon/v1.0#>
+    ldf-server config.json 5000 1
 
-https://w3id.org entry for this project:
+# Google Cloud
+`gcloud` sdk commands (on windows)
 
-https://github.com/perma-id/w3id.org/tree/master/cocoon
+    gcloud config set project "cocoon-ldf-server"
+    gcloud config set compute/zone "us-east1-b"
+    gcloud compute scp C:\Users\admin-u5214628\Documents\iaas_cloud_price\nodejs\ldf-server "instance-1":. --recurse 
 
-Old Version https://w3id.org/cocoon/v0.1
+## Ubuntu
 
-The development version of the ontology is in [ontology_dev](ontology_dev/) folder.
+    gcloud compute --project "cocoon-ldf-server" ssh --zone "us-east1-b" "instance-1"
+    
+On the instance:
 
-We have also registerd an entry at http://prefix.cc
+    sudo apt update
+    sudo apt install npm
+    sudo npm install -g ldf-server
+    ldf-server config.json 5000 1
 
-# Site
-The actual site is hosted via Github page.
-Source code is in the `gh-page` branch.
+Change Firewall rules to allow `tcp:5000`
 
-# Examples
+http://35.227.26.187:5000/
 
-Code in [example folder](example/) shows some ways to access and use this ontology.
+### Deployment as Linux service
 
-# Publications
-[BibTeX](BibTeX.md)
+    sudo apt install nano
+    which ldf-server
+    sudo nano /lib/systemd/system/ldf.service
 
-# References
-This project used solutions from the following projects:
-* https://github.com/perma-id/w3id.org/
-* https://github.com/stedolan/jq
-    * Doc https://stedolan.github.io/jq/manual/
-* https://github.com/sparql-generate/sparql-generate
-    * Doc https://ci.mines-stetienne.fr/sparql-generate/apidocs/allclasses-noframe.html
-* https://github.com/dgarijo/Widoco
+```
+[Unit]
+Description=LDF - Linked Data Fragments Server
+After=network.target
 
-OWL Specifications
-* OWL2 https://www.w3.org/TR/owl2-overview/
-* OWL https://www.w3.org/TR/owl-ref/
+[Service]
+Type=simple
+User=admin-u5214628
+WorkingDirectory=/home/admin-u5214628/ldf-server
+ExecStart=/usr/bin/node /usr/local/bin/ldf-server /home/admin-u5214628/ldf-server/config.json 5000 1
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+    $ sudo systemctl daemon-reload
+    $ sudo systemctl restart ldf
+    $ sudo systemctl status ldf
+    $ sudo systemctl enable ldf
+
+https://github.com/LinkedDataFragments/Server.js/wiki/Deployment-as-Linux-service
+
+# Multiple files as a datasource 
+https://github.com/LinkedDataFragments/Server.js/issues/34
+
+https://github.com/LinkedDataFragments/Server.js/blob/master/config/config-composite.json
+
+```json
+{
+  "title": "Composite Linked Data Fragments server",
+
+  "datasources": {
+    "test-composite": {
+      "title": "CoCoOn v1.0 dataset",
+      "type": "CompositeDatasource",
+      "description": "A composite datasource for CoCoOn v1.0 2018",
+      "settings": {
+        "references": [ "azure", "gcloud"]
+      }
+    },
+    "azure": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Azure turtle datasource",
+      "settings": { "file": "result/azure/azure.ttl" }
+    },
+    "glcoud": {
+      "hide": true,
+      "title": "Turtle",
+      "type": "TurtleDatasource",
+      "description": "Azure turtle datasource",
+      "settings": { "file": "result/glcoud/glcoud.ttl" }
+    }
+  }
+}
+```
