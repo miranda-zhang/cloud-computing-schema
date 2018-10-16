@@ -5,12 +5,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX unit: <http://qudt.org/vocab/unit#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0#>
 
 GENERATE { 
   <data/vm/gcloud/{?name}> a cocoon:VM;
     rdfs:label ?name;
-    cocoon:numberOfCores "{?cores}"^^xsd:decimal;
+    cocoon:numberOfCores ?cores;
     cocoon:hasCPUcapacity[
         a cocoon:QuantityOfThings;
             cocoon:numericValue ?gceu;
@@ -47,12 +47,12 @@ GENERATE {
   	.
  
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/gcloud_vm.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/vm.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudVM
 WHERE {
     BIND (fun:JSONPath(?gcloudVM,".name") AS ?name)
-    BIND (fun:JSONPath(?gcloudVM,".cores") AS ?cores)
-    BIND (fun:JSONPath(?gcloudVM,".memory") AS ?memory)
+    BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".cores" ) ) AS ?cores)
+    BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".memory") ) AS ?memory)
     BIND (fun:JSONPath(?gcloudVM,".gceu") AS ?gceu)
     BIND (fun:JSONPath(?gcloudVM,".maxNumberOfPd") AS ?maxNumberOfPd)
     BIND (fun:JSONPath(?gcloudVM,".maxPdSize") AS ?maxPdSize)
