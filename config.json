@@ -2,7 +2,7 @@
   "title": "Composite Linked Data Fragments server",
 
   "datasources": {
-    "cocoonv1.0": {
+    "cocoon_v1.0": {
       "title": "CoCoOn v1.0 dataset",
       "type": "CompositeDatasource",
       "description": "A composite datasource for CoCoOn v1.0 2018",
