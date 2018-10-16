@@ -154,12 +154,12 @@
 # https://w3id.org/cocoon/v1.0#forCoresLessEqual
 <https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\nIt is used to describe price for machines with less than or\nequal to the specified number of cores."@en .
+<https://w3id.org/cocoon/v1.0#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\r\nIt is used to describe price for machines with less than or\r\nequal to the specified number of cores."@en .
 # 
 # https://w3id.org/cocoon/v1.0#forCoresMoreThan
 <https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\nThis is used to describe the price for machines with more than specified\nnumber of cores."@en .
+<https://w3id.org/cocoon/v1.0#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\r\nThis is used to describe the price for machines with more than specified\r\nnumber of cores."@en .
 # 
 # https://w3id.org/cocoon/v1.0#latency
 <https://w3id.org/cocoon/v1.0#latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -461,6 +461,7 @@ _:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/goodre
 # 
 # https://w3id.org/cocoon/v1.0#UnitOfMeasure
 <https://w3id.org/cocoon/v1.0#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines custome units."@en .
 # 
 # https://w3id.org/cocoon/v1.0#VM
 <https://w3id.org/cocoon/v1.0#VM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

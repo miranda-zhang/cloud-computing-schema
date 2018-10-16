@@ -901,7 +901,9 @@ System images can be used for backup.</terms:description>
     <!-- https://w3id.org/cocoon/v1.0#UnitOfMeasure -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0#UnitOfMeasure"/>
+    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0#UnitOfMeasure">
+        <rdfs:comment xml:lang="en">Defines custome units.</rdfs:comment>
+    </owl:Class>
     
 
 

@@ -146,13 +146,13 @@
     "id" : "61",
     "type" : "rdfs:Datatype"
   }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
     "id" : "48",
     "type" : "owl:Class"
   }, {
     "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
     "type" : "owl:Class"
   }, {
     "id" : "47",
@@ -369,16 +369,6 @@
       "IRI-based" : "DerivedUnit"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/cocoon/v1.0#GB",
-      "baseIri" : "https://w3id.org/cocoon/v1.0",
-      "description" : {
-        "en" : "Gigabyte (GB): There are 1024MB in one gigabyte."
-      },
-      "labels" : {
-        "IRI-based" : "GB",
-        "en" : "Gigabyte"
-      }
-    }, {
       "iri" : "https://w3id.org/cocoon/v1.0#MBPerSec",
       "baseIri" : "https://w3id.org/cocoon/v1.0",
       "description" : {
@@ -389,14 +379,14 @@
         "en" : "MB/second"
       }
     }, {
-      "iri" : "https://w3id.org/cocoon/v1.0#GBPerMonth",
+      "iri" : "https://w3id.org/cocoon/v1.0#GB",
       "baseIri" : "https://w3id.org/cocoon/v1.0",
       "description" : {
-        "en" : "Often describe 1 GB per Month usage."
+        "en" : "Gigabyte (GB): There are 1024MB in one gigabyte."
       },
       "labels" : {
-        "IRI-based" : "GBPerMonth",
-        "en" : "Gigabyte per Month"
+        "IRI-based" : "GB",
+        "en" : "Gigabyte"
       }
     }, {
       "iri" : "https://w3id.org/cocoon/v1.0#TB",
@@ -407,6 +397,16 @@
       "labels" : {
         "IRI-based" : "TB",
         "en" : "Terabyte"
+      }
+    }, {
+      "iri" : "https://w3id.org/cocoon/v1.0#GBPerMonth",
+      "baseIri" : "https://w3id.org/cocoon/v1.0",
+      "description" : {
+        "en" : "Often describe 1 GB per Month usage."
+      },
+      "labels" : {
+        "IRI-based" : "GBPerMonth",
+        "en" : "Gigabyte per Month"
       }
     }, {
       "iri" : "https://w3id.org/cocoon/v1.0#IOPs",
@@ -437,7 +437,7 @@
     "label" : {
       "IRI-based" : "Unit"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "43"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -512,6 +512,15 @@
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "https://w3id.org/cocoon/v1.0#OSPriceSpecification",
+    "baseIri" : "https://w3id.org/cocoon/v1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OSPriceSpecification"
+    },
+    "id" : "53",
+    "superClasses" : [ "48" ]
+  }, {
     "iri" : "http://purl.org/goodrelations/v1#UnitPriceSpecification",
     "baseIri" : "http://purl.org/goodrelations/v1",
     "instances" : 0,
@@ -530,15 +539,6 @@
     },
     "subClasses" : [ "66", "67", "68", "62", "69" ],
     "id" : "63"
-  }, {
-    "iri" : "https://w3id.org/cocoon/v1.0#OSPriceSpecification",
-    "baseIri" : "https://w3id.org/cocoon/v1.0",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "OSPriceSpecification"
-    },
-    "id" : "53",
-    "superClasses" : [ "48" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#StorageTransactionsPriceSpecification",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
@@ -689,6 +689,9 @@
         "en" : "Input/output operations per sec"
       }
     } ],
+    "comment" : {
+      "en" : "Defines custome units."
+    },
     "attributes" : [ "equivalent" ],
     "id" : "98"
   }, {
@@ -961,11 +964,11 @@
     "id" : "84",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "85",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "24",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "86",
     "type" : "rdfs:SubClassOf"
@@ -1079,7 +1082,7 @@
     },
     "domain" : "9",
     "subproperty" : [ "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "8"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement",
@@ -1122,7 +1125,7 @@
       "IRI-based" : "hasPriceSpecification"
     },
     "domain" : "47",
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "46"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#inJurisdiction",
@@ -1280,16 +1283,6 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "84"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "31",
-    "label" : {
-      "IRI-based" : "topDataProperty"
-    },
-    "domain" : "9",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "85"
-  }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasCPUcapacity",
     "baseIri" : "https://w3id.org/cocoon/v1.0",
     "range" : "9",
@@ -1300,6 +1293,16 @@
     "domain" : "9",
     "attributes" : [ "object" ],
     "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "9",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "85"
   }, {
     "range" : "63",
     "domain" : "62",
@@ -1389,7 +1392,7 @@
     "maxCardinality" : "1",
     "domain" : "9",
     "comment" : {
-      "en" : "Google Cloud OS price for VM with different number of cores are different.\nIt is used to describe price for machines with less than or\nequal to the specified number of cores."
+      "en" : "Google Cloud OS price for VM with different number of cores are different.\r\nIt is used to describe price for machines with less than or\r\nequal to the specified number of cores."
     },
     "attributes" : [ "datatype" ],
     "id" : "96"
@@ -1499,7 +1502,7 @@
       "IRI-based" : "hasPriceSpecification"
     },
     "domain" : "36",
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "108"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0#hasStorageThroughputMax",
@@ -1522,7 +1525,7 @@
     "maxCardinality" : "1",
     "domain" : "9",
     "comment" : {
-      "en" : "Google Cloud OS price for VM with different number of cores are different.\nThis is used to describe the price for machines with more than specified\nnumber of cores."
+      "en" : "Google Cloud OS price for VM with different number of cores are different.\r\nThis is used to describe the price for machines with more than specified\r\nnumber of cores."
     },
     "attributes" : [ "datatype" ],
     "id" : "110"
