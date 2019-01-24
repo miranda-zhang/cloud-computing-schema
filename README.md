@@ -20,11 +20,11 @@ The development version of the ontology is in [ontology_dev](ontology_dev/) fold
 We have also registerd an entry at http://prefix.cc
 
 # Site
-The actual site is hosted via Github page.
+The documentation site is hosted via Github page.
 Source code is in the `gh-page` branch.
 
 Linked Data Fragments Server hosted on Google Cloud:
-http://35.227.26.187:5000/cocoon_v1.0#dataset
+https://w3id.org/cocoon/data
 
 Source code is in the `ldf-server` branch.
 
