@@ -71,11 +71,15 @@ https://github.com/LinkedDataFragments/Server.js/wiki/Deployment-as-Linux-servic
     sudo apt install git
     git clone --single-branch -b ldf-server git@github.com:miranda-zhang/cloud-computing-schema.git ldf-server
 
-### Maintenance
-Unresponsive instance: Stop then Start (*Allocates new external IP*).
+### Reserve a static IP
+When instance become unresponsive, need to stop then start instance,
+ephemeral IP can change after that, better reserve an static IP,
+and it is free when in use.
+https://cloud.google.com/compute/pricing#ipaddress
 
-    service ldf status
-    sudo service ldf restart
+Check whether a static external IP address is in use
+
+    gcloud compute addresses list
 
 # Multiple files as a datasource 
 https://github.com/LinkedDataFragments/Server.js/issues/34
