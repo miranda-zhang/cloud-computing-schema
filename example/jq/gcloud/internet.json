@@ -1,0 +1,37 @@
+{
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA": {
+      "tiers": {
+        "1024": 0.12,
+        "10240": 0.11,
+        "92160": 0.08
+      }
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC": {
+      "tiers": {
+        "1024": 0.12,
+        "10240": 0.11,
+        "92160": 0.08
+      }
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-AU-AU": {
+      "tiers": {
+        "1024": 0.19,
+        "10240": 0.18,
+        "92160": 0.15
+      }
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-CN-CN": {
+      "tiers": {
+        "1024": 0.23,
+        "10240": 0.22,
+        "92160": 0.2
+      }
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-ZONE": {
+      "us": 0.01
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-REGION": {
+      "us": 0.01
+    }
+  }
+  
