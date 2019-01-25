@@ -15,9 +15,12 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/dtvj
     )
 )
 ```
-A cached version of the result after transformation.
 [A cached version of the result after transformation.](../jq/gcloud/internet.json)
 
+Manually add in the destination info.
+Removed duplicated entry of "CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC",
+it is the same as "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA".
+[Result after manual change.](../jq/gcloud/internet_destination.json)
 
 Apply transformation using `jq`, view the live snippet https://jqplay.org/s/tt302_aTzV
 ```
@@ -143,7 +146,10 @@ Each additional forwarding rule = $0.01/hour
 $0.025/hour for 5 rules + (5 additional rules * $0.01/hour) = $0.075/hour
 
 ## Static external IP
-If you reserve a static external IP address but do not use it, you will be charged for the IP address according to the table below. If you reserve a static external IP address and use it with a Compute Engine resource, such as VM instance or a forwarding rule, the address is considered in use and you will not be charged for it.
+https://cloud.google.com/compute/pricing#ipaddress
+If you reserve a static external IP address but do not use it, you will be charged $0.010/Hour. 
+
+If you reserve a static external IP address and use it with a Compute Engine resource, such as VM instance or a forwarding rule, the address is considered in use and you will not be charged for it.
 
 ## Mapping to ontology
 Run [queries](../sparql-generate/gcloud/storage.rqg)

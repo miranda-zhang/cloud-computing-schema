@@ -92,10 +92,26 @@ cocoon:canHaveSnapshot rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf owl:topObjectProperty .
 
 
+###  https://w3id.org/cocoon/v1.0#excludesDestination
+cocoon:excludesDestination rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#forUsageLessEqual
+cocoon:forUsageLessEqual rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#forUsageMoreThan
+cocoon:forUsageMoreThan rdf:type owl:ObjectProperty .
+
+
 ###  https://w3id.org/cocoon/v1.0#hasCPUcapacity
 cocoon:hasCPUcapacity rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:comment "The power or capacity of CPU available for this type of VM."@en .
+
+
+###  https://w3id.org/cocoon/v1.0#hasDestination
+cocoon:hasDestination rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#hasDirection
@@ -212,16 +228,12 @@ This is used to describe the price for machines with more than specified
 number of cores."""@en .
 
 
-###  https://w3id.org/cocoon/v1.0#forUsageLessEqual
-cocoon:forUsageLessEqual rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#forUsageMoreThan
-cocoon:forUsageMoreThan rdf:type owl:DatatypeProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#hasCurrencyValue
 cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#inUse
+cocoon:inUse rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#numberOfCores
@@ -253,6 +265,17 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                             owl:onDataRange xsd:double
                                           ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gr:UnitPriceSpecification ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasRegion ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:Region
+                       ] ;
+   rdfs:comment "This property maybe obsolete in InternetPriceSpecification"@en
+ ] .
 
 
 ###  http://qudt.org/schema/qudt#DataRateUnit
@@ -306,7 +329,12 @@ cocoon:CloudService rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0#Data
 cocoon:Data rdf:type owl:Class ;
-            rdfs:subClassOf cocoon:LoadBalancing .
+            rdfs:subClassOf cocoon:LoadBalancing ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty cocoon:hasDirection ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass cocoon:TrafficDirection
+                            ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#Database
@@ -338,26 +366,39 @@ cocoon:Ingress rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0#Internet
 cocoon:Internet rdf:type owl:Class ;
-                rdfs:subClassOf cocoon:Network .
+                rdfs:subClassOf cocoon:Network ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty cocoon:hasDirection ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass cocoon:TrafficDirection
+                                ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#InternetPriceSpecification
 cocoon:InternetPriceSpecification rdf:type owl:Class ;
                                   rdfs:subClassOf gr:UnitPriceSpecification ,
                                                   [ rdf:type owl:Restriction ;
-                                                    owl:onProperty cocoon:SpecialRateType ;
-                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                    owl:onDataRange xsd:string
+                                                    owl:onProperty cocoon:excludesDestination ;
+                                                    owl:someValuesFrom cocoon:Location
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty cocoon:hasDestination ;
+                                                    owl:someValuesFrom cocoon:Location
                                                   ] ,
                                                   [ rdf:type owl:Restriction ;
                                                     owl:onProperty cocoon:forUsageLessEqual ;
                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                    owl:onDataRange xsd:positiveInteger
+                                                    owl:onClass cocoon:QuantityOfThings
                                                   ] ,
                                                   [ rdf:type owl:Restriction ;
                                                     owl:onProperty cocoon:forUsageMoreThan ;
                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                    owl:onDataRange xsd:nonNegativeInteger
+                                                    owl:onClass cocoon:QuantityOfThings
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty cocoon:SpecialRateType ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onDataRange xsd:string
                                                   ] .
 
 [ rdf:type owl:Axiom ;
@@ -389,12 +430,7 @@ cocoon:Location rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0#Network
 cocoon:Network rdf:type owl:Class ;
-               rdfs:subClassOf cocoon:IaaS ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty cocoon:hasDirection ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass cocoon:TrafficDirection
-                               ] .
+               rdfs:subClassOf cocoon:IaaS .
 
 
 ###  https://w3id.org/cocoon/v1.0#NetworkStorage
@@ -563,6 +599,16 @@ cocoon:Service rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0#ServiceLevelAgreement
 cocoon:ServiceLevelAgreement rdf:type owl:Class .
+
+
+###  https://w3id.org/cocoon/v1.0#StaticIP
+cocoon:StaticIP rdf:type owl:Class ;
+                rdfs:subClassOf cocoon:Network ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty cocoon:inUse ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:boolean
+                                ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#Storage
