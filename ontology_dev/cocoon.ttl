@@ -435,8 +435,7 @@ cocoon:OSPriceSpecification rdf:type owl:Class ;
                                               owl:onProperty cocoon:forCoresMoreThan ;
                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                               owl:onDataRange xsd:decimal
-                                            ] ;
-                            owl:disjointWith cocoon:StorageTransactionsPriceSpecification .
+                                            ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource cocoon:OSPriceSpecification ;
@@ -897,6 +896,14 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
                 cocoon:HybridCloud
                 cocoon:PrivateCloud
                 cocoon:PublicCloud
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cocoon:InternetPriceSpecification
+                cocoon:OSPriceSpecification
+                cocoon:StorageTransactionsPriceSpecification
               )
 ] .
 

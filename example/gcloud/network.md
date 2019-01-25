@@ -6,57 +6,18 @@ https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 [A cached version of the json input.](../data/pricelist.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/tt302_aTzV
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/dtvjDF6QKj
 ```
 .gcp_price_list | . |=with_entries
 ( 
     select(
-        .key |
-        contains("INTERNET") or
-        contains("NETWORK") or
-        contains("RULE")   
+        .key | contains("INTERNET")  
     )
 )
 ```
 A cached version of the result after transformation.
-```
-{
-  "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA": {
-    "tiers": {
-      "1024": 0.12,
-      "10240": 0.11,
-      "92160": 0.08
-    }
-  },
-  "CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC": {
-    "tiers": {
-      "1024": 0.12,
-      "10240": 0.11,
-      "92160": 0.08
-    }
-  },
-  "CP-COMPUTEENGINE-INTERNET-EGRESS-AU-AU": {
-    "tiers": {
-      "1024": 0.19,
-      "10240": 0.18,
-      "92160": 0.15
-    }
-  },
-  "CP-COMPUTEENGINE-INTERNET-EGRESS-CN-CN": {
-    "tiers": {
-      "1024": 0.23,
-      "10240": 0.22,
-      "92160": 0.2
-    }
-  },
-  "CP-COMPUTEENGINE-INTERNET-EGRESS-ZONE": {
-    "us": 0.01
-  },
-  "CP-COMPUTEENGINE-INTERNET-EGRESS-REGION": {
-    "us": 0.01
-  }
-}
-```
+[A cached version of the result after transformation.](../jq/gcloud/internet.json)
+
 
 Apply transformation using `jq`, view the live snippet https://jqplay.org/s/tt302_aTzV
 ```
