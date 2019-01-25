@@ -73,7 +73,7 @@ https://github.com/LinkedDataFragments/Server.js/wiki/Deployment-as-Linux-servic
 
 ### Reserve a static IP
 When instance become unresponsive, need to stop then start instance,
-ephemeral IP can change after that, better reserve an static IP,
+ephemeral IP can change after that, better reserve a static IP,
 and it is free when in use.
 https://cloud.google.com/compute/pricing#ipaddress
 
