@@ -264,8 +264,7 @@ qudt:DerivedUnit rdf:type owl:Class .
 
 
 ###  http://qudt.org/schema/qudt#InformationEntropyUnit
-qudt:InformationEntropyUnit rdf:type owl:Class ;
-                            rdfs:subClassOf cocoon:DeploymentModel .
+qudt:InformationEntropyUnit rdf:type owl:Class .
 
 
 ###  http://qudt.org/schema/qudt#Unit
@@ -305,11 +304,6 @@ cocoon:CloudService rdf:type owl:Class ;
  ] .
 
 
-###  https://w3id.org/cocoon/v1.0#CommunityCloud
-cocoon:CommunityCloud rdf:type owl:Class ;
-                      rdfs:subClassOf cocoon:DeploymentModel .
-
-
 ###  https://w3id.org/cocoon/v1.0#Data
 cocoon:Data rdf:type owl:Class ;
             rdfs:subClassOf cocoon:LoadBalancing .
@@ -318,10 +312,6 @@ cocoon:Data rdf:type owl:Class ;
 ###  https://w3id.org/cocoon/v1.0#Database
 cocoon:Database rdf:type owl:Class ;
                 rdfs:subClassOf cocoon:SaaS .
-
-
-###  https://w3id.org/cocoon/v1.0#DeploymentModel
-cocoon:DeploymentModel rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#Egress
@@ -333,11 +323,6 @@ cocoon:Egress rdf:type owl:Class ;
 ###  https://w3id.org/cocoon/v1.0#ForwardingRule
 cocoon:ForwardingRule rdf:type owl:Class ;
                       rdfs:subClassOf cocoon:LoadBalancing .
-
-
-###  https://w3id.org/cocoon/v1.0#HybridCloud
-cocoon:HybridCloud rdf:type owl:Class ;
-                   rdfs:subClassOf cocoon:DeploymentModel .
 
 
 ###  https://w3id.org/cocoon/v1.0#IaaS
@@ -478,20 +463,6 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gclo
 cocoon:PaaS rdf:type owl:Class ;
             rdfs:subClassOf cocoon:CloudService ;
             rdfs:comment "Platform as a Service, i.e. Google App Engine, Heroku."@en .
-
-
-###  https://w3id.org/cocoon/v1.0#PrivateCloud
-cocoon:PrivateCloud rdf:type owl:Class ;
-                    rdfs:subClassOf cocoon:DeploymentModel .
-
-
-###  https://w3id.org/cocoon/v1.0#PublicCloud
-cocoon:PublicCloud rdf:type owl:Class ;
-                   rdfs:subClassOf cocoon:DeploymentModel .
-
-
-###  https://w3id.org/cocoon/v1.0#QualityOfService
-cocoon:QualityOfService rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#QuantityOfThings
@@ -890,15 +861,6 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
 #################################################################
 #    General axioms
 #################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cocoon:CommunityCloud
-                cocoon:HybridCloud
-                cocoon:PrivateCloud
-                cocoon:PublicCloud
-              )
-] .
-
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( cocoon:InternetPriceSpecification

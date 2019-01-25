@@ -114,7 +114,7 @@ A cached version of the result after transformation.
   }
 }
 ```
-## Documentation
+## Internet
 https://cloud.google.com/compute/pricing#internet_egress
 
 It is generally no charge to ingress traffic, unless there is a load balancer used. 
@@ -128,8 +128,10 @@ Australia Destinations.
 Egress between zones in the same region (per GB)	$0.01.
 Egress between regions within the US (per GB)	$0.01.
 
-Ingress data processed by load balancer	are charged	(Per GB) based on region.
+[New pricing maybe applied after 2019](https://cloud.google.com/network-tiers/pricing)
 
+## Load balancing
+Ingress data processed by load balancer	are charged	(Per GB) based on region.
 Compute Engine charges for forwarding rules that are created for load balancing or other uses of forwarding rules.
 
 The following examples use US pricing:
@@ -140,7 +142,8 @@ Up to 5 forwarding rules you create are charged at $0.025/hour. For example, if 
 Each additional forwarding rule = $0.01/hour
 $0.025/hour for 5 rules + (5 additional rules * $0.01/hour) = $0.075/hour
 
-[New pricing maybe applied after 2019](https://cloud.google.com/network-tiers/pricing)
+## Static external IP
+If you reserve a static external IP address but do not use it, you will be charged for the IP address according to the table below. If you reserve a static external IP address and use it with a Compute Engine resource, such as VM instance or a forwarding rule, the address is considered in use and you will not be charged for it.
 
 ## Mapping to ontology
 Run [queries](../sparql-generate/gcloud/storage.rqg)
