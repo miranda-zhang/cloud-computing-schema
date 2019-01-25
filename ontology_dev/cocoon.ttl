@@ -196,10 +196,6 @@ cocoon:ofObjectType rdf:type owl:ObjectProperty ;
 <http://www.semanticweb.org/owl/owlapi/turtle#location> rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#SpecialRateType
-cocoon:SpecialRateType rdf:type owl:DatatypeProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#chargedPerCore
 cocoon:chargedPerCore rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
@@ -243,6 +239,10 @@ cocoon:numberOfCores rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/cocoon/v1.0#numericValue
 cocoon:numericValue rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#specialRateType
+cocoon:specialRateType rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -396,7 +396,7 @@ cocoon:InternetPriceSpecification rdf:type owl:Class ;
                                                     owl:onClass cocoon:QuantityOfThings
                                                   ] ,
                                                   [ rdf:type owl:Restriction ;
-                                                    owl:onProperty cocoon:SpecialRateType ;
+                                                    owl:onProperty cocoon:specialRateType ;
                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                     owl:onDataRange xsd:string
                                                   ] .
@@ -405,11 +405,11 @@ cocoon:InternetPriceSpecification rdf:type owl:Class ;
    owl:annotatedSource cocoon:InternetPriceSpecification ;
    owl:annotatedProperty rdfs:subClassOf ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:SpecialRateType ;
+                         owl:onProperty cocoon:specialRateType ;
                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onDataRange xsd:string
                        ] ;
-   rdfs:comment "i.e. same zone, between zones in the same region, between regions within the US."@en
+   rdfs:comment "i.e. Egress between zones in the same region; Egress between regions within the US; Egress to Google products (such as YouTube, Maps, Drive)"@en
  ] .
 
 

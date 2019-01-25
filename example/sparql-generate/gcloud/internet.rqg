@@ -27,7 +27,7 @@ GENERATE {
   	.
  
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/data/internet.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/internet_destination.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudStorage
 WHERE {
     BIND (fun:JSONPath(?gcloudStorage,".name") AS ?name)
