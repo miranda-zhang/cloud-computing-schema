@@ -21,6 +21,7 @@ Start the server
     gcloud compute scp C:\Users\admin-u5214628\Documents\iaas_cloud_price\nodejs\ldf-server "instance-1":. --recurse 
 
 ## Ubuntu
+18.04.1 LTS (GNU/Linux 4.15.0-1026-gcp x86_64)
 
     gcloud compute --project "cocoon-ldf-server" ssh --zone "us-east1-b" "instance-1"
     
@@ -69,6 +70,12 @@ https://github.com/LinkedDataFragments/Server.js/wiki/Deployment-as-Linux-servic
     ssh-keygen -t rsa -C "admin-u5214628@instance-1"
     sudo apt install git
     git clone --single-branch -b ldf-server git@github.com:miranda-zhang/cloud-computing-schema.git ldf-server
+
+### Maintenance
+Unresponsive instance: Stop then Start (*Allocates new external IP*).
+
+    service ldf status
+    sudo service ldf restart
 
 # Multiple files as a datasource 
 https://github.com/LinkedDataFragments/Server.js/issues/34
