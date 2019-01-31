@@ -83,7 +83,7 @@ Check whether a static external IP address is in use
 
     gcloud compute addresses list
 
-# Updates
+# Update npm package
 Determining which global packages need updating
 
     sudo npm outdated -g --depth=0
