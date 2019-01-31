@@ -81,6 +81,19 @@ Check whether a static external IP address is in use
 
     gcloud compute addresses list
 
+### Updates
+Determining which global packages need updating
+
+    sudo npm outdated -g --depth=0
+
+Updating a single global package
+
+    sudo npm update -g ldf-server
+
+Find the version of globally installed packages
+
+    sudo npm list -g
+
 # Multiple files as a datasource 
 https://github.com/LinkedDataFragments/Server.js/issues/34
 
