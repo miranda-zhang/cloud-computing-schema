@@ -1,0 +1,31 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+PREFIX test: <http://test2.example.com/>
+
+GENERATE { 
+
+    GENERATE { 
+        <network/load_balancing/forwarding_rule/base/gcloud> a cocoon:ForwardingRule;
+        cocoon:hasProvider cocoon:gcloud;
+        gr:hasPriceSpecification [ 
+            a cocoon:UnitPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                cocoon:hasCurrencyValue ?price; 
+                cocoon:hasRegion <region/gcloud/{?region}>;
+        ];
+    }
+    ITERATOR iter:JSONListKeys( ?FORWARDING_RULE_CHARGE_BASE ) AS ?region
+    WHERE {
+        BIND(xsd:float(fun:JSONPath(?FORWARDING_RULE_CHARGE_BASE, "$.{?region}" )) AS ?price)
+    }
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/load_balancing_data.json> AS ?source
+WHERE {
+    BIND(fun:JSONPath(?source, "$.FORWARDING_RULE_CHARGE_BASE" ) AS ?FORWARDING_RULE_CHARGE_BASE)
+    BIND(fun:JSONPath(?source, "$.FORWARDING_RULE_CHARGE_EXTRA" ) AS ?FORWARDING_RULE_CHARGE_EXTRA)
+}

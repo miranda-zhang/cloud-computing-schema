@@ -1,0 +1,113 @@
+@base          <http://example.org/> .
+@prefix test:  <http://test2.example.com/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/network/load_balancing/data/gcloud>
+        a                         cocoon:LBData ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.009e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/northamerica-northeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/asia-northeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/southamerica-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.009e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-west4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/australia-southeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.008e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/australia>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.008e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/asia-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-west3>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.008e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/asia-south1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.008e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.009e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-north1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.009e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-east4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.008e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.008e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-central1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.009e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/asia-southeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.008e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:UnitPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-west2>
+                                  ] ;
+        cocoon:hasDirection       cocoon:Ingress ;
+        cocoon:hasProvider        cocoon:gcloud .

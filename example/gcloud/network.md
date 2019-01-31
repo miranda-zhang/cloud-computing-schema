@@ -22,26 +22,19 @@ Removed duplicated entry of "CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC",
 it is the same as "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA".
 [Result after manual change.](../jq/gcloud/internet_destination.json)
 
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/aBm_43bc3n
-```
-.gcp_price_list | . |=with_entries
-( 
-    select(
-        .key | contains("LOAD_BALANCED")
-    )
-)
-```
+Apply transformation `.gcp_price_list.NETWORK_LOAD_BALANCED_INGRESS` using `jq`,
+view the live snippet https://jqplay.org/s/yP8J1oVhfs
+
 [A cached version of the result after transformation.](../jq/gcloud/load_balancing_data.json)
 ```
 .gcp_price_list | . |=with_entries
 ( 
     select(
-        .key |
-        contains("LOAD_BALANCED") or
-        contains("RULE")   
+        .key | contains("RULE")   
     )
 )
 ```
+[A cached version of the result after transformation.](../jq/gcloud/load_balancing_rule.json)
 ## Internet
 https://cloud.google.com/compute/pricing#internet_egress
 
@@ -77,10 +70,17 @@ If you reserve a static external IP address but do not use it, you will be charg
 If you reserve a static external IP address and use it with a Compute Engine resource, such as VM instance or a forwarding rule, the address is considered in use and you will not be charged for it.
 
 ## Mapping to ontology
+Internet:
 Run [queries](../sparql-generate/gcloud/internet.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](../sparql-generate/result/gcloud/internet.ttl)
 
+Load Balancing Data:
 Run [queries](../sparql-generate/gcloud/load_balancing_data.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing.ttl)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing_data.ttl)
+
+Load Balancing Forwarding Rule:
+Run [queries](../sparql-generate/gcloud/load_balancing_rule.rqg)
+in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing_data.ttl)

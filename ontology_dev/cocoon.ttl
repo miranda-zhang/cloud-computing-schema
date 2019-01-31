@@ -263,7 +263,11 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
                                           [ rdf:type owl:Restriction ;
                                             owl:onProperty cocoon:hasCurrencyValue ;
                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                            owl:onDataRange xsd:double
+                                            owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                              owl:unionOf ( xsd:double
+                                                                            xsd:float
+                                                                          )
+                                                            ]
                                           ] .
 
 [ rdf:type owl:Axiom ;
@@ -275,6 +279,21 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
                          owl:onClass cocoon:Region
                        ] ;
    rdfs:comment "This property maybe obsolete in InternetPriceSpecification"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gr:UnitPriceSpecification ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasCurrencyValue ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                           owl:unionOf ( xsd:double
+                                                         xsd:float
+                                                       )
+                                         ]
+                       ] ;
+   rdfs:comment "gr:hasCurrencyValue seems only allow float value, extended to allow more precision with double floating-point numbers."@en
  ] .
 
 
@@ -325,16 +344,6 @@ cocoon:CloudService rdf:type owl:Class ;
                        ] ;
    rdfs:comment "Price specification for Cloud Service"@en
  ] .
-
-
-###  https://w3id.org/cocoon/v1.0#Data
-cocoon:Data rdf:type owl:Class ;
-            rdfs:subClassOf cocoon:LoadBalancing ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty cocoon:hasDirection ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass cocoon:TrafficDirection
-                            ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#Database
@@ -411,6 +420,16 @@ cocoon:InternetPriceSpecification rdf:type owl:Class ;
                        ] ;
    rdfs:comment "i.e. Egress between zones in the same region; Egress between regions within the US; Egress to Google products (such as YouTube, Maps, Drive)"@en
  ] .
+
+
+###  https://w3id.org/cocoon/v1.0#LBData
+cocoon:LBData rdf:type owl:Class ;
+              rdfs:subClassOf cocoon:LoadBalancing ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty cocoon:hasDirection ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass cocoon:TrafficDirection
+                              ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#LoadBalancing
