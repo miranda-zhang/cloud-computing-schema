@@ -6,10 +6,7 @@
         "92160": 0.08
       },
       "destinations":["Worldwide","Hong Kong"],
-      "excludesDestinations":[
-        "China",
-        "Australia"
-      ]
+      "excludesDestinations":["China","Australia"]
     },
     "CP-COMPUTEENGINE-INTERNET-EGRESS-AU-AU": {
       "tiers": {

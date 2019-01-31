@@ -7,28 +7,77 @@ PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 
 GENERATE { 
-  <storage/gcloud/{?name}> a cocoon:Storage;
-    rdfs:label ?name;
+  <network/internet/gcloud/{?key}> a cocoon:Internet;
     cocoon:hasProvider cocoon:gcloud;
+    cocoon:hasDirection cocoon:Egress;
+    
     GENERATE {
-        <storage/gcloud/{?name}> gr:hasPriceSpecification [ 
-            a gr:UnitPriceSpecification ; 
-                gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double;
-                gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
-                cocoon:hasRegion <region/gcloud/{?region}>;
-        ]
+        <network/internet/gcloud/{?key}> cocoon:hasDestination <location/{?destinationStr}>;     
     }
-  	ITERATOR iter:JSONPath(?gcloudStorage,".prices[*]") AS ?prices
+    ITERATOR iter:JSONPath(?gcloudInternet, "$.destinations[*]") AS ?destinationJson
     WHERE {
-        BIND (fun:JSONPath(?prices,".price") AS ?regionalPrice)
-        BIND (fun:JSONPath(?prices,".region") AS ?region)
-    }   
-  	.
- 
+        BIND (fun:JSONPath(?destinationJson, "$") AS ?destinationStr)     
+    } .
+
+    GENERATE {
+        <network/internet/gcloud/{?key}> cocoon:excludesDestination <location/{?excludesDestinationStr}>;     
+    }
+    ITERATOR iter:JSONPath(?gcloudInternet, "$.excludesDestinations[*]") AS ?excludesDestinationJson
+    WHERE {
+        BIND (fun:JSONPath(?excludesDestinationJson, "$") AS ?excludesDestinationStr)     
+    } .
+
+    GENERATE {        
+        <network/internet/gcloud/{?key}>
+        gr:hasPriceSpecification [ 
+            a cocoon:InternetPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?tier1;                
+                cocoon:forUsageMoreThan [
+                    a cocoon:QuantityOfThings;
+                    cocoon:hasUnitOfMeasurement cocoon:GB;
+                    cocoon:numericValue "0"^^xsd:nonNegativeInteger;
+                ];
+                cocoon:forUsageLessEqual cocoon:1TB;            
+        ];
+        gr:hasPriceSpecification [ 
+            a cocoon:InternetPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?tier2;                
+                cocoon:forUsageMoreThan cocoon:1TB;
+                cocoon:forUsageLessEqual cocoon:10TB;            
+        ];
+        gr:hasPriceSpecification [ 
+            a cocoon:InternetPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?tier3;                
+                cocoon:forUsageMoreThan cocoon:10TB;
+                cocoon:forUsageLessEqual cocoon:90TB;            
+        ];      
+    } WHERE {
+        FILTER( BOUND(?tiers) )
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".1024")) AS ?tier1)
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".10240")) AS ?tier2)
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".92160")) AS ?tier3)
+    } .
+
+    GENERATE {        
+        <network/internet/gcloud/{?key}>
+        gr:hasPriceSpecification [ 
+            a cocoon:InternetPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?us;                
+                cocoon:specialRateType ?specialRateType;            
+        ];    
+    } WHERE {
+        FILTER( BOUND(?specialRateType) )
+        BIND (xsd:decimal(fun:JSONPath(?gcloudInternet,".us")) AS ?us)
+    } .
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/internet_destination.json> AS ?source
-ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudStorage
+ITERATOR iter:JSONListKeys(?source) AS ?key
 WHERE {
-    BIND (fun:JSONPath(?gcloudStorage,".name") AS ?name)
+    BIND(fun:JSONPath(?source, '$.{?key}' ) AS ?gcloudInternet)
+    BIND (fun:JSONPath(?gcloudInternet,"$.tiers") AS ?tiers)
+    BIND (fun:JSONPath(?gcloudInternet,"$.specialRateType") AS ?specialRateType)
 }

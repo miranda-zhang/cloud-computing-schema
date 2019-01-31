@@ -368,6 +368,14 @@ cocoon:Ingress rdf:type owl:Class ;
 cocoon:Internet rdf:type owl:Class ;
                 rdfs:subClassOf cocoon:Network ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty cocoon:excludesDestination ;
+                                  owl:someValuesFrom cocoon:Location
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty cocoon:hasDestination ;
+                                  owl:someValuesFrom cocoon:Location
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty cocoon:hasDirection ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onClass cocoon:TrafficDirection
@@ -377,14 +385,6 @@ cocoon:Internet rdf:type owl:Class ;
 ###  https://w3id.org/cocoon/v1.0#InternetPriceSpecification
 cocoon:InternetPriceSpecification rdf:type owl:Class ;
                                   rdfs:subClassOf gr:UnitPriceSpecification ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty cocoon:excludesDestination ;
-                                                    owl:someValuesFrom cocoon:Location
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty cocoon:hasDestination ;
-                                                    owl:someValuesFrom cocoon:Location
-                                                  ] ,
                                                   [ rdf:type owl:Restriction ;
                                                     owl:onProperty cocoon:forUsageLessEqual ;
                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -587,6 +587,13 @@ cocoon:Region rdf:type owl:Class ;
 cocoon:SaaS rdf:type owl:Class ;
             rdfs:subClassOf cocoon:CloudService ;
             rdfs:comment "Software as a Service"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:SaaS ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Software as a Service"@en ;
+   rdfs:comment "i.e. Gcloud Cloud Composer"@en
+ ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#Service
@@ -902,6 +909,27 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
                         foaf:nick "Miranda" ;
                         foaf:title "Miss" ;
                         foaf:workInfoHomepage <https://www.linkedin.com/in/mirandazhangq/> .
+
+
+###  https://w3id.org/cocoon/v1.0#1TB
+cocoon:TB rdf:type owl:NamedIndividual ,
+                   cocoon:QuantityOfThings ;
+          cocoon:hasUnitOfMeasurement cocoon:GB ;
+          cocoon:numericValue "1024"^^xsd:nonNegativeInteger .
+
+
+###  https://w3id.org/cocoon/v1.0#10TB
+cocoon:TB rdf:type owl:NamedIndividual ,
+                   cocoon:QuantityOfThings ;
+          cocoon:hasUnitOfMeasurement cocoon:GB ;
+          cocoon:numericValue "10240"^^xsd:nonNegativeInteger .
+
+
+###  https://w3id.org/cocoon/v1.0#90TB
+cocoon:TB rdf:type owl:NamedIndividual ,
+                   cocoon:QuantityOfThings ;
+          cocoon:hasUnitOfMeasurement cocoon:GB ;
+          cocoon:numericValue "92160"^^xsd:nonNegativeInteger .
 
 
 #################################################################

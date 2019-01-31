@@ -22,100 +22,25 @@ Removed duplicated entry of "CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC",
 it is the same as "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA".
 [Result after manual change.](../jq/gcloud/internet_destination.json)
 
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/tt302_aTzV
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/aBm_43bc3n
+```
+.gcp_price_list | . |=with_entries
+( 
+    select(
+        .key | contains("LOAD_BALANCED")
+    )
+)
+```
+[A cached version of the result after transformation.](../jq/gcloud/load_balancing_data.json)
 ```
 .gcp_price_list | . |=with_entries
 ( 
     select(
         .key |
-        contains("NETWORK") or
+        contains("LOAD_BALANCED") or
         contains("RULE")   
     )
 )
-```
-A cached version of the result after transformation.
-```
-{
-  "FORWARDING_RULE_CHARGE_BASE": {
-    "us": 0.025,
-    "us-central1": 0.025,
-    "us-east1": 0.025,
-    "us-east4": 0.028,
-    "us-west1": 0.025,
-    "us-west2": 0.028,
-    "europe": 0.025,
-    "europe-west1": 0.025,
-    "europe-west2": 0.03,
-    "europe-west3": 0.03,
-    "europe-west4": 0.028,
-    "europe-north1": 0.028,
-    "northamerica-northeast1": 0.028,
-    "asia-east": 0.025,
-    "asia-east1": 0.025,
-    "asia-east2": 0.035,
-    "asia-northeast": 0.038,
-    "asia-southeast": 0.028,
-    "australia-southeast1": 0.034,
-    "australia": 0.034,
-    "southamerica-east1": 0.038,
-    "asia-south1": 0.03,
-    "fixed": true
-  },
-  "FORWARDING_RULE_CHARGE_EXTRA": {
-    "us": 0.01,
-    "us-central1": 0.01,
-    "us-east1": 0.01,
-    "us-east4": 0.011,
-    "us-west1": 0.01,
-    "us-west2": 0.012,
-    "europe": 0.01,
-    "europe-west1": 0.01,
-    "europe-west2": 0.012,
-    "europe-west3": 0.012,
-    "europe-west4": 0.011,
-    "europe-north1": 0.011,
-    "northamerica-northeast1": 0.011,
-    "asia-east": 0.01,
-    "asia-east1": 0.01,
-    "asia-east2": 0.014,
-    "asia-northeast": 0.011,
-    "asia-southeast": 0.011,
-    "australia-southeast1": 0.014,
-    "australia": 0.014,
-    "southamerica-east1": 0.015,
-    "asia-south1": 0.012
-  },
-  "NETWORK_LOAD_BALANCED_INGRESS": {
-    "us": 0.008,
-    "us-central1": 0.008,
-    "us-east1": 0.008,
-    "us-east4": 0.009,
-    "us-west1": 0.008,
-    "us-west2": 0.01,
-    "europe": 0.008,
-    "europe-west1": 0.008,
-    "europe-west2": 0.01,
-    "europe-west3": 0.01,
-    "europe-west4": 0.009,
-    "europe-north1": 0.009,
-    "northamerica-northeast1": 0.009,
-    "asia-east": 0.008,
-    "asia-east1": 0.008,
-    "asia-east2": 0.009,
-    "asia-northeast": 0.012,
-    "asia-southeast": 0.009,
-    "australia-southeast1": 0.011,
-    "australia": 0.011,
-    "southamerica-east1": 0.012,
-    "asia-south1": 0.01
-  },
-  "CP-COMPOSER-NETWORK-EGRESS": {
-    "us-central1": 0.156,
-    "europe-west1": 0.156,
-    "us-east1": 0.156,
-    "asia-northeast1": 0.156
-  }
-}
 ```
 ## Internet
 https://cloud.google.com/compute/pricing#internet_egress
@@ -154,4 +79,8 @@ If you reserve a static external IP address and use it with a Compute Engine res
 ## Mapping to ontology
 Run [queries](../sparql-generate/gcloud/internet.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/storage.ttl)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/internet.ttl)
+
+Run [queries](../sparql-generate/gcloud/load_balancing_data.rqg)
+in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing.ttl)

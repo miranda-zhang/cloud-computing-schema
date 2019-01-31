@@ -1,0 +1,24 @@
+{
+  "NETWORK_LOAD_BALANCED_INGRESS": {
+    "us": 0.008,
+    "us-central1": 0.008,
+    "us-east1": 0.008,
+    "us-east4": 0.009,
+    "us-west1": 0.008,
+    "us-west2": 0.01,
+    "europe": 0.008,
+    "europe-west1": 0.008,
+    "europe-west2": 0.01,
+    "europe-west3": 0.01,
+    "europe-west4": 0.009,
+    "europe-north1": 0.009,
+    "northamerica-northeast1": 0.009,
+    "asia-east": 0.008,
+    "asia-northeast": 0.012,
+    "asia-southeast": 0.009,
+    "australia-southeast1": 0.011,
+    "australia": 0.011,
+    "southamerica-east1": 0.012,
+    "asia-south1": 0.01
+  }
+}

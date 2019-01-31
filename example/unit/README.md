@@ -22,5 +22,6 @@ Defined with reference to
 
 ```
 Tenative
+* per GB
 * dollar per hour
 * USD per core/hour
