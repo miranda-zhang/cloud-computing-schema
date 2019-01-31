@@ -278,7 +278,7 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onClass cocoon:Region
                        ] ;
-   rdfs:comment "This property maybe obsolete in InternetPriceSpecification"@en
+   rdfs:comment "NetworkPriceSpecification use other properties to sepecify destination, and this property may not be useful."@en
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -391,37 +391,6 @@ cocoon:Internet rdf:type owl:Class ;
                                 ] .
 
 
-###  https://w3id.org/cocoon/v1.0#InternetPriceSpecification
-cocoon:InternetPriceSpecification rdf:type owl:Class ;
-                                  rdfs:subClassOf gr:UnitPriceSpecification ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty cocoon:forUsageLessEqual ;
-                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                    owl:onClass cocoon:QuantityOfThings
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty cocoon:forUsageMoreThan ;
-                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                    owl:onClass cocoon:QuantityOfThings
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty cocoon:specialRateType ;
-                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                    owl:onDataRange xsd:string
-                                                  ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:InternetPriceSpecification ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:specialRateType ;
-                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onDataRange xsd:string
-                       ] ;
-   rdfs:comment "i.e. Egress between zones in the same region; Egress between regions within the US; Egress to Google products (such as YouTube, Maps, Drive)"@en
- ] .
-
-
 ###  https://w3id.org/cocoon/v1.0#LBData
 cocoon:LBData rdf:type owl:Class ;
               rdfs:subClassOf cocoon:LoadBalancing ,
@@ -450,6 +419,37 @@ cocoon:Location rdf:type owl:Class .
 ###  https://w3id.org/cocoon/v1.0#Network
 cocoon:Network rdf:type owl:Class ;
                rdfs:subClassOf cocoon:IaaS .
+
+
+###  https://w3id.org/cocoon/v1.0#NetworkPriceSpecification
+cocoon:NetworkPriceSpecification rdf:type owl:Class ;
+                                 rdfs:subClassOf gr:UnitPriceSpecification ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty cocoon:forUsageLessEqual ;
+                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onClass cocoon:QuantityOfThings
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty cocoon:forUsageMoreThan ;
+                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onClass cocoon:QuantityOfThings
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty cocoon:specialRateType ;
+                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onDataRange xsd:string
+                                                 ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:NetworkPriceSpecification ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:specialRateType ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:string
+                       ] ;
+   rdfs:comment "i.e. Egress between zones in the same region; Egress between regions within the US; Egress to Google products (such as YouTube, Maps, Drive)"@en
+ ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#NetworkStorage
@@ -931,21 +931,21 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/cocoon/v1.0#1TB
-cocoon:TB rdf:type owl:NamedIndividual ,
+cocoon:1TB rdf:type owl:NamedIndividual ,
                    cocoon:QuantityOfThings ;
           cocoon:hasUnitOfMeasurement cocoon:GB ;
           cocoon:numericValue "1024"^^xsd:nonNegativeInteger .
 
 
 ###  https://w3id.org/cocoon/v1.0#10TB
-cocoon:TB rdf:type owl:NamedIndividual ,
+cocoon:10TB rdf:type owl:NamedIndividual ,
                    cocoon:QuantityOfThings ;
           cocoon:hasUnitOfMeasurement cocoon:GB ;
           cocoon:numericValue "10240"^^xsd:nonNegativeInteger .
 
 
 ###  https://w3id.org/cocoon/v1.0#90TB
-cocoon:TB rdf:type owl:NamedIndividual ,
+cocoon:90TB rdf:type owl:NamedIndividual ,
                    cocoon:QuantityOfThings ;
           cocoon:hasUnitOfMeasurement cocoon:GB ;
           cocoon:numericValue "92160"^^xsd:nonNegativeInteger .
@@ -956,7 +956,23 @@ cocoon:TB rdf:type owl:NamedIndividual ,
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cocoon:InternetPriceSpecification
+  owl:members ( cocoon:Internet
+                cocoon:LoadBalancing
+                cocoon:StaticIP
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cocoon:Network
+                cocoon:Storage
+                cocoon:VM
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cocoon:NetworkPriceSpecification
                 cocoon:OSPriceSpecification
                 cocoon:StorageTransactionsPriceSpecification
               )

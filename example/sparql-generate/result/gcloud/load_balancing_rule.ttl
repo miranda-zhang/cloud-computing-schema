@@ -1,0 +1,452 @@
+@base          <http://example.org/> .
+@prefix unit:  <http://qudt.org/vocab/unit#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/network/load_balancing/forwarding_rule/extra/gcloud>
+        a                         cocoon:LBForwardingRule ;
+        rdfs:comment              "Extra charged per rule per hour." ;
+        rdfs:label                "Google Lord Balancing Forwarding Rule Extra Rate" ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/asia-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.015e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/southamerica-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/northamerica-northeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/asia-southeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-east4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-west3>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-north1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.014e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/australia>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-west4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.014e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/australia-southeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/europe-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-central1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/asia-northeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/asia-south1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                    cocoon:QuantityOfThings ;
+                                                               cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:hasRegion         <https://w3id.org/cocoon/data/region/gcloud/us-east1>
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .
+
+<https://w3id.org/cocoon/data/network/load_balancing/forwarding_rule/base/gcloud>
+        a                         cocoon:LBForwardingRule ;
+        rdfs:comment              "Flat rate price, regardless 1 rule or 5 rules used, charged the same per hour." ;
+        rdfs:label                "Google Lord Balancing Forwarding Rule Base Rate" ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/europe-north1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/europe-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.03e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/asia-south1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/us>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/us-central1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.038e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/asia-northeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/us-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.03e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/europe-west3>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.03e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/europe-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/us-east4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/us-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/europe>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "1.0E0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/fixed>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.038e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/southamerica-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/europe-west4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/asia-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.034e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/australia-southeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/northamerica-northeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/asia-southeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/us-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "5"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:forUsageMoreThan   [ a                    cocoon:QuantityOfThings ;
+                                                                cocoon:numericValue  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.034e0"^^xsd:float ;
+                                    cocoon:hasRegion          <https://w3id.org/cocoon/data/region/gcloud/australia>
+                                  ] ;
+        cocoon:hasProvider        cocoon:gcloud .

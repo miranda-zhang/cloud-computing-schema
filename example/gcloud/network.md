@@ -26,6 +26,8 @@ Apply transformation `.gcp_price_list.NETWORK_LOAD_BALANCED_INGRESS` using `jq`,
 view the live snippet https://jqplay.org/s/yP8J1oVhfs
 
 [A cached version of the result after transformation.](../jq/gcloud/load_balancing_data.json)
+
+Apply transformation using `jq`, view the live snippet https://jqplay.org/s/1Ugkd8zB3B
 ```
 .gcp_price_list | . |=with_entries
 ( 
@@ -35,6 +37,7 @@ view the live snippet https://jqplay.org/s/yP8J1oVhfs
 )
 ```
 [A cached version of the result after transformation.](../jq/gcloud/load_balancing_rule.json)
+
 ## Internet
 https://cloud.google.com/compute/pricing#internet_egress
 
@@ -83,4 +86,4 @@ to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing_da
 Load Balancing Forwarding Rule:
 Run [queries](../sparql-generate/gcloud/load_balancing_rule.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing_data.ttl)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing_rule.ttl)
