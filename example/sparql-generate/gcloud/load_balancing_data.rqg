@@ -18,7 +18,7 @@ GENERATE {
     ];
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/load_balancing_data.json> AS ?source
-ITERATOR iter:JSONListKeys(fun:JSONPath(?source, '$.NETWORK_LOAD_BALANCED_INGRESS' )) AS ?region
+ITERATOR iter:JSONListKeys(fun:JSONPath(?source, "$.NETWORK_LOAD_BALANCED_INGRESS" )) AS ?region
 WHERE {
     BIND(xsd:float(fun:JSONPath(?source, '$.{?region}' )) AS ?price)
 }
