@@ -2,6 +2,8 @@
 https://github.com/LinkedDataFragments/Server.js
 
 # Ubuntu
+Ubuntu 16.04.5 LTS
+
 Installation (need `sudo` access):
 
     apt update
@@ -20,7 +22,7 @@ Start the server
     gcloud config set compute/zone "us-east1-b"
     gcloud compute scp C:\Users\admin-u5214628\Documents\iaas_cloud_price\nodejs\ldf-server "instance-1":. --recurse 
 
-## Ubuntu
+## Ubuntu on gCloud
 18.04.1 LTS (GNU/Linux 4.15.0-1026-gcp x86_64)
 
     gcloud compute --project "cocoon-ldf-server" ssh --zone "us-east1-b" "instance-1"
@@ -81,7 +83,7 @@ Check whether a static external IP address is in use
 
     gcloud compute addresses list
 
-### Updates
+# Updates
 Determining which global packages need updating
 
     sudo npm outdated -g --depth=0
@@ -95,6 +97,5 @@ Find the version of globally installed packages
     sudo npm list -g
 
 # Multiple files as a datasource 
-https://github.com/LinkedDataFragments/Server.js/issues/34
 
 https://github.com/LinkedDataFragments/Server.js/blob/master/config/config-composite.json
