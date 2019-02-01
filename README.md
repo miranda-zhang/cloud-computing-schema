@@ -99,3 +99,6 @@ Find the version of globally installed packages
 # Multiple files as a datasource 
 
 https://github.com/LinkedDataFragments/Server.js/blob/master/config/config-composite.json
+
+# issue
+https://github.com/LinkedDataFragments/Server.js/issues/89
