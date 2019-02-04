@@ -9,18 +9,18 @@ This section provides details for each class and property defined by Cloud Compu
          </a>
       </li>
       <li>
-         <a href="#CommunityCloud" title="https://w3id.org/cocoon/v1.0#CommunityCloud">
-            <span>community cloud</span>
-         </a>
-      </li>
-      <li>
          <a href="#Database" title="https://w3id.org/cocoon/v1.0#Database">
             <span>database</span>
          </a>
       </li>
       <li>
-         <a href="#HybridCloud" title="https://w3id.org/cocoon/v1.0#HybridCloud">
-            <span>hybrid cloud</span>
+         <a href="#Egress" title="https://w3id.org/cocoon/v1.0#Egress">
+            <span>egress</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ForwardingRule" title="https://w3id.org/cocoon/v1.0#ForwardingRule">
+            <span>forwarding rule</span>
          </a>
       </li>
       <li>
@@ -29,9 +29,23 @@ This section provides details for each class and property defined by Cloud Compu
          </a>
       </li>
       <li>
-         <a href="#http://qudt.org/schema/qudt#InformationEntropyUnit"
-            title="http://qudt.org/schema/qudt#InformationEntropyUnit">
-            <span>information entropy unit</span>
+         <a href="#Ingress" title="https://w3id.org/cocoon/v1.0#Ingress">
+            <span>ingress</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Internet" title="https://w3id.org/cocoon/v1.0#Internet">
+            <span>internet</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LBData" title="https://w3id.org/cocoon/v1.0#LBData">
+            <span>l b data</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LoadBalancing" title="https://w3id.org/cocoon/v1.0#LoadBalancing">
+            <span>load balancing</span>
          </a>
       </li>
       <li>
@@ -42,6 +56,12 @@ This section provides details for each class and property defined by Cloud Compu
       <li>
          <a href="#Network" title="https://w3id.org/cocoon/v1.0#Network">
             <span>network</span>
+         </a>
+      </li>
+      <li>
+         <a href="#NetworkPriceSpecification"
+            title="https://w3id.org/cocoon/v1.0#NetworkPriceSpecification">
+            <span>network price specification</span>
          </a>
       </li>
       <li>
@@ -58,16 +78,6 @@ This section provides details for each class and property defined by Cloud Compu
       <li>
          <a href="#PaaS" title="https://w3id.org/cocoon/v1.0#PaaS">
             <span>paa s</span>
-         </a>
-      </li>
-      <li>
-         <a href="#PrivateCloud" title="https://w3id.org/cocoon/v1.0#PrivateCloud">
-            <span>private cloud</span>
-         </a>
-      </li>
-      <li>
-         <a href="#PublicCloud" title="https://w3id.org/cocoon/v1.0#PublicCloud">
-            <span>public cloud</span>
          </a>
       </li>
       <li>
@@ -88,6 +98,11 @@ This section provides details for each class and property defined by Cloud Compu
       <li>
          <a href="#Service" title="https://w3id.org/cocoon/v1.0#Service">
             <span>service</span>
+         </a>
+      </li>
+      <li>
+         <a href="#StaticIP" title="https://w3id.org/cocoon/v1.0#StaticIP">
+            <span>static i p</span>
          </a>
       </li>
       <li>
@@ -170,28 +185,6 @@ This section provides details for each class and property defined by Cloud Compu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="CommunityCloud">
-      <h3>community cloud<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#CommunityCloud</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="https://w3id.org/cocoon/v1.0#DeploymentModel">deployment model</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#HybridCloud" title="https://w3id.org/cocoon/v1.0#HybridCloud">hybrid cloud</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PrivateCloud" title="https://w3id.org/cocoon/v1.0#PrivateCloud">private cloud</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PublicCloud" title="https://w3id.org/cocoon/v1.0#PublicCloud">public cloud</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Database">
       <h3>database<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -207,24 +200,37 @@ This section provides details for each class and property defined by Cloud Compu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="HybridCloud">
-      <h3>hybrid cloud<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="Egress">
+      <h3>egress<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#HybridCloud</p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#Egress</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/cocoon/v1.0#DeploymentModel">deployment model</span>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#TrafficDirection">traffic direction</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#CommunityCloud" title="https://w3id.org/cocoon/v1.0#CommunityCloud">community cloud</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PrivateCloud" title="https://w3id.org/cocoon/v1.0#PrivateCloud">private cloud</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PublicCloud" title="https://w3id.org/cocoon/v1.0#PublicCloud">public cloud</a>
+            <a href="#Ingress" title="https://w3id.org/cocoon/v1.0#Ingress">ingress</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ForwardingRule">
+      <h3>forwarding rule<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#ForwardingRule</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#LoadBalancing" title="https://w3id.org/cocoon/v1.0#LoadBalancing">load balancing</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -254,24 +260,112 @@ This section provides details for each class and property defined by Cloud Compu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://qudt.org/schema/qudt#InformationEntropyUnit">
-      <h3>information entropy unit<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="Ingress">
+      <h3>ingress<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://qudt.org/schema/qudt#InformationEntropyUnit</p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#Ingress</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/cocoon/v1.0#DeploymentModel">deployment model</span>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#TrafficDirection">traffic direction</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>has members</dt>
+         <dt>is disjoint with</dt>
          <dd>
-            <a href="#GB" title="https://w3id.org/cocoon/v1.0#GB">Gigabyte</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#TB" title="https://w3id.org/cocoon/v1.0#TB">Terabyte</a>
-            <sup class="type-ni" title="named individual">ni</sup>
+            <a href="#Egress" title="https://w3id.org/cocoon/v1.0#Egress">egress</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Internet">
+      <h3>internet<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#Internet</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Network" title="https://w3id.org/cocoon/v1.0#Network">network</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#excludesDestination">excludes destination</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#Location">location</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#hasDestination">has destination</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#Location">location</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#hasDirection">has direction</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <span class="dotted" title="https://w3id.org/cocoon/v1.0#TrafficDirection">traffic direction</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#LoadBalancing" title="https://w3id.org/cocoon/v1.0#LoadBalancing">load balancing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StaticIP" title="https://w3id.org/cocoon/v1.0#StaticIP">static i p</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LBData">
+      <h3>l b data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#LBData</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#LoadBalancing" title="https://w3id.org/cocoon/v1.0#LoadBalancing">load balancing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#hasDirection">has direction</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <span class="dotted" title="https://w3id.org/cocoon/v1.0#TrafficDirection">traffic direction</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LoadBalancing">
+      <h3>load balancing<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#LoadBalancing</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Network" title="https://w3id.org/cocoon/v1.0#Network">network</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ForwardingRule" title="https://w3id.org/cocoon/v1.0#ForwardingRule">forwarding rule</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LBData" title="https://w3id.org/cocoon/v1.0#LBData">l b data</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Internet" title="https://w3id.org/cocoon/v1.0#Internet">internet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StaticIP" title="https://w3id.org/cocoon/v1.0#StaticIP">static i p</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -306,24 +400,58 @@ This section provides details for each class and property defined by Cloud Compu
             <a href="#IaaS" title="https://w3id.org/cocoon/v1.0#IaaS">iaa s</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
          <dd>
-            <a href="#hasBandwidth" title="https://w3id.org/cocoon/v1.0#hasBandwidth">has bandwidth</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">some</span> 
-            <a href="#QuantityOfThings" title="https://w3id.org/cocoon/v1.0#QuantityOfThings">quantity of things</a>
+            <a href="#Internet" title="https://w3id.org/cocoon/v1.0#Internet">internet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LoadBalancing" title="https://w3id.org/cocoon/v1.0#LoadBalancing">load balancing</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StaticIP" title="https://w3id.org/cocoon/v1.0#StaticIP">static i p</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Storage" title="https://w3id.org/cocoon/v1.0#Storage">storage</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VM" title="https://w3id.org/cocoon/v1.0#VM">v m</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NetworkPriceSpecification">
+      <h3>network price specification<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#NetworkPriceSpecification</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/goodrelations/v1#UnitPriceSpecification"
+               title="http://purl.org/goodrelations/v1#UnitPriceSpecification">unit price specification</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <span class="dotted" title="https://w3id.org/cocoon/v1.0#bandwidth">bandwidth</span>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="logic">some</span> 
-            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#forUsageLessEqual">for usage less equal</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#QuantityOfThings" title="https://w3id.org/cocoon/v1.0#QuantityOfThings">quantity of things</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <span class="dotted" title="https://w3id.org/cocoon/v1.0#latency">latency</span>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#forUsageMoreThan">for usage more than</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#QuantityOfThings" title="https://w3id.org/cocoon/v1.0#QuantityOfThings">quantity of things</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#specialRateType">special rate type</span>
             <sup class="type-dp" title="data property">dp</sup> 
-            <span class="logic">some</span> 
-            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            <span class="logic">exactly</span> 1</dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#OSPriceSpecification"
+               title="https://w3id.org/cocoon/v1.0#OSPriceSpecification">o s price specification</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StorageTransactionsPriceSpecification"
+               title="https://w3id.org/cocoon/v1.0#StorageTransactionsPriceSpecification">storage transactions price specification</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -373,7 +501,9 @@ This section provides details for each class and property defined by Cloud Compu
             <span class="logic">max</span> 1</dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#StorageTransactionsPriceSpecification"
+            <a href="#NetworkPriceSpecification"
+               title="https://w3id.org/cocoon/v1.0#NetworkPriceSpecification">network price specification</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StorageTransactionsPriceSpecification"
                title="https://w3id.org/cocoon/v1.0#StorageTransactionsPriceSpecification">storage transactions price specification</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -387,61 +517,12 @@ This section provides details for each class and property defined by Cloud Compu
       <p>
          <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#PaaS</p>
       <div class="comment">
-         <span class="markdown">Platform as a Service</span>
+         <span class="markdown">Platform as a Service, i.e. Google App Engine, Heroku.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#CloudService" title="https://w3id.org/cocoon/v1.0#CloudService">cloud service</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#SystemImage" title="https://w3id.org/cocoon/v1.0#SystemImage">system image</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="PrivateCloud">
-      <h3>private cloud<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#PrivateCloud</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="https://w3id.org/cocoon/v1.0#DeploymentModel">deployment model</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#CommunityCloud" title="https://w3id.org/cocoon/v1.0#CommunityCloud">community cloud</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HybridCloud" title="https://w3id.org/cocoon/v1.0#HybridCloud">hybrid cloud</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PublicCloud" title="https://w3id.org/cocoon/v1.0#PublicCloud">public cloud</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="PublicCloud">
-      <h3>public cloud<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#PublicCloud</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="https://w3id.org/cocoon/v1.0#DeploymentModel">deployment model</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#CommunityCloud" title="https://w3id.org/cocoon/v1.0#CommunityCloud">community cloud</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HybridCloud" title="https://w3id.org/cocoon/v1.0#HybridCloud">hybrid cloud</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PrivateCloud" title="https://w3id.org/cocoon/v1.0#PrivateCloud">private cloud</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -454,7 +535,7 @@ This section provides details for each class and property defined by Cloud Compu
       <p>
          <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#QuantityOfThings</p>
       <div class="comment">
-         <span class="markdown">Quantify things, i.e. 2 GB of Memory, 10 GB of local storage, 3 TB of network storage</span>
+         <span class="markdown">Composition of value, unit, and type of object, i.e., 2 GB of Memory, 10 GB of local storage, 3 TB of network storage.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -473,6 +554,13 @@ This section provides details for each class and property defined by Cloud Compu
             <span class="dotted" title="https://w3id.org/cocoon/v1.0#numericValue">numeric value</span>
             <sup class="type-dp" title="data property">dp</sup> 
             <span class="logic">max</span> 1</dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#1TB" title="https://w3id.org/cocoon/v1.0#1TB">1 t b</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#10TB" title="https://w3id.org/cocoon/v1.0#10TB">10 t b</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#90TB" title="https://w3id.org/cocoon/v1.0#90TB">90 t b</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Region">
@@ -511,10 +599,6 @@ This section provides details for each class and property defined by Cloud Compu
             <a href="#continent" title="https://w3id.org/cocoon/v1.0#continent">continent</a>
             <sup class="type-dp" title="data property">dp</sup> 
             <span class="logic">max</span> 1</dd>
-         <dd>
-            <a href="#location" title="https://w3id.org/cocoon/v1.0#location">location</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="logic">max</span> 1</dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Zone" title="https://w3id.org/cocoon/v1.0#Zone">zone</a>
@@ -541,6 +625,7 @@ This section provides details for each class and property defined by Cloud Compu
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Database" title="https://w3id.org/cocoon/v1.0#Database">database</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SystemImage" title="https://w3id.org/cocoon/v1.0#SystemImage">system image</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -566,6 +651,31 @@ This section provides details for each class and property defined by Cloud Compu
          <dt>has sub-classes</dt>
          <dd>
             <a href="#CloudService" title="https://w3id.org/cocoon/v1.0#CloudService">cloud service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StaticIP">
+      <h3>static i p<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#StaticIP</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Network" title="https://w3id.org/cocoon/v1.0#Network">network</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#inUse">in use</span>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Internet" title="https://w3id.org/cocoon/v1.0#Internet">internet</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LoadBalancing" title="https://w3id.org/cocoon/v1.0#LoadBalancing">load balancing</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -615,6 +725,12 @@ This section provides details for each class and property defined by Cloud Compu
             <sup class="type-c" title="class">c</sup>, <a href="#NetworkStorage" title="https://w3id.org/cocoon/v1.0#NetworkStorage">network storage</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Network" title="https://w3id.org/cocoon/v1.0#Network">network</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VM" title="https://w3id.org/cocoon/v1.0#VM">v m</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="StorageTransactionsPriceSpecification">
@@ -647,7 +763,9 @@ but there is a common transaction price spec for a group of cloud storage offers
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#OSPriceSpecification"
+            <a href="#NetworkPriceSpecification"
+               title="https://w3id.org/cocoon/v1.0#NetworkPriceSpecification">network price specification</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#OSPriceSpecification"
                title="https://w3id.org/cocoon/v1.0#OSPriceSpecification">o s price specification</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -663,7 +781,7 @@ but there is a common transaction price spec for a group of cloud storage offers
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#PaaS" title="https://w3id.org/cocoon/v1.0#PaaS">paa s</a>
+            <a href="#SaaS" title="https://w3id.org/cocoon/v1.0#SaaS">saa s</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -718,13 +836,18 @@ but there is a common transaction price spec for a group of cloud storage offers
          <dd>
             <a href="#hasRegion" title="https://w3id.org/cocoon/v1.0#hasRegion">has region</a>
             <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">some</span> 
-            <a href="#Region" title="https://w3id.org/cocoon/v1.0#Region">region</a>
+            <span class="logic">exactly</span> 1 <a href="#Region" title="https://w3id.org/cocoon/v1.0#Region">region</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#hasCurrencyValue">has currency value</span>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">exactly</span> 1</dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#OSPriceSpecification"
+            <a href="#NetworkPriceSpecification"
+               title="https://w3id.org/cocoon/v1.0#NetworkPriceSpecification">network price specification</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#OSPriceSpecification"
                title="https://w3id.org/cocoon/v1.0#OSPriceSpecification">o s price specification</a>
             <sup class="type-c" title="class">c</sup>, <a href="#StorageTransactionsPriceSpecification"
                title="https://w3id.org/cocoon/v1.0#StorageTransactionsPriceSpecification">storage transactions price specification</a>
@@ -788,6 +911,12 @@ but there is a common transaction price spec for a group of cloud storage offers
             <a href="#numberOfCores" title="https://w3id.org/cocoon/v1.0#numberOfCores">number of cores</a>
             <sup class="type-dp" title="data property">dp</sup> 
             <span class="logic">max</span> 1</dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Network" title="https://w3id.org/cocoon/v1.0#Network">network</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Storage" title="https://w3id.org/cocoon/v1.0#Storage">storage</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Zone">
@@ -814,16 +943,6 @@ but there is a common transaction price spec for a group of cloud storage offers
          </a>
       </li>
       <li>
-         <a href="#hasBandwidth" title="https://w3id.org/cocoon/v1.0#hasBandwidth">
-            <span>has bandwidth</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasBenchmark" title="https://w3id.org/cocoon/v1.0#hasBenchmark">
-            <span>has benchmark</span>
-         </a>
-      </li>
-      <li>
          <a href="#hasCPUcapacity" title="https://w3id.org/cocoon/v1.0#hasCPUcapacity">
             <span>has c p ucapacity</span>
          </a>
@@ -841,11 +960,6 @@ but there is a common transaction price spec for a group of cloud storage offers
       <li>
          <a href="#hasMemory" title="https://w3id.org/cocoon/v1.0#hasMemory">
             <span>has memory</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasOperatingSystem" title="https://w3id.org/cocoon/v1.0#hasOperatingSystem">
-            <span>has operating system</span>
          </a>
       </li>
       <li>
@@ -923,38 +1037,6 @@ but there is a common transaction price spec for a group of cloud storage offers
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasBandwidth">
-      <h3>has bandwidth<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#hasBandwidth</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBenchmark">
-      <h3>has benchmark<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#hasBenchmark</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasCPUcapacity">
       <h3>has c p ucapacity<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -962,6 +1044,9 @@ but there is a common transaction price spec for a group of cloud storage offers
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#hasCPUcapacity</p>
+      <div class="comment">
+         <span class="markdown">The power or capacity of CPU available for this type of VM.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1010,22 +1095,6 @@ but there is a common transaction price spec for a group of cloud storage offers
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#hasMemory</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasOperatingSystem">
-      <h3>has operating system<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#hasOperatingSystem</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1235,11 +1304,6 @@ but there is a common transaction price spec for a group of cloud storage offers
          </a>
       </li>
       <li>
-         <a href="#location" title="https://w3id.org/cocoon/v1.0#location">
-            <span>location</span>
-         </a>
-      </li>
-      <li>
          <a href="#numberOfCores" title="https://w3id.org/cocoon/v1.0#numberOfCores">
             <span>number of cores</span>
          </a>
@@ -1327,17 +1391,6 @@ number of cores.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="location">
-      <h3>location<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#location</p>
-      <div class="comment">
-         <span class="markdown">The human-readable name for the actual location of the data center in a region, this is the original value used to generate the linking to Geoname ontology.</span>
-      </div>
-   </div>
    <div class="entity" id="numberOfCores">
       <h3>number of cores<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1358,8 +1411,18 @@ number of cores.</span>
          </a>
       </li>
       <li>
+         <a href="#http://xmlns.com/foaf/0.1/givenname" title="http://xmlns.com/foaf/0.1/givenname">
+            <span>givenname</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://xmlns.com/foaf/0.1/homepage" title="http://xmlns.com/foaf/0.1/homepage">
             <span>homepage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/lastName" title="http://xmlns.com/foaf/0.1/lastName">
+            <span>last name</span>
          </a>
       </li>
       <li>
@@ -1378,8 +1441,23 @@ number of cores.</span>
          </a>
       </li>
       <li>
+         <a href="#http://xmlns.com/foaf/0.1/nick" title="http://xmlns.com/foaf/0.1/nick">
+            <span>nick</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://xmlns.com/foaf/0.1/page" title="http://xmlns.com/foaf/0.1/page">
             <span>page</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/title" title="http://xmlns.com/foaf/0.1/title">
+            <span>title</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/workInfoHomepage" title="http://xmlns.com/foaf/0.1/workInfoHomepage">
+            <span>work info homepage</span>
          </a>
       </li>
    </ul>
@@ -1391,6 +1469,14 @@ number of cores.</span>
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
    </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/givenname">
+      <h3>givenname<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/givenname</p>
+   </div>
    <div class="entity" id="http://xmlns.com/foaf/0.1/homepage">
       <h3>homepage<sup class="type-ap" title="annotation property">ap</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
@@ -1398,6 +1484,14 @@ number of cores.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://xmlns.com/foaf/0.1/homepage</p>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/lastName">
+      <h3>last name<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/lastName</p>
    </div>
    <div class="entity" id="http://xmlns.com/foaf/0.1/mbox">
       <h3>mbox<sup class="type-ap" title="annotation property">ap</sup>
@@ -1423,6 +1517,14 @@ number of cores.</span>
       <p>
          <strong>IRI:</strong> http://xmlns.com/foaf/0.1/name</p>
    </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/nick">
+      <h3>nick<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/nick</p>
+   </div>
    <div class="entity" id="http://xmlns.com/foaf/0.1/page">
       <h3>page<sup class="type-ap" title="annotation property">ap</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
@@ -1431,9 +1533,40 @@ number of cores.</span>
       <p>
          <strong>IRI:</strong> http://xmlns.com/foaf/0.1/page</p>
    </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/title</p>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/workInfoHomepage">
+      <h3>work info homepage<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/workInfoHomepage</p>
+   </div>
 </div><div id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
+      <li>
+         <a href="#1TB" title="https://w3id.org/cocoon/v1.0#1TB">
+            <span>1 t b</span>
+         </a>
+      </li>
+      <li>
+         <a href="#10TB" title="https://w3id.org/cocoon/v1.0#10TB">
+            <span>10 t b</span>
+         </a>
+      </li>
+      <li>
+         <a href="#90TB" title="https://w3id.org/cocoon/v1.0#90TB">
+            <span>90 t b</span>
+         </a>
+      </li>
       <li>
          <a href="#azure" title="https://w3id.org/cocoon/v1.0#azure">Azure</a>
       </li>
@@ -1464,6 +1597,93 @@ number of cores.</span>
          <a href="#TB" title="https://w3id.org/cocoon/v1.0#TB">Terabyte</a>
       </li>
    </ul>
+   <div class="entity" id="1TB">
+      <h3>1 t b<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#1TB</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#QuantityOfThings" title="https://w3id.org/cocoon/v1.0#QuantityOfThings">quantity of things</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasUnitOfMeasurement"
+               title="https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement">has unit of measurement</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#GB" title="https://w3id.org/cocoon/v1.0#GB">Gigabyte</a>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#numericValue">numeric value</span>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"1024"^^<span class="dotted"
+                     title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="10TB">
+      <h3>10 t b<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#10TB</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#QuantityOfThings" title="https://w3id.org/cocoon/v1.0#QuantityOfThings">quantity of things</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasUnitOfMeasurement"
+               title="https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement">has unit of measurement</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#GB" title="https://w3id.org/cocoon/v1.0#GB">Gigabyte</a>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#numericValue">numeric value</span>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"10240"^^<span class="dotted"
+                     title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="90TB">
+      <h3>90 t b<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cocoon/v1.0#90TB</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#QuantityOfThings" title="https://w3id.org/cocoon/v1.0#QuantityOfThings">quantity of things</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasUnitOfMeasurement"
+               title="https://w3id.org/cocoon/v1.0#hasUnitOfMeasurement">has unit of measurement</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#GB" title="https://w3id.org/cocoon/v1.0#GB">Gigabyte</a>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/cocoon/v1.0#numericValue">numeric value</span>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"92160"^^<span class="dotted"
+                     title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</span>
+            </span>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="azure">
       <h3>Azure<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -1508,8 +1728,8 @@ number of cores.</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <a href="#http://qudt.org/schema/qudt#InformationEntropyUnit"
-               title="http://qudt.org/schema/qudt#InformationEntropyUnit">information entropy unit</a>
+            <span class="dotted"
+                  title="http://qudt.org/schema/qudt#InformationEntropyUnit">information entropy unit</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
@@ -1631,8 +1851,8 @@ number of cores.</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <a href="#http://qudt.org/schema/qudt#InformationEntropyUnit"
-               title="http://qudt.org/schema/qudt#InformationEntropyUnit">information entropy unit</a>
+            <span class="dotted"
+                  title="http://qudt.org/schema/qudt#InformationEntropyUnit">information entropy unit</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
