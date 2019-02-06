@@ -1,8 +1,9 @@
 # Cloud IaaS Schema
+The development version of the ontology is in [ontology_dev](ontology_dev/) folder.
 
-Intended as a Schema.org extension.
+We have also registerd an entry at http://prefix.cc
 
-# URL
+# Permalink with w3id
 https://w3id.org/cocoon/v1.0
 
 Prefered to be used as:
@@ -15,24 +16,24 @@ https://github.com/perma-id/w3id.org/tree/master/cocoon
 
 [How to submit pull requests](https://gist.github.com/miranda-zhang/4fd587c2a793e85667c1938eda782217#submitting-a-pull-request)
 
+Some example data published at: https://w3id.org/cocoon/data
+
 Old Version https://w3id.org/cocoon/v0.1
 
-The development version of the ontology is in [ontology_dev](ontology_dev/) folder.
+## w3id issues
+https://github.com/perma-id/w3id.org/issues/1063
 
-We have also registerd an entry at http://prefix.cc
-
-# Site
+# Sites
 The documentation site is hosted via Github page.
-Source code is in the `gh-page` branch.
+Source code is in the [gh-page branch](https://github.com/miranda-zhang/cloud-computing-schema/tree/gh-pages).
 
 Linked Data Fragments Server hosted on Google Cloud:
-Permanent URL: https://w3id.org/cocoon/data
-Instance IP: http://35.231.131.100:5000/cocoon_v1.0
+http://35.231.131.100:5000/cocoon_v1.0
+(Permalink:https://w3id.org/cocoon/data)
 
-Source code is in the `ldf-server` branch.
+Source code is in the [ldf-server branch](https://github.com/miranda-zhang/cloud-computing-schema/tree/ldf-server).
 
 # Examples
-
 Code in [example folder](example/) shows some ways to access and use this ontology.
 
 # Publications
