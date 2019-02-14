@@ -16,12 +16,12 @@
 
 <https://w3id.org/cocoon/v1.0> rdf:type owl:Ontology ;
                                 rdfs:seeAlso <https://github.com/miranda-zhang/cloud-computing-schema> ;
-                                dcterms:issued "2019-02-04"^^xsd:date ;
+                                dcterms:issued "2018-09-17"^^xsd:date ;
                                 dcterms:title "Vocabulary in Cloud Computing Services"@en ;
                                 owl:versionInfo 1.0 ;
                                 dcterms:rights "Copyright © 2018 Qian ZHANG"@en ;
                                 dcterms:creator cocoon:mirandazhangqian ;
-                                dcterms:modified "2018-09-17" ;
+                                dcterms:modified "2019-02-04" ;
                                 vann:preferredNamespaceUri "https://w3id.org/cocoon/v1.0#" ;
                                 dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
                                 cc:attributionURL <http://w3id.org/cocoon/v1.0> ;
@@ -855,7 +855,7 @@ cocoon:GB rdf:type owl:NamedIndividual ,
                    qudt:DerivedUnit ,
                    qudt:InformationEntropyUnit ,
                    cocoon:UnitOfMeasure ;
-          dcterms:description "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
+          rdfs:comment "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
           rdfs:label "Gigabyte"@en .
 
 
@@ -864,7 +864,7 @@ cocoon:GBPerMonth rdf:type owl:NamedIndividual ,
                            qudt:DataRateUnit ,
                            qudt:DerivedUnit ,
                            cocoon:UnitOfMeasure ;
-                  dcterms:description "Often describe 1 GB per Month usage."@en ;
+                  rdfs:comment "Often describe 1 GB per Month usage."@en ;
                   rdfs:label "Gigabyte per Month"@en .
 
 
@@ -873,7 +873,7 @@ cocoon:IOPs rdf:type owl:NamedIndividual ,
                      qudt:DataRateUnit ,
                      qudt:DerivedUnit ,
                      cocoon:UnitOfMeasure ;
-            dcterms:description "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en ;
+            rdfs:comment "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en ;
             rdfs:label "Input/output operations per sec"@en .
 
 
@@ -882,7 +882,7 @@ cocoon:MBPerSec rdf:type owl:NamedIndividual ,
                          qudt:DataRateUnit ,
                          qudt:DerivedUnit ,
                          cocoon:UnitOfMeasure ;
-                dcterms:description "Azure Managed Disks throughput caps per disk."@en ;
+                rdfs:comment "Azure Managed Disks throughput caps per disk."@en ;
                 rdfs:label "MB/second"@en .
 
 
@@ -891,7 +891,7 @@ cocoon:TB rdf:type owl:NamedIndividual ,
                    qudt:DerivedUnit ,
                    qudt:InformationEntropyUnit ,
                    cocoon:UnitOfMeasure ;
-          dcterms:description "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
+          rdfs:comment "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
           rdfs:label "Terabyte"@en .
 
 
@@ -906,7 +906,7 @@ cocoon:azure rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/cocoon/v1.0#gceu
 cocoon:gceu rdf:type owl:NamedIndividual ,
                      cocoon:UnitOfMeasure ;
-            dcterms:description "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ's to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
+            rdfs:comment "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ's to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
             rdfs:label "Google Compute Engine Unit"@en .
 
 
@@ -927,7 +927,8 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
                         foaf:mbox <mailto:miranda.zhang.q@gmail.com> ;
                         foaf:nick "Miranda" ;
                         foaf:title "Miss" ;
-                        foaf:workInfoHomepage <https://www.linkedin.com/in/mirandazhangq/> .
+                        foaf:workInfoHomepage <https://www.linkedin.com/in/mirandazhangq/>;
+                        rdfs:comment "https://github.com/miranda-zhang"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#1TB
