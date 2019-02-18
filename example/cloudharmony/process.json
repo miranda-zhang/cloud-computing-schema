@@ -1,0 +1,45 @@
+{
+    "concurrency": 2,
+    "duration": 37,
+    "index": "11",
+    "iterations": 6,
+    "location": {
+        "city": "St. Ghislain",
+        "country": "BE",
+        "lat": 50.4704,
+        "long": 3.8649
+    },
+    "max_size": 10240,
+    "min_size": 256,
+    "provider_id": "google",
+    "region": "europe-west1",
+    "service": "Google Compute Engine",
+    "service_id": "google:compute",
+    "service_type": "compute",
+    "subregion": "europe-west1-c",
+    "type": "downlink",
+    "warmup": 3
+},
+{
+    "status": "success",
+    "secure": true,
+    "sequence": 12,
+    "bytes": 46324286,
+    "fastest": 19.96,
+    "mean": 16.27,
+    "median": 15.51,
+    "metric10": 14.3,
+    "metric25": 14.99,
+    "metric75": 16.77,
+    "metric90": 18.99,
+    "metrics": [
+        18.01,
+        15.5,
+        14.47,
+        14.13,
+        15.52,
+        19.96
+    ],
+    "slowest": 14.13,
+    "stdev": 2.07
+}
