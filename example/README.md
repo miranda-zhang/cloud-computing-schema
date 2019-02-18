@@ -9,7 +9,7 @@ Created with https://github.com/ariutta/json-ld-macros
 # Mapping data to ontology
 ![Workflow](cococon_usage_workflow.png "Workflow Overview")
 
-## List of examples:
+## List of Cloud Service Examples:
 1. [Google Cloud VM instance](gcloud/vm.md)
 2. [Google Cloud Storage](gcloud/storage.md)
 3. [Google Cloud OS images](gcloud/os.md)
@@ -27,6 +27,9 @@ CoCoOn used vocabularies from [QUDT Unit ontology](unit/QUDT.md)
 and [defined additional units](unit/README.md)
 
 Using [cdt:ucum](unit/cdt.md) could be a future work.
+
+## Network QoS
+Used http://cloudharmony.com to collect data, details explained in [cloudharmony](cloudharmony/) folder.
 
 # SPARQL
 Tested with Protégé.

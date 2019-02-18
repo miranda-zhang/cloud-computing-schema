@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script async type="text/javascript" src="speedtest-googlecompute.js"></script>
+        <script type="text/javascript">
+        /* STEP 2
+        * After the test script loads, a global variable named 'speedtest' will be 
+        * present referencing an instance of the test driver.
+        * The test must be started manually. To do so, the 'start' method should be 
+        * invoked after the script loads. Because the script will likely be loaded
+        * asynchronously, to simplify load detection, it will check for existence 
+        * of a function named 'ch_st_loaded'. If this function exists, it will be 
+        * called with a reference to speedtest as the first argument. The start() method 
+        * may then be invoked to begin testing. The code below demonstrates how this 
+        * might be implemented:
+        */
+        function ch_st_loaded(speedtest) {
+            var uplinkRedirectUri = "test.html"; // change this to the URI where up.html is accessible on your server
+            speedtest.start(null, uplinkRedirectUri);
+        }
+        </script>
+                
+    </head>
+    <body>
+        <div id="tests">
+            <h1>Tests</h1>
+        </div>
+        <div id="progress">
+            <h1>Progress</h1>
+        </div>
+        <h1>Results: JSON List</h1>
+        [
+            <div id="results"></div>
+        ]
+        <div id="stopped">
+        </div>
+    </body>
+</html>

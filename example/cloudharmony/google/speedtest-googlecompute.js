@@ -127,8 +127,21 @@ var speedtest=(function() {
         var r=s.length%3;
         return(r?ec.slice(0, r-3):ec)+'==='.slice(r||3)
     };
+    
+    var progressHTML = $('#progress');
+    var resultsHTML = $('#results'); 
     cb=function(method, args) {
         console.log(method+"("+args.length+"):"+JSON.stringify(args));
+        if (method=="started"){
+            $("#tests").append(JSON.stringify(args));
+        }else if (method=="progress"){
+            progressHTML.append("<p>"+JSON.stringify(args)+"</p>");
+        }else if (method=="results"){
+            resultsHTML.append("<p>"+JSON.stringify(args)+",</p>");
+        }else{
+            $("#stopped").append("<h1>Done</h1>");
+        }
+        
         var c=null;
         if(z.callback&&(typeof z.callback=="object"||typeof z.callback=="function")&&method in z.callback&&typeof z.callback[method]=="function")c=z.callback[method].apply(z.callback, typeof args=="object"?args: []);
         return c

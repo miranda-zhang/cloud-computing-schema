@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script async type="text/javascript" src="speedtest-azure.js"></script>
+        <script type="text/javascript">
+            function ch_st_loaded(speedtest) {
+                speedtest.start();
+            }
+        </script>
+                
+    </head>
+    <body>
+        <div id="tests">
+            <h1>Tests</h1>
+        </div>
+        <div id="progress">
+            <h1>Progress</h1>
+        </div>
+        <h1>Results: JSON List</h1>
+        [
+            <div id="results"></div>
+        ]
+        <div id="stopped">
+        </div>
+    </body>
+</html>
