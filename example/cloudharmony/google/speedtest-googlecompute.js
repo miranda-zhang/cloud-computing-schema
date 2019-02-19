@@ -129,7 +129,7 @@ var speedtest=(function() {
     };
     
     var progressHTML = $('#progress');
-    var resultsHTML = $('#results'); 
+    var resultsHTML = $('#results');
     cb=function(method, args) {
         console.log(method+"("+args.length+"):"+JSON.stringify(args));
         if (method=="started"){
@@ -137,6 +137,7 @@ var speedtest=(function() {
         }else if (method=="progress"){
             progressHTML.append("<p>"+JSON.stringify(args)+"</p>");
         }else if (method=="results"){
+            args.push({completion_time:new Date().toISOString()});
             resultsHTML.append("<p>"+JSON.stringify(args)+",</p>");
         }else{
             $("#status").text("Done!");

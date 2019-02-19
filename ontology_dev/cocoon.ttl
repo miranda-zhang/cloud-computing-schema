@@ -12,35 +12,75 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix cocoon: <https://w3id.org/cocoon/v1.0#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
 @base <https://w3id.org/cocoon/v1.0> .
 
 <https://w3id.org/cocoon/v1.0> rdf:type owl:Ontology ;
-                                rdfs:seeAlso <https://github.com/miranda-zhang/cloud-computing-schema> ;
-                                dcterms:issued "2018-09-17"^^xsd:date ;
-                                dcterms:title "Vocabulary in Cloud Computing Services"@en ;
-                                owl:versionInfo 1.0 ;
-                                dcterms:rights "Copyright © 2018 Qian ZHANG"@en ;
-                                dcterms:creator cocoon:mirandazhangqian ;
-                                dcterms:modified "2019-02-04" ;
-                                vann:preferredNamespaceUri "https://w3id.org/cocoon/v1.0#" ;
-                                dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
                                 cc:attributionURL <http://w3id.org/cocoon/v1.0> ;
-                                vann:preferredNamespacePrefix "cocoon" ;
-                                cc:attributionName "Qian ZHANG" ;
-                                dcterms:license <http://creativecommons.org/licenses/by-nc/4.0/> ;
                                 dcterms:created "2012-10-01"^^xsd:date ;
-                                rdfs:label "Cloud Computing Services Ontology"@en .
+                                dcterms:creator cocoon:mirandazhangqian ;
+                                dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
+                                dcterms:issued "2019-02-04"^^xsd:date ;
+                                dcterms:license <http://creativecommons.org/licenses/by-nc/4.0/> ;
+                                dcterms:modified "2018-09-17" ;
+                                dcterms:rights "Copyright © 2018 Qian ZHANG"@en ;
+                                dcterms:title "Vocabulary in Cloud Computing Services"@en ;
+                                vann:preferredNamespacePrefix "cocoon" ;
+                                vann:preferredNamespaceUri "https://w3id.org/cocoon/v1.0#" ;
+                                rdfs:label "Cloud Computing Services Ontology"@en ;
+                                rdfs:seeAlso <https://github.com/miranda-zhang/cloud-computing-schema> ;
+                                owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://creativecommons.org/ns#attributionURL
+cc:attributionURL rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/description
 dcterms:description rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/goodrelations/v1#name
 gr:name rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/givenname
@@ -318,6 +358,11 @@ qudt:Unit rdf:type owl:Class ;
 gn:Feature rdf:type owl:Class .
 
 
+###  http://www.w3.org/ns/sosa/Result
+<http://www.w3.org/ns/ssn/Property> rdf:type owl:Class ;
+                                   owl:equivalentClass cocoon:QuanlityOfService .
+
+
 ###  http://xmlns.com/foaf/0.1/Person
 foaf:Person rdf:type owl:Class .
 
@@ -349,6 +394,11 @@ cocoon:CloudService rdf:type owl:Class ;
 ###  https://w3id.org/cocoon/v1.0#Database
 cocoon:Database rdf:type owl:Class ;
                 rdfs:subClassOf cocoon:SaaS .
+
+
+###  https://w3id.org/cocoon/v1.0#DownlinkSpeed
+cocoon:DownlinkSpeed rdf:type owl:Class ;
+                     rdfs:subClassOf cocoon:QuanlityOfService .
 
 
 ###  https://w3id.org/cocoon/v1.0#Egress
@@ -399,6 +449,12 @@ cocoon:LBData rdf:type owl:Class ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass cocoon:TrafficDirection
                               ] .
+
+
+###  https://w3id.org/cocoon/v1.0#Latency
+cocoon:Latency rdf:type owl:Class ;
+               rdfs:subClassOf cocoon:QuanlityOfService;
+               owl:equivalentClass <http://www.w3.org/ns/ssn/systems/SystemProperty> .
 
 
 ###  https://w3id.org/cocoon/v1.0#LoadBalancing
@@ -520,6 +576,10 @@ cocoon:PaaS rdf:type owl:Class ;
             rdfs:comment "Platform as a Service, i.e. Google App Engine, Heroku."@en .
 
 
+###  https://w3id.org/cocoon/v1.0#QuanlityOfService
+cocoon:QuanlityOfService rdf:type owl:Class .
+
+
 ###  https://w3id.org/cocoon/v1.0#QuantityOfThings
 cocoon:QuantityOfThings rdf:type owl:Class ;
                         rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -620,7 +680,8 @@ cocoon:Service rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
                                  owl:onProperty cocoon:hasServiceLevelAgreement ;
                                  owl:someValuesFrom cocoon:ServiceLevelAgreement
-                               ] .
+                               ];
+                               owl:equivalentClass schema:Service .
 
 
 ###  https://w3id.org/cocoon/v1.0#ServiceLevelAgreement
@@ -708,7 +769,7 @@ but there is a common transaction price spec for a group of cloud storage offers
 ###  https://w3id.org/cocoon/v1.0#SystemImage
 cocoon:SystemImage rdf:type owl:Class ;
                    rdfs:subClassOf cocoon:SaaS ;
-                   dcterms:description """A system image is a serialized copy of the entire state of a computer system.
+                   rdfs:comment """A system image is a serialized copy of the entire state of a computer system.
 System images can be used for backup.""" .
 
 
@@ -719,6 +780,11 @@ cocoon:TrafficDirection rdf:type owl:Class .
 ###  https://w3id.org/cocoon/v1.0#UnitOfMeasure
 cocoon:UnitOfMeasure rdf:type owl:Class ;
                      rdfs:comment "Defines custome units."@en .
+
+
+###  https://w3id.org/cocoon/v1.0#UplinkSpeed
+cocoon:UplinkSpeed rdf:type owl:Class ;
+                   rdfs:subClassOf cocoon:QuanlityOfService .
 
 
 ###  https://w3id.org/cocoon/v1.0#VM
@@ -920,36 +986,36 @@ cocoon:gcloud rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0#mirandazhangqian
 cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
-                                 foaf:Person ;
+                                schema:Person,
+                                foaf:Person ;
                         foaf:givenname "Qian" ;
                         foaf:homepage <https://github.com/miranda-zhang> ;
                         foaf:lastName "Zhang" ;
                         foaf:mbox <mailto:miranda.zhang.q@gmail.com> ;
                         foaf:nick "Miranda" ;
                         foaf:title "Miss" ;
-                        foaf:workInfoHomepage <https://www.linkedin.com/in/mirandazhangq/>;
-                        rdfs:comment "https://github.com/miranda-zhang"@en .
+                        foaf:workInfoHomepage <https://www.linkedin.com/in/mirandazhangq/> .
 
 
 ###  https://w3id.org/cocoon/v1.0#1TB
-cocoon:1TB rdf:type owl:NamedIndividual ,
-                   cocoon:QuantityOfThings ;
-          cocoon:hasUnitOfMeasurement cocoon:GB ;
-          cocoon:numericValue "1024"^^xsd:nonNegativeInteger .
+<https://w3id.org/cocoon/v1.0#1TB> rdf:type owl:NamedIndividual ,
+                                            cocoon:QuantityOfThings ;
+                                   cocoon:hasUnitOfMeasurement cocoon:GB ;
+                                   cocoon:numericValue "1024"^^xsd:nonNegativeInteger .
 
 
 ###  https://w3id.org/cocoon/v1.0#10TB
-cocoon:10TB rdf:type owl:NamedIndividual ,
-                   cocoon:QuantityOfThings ;
-          cocoon:hasUnitOfMeasurement cocoon:GB ;
-          cocoon:numericValue "10240"^^xsd:nonNegativeInteger .
+<https://w3id.org/cocoon/v1.0#10TB> rdf:type owl:NamedIndividual ,
+                                             cocoon:QuantityOfThings ;
+                                    cocoon:hasUnitOfMeasurement cocoon:GB ;
+                                    cocoon:numericValue "10240"^^xsd:nonNegativeInteger .
 
 
 ###  https://w3id.org/cocoon/v1.0#90TB
-cocoon:90TB rdf:type owl:NamedIndividual ,
-                   cocoon:QuantityOfThings ;
-          cocoon:hasUnitOfMeasurement cocoon:GB ;
-          cocoon:numericValue "92160"^^xsd:nonNegativeInteger .
+<https://w3id.org/cocoon/v1.0#90TB> rdf:type owl:NamedIndividual ,
+                                             cocoon:QuantityOfThings ;
+                                    cocoon:hasUnitOfMeasurement cocoon:GB ;
+                                    cocoon:numericValue "92160"^^xsd:nonNegativeInteger .
 
 
 #################################################################
@@ -980,4 +1046,4 @@ cocoon:90TB rdf:type owl:NamedIndividual ,
 ] .
 
 
-###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi

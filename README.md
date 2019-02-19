@@ -48,7 +48,7 @@ This project used solutions from the following projects:
     * Doc https://ci.mines-stetienne.fr/sparql-generate/apidocs/allclasses-noframe.html
 * https://github.com/dgarijo/Widoco
 * https://github.com/LinkedDataFragments/Server.js/
-* https://github.com/cloudharmony/network
+
 OWL Specifications
 * OWL2 https://www.w3.org/TR/owl2-overview/
 * OWL https://www.w3.org/TR/owl-ref/

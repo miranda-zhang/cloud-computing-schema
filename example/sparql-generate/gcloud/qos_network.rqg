@@ -1,0 +1,87 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+
+GENERATE { 
+  <network/internet/gcloud/{?key}> a cocoon:Internet;
+    cocoon:hasProvider cocoon:gcloud;
+    cocoon:hasDirection cocoon:Egress;
+    
+    GENERATE {
+        <network/internet/gcloud/{?key}> cocoon:hasDestination <location/{?destinationStr}>;     
+    }
+    ITERATOR iter:JSONPath(?gcloudInternet, "$.destinations[*]") AS ?destinationJson
+    WHERE {
+        BIND (fun:JSONPath(?destinationJson, "$") AS ?destinationStr)     
+    } .
+
+    GENERATE {
+        <network/internet/gcloud/{?key}> cocoon:excludesDestination <location/{?excludesDestinationStr}>;     
+    }
+    ITERATOR iter:JSONPath(?gcloudInternet, "$.excludesDestinations[*]") AS ?excludesDestinationJson
+    WHERE {
+        BIND (fun:JSONPath(?excludesDestinationJson, "$") AS ?excludesDestinationStr)     
+    } .
+
+    GENERATE {        
+        <network/internet/gcloud/{?key}>
+        gr:hasPriceSpecification [ 
+            a cocoon:NetworkPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?tier1;                
+                cocoon:forUsageMoreThan [
+                    a cocoon:QuantityOfThings;
+                    cocoon:hasUnitOfMeasurement cocoon:GB;
+                    cocoon:numericValue "0"^^xsd:nonNegativeInteger;
+                ];
+                cocoon:forUsageLessEqual cocoon:1TB;
+                gr:hasUnitOfMeasurement cocoon:GBPerMonth;            
+        ];
+        gr:hasPriceSpecification [ 
+            a cocoon:NetworkPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?tier2;                
+                cocoon:forUsageMoreThan cocoon:1TB;
+                cocoon:forUsageLessEqual cocoon:10TB;
+                gr:hasUnitOfMeasurement cocoon:GBPerMonth;            
+        ];
+        gr:hasPriceSpecification [ 
+            a cocoon:NetworkPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?tier3;                
+                cocoon:forUsageMoreThan cocoon:10TB;
+                cocoon:forUsageLessEqual cocoon:90TB;
+                gr:hasUnitOfMeasurement cocoon:GBPerMonth;            
+        ];      
+    } WHERE {
+        FILTER( BOUND(?tiers) )
+        BIND (xsd:float(fun:JSONPath(?tiers,".1024")) AS ?tier1)
+        BIND (xsd:float(fun:JSONPath(?tiers,".10240")) AS ?tier2)
+        BIND (xsd:float(fun:JSONPath(?tiers,".92160")) AS ?tier3)
+    } .
+
+    GENERATE {        
+        <network/internet/gcloud/{?key}>
+        gr:hasPriceSpecification [ 
+            a cocoon:NetworkPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?us;                
+                cocoon:specialRateType ?specialRateType;
+                gr:hasUnitOfMeasurement cocoon:GBPerMonth;           
+        ];    
+    } WHERE {
+        FILTER( BOUND(?specialRateType) )
+        BIND (xsd:float(fun:JSONPath(?gcloudInternet,".us")) AS ?us)
+    } .
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/internet_destination.json> AS ?source
+ITERATOR iter:JSONListKeys(?source) AS ?key
+WHERE {
+    BIND(fun:JSONPath(?source, '$.{?key}' ) AS ?gcloudInternet)
+    BIND (fun:JSONPath(?gcloudInternet,"$.tiers") AS ?tiers)
+    BIND (fun:JSONPath(?gcloudInternet,"$.specialRateType") AS ?specialRateType)
+}

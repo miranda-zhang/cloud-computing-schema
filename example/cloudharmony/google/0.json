@@ -1,0 +1,3223 @@
+[
+    [
+        {
+            "concurrency": 4,
+            "duration": 7,
+            "index": "0",
+            "iterations": 12,
+            "location": {
+                "city": "Frankfurt",
+                "country": "DE",
+                "lat": 50.1109,
+                "long": 8.6821
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "europe-west3",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west3-c",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 1,
+            "bytes": 2142913,
+            "fastest": 3.05,
+            "mean": 2.04,
+            "median": 2.08,
+            "metric10": 1.42,
+            "metric25": 1.6,
+            "metric75": 2.44,
+            "metric90": 2.62,
+            "metrics": [
+                1.78,
+                2.43,
+                2.79,
+                1.42,
+                2.27,
+                2.21,
+                0.92,
+                1.41,
+                3.05,
+                2.45,
+                1.78,
+                1.95
+            ],
+            "slowest": 0.92,
+            "stdev": 0.59
+        },
+        {
+            "completion_time": "2019-02-19T10:36:29.606Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "1",
+            "iterations": 6,
+            "location": {
+                "city": "Frankfurt",
+                "country": "DE",
+                "lat": 50.1109,
+                "long": 8.6821
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "europe-west3",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west3-c",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 2,
+            "bytes": 16677918,
+            "fastest": 6.01,
+            "mean": 5.64,
+            "median": 5.93,
+            "metric10": 5.02,
+            "metric25": 5.51,
+            "metric75": 5.96,
+            "metric90": 5.99,
+            "metrics": [
+                5.96,
+                5.95,
+                6.01,
+                5.9,
+                5.11,
+                4.92
+            ],
+            "slowest": 4.92,
+            "stdev": 0.45
+        },
+        {
+            "completion_time": "2019-02-19T10:36:59.881Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "2",
+            "iterations": 12,
+            "location": {
+                "city": "Frankfurt",
+                "country": "DE",
+                "lat": 50.1109,
+                "long": 8.6821
+            },
+            "provider_id": "google",
+            "region": "europe-west3",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west3-c",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 3,
+            "bytes": 72,
+            "fastest": 313,
+            "mean": 343.25,
+            "median": 344,
+            "metric10": 360,
+            "metric25": 354,
+            "metric75": 336.5,
+            "metric90": 327,
+            "metrics": [
+                347,
+                313,
+                357,
+                364,
+                351,
+                344,
+                343,
+                334,
+                320,
+                363,
+                339,
+                344
+            ],
+            "slowest": 364,
+            "stdev": 14.84
+        },
+        {
+            "completion_time": "2019-02-19T10:37:07.532Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "3",
+            "iterations": 6,
+            "location": {
+                "city": "Tokyo",
+                "country": "JP",
+                "lat": 35.6895,
+                "long": 139.6917
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "asia-northeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-northeast1-b",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 4,
+            "bytes": 126432068,
+            "fastest": 58.69,
+            "mean": 50.75,
+            "median": 49.94,
+            "metric10": 45.67,
+            "metric25": 46.28,
+            "metric75": 54.07,
+            "metric90": 56.64,
+            "metrics": [
+                54.58,
+                58.69,
+                53.55,
+                45.1,
+                46.23,
+                46.32
+            ],
+            "slowest": 45.1,
+            "stdev": 5.12
+        },
+        {
+            "completion_time": "2019-02-19T10:37:38.336Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "4",
+            "iterations": 12,
+            "location": {
+                "city": "Tokyo",
+                "country": "JP",
+                "lat": 35.6895,
+                "long": 139.6917
+            },
+            "provider_id": "google",
+            "region": "asia-northeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-northeast1-b",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 5,
+            "bytes": 72,
+            "fastest": 143,
+            "mean": 172.58,
+            "median": 182.5,
+            "metric10": 187,
+            "metric25": 187,
+            "metric75": 154,
+            "metric90": 151.5,
+            "metrics": [
+                187,
+                186,
+                186,
+                187,
+                187,
+                188,
+                179,
+                169,
+                152,
+                151,
+                143,
+                156
+            ],
+            "slowest": 188,
+            "stdev": 16.62
+        },
+        {
+            "completion_time": "2019-02-19T10:37:42.517Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "5",
+            "iterations": 12,
+            "location": {
+                "city": "Tokyo",
+                "country": "JP",
+                "lat": 35.6895,
+                "long": 139.6917
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "asia-northeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-northeast1-b",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 6,
+            "bytes": 2803862,
+            "fastest": 8.99,
+            "mean": 5.15,
+            "median": 5.06,
+            "metric10": 2.06,
+            "metric25": 2.49,
+            "metric75": 7.47,
+            "metric90": 8,
+            "metrics": [
+                2.91,
+                8.26,
+                2.07,
+                1.63,
+                4.52,
+                5.61,
+                8.99,
+                6.42,
+                2.05,
+                4.36,
+                7.75,
+                7.19
+            ],
+            "slowest": 1.63,
+            "stdev": 2.49
+        },
+        {
+            "completion_time": "2019-02-19T10:37:50.955Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "6",
+            "iterations": 6,
+            "location": {
+                "city": "Hong Kong",
+                "country": "HK",
+                "lat": 22.3964,
+                "long": 114.1095
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "asia-east2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-east2-b",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 7,
+            "bytes": 82408832,
+            "fastest": 42.2,
+            "mean": 28.53,
+            "median": 28.03,
+            "metric10": 20.13,
+            "metric25": 24.5,
+            "metric75": 32.03,
+            "metric90": 37.44,
+            "metrics": [
+                31.37,
+                32.68,
+                15.95,
+                42.2,
+                24.32,
+                24.68
+            ],
+            "slowest": 15.95,
+            "stdev": 8.2
+        },
+        {
+            "completion_time": "2019-02-19T10:38:28.539Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "7",
+            "iterations": 12,
+            "location": {
+                "city": "Hong Kong",
+                "country": "HK",
+                "lat": 22.3964,
+                "long": 114.1095
+            },
+            "provider_id": "google",
+            "region": "asia-east2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-east2-b",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 8,
+            "bytes": 72,
+            "fastest": 163,
+            "mean": 186.17,
+            "median": 186,
+            "metric10": 195.5,
+            "metric25": 188.5,
+            "metric75": 183,
+            "metric90": 178.5,
+            "metrics": [
+                182,
+                190,
+                187,
+                186,
+                186,
+                175,
+                186,
+                163,
+                201,
+                207,
+                184,
+                187
+            ],
+            "slowest": 207,
+            "stdev": 10.62
+        },
+        {
+            "completion_time": "2019-02-19T10:38:32.684Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "8",
+            "iterations": 12,
+            "location": {
+                "city": "Hong Kong",
+                "country": "HK",
+                "lat": 22.3964,
+                "long": 114.1095
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "asia-east2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-east2-b",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 9,
+            "bytes": 2337158,
+            "fastest": 5.77,
+            "mean": 3.42,
+            "median": 3.3,
+            "metric10": 1.81,
+            "metric25": 2.17,
+            "metric75": 4.75,
+            "metric90": 5.23,
+            "metrics": [
+                2.28,
+                2.05,
+                3.67,
+                3.11,
+                4.8,
+                2.65,
+                3.48,
+                4.7,
+                1.32,
+                5.77,
+                1.57,
+                5.65
+            ],
+            "slowest": 1.32,
+            "stdev": 1.47
+        },
+        {
+            "completion_time": "2019-02-19T10:38:40.920Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "9",
+            "iterations": 12,
+            "location": {
+                "city": "St. Ghislain",
+                "country": "BE",
+                "lat": 50.4704,
+                "long": 3.8649
+            },
+            "provider_id": "google",
+            "region": "europe-west1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west1-c",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 10,
+            "bytes": 72,
+            "fastest": 304,
+            "mean": 311.5,
+            "median": 312,
+            "metric10": 314,
+            "metric25": 313,
+            "metric75": 311,
+            "metric90": 309,
+            "metrics": [
+                312,
+                307,
+                315,
+                313,
+                311,
+                304,
+                316,
+                312,
+                311,
+                313,
+                312,
+                312
+            ],
+            "slowest": 316,
+            "stdev": 3.1
+        },
+        {
+            "completion_time": "2019-02-19T10:38:48.379Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 7,
+            "index": "10",
+            "iterations": 12,
+            "location": {
+                "city": "St. Ghislain",
+                "country": "BE",
+                "lat": 50.4704,
+                "long": 3.8649
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "europe-west1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west1-c",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 11,
+            "bytes": 2377567,
+            "fastest": 3.01,
+            "mean": 1.88,
+            "median": 2.01,
+            "metric10": 1.12,
+            "metric25": 1.3,
+            "metric75": 2.44,
+            "metric90": 2.55,
+            "metrics": [
+                2.45,
+                1.8,
+                1.41,
+                3.01,
+                2.28,
+                2.22,
+                0.63,
+                1.43,
+                2.64,
+                2.43,
+                1.04,
+                1.19
+            ],
+            "slowest": 0.63,
+            "stdev": 0.7
+        },
+        {
+            "completion_time": "2019-02-19T10:39:05.230Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "11",
+            "iterations": 6,
+            "location": {
+                "city": "St. Ghislain",
+                "country": "BE",
+                "lat": 50.4704,
+                "long": 3.8649
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "europe-west1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west1-c",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 12,
+            "bytes": 31487890,
+            "fastest": 10.67,
+            "mean": 8.65,
+            "median": 8.41,
+            "metric10": 6.88,
+            "metric25": 8.23,
+            "metric75": 9.56,
+            "metric90": 10.64,
+            "metrics": [
+                8.32,
+                10.67,
+                8.51,
+                8.14,
+                5.62,
+                10.61
+            ],
+            "slowest": 5.62,
+            "stdev": 1.71
+        },
+        {
+            "completion_time": "2019-02-19T10:39:44.800Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "12",
+            "iterations": 6,
+            "location": {
+                "city": "Montreal",
+                "country": "CA",
+                "lat": 45.3627,
+                "long": -73.3458
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "northamerica-northeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "northamerica-northeast1-a",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 13,
+            "bytes": 29187764,
+            "fastest": 11.34,
+            "mean": 9.31,
+            "median": 8.65,
+            "metric10": 8.19,
+            "metric25": 8.49,
+            "metric75": 9.8,
+            "metric90": 11.08,
+            "metrics": [
+                7.93,
+                8.77,
+                8.45,
+                8.52,
+                10.82,
+                11.34
+            ],
+            "slowest": 7.93,
+            "stdev": 1.29
+        },
+        {
+            "completion_time": "2019-02-19T10:40:15.437Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 5,
+            "index": "13",
+            "iterations": 12,
+            "location": {
+                "city": "Montreal",
+                "country": "CA",
+                "lat": 45.3627,
+                "long": -73.3458
+            },
+            "provider_id": "google",
+            "region": "northamerica-northeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "northamerica-northeast1-a",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 14,
+            "bytes": 72,
+            "fastest": 248,
+            "mean": 256.75,
+            "median": 250.5,
+            "metric10": 269.5,
+            "metric25": 255.5,
+            "metric75": 249.5,
+            "metric90": 248.5,
+            "metrics": [
+                252,
+                250,
+                251,
+                248,
+                251,
+                280,
+                249,
+                248,
+                259,
+                293,
+                250,
+                250
+            ],
+            "slowest": 293,
+            "stdev": 13.84
+        },
+        {
+            "completion_time": "2019-02-19T10:40:20.895Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 7,
+            "index": "14",
+            "iterations": 12,
+            "location": {
+                "city": "Montreal",
+                "country": "CA",
+                "lat": 45.3627,
+                "long": -73.3458
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "northamerica-northeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "northamerica-northeast1-a",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 15,
+            "bytes": 2300882,
+            "fastest": 3.86,
+            "mean": 2.68,
+            "median": 3.01,
+            "metric10": 1.55,
+            "metric25": 1.83,
+            "metric75": 3.28,
+            "metric90": 3.39,
+            "metrics": [
+                1.14,
+                2.75,
+                3.11,
+                3.26,
+                3.29,
+                2.9,
+                2.04,
+                3.49,
+                1.62,
+                3.19,
+                3.86,
+                1.48
+            ],
+            "slowest": 1.14,
+            "stdev": 0.85
+        },
+        {
+            "completion_time": "2019-02-19T10:40:33.329Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "15",
+            "iterations": 6,
+            "location": {
+                "city": "Sydney",
+                "country": "AU",
+                "lat": -33.8628,
+                "long": 151.1912
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "australia-southeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "australia-southeast1-a",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 16,
+            "bytes": 155801040,
+            "fastest": 305.73,
+            "mean": 301.88,
+            "median": 303.14,
+            "metric10": 296.92,
+            "metric25": 301.25,
+            "metric75": 304.76,
+            "metric90": 305.6,
+            "metrics": [
+                293.56,
+                300.28,
+                302.21,
+                305.73,
+                304.06,
+                305.46
+            ],
+            "slowest": 293.56,
+            "stdev": 4.17
+        },
+        {
+            "completion_time": "2019-02-19T10:40:39.101Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "16",
+            "iterations": 12,
+            "location": {
+                "city": "Sydney",
+                "country": "AU",
+                "lat": -33.8628,
+                "long": 151.1912
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "australia-southeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "australia-southeast1-a",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 17,
+            "bytes": 3062474,
+            "fastest": 38.52,
+            "mean": 17.33,
+            "median": 14.55,
+            "metric10": 7.8,
+            "metric25": 9.4,
+            "metric75": 23.39,
+            "metric90": 31.01,
+            "metrics": [
+                14.11,
+                8.39,
+                19.49,
+                27.28,
+                10.41,
+                16.81,
+                10.4,
+                7.21,
+                14.98,
+                38.52,
+                5.66,
+                34.74
+            ],
+            "slowest": 5.66,
+            "stdev": 10.35
+        },
+        {
+            "completion_time": "2019-02-19T10:40:42.736Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "17",
+            "iterations": 12,
+            "location": {
+                "city": "Sydney",
+                "country": "AU",
+                "lat": -33.8628,
+                "long": 151.1912
+            },
+            "provider_id": "google",
+            "region": "australia-southeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "australia-southeast1-a",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 18,
+            "bytes": 72,
+            "fastest": 53,
+            "mean": 60.83,
+            "median": 61.5,
+            "metric10": 62,
+            "metric25": 62,
+            "metric75": 61,
+            "metric90": 61,
+            "metrics": [
+                53,
+                61,
+                62,
+                61,
+                62,
+                61,
+                62,
+                62,
+                62,
+                61,
+                62,
+                61
+            ],
+            "slowest": 62,
+            "stdev": 2.41
+        },
+        {
+            "completion_time": "2019-02-19T10:40:44.403Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "18",
+            "iterations": 6,
+            "location": {
+                "city": "Eemshaven",
+                "country": "NL",
+                "lat": 53.2622,
+                "long": 6.4936
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "europe-west4",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west4-b",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 19,
+            "bytes": 28886672,
+            "fastest": 11.54,
+            "mean": 10.37,
+            "median": 10.34,
+            "metric10": 9.54,
+            "metric25": 9.75,
+            "metric75": 10.84,
+            "metric90": 11.24,
+            "metrics": [
+                11.54,
+                9.55,
+                10.74,
+                9.53,
+                10.94,
+                9.94
+            ],
+            "slowest": 9.53,
+            "stdev": 0.75
+        },
+        {
+            "completion_time": "2019-02-19T10:41:17.925Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "19",
+            "iterations": 6,
+            "location": {
+                "city": "Singapore",
+                "country": "SG",
+                "lat": 1.3521,
+                "long": 103.8198
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "asia-southeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-southeast1-b",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 20,
+            "bytes": 67709776,
+            "fastest": 44.83,
+            "mean": 30.4,
+            "median": 28.93,
+            "metric10": 21.84,
+            "metric25": 23.89,
+            "metric75": 34.2,
+            "metric90": 40.44,
+            "metrics": [
+                21.42,
+                22.26,
+                25.52,
+                32.34,
+                36.05,
+                44.83
+            ],
+            "slowest": 21.42,
+            "stdev": 8.31
+        },
+        {
+            "completion_time": "2019-02-19T10:41:46.247Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 7,
+            "index": "20",
+            "iterations": 12,
+            "location": {
+                "city": "Singapore",
+                "country": "SG",
+                "lat": 1.3521,
+                "long": 103.8198
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "asia-southeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-southeast1-b",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 21,
+            "bytes": 2159495,
+            "fastest": 12.34,
+            "mean": 4.96,
+            "median": 3.64,
+            "metric10": 1.38,
+            "metric25": 2.06,
+            "metric75": 7.24,
+            "metric90": 9.96,
+            "metrics": [
+                12.34,
+                6,
+                1.91,
+                0.71,
+                11.43,
+                8.48,
+                0.84,
+                2.2,
+                3.74,
+                3.54,
+                3.21,
+                5.08
+            ],
+            "slowest": 0.71,
+            "stdev": 3.75
+        },
+        {
+            "completion_time": "2019-02-19T10:41:53.228Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "21",
+            "iterations": 12,
+            "location": {
+                "city": "Eemshaven",
+                "country": "NL",
+                "lat": 53.2622,
+                "long": 6.4936
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "europe-west4",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west4-b",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 22,
+            "bytes": 2737510,
+            "fastest": 3.93,
+            "mean": 2.2,
+            "median": 2.13,
+            "metric10": 0.89,
+            "metric25": 1,
+            "metric75": 3.37,
+            "metric90": 3.52,
+            "metrics": [
+                2.69,
+                3.24,
+                3.49,
+                1.56,
+                0.88,
+                0.89,
+                3.55,
+                3.93,
+                2.8,
+                1.11,
+                0.77,
+                1.46
+            ],
+            "slowest": 0.77,
+            "stdev": 1.15
+        },
+        {
+            "completion_time": "2019-02-19T10:42:09.865Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "22",
+            "iterations": 12,
+            "location": {
+                "city": "Singapore",
+                "country": "SG",
+                "lat": 1.3521,
+                "long": 103.8198
+            },
+            "provider_id": "google",
+            "region": "asia-southeast1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-southeast1-b",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 23,
+            "bytes": 72,
+            "fastest": 123,
+            "mean": 124.25,
+            "median": 124,
+            "metric10": 125,
+            "metric25": 124.5,
+            "metric75": 124,
+            "metric90": 124,
+            "metrics": [
+                124,
+                125,
+                123,
+                124,
+                124,
+                124,
+                124,
+                124,
+                124,
+                124,
+                126,
+                125
+            ],
+            "slowest": 126,
+            "stdev": 0.72
+        },
+        {
+            "completion_time": "2019-02-19T10:42:13.664Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "23",
+            "iterations": 12,
+            "location": {
+                "city": "Eemshaven",
+                "country": "NL",
+                "lat": 53.2622,
+                "long": 6.4936
+            },
+            "provider_id": "google",
+            "region": "europe-west4",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west4-b",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 24,
+            "bytes": 72,
+            "fastest": 310,
+            "mean": 316.33,
+            "median": 312,
+            "metric10": 315,
+            "metric25": 314.5,
+            "metric75": 311.5,
+            "metric90": 311,
+            "metrics": [
+                315,
+                312,
+                313,
+                311,
+                312,
+                312,
+                315,
+                311,
+                312,
+                359,
+                314,
+                310
+            ],
+            "slowest": 359,
+            "stdev": 12.95
+        },
+        {
+            "completion_time": "2019-02-19T10:42:20.078Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "24",
+            "iterations": 12,
+            "location": {
+                "city": "Portland",
+                "country": "US",
+                "state": "OR",
+                "lat": 45.5213,
+                "long": -122.6765
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "us-west1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west1-b",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 25,
+            "bytes": 2839132,
+            "fastest": 8.31,
+            "mean": 3.89,
+            "median": 3.94,
+            "metric10": 1.2,
+            "metric25": 1.74,
+            "metric75": 5.67,
+            "metric90": 6.06,
+            "metrics": [
+                0.8,
+                5.29,
+                6.04,
+                3.89,
+                3.31,
+                8.31,
+                1.6,
+                4.79,
+                0.75,
+                1.88,
+                3.98,
+                6.07
+            ],
+            "slowest": 0.75,
+            "stdev": 2.25
+        },
+        {
+            "completion_time": "2019-02-19T10:42:31.262Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "25",
+            "iterations": 12,
+            "location": {
+                "city": "Portland",
+                "country": "US",
+                "state": "OR",
+                "lat": 45.5213,
+                "long": -122.6765
+            },
+            "provider_id": "google",
+            "region": "us-west1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west1-b",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 26,
+            "bytes": 72,
+            "fastest": 188,
+            "mean": 236,
+            "median": 248.5,
+            "metric10": 249,
+            "metric25": 249,
+            "metric75": 233,
+            "metric90": 211.5,
+            "metrics": [
+                249,
+                249,
+                235,
+                248,
+                249,
+                249,
+                231,
+                250,
+                243,
+                192,
+                188,
+                249
+            ],
+            "slowest": 250,
+            "stdev": 21.41
+        },
+        {
+            "completion_time": "2019-02-19T10:42:36.637Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "26",
+            "iterations": 6,
+            "location": {
+                "city": "Portland",
+                "country": "US",
+                "state": "OR",
+                "lat": 45.5213,
+                "long": -122.6765
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "us-west1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west1-b",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 27,
+            "bytes": 42233390,
+            "fastest": 17.9,
+            "mean": 16.24,
+            "median": 16.45,
+            "metric10": 14.54,
+            "metric25": 15.26,
+            "metric75": 17.38,
+            "metric90": 17.73,
+            "metrics": [
+                14.23,
+                14.85,
+                15.67,
+                17.22,
+                17.9,
+                17.55
+            ],
+            "slowest": 14.23,
+            "stdev": 1.4
+        },
+        {
+            "completion_time": "2019-02-19T10:43:07.955Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 7,
+            "index": "27",
+            "iterations": 12,
+            "location": {
+                "city": "São Paulo",
+                "country": "BR",
+                "lat": -23.5505,
+                "long": -46.6333
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "southamerica-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "southamerica-east1-a",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 28,
+            "bytes": 2478784,
+            "fastest": 4.25,
+            "mean": 2.53,
+            "median": 2.16,
+            "metric10": 1.59,
+            "metric25": 1.73,
+            "metric75": 3.35,
+            "metric90": 3.64,
+            "metrics": [
+                1.76,
+                1.69,
+                4.25,
+                1.96,
+                3.9,
+                1.49,
+                3.37,
+                2.3,
+                1.39,
+                2.86,
+                3.32,
+                2.02
+            ],
+            "slowest": 1.39,
+            "stdev": 0.94
+        },
+        {
+            "completion_time": "2019-02-19T10:43:24.539Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 5,
+            "index": "28",
+            "iterations": 12,
+            "location": {
+                "city": "São Paulo",
+                "country": "BR",
+                "lat": -23.5505,
+                "long": -46.6333
+            },
+            "provider_id": "google",
+            "region": "southamerica-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "southamerica-east1-a",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 29,
+            "bytes": 72,
+            "fastest": 373,
+            "mean": 374.67,
+            "median": 374,
+            "metric10": 376.5,
+            "metric25": 375.5,
+            "metric75": 374,
+            "metric90": 373.5,
+            "metrics": [
+                376,
+                374,
+                374,
+                373,
+                374,
+                377,
+                374,
+                374,
+                378,
+                373,
+                374,
+                375
+            ],
+            "slowest": 378,
+            "stdev": 1.49
+        },
+        {
+            "completion_time": "2019-02-19T10:43:32.057Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "29",
+            "iterations": 6,
+            "location": {
+                "city": "São Paulo",
+                "country": "BR",
+                "lat": -23.5505,
+                "long": -46.6333
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "southamerica-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "southamerica-east1-a",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 30,
+            "bytes": 16477160,
+            "fastest": 5.76,
+            "mean": 5.18,
+            "median": 5.23,
+            "metric10": 4.64,
+            "metric25": 4.88,
+            "metric75": 5.51,
+            "metric90": 5.68,
+            "metrics": [
+                5.6,
+                5.76,
+                5.04,
+                5.41,
+                4.71,
+                4.56
+            ],
+            "slowest": 4.56,
+            "stdev": 0.45
+        },
+        {
+            "completion_time": "2019-02-19T10:44:02.090Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "30",
+            "iterations": 12,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-b",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 31,
+            "bytes": 72,
+            "fastest": 185,
+            "mean": 195.17,
+            "median": 193,
+            "metric10": 206.5,
+            "metric25": 203,
+            "metric75": 187,
+            "metric90": 186.5,
+            "metrics": [
+                208,
+                198,
+                205,
+                201,
+                199,
+                211,
+                187,
+                186,
+                187,
+                188,
+                185,
+                187
+            ],
+            "slowest": 211,
+            "stdev": 9.16
+        },
+        {
+            "completion_time": "2019-02-19T10:44:07.018Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "31",
+            "iterations": 12,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-b",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 32,
+            "bytes": 2626099,
+            "fastest": 8.97,
+            "mean": 4.91,
+            "median": 4.58,
+            "metric10": 3.01,
+            "metric25": 3.79,
+            "metric75": 6,
+            "metric90": 7.77,
+            "metrics": [
+                6.89,
+                4.53,
+                8.65,
+                4.4,
+                8.97,
+                2.27,
+                4.63,
+                3.82,
+                4.86,
+                3.76,
+                5.11,
+                1.03
+            ],
+            "slowest": 1.03,
+            "stdev": 2.23
+        },
+        {
+            "completion_time": "2019-02-19T10:44:16.378Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "32",
+            "iterations": 6,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-b",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 33,
+            "bytes": 59313252,
+            "fastest": 19.11,
+            "mean": 17.08,
+            "median": 17.11,
+            "metric10": 15.58,
+            "metric25": 16.39,
+            "metric75": 17.63,
+            "metric90": 18.54,
+            "metrics": [
+                15.31,
+                16.92,
+                17.97,
+                19.11,
+                15.85,
+                17.3
+            ],
+            "slowest": 15.31,
+            "stdev": 1.27
+        },
+        {
+            "completion_time": "2019-02-19T10:44:47.816Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 5,
+            "index": "33",
+            "iterations": 12,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-c",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 34,
+            "bytes": 72,
+            "fastest": 171,
+            "mean": 183.42,
+            "median": 185.5,
+            "metric10": 187.5,
+            "metric25": 187,
+            "metric75": 179.5,
+            "metric90": 174.5,
+            "metrics": [
+                186,
+                188,
+                184,
+                186,
+                187,
+                187,
+                174,
+                184,
+                185,
+                175,
+                171,
+                194
+            ],
+            "slowest": 194,
+            "stdev": 6.38
+        },
+        {
+            "completion_time": "2019-02-19T10:44:52.934Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 7,
+            "index": "34",
+            "iterations": 12,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-c",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 35,
+            "bytes": 2601507,
+            "fastest": 8.12,
+            "mean": 3.95,
+            "median": 3.37,
+            "metric10": 1.79,
+            "metric25": 2.46,
+            "metric75": 5.49,
+            "metric90": 6.45,
+            "metrics": [
+                1.3,
+                2.27,
+                4.59,
+                3.08,
+                3.66,
+                1.07,
+                2.84,
+                4.87,
+                6.11,
+                8.12,
+                2.65,
+                6.79
+            ],
+            "slowest": 1.07,
+            "stdev": 2.11
+        },
+        {
+            "completion_time": "2019-02-19T10:45:02.666Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "35",
+            "iterations": 6,
+            "location": {
+                "city": "Changhua County",
+                "country": "TW",
+                "lat": 23.9333,
+                "long": 120.5333
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "asia-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-east1-b",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 36,
+            "bytes": 94646908,
+            "fastest": 40.49,
+            "mean": 33.89,
+            "median": 33.1,
+            "metric10": 31.23,
+            "metric25": 32.3,
+            "metric75": 33.75,
+            "metric90": 37.34,
+            "metrics": [
+                40.49,
+                32.86,
+                33.33,
+                31.73,
+                30.73,
+                34.18
+            ],
+            "slowest": 30.73,
+            "stdev": 3.15
+        },
+        {
+            "completion_time": "2019-02-19T10:45:30.817Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "36",
+            "iterations": 12,
+            "location": {
+                "city": "Changhua County",
+                "country": "TW",
+                "lat": 23.9333,
+                "long": 120.5333
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "asia-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-east1-b",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 37,
+            "bytes": 2230167,
+            "fastest": 9.04,
+            "mean": 3.79,
+            "median": 3.02,
+            "metric10": 1.42,
+            "metric25": 2.11,
+            "metric75": 5.51,
+            "metric90": 5.95,
+            "metrics": [
+                6.23,
+                3.13,
+                1.94,
+                5.35,
+                9.04,
+                0.89,
+                2.91,
+                4.79,
+                2.27,
+                0.78,
+                2.46,
+                5.66
+            ],
+            "slowest": 0.78,
+            "stdev": 2.36
+        },
+        {
+            "completion_time": "2019-02-19T10:45:40.374Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "37",
+            "iterations": 6,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-c",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 38,
+            "bytes": 53008638,
+            "fastest": 23.87,
+            "mean": 19.43,
+            "median": 19.72,
+            "metric10": 15.63,
+            "metric25": 17.26,
+            "metric75": 21.52,
+            "metric90": 22.95,
+            "metrics": [
+                15.15,
+                16.1,
+                18.42,
+                21.01,
+                22.03,
+                23.87
+            ],
+            "slowest": 15.15,
+            "stdev": 3.15
+        },
+        {
+            "completion_time": "2019-02-19T10:46:10.217Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "38",
+            "iterations": 12,
+            "location": {
+                "city": "Changhua County",
+                "country": "TW",
+                "lat": 23.9333,
+                "long": 120.5333
+            },
+            "provider_id": "google",
+            "region": "asia-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-east1-b",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 39,
+            "bytes": 72,
+            "fastest": 180,
+            "mean": 186.58,
+            "median": 186,
+            "metric10": 189.5,
+            "metric25": 188.5,
+            "metric75": 184.5,
+            "metric90": 183,
+            "metrics": [
+                184,
+                190,
+                186,
+                182,
+                196,
+                185,
+                180,
+                187,
+                186,
+                189,
+                188,
+                186
+            ],
+            "slowest": 196,
+            "stdev": 3.9
+        },
+        {
+            "completion_time": "2019-02-19T10:46:14.825Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "39",
+            "iterations": 12,
+            "location": {
+                "city": "Moncks Corner",
+                "country": "US",
+                "state": "SC",
+                "lat": 33.196,
+                "long": -80.0131
+            },
+            "provider_id": "google",
+            "region": "us-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-east1-c",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 40,
+            "bytes": 72,
+            "fastest": 232,
+            "mean": 245.08,
+            "median": 249,
+            "metric10": 250,
+            "metric25": 249,
+            "metric75": 240,
+            "metric90": 236.5,
+            "metrics": [
+                247,
+                251,
+                249,
+                241,
+                234,
+                249,
+                249,
+                252,
+                232,
+                239,
+                249,
+                249
+            ],
+            "slowest": 252,
+            "stdev": 6.53
+        },
+        {
+            "completion_time": "2019-02-19T10:46:21.098Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "40",
+            "iterations": 6,
+            "location": {
+                "city": "Moncks Corner",
+                "country": "US",
+                "state": "SC",
+                "lat": 33.196,
+                "long": -80.0131
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "us-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-east1-c",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 41,
+            "bytes": 42034780,
+            "fastest": 16.46,
+            "mean": 15.29,
+            "median": 15.24,
+            "metric10": 14.57,
+            "metric25": 15.13,
+            "metric75": 15.46,
+            "metric90": 16.06,
+            "metrics": [
+                14.09,
+                15.21,
+                15.26,
+                15.04,
+                15.66,
+                16.46
+            ],
+            "slowest": 14.09,
+            "stdev": 0.71
+        },
+        {
+            "completion_time": "2019-02-19T10:46:49.486Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 7,
+            "index": "41",
+            "iterations": 12,
+            "location": {
+                "city": "Moncks Corner",
+                "country": "US",
+                "state": "SC",
+                "lat": 33.196,
+                "long": -80.0131
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "us-east1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-east1-c",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 42,
+            "bytes": 2333948,
+            "fastest": 4.86,
+            "mean": 3.04,
+            "median": 3.28,
+            "metric10": 1.52,
+            "metric25": 1.67,
+            "metric75": 3.99,
+            "metric90": 4.3,
+            "metrics": [
+                3.15,
+                1.58,
+                1.25,
+                1.46,
+                4.86,
+                3.79,
+                4.04,
+                1.76,
+                3.93,
+                4.55,
+                2.71,
+                3.41
+            ],
+            "slowest": 1.25,
+            "stdev": 1.21
+        },
+        {
+            "completion_time": "2019-02-19T10:47:00.875Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "42",
+            "iterations": 12,
+            "location": {
+                "city": "Mumbai",
+                "country": "IN",
+                "lat": 19.076,
+                "long": 72.8777
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "asia-south1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-south1-a",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 43,
+            "bytes": 2558749,
+            "fastest": 7.73,
+            "mean": 4.17,
+            "median": 4.69,
+            "metric10": 1.74,
+            "metric25": 2.15,
+            "metric75": 5.74,
+            "metric90": 5.81,
+            "metrics": [
+                3.45,
+                7.73,
+                1.83,
+                4.97,
+                2.46,
+                5.8,
+                5.67,
+                1.65,
+                4.4,
+                1.3,
+                4.98,
+                5.81
+            ],
+            "slowest": 1.3,
+            "stdev": 1.94
+        },
+        {
+            "completion_time": "2019-02-19T10:47:11.875Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "43",
+            "iterations": 6,
+            "location": {
+                "city": "Mumbai",
+                "country": "IN",
+                "lat": 19.076,
+                "long": 72.8777
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "asia-south1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-south1-a",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 44,
+            "bytes": 86611214,
+            "fastest": 34.09,
+            "mean": 24.26,
+            "median": 23.48,
+            "metric10": 17.61,
+            "metric25": 21.64,
+            "metric75": 27.3,
+            "metric90": 31.69,
+            "metrics": [
+                34.09,
+                29.29,
+                25.31,
+                21.62,
+                21.65,
+                13.59
+            ],
+            "slowest": 13.59,
+            "stdev": 6.46
+        },
+        {
+            "completion_time": "2019-02-19T10:47:50.742Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "44",
+            "iterations": 12,
+            "location": {
+                "city": "Mumbai",
+                "country": "IN",
+                "lat": 19.076,
+                "long": 72.8777
+            },
+            "provider_id": "google",
+            "region": "asia-south1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "asia-south1-a",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 45,
+            "bytes": 72,
+            "fastest": 176,
+            "mean": 195.92,
+            "median": 187.5,
+            "metric10": 209,
+            "metric25": 207,
+            "metric75": 186,
+            "metric90": 185.5,
+            "metrics": [
+                176,
+                188,
+                185,
+                207,
+                207,
+                201,
+                211,
+                186,
+                186,
+                231,
+                186,
+                187
+            ],
+            "slowest": 231,
+            "stdev": 14.95
+        },
+        {
+            "completion_time": "2019-02-19T10:47:54.872Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "45",
+            "iterations": 6,
+            "location": {
+                "city": "Ashburn",
+                "country": "US",
+                "state": "VA",
+                "lat": 39.0438,
+                "long": -77.4874
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "us-east4",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-east4-a",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 46,
+            "bytes": 27086080,
+            "fastest": 11.04,
+            "mean": 9.62,
+            "median": 9.31,
+            "metric10": 8.85,
+            "metric25": 9.07,
+            "metric75": 9.91,
+            "metric90": 10.7,
+            "metrics": [
+                10.35,
+                11.04,
+                8.98,
+                9.15,
+                8.72,
+                9.47
+            ],
+            "slowest": 8.72,
+            "stdev": 0.82
+        },
+        {
+            "completion_time": "2019-02-19T10:48:23.491Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "46",
+            "iterations": 12,
+            "location": {
+                "city": "Ashburn",
+                "country": "US",
+                "state": "VA",
+                "lat": 39.0438,
+                "long": -77.4874
+            },
+            "provider_id": "google",
+            "region": "us-east4",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-east4-a",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 47,
+            "bytes": 72,
+            "fastest": 237,
+            "mean": 257.17,
+            "median": 250,
+            "metric10": 273,
+            "metric25": 260,
+            "metric75": 246.5,
+            "metric90": 246,
+            "metrics": [
+                254,
+                246,
+                282,
+                249,
+                249,
+                305,
+                264,
+                251,
+                256,
+                237,
+                247,
+                246
+            ],
+            "slowest": 305,
+            "stdev": 18.01
+        },
+        {
+            "completion_time": "2019-02-19T10:48:28.941Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "47",
+            "iterations": 12,
+            "location": {
+                "city": "Ashburn",
+                "country": "US",
+                "state": "VA",
+                "lat": 39.0438,
+                "long": -77.4874
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "us-east4",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-east4-a",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 48,
+            "bytes": 2526167,
+            "fastest": 6.59,
+            "mean": 3.28,
+            "median": 2.75,
+            "metric10": 1.63,
+            "metric25": 2.07,
+            "metric75": 4.86,
+            "metric90": 5.08,
+            "metrics": [
+                1.27,
+                4.97,
+                2.43,
+                5.19,
+                3.36,
+                4.74,
+                2.97,
+                6.59,
+                2.15,
+                1.12,
+                2.52,
+                1.99
+            ],
+            "slowest": 1.12,
+            "stdev": 1.65
+        },
+        {
+            "completion_time": "2019-02-19T10:48:41.446Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "48",
+            "iterations": 6,
+            "location": {
+                "city": "Hamina",
+                "country": "FI",
+                "lat": 60.5715,
+                "long": 27.1877
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "europe-north1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-north1-b",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 49,
+            "bytes": 16081724,
+            "fastest": 7.11,
+            "mean": 5.53,
+            "median": 5.72,
+            "metric10": 4.06,
+            "metric25": 4.79,
+            "metric75": 6.25,
+            "metric90": 6.8,
+            "metrics": [
+                6.01,
+                5.42,
+                3.97,
+                4.15,
+                6.49,
+                7.11
+            ],
+            "slowest": 3.97,
+            "stdev": 1.15
+        },
+        {
+            "completion_time": "2019-02-19T10:49:13.039Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 7,
+            "index": "49",
+            "iterations": 12,
+            "location": {
+                "city": "Hamina",
+                "country": "FI",
+                "lat": 60.5715,
+                "long": 27.1877
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "europe-north1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-north1-b",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 50,
+            "bytes": 3014342,
+            "fastest": 5.05,
+            "mean": 3.17,
+            "median": 3.48,
+            "metric10": 1.66,
+            "metric25": 2.57,
+            "metric75": 4.04,
+            "metric90": 4.36,
+            "metrics": [
+                0.75,
+                3.62,
+                4.56,
+                0.84,
+                3.33,
+                3.92,
+                4.16,
+                2.47,
+                2.98,
+                3.68,
+                5.05,
+                2.66
+            ],
+            "slowest": 0.75,
+            "stdev": 1.28
+        },
+        {
+            "completion_time": "2019-02-19T10:49:30.574Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 5,
+            "index": "50",
+            "iterations": 12,
+            "location": {
+                "city": "Hamina",
+                "country": "FI",
+                "lat": 60.5715,
+                "long": 27.1877
+            },
+            "provider_id": "google",
+            "region": "europe-north1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-north1-b",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 51,
+            "bytes": 72,
+            "fastest": 347,
+            "mean": 358.75,
+            "median": 353,
+            "metric10": 374.5,
+            "metric25": 364.5,
+            "metric75": 351,
+            "metric90": 349.5,
+            "metrics": [
+                352,
+                347,
+                358,
+                354,
+                351,
+                351,
+                355,
+                351,
+                348,
+                378,
+                389,
+                371
+            ],
+            "slowest": 389,
+            "stdev": 12.75
+        },
+        {
+            "completion_time": "2019-02-19T10:49:37.843Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "51",
+            "iterations": 6,
+            "location": {
+                "city": "London",
+                "country": "GB",
+                "lat": 51.5074,
+                "long": -0.1278
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "europe-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west2-a",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 52,
+            "bytes": 16276568,
+            "fastest": 6.66,
+            "mean": 5.57,
+            "median": 5.63,
+            "metric10": 4.87,
+            "metric25": 5.22,
+            "metric75": 5.75,
+            "metric90": 6.22,
+            "metrics": [
+                6.66,
+                5.71,
+                5.78,
+                5.55,
+                4.86,
+                4.88
+            ],
+            "slowest": 4.86,
+            "stdev": 0.61
+        },
+        {
+            "completion_time": "2019-02-19T10:50:07.384Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "52",
+            "iterations": 12,
+            "location": {
+                "city": "London",
+                "country": "GB",
+                "lat": 51.5074,
+                "long": -0.1278
+            },
+            "provider_id": "google",
+            "region": "europe-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west2-a",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 53,
+            "bytes": 72,
+            "fastest": 306,
+            "mean": 329.92,
+            "median": 316,
+            "metric10": 356,
+            "metric25": 355,
+            "metric75": 311,
+            "metric90": 309.5,
+            "metrics": [
+                351,
+                355,
+                308,
+                355,
+                316,
+                313,
+                316,
+                311,
+                311,
+                357,
+                360,
+                306
+            ],
+            "slowest": 360,
+            "stdev": 21.95
+        },
+        {
+            "completion_time": "2019-02-19T10:50:14.114Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "53",
+            "iterations": 12,
+            "location": {
+                "city": "London",
+                "country": "GB",
+                "lat": 51.5074,
+                "long": -0.1278
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "europe-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "europe-west2-a",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 54,
+            "bytes": 2624401,
+            "fastest": 6.53,
+            "mean": 2.79,
+            "median": 2.98,
+            "metric10": 1.18,
+            "metric25": 1.64,
+            "metric75": 3.63,
+            "metric90": 3.8,
+            "metrics": [
+                1.77,
+                6.53,
+                0.85,
+                1.5,
+                3.94,
+                3.13,
+                1.78,
+                0.62,
+                3.61,
+                3.65,
+                2.83,
+                3.21
+            ],
+            "slowest": 0.62,
+            "stdev": 1.56
+        },
+        {
+            "completion_time": "2019-02-19T10:50:31.037Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "54",
+            "iterations": 12,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-a",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 55,
+            "bytes": 3030684,
+            "fastest": 8.72,
+            "mean": 4.45,
+            "median": 3.24,
+            "metric10": 2.24,
+            "metric25": 2.5,
+            "metric75": 6.48,
+            "metric90": 7.67,
+            "metrics": [
+                2.55,
+                3.36,
+                5.3,
+                2.02,
+                7.09,
+                2.45,
+                8.24,
+                8.72,
+                5.86,
+                2.71,
+                3.12,
+                2
+            ],
+            "slowest": 2,
+            "stdev": 2.38
+        },
+        {
+            "completion_time": "2019-02-19T10:50:40.686Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "55",
+            "iterations": 12,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-a",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 56,
+            "bytes": 72,
+            "fastest": 172,
+            "mean": 184.25,
+            "median": 186.5,
+            "metric10": 188,
+            "metric25": 187.5,
+            "metric75": 183.5,
+            "metric90": 179.5,
+            "metrics": [
+                176,
+                183,
+                172,
+                187,
+                188,
+                184,
+                187,
+                187,
+                185,
+                188,
+                188,
+                186
+            ],
+            "slowest": 188,
+            "stdev": 4.9
+        },
+        {
+            "completion_time": "2019-02-19T10:50:44.633Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 36,
+            "index": "56",
+            "iterations": 6,
+            "location": {
+                "city": "Los Angeles",
+                "country": "US",
+                "state": "CA",
+                "lat": 34.0522,
+                "long": -118.2437
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "us-west2",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-west2-a",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 57,
+            "bytes": 88697408,
+            "fastest": 30.25,
+            "mean": 25.6,
+            "median": 25.47,
+            "metric10": 21.47,
+            "metric25": 22.67,
+            "metric75": 28.4,
+            "metric90": 29.88,
+            "metrics": [
+                30.25,
+                21.72,
+                21.22,
+                23.63,
+                27.3,
+                29.5
+            ],
+            "slowest": 21.22,
+            "stdev": 3.6
+        },
+        {
+            "completion_time": "2019-02-19T10:51:20.720Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 2,
+            "duration": 37,
+            "index": "57",
+            "iterations": 6,
+            "location": {
+                "city": "Council Bluffs",
+                "country": "US",
+                "state": "IA",
+                "lat": 41.2619,
+                "long": -95.8608
+            },
+            "max_size": 10240,
+            "min_size": 256,
+            "provider_id": "google",
+            "region": "us-central1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-central1-c",
+            "type": "downlink",
+            "warmup": 3
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 58,
+            "bytes": 33478154,
+            "fastest": 18.84,
+            "mean": 13.43,
+            "median": 12.67,
+            "metric10": 9.32,
+            "metric25": 10.5,
+            "metric75": 15.88,
+            "metric90": 18.3,
+            "metrics": [
+                8.98,
+                9.67,
+                11.33,
+                14,
+                17.75,
+                18.84
+            ],
+            "slowest": 8.98,
+            "stdev": 3.8
+        },
+        {
+            "completion_time": "2019-02-19T10:51:48.363Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 4,
+            "duration": 8,
+            "index": "58",
+            "iterations": 12,
+            "location": {
+                "city": "Council Bluffs",
+                "country": "US",
+                "state": "IA",
+                "lat": 41.2619,
+                "long": -95.8608
+            },
+            "max_size": 128,
+            "min_size": 1,
+            "provider_id": "google",
+            "region": "us-central1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-central1-c",
+            "type": "downlink",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 59,
+            "bytes": 2374802,
+            "fastest": 5.31,
+            "mean": 2.98,
+            "median": 2.63,
+            "metric10": 1.56,
+            "metric25": 1.69,
+            "metric75": 4.34,
+            "metric90": 4.75,
+            "metrics": [
+                3.87,
+                2.31,
+                0.86,
+                4.83,
+                4.67,
+                1.45,
+                4.01,
+                2.94,
+                5.31,
+                1.66,
+                1.73,
+                2.16
+            ],
+            "slowest": 0.86,
+            "stdev": 1.44
+        },
+        {
+            "completion_time": "2019-02-19T10:51:59.193Z"
+        }
+    ],
+    [
+        {
+            "concurrency": 1,
+            "duration": 4,
+            "index": "59",
+            "iterations": 12,
+            "location": {
+                "city": "Council Bluffs",
+                "country": "US",
+                "state": "IA",
+                "lat": 41.2619,
+                "long": -95.8608
+            },
+            "provider_id": "google",
+            "region": "us-central1",
+            "service": "Google Compute Engine",
+            "service_id": "google:compute",
+            "service_type": "compute",
+            "subregion": "us-central1-c",
+            "type": "latency",
+            "warmup": 6
+        },
+        {
+            "status": "success",
+            "secure": true,
+            "sequence": 60,
+            "bytes": 72,
+            "fastest": 247,
+            "mean": 249.42,
+            "median": 249,
+            "metric10": 251,
+            "metric25": 250.5,
+            "metric75": 249,
+            "metric90": 248.5,
+            "metrics": [
+                249,
+                249,
+                249,
+                251,
+                249,
+                249,
+                250,
+                248,
+                249,
+                251,
+                247,
+                252
+            ],
+            "slowest": 252,
+            "stdev": 1.32
+        },
+        {
+            "completion_time": "2019-02-19T10:52:04.809Z"
+        }
+    ]
+]
