@@ -100,5 +100,6 @@ Find the version of globally installed packages
 
 https://github.com/LinkedDataFragments/Server.js/blob/master/config/config-composite.json
 
-# issue
+# Issue
 https://github.com/LinkedDataFragments/Server.js/issues/89
+It's recomanded to load the data.ttl locally (i.e. using Protoge) and search with SPARQL.
