@@ -139,7 +139,7 @@ var speedtest=(function() {
         }else if (method=="results"){
             resultsHTML.append("<p>"+JSON.stringify(args)+",</p>");
         }else{
-            $("#stopped").append("<h1>Done</h1>");
+            $("#status").text("Done!");
         }
         
         var c=null;

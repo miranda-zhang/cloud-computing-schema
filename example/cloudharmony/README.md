@@ -23,8 +23,17 @@ If any lib can't be found, search with
 
     ./run.sh --test downlink --test_endpoint us-central1.gce.cloudharmony.net/probe --test_service_id google:compute 
 
-# Websites
-http://cloudharmony.com/speedtest-for-google
-http://cloudharmony.com/speedtest-for-azure
+# Javascript Solution
+This is the method we used.
+1. [google](google/)
+2. [azure](azure/)
 
-Javascript Tag solution are described in folders: [google](google/) [azure](azure/)
+# Old Data
+Compressed csv files:
+1. [latency.zip](latency.zip):116049 records
+2. [uplink.zip](uplink.zip):110292 records
+3. [downlink.zip](downlink.zip):386728 records
+Compressed SQL dump for the above datasets (combined): [cloud_3_bak_6_merged.zip](cloud_3_bak_6_merged.zip)
+
+The [Javascript method](#javascript-solution) wasn't available in 2014, that's when the data were collected.
+So it's different from the current data.

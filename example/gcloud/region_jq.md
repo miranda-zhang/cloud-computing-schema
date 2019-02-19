@@ -2,11 +2,12 @@
 Related topics:
 [Manually mapping Google Cloud regions](region.md)
 
+# Version 1.41
 ## Getting Input
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 
-[A cached version of the json input.](data/pricelist.json)
+[A cached version of the json input.](data/google/v1.41.json)
 
 ## Provider specific region codes
 List of codes can be extracted from imput.
@@ -62,3 +63,9 @@ Result
 Run [queries](../sparql-generate/gcloud/region_inJurisdiction.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](../sparql-generate/result/gcloud/region_inJurisdiction.ttl)
+
+# Version 1.62
+New version of data updated on 12-February-2019.
+While the ontology can still keep the same, the data collected needs to be updated.
+
+https://cloud.google.com/compute/docs/regions-zones/

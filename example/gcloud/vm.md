@@ -3,7 +3,7 @@
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 
-[A cached version of the json input.](../data/pricelist.json)
+[A cached version of the json input.](../data/google/v1.41.json)
 
 ## Cleaning and Transformation
 Apply transformation using `jq`, view the live snippet https://jqplay.org/s/8bvhcfLZV4
