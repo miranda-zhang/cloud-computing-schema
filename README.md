@@ -20,7 +20,7 @@ Some example data published at: https://w3id.org/cocoon/data
 
 Old Version https://w3id.org/cocoon/v0.1
 
-## w3id issues
+## Issues with w3id
 https://github.com/perma-id/w3id.org/issues/1063
 
 # Sites

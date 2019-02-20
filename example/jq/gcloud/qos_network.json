@@ -1,0 +1,984 @@
+[
+    {
+      "location": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "lat": 50.1109,
+        "long": 8.6821
+      },
+      "provider_id": "google",
+      "region": "europe-west3",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 2.04,
+      "completion_time": "2019-02-19T10:36:29.606Z"
+    },
+    {
+      "location": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "lat": 50.1109,
+        "long": 8.6821
+      },
+      "provider_id": "google",
+      "region": "europe-west3",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 5.64,
+      "completion_time": "2019-02-19T10:36:59.881Z"
+    },
+    {
+      "location": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "lat": 50.1109,
+        "long": 8.6821
+      },
+      "provider_id": "google",
+      "region": "europe-west3",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "latency",
+      "average": 343.25,
+      "completion_time": "2019-02-19T10:37:07.532Z"
+    },
+    {
+      "location": {
+        "city": "Tokyo",
+        "country": "JP",
+        "lat": 35.6895,
+        "long": 139.6917
+      },
+      "provider_id": "google",
+      "region": "asia-northeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 50.75,
+      "completion_time": "2019-02-19T10:37:38.336Z"
+    },
+    {
+      "location": {
+        "city": "Tokyo",
+        "country": "JP",
+        "lat": 35.6895,
+        "long": 139.6917
+      },
+      "provider_id": "google",
+      "region": "asia-northeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "latency",
+      "average": 172.58,
+      "completion_time": "2019-02-19T10:37:42.517Z"
+    },
+    {
+      "location": {
+        "city": "Tokyo",
+        "country": "JP",
+        "lat": 35.6895,
+        "long": 139.6917
+      },
+      "provider_id": "google",
+      "region": "asia-northeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 5.15,
+      "completion_time": "2019-02-19T10:37:50.955Z"
+    },
+    {
+      "location": {
+        "city": "Hong Kong",
+        "country": "HK",
+        "lat": 22.3964,
+        "long": 114.1095
+      },
+      "provider_id": "google",
+      "region": "asia-east2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 28.53,
+      "completion_time": "2019-02-19T10:38:28.539Z"
+    },
+    {
+      "location": {
+        "city": "Hong Kong",
+        "country": "HK",
+        "lat": 22.3964,
+        "long": 114.1095
+      },
+      "provider_id": "google",
+      "region": "asia-east2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "latency",
+      "average": 186.17,
+      "completion_time": "2019-02-19T10:38:32.684Z"
+    },
+    {
+      "location": {
+        "city": "Hong Kong",
+        "country": "HK",
+        "lat": 22.3964,
+        "long": 114.1095
+      },
+      "provider_id": "google",
+      "region": "asia-east2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 3.42,
+      "completion_time": "2019-02-19T10:38:40.920Z"
+    },
+    {
+      "location": {
+        "city": "St. Ghislain",
+        "country": "BE",
+        "lat": 50.4704,
+        "long": 3.8649
+      },
+      "provider_id": "google",
+      "region": "europe-west1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "latency",
+      "average": 311.5,
+      "completion_time": "2019-02-19T10:38:48.379Z"
+    },
+    {
+      "location": {
+        "city": "St. Ghislain",
+        "country": "BE",
+        "lat": 50.4704,
+        "long": 3.8649
+      },
+      "provider_id": "google",
+      "region": "europe-west1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 1.88,
+      "completion_time": "2019-02-19T10:39:05.230Z"
+    },
+    {
+      "location": {
+        "city": "St. Ghislain",
+        "country": "BE",
+        "lat": 50.4704,
+        "long": 3.8649
+      },
+      "provider_id": "google",
+      "region": "europe-west1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 8.65,
+      "completion_time": "2019-02-19T10:39:44.800Z"
+    },
+    {
+      "location": {
+        "city": "Montreal",
+        "country": "CA",
+        "lat": 45.3627,
+        "long": -73.3458
+      },
+      "provider_id": "google",
+      "region": "northamerica-northeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 9.31,
+      "completion_time": "2019-02-19T10:40:15.437Z"
+    },
+    {
+      "location": {
+        "city": "Montreal",
+        "country": "CA",
+        "lat": 45.3627,
+        "long": -73.3458
+      },
+      "provider_id": "google",
+      "region": "northamerica-northeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "latency",
+      "average": 256.75,
+      "completion_time": "2019-02-19T10:40:20.895Z"
+    },
+    {
+      "location": {
+        "city": "Montreal",
+        "country": "CA",
+        "lat": 45.3627,
+        "long": -73.3458
+      },
+      "provider_id": "google",
+      "region": "northamerica-northeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 2.68,
+      "completion_time": "2019-02-19T10:40:33.329Z"
+    },
+    {
+      "location": {
+        "city": "Sydney",
+        "country": "AU",
+        "lat": -33.8628,
+        "long": 151.1912
+      },
+      "provider_id": "google",
+      "region": "australia-southeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 301.88,
+      "completion_time": "2019-02-19T10:40:39.101Z"
+    },
+    {
+      "location": {
+        "city": "Sydney",
+        "country": "AU",
+        "lat": -33.8628,
+        "long": 151.1912
+      },
+      "provider_id": "google",
+      "region": "australia-southeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 17.33,
+      "completion_time": "2019-02-19T10:40:42.736Z"
+    },
+    {
+      "location": {
+        "city": "Sydney",
+        "country": "AU",
+        "lat": -33.8628,
+        "long": 151.1912
+      },
+      "provider_id": "google",
+      "region": "australia-southeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "latency",
+      "average": 60.83,
+      "completion_time": "2019-02-19T10:40:44.403Z"
+    },
+    {
+      "location": {
+        "city": "Eemshaven",
+        "country": "NL",
+        "lat": 53.2622,
+        "long": 6.4936
+      },
+      "provider_id": "google",
+      "region": "europe-west4",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 10.37,
+      "completion_time": "2019-02-19T10:41:17.925Z"
+    },
+    {
+      "location": {
+        "city": "Singapore",
+        "country": "SG",
+        "lat": 1.3521,
+        "long": 103.8198
+      },
+      "provider_id": "google",
+      "region": "asia-southeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 30.4,
+      "completion_time": "2019-02-19T10:41:46.247Z"
+    },
+    {
+      "location": {
+        "city": "Singapore",
+        "country": "SG",
+        "lat": 1.3521,
+        "long": 103.8198
+      },
+      "provider_id": "google",
+      "region": "asia-southeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 4.96,
+      "completion_time": "2019-02-19T10:41:53.228Z"
+    },
+    {
+      "location": {
+        "city": "Eemshaven",
+        "country": "NL",
+        "lat": 53.2622,
+        "long": 6.4936
+      },
+      "provider_id": "google",
+      "region": "europe-west4",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 2.2,
+      "completion_time": "2019-02-19T10:42:09.865Z"
+    },
+    {
+      "location": {
+        "city": "Singapore",
+        "country": "SG",
+        "lat": 1.3521,
+        "long": 103.8198
+      },
+      "provider_id": "google",
+      "region": "asia-southeast1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "latency",
+      "average": 124.25,
+      "completion_time": "2019-02-19T10:42:13.664Z"
+    },
+    {
+      "location": {
+        "city": "Eemshaven",
+        "country": "NL",
+        "lat": 53.2622,
+        "long": 6.4936
+      },
+      "provider_id": "google",
+      "region": "europe-west4",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "latency",
+      "average": 316.33,
+      "completion_time": "2019-02-19T10:42:20.078Z"
+    },
+    {
+      "location": {
+        "city": "Portland",
+        "country": "US",
+        "state": "OR",
+        "lat": 45.5213,
+        "long": -122.6765
+      },
+      "provider_id": "google",
+      "region": "us-west1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 3.89,
+      "completion_time": "2019-02-19T10:42:31.262Z"
+    },
+    {
+      "location": {
+        "city": "Portland",
+        "country": "US",
+        "state": "OR",
+        "lat": 45.5213,
+        "long": -122.6765
+      },
+      "provider_id": "google",
+      "region": "us-west1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "latency",
+      "average": 236,
+      "completion_time": "2019-02-19T10:42:36.637Z"
+    },
+    {
+      "location": {
+        "city": "Portland",
+        "country": "US",
+        "state": "OR",
+        "lat": 45.5213,
+        "long": -122.6765
+      },
+      "provider_id": "google",
+      "region": "us-west1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 16.24,
+      "completion_time": "2019-02-19T10:43:07.955Z"
+    },
+    {
+      "location": {
+        "city": "São Paulo",
+        "country": "BR",
+        "lat": -23.5505,
+        "long": -46.6333
+      },
+      "provider_id": "google",
+      "region": "southamerica-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 2.53,
+      "completion_time": "2019-02-19T10:43:24.539Z"
+    },
+    {
+      "location": {
+        "city": "São Paulo",
+        "country": "BR",
+        "lat": -23.5505,
+        "long": -46.6333
+      },
+      "provider_id": "google",
+      "region": "southamerica-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "latency",
+      "average": 374.67,
+      "completion_time": "2019-02-19T10:43:32.057Z"
+    },
+    {
+      "location": {
+        "city": "São Paulo",
+        "country": "BR",
+        "lat": -23.5505,
+        "long": -46.6333
+      },
+      "provider_id": "google",
+      "region": "southamerica-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 5.18,
+      "completion_time": "2019-02-19T10:44:02.090Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "latency",
+      "average": 195.17,
+      "completion_time": "2019-02-19T10:44:07.018Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 4.91,
+      "completion_time": "2019-02-19T10:44:16.378Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 17.08,
+      "completion_time": "2019-02-19T10:44:47.816Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "latency",
+      "average": 183.42,
+      "completion_time": "2019-02-19T10:44:52.934Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 3.95,
+      "completion_time": "2019-02-19T10:45:02.666Z"
+    },
+    {
+      "location": {
+        "city": "Changhua County",
+        "country": "TW",
+        "lat": 23.9333,
+        "long": 120.5333
+      },
+      "provider_id": "google",
+      "region": "asia-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 33.89,
+      "completion_time": "2019-02-19T10:45:30.817Z"
+    },
+    {
+      "location": {
+        "city": "Changhua County",
+        "country": "TW",
+        "lat": 23.9333,
+        "long": 120.5333
+      },
+      "provider_id": "google",
+      "region": "asia-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 3.79,
+      "completion_time": "2019-02-19T10:45:40.374Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 19.43,
+      "completion_time": "2019-02-19T10:46:10.217Z"
+    },
+    {
+      "location": {
+        "city": "Changhua County",
+        "country": "TW",
+        "lat": 23.9333,
+        "long": 120.5333
+      },
+      "provider_id": "google",
+      "region": "asia-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "latency",
+      "average": 186.58,
+      "completion_time": "2019-02-19T10:46:14.825Z"
+    },
+    {
+      "location": {
+        "city": "Moncks Corner",
+        "country": "US",
+        "state": "SC",
+        "lat": 33.196,
+        "long": -80.0131
+      },
+      "provider_id": "google",
+      "region": "us-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "latency",
+      "average": 245.08,
+      "completion_time": "2019-02-19T10:46:21.098Z"
+    },
+    {
+      "location": {
+        "city": "Moncks Corner",
+        "country": "US",
+        "state": "SC",
+        "lat": 33.196,
+        "long": -80.0131
+      },
+      "provider_id": "google",
+      "region": "us-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 15.29,
+      "completion_time": "2019-02-19T10:46:49.486Z"
+    },
+    {
+      "location": {
+        "city": "Moncks Corner",
+        "country": "US",
+        "state": "SC",
+        "lat": 33.196,
+        "long": -80.0131
+      },
+      "provider_id": "google",
+      "region": "us-east1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 3.04,
+      "completion_time": "2019-02-19T10:47:00.875Z"
+    },
+    {
+      "location": {
+        "city": "Mumbai",
+        "country": "IN",
+        "lat": 19.076,
+        "long": 72.8777
+      },
+      "provider_id": "google",
+      "region": "asia-south1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 4.17,
+      "completion_time": "2019-02-19T10:47:11.875Z"
+    },
+    {
+      "location": {
+        "city": "Mumbai",
+        "country": "IN",
+        "lat": 19.076,
+        "long": 72.8777
+      },
+      "provider_id": "google",
+      "region": "asia-south1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 24.26,
+      "completion_time": "2019-02-19T10:47:50.742Z"
+    },
+    {
+      "location": {
+        "city": "Mumbai",
+        "country": "IN",
+        "lat": 19.076,
+        "long": 72.8777
+      },
+      "provider_id": "google",
+      "region": "asia-south1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "latency",
+      "average": 195.92,
+      "completion_time": "2019-02-19T10:47:54.872Z"
+    },
+    {
+      "location": {
+        "city": "Ashburn",
+        "country": "US",
+        "state": "VA",
+        "lat": 39.0438,
+        "long": -77.4874
+      },
+      "provider_id": "google",
+      "region": "us-east4",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 9.62,
+      "completion_time": "2019-02-19T10:48:23.491Z"
+    },
+    {
+      "location": {
+        "city": "Ashburn",
+        "country": "US",
+        "state": "VA",
+        "lat": 39.0438,
+        "long": -77.4874
+      },
+      "provider_id": "google",
+      "region": "us-east4",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "latency",
+      "average": 257.17,
+      "completion_time": "2019-02-19T10:48:28.941Z"
+    },
+    {
+      "location": {
+        "city": "Ashburn",
+        "country": "US",
+        "state": "VA",
+        "lat": 39.0438,
+        "long": -77.4874
+      },
+      "provider_id": "google",
+      "region": "us-east4",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 3.28,
+      "completion_time": "2019-02-19T10:48:41.446Z"
+    },
+    {
+      "location": {
+        "city": "Hamina",
+        "country": "FI",
+        "lat": 60.5715,
+        "long": 27.1877
+      },
+      "provider_id": "google",
+      "region": "europe-north1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 5.53,
+      "completion_time": "2019-02-19T10:49:13.039Z"
+    },
+    {
+      "location": {
+        "city": "Hamina",
+        "country": "FI",
+        "lat": 60.5715,
+        "long": 27.1877
+      },
+      "provider_id": "google",
+      "region": "europe-north1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "downlink",
+      "average": 3.17,
+      "completion_time": "2019-02-19T10:49:30.574Z"
+    },
+    {
+      "location": {
+        "city": "Hamina",
+        "country": "FI",
+        "lat": 60.5715,
+        "long": 27.1877
+      },
+      "provider_id": "google",
+      "region": "europe-north1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "b",
+      "type": "latency",
+      "average": 358.75,
+      "completion_time": "2019-02-19T10:49:37.843Z"
+    },
+    {
+      "location": {
+        "city": "London",
+        "country": "GB",
+        "lat": 51.5074,
+        "long": -0.1278
+      },
+      "provider_id": "google",
+      "region": "europe-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 5.57,
+      "completion_time": "2019-02-19T10:50:07.384Z"
+    },
+    {
+      "location": {
+        "city": "London",
+        "country": "GB",
+        "lat": 51.5074,
+        "long": -0.1278
+      },
+      "provider_id": "google",
+      "region": "europe-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "latency",
+      "average": 329.92,
+      "completion_time": "2019-02-19T10:50:14.114Z"
+    },
+    {
+      "location": {
+        "city": "London",
+        "country": "GB",
+        "lat": 51.5074,
+        "long": -0.1278
+      },
+      "provider_id": "google",
+      "region": "europe-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 2.79,
+      "completion_time": "2019-02-19T10:50:31.037Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 4.45,
+      "completion_time": "2019-02-19T10:50:40.686Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "latency",
+      "average": 184.25,
+      "completion_time": "2019-02-19T10:50:44.633Z"
+    },
+    {
+      "location": {
+        "city": "Los Angeles",
+        "country": "US",
+        "state": "CA",
+        "lat": 34.0522,
+        "long": -118.2437
+      },
+      "provider_id": "google",
+      "region": "us-west2",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "a",
+      "type": "downlink",
+      "average": 25.6,
+      "completion_time": "2019-02-19T10:51:20.720Z"
+    },
+    {
+      "location": {
+        "city": "Council Bluffs",
+        "country": "US",
+        "state": "IA",
+        "lat": 41.2619,
+        "long": -95.8608
+      },
+      "provider_id": "google",
+      "region": "us-central1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 13.43,
+      "completion_time": "2019-02-19T10:51:48.363Z"
+    },
+    {
+      "location": {
+        "city": "Council Bluffs",
+        "country": "US",
+        "state": "IA",
+        "lat": 41.2619,
+        "long": -95.8608
+      },
+      "provider_id": "google",
+      "region": "us-central1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "downlink",
+      "average": 2.98,
+      "completion_time": "2019-02-19T10:51:59.193Z"
+    },
+    {
+      "location": {
+        "city": "Council Bluffs",
+        "country": "US",
+        "state": "IA",
+        "lat": 41.2619,
+        "long": -95.8608
+      },
+      "provider_id": "google",
+      "region": "us-central1",
+      "service": "Google Compute Engine",
+      "service_type": "compute",
+      "zone": "c",
+      "type": "latency",
+      "average": 249.42,
+      "completion_time": "2019-02-19T10:52:04.809Z"
+    }
+  ]
+  

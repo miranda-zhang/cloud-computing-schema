@@ -19,6 +19,7 @@
                                 cc:attributionURL <http://w3id.org/cocoon/v1.0> ;
                                 dcterms:created "2012-10-01"^^xsd:date ;
                                 dcterms:creator cocoon:mirandazhangqian ;
+                                schema:creator cocoon:mirandazhangqian ;
                                 dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
                                 dcterms:issued "2019-02-04"^^xsd:date ;
                                 dcterms:license <http://creativecommons.org/licenses/by-nc/4.0/> ;
@@ -990,6 +991,7 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
                                 foaf:Person ;
                         foaf:givenname "Qian" ;
                         foaf:homepage <https://github.com/miranda-zhang> ;
+                        schema:url <https://github.com/miranda-zhang> ;
                         foaf:lastName "Zhang" ;
                         foaf:mbox <mailto:miranda.zhang.q@gmail.com> ;
                         foaf:nick "Miranda" ;

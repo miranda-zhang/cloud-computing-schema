@@ -9,7 +9,7 @@ View test.html in browser, a live demo is also available here.
 Cached result: [0.json](0.json)
 
 # Reconstruct JSON with Only Key Parameters
-
+Run jq query on [data](#collect-data)
 ```
 [
     .[] | select(.[1].status=="success") | {
@@ -20,10 +20,15 @@ Cached result: [0.json](0.json)
         "service_type": .[0].service_type,
         "zone": .[0].subregion | split("-")[2],
         "type": .[0].type,
-        "average": .[1].mean
+        "average": .[1].mean,
+        "completion_time": .[2].completion_time
     }
 ]
 ```
+See live https://jqplay.org/s/LsE9srR2Cv
+
+[Cached Result.](../../jq/gcloud/qos_network.json)
+
 # SPARQL-Generate
 Run [queries](../../sparql-generate/gcloud/qos_network.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
