@@ -233,6 +233,14 @@ cocoon:inPhysicalLocation rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf owl:topObjectProperty .
 
 
+###  https://w3id.org/cocoon/v1.0#inRegion
+cocoon:inRegion rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#inZone
+cocoon:inZone rdf:type owl:ObjectProperty .
+
+
 ###  https://w3id.org/cocoon/v1.0#ofObjectType
 cocoon:ofObjectType rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty .
@@ -242,10 +250,6 @@ cocoon:ofObjectType rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#location
-<http://www.semanticweb.org/owl/owlapi/turtle#location> rdf:type owl:DatatypeProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#chargedPerCore
 cocoon:chargedPerCore rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
@@ -254,7 +258,7 @@ cocoon:chargedPerCore rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/cocoon/v1.0#continent
 cocoon:continent rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf <http://www.semanticweb.org/owl/owlapi/turtle#location> ;
+                 rdfs:subPropertyOf cocoon:location ;
                  rdfs:comment "Similar to location, this property specifies the continent."@en .
 
 
@@ -282,6 +286,14 @@ cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty .
 cocoon:inUse rdf:type owl:DatatypeProperty .
 
 
+###  https://w3id.org/cocoon/v1.0#ipv4
+cocoon:ipv4 rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/cocoon/v1.0#location
+cocoon:location rdf:type owl:DatatypeProperty .
+
+
 ###  https://w3id.org/cocoon/v1.0#numberOfCores
 cocoon:numberOfCores rdf:type owl:DatatypeProperty ;
                      rdfs:comment "For Google Cloud, cores and vCPU referes to the same thing." .
@@ -306,7 +318,7 @@ gr:BusinessEntity rdf:type owl:Class .
 ###  http://purl.org/goodrelations/v1#UnitPriceSpecification
 gr:UnitPriceSpecification rdf:type owl:Class ;
                           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                            owl:onProperty cocoon:hasRegion ;
+                                            owl:onProperty cocoon:inRegion ;
                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                             owl:onClass cocoon:Region
                                           ] ,
@@ -324,7 +336,7 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
    owl:annotatedSource gr:UnitPriceSpecification ;
    owl:annotatedProperty rdfs:subClassOf ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:hasRegion ;
+                         owl:onProperty cocoon:inRegion ;
                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onClass cocoon:Region
                        ] ;
@@ -400,6 +412,10 @@ foaf:Person rdf:type owl:Class .
 schema:Person rdf:type owl:Class .
 
 
+###  https://schema.org/Place
+schema:Place rdf:type owl:Class .
+
+
 ###  https://schema.org/Service
 schema:Service rdf:type owl:Class .
 
@@ -419,7 +435,28 @@ cocoon:CloudService rdf:type owl:Class ;
                                       owl:onProperty cocoon:hasProvider ;
                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                       owl:onClass gr:BusinessEntity
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty cocoon:inRegion ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass cocoon:Region
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty cocoon:inZone ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass cocoon:Zone
                                     ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:CloudService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:inRegion ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:Region
+                       ] ;
+   rdfs:comment "Region can either be associated with price or a type of service. So hasRegion can be specified either within CloudService class and subclasses, or in UnitPriceSpecification."@en
+ ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource cocoon:CloudService ;
@@ -432,13 +469,163 @@ cocoon:CloudService rdf:type owl:Class ;
  ] .
 
 
+###  https://w3id.org/cocoon/v1.0#ComputeService
+cocoon:ComputeService rdf:type owl:Class ;
+                      rdfs:subClassOf cocoon:IaaS ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:hasStorage ;
+                                        owl:someValuesFrom cocoon:QuantityOfThings
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty gr:hasPriceSpecification ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass cocoon:StorageTransactionsPriceSpecification
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:hasCPUcapacity ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass cocoon:QuantityOfThings
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:hasMaxNumberOfDisk ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass cocoon:QuantityOfThings
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:hasMaxStorageSize ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass cocoon:QuantityOfThings
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:hasMemory ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass cocoon:QuantityOfThings
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:numberOfCores ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:decimal
+                                      ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:ComputeService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasStorage ;
+                         owl:someValuesFrom cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Local storage   available on this VM, or netowrk storage attached to this VM."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:ComputeService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty gr:hasPriceSpecification ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:StorageTransactionsPriceSpecification
+                       ] ;
+   rdfs:comment """VM storage transaction price specification.
+There is a data access fees on local disk of Azure VM.
+For example, every single block access incurs a transaction. The default block size is 4 Megabytes, meaning uploading a 32Mb file will incur 8 Storage Transactions. Deleting the file will also incur 8 transactions, so will updating it, and any other time the file is touched. The transactions are charged at a cost of around $0.00036 USD per 10,000 transactions. So 32Mb file will cost $0.000000368 AUD.
+The only exception to Storage Transactions is when Premium Storage (persistent SSD storage) is used. That is, when you provision a P10, P20 or a P30 disk for your Virtual Machine those disks are exempt from Storage Transactions.
+
+https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azure/vm.md#storage-transactions"""@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:ComputeService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasCPUcapacity ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "CPU power of VM"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:ComputeService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasMaxNumberOfDisk ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Google specifies the maximum number of disk allowed to attach to a VM."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:ComputeService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasMaxStorageSize ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Google also specifies the maximum total disk size allowed to attach to a VM."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:ComputeService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasMemory ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Size of Memory"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:ComputeService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:numberOfCores ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:decimal
+                       ] ;
+   rdfs:comment "The number of cores available on this VM."@en
+ ] .
+
+
 ###  https://w3id.org/cocoon/v1.0#Database
 cocoon:Database rdf:type owl:Class ;
                 rdfs:subClassOf cocoon:SaaS .
 
 
 ###  https://w3id.org/cocoon/v1.0#Device
-cocoon:Device rdf:type owl:Class .
+cocoon:Device rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty cocoon:inPhysicalLocation ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass cocoon:Location
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty cocoon:ipv4 ;
+                                owl:someValuesFrom xsd:string
+                              ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:Device ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:inPhysicalLocation ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:Location
+                       ] ;
+   rdfs:comment "Exact location take precedence over large area, i.e. Geo coordinates is better than city and country name."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:Device ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:ipv4 ;
+                         owl:someValuesFrom xsd:string
+                       ] ;
+   dcterms:modified "We store the string representation of ipv4 for human readability, instead of unsigned 32 bit numbers."@en
+ ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#DownlinkSpeed
@@ -513,7 +700,12 @@ cocoon:LocalStorage rdf:type owl:Class ;
 
 
 ###  https://w3id.org/cocoon/v1.0#Location
-cocoon:Location rdf:type owl:Class .
+cocoon:Location rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( gn:Feature
+                                                    schema:Place
+                                                  )
+                                    ] .
 
 
 ###  https://w3id.org/cocoon/v1.0#Measurement
@@ -832,126 +1024,6 @@ cocoon:UplinkSpeed rdf:type owl:Class ;
                    rdfs:subClassOf cocoon:QuanlityOfService .
 
 
-###  https://w3id.org/cocoon/v1.0#VirtualMachine
-cocoon:VirtualMachine rdf:type owl:Class ;
-                      rdfs:subClassOf cocoon:IaaS ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasStorage ;
-                                        owl:someValuesFrom cocoon:QuantityOfThings
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty gr:hasPriceSpecification ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass cocoon:StorageTransactionsPriceSpecification
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasCPUcapacity ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass cocoon:QuantityOfThings
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasMaxNumberOfDisk ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass cocoon:QuantityOfThings
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasMaxStorageSize ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass cocoon:QuantityOfThings
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasMemory ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass cocoon:QuantityOfThings
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:numberOfCores ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onDataRange xsd:decimal
-                                      ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:VirtualMachine ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:hasStorage ;
-                         owl:someValuesFrom cocoon:QuantityOfThings
-                       ] ;
-   rdfs:comment "Local storage   available on this VM, or netowrk storage attached to this VM."@en
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:VirtualMachine ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty gr:hasPriceSpecification ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass cocoon:StorageTransactionsPriceSpecification
-                       ] ;
-   rdfs:comment """VM storage transaction price specification.
-There is a data access fees on local disk of Azure VM.
-For example, every single block access incurs a transaction. The default block size is 4 Megabytes, meaning uploading a 32Mb file will incur 8 Storage Transactions. Deleting the file will also incur 8 transactions, so will updating it, and any other time the file is touched. The transactions are charged at a cost of around $0.00036 USD per 10,000 transactions. So 32Mb file will cost $0.000000368 AUD.
-The only exception to Storage Transactions is when Premium Storage (persistent SSD storage) is used. That is, when you provision a P10, P20 or a P30 disk for your Virtual Machine those disks are exempt from Storage Transactions.
-
-https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azure/vm.md#storage-transactions"""@en
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:VirtualMachine ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:hasCPUcapacity ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass cocoon:QuantityOfThings
-                       ] ;
-   rdfs:comment "CPU power of VM"@en
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:VirtualMachine ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:hasMaxNumberOfDisk ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass cocoon:QuantityOfThings
-                       ] ;
-   rdfs:comment "Google specifies the maximum number of disk allowed to attach to a VM."@en
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:VirtualMachine ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:hasMaxStorageSize ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass cocoon:QuantityOfThings
-                       ] ;
-   rdfs:comment "Google also specifies the maximum total disk size allowed to attach to a VM."@en
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:VirtualMachine ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:hasMemory ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass cocoon:QuantityOfThings
-                       ] ;
-   rdfs:comment "Size of Memory"@en
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:VirtualMachine ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:numberOfCores ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onDataRange xsd:decimal
-                       ] ;
-   rdfs:comment "The number of cores available on this VM."@en
- ] .
-
-
 ###  https://w3id.org/cocoon/v1.0#Zone
 cocoon:Zone rdf:type owl:Class ;
             rdfs:subClassOf cocoon:Region .
@@ -1069,6 +1141,14 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cocoon:ComputeService
+                cocoon:NetworkService
+                cocoon:StorageService
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( cocoon:InternetService
                 cocoon:LoadBalancing
                 cocoon:StaticIPService
@@ -1080,14 +1160,6 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
   owl:members ( cocoon:NetworkPriceSpecification
                 cocoon:OSPriceSpecification
                 cocoon:StorageTransactionsPriceSpecification
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cocoon:NetworkService
-                cocoon:StorageService
-                cocoon:VirtualMachine
               )
 ] .
 

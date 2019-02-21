@@ -29,7 +29,7 @@ and [defined additional units](unit/README.md)
 Using [cdt:ucum](unit/cdt.md) could be a future work.
 
 ## Network QoS
-Used http://cloudharmony.com to collect data, details explained in [cloudharmony](cloudharmony/) folder.
+Used http://cloudharmony.com to collect data, details explained in [cloudharmony](cloudharmony/).
 
 # SPARQL
 Tested with Protégé.

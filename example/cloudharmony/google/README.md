@@ -29,7 +29,21 @@ See live https://jqplay.org/s/LsE9srR2Cv
 
 [Cached Result.](../../jq/gcloud/qos_network.json)
 
+# schema.org compliance
+
+https://schema.org/GeoCoordinates
+
+https://www.w3.org/TR/vocab-ssn/#seismograph
+
+# My Device
+IP: 150.203.213.249
+Hanna Neumann Building #145, Science Road, Canberra ACT 2601
+Latitude: -35.271475
+Longitude: 149.121434
+
 # SPARQL-Generate
+
+
 Run [queries](../../sparql-generate/gcloud/qos_network.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](../sparql-generate/result/gcloud/region.ttl)
