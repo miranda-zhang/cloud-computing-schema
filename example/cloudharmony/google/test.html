@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>               
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script async type="text/javascript" src="speedtest-googlecompute.js"></script>
         <script type="text/javascript">
@@ -16,8 +16,9 @@
         * might be implemented:
         */
         function ch_st_loaded(speedtest) {
-            var uplinkRedirectUri = "test.html"; // change this to the URI where up.html is accessible on your server
+            var uplinkRedirectUri = "up.html"; // change this to the URI where up.html is accessible on your server
             speedtest.start(null, uplinkRedirectUri);
+            // speedtest.start();
         }
         </script>               
     </head>

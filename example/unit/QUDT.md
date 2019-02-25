@@ -77,3 +77,6 @@ Classes
 3. qudt:TimeUnit
 4. qudt:DerivedUnit
 5. qudt:VolumePerTimeUnit
+
+# Release 2.0
+Although there is QUDT second release, but we find that version 1.1 fits our needs better, also there are too many 2.0 Vocabularies are in progress like http://qudt.org/2.0/vocab/quantitykind/communications and http://qudt.org/2.0/schema/qudt/engineering, which could be what we meed.

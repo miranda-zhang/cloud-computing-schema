@@ -8,7 +8,7 @@ https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html
 Unified Code for Units of Measure (UCUM)
 http://unitsofmeasure.org/ucum.html#section-Prefixes-and-Units-Used-in-Information-Technology
 
-## Relavent Vocabularies
+# Relavent Vocabularies
 ```
 "1 s"^^cdt:time # second
 "1 min"^^cdt:time # minute
@@ -18,7 +18,7 @@ http://unitsofmeasure.org/ucum.html#section-Prefixes-and-Units-Used-in-Informati
 "1 mo"^^cdt:time # month
 ```
 
-## Playground
+# Playground
 https://ci.mines-stetienne.fr/lindt/playground.html
 ```
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
@@ -42,3 +42,6 @@ WHERE{
   
 }
 ```
+# Issues
+We need GB, TB, but cdt doesn't seem to support those yet.
+https://github.com/sparql-generate/sparql-generate/issues/22#issuecomment-420139134

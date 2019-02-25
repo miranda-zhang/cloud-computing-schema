@@ -23,10 +23,12 @@ are exlained in:
 2. [Microsoft Azure Cloud Region](azure/region.md) 
 
 ## Units of Measure
-CoCoOn used vocabularies from [QUDT Unit ontology](unit/QUDT.md)
-and [defined additional units](unit/README.md)
+We have considered the following options, but non can support all units we need.
+So we used vocabularies from QUDT in our schema, and used available CDT units in our datasets.
 
-Using [cdt:ucum](unit/cdt.md) could be a future work.
+1. [QUDT Unit ontology](unit/QUDT.md): CoCoOn [defined additional units](unit/README.md) are compatible with QUDT 1.1.
+2. [cdt:ucum](unit/cdt.md) has powerful features, it could be a future work to implement our Custom Datatypes with this framework.
+3. Schema.org used [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) for Units of Measurement. Appart from not having the units we need, there is no support for unit conversion like CDT.
 
 ## Network QoS
 Used http://cloudharmony.com to collect data, details explained in [cloudharmony](cloudharmony/).

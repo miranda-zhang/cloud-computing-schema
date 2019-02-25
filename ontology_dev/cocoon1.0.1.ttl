@@ -359,21 +359,17 @@ gr:UnitPriceSpecification rdf:type owl:Class ;
  ] .
 
 
-###  http://qudt.org/schema/qudt#DataRateUnit
-qudt:DataRateUnit rdf:type owl:Class .
+###  http://qudt.org/1.1/schema/qudt#DataRateUnit
+<http://qudt.org/1.1/schema/qudt#DataRateUnit> rdf:type owl:Class .
 
 
-###  http://qudt.org/schema/qudt#DerivedUnit
-qudt:DerivedUnit rdf:type owl:Class .
+###  http://qudt.org/1.1/schema/qudt#InformationEntropyUnit
+<http://qudt.org/1.1/schema/qudt#InformationEntropyUnit> rdf:type owl:Class .
 
 
-###  http://qudt.org/schema/qudt#InformationEntropyUnit
-qudt:InformationEntropyUnit rdf:type owl:Class .
-
-
-###  http://qudt.org/schema/qudt#Unit
-qudt:Unit rdf:type owl:Class ;
-          owl:equivalentClass cocoon:UnitOfMeasure .
+###  http://qudt.org/1.1/schema/qudt#Unit
+<http://qudt.org/1.1/schema/qudt#Unit> rdf:type owl:Class ;
+                                       owl:equivalentClass cocoon:UnitOfMeasure .
 
 
 ###  http://www.geonames.org/ontology#Feature
@@ -477,6 +473,11 @@ cocoon:ComputeService rdf:type owl:Class ;
                                         owl:someValuesFrom cocoon:QuantityOfThings
                                       ] ,
                                       [ rdf:type owl:Restriction ;
+                                        owl:onProperty cocoon:hasMemory ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass cocoon:QuantityOfThings
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
                                         owl:onProperty gr:hasPriceSpecification ;
                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass cocoon:StorageTransactionsPriceSpecification
@@ -497,11 +498,6 @@ cocoon:ComputeService rdf:type owl:Class ;
                                         owl:onClass cocoon:QuantityOfThings
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasMemory ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass cocoon:QuantityOfThings
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
                                         owl:onProperty cocoon:numberOfCores ;
                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onDataRange xsd:decimal
@@ -515,6 +511,17 @@ cocoon:ComputeService rdf:type owl:Class ;
                          owl:someValuesFrom cocoon:QuantityOfThings
                        ] ;
    rdfs:comment "Local storage   available on this VM, or netowrk storage attached to this VM."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource cocoon:ComputeService ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty cocoon:hasMemory ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass cocoon:QuantityOfThings
+                       ] ;
+   rdfs:comment "Size of Memory"@en
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -564,17 +571,6 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
                          owl:onClass cocoon:QuantityOfThings
                        ] ;
    rdfs:comment "Google also specifies the maximum total disk size allowed to attach to a VM."@en
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource cocoon:ComputeService ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:hasMemory ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass cocoon:QuantityOfThings
-                       ] ;
-   rdfs:comment "Size of Memory"@en
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -943,12 +939,12 @@ cocoon:StorageService rdf:type owl:Class ;
                                         owl:someValuesFrom cocoon:StorageService
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasStorageIOMax ;
-                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onProperty cocoon:hasStorageSize ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass cocoon:QuantityOfThings
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasStorageSize ;
+                                        owl:onProperty cocoon:hasStorageIOMax ;
                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass cocoon:QuantityOfThings
                                       ] ,
@@ -1035,8 +1031,7 @@ cocoon:Zone rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0#GB
 cocoon:GB rdf:type owl:NamedIndividual ,
-                   qudt:DerivedUnit ,
-                   qudt:InformationEntropyUnit ,
+                   <http://qudt.org/1.1/schema/qudt#InformationEntropyUnit> ,
                    cocoon:UnitOfMeasure ;
           rdfs:comment "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
           rdfs:label "Gigabyte"@en .
@@ -1044,8 +1039,7 @@ cocoon:GB rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0#GBPerMonth
 cocoon:GBPerMonth rdf:type owl:NamedIndividual ,
-                           qudt:DataRateUnit ,
-                           qudt:DerivedUnit ,
+                           <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
                            cocoon:UnitOfMeasure ;
                   rdfs:comment "Often describe 1 GB per Month usage."@en ;
                   rdfs:label "Gigabyte per Month"@en .
@@ -1053,26 +1047,15 @@ cocoon:GBPerMonth rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0#IOPs
 cocoon:IOPs rdf:type owl:NamedIndividual ,
-                     qudt:DataRateUnit ,
-                     qudt:DerivedUnit ,
+                     <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
                      cocoon:UnitOfMeasure ;
             rdfs:comment "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en ;
             rdfs:label "Input/output operations per sec"@en .
 
 
-###  https://w3id.org/cocoon/v1.0#MBPerSec
-cocoon:MBPerSec rdf:type owl:NamedIndividual ,
-                         qudt:DataRateUnit ,
-                         qudt:DerivedUnit ,
-                         cocoon:UnitOfMeasure ;
-                rdfs:comment "Azure Managed Disks throughput caps per disk."@en ;
-                rdfs:label "MB/second"@en .
-
-
 ###  https://w3id.org/cocoon/v1.0#TB
 cocoon:TB rdf:type owl:NamedIndividual ,
-                   qudt:DerivedUnit ,
-                   qudt:InformationEntropyUnit ,
+                   <http://qudt.org/1.1/schema/qudt#InformationEntropyUnit> ,
                    cocoon:UnitOfMeasure ;
           rdfs:comment "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
           rdfs:label "Terabyte"@en .

@@ -1,10 +1,11 @@
+# CloudHarmony
 # Command Line Tool
 https://github.com/cloudharmony/network
 
 ## Ubuntu Install
 
     sudo apt update
-    sudo apt -y install curl php5-cli dnsutils geoip-bin
+    sudo apt -y install curl php5-cli dnsutils geoip-bin traceroute
 
 If using a shell under Windows, you may need to convert file endings :
 
@@ -16,7 +17,7 @@ If any lib can't be found, search with
 
 ## Some Usage Example
 
-    cd /mnt/c/Users/admin-u5214628/Documents/cloudharmony/network
+    cd /mnt/c/Users/admin-u5214628/Documents/cloudharmony_test/network
 
     ./run.sh --test latency --test_endpoint europe-west1.gce.cloudharmony.net --test_endpoint asia-east1.gce.cloudharmony.net --test_service_id google:compute
     ./save.sh
@@ -24,9 +25,20 @@ If any lib can't be found, search with
     ./run.sh --test downlink --test_endpoint us-central1.gce.cloudharmony.net/probe --test_service_id google:compute 
 
 # Javascript Solution
-This is the method we used.
+This method is suitable for doing tests on local machine, if run tests on remote server the [Command Line Tool](#command-line-tool) would be more suitable.
 1. [google](google/)
 2. [azure](azure/)
+
+# Uplink
+I have [problem with API uplink option](https://github.com/cloudharmony/network/issues/1),
+Javascript tag also failed to get results.
+
+    ./run.sh --test uplink --test_endpoint http://us-central1.gce.cloudharmony.net/probe --test_service_id google:compute --verbose --test_files_dir ../web-probe/ --verbose --tcp_file "small"
+
+    curl --verbose -X POST http://asia-east1.gce.cloudharmony.net/probe/u.html?http://cloudharmony.com/probe/up.html
+    curl -X POST http://us-central1.gce.cloudharmony.net/probe/up.html --data 'example=moredata'  -w '%{size_request} %{size_upload}'
+
+Alternativly, browser automation with [selenmium](selenmium/) is possible.
 
 # Old Data
 Compressed csv files:
