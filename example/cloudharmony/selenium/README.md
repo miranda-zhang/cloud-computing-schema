@@ -18,8 +18,8 @@ See [cloudharmony.py](cloudharmony.py)
 The webpage fails if too many service are tested all at once, so tests are carried out one by one.
 
 Example results:
-1. [gcloud/0.json](gcloud/0.json)
+1. [gcloud/0.json](gcloud/1.json)
 
 # Selenium Doc
-https://selenium-python.readthedocs.io/locating-elements.html
-https://saucelabs.com/resources/articles/selenium-tips-css-selectors
+1. https://selenium-python.readthedocs.io/locating-elements.html
+2. https://saucelabs.com/resources/articles/selenium-tips-css-selectors

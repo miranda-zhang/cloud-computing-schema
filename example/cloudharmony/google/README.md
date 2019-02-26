@@ -6,14 +6,15 @@ Download [test.html](test.html) [speedtest-googlecompute.js](speedtest-googlecom
 
 View test.html in browser, a live demo is also available here.
 
-Cached result: [0.json](0.json)
+Cached result: [2.json](data/2.json)
+
+How to process region related data are documented in  [the regions page](../../gcloud/region.md#cloudHarmony-data).
 
 # Reconstruct JSON with Only Key Parameters
 Run jq query on [data](#collect-data)
 ```
 [
     .[] | select(.[1].status=="success") | {
-        "location": .[0].location,
         "provider_id": .[0].provider_id,
         "region": .[0].region,
         "service": .[0].service,
@@ -24,27 +25,20 @@ Run jq query on [data](#collect-data)
         "completion_time": .[2].completion_time
     }
 ]
-
-.[] | select(.[0].type=="uplink") | select(.[1].status=="success")
-
 ```
 See live https://jqplay.org/s/LsE9srR2Cv
 
-[Cached Result.](../../jq/gcloud/qos_network.json)
-
-# PC used for the measurements
-IP: 150.203.213.249
-Latitude: -35.271475
-Longitude: 149.121434
-Hanna Neumann Building #145, Science Road, Canberra ACT 2601
+[Cached Result.](../../jq/gcloud/downlink_latency.json)
 
 # SPARQL-Generate
+```
+java -jar sparql-generate-jena.jar --output result/gcloud/downlink_latency.ttl --query-file gcloud/downlink_latency.rqg --log-level ERROR
+```
+Query: [downlink_latency.rqg](../../sparql-generate/gcloud/downlink_latency.rqg)
 
-Run [queries](../../sparql-generate/gcloud/qos_network.rqg)
-in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/qos.ttl)
+Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/downlink_latency.ttl)
 
 # Future Work
 The following schema.org extensions maybe helpfull, but can't be used until it made into core.
-https://pending.schema.org/geospatiallyWithin
-https://pending.schema.org/QuantitativeValueDistribution
+1. https://pending.schema.org/geospatiallyWithin
+2. https://pending.schema.org/QuantitativeValueDistribution

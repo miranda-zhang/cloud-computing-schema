@@ -1,10 +1,4 @@
 # Data Mapping Example: Google Cloud Regions
-
-[Programtically extract region codes from json imput](region_jq.md)
-can only obtain region codes,
-by inspecting the documentation https://cloud.google.com/about/locations/,
-more detailed mapping can be manually constructed.
-
 ## Geonames
 GeonamesRdf Client library
 https://github.com/dsoprea/GeonamesRdf
@@ -20,6 +14,12 @@ $ gn_search dsoprea -p query "europe" -p max_rows 5
 ```
 Site http://www.geonames.org/
 
+### Getting Data From Google Website
+[Programtically extract region codes from json imput](region_jq.md)
+can only obtain region codes,
+by inspecting the documentation https://cloud.google.com/about/locations/,
+more detailed mapping can be manually constructed.
+
 [Region inJurisdiction example mapping (json)](../jq/gcloud/region_inJurisdiction.json)
 
 This is most useful for 
@@ -27,10 +27,30 @@ This is most useful for
 
 [Example queries for this input.](region_jq.md#SPARQL-Generate)
 
-## Additional inforamtion from documentation
+Additional inforamtion from documentation:
 [Region inPhysicalLocation example mapping (json)](../jq/gcloud/region.json)
 
-## SPARQL-Generate
-Run [queries](../sparql-generate/gcloud/region.rqg)
+### SPARQL-Generate
+Run [queries](../sparql-generate/gcloud/region_geonames.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/region.ttl)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/region_geonames.ttl)
+
+## CloudHarmony Data
+Run jq query on [data collected via CloudHarmony](../cloudharmony/google/README.md#collect-data)
+```
+[
+    .[][0] | select(.region != null) | {
+        "location": .location,
+        "region": .region
+    }
+] | unique
+
+See live https://jqplay.org/s/aajIEQqBjy
+
+[Cached Result.](../jq/gcloud/region_geo_coord.json)
+
+Even when there is no location data, we still keep the region for correct mapping to cloudharmony data.
+
+Run [queries](../sparql-generate/gcloud/region_geo_coord.rqg)
+in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
+to get [results (RDF turtle)](../sparql-generate/result/gcloud/region_geo_coord.ttl)

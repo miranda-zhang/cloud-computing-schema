@@ -1,0 +1,41 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX qudt: <http://qudt.org/1.1/schema/qudt#>
+PREFIX qudt-unit: <http://qudt.org/1.1/vocab/unit#>
+
+GENERATE {
+    <{?type}/{?service_type}/gcloud/{?region}/{?zone}/> a ?FeatureOfInterest ;
+        cocoon:hasProvider cocoon:gcloud;
+        ssn:hasProperty ?property;
+        cocoon:inRegion <region/gcloud/{?region}> ;
+        cocoon:inZone ?zone .
+
+    <measurement/{?type}/{?service_type}/gcloud/{?region}/{?zone}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+        sosa:madeBySensor <device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:hasFeatureOfInterest  <{?type}/{?service_type}/gcloud/{?region}/{?zone}/> ;
+        sosa:hasResult [
+            a qudt:QuantityValue ;
+            qudt:numericValue ?average ;
+            qudt:unit qudt-unit:MegabitsPerSecond ] ;
+        sosa:resultTime ?dateTime .
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/downlink_latency.json> AS ?source
+ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
+WHERE {
+    BIND( fun:JSONPath(?qos, '$.region' ) AS ?region)
+    BIND( fun:JSONPath(?qos, '$.service_type' ) AS ?service_type)
+    BIND( fun:JSONPath(?qos, '$.zone' ) AS ?zone)
+    BIND( fun:JSONPath(?qos, '$.type' ) AS ?type)
+    BIND( xsd:double( fun:JSONPath(?qos, '$.average') ) AS ?average)
+    BIND( fun:JSONPath(?qos, '$.completion_time') AS ?completion_time)
+    BIND( xsd:dateTime( ?completion_time ) AS ?dateTime)
+    BIND ( IF( ?service_type = "compute" , cocoon:ComputeService , cocoon:StorageService ) AS ?FeatureOfInterest )
+    BIND ( IF( ?type = "downlink" , cocoon:DownlinkSpeed , cocoon:Latency ) AS ?property )
+}

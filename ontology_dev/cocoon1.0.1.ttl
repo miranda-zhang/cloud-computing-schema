@@ -237,10 +237,6 @@ cocoon:inPhysicalLocation rdf:type owl:ObjectProperty ;
 cocoon:inRegion rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0#inZone
-cocoon:inZone rdf:type owl:ObjectProperty .
-
-
 ###  https://w3id.org/cocoon/v1.0#ofObjectType
 cocoon:ofObjectType rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty .
@@ -256,9 +252,13 @@ cocoon:chargedPerCore rdf:type owl:DatatypeProperty ;
                       rdfs:comment "For Google Cloud, cost of SQL server image is charged on per core basis."@en .
 
 
+###  https://w3id.org/cocoon/v1.0#city
+cocoon:city rdf:type owl:DatatypeProperty .
+
+
 ###  https://w3id.org/cocoon/v1.0#continent
 cocoon:continent rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf cocoon:location ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:comment "Similar to location, this property specifies the continent."@en .
 
 
@@ -286,12 +286,12 @@ cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty .
 cocoon:inUse rdf:type owl:DatatypeProperty .
 
 
+###  https://w3id.org/cocoon/v1.0#inZone
+cocoon:inZone rdf:type owl:DatatypeProperty .
+
+
 ###  https://w3id.org/cocoon/v1.0#ipv4
 cocoon:ipv4 rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/cocoon/v1.0#location
-cocoon:location rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0#numberOfCores
@@ -395,9 +395,9 @@ sosa:Sensor rdf:type owl:Class ;
                                     owl:equivalentClass cocoon:QuanlityOfService .
 
 
-###  http://www.w3.org/ns/ssn/systems/SystemProperty
-<http://www.w3.org/ns/ssn/systems/SystemProperty> rdf:type owl:Class ;
-                                                  owl:equivalentClass cocoon:Latency .
+###  http://www.w3.org/ns/ssn/systems/Latency
+<http://www.w3.org/ns/ssn/systems/Latency> rdf:type owl:Class ;
+                                           owl:equivalentClass cocoon:Latency .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -440,7 +440,7 @@ cocoon:CloudService rdf:type owl:Class ;
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty cocoon:inZone ;
                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass cocoon:Zone
+                                      owl:onDataRange xsd:string
                                     ] .
 
 [ rdf:type owl:Axiom ;
@@ -863,7 +863,7 @@ cocoon:Region rdf:type owl:Class ;
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:hasProvider ;
-                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass gr:BusinessEntity
                               ] ,
                               [ rdf:type owl:Restriction ;
@@ -872,8 +872,13 @@ cocoon:Region rdf:type owl:Class ;
                                 owl:onClass gn:Feature
                               ] ,
                               [ rdf:type owl:Restriction ;
+                                owl:onProperty cocoon:city ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:continent ;
-                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:string
                               ] .
 
@@ -895,7 +900,7 @@ cocoon:Region rdf:type owl:Class ;
                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onClass gn:Feature
                        ] ;
-   rdfs:comment "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately."@en
+   rdfs:comment "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately. The intended usage of this is record the known most precise location."@en
  ] .
 
 
@@ -1018,11 +1023,6 @@ cocoon:UnitOfMeasure rdf:type owl:Class ;
 ###  https://w3id.org/cocoon/v1.0#UplinkSpeed
 cocoon:UplinkSpeed rdf:type owl:Class ;
                    rdfs:subClassOf cocoon:QuanlityOfService .
-
-
-###  https://w3id.org/cocoon/v1.0#Zone
-cocoon:Zone rdf:type owl:Class ;
-            rdfs:subClassOf cocoon:Region .
 
 
 #################################################################

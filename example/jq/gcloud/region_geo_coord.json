@@ -1,0 +1,181 @@
+[
+  {
+    "location": null,
+    "region": "asia"
+  },
+  {
+    "location": null,
+    "region": "eu"
+  },
+  {
+    "location": null,
+    "region": "us"
+  },
+  {
+    "location": {
+      "city": "Changhua County",
+      "country": "TW",
+      "lat": 23.9333,
+      "long": 120.5333
+    },
+    "region": "asia-east1"
+  },
+  {
+    "location": {
+      "city": "Eemshaven",
+      "country": "NL",
+      "lat": 53.2622,
+      "long": 6.4936
+    },
+    "region": "europe-west4"
+  },
+  {
+    "location": {
+      "city": "Frankfurt",
+      "country": "DE",
+      "lat": 50.1109,
+      "long": 8.6821
+    },
+    "region": "europe-west3"
+  },
+  {
+    "location": {
+      "city": "Hamina",
+      "country": "FI",
+      "lat": 60.5715,
+      "long": 27.1877
+    },
+    "region": "europe-north1"
+  },
+  {
+    "location": {
+      "city": "Hong Kong",
+      "country": "HK",
+      "lat": 22.3964,
+      "long": 114.1095
+    },
+    "region": "asia-east2"
+  },
+  {
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "lat": 51.5074,
+      "long": -0.1278
+    },
+    "region": "europe-west2"
+  },
+  {
+    "location": {
+      "city": "Montreal",
+      "country": "CA",
+      "lat": 45.3627,
+      "long": -73.3458
+    },
+    "region": "northamerica-northeast1"
+  },
+  {
+    "location": {
+      "city": "Mumbai",
+      "country": "IN",
+      "lat": 19.076,
+      "long": 72.8777
+    },
+    "region": "asia-south1"
+  },
+  {
+    "location": {
+      "city": "Singapore",
+      "country": "SG",
+      "lat": 1.3521,
+      "long": 103.8198
+    },
+    "region": "asia-southeast1"
+  },
+  {
+    "location": {
+      "city": "St. Ghislain",
+      "country": "BE",
+      "lat": 50.4704,
+      "long": 3.8649
+    },
+    "region": "europe-west1"
+  },
+  {
+    "location": {
+      "city": "Sydney",
+      "country": "AU",
+      "lat": -33.8628,
+      "long": 151.1912
+    },
+    "region": "australia-southeast1"
+  },
+  {
+    "location": {
+      "city": "São Paulo",
+      "country": "BR",
+      "lat": -23.5505,
+      "long": -46.6333
+    },
+    "region": "southamerica-east1"
+  },
+  {
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "lat": 35.6895,
+      "long": 139.6917
+    },
+    "region": "asia-northeast1"
+  },
+  {
+    "location": {
+      "city": "Ashburn",
+      "country": "US",
+      "state": "VA",
+      "lat": 39.0438,
+      "long": -77.4874
+    },
+    "region": "us-east4"
+  },
+  {
+    "location": {
+      "city": "Council Bluffs",
+      "country": "US",
+      "state": "IA",
+      "lat": 41.2619,
+      "long": -95.8608
+    },
+    "region": "us-central1"
+  },
+  {
+    "location": {
+      "city": "Los Angeles",
+      "country": "US",
+      "state": "CA",
+      "lat": 34.0522,
+      "long": -118.2437
+    },
+    "region": "us-west2"
+  },
+  {
+    "location": {
+      "city": "Moncks Corner",
+      "country": "US",
+      "state": "SC",
+      "lat": 33.196,
+      "long": -80.0131
+    },
+    "region": "us-east1"
+  },
+  {
+    "location": {
+      "city": "Portland",
+      "country": "US",
+      "state": "OR",
+      "lat": 45.5213,
+      "long": -122.6765
+    },
+    "region": "us-west1"
+  }
+]

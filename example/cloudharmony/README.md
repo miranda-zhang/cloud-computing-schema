@@ -29,6 +29,17 @@ This method is suitable for doing tests on local machine, if run tests on remote
 1. [google](google/)
 2. [azure](azure/)
 
+## PC used for the measurements
+IP: 150.203.213.249
+
+Latitude: -35.271475
+
+Longitude: 149.121434
+
+Hanna Neumann Building #145, Science Road, Canberra ACT 2601
+
+The above information can be captured with this [device.ttl](../sparql-generate/result/device.ttl)
+
 # Uplink
 I have [problem with API uplink option](https://github.com/cloudharmony/network/issues/1),
 Javascript tag also failed to get results.
@@ -41,11 +52,6 @@ Javascript tag also failed to get results.
 Alternativly, browser automation with [selenium](selenium/) is possible.
 
 # Old Data
-Compressed csv files:
-1. [latency.zip](latency.zip):116049 records
-2. [uplink.zip](uplink.zip):110292 records
-3. [downlink.zip](downlink.zip):386728 records
-Compressed SQL dump for the above datasets (combined): [cloud_3_bak_6_merged.zip](cloud_3_bak_6_merged.zip)
-
-The [Javascript method](#javascript-solution) wasn't available in 2014, that's when the data were collected.
+The [Javascript method](#javascript-solution) wasn't available in 2014, that's when the old data were collected.
 So it's different from the current data.
+See [Old Data Archive](old_data_archive/).

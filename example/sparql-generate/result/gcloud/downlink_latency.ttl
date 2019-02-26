@@ -1,0 +1,1316 @@
+@prefix schema: <https://schema.org/> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qudt-unit: <http://qudt.org/1.1/vocab/unit#> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix ssn:   <http://www.w3.org/ns/ssn/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/europe-west1/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-west1> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/latency/compute/google/us-west2/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-west2> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/europe-west2/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-west2> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-west2/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A50%3A07.384Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-west2/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  5.57e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:50:07.384Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/asia-east2/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-east2> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/australia-southeast1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A40%3A39.101Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/australia-southeast1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  301.88e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:40:39.101Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-west3/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A36%3A29.606Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-west3/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  2.04e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:36:29.606Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/northamerica-northeast1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A40%3A20.895Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/northamerica-northeast1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  256.75e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:40:20.895Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-west2/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A45%3A02.666Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-west2/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  3.95e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:45:02.666Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/southamerica-east1/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/southamerica-east1> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/europe-west1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A38%3A48.379Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/europe-west1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  311.5e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:38:48.379Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-northeast1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A37%3A38.336Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-northeast1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  50.75e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:37:38.336Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/us-east4/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-east4> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/asia-southeast1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-southeast1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/us-central1/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-central1> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/latency/compute/google/europe-west2/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-west2> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-northeast1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A37%3A50.955Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-northeast1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  5.15e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:37:50.955Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/europe-west4/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-west4> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/australia-southeast1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A40%3A44.403Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/australia-southeast1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  60.83e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:40:44.403Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/us-west2/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A44%3A52.934Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/us-west2/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  183.42e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:44:52.934Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-west2/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A44%3A16.378Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-west2/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  4.91e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:44:16.378Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/asia-south1/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-south1> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-southeast1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A41%3A53.228Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-southeast1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  4.96e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:41:53.228Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/us-west2/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-west2> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-west2/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A50%3A40.686Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-west2/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  4.45e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:50:40.686Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-southeast1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A41%3A46.247Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-southeast1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  30.4e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:41:46.247Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/europe-west4/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-west4> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-east1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A46%3A49.486Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-east1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  15.29e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:46:49.486Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/australia-southeast1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A40%3A42.736Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/australia-southeast1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  17.33e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:40:42.736Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/australia-southeast1/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/australia-southeast1> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-central1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A51%3A48.363Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-central1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  13.43e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:51:48.363Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/us-east1/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-east1> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/southamerica-east1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A43%3A24.539Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/southamerica-east1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  2.53e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:43:24.539Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/us-west2/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A44%3A07.018Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/us-west2/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  195.17e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:44:07.018Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-south1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A47%3A50.742Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-south1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  24.26e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:47:50.742Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/europe-west3/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-west3> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/asia-east1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A46%3A14.825Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/asia-east1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  186.58e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:46:14.825Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/asia-east2/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-east2> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/southamerica-east1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A43%3A32.057Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/southamerica-east1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  374.67e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:43:32.057Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/us-west2/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-west2> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/latency/compute/google/us-west1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-west1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/latency/compute/google/us-central1/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-central1> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/europe-west4/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A42%3A20.078Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/europe-west4/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  316.33e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:42:20.078Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-west1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A39%3A44.800Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-west1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  8.65e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:39:44.800Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/asia-south1/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-south1> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-west2/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A44%3A47.816Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-west2/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  17.08e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:44:47.816Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/europe-west3/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-west3> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/asia-east2/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A38%3A32.684Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/asia-east2/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  186.17e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:38:32.684Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/asia-east1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-east1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-west4/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A42%3A09.865Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-west4/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  2.2e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:42:09.865Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/us-east4/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A48%3A28.941Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/us-east4/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  257.17e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:48:28.941Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/northamerica-northeast1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A40%3A33.329Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/northamerica-northeast1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  2.68e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:40:33.329Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-south1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A47%3A11.875Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-south1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  4.17e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:47:11.875Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-west2/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A50%3A31.037Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-west2/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  2.79e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:50:31.037Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/europe-north1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-north1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/australia-southeast1/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/australia-southeast1> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/northamerica-northeast1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A40%3A15.437Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/northamerica-northeast1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  9.31e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:40:15.437Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/us-west2/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-west2> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-east2/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A38%3A40.920Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-east2/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  3.42e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:38:40.920Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/europe-west2/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A50%3A14.114Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/europe-west2/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  329.92e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:50:14.114Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-west1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A39%3A05.230Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-west1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  1.88e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:39:05.230Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/northamerica-northeast1/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/northamerica-northeast1> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/us-east4/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-east4> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-east1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A45%3A40.374Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-east1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  3.79e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:45:40.374Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/us-west2/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A50%3A44.633Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/us-west2/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  184.25e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:50:44.633Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/europe-west1/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-west1> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/us-east1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A46%3A21.098Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/us-east1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  245.08e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:46:21.098Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/asia-northeast1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-northeast1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-west2/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A46%3A10.217Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-west2/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  19.43e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:46:10.217Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/asia-east1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-east1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/asia-northeast1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A37%3A42.517Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/asia-northeast1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  172.58e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:37:42.517Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-west2/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A51%3A20.720Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-west2/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  25.6e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:51:20.720Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-north1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A49%3A13.039Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-north1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  5.53e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:49:13.039Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/europe-north1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/europe-north1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/southamerica-east1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A44%3A02.090Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/southamerica-east1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  5.18e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:44:02.090Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/us-west2/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-west2> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-west3/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A36%3A59.881Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-west3/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  5.64e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:36:59.881Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-east4/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A48%3A41.446Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-east4/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  3.28e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:48:41.446Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/southamerica-east1/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/southamerica-east1> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/asia-south1/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A47%3A54.872Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/asia-south1/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  195.92e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:47:54.872Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/us-east1/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-east1> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/europe-north1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A49%3A37.843Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/europe-north1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  358.75e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:49:37.843Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434>
+        a                          cocoon:Device ;
+        rdfs:comment               "The computer used to conduct the tests, belongs to Australian National University College of Engineering & Computer Science."@en ;
+        rdfs:label                 "CECS-030929"@en ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   "-35.271475" ;
+                                                   schema:longitude  "149.121434"
+                                                 ]
+                                   ] ;
+        cocoon:ipv4                "150.203.213.249" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/us-central1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A52%3A04.809Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/us-central1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  249.42e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:52:04.809Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-central1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A51%3A59.193Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-central1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  2.98e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:51:59.193Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-east1/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A47%3A00.875Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-east1/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  3.04e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:47:00.875Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-west1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A42%3A31.262Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-west1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  3.89e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:42:31.262Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/asia-southeast1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A42%3A13.664Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/asia-southeast1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  124.25e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:42:13.664Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/us-west2/c/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-west2> ;
+        cocoon:inZone       "c" .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/us-west1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A42%3A36.637Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/us-west1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "236"^^xsd:double ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:42:36.637Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-east2/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A38%3A28.539Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-east2/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  28.53e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:38:28.539Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-east4/a/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A48%3A23.491Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-east4/a/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  9.62e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:48:23.491Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/latency/compute/google/europe-west3/c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A37%3A07.532Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/latency/compute/google/europe-west3/c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  343.25e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:37:07.532Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/latency/compute/google/asia-northeast1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-northeast1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/us-west1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/us-west1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/latency/compute/google/asia-southeast1/b/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:Latency ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/asia-southeast1> ;
+        cocoon:inZone       "b" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/asia-east1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A45%3A30.817Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/asia-east1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  33.89e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:45:30.817Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/downlink/compute/google/northamerica-northeast1/a/>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     cocoon:DownlinkSpeed ;
+        cocoon:hasProvider  cocoon:gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/region/gcloud/northamerica-northeast1> ;
+        cocoon:inZone       "a" .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/us-west1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A43%3A07.955Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/us-west1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  16.24e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:43:07.955Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-north1/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A49%3A30.574Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-north1/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  3.17e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:49:30.574Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/measurement/downlink/compute/google/europe-west4/b/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-19T10%3A41%3A17.925Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/downlink/compute/google/europe-west4/b/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  10.37e0 ;
+                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-19T10:41:17.925Z"^^xsd:dateTime .
