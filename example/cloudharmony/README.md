@@ -38,7 +38,7 @@ Javascript tag also failed to get results.
     curl --verbose -X POST http://asia-east1.gce.cloudharmony.net/probe/u.html?http://cloudharmony.com/probe/up.html
     curl -X POST http://us-central1.gce.cloudharmony.net/probe/up.html --data 'example=moredata'  -w '%{size_request} %{size_upload}'
 
-Alternativly, browser automation with [selenmium](selenmium/) is possible.
+Alternativly, browser automation with [selenium](selenium/) is possible.
 
 # Old Data
 Compressed csv files:

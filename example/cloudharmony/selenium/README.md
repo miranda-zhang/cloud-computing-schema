@@ -17,4 +17,9 @@ See [cloudharmony.py](cloudharmony.py)
 
 The webpage fails if too many service are tested all at once, so tests are carried out one by one.
 
-Example results: [uplink.json](uplink.json)
+Example results:
+1. [gcloud/0.json](gcloud/0.json)
+
+# Selenium Doc
+https://selenium-python.readthedocs.io/locating-elements.html
+https://saucelabs.com/resources/articles/selenium-tips-css-selectors
