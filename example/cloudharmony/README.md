@@ -40,7 +40,7 @@ Hanna Neumann Building #145, Science Road, Canberra ACT 2601
 
 The above information can be captured with this [device.ttl](../sparql-generate/result/device.ttl)
 
-# Uplink
+## Uplink
 I have [problem with API uplink option](https://github.com/cloudharmony/network/issues/1),
 Javascript tag also failed to get results.
 
@@ -50,6 +50,10 @@ Javascript tag also failed to get results.
     curl -X POST http://us-central1.gce.cloudharmony.net/probe/up.html --data 'example=moredata'  -w '%{size_request} %{size_upload}'
 
 Alternativly, browser automation with [selenium](selenium/) is possible.
+
+## Test Types
+The tests properties can be described using the cocoon:QuanlityOfService class.
+The full example is available here: [qos_property](../sparql-generate/result/qos_property.ttl)
 
 # Old Data
 The [Javascript method](#javascript-solution) wasn't available in 2014, that's when the old data were collected.

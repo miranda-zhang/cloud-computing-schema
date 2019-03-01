@@ -12,28 +12,6 @@ PREFIX qudt-unit: <http://qudt.org/1.1/vocab/unit#>
 
 GENERATE {
     GENERATE {
-        <QuanlityOfService/DownlinkSpeed/{?min_size}/{?max_size}/KB> a cocoon:DownlinkSpeed;
-            cocoon:transferedFileSizeMin [
-                a schema:TypeAndQuantityNode;
-                schema:amountOfThisGood ?min_size;
-                schema:unitText "KB";
-                schema:unitCode "2P";
-            ];
-            cocoon:transferedFileSizeMax [
-                a schema:TypeAndQuantityNode;
-                schema:amountOfThisGood ?max_size;
-                schema:unitText "KB";
-                schema:unitCode "2P";
-            ]
-    }
-    WHERE{
-        FILTER (?type = "downlink")
-    }.
-
-    <QuanlityOfService/Latency> a cocoon:Latency .
-    <QuanlityOfService/DNSQueryLatency> a cocoon:DNSQueryLatency .
-
-    GENERATE {
         <{?type_slug}/ComputeService/gcloud/{?region}/{?zone}/> a cocoon:ComputeService ;
             cocoon:hasProvider cocoon:gcloud;
             ssn:hasProperty ?property_url;
