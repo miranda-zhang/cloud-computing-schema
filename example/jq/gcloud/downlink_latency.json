@@ -7,7 +7,9 @@
     "average": 29,
     "completion_time": "2019-02-26T07:09:35.054Z",
     "region": null,
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -17,7 +19,9 @@
     "average": 427.58,
     "completion_time": "2019-02-26T07:09:39.085Z",
     "region": null,
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -27,7 +31,9 @@
     "average": 50,
     "completion_time": "2019-02-26T07:09:40.526Z",
     "region": null,
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -37,7 +43,9 @@
     "average": 49.58,
     "completion_time": "2019-02-26T07:09:42.005Z",
     "region": "australia-southeast1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -47,7 +55,9 @@
     "average": 26.92,
     "completion_time": "2019-02-26T07:09:44.132Z",
     "region": "australia-southeast1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -57,7 +67,9 @@
     "average": 308.12,
     "completion_time": "2019-02-26T07:09:49.447Z",
     "region": "australia-southeast1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -67,7 +79,9 @@
     "average": 149.08,
     "completion_time": "2019-02-26T07:10:09.835Z",
     "region": null,
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -77,7 +91,9 @@
     "average": 3.38,
     "completion_time": "2019-02-26T07:10:18.053Z",
     "region": "us-central1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -87,7 +103,9 @@
     "average": 240.83,
     "completion_time": "2019-02-26T07:10:22.948Z",
     "region": "us-central1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -97,7 +115,9 @@
     "average": 18.59,
     "completion_time": "2019-02-26T07:11:05.576Z",
     "region": "us-central1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -107,7 +127,9 @@
     "average": 3.7,
     "completion_time": "2019-02-26T07:11:13.606Z",
     "region": "us-east4",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -117,7 +139,9 @@
     "average": 14.27,
     "completion_time": "2019-02-26T07:11:44.017Z",
     "region": "us-east4",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -127,7 +151,9 @@
     "average": 258.92,
     "completion_time": "2019-02-26T07:11:49.228Z",
     "region": "us-east4",
-    "zone": "a"
+    "zone": "a",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -137,7 +163,9 @@
     "average": 2.52,
     "completion_time": "2019-02-26T07:11:58.884Z",
     "region": "us-east1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -147,7 +175,9 @@
     "average": 11.42,
     "completion_time": "2019-02-26T07:12:27.276Z",
     "region": "us-east1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -157,7 +187,9 @@
     "average": 5.49,
     "completion_time": "2019-02-26T07:12:33.220Z",
     "region": "asia-northeast1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -167,7 +199,9 @@
     "average": 40.2,
     "completion_time": "2019-02-26T07:13:14.488Z",
     "region": "asia-northeast1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -177,7 +211,9 @@
     "average": 297.92,
     "completion_time": "2019-02-26T07:13:20.339Z",
     "region": "us-east1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -187,7 +223,9 @@
     "average": 151.83,
     "completion_time": "2019-02-26T07:13:23.777Z",
     "region": "asia-northeast1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -197,7 +235,9 @@
     "average": 2.32,
     "completion_time": "2019-02-26T07:13:38.527Z",
     "region": "southamerica-east1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -207,7 +247,9 @@
     "average": 5.6,
     "completion_time": "2019-02-26T07:14:04.631Z",
     "region": "southamerica-east1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -217,7 +259,9 @@
     "average": 362.92,
     "completion_time": "2019-02-26T07:14:11.741Z",
     "region": "southamerica-east1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -227,7 +271,9 @@
     "average": 54.5,
     "completion_time": "2019-02-26T07:14:13.420Z",
     "region": "australia-southeast1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -237,7 +283,9 @@
     "average": 455.88,
     "completion_time": "2019-02-26T07:14:17.456Z",
     "region": "australia-southeast1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -247,7 +295,9 @@
     "average": 11.22,
     "completion_time": "2019-02-26T07:14:19.932Z",
     "region": "australia-southeast1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -257,7 +307,9 @@
     "average": 2.77,
     "completion_time": "2019-02-26T07:14:32.070Z",
     "region": "europe-west2",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -267,7 +319,9 @@
     "average": 8.03,
     "completion_time": "2019-02-26T07:15:09.096Z",
     "region": "europe-west2",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -277,7 +331,9 @@
     "average": 311.75,
     "completion_time": "2019-02-26T07:15:15.267Z",
     "region": "europe-west2",
-    "zone": "a"
+    "zone": "a",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -287,7 +343,9 @@
     "average": 5.33,
     "completion_time": "2019-02-26T07:15:21.759Z",
     "region": "us-west2",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -297,7 +355,9 @@
     "average": 203.92,
     "completion_time": "2019-02-26T07:15:26.007Z",
     "region": "us-west2",
-    "zone": "b"
+    "zone": "b",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -307,7 +367,9 @@
     "average": 30.23,
     "completion_time": "2019-02-26T07:15:58.952Z",
     "region": "us-west2",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -317,7 +379,9 @@
     "average": 328.92,
     "completion_time": "2019-02-26T07:16:05.760Z",
     "region": "europe-west1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -327,7 +391,9 @@
     "average": 9.63,
     "completion_time": "2019-02-26T07:16:40.254Z",
     "region": "europe-west1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -337,7 +403,9 @@
     "average": 2.47,
     "completion_time": "2019-02-26T07:16:53.738Z",
     "region": "europe-west1",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -347,7 +415,9 @@
     "average": 361.33,
     "completion_time": "2019-02-26T07:17:01.259Z",
     "region": "europe-north1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -357,7 +427,9 @@
     "average": 2.23,
     "completion_time": "2019-02-26T07:17:12.495Z",
     "region": "europe-north1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -367,7 +439,9 @@
     "average": 5.83,
     "completion_time": "2019-02-26T07:17:38.827Z",
     "region": "europe-north1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -377,7 +451,9 @@
     "average": 21.13,
     "completion_time": "2019-02-26T07:18:05.890Z",
     "region": "us-west2",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -387,7 +463,9 @@
     "average": 5.39,
     "completion_time": "2019-02-26T07:18:12.973Z",
     "region": "us-west2",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -397,7 +475,9 @@
     "average": 199.08,
     "completion_time": "2019-02-26T07:18:17.100Z",
     "region": "us-west2",
-    "zone": "a"
+    "zone": "a",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -407,7 +487,9 @@
     "average": 2.24,
     "completion_time": "2019-02-26T07:18:29.060Z",
     "region": "europe-west3",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -417,7 +499,9 @@
     "average": 7.72,
     "completion_time": "2019-02-26T07:19:13.946Z",
     "region": "europe-west3",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -427,7 +511,9 @@
     "average": 347.58,
     "completion_time": "2019-02-26T07:19:20.732Z",
     "region": "europe-west3",
-    "zone": "c"
+    "zone": "c",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -437,7 +523,9 @@
     "average": 204.17,
     "completion_time": "2019-02-26T07:19:25.321Z",
     "region": "us-west1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -447,7 +535,9 @@
     "average": 4.09,
     "completion_time": "2019-02-26T07:19:33.330Z",
     "region": "us-west1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -457,7 +547,9 @@
     "average": 12.67,
     "completion_time": "2019-02-26T07:20:00.518Z",
     "region": "asia-south1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -467,7 +559,9 @@
     "average": 4.8,
     "completion_time": "2019-02-26T07:20:08.220Z",
     "region": "asia-south1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -477,7 +571,9 @@
     "average": 18.93,
     "completion_time": "2019-02-26T07:20:38.710Z",
     "region": "us-west1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -487,7 +583,9 @@
     "average": 34.44,
     "completion_time": "2019-02-26T07:21:19.463Z",
     "region": "us-west2",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -497,7 +595,9 @@
     "average": 203.42,
     "completion_time": "2019-02-26T07:21:23.856Z",
     "region": "asia-south1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -507,7 +607,9 @@
     "average": 3.4,
     "completion_time": "2019-02-26T07:21:30.869Z",
     "region": "us-west2",
-    "zone": "c"
+    "zone": "c",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -517,7 +619,9 @@
     "average": 204.25,
     "completion_time": "2019-02-26T07:21:35.120Z",
     "region": "us-west2",
-    "zone": "c"
+    "zone": "c",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -527,7 +631,9 @@
     "average": 14.01,
     "completion_time": "2019-02-26T07:22:09.969Z",
     "region": "northamerica-northeast1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -537,7 +643,9 @@
     "average": 2.36,
     "completion_time": "2019-02-26T07:22:21.917Z",
     "region": "northamerica-northeast1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -547,7 +655,9 @@
     "average": 255.25,
     "completion_time": "2019-02-26T07:22:27.078Z",
     "region": "northamerica-northeast1",
-    "zone": "a"
+    "zone": "a",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -557,7 +667,9 @@
     "average": 36.75,
     "completion_time": "2019-02-26T07:22:56.100Z",
     "region": "asia-east2",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -567,7 +679,9 @@
     "average": 185.25,
     "completion_time": "2019-02-26T07:22:59.940Z",
     "region": "asia-east2",
-    "zone": "b"
+    "zone": "b",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -577,7 +691,9 @@
     "average": 5.01,
     "completion_time": "2019-02-26T07:23:06.553Z",
     "region": "asia-east2",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -587,7 +703,9 @@
     "average": 1.85,
     "completion_time": "2019-02-26T07:23:24.160Z",
     "region": "eu",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -597,7 +715,9 @@
     "average": 60.39,
     "completion_time": "2019-02-26T07:23:39.533Z",
     "region": "eu",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -607,7 +727,9 @@
     "average": 5.99,
     "completion_time": "2019-02-26T07:23:44.620Z",
     "region": "asia-southeast1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -617,7 +739,9 @@
     "average": 188.34,
     "completion_time": "2019-02-26T07:23:54.906Z",
     "region": "us",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -627,7 +751,9 @@
     "average": 153.25,
     "completion_time": "2019-02-26T07:23:58.318Z",
     "region": "asia-southeast1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -637,7 +763,9 @@
     "average": 2.31,
     "completion_time": "2019-02-26T07:24:09.011Z",
     "region": "us",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -647,7 +775,9 @@
     "average": 4.22,
     "completion_time": "2019-02-26T07:24:15.195Z",
     "region": "asia",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -657,7 +787,9 @@
     "average": 288.83,
     "completion_time": "2019-02-26T07:24:20.763Z",
     "region": "us",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -667,7 +799,9 @@
     "average": 201.75,
     "completion_time": "2019-02-26T07:24:25.328Z",
     "region": "asia",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -677,7 +811,9 @@
     "average": 240.65,
     "completion_time": "2019-02-26T07:24:32.887Z",
     "region": "asia",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -687,7 +823,9 @@
     "average": 41.91,
     "completion_time": "2019-02-26T07:25:00.827Z",
     "region": "asia-southeast1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -697,7 +835,9 @@
     "average": 620.25,
     "completion_time": "2019-02-26T07:25:12.673Z",
     "region": "eu",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -707,7 +847,9 @@
     "average": 1.99,
     "completion_time": "2019-02-26T07:25:22.850Z",
     "region": "asia-east2",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -717,7 +859,9 @@
     "average": 166.33,
     "completion_time": "2019-02-26T07:25:33.827Z",
     "region": "asia-east2",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -727,7 +871,9 @@
     "average": 309.42,
     "completion_time": "2019-02-26T07:25:40.018Z",
     "region": "asia-east2",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -737,7 +883,9 @@
     "average": 203.17,
     "completion_time": "2019-02-26T07:25:44.533Z",
     "region": "asia-east1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -747,7 +895,9 @@
     "average": 3.98,
     "completion_time": "2019-02-26T07:25:50.693Z",
     "region": "asia-east1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -757,7 +907,9 @@
     "average": 29.22,
     "completion_time": "2019-02-26T07:26:32.196Z",
     "region": "asia-east1",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -767,7 +919,9 @@
     "average": 2.17,
     "completion_time": "2019-02-26T07:26:43.998Z",
     "region": "europe-west4",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -777,7 +931,9 @@
     "average": 628.17,
     "completion_time": "2019-02-26T07:26:56.126Z",
     "region": "europe-west3",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -787,7 +943,9 @@
     "average": 5.64,
     "completion_time": "2019-02-26T07:27:25.026Z",
     "region": "europe-west4",
-    "zone": "b"
+    "zone": "b",
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -797,7 +955,9 @@
     "average": 63.47,
     "completion_time": "2019-02-26T07:27:46.797Z",
     "region": "europe-west3",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -807,7 +967,9 @@
     "average": 330.83,
     "completion_time": "2019-02-26T07:27:53.621Z",
     "region": "europe-west4",
-    "zone": "b"
+    "zone": "b",
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -817,7 +979,9 @@
     "average": 1.64,
     "completion_time": "2019-02-26T07:28:07.926Z",
     "region": "europe-west3",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -827,7 +991,9 @@
     "average": 110.19,
     "completion_time": "2019-02-26T07:28:20.688Z",
     "region": "northamerica-northeast1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -837,7 +1003,9 @@
     "average": 1.59,
     "completion_time": "2019-02-26T07:28:34.612Z",
     "region": "northamerica-northeast1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -847,7 +1015,9 @@
     "average": 472.75,
     "completion_time": "2019-02-26T07:28:43.762Z",
     "region": "northamerica-northeast1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -857,7 +1027,9 @@
     "average": 202.21,
     "completion_time": "2019-02-26T07:28:52.644Z",
     "region": "asia-east1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -867,7 +1039,9 @@
     "average": 482.17,
     "completion_time": "2019-02-26T07:29:01.987Z",
     "region": "us-central1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -877,7 +1051,9 @@
     "average": 205.92,
     "completion_time": "2019-02-26T07:29:06.255Z",
     "region": "asia-east1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -887,7 +1063,9 @@
     "average": 4.02,
     "completion_time": "2019-02-26T07:29:12.594Z",
     "region": "asia-east1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -897,7 +1075,9 @@
     "average": 1.6,
     "completion_time": "2019-02-26T07:29:25.954Z",
     "region": "us-central1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -907,7 +1087,9 @@
     "average": 111.95,
     "completion_time": "2019-02-26T07:29:39.341Z",
     "region": "us-central1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -917,7 +1099,9 @@
     "average": 182.86,
     "completion_time": "2019-02-26T07:29:48.324Z",
     "region": "asia-south1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -927,7 +1111,9 @@
     "average": 361.42,
     "completion_time": "2019-02-26T07:29:55.512Z",
     "region": "asia-south1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -937,7 +1123,9 @@
     "average": 2.14,
     "completion_time": "2019-02-26T07:30:06.423Z",
     "region": "asia-south1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -947,7 +1135,9 @@
     "average": 1.35,
     "completion_time": "2019-02-26T07:30:24.623Z",
     "region": "europe-west4",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -957,7 +1147,9 @@
     "average": 680.5,
     "completion_time": "2019-02-26T07:30:38.004Z",
     "region": "europe-north1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -967,7 +1159,9 @@
     "average": 618.5,
     "completion_time": "2019-02-26T07:30:49.893Z",
     "region": "europe-west4",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -977,7 +1171,9 @@
     "average": 1.37,
     "completion_time": "2019-02-26T07:31:09.791Z",
     "region": "europe-north1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -987,7 +1183,9 @@
     "average": 56.03,
     "completion_time": "2019-02-26T07:31:30.796Z",
     "region": "europe-north1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -997,7 +1195,9 @@
     "average": 55.46,
     "completion_time": "2019-02-26T07:31:48.037Z",
     "region": "europe-west4",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1007,7 +1207,9 @@
     "average": 2.09,
     "completion_time": "2019-02-26T07:32:01.707Z",
     "region": "europe-west2",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1017,7 +1219,9 @@
     "average": 617.58,
     "completion_time": "2019-02-26T07:32:13.413Z",
     "region": "europe-west2",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1027,7 +1231,9 @@
     "average": 104.46,
     "completion_time": "2019-02-26T07:32:27.670Z",
     "region": "europe-west2",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1037,7 +1243,9 @@
     "average": 1.17,
     "completion_time": "2019-02-26T07:32:47.888Z",
     "region": "southamerica-east1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1047,7 +1255,9 @@
     "average": 660.83,
     "completion_time": "2019-02-26T07:33:00.425Z",
     "region": "southamerica-east1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1057,7 +1267,9 @@
     "average": 56.3,
     "completion_time": "2019-02-26T07:33:17.622Z",
     "region": "southamerica-east1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1067,7 +1279,9 @@
     "average": 232.16,
     "completion_time": "2019-02-26T07:33:25.451Z",
     "region": "asia-northeast1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1077,7 +1291,9 @@
     "average": 305.83,
     "completion_time": "2019-02-26T07:33:31.631Z",
     "region": "asia-northeast1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1087,7 +1303,9 @@
     "average": 3.91,
     "completion_time": "2019-02-26T07:33:41.227Z",
     "region": "asia-northeast1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1097,7 +1315,9 @@
     "average": 138.47,
     "completion_time": "2019-02-26T07:33:52.592Z",
     "region": "us-west1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1107,7 +1327,9 @@
     "average": 418.75,
     "completion_time": "2019-02-26T07:34:00.738Z",
     "region": "us-west1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1117,7 +1339,9 @@
     "average": 2.21,
     "completion_time": "2019-02-26T07:34:19.647Z",
     "region": "us-west1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1127,7 +1351,9 @@
     "average": 58.95,
     "completion_time": "2019-02-26T07:34:36.427Z",
     "region": "europe-west1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1137,7 +1363,9 @@
     "average": 613.83,
     "completion_time": "2019-02-26T07:34:48.290Z",
     "region": "europe-west1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1147,7 +1375,9 @@
     "average": 1.37,
     "completion_time": "2019-02-26T07:35:15.725Z",
     "region": "europe-west1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1157,7 +1387,9 @@
     "average": 462.33,
     "completion_time": "2019-02-26T07:35:25.670Z",
     "region": "us-east4",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1167,7 +1399,9 @@
     "average": 2.04,
     "completion_time": "2019-02-26T07:35:46.626Z",
     "region": "us-east4",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1177,7 +1411,9 @@
     "average": 130.61,
     "completion_time": "2019-02-26T07:35:58.187Z",
     "region": "us-east4",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1187,7 +1423,9 @@
     "average": 611,
     "completion_time": "2019-02-26T07:36:10.583Z",
     "region": "us-east1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1197,7 +1435,9 @@
     "average": 63.91,
     "completion_time": "2019-02-26T07:36:27.819Z",
     "region": "us-east1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1207,7 +1447,9 @@
     "average": 2.18,
     "completion_time": "2019-02-26T07:36:51.279Z",
     "region": "us-east1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1217,7 +1459,9 @@
     "average": 151.08,
     "completion_time": "2019-02-26T07:36:55.234Z",
     "region": "asia-southeast1",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1227,7 +1471,9 @@
     "average": 182.97,
     "completion_time": "2019-02-26T07:37:04.365Z",
     "region": "asia-southeast1",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   },
   {
     "provider_id": "google",
@@ -1237,7 +1483,9 @@
     "average": 5.06,
     "completion_time": "2019-02-26T07:37:10.953Z",
     "region": "asia-southeast1",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1247,7 +1495,9 @@
     "average": 2.02,
     "completion_time": "2019-02-26T07:37:24.600Z",
     "region": "us-west2",
-    "zone": null
+    "zone": null,
+    "max_size": 128,
+    "min_size": 1
   },
   {
     "provider_id": "google",
@@ -1257,7 +1507,9 @@
     "average": 476.33,
     "completion_time": "2019-02-26T07:37:33.725Z",
     "region": "us-west2",
-    "zone": null
+    "zone": null,
+    "max_size": null,
+    "min_size": null
   },
   {
     "provider_id": "google",
@@ -1267,6 +1519,8 @@
     "average": 23.43,
     "completion_time": "2019-02-26T07:37:53.227Z",
     "region": "us-west2",
-    "zone": null
+    "zone": null,
+    "max_size": 10240,
+    "min_size": 256
   }
 ]

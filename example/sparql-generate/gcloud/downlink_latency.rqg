@@ -30,8 +30,8 @@ GENERATE {
         FILTER (?type = "downlink")
     }.
 
-    <QuanlityOfService/Latency> a cocoon:Latency;
-    <QuanlityOfService/DNSQueryLatency> a cocoon:DNSQueryLatency;
+    <QuanlityOfService/Latency> a cocoon:Latency .
+    <QuanlityOfService/DNSQueryLatency> a cocoon:DNSQueryLatency .
 
     GENERATE {
         <{?type_slug}/ComputeService/gcloud/{?region}/{?zone}/> a cocoon:ComputeService ;
@@ -50,7 +50,7 @@ GENERATE {
             sosa:resultTime ?dateTime .
     }
     WHERE{
-        FILTER (service_type = "compute")        
+        FILTER (?service_type = "compute")        
     }.
 
     GENERATE {
@@ -69,7 +69,7 @@ GENERATE {
             sosa:resultTime ?dateTime .
     }
     WHERE{
-        FILTER (service_type = "storage")
+        FILTER (?service_type = "storage")
     }.
 
     GENERATE {
@@ -87,7 +87,7 @@ GENERATE {
             sosa:resultTime ?dateTime .
     }
     WHERE{
-        FILTER (service_type = "cdn")
+        FILTER (?service_type = "cdn")
     }.
 
     GENERATE {
@@ -105,7 +105,7 @@ GENERATE {
             sosa:resultTime ?dateTime .
     }
     WHERE{
-        FILTER (service_type = "dns")
+        FILTER (?service_type = "dns")
     }.
 
 }
@@ -121,7 +121,7 @@ WHERE {
     BIND( xsd:dateTime( ?completion_time ) AS ?dateTime)
     BIND( xsd:interger(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)
     BIND( xsd:interger(fun:JSONPath(?qos, '$.max_size')) AS ?max_size)
-    BIND ( IF( ?type = "downlink" , qudt-unit:MegabitsPerSecond , unit:MilliSecond ) AS ?unit )
+    BIND ( IF( ?type = "downlink" , qudt-unit:MegabitsPerSecond , qudt-unit:MilliSecond ) AS ?unit )
     BIND (
         COALESCE(
             IF(?type = "downlink", <QuanlityOfService/DownlinkSpeed/{?min_size}/{?max_size}/KB> , 1/0),
