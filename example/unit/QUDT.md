@@ -31,6 +31,26 @@ unit:Giga
               "0.0"^^xsd:double ;
       qudt:symbol "G"^^xsd:string ;
       skos:exactMatch <http://dbpedia.org/resource/Giga-> .
+unit:Milli
+      rdf:type qudt:DecimalPrefixUnit ;
+      rdfs:label "Milli"^^xsd:string ;
+      qudt:conversionMultiplier
+              1.0E-3 ;
+      qudt:conversionOffset
+              "0.0"^^xsd:double ;
+      qudt:symbol "m"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Milli-> .
+unit:MilliSecond
+      rdf:type qudt:DerivedUnit , qudt:TimeUnit ;
+      rdfs:label "Millisecond"^^xsd:string ;
+      qudt:abbreviation "ms"^^xsd:string ;
+      qudt:code "1616"^^xsd:string ;
+      qudt:conversionMultiplier
+              "0.001"^^xsd:double ;
+      qudt:conversionOffset
+              "0.0"^^xsd:double ;
+      qudt:symbol "ms"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Millisecond> .
 unit:Hour
       rdf:type qudt:UsedWithSIUnit , qudt:TimeUnit ;
       rdfs:label "Hour"^^xsd:string ;

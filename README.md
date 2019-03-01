@@ -43,12 +43,18 @@ Code in [example folder](example/) shows some ways to access and use this ontolo
 This project used solutions from the following projects:
 * https://github.com/perma-id/w3id.org/
 * https://github.com/stedolan/jq
-    * Doc https://stedolan.github.io/jq/manual/
+  * https://stedolan.github.io/jq/manual/
 * https://github.com/sparql-generate/sparql-generate
-    * Doc https://ci.mines-stetienne.fr/sparql-generate/apidocs/allclasses-noframe.html
+  * https://ci.mines-stetienne.fr/sparql-generate/apidocs/allclasses-noframe.html
 * https://github.com/dgarijo/Widoco
 * https://github.com/LinkedDataFragments/Server.js/
+* https://github.com/schemaorg/schemaorg
+  * https://schema.org/docs/developers.html
 
 OWL Specifications
 * OWL2 https://www.w3.org/TR/owl2-overview/
 * OWL https://www.w3.org/TR/owl-ref/
+
+Documentations of Some Referenced Vocabularies 
+* http://www.heppnetz.de/ontologies/goodrelations/v1.html
+* https://www.w3.org/TR/vocab-ssn/#intro

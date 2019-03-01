@@ -8,16 +8,23 @@ PREFIX schema: <https://schema.org/>
 GENERATE {
     <region/gcloud/{?region}> a cocoon:Region;
         rdfs:label ?region ;
-        cocoon:hasProvider cocoon:gcloud;
-        cocoon:city ?city;
-        schema:geo [
-            a schema:GeoCoordinates;
-            schema:latitude ?lat ;
-            schema:longitude ?long ;
-            schema:addressCountry ?country
-        ] .
+        cocoon:hasProvider cocoon:gcloud .
+    GENERATE {
+        <region/gcloud/{?region}>
+            cocoon:city ?city;
+            schema:geo [
+                a schema:GeoCoordinates;
+                schema:latitude ?lat ;
+                schema:longitude ?long ;
+                schema:addressCountry ?country
+            ] .
+    }
+    WHERE {
+        FILTER( BOUND(?city) ) 
+        # location is not null
+    } .
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/downlink_latency.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/region_geo_coord.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
 WHERE {
     BIND(fun:JSONPath(?qos, '$.location.city' ) AS ?city)

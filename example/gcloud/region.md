@@ -51,6 +51,9 @@ See live https://jqplay.org/s/aajIEQqBjy
 
 Even when there is no location data, we still keep the region for correct mapping to cloudharmony data.
 
-Run [queries](../sparql-generate/gcloud/region_geo_coord.rqg)
-in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/region_geo_coord.ttl)
+```
+java -jar sparql-generate-jena.jar --output result/gcloud/region_geo_coord.ttl --query-file gcloud/region_geo_coord.rqg --log-level ERROR
+```
+Query: [region_geo_coord.rqg](../sparql-generate/gcloud/region_geo_coord.rqg)
+
+Result: [region_geo_coord.ttl](../sparql-generate/result/gcloud/region_geo_coord.ttl)

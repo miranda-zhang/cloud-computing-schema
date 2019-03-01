@@ -11,20 +11,103 @@ PREFIX qudt: <http://qudt.org/1.1/schema/qudt#>
 PREFIX qudt-unit: <http://qudt.org/1.1/vocab/unit#>
 
 GENERATE {
-    <{?type}/{?service_type}/gcloud/{?region}/{?zone}/> a ?FeatureOfInterest ;
-        cocoon:hasProvider cocoon:gcloud;
-        ssn:hasProperty ?property;
-        cocoon:inRegion <region/gcloud/{?region}> ;
-        cocoon:inZone ?zone .
+    GENERATE {
+        <QuanlityOfService/DownlinkSpeed/{?min_size}/{?max_size}/KB> a cocoon:DownlinkSpeed;
+            cocoon:transferedFileSizeMin [
+                a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?min_size;
+                schema:unitText "KB";
+                schema:unitCode "2P";
+            ];
+            cocoon:transferedFileSizeMax [
+                a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?max_size;
+                schema:unitText "KB";
+                schema:unitCode "2P";
+            ]
+    }
+    WHERE{
+        FILTER (?type = "downlink")
+    }.
 
-    <measurement/{?type}/{?service_type}/gcloud/{?region}/{?zone}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
-        sosa:madeBySensor <device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-        sosa:hasFeatureOfInterest  <{?type}/{?service_type}/gcloud/{?region}/{?zone}/> ;
-        sosa:hasResult [
-            a qudt:QuantityValue ;
-            qudt:numericValue ?average ;
-            qudt:unit qudt-unit:MegabitsPerSecond ] ;
-        sosa:resultTime ?dateTime .
+    <QuanlityOfService/Latency> a cocoon:Latency;
+    <QuanlityOfService/DNSQueryLatency> a cocoon:DNSQueryLatency;
+
+    GENERATE {
+        <{?type_slug}/ComputeService/gcloud/{?region}/{?zone}/> a cocoon:ComputeService ;
+            cocoon:hasProvider cocoon:gcloud;
+            ssn:hasProperty ?property_url;
+            cocoon:inRegion <region/gcloud/{?region}> ;
+            cocoon:inZone ?zone .
+
+        <Measurement/{?type_slug}/ComputeService/gcloud/{?region}/{?zone}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+            sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+            sosa:hasFeatureOfInterest  <{?type_slug}/ComputeService/gcloud/{?region}/{?zone}/> ;
+            sosa:hasResult [
+                a qudt:QuantityValue ;
+                qudt:numericValue ?average ;
+                qudt:unit ?unit ] ;
+            sosa:resultTime ?dateTime .
+    }
+    WHERE{
+        FILTER (service_type = "compute")        
+    }.
+
+    GENERATE {
+        <{?type_slug}/StorageService/gcloud/{?region}> a cocoon:StorageService ;
+            cocoon:hasProvider cocoon:gcloud;
+            ssn:hasProperty ?property_url;
+            cocoon:inRegion <region/gcloud/{?region}> .
+
+        <Measurement/{?type_slug}/StorageService/gcloud/{?region}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+            sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+            sosa:hasFeatureOfInterest  <{?type_slug}/StorageService/gcloud/{?region}/> ;
+            sosa:hasResult [
+                a qudt:QuantityValue ;
+                qudt:numericValue ?average ;
+                qudt:unit ?unit ] ;
+            sosa:resultTime ?dateTime .
+    }
+    WHERE{
+        FILTER (service_type = "storage")
+    }.
+
+    GENERATE {
+        <{?type_slug}/DNSService/gcloud/> a  cocoon:CDNService ;
+            cocoon:hasProvider cocoon:gcloud;
+            ssn:hasProperty ?property_url.
+
+        <Measurement/{?type_slug}/CDNService/gcloud/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+            sosa:madeBySensor <device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+            sosa:hasFeatureOfInterest  <{?type_slug}/CDNService/gcloud> ;
+            sosa:hasResult [
+                a qudt:QuantityValue ;
+                qudt:numericValue ?average ;
+                qudt:unit ?unit ] ;
+            sosa:resultTime ?dateTime .
+    }
+    WHERE{
+        FILTER (service_type = "cdn")
+    }.
+
+    GENERATE {
+        <{?type_slug}/DNSService/gcloud/> a  cocoon:DNSService ;
+            cocoon:hasProvider cocoon:gcloud;
+            ssn:hasProperty ?property_url.
+
+        <Measurement/{?type_slug}/DNSService/gcloud/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+            sosa:madeBySensor <device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+            sosa:hasFeatureOfInterest  <{?type_slug}/DNSService/gcloud> ;
+            sosa:hasResult [
+                a qudt:QuantityValue ;
+                qudt:numericValue ?average ;
+                qudt:unit ?unit ] ;
+            sosa:resultTime ?dateTime .
+    }
+    WHERE{
+        FILTER (service_type = "dns")
+    }.
+
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/downlink_latency.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
@@ -36,6 +119,21 @@ WHERE {
     BIND( xsd:double( fun:JSONPath(?qos, '$.average') ) AS ?average)
     BIND( fun:JSONPath(?qos, '$.completion_time') AS ?completion_time)
     BIND( xsd:dateTime( ?completion_time ) AS ?dateTime)
-    BIND ( IF( ?service_type = "compute" , cocoon:ComputeService , cocoon:StorageService ) AS ?FeatureOfInterest )
-    BIND ( IF( ?type = "downlink" , cocoon:DownlinkSpeed , cocoon:Latency ) AS ?property )
+    BIND( xsd:interger(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)
+    BIND( xsd:interger(fun:JSONPath(?qos, '$.max_size')) AS ?max_size)
+    BIND ( IF( ?type = "downlink" , qudt-unit:MegabitsPerSecond , unit:MilliSecond ) AS ?unit )
+    BIND (
+        COALESCE(
+            IF(?type = "downlink", <QuanlityOfService/DownlinkSpeed/{?min_size}/{?max_size}/KB> , 1/0),
+            IF(?type = "latency", <QuanlityOfService/Latency>, 1/0),
+            <QuanlityOfService/DNSQueryLatency> # assume "dns"
+        ) AS ?property_url
+    )
+    BIND (
+        COALESCE(
+            IF(?type = "downlink", "DownlinkSpeed" , 1/0),
+            IF(?type = "latency", "Latency", 1/0),
+            "DNSQueryLatency" # assume "dns"
+        ) AS ?type_slug
+    )
 }

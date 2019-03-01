@@ -16,17 +16,23 @@ Run jq query on [data](#collect-data)
 [
     .[] | select(.[1].status=="success") | {
         "provider_id": .[0].provider_id,
-        "region": .[0].region,
         "service": .[0].service,
         "service_type": .[0].service_type,
-        "zone": .[0].subregion | split("-")[2],
         "type": .[0].type,
         "average": .[1].mean,
-        "completion_time": .[2].completion_time
+        "completion_time": .[2].completion_time,
+        "region": .[0].region,
+        "zone":(
+            if (.[0].subregion != null) then
+                .[0].subregion | split("-")[2] 
+            else null end
+        ),
+        "max_size": .[0].max_size,
+        "min_size": .[0].min_size
     }
 ]
 ```
-See live https://jqplay.org/s/LsE9srR2Cv
+See live https://jqplay.org/s/6ofFUMwAaJ
 
 [Cached Result.](../../jq/gcloud/downlink_latency.json)
 
