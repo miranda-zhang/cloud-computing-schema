@@ -131,7 +131,7 @@ var speedtest=(function() {
     var progressHTML = $('#progress');
     var resultsHTML = $('#results');
     cb=function(method, args) {
-        console.log(method+"("+args.length+"):"+JSON.stringify(args));
+        // console.log(method+"("+args.length+"):"+JSON.stringify(args));
         if (method=="started"){
             $("#tests").append(JSON.stringify(args));
         }else if (method=="progress"){
