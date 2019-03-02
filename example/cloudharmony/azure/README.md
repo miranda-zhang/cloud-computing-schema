@@ -6,6 +6,6 @@ Download [test.html](test.html) [speedtest-azure.js](speedtest-azure.js)
 
 View test.html in browser, a live demo is also available here.
 
-Cached result: [0.json](0.json)
+Cached result: [0.json](data/0.json)
 
 # Map to Ontology

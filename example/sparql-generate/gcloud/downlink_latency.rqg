@@ -97,19 +97,22 @@ WHERE {
     BIND( xsd:double( fun:JSONPath(?qos, '$.average') ) AS ?average)
     BIND( fun:JSONPath(?qos, '$.completion_time') AS ?completion_time)
     BIND( xsd:dateTime( ?completion_time ) AS ?dateTime)
-    BIND( xsd:interger(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)
-    BIND( xsd:interger(fun:JSONPath(?qos, '$.max_size')) AS ?max_size)
+    BIND( xsd:string(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)
+    BIND( xsd:string(fun:JSONPath(?qos, '$.max_size')) AS ?max_size)
     BIND ( IF( ?type = "downlink" , qudt-unit:MegabitsPerSecond , qudt-unit:MilliSecond ) AS ?unit )
+    BIND( CONCAT(CONCAT(CONCAT(CONCAT("DownlinkSpeed",?min_size),"-"),?max_size),"KB") AS ?downlinkMin_maxKB )
+    BIND( IRI(CONCAT("QuanlityOfService/",?downlinkMin_maxKB)) AS ?qos_downlink_iri )
+    # <QuanlityOfService/DownlinkSpeed{?min_size}-{?max_size}KB>
     BIND (
         COALESCE(
-            IF(?type = "downlink", <QuanlityOfService/DownlinkSpeed/{?min_size}/{?max_size}/KB> , 1/0),
+            IF(?type = "downlink", ?qos_downlink_iri , 1/0),
             IF(?type = "latency", <QuanlityOfService/Latency>, 1/0),
             <QuanlityOfService/DNSQueryLatency> # assume "dns"
         ) AS ?property_url
     )
     BIND (
         COALESCE(
-            IF(?type = "downlink", "DownlinkSpeed" , 1/0),
+            IF(?type = "downlink", ?downlinkMin_maxKB , 1/0),
             IF(?type = "latency", "Latency", 1/0),
             "DNSQueryLatency" # assume "dns"
         ) AS ?type_slug

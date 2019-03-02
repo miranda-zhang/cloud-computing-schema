@@ -32,7 +32,7 @@ Run jq query on [data](#collect-data)
     }
 ]
 ```
-See live https://jqplay.org/s/6ofFUMwAaJ
+See live https://jqplay.org/s/A5tzRAzOnW
 
 [Cached Result.](../../jq/gcloud/downlink_latency.json)
 

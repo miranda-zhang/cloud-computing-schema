@@ -42,7 +42,7 @@ The above information can be captured with this [device.ttl](../sparql-generate/
 
 ## Uplink
 I have [problem with API uplink option](https://github.com/cloudharmony/network/issues/1),
-Javascript tag also failed to get results.
+Javascript tag also failed to get results. Some commands I tired, or used to investigate the issue:
 
     ./run.sh --test uplink --test_endpoint http://us-central1.gce.cloudharmony.net/probe --test_service_id google:compute --verbose --test_files_dir ../web-probe/ --verbose --tcp_file "small"
 
@@ -52,7 +52,7 @@ Javascript tag also failed to get results.
 Alternativly, browser automation with [selenium](selenium/) is possible.
 
 ## Test Types
-The tests properties can be described using the cocoon:QuanlityOfService class.
+The tests properties can be described using the `cocoon:QuanlityOfService` class.
 The full example is available here: [qos_property](../sparql-generate/result/qos_property.ttl)
 
 # Old Data
