@@ -8,8 +8,9 @@ PREFIX schema: <https://schema.org/>
 GENERATE {
     <Region/gcloud/{?region}> a cocoon:Region;
         rdfs:label ?region ;
-        cocoon:hasProvider cocoon:gcloud .
+        cocoon:hasProvider cocoon:gcloud ;
         cocoon:city ?city;
+        cocoon:state ?state;
         schema:geo [
             a schema:GeoCoordinates;
             schema:latitude ?lat ;

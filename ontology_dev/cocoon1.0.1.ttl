@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/cocoon/v1.0#> .
+@prefix : <https://w3id.org/cocoon/v1.0.1#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix gr: <http://purl.org/goodrelations/v1#> .
@@ -11,15 +11,15 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix cocoon: <https://w3id.org/cocoon/v1.0#> .
+@prefix cocoon: <https://w3id.org/cocoon/v1.0.1#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/cocoon/v1.0> .
+@base <https://w3id.org/cocoon/v1.0.1> .
 
-<https://w3id.org/cocoon/v1.0> rdf:type owl:Ontology ;
+<https://w3id.org/cocoon/v1.0.1> rdf:type owl:Ontology ;
                                 cc:attributionURL <http://w3id.org/cocoon/v1.0> ;
                                 dcterms:created "2012-10-01"^^xsd:date ;
-                                dcterms:creator cocoon:mirandazhangqian ;
+                                dcterms:creator cocoon:MirandaZhangQian ;
                                 dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
                                 dcterms:issued "2019-02-04"^^xsd:date ;
                                 dcterms:license <http://creativecommons.org/licenses/by-nc/4.0/> ;
@@ -30,8 +30,8 @@
                                 vann:preferredNamespaceUri "https://w3id.org/cocoon/v1.0#" ;
                                 rdfs:label "Cloud Computing Services Ontology"@en ;
                                 rdfs:seeAlso <https://github.com/miranda-zhang/cloud-computing-schema> ;
-                                owl:versionInfo 1.0 ;
-                                schema:creator cocoon:mirandazhangqian .
+                                owl:versionInfo 1.0.1 ;
+                                schema:creator cocoon:MirandaZhangQian .
 
 #################################################################
 #    Annotation properties
@@ -960,17 +960,17 @@ cocoon:Region rdf:type owl:Class ;
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:city ;
-                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:string
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:continent ;
-                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:string
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:state ;
-                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:string
                               ] .
 
@@ -1142,7 +1142,7 @@ cocoon:TB rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/cocoon/v1.0#azure
-cocoon:azure rdf:type owl:NamedIndividual ,
+cocoon:Azure rdf:type owl:NamedIndividual ,
                       gr:BusinessEntity ;
              gr:name "Microsoft Azure Cloud" ;
              rdfs:label "Azure"@en ;
@@ -1150,14 +1150,14 @@ cocoon:azure rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/cocoon/v1.0#gceu
-cocoon:gceu rdf:type owl:NamedIndividual ,
+cocoon:GCEU rdf:type owl:NamedIndividual ,
                      cocoon:UnitOfMeasure ;
             rdfs:comment "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ's to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
             rdfs:label "Google Compute Engine Unit"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0#gcloud
-cocoon:gcloud rdf:type owl:NamedIndividual ,
+cocoon:Gcloud rdf:type owl:NamedIndividual ,
                        gr:BusinessEntity ;
               gr:name "Google Cloud" ;
               rdfs:label "Gcloud"@en ;
@@ -1165,7 +1165,7 @@ cocoon:gcloud rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/cocoon/v1.0#mirandazhangqian
-cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
+cocoon:MirandaZhangQian rdf:type owl:NamedIndividual ,
                                  foaf:Person ,
                                  schema:Person ;
                         foaf:givenname "Qian" ;
@@ -1179,21 +1179,21 @@ cocoon:mirandazhangqian rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/cocoon/v1.0#1TB
-<https://w3id.org/cocoon/v1.0#1TB> rdf:type owl:NamedIndividual ,
+cocoon:1TB rdf:type owl:NamedIndividual ,
                                             cocoon:QuantityOfThings ;
                                    cocoon:hasUnitOfMeasurement cocoon:GB ;
                                    cocoon:numericValue "1024"^^xsd:nonNegativeInteger .
 
 
 ###  https://w3id.org/cocoon/v1.0#10TB
-<https://w3id.org/cocoon/v1.0#10TB> rdf:type owl:NamedIndividual ,
+cocoon:10TB rdf:type owl:NamedIndividual ,
                                              cocoon:QuantityOfThings ;
                                     cocoon:hasUnitOfMeasurement cocoon:GB ;
                                     cocoon:numericValue "10240"^^xsd:nonNegativeInteger .
 
 
 ###  https://w3id.org/cocoon/v1.0#90TB
-<https://w3id.org/cocoon/v1.0#90TB> rdf:type owl:NamedIndividual ,
+cocoon:90TB rdf:type owl:NamedIndividual ,
                                              cocoon:QuantityOfThings ;
                                     cocoon:hasUnitOfMeasurement cocoon:GB ;
                                     cocoon:numericValue "92160"^^xsd:nonNegativeInteger .

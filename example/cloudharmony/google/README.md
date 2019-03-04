@@ -1,4 +1,4 @@
-# Google Platform Network Test
+# Google Platform Network QoS
 43 services: http://cloudharmony.com/speedtest-for-google
 
 # Collect Data
@@ -43,8 +43,3 @@ java -jar sparql-generate-jena.jar --output result/gcloud/downlink_latency.ttl -
 Query: [downlink_latency.rqg](../../sparql-generate/gcloud/downlink_latency.rqg)
 
 Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/downlink_latency.ttl)
-
-# Future Work
-The following schema.org extensions maybe helpfull, but can't be used until it made into core.
-1. https://pending.schema.org/geospatiallyWithin
-2. https://pending.schema.org/QuantitativeValueDistribution

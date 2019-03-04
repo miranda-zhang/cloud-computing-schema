@@ -1,4 +1,5 @@
 # Data Mapping: Microsoft Azure Cloud Regions
+https://azure.microsoft.com/en-au/global-infrastructure/regions/
 ## Getting Input
 Data: original json for Azure Cloud
 https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?culture=en-au&discount=mosp
@@ -38,7 +39,7 @@ Run jq query on [data collected via CloudHarmony](../cloudharmony/azure/README.m
         "region": .region
     }
 ] | unique
-
+```
 See live https://jqplay.org/s/8Hd1vD-PmF
 
 [Cached Result.](../jq/azure/region_geo_coord.json)
@@ -48,4 +49,4 @@ java -jar sparql-generate-jena.jar --output result/gcloud/region_geo_coord.ttl -
 ```
 Query: [region_geo_coord.rqg](../sparql-generate/azure/region_geo_coord.rqg)
 
-Result: [region_geo_coord.ttl](../sparql-generate/result/gcloud/region_geo_coord.ttl)
+Result: [region_geo_coord.ttl](../sparql-generate/result/azure/region_geo_coord.ttl)

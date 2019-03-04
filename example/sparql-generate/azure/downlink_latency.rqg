@@ -12,15 +12,15 @@ PREFIX qudt-unit: <http://qudt.org/1.1/vocab/unit#>
 
 GENERATE {
     GENERATE {
-        <{?type_slug}/ComputeService/gcloud/{?region}-{?zone}/> a cocoon:ComputeService ;
-            cocoon:hasProvider cocoon:gcloud;
+        <{?type_slug}/{?service_type_slug}/Azure/{?region}{?optional_zone}> a ?service_type_class ;
+            cocoon:hasProvider cocoon:Azure;
             ssn:hasProperty ?property_url;
-            cocoon:inRegion <Region/gcloud/{?region}> ;
+            cocoon:inRegion <Region/Azure/{?region}> ;
             cocoon:inZone ?zone .
 
-        <Measurement/{?type_slug}/ComputeService/gcloud/{?region}-{?zone}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+        <Measurement/{?type_slug}/{?service_type_slug}/Azure/{?region}{?optional_zone}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
             sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-            sosa:hasFeatureOfInterest  <{?type_slug}/ComputeService/gcloud/{?region}-{?zone}/> ;
+            sosa:hasFeatureOfInterest  <{?type_slug}/{?service_type_slug}/Azure/{?region}{?optional_zone}> ;
             sosa:hasResult [
                 a qudt:QuantityValue ;
                 qudt:numericValue ?average ;
@@ -28,36 +28,19 @@ GENERATE {
             sosa:resultTime ?dateTime .
     }
     WHERE{
-        FILTER (?service_type = "compute")        
+        FILTER (?service_type = "compute" || ?service_type = "storage") 
+        BIND ( IF( ?service_type = "compute", "ComputeService", "StorageService") AS ?service_type_slug )
+        BIND ( IF( ?service_type = "compute", cocoon:ComputeService, cocoon:StorageService) AS ?service_type_class )  
     }.
 
     GENERATE {
-        <{?type_slug}/StorageService/gcloud/{?region}> a cocoon:StorageService ;
-            cocoon:hasProvider cocoon:gcloud;
-            ssn:hasProperty ?property_url;
-            cocoon:inRegion <Region/gcloud/{?region}> .
-
-        <Measurement/{?type_slug}/StorageService/gcloud/{?region}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
-            sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-            sosa:hasFeatureOfInterest  <{?type_slug}/StorageService/gcloud/{?region}/> ;
-            sosa:hasResult [
-                a qudt:QuantityValue ;
-                qudt:numericValue ?average ;
-                qudt:unit ?unit ] ;
-            sosa:resultTime ?dateTime .
-    }
-    WHERE{
-        FILTER (?service_type = "storage")
-    }.
-
-    GENERATE {
-        <{?type_slug}/{?service_type_slug}/gcloud/> a  ?service_type_class ;
-            cocoon:hasProvider cocoon:gcloud;
+        <{?type_slug}/{?service_type_slug}/Azure> a  ?service_type_class ;
+            cocoon:hasProvider cocoon:Azure;
             ssn:hasProperty ?property_url.
 
-        <Measurement/{?type_slug}/{?service_type_slug}/gcloud/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+        <Measurement/{?type_slug}/{?service_type_slug}/Azure/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
             sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-            sosa:hasFeatureOfInterest  <{?type_slug}/{?service_type_slug}/gcloud> ;
+            sosa:hasFeatureOfInterest  <{?type_slug}/{?service_type_slug}/Azure> ;
             sosa:hasResult [
                 a qudt:QuantityValue ;
                 qudt:numericValue ?average ;
@@ -69,9 +52,8 @@ GENERATE {
         BIND ( IF( ?service_type = "dns", "DNSService", "CDNService") AS ?service_type_slug )
         BIND ( IF( ?service_type = "dns", cocoon:DNSService, cocoon:CDNService) AS ?service_type_class )
     }.
-
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/downlink_latency.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/downlink_latency.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
 WHERE {
     BIND( fun:JSONPath(?qos, '$.region' ) AS ?region)
@@ -101,4 +83,5 @@ WHERE {
             "DNSQueryLatency" # assume "dns"
         ) AS ?type_slug
     )
+    BIND( IF(BOUND(?zone),CONCAT("-",?zone), "") AS ?optional_zone)
 }
