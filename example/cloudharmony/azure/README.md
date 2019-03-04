@@ -38,8 +38,8 @@ See live https://jqplay.org/s/ZdLvSR_Fyj
 
 # SPARQL-Generate
 ```
-java -jar sparql-generate-jena.jar --output result/gcloud/downlink_latency.ttl --query-file gcloud/downlink_latency.rqg --log-level ERROR
+java -jar sparql-generate-jena.jar --output result/azure/downlink_latency.ttl --query-file azure/downlink_latency.rqg --log-level ERROR
 ```
 Query: [downlink_latency.rqg](../../sparql-generate/azure/downlink_latency.rqg)
 
-Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/downlink_latency.ttl)
+Result: [downlink_latency.ttl](../../sparql-generate/result/azure/downlink_latency.ttl)

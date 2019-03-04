@@ -43,3 +43,8 @@ java -jar sparql-generate-jena.jar --output result/gcloud/downlink_latency.ttl -
 Query: [downlink_latency.rqg](../../sparql-generate/gcloud/downlink_latency.rqg)
 
 Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/downlink_latency.ttl)
+
+# Uplink Data
+See [selenium](../selenium) about how to collect the data.
+
+Query: [uplink.rqg](../../sparql-generate/gcloud/uplink.rqg)

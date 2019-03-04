@@ -1,0 +1,35 @@
+[{
+    "size": {
+        "lower": {
+            "unit": "KB",
+            "value": 256
+        },
+        "upper": {
+            "unit": "MB",
+            "value": 10
+        }
+    },
+    "uplink": {
+        "unit": "Mb/s",
+        "value": "42.74"
+    },
+    "subregion": null,
+    "completion_time": "2019-03-04T09:16:01.142388Z"
+},{
+    "size": {
+        "lower": {
+            "unit": "KB",
+            "value": 1
+        },
+        "upper": {
+            "unit": "KB",
+            "value": 128
+        }
+    },
+    "uplink": {
+        "unit": "Mb/s",
+        "value": "6.08"
+    },
+    "subregion": null,
+    "completion_time": "2019-03-04T09:16:01.220504Z"
+},

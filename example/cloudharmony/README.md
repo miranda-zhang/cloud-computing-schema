@@ -59,3 +59,7 @@ The full example is available here: [qos_property](../sparql-generate/result/qos
 The [Javascript method](#javascript-solution) wasn't available in 2014, that's when the old data were collected.
 So it's different from the current data.
 See [Old Data Archive](old_data_archive/).
+
+# Alternatives
+http://www.azurespeed.com provide tests for Azure services only.
+We choose to use CloudHarmony because it features more providers.
