@@ -17,7 +17,7 @@
 @base <https://w3id.org/cocoon/v1.0.1> .
 
 <https://w3id.org/cocoon/v1.0.1> rdf:type owl:Ontology ;
-                                cc:attributionURL <http://w3id.org/cocoon/v1.0> ;
+                                cc:attributionURL <http://w3id.org/cocoon/v1.0.1> ;
                                 dcterms:created "2012-10-01"^^xsd:date ;
                                 dcterms:creator cocoon:MirandaZhangQian ;
                                 dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
@@ -30,7 +30,7 @@
                                 vann:preferredNamespaceUri "https://w3id.org/cocoon/v1.0#" ;
                                 rdfs:label "Cloud Computing Services Ontology"@en ;
                                 rdfs:seeAlso <https://github.com/miranda-zhang/cloud-computing-schema> ;
-                                owl:versionInfo 1.0.1 ;
+                                owl:versionInfo "1.0.1"@en ;
                                 schema:creator cocoon:MirandaZhangQian .
 
 #################################################################

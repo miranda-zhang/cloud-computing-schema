@@ -29,6 +29,7 @@ def find_test_data(nth, sec_to_wait, output_file):
                 "#wrapper > main > div > section > table > thead > tr:nth-child(1) > th:nth-child("+str(2+nth)+")")
             subregion = driver.find_element_by_css_selector(
                 "#wrapper > main > div > section > table > tbody > tr")
+            uplink = test_data.get_attribute("data-metric")
         except NoSuchElementException:
             if (sec_to_wait < 8): # skip this test
                 break
@@ -39,8 +40,7 @@ def find_test_data(nth, sec_to_wait, output_file):
             test = {}
             test["subregion"] = subregion.get_attribute("data-subregion")
             test["size"] = parseSize(header.text)
-            test["uplink"] = {"value": test_data.get_attribute(
-                "data-metric"), "unit": "Mb/s"}
+            test["uplink"] = {"value": uplink, "unit": "Mb/s"}
             test["completion_time"]=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%fZ")
             with open(output_file, "a") as myfile:
                 myfile.write(json.dumps(test, indent = 4)+",")
