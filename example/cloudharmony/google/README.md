@@ -4,11 +4,11 @@
 # Collect Data
 Download [test.html](test.html) [speedtest-googlecompute.js](speedtest-googlecompute.js) 
 
-View test.html in browser, a live demo is also available here.
+View test.html in browser, a live demo is also [available here](https://miranda-zhang.github.io/cloud-computing-schema/cloudharmony/google/test.html).
 
 Cached result: [2.json](data/2.json)
 
-How to process region related data are documented in  [the regions page](../../gcloud/region.md#cloudHarmony-data).
+How to process region related data is documented in  [the regions page](../../gcloud/region.md#cloudHarmony-data).
 
 # Reconstruct JSON with Only Key Parameters
 Run jq query on [data](#collect-data)

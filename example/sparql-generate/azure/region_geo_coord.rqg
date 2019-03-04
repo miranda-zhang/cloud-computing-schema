@@ -1,0 +1,30 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
+
+GENERATE {
+    <Region/gcloud/{?region}> a cocoon:Region;
+        rdfs:label ?region ;
+        cocoon:hasProvider cocoon:gcloud .
+        cocoon:city ?city;
+        schema:geo [
+            a schema:GeoCoordinates;
+            schema:latitude ?lat ;
+            schema:longitude ?long ;
+            schema:addressCountry ?country
+        ] .
+
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/region_geo_coord.json> AS ?source
+ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
+WHERE {
+    BIND(fun:JSONPath(?qos, '$.location.city' ) AS ?city)
+    BIND(fun:JSONPath(?qos, '$.location.country' ) AS ?country)
+    BIND(fun:JSONPath(?qos, '$.location.lat' ) AS ?lat)
+    BIND(fun:JSONPath(?qos, '$.location.long' ) AS ?long)
+    BIND(fun:JSONPath(?qos, '$.location.state' ) AS ?state)
+    BIND(fun:JSONPath(?qos, '$.region' ) AS ?region)
+}

@@ -1,0 +1,317 @@
+[
+    {
+      "location": {
+        "city": "Amsterdam",
+        "country": "NL",
+        "lat": 52.35,
+        "long": 4.916667
+      },
+      "region": "eu-west"
+    },
+    {
+      "location": {
+        "city": "Beijing",
+        "country": "CN",
+        "lat": 30.822638,
+        "long": 114.047944
+      },
+      "region": "china-north"
+    },
+    {
+      "location": {
+        "city": "Beijing",
+        "country": "CN",
+        "lat": 30.822638,
+        "long": 114.047944
+      },
+      "region": "china-north2"
+    },
+    {
+      "location": {
+        "city": "Busan",
+        "country": "KR",
+        "lat": 37.1525,
+        "long": 127.095
+      },
+      "region": "korea-south"
+    },
+    {
+      "location": {
+        "city": "Canberra",
+        "country": "AU",
+        "lat": -35.27603,
+        "long": 149.13435
+      },
+      "region": "australia-central"
+    },
+    {
+      "location": {
+        "city": "Canberra",
+        "country": "AU",
+        "lat": -35.27603,
+        "long": 149.13435
+      },
+      "region": "australia-central2"
+    },
+    {
+      "location": {
+        "city": "Cardiff",
+        "country": "GB",
+        "lat": 51.5,
+        "long": -3.2
+      },
+      "region": "uk-west"
+    },
+    {
+      "location": {
+        "city": "Chennai",
+        "country": "IN",
+        "lat": 13.083333,
+        "long": 80.283333
+      },
+      "region": "india-south"
+    },
+    {
+      "location": {
+        "city": "Dublin",
+        "country": "IE",
+        "lat": 53.3330556,
+        "long": -6.2488889
+      },
+      "region": "eu-north"
+    },
+    {
+      "location": {
+        "city": "Hong Kong",
+        "country": "HK",
+        "lat": 22.2833333,
+        "long": 114.15
+      },
+      "region": "asia-east"
+    },
+    {
+      "location": {
+        "city": "London",
+        "country": "GB",
+        "lat": 51.514125,
+        "long": -0.093689
+      },
+      "region": "uk-south"
+    },
+    {
+      "location": {
+        "city": "Marseille",
+        "country": "FR",
+        "lat": 43.285413,
+        "long": 5.37606
+      },
+      "region": "france-south"
+    },
+    {
+      "location": {
+        "city": "Melbourne",
+        "country": "AU",
+        "lat": -37.813938,
+        "long": 144.963425
+      },
+      "region": "australia-southeast"
+    },
+    {
+      "location": {
+        "city": "Mumbai",
+        "country": "IN",
+        "lat": 18.975,
+        "long": 72.825833
+      },
+      "region": "india-west"
+    },
+    {
+      "location": {
+        "city": "Osaka",
+        "country": "JP",
+        "lat": 34.516855,
+        "long": 135.562978
+      },
+      "region": "japan-west"
+    },
+    {
+      "location": {
+        "city": "Paris",
+        "country": "FR",
+        "lat": 48.866667,
+        "long": 2.333333
+      },
+      "region": "france-central"
+    },
+    {
+      "location": {
+        "city": "Pune",
+        "country": "IN",
+        "lat": 18.533333,
+        "long": 73.866667
+      },
+      "region": "india-central"
+    },
+    {
+      "location": {
+        "city": "Quebec City",
+        "country": "CA",
+        "lat": 46.8167,
+        "long": -71.2167
+      },
+      "region": "canada-east"
+    },
+    {
+      "location": {
+        "city": "Saitama",
+        "country": "JP",
+        "lat": 35.895534,
+        "long": 139.67747
+      },
+      "region": "japan-east"
+    },
+    {
+      "location": {
+        "city": "Sao Paulo",
+        "country": "BR",
+        "lat": -23.53,
+        "long": -46.63
+      },
+      "region": "brazil-south"
+    },
+    {
+      "location": {
+        "city": "Seoul",
+        "country": "KR",
+        "lat": 37.5985,
+        "long": 126.9783
+      },
+      "region": "korea-central"
+    },
+    {
+      "location": {
+        "city": "Shanghai",
+        "country": "CN",
+        "lat": 31.045556,
+        "long": 121.399722
+      },
+      "region": "china-east"
+    },
+    {
+      "location": {
+        "city": "Shanghai",
+        "country": "CN",
+        "lat": 31.045556,
+        "long": 121.399722
+      },
+      "region": "china-east2"
+    },
+    {
+      "location": {
+        "city": "Singapore",
+        "country": "SG",
+        "lat": 1.2930556,
+        "long": 103.8558333
+      },
+      "region": "asia-southeast"
+    },
+    {
+      "location": {
+        "city": "Sydney",
+        "country": "AU",
+        "lat": -33.861481,
+        "long": 151.205475
+      },
+      "region": "australia-east"
+    },
+    {
+      "location": {
+        "city": "Toronto",
+        "country": "CA",
+        "lat": 43.666667,
+        "long": -79.416667
+      },
+      "region": "canada-central"
+    },
+    {
+      "location": {
+        "city": "Ashburn",
+        "country": "US",
+        "state": "VA",
+        "lat": 39.0708333,
+        "long": -77.48
+      },
+      "region": "us-east"
+    },
+    {
+      "location": {
+        "city": "Ashburn",
+        "country": "US",
+        "state": "VA",
+        "lat": 39.0708333,
+        "long": -77.48
+      },
+      "region": "us-east2"
+    },
+    {
+      "location": {
+        "city": "Cheyenne",
+        "country": "US",
+        "state": "WY",
+        "lat": 41.14,
+        "long": -104.8197222
+      },
+      "region": "us-westcentral"
+    },
+    {
+      "location": {
+        "city": "Chicago",
+        "country": "US",
+        "state": "IL",
+        "lat": 41.85,
+        "long": -87.65
+      },
+      "region": "us-northcentral"
+    },
+    {
+      "location": {
+        "city": "Quincy",
+        "country": "US",
+        "state": "WA",
+        "lat": 47.2344444,
+        "long": -119.8513889
+      },
+      "region": "us-west2"
+    },
+    {
+      "location": {
+        "city": "San Antonio",
+        "country": "US",
+        "state": "TX",
+        "lat": 29.4238889,
+        "long": -98.4933333
+      },
+      "region": "us-southcentral"
+    },
+    {
+      "location": {
+        "city": "San Francisco",
+        "country": "US",
+        "state": "CA",
+        "lat": 37.775,
+        "long": -122.4183333
+      },
+      "region": "us-west"
+    },
+    {
+      "location": {
+        "city": "West Des Moines",
+        "country": "US",
+        "state": "IA",
+        "lat": 41.5772222,
+        "long": -93.7111111
+      },
+      "region": "us-central"
+    }
+  ]
+  

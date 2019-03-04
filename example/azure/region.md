@@ -28,3 +28,24 @@ See example in [geonames_rdf](../geonames_rdf/azure/) directory.
 Run [queries](../sparql-generate/azure/region.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](../sparql-generate/result/azure/region.ttl)
+
+## CloudHarmony Data
+Run jq query on [data collected via CloudHarmony](../cloudharmony/azure/README.md#collect-data)
+```
+[
+    .[][0] | select(.region != null) | {
+        "location": .location,
+        "region": .region
+    }
+] | unique
+
+See live https://jqplay.org/s/8Hd1vD-PmF
+
+[Cached Result.](../jq/azure/region_geo_coord.json)
+
+```
+java -jar sparql-generate-jena.jar --output result/gcloud/region_geo_coord.ttl --query-file gcloud/region_geo_coord.rqg --log-level ERROR
+```
+Query: [region_geo_coord.rqg](../sparql-generate/azure/region_geo_coord.rqg)
+
+Result: [region_geo_coord.ttl](../sparql-generate/result/gcloud/region_geo_coord.ttl)

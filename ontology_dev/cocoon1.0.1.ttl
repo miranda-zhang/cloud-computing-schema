@@ -319,6 +319,10 @@ cocoon:numericValue rdf:type owl:DatatypeProperty .
 cocoon:specialRateType rdf:type owl:DatatypeProperty .
 
 
+###  https://w3id.org/cocoon/v1.0#state
+cocoon:state rdf:type owl:DatatypeProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -961,6 +965,11 @@ cocoon:Region rdf:type owl:Class ;
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:continent ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty cocoon:state ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:string
                               ] .
