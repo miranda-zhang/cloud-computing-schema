@@ -31,8 +31,8 @@ def find_test_data(nth, sec_to_wait, output_file):
             region = driver.find_element_by_css_selector(
                 "#wrapper > main > div > section > table > tbody > tr")
         except NoSuchElementException:
-            if (sec_to_wait < 8): # skip this test
-                break
+            if (sec_to_wait < 8):
+                break # skip this test
             else:
                 sec_to_wait = sec_to_wait*0.8
                 time.sleep(sec_to_wait)
@@ -135,6 +135,6 @@ azure_regions = [
 ]
 if not os.path.exists('azure'):
     os.makedirs('azure')
-# tests('http://cloudharmony.com/speedtest-uplink-for-azure:compute-', azure_regions, "azure/uplink.json")
+tests('http://cloudharmony.com/speedtest-uplink-for-azure:compute-', azure_regions, "azure/uplink.json")
 
 driver.quit()

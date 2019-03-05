@@ -24,7 +24,7 @@ GENERATE {
             sosa:hasResult [
                 a qudt:QuantityValue ;
                 qudt:numericValue ?average ;
-                qudt:unit ?unit ] ;
+                qudt-unit: ?unit ] ;
             sosa:resultTime ?dateTime .
     }
     WHERE{
@@ -43,7 +43,7 @@ GENERATE {
             sosa:hasResult [
                 a qudt:QuantityValue ;
                 qudt:numericValue ?average ;
-                qudt:unit ?unit ] ;
+                qudt-unit: ?unit ] ;
             sosa:resultTime ?dateTime .
     }
     WHERE{
@@ -61,7 +61,7 @@ GENERATE {
             sosa:hasResult [
                 a qudt:QuantityValue ;
                 qudt:numericValue ?average ;
-                qudt:unit ?unit ] ;
+                qudt-unit: ?unit ] ;
             sosa:resultTime ?dateTime .
     }
     WHERE{

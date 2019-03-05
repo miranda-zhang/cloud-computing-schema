@@ -40,7 +40,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east2-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  36.75e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:22:56.100Z"^^xsd:dateTime .
@@ -50,7 +50,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/us-central1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  482.17e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:29:01.987Z"^^xsd:dateTime .
@@ -60,7 +60,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DNSQueryLatency/DNSService/Gcloud> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  149.08e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:10:09.835Z"^^xsd:dateTime .
@@ -110,7 +110,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west4-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.64e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:27:25.026Z"^^xsd:dateTime .
@@ -127,7 +127,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/europe-west3-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  347.58e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:19:20.732Z"^^xsd:dateTime .
@@ -137,7 +137,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-southeast1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.99e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:23:44.620Z"^^xsd:dateTime .
@@ -160,7 +160,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/northamerica-northeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  110.19e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:28:20.688Z"^^xsd:dateTime .
@@ -177,7 +177,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/northamerica-northeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.59e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:28:34.612Z"^^xsd:dateTime .
@@ -213,7 +213,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-east2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  166.33e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:25:33.827Z"^^xsd:dateTime .
@@ -223,7 +223,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  4.22e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:24:15.195Z"^^xsd:dateTime .
@@ -239,7 +239,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-east1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.52e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:11:58.884Z"^^xsd:dateTime .
@@ -256,7 +256,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west3/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.64e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:28:07.926Z"^^xsd:dateTime .
@@ -284,7 +284,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/australia-southeast1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  308.12e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:09:49.447Z"^^xsd:dateTime .
@@ -301,7 +301,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/us-east1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  297.92e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:13:20.339Z"^^xsd:dateTime .
@@ -311,7 +311,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  188.34e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:23:54.906Z"^^xsd:dateTime .
@@ -352,7 +352,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-south1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  4.8e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:20:08.220Z"^^xsd:dateTime .
@@ -362,7 +362,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-east4-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  3.7e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:11:13.606Z"^^xsd:dateTime .
@@ -372,7 +372,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/us-east4-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  258.92e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:11:49.228Z"^^xsd:dateTime .
@@ -382,7 +382,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/asia-northeast1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  151.83e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:13:23.777Z"^^xsd:dateTime .
@@ -399,7 +399,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/europe-west2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  617.58e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:32:13.413Z"^^xsd:dateTime .
@@ -409,7 +409,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-west1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  138.47e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:33:52.592Z"^^xsd:dateTime .
@@ -426,7 +426,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-central1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  111.95e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:29:39.341Z"^^xsd:dateTime .
@@ -436,7 +436,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/CDNService/Gcloud> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  427.58e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:09:39.085Z"^^xsd:dateTime .
@@ -464,7 +464,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/europe-west2-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  311.75e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:15:15.267Z"^^xsd:dateTime .
@@ -481,7 +481,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.47e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:16:53.738Z"^^xsd:dateTime .
@@ -491,7 +491,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  21.13e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:18:05.890Z"^^xsd:dateTime .
@@ -514,7 +514,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west4/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.35e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:30:24.623Z"^^xsd:dateTime .
@@ -524,7 +524,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-west2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  23.43e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:37:53.227Z"^^xsd:dateTime .
@@ -534,7 +534,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  3.98e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:25:50.693Z"^^xsd:dateTime .
@@ -569,7 +569,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/europe-west3/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  628.17e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:26:56.126Z"^^xsd:dateTime .
@@ -585,7 +585,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/us-west2-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  203.92e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:15:26.007Z"^^xsd:dateTime .
@@ -601,7 +601,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/asia-east1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  203.17e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:25:44.533Z"^^xsd:dateTime .
@@ -624,7 +624,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-southeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.06e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:37:10.953Z"^^xsd:dateTime .
@@ -634,7 +634,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  9.63e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:16:40.254Z"^^xsd:dateTime .
@@ -650,7 +650,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/us-west2-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  199.08e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:18:17.100Z"^^xsd:dateTime .
@@ -660,7 +660,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-west1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.21e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:34:19.647Z"^^xsd:dateTime .
@@ -670,7 +670,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/australia-southeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  11.22e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:14:19.932Z"^^xsd:dateTime .
@@ -680,7 +680,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/us-central1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  240.83e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:10:22.948Z"^^xsd:dateTime .
@@ -708,7 +708,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/asia-east2-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  185.25e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:22:59.940Z"^^xsd:dateTime .
@@ -718,7 +718,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  11.42e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:12:27.276Z"^^xsd:dateTime .
@@ -728,7 +728,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  18.93e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:20:38.710Z"^^xsd:dateTime .
@@ -745,7 +745,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/europe-west1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  613.83e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:34:48.290Z"^^xsd:dateTime .
@@ -755,7 +755,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-south1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  12.67e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:20:00.518Z"^^xsd:dateTime .
@@ -765,7 +765,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east4-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  14.27e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:11:44.017Z"^^xsd:dateTime .
@@ -793,7 +793,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  240.65e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:24:32.887Z"^^xsd:dateTime .
@@ -817,7 +817,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/us-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  "611"^^xsd:double ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:36:10.583Z"^^xsd:dateTime .
@@ -848,7 +848,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/europe-west1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  328.92e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:16:05.760Z"^^xsd:dateTime .
@@ -858,7 +858,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.37e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:35:15.725Z"^^xsd:dateTime .
@@ -881,7 +881,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west4-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.17e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:26:43.998Z"^^xsd:dateTime .
@@ -891,7 +891,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/europe-north1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  361.33e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:17:01.259Z"^^xsd:dateTime .
@@ -901,7 +901,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-south1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  182.86e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:29:48.324Z"^^xsd:dateTime .
@@ -917,7 +917,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west2-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  8.03e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:15:09.096Z"^^xsd:dateTime .
@@ -927,7 +927,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/europe-west4-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  330.83e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:27:53.621Z"^^xsd:dateTime .
@@ -937,7 +937,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/us-west2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  476.33e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:37:33.725Z"^^xsd:dateTime .
@@ -955,28 +955,28 @@
         cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Gcloud/us-east4> ;
         cocoon:inZone       "a" .
 
-<https://w3id.org/cocoon/data/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A21%3A30.869Z>
-        a                          cocoon:Measurement ;
-        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c/> ;
-        sosa:hasResult             [ a                  qudt:QuantityValue ;
-                                     qudt:numericValue  3.4e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
-                                   ] ;
-        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-        sosa:resultTime            "2019-02-26T07:21:30.869Z"^^xsd:dateTime .
-
 <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/us-west1>
         a                   cocoon:StorageService ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/Latency> ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Gcloud/us-west1> .
 
+<https://w3id.org/cocoon/data/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A21%3A30.869Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  3.4e0 ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-26T07:21:30.869Z"^^xsd:dateTime .
+
 <https://w3id.org/cocoon/data/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-central1-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A11%3A05.576Z>
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-central1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  18.59e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:11:05.576Z"^^xsd:dateTime .
@@ -1004,7 +1004,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/CDNService/Gcloud> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  "29"^^xsd:double ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:09:35.054Z"^^xsd:dateTime .
@@ -1014,7 +1014,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/northamerica-northeast1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.36e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:22:21.917Z"^^xsd:dateTime .
@@ -1024,7 +1024,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/northamerica-northeast1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  14.01e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:22:09.969Z"^^xsd:dateTime .
@@ -1040,7 +1040,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/europe-west4/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  618.5e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:30:49.893Z"^^xsd:dateTime .
@@ -1050,7 +1050,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/asia-southeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  151.08e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:36:55.234Z"^^xsd:dateTime .
@@ -1067,7 +1067,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-north1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  56.03e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:31:30.796Z"^^xsd:dateTime .
@@ -1101,7 +1101,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-central1-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  3.38e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:10:18.053Z"^^xsd:dateTime .
@@ -1117,7 +1117,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-north1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.83e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:17:38.827Z"^^xsd:dateTime .
@@ -1127,7 +1127,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/southamerica-east1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.6e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:14:04.631Z"^^xsd:dateTime .
@@ -1137,7 +1137,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/southamerica-east1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.32e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:13:38.527Z"^^xsd:dateTime .
@@ -1168,7 +1168,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east2-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.01e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:23:06.553Z"^^xsd:dateTime .
@@ -1178,7 +1178,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.09e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:32:01.707Z"^^xsd:dateTime .
@@ -1188,7 +1188,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  202.21e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:28:52.644Z"^^xsd:dateTime .
@@ -1211,7 +1211,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/southamerica-east1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  362.92e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:14:11.741Z"^^xsd:dateTime .
@@ -1239,7 +1239,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/southamerica-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  660.83e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:33:00.425Z"^^xsd:dateTime .
@@ -1256,7 +1256,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-central1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.6e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:29:25.954Z"^^xsd:dateTime .
@@ -1266,7 +1266,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.39e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:18:12.973Z"^^xsd:dateTime .
@@ -1283,7 +1283,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/asia/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  201.75e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:24:25.328Z"^^xsd:dateTime .
@@ -1293,7 +1293,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/australia-southeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  455.88e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:14:17.456Z"^^xsd:dateTime .
@@ -1303,7 +1303,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-southeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  182.97e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:37:04.365Z"^^xsd:dateTime .
@@ -1313,7 +1313,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-northeast1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.49e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:12:33.220Z"^^xsd:dateTime .
@@ -1323,7 +1323,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  4.09e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:19:33.330Z"^^xsd:dateTime .
@@ -1333,7 +1333,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/southamerica-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.17e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:32:47.888Z"^^xsd:dateTime .
@@ -1349,7 +1349,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  4.02e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:29:12.594Z"^^xsd:dateTime .
@@ -1366,7 +1366,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west3-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  7.72e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:19:13.946Z"^^xsd:dateTime .
@@ -1389,7 +1389,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/asia-southeast1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  153.25e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:23:58.318Z"^^xsd:dateTime .
@@ -1399,7 +1399,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/us-east4/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  462.33e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:35:25.670Z"^^xsd:dateTime .
@@ -1409,7 +1409,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-northeast1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  40.2e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:13:14.488Z"^^xsd:dateTime .
@@ -1426,7 +1426,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west4/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  55.46e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:31:48.037Z"^^xsd:dateTime .
@@ -1443,7 +1443,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/northamerica-northeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  472.75e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:28:43.762Z"^^xsd:dateTime .
@@ -1459,7 +1459,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-northeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  3.91e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:33:41.227Z"^^xsd:dateTime .
@@ -1515,7 +1515,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west3/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  63.47e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:27:46.797Z"^^xsd:dateTime .
@@ -1525,7 +1525,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.18e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:36:51.279Z"^^xsd:dateTime .
@@ -1535,30 +1535,30 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/europe-north1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  680.5e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:30:38.004Z"^^xsd:dateTime .
-
-<https://w3id.org/cocoon/data/Measurement/Latency/ComputeService/Gcloud/us-west2-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A21%3A35.120Z>
-        a                          cocoon:Measurement ;
-        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/us-west2-c/> ;
-        sosa:hasResult             [ a                  qudt:QuantityValue ;
-                                     qudt:numericValue  204.25e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
-                                   ] ;
-        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-        sosa:resultTime            "2019-02-26T07:21:35.120Z"^^xsd:dateTime .
 
 <https://w3id.org/cocoon/data/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west1/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A34%3A36.427Z>
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  58.95e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:34:36.427Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/Latency/ComputeService/Gcloud/us-west2-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A21%3A35.120Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/us-west2-c/> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  204.25e0 ;
+                                     qudt-unit:         qudt-unit:MilliSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-26T07:21:35.120Z"^^xsd:dateTime .
 
 <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-north1>
         a                   cocoon:StorageService ;
@@ -1577,7 +1577,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/australia-southeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  54.5e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:14:13.420Z"^^xsd:dateTime .
@@ -1593,7 +1593,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-east2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.99e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:25:22.850Z"^^xsd:dateTime .
@@ -1622,7 +1622,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-north1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.23e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:17:12.495Z"^^xsd:dateTime .
@@ -1632,7 +1632,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/asia-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  205.92e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:29:06.255Z"^^xsd:dateTime .
@@ -1642,7 +1642,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-east4/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  130.61e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:35:58.187Z"^^xsd:dateTime .
@@ -1652,7 +1652,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/asia-east2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  309.42e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:25:40.018Z"^^xsd:dateTime .
@@ -1662,7 +1662,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-southeast1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  41.91e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:25:00.827Z"^^xsd:dateTime .
@@ -1672,7 +1672,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/us-west1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  418.75e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:34:00.738Z"^^xsd:dateTime .
@@ -1688,7 +1688,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/asia-northeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  305.83e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:33:31.631Z"^^xsd:dateTime .
@@ -1711,7 +1711,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/eu/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  60.39e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:23:39.533Z"^^xsd:dateTime .
@@ -1727,7 +1727,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/us-west1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  204.17e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:19:25.321Z"^^xsd:dateTime .
@@ -1737,7 +1737,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/australia-southeast1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  26.92e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:09:44.132Z"^^xsd:dateTime .
@@ -1747,7 +1747,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  63.91e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:36:27.819Z"^^xsd:dateTime .
@@ -1770,7 +1770,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/CDNService/Gcloud> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  "50"^^xsd:double ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:09:40.526Z"^^xsd:dateTime .
@@ -1780,7 +1780,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/asia-south1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  203.42e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:21:23.856Z"^^xsd:dateTime .
@@ -1790,7 +1790,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/eu/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  620.25e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:25:12.673Z"^^xsd:dateTime .
@@ -1800,7 +1800,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-west2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.02e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:37:24.600Z"^^xsd:dateTime .
@@ -1816,7 +1816,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-south1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.14e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:30:06.423Z"^^xsd:dateTime .
@@ -1833,7 +1833,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/asia-south1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  361.42e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:29:55.512Z"^^xsd:dateTime .
@@ -1843,7 +1843,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/northamerica-northeast1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  255.25e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:22:27.078Z"^^xsd:dateTime .
@@ -1867,7 +1867,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west2-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.77e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:14:32.070Z"^^xsd:dateTime .
@@ -1877,7 +1877,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west3-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.24e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:18:29.060Z"^^xsd:dateTime .
@@ -1901,7 +1901,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-northeast1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  232.16e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:33:25.451Z"^^xsd:dateTime .
@@ -1911,7 +1911,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  34.44e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:21:19.463Z"^^xsd:dateTime .
@@ -1934,7 +1934,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  29.22e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:26:32.196Z"^^xsd:dateTime .
@@ -1950,7 +1950,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-east4/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.04e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:35:46.626Z"^^xsd:dateTime .
@@ -1974,7 +1974,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  5.33e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:15:21.759Z"^^xsd:dateTime .
@@ -1990,7 +1990,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-b/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  30.23e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:15:58.952Z"^^xsd:dateTime .
@@ -2000,7 +2000,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/ComputeService/Gcloud/australia-southeast1-a/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  49.58e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:09:42.005Z"^^xsd:dateTime .
@@ -2010,7 +2010,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/eu/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.85e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:23:24.160Z"^^xsd:dateTime .
@@ -2052,7 +2052,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-north1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  1.37e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:31:09.791Z"^^xsd:dateTime .
@@ -2062,7 +2062,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/Latency/StorageService/Gcloud/us/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  288.83e0 ;
-                                     qudt:unit          qudt-unit:MilliSecond
+                                     qudt-unit:         qudt-unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:24:20.763Z"^^xsd:dateTime .
@@ -2072,7 +2072,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west2/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  104.46e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:32:27.670Z"^^xsd:dateTime .
@@ -2082,7 +2082,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/southamerica-east1/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  56.3e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:33:17.622Z"^^xsd:dateTime .
@@ -2092,7 +2092,7 @@
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us/> ;
         sosa:hasResult             [ a                  qudt:QuantityValue ;
                                      qudt:numericValue  2.31e0 ;
-                                     qudt:unit          qudt-unit:MegabitsPerSecond
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:24:09.011Z"^^xsd:dateTime .

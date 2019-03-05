@@ -11,7 +11,7 @@ PREFIX qudt-unit: <http://qudt.org/1.1/vocab/unit#>
 
 GENERATE {
     <{?type_slug}/{?service_type_slug}/{?provider_slug}/{?region_zone_slug}> a cocoon:ComputeService ;
-        cocoon:hasProvider cocoon:Gcloud;
+        cocoon:hasProvider cocoon:Azure;
         ssn:hasProperty ?property_url;
         cocoon:inRegion <Region/{?provider_slug}/{?region}> ;
         cocoon:inZone ?zone .
@@ -25,7 +25,7 @@ GENERATE {
             qudt-unit: ?unit ] ;
         sosa:resultTime ?dateTime .
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/cloudharmony/selenium/gcloud/uplink.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/cloudharmony/selenium/azure/uplink.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
 WHERE {
     BIND( xsd:double( fun:JSONPath(?qos, '$.uplink.value') ) AS ?value)
@@ -45,5 +45,5 @@ WHERE {
     BIND ( qudt-unit:MegabitsPerSecond AS ?unit ) # also know it is going to be Mb/s
     # Use var so change can be made in one place
     BIND ( "ComputeService" AS ?service_type_slug )
-    BIND ( "Gcloud" AS ?provider_slug )
+    BIND ( "Azure" AS ?provider_slug )
 }

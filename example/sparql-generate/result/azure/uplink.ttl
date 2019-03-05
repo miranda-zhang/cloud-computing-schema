@@ -1,0 +1,1071 @@
+@prefix schema: <https://schema.org/> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix qudt-unit: <http://qudt.org/1.1/vocab/unit#> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix ssn:   <http://www.w3.org/ns/ssn/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/japan-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-east> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A57%3A02.320042Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "14.92"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:57:02.320042Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A07%3A14.741282Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "43.59"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:07:14.741282Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-central> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-southcentral>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-southcentral> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A13%3A27.843644Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "15.47"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:13:27.843644Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A12%3A48.422110Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "37.25"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:12:48.422110Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A01%3A45.394850Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north2> ;
+        sosa:hasResult             [ a           qudt:QuantityValue ;
+                                     qudt-unit:  qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:01:45.394850Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-southeast>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-southeast> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-northcentral>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-northcentral> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A14%3A18.155708Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east2> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "33.39"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:14:18.155708Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/india-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A06%3A35.309198Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.6"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:06:35.309198Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/japan-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A08%3A00.265730Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/japan-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.92"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:08:00.265730Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-south> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-south> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A20%3A12.058022Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.69"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:20:12.058022Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A17%3A12.819818Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "38.53"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:17:12.819818Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west2-3/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A19%3A07.069427Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west2-3> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "17.72"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:19:07.069427Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-west> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west2-3>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west2> ;
+        cocoon:inZone       "3" .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-northcentral>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-northcentral> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/brazil-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A58%3A48.563941Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/brazil-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.09"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:58:48.563941Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-southeast/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A54%3A07.706197Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-southeast> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "39.2"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:54:07.706197Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A53%3A34.988200Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "40.79"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:53:34.988200Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-southcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A16%3A18.563232Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-southcentral> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.76"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:16:18.563232Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-central> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A57%3A02.373726Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "42.87"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:57:02.373726Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A17%3A12.761070Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.31"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:17:12.761070Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A59%3A36.942899Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "38.17"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:59:36.942899Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A12%3A48.361018Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.37"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:12:48.361018Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/india-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A07%3A14.792286Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.23"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:07:14.792286Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A21%3A11.236134Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.06"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:21:11.236134Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-westcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A18%3A06.607591Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-westcentral> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.09"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:18:06.607591Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-west> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/france-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A04%3A50.791243Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/france-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.42"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:04:50.791243Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-southeast>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-southeast> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-southeast>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-southeast> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/brazil-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/brazil-south> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A11%3A21.315729Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "12.45"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:11:21.315729Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A08%3A40.618113Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "16.47"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:08:40.618113Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/france-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A04%3A11.106908Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/france-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.55"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:04:11.106908Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-west> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/france-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-south> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-southeast/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A57%3A55.095971Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-southeast> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "13.05"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:57:55.095971Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-east> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/japan-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-west> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-central> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-southcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A16%3A18.628234Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-southcentral> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "39.61"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:16:18.628234Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-east> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A13%3A27.895655Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.29"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:13:27.895655Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-northcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A15%3A19.065582Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-northcentral> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.53"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:15:19.065582Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/china-north/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A00%3A46.911319Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/china-north> ;
+        sosa:hasResult             [ a           qudt:QuantityValue ;
+                                     qudt-unit:  qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:00:46.911319Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/china-north>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-south> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A53%3A35.042984Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.48"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:53:35.042984Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east2>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east2> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-south> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-west> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A10%3A26.582655Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "35.96"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:10:26.582655Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A00%3A16.032643Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "3.93"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:00:16.032643Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-southeast/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A57%3A55.151177Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-southeast> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "60.96"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:57:55.151177Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/eu-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-west> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A08%3A00.385736Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "37.57"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:08:00.385736Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-south> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A01%3A11.082929Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north> ;
+        sosa:hasResult             [ a           qudt:QuantityValue ;
+                                     qudt-unit:  qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:01:11.082929Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/india-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A05%3A39.123350Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.53"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:05:39.123350Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/brazil-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A58%3A48.620114Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/brazil-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "36.66"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:58:48.620114Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/france-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-central> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north2>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north2> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A12%3A03.056596Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "27.37"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:12:03.056596Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/france-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A04%3A50.688727Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/france-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "13.55"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:04:50.688727Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/japan-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A08%3A40.673074Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/japan-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.75"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:08:40.673074Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west2-3/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A20%3A12.109018Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west2-3> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "28.93"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:20:12.109018Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-north>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-north> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-central> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/china-north2>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north2> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-west> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-central> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A55%3A47.941746Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central2> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "38.71"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:55:47.941746Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west2-3/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A21%3A26.743970Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west2-3> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "37.22"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:21:26.743970Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/china-north2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A01%3A45.467100Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/china-north2> ;
+        sosa:hasResult             [ a           qudt:QuantityValue ;
+                                     qudt-unit:  qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:01:45.467100Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/eu-north>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-north> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-west>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-west> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-northcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A15%3A18.997810Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-northcentral> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "36.3"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:15:18.997810Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-central> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A03%3A17.955764Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "3.67"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:03:17.955764Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A10%3A26.528276Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.68"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:10:26.528276Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/france-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A04%3A11.165177Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/france-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "36.4"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:04:11.165177Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/france-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-south> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A14%3A18.097704Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east2> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.81"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:14:18.097704Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-east> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-east> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A56%3A12.195731Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central2> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "10.13"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:56:12.195731Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/eu-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A03%3A17.903809Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/eu-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "12.44"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:03:17.903809Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-southeast>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-southeast> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central2>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central2> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A12%3A03.109611Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-west> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "3.41"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:12:03.109611Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-east> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-westcentral>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-westcentral> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west2> ;
+        cocoon:inZone       "3" .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-westcentral>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-westcentral> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A11%3A21.373708Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.28"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:11:21.373708Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/eu-north/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A02%3A36.353741Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/eu-north> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "27.57"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:02:36.353741Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A06%3A35.224861Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-south> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "25.85"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:06:35.224861Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A09%3A33.956583Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "37.48"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:09:33.956583Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-westcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A18%3A06.659176Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-westcentral> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "35.14"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:18:06.659176Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central2>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central2> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/brazil-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/brazil-south> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-east> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-east> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east2>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east2> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A59%3A36.886900Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.23"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:59:36.886900Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A55%3A15.926929Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "11.97"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:55:15.926929Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-north/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A02%3A36.292742Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-north> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.68"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:02:36.292742Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-central> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A00%3A15.980657Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-east> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "15.28"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:00:15.980657Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A55%3A04.587982Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "42.69"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:55:04.587982Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A19%3A07.121197Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.6"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:19:07.121197Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/france-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-central> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A05%3A39.181342Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "36.47"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:05:39.181342Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-central>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-central> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-south>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-south> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-southeast/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A54%3A31.987540Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-southeast> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.97"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T00:54:31.987540Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-southcentral>
+        a                   cocoon:ComputeService ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-southcentral> .
+
+<https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A09%3A33.900597Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-central> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.29"^^xsd:double ;
+                                     qudt-unit:         qudt-unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:09:33.900597Z"^^xsd:dateTime .
