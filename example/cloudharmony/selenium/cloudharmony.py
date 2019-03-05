@@ -27,9 +27,9 @@ def find_test_data(nth, sec_to_wait, output_file):
                 "div[data-test='"+str(nth)+"'] div")
             header = driver.find_element_by_css_selector(
                 "#wrapper > main > div > section > table > thead > tr:nth-child(1) > th:nth-child("+str(2+nth)+")")
-            subregion = driver.find_element_by_css_selector(
-                "#wrapper > main > div > section > table > tbody > tr")
             uplink = test_data.get_attribute("data-metric")
+            region = driver.find_element_by_css_selector(
+                "#wrapper > main > div > section > table > tbody > tr")
         except NoSuchElementException:
             if (sec_to_wait < 8): # skip this test
                 break
@@ -38,7 +38,8 @@ def find_test_data(nth, sec_to_wait, output_file):
                 time.sleep(sec_to_wait)
         else:
             test = {}
-            test["subregion"] = subregion.get_attribute("data-subregion")
+            test["region"] = region.get_attribute("data-region")
+            test["subregion"] = region.get_attribute("data-subregion")
             test["size"] = parseSize(header.text)
             test["uplink"] = {"value": uplink, "unit": "Mb/s"}
             test["completion_time"]=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.%fZ")
@@ -90,7 +91,7 @@ gcloud_regions = [
 ]
 if not os.path.exists('gcloud'):
     os.makedirs('gcloud')
-# tests('http://cloudharmony.com/speedtest-uplink-for-google:compute-', gcloud_regions, "gcloud/uplink.json")
+tests('http://cloudharmony.com/speedtest-uplink-for-google:compute-', gcloud_regions, "gcloud/uplink.json")
 
 # 43 regions
 azure_regions = [
@@ -134,6 +135,6 @@ azure_regions = [
 ]
 if not os.path.exists('azure'):
     os.makedirs('azure')
-tests('http://cloudharmony.com/speedtest-uplink-for-azure:compute-', azure_regions, "azure/uplink.json")
+# tests('http://cloudharmony.com/speedtest-uplink-for-azure:compute-', azure_regions, "azure/uplink.json")
 
 driver.quit()

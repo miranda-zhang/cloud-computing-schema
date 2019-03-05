@@ -6,31 +6,20 @@ Vocabulary Version 1.1
 http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
 
     @prefix qudt:      <http://qudt.org/schema/qudt#> .
-    @prefix unit:    <http://qudt.org/vocab/unit#> .
+    @prefix unit:    <http://qudt.org/1.1/vocab/unit#> .
 
 ## Relevant Vocabularies
 Individuals
 ```
-unit:Byte
-      rdf:type qudt:InformationEntropyUnit , qudt:DerivedUnit ;
-      rdfs:label "Byte"^^xsd:string ;
-      qudt:abbreviation "B"^^xsd:string ;
-      qudt:code "3040"^^xsd:string ;
-      qudt:conversionMultiplier
-              "5.54517744"^^xsd:double ;
-      qudt:conversionOffset
-              "0.0"^^xsd:double ;
-      qudt:symbol "B"^^xsd:string ;
-      skos:exactMatch <http://dbpedia.org/resource/Byte> .
-unit:Giga
+unit:Kilo
       rdf:type qudt:DecimalPrefixUnit ;
-      rdfs:label "Giga"^^xsd:string ;
+      rdfs:label "Kilo"^^xsd:string ;
       qudt:conversionMultiplier
-              1.0E9 ;
+              1.0E3 ;
       qudt:conversionOffset
               "0.0"^^xsd:double ;
-      qudt:symbol "G"^^xsd:string ;
-      skos:exactMatch <http://dbpedia.org/resource/Giga-> .
+      qudt:symbol "k"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Kilo> .
 unit:Milli
       rdf:type qudt:DecimalPrefixUnit ;
       rdfs:label "Milli"^^xsd:string ;
@@ -40,17 +29,15 @@ unit:Milli
               "0.0"^^xsd:double ;
       qudt:symbol "m"^^xsd:string ;
       skos:exactMatch <http://dbpedia.org/resource/Milli-> .
-unit:MilliSecond
-      rdf:type qudt:DerivedUnit , qudt:TimeUnit ;
-      rdfs:label "Millisecond"^^xsd:string ;
-      qudt:abbreviation "ms"^^xsd:string ;
-      qudt:code "1616"^^xsd:string ;
+unit:Giga
+      rdf:type qudt:DecimalPrefixUnit ;
+      rdfs:label "Giga"^^xsd:string ;
       qudt:conversionMultiplier
-              "0.001"^^xsd:double ;
+              1.0E9 ;
       qudt:conversionOffset
               "0.0"^^xsd:double ;
-      qudt:symbol "ms"^^xsd:string ;
-      skos:exactMatch <http://dbpedia.org/resource/Millisecond> .
+      qudt:symbol "G"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Giga-> .
 unit:Hour
       rdf:type qudt:UsedWithSIUnit , qudt:TimeUnit ;
       rdfs:label "Hour"^^xsd:string ;
@@ -84,6 +71,28 @@ unit:Year365Day
       qudt:conversionOffset
               "0.0"^^xsd:double ;
       qudt:symbol "yr"^^xsd:string .
+unit:Byte
+      rdf:type qudt:InformationEntropyUnit , qudt:DerivedUnit ;
+      rdfs:label "Byte"^^xsd:string ;
+      qudt:abbreviation "B"^^xsd:string ;
+      qudt:code "3040"^^xsd:string ;
+      qudt:conversionMultiplier
+              "5.54517744"^^xsd:double ;
+      qudt:conversionOffset
+              "0.0"^^xsd:double ;
+      qudt:symbol "B"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Byte> .
+unit:MilliSecond
+      rdf:type qudt:DerivedUnit , qudt:TimeUnit ;
+      rdfs:label "Millisecond"^^xsd:string ;
+      qudt:abbreviation "ms"^^xsd:string ;
+      qudt:code "1616"^^xsd:string ;
+      qudt:conversionMultiplier
+              "0.001"^^xsd:double ;
+      qudt:conversionOffset
+              "0.0"^^xsd:double ;
+      qudt:symbol "ms"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Millisecond> .
 unit:MegabitsPerSecond
       rdf:type qudt:DerivedUnit , qudt:DataRateUnit ;
       rdfs:label "Megabit per Second"^^xsd:string ;
@@ -93,10 +102,9 @@ unit:MegabitsPerSecond
 ```
 Classes
 1. qudt:DataRateUnit
-2. qudt:ComputingUnit
-3. qudt:TimeUnit
-4. qudt:DerivedUnit
-5. qudt:VolumePerTimeUnit
+2. qudt:TimeUnit
+3. qudt:DerivedUnit
+4. qudt:VolumePerTimeUnit
 
 # Release 2.0
 Although there is QUDT second release, but we find that version 1.1 fits our needs better, also there are too many 2.0 Vocabularies are in progress like http://qudt.org/2.0/vocab/quantitykind/communications and http://qudt.org/2.0/schema/qudt/engineering, which could be what we meed.

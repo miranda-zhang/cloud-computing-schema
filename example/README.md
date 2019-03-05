@@ -53,3 +53,6 @@ Examples with the following keywords:
 
 Additional external examples
 https://www.w3.org/2009/Talks/0615-qbe/
+
+## SPARQL Documentation
+https://www.w3.org/TR/sparql11-query/

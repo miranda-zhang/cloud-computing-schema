@@ -39,7 +39,7 @@ Code in [example folder](example/) shows some ways to access and use this ontolo
 # Publications
 [BibTeX](BibTeX.md)
 
-# References
+# Dependencies
 This project used solutions from the following projects:
 * https://github.com/perma-id/w3id.org/
 * https://github.com/stedolan/jq
@@ -50,11 +50,3 @@ This project used solutions from the following projects:
 * https://github.com/LinkedDataFragments/Server.js/
 * https://github.com/schemaorg/schemaorg
   * https://schema.org/docs/developers.html
-
-OWL Specifications
-* OWL2 https://www.w3.org/TR/owl2-overview/
-* OWL https://www.w3.org/TR/owl-ref/
-
-Documentations of Some Referenced Vocabularies 
-* http://www.heppnetz.de/ontologies/goodrelations/v1.html
-* https://www.w3.org/TR/vocab-ssn/#intro

@@ -1,579 +1,1294 @@
-[{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:41:22.379753Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "45.85"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
+[
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
         },
-        "upper": {
-            "unit": "MB",
-            "value": 10
+        "completion_time": "2019-03-05T00:53:34.988200Z",
+        "subregion": null,
+        "region": "asia-east",
+        "uplink": {
+            "value": "40.79",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T00:53:35.042984Z",
+        "subregion": null,
+        "region": "asia-east",
+        "uplink": {
+            "value": "6.48",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T00:54:07.706197Z",
+        "subregion": null,
+        "region": "asia-southeast",
+        "uplink": {
+            "value": "39.2",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T00:54:31.987540Z",
+        "subregion": null,
+        "region": "asia-southeast",
+        "uplink": {
+            "value": "5.97",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T00:55:04.587982Z",
+        "subregion": null,
+        "region": "australia-central",
+        "uplink": {
+            "value": "42.69",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T00:55:15.926929Z",
+        "subregion": null,
+        "region": "australia-central",
+        "uplink": {
+            "value": "11.97",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T00:55:47.941746Z",
+        "subregion": null,
+        "region": "australia-central2",
+        "uplink": {
+            "value": "38.71",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T00:56:12.195731Z",
+        "subregion": null,
+        "region": "australia-central2",
+        "uplink": {
+            "value": "10.13",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T00:57:02.320042Z",
+        "subregion": null,
+        "region": "australia-east",
+        "uplink": {
+            "value": "14.92",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T00:57:02.373726Z",
+        "subregion": null,
+        "region": "australia-east",
+        "uplink": {
+            "value": "42.87",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T00:57:55.095971Z",
+        "subregion": null,
+        "region": "australia-southeast",
+        "uplink": {
+            "value": "13.05",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T00:57:55.151177Z",
+        "subregion": null,
+        "region": "australia-southeast",
+        "uplink": {
+            "value": "60.96",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T00:58:48.563941Z",
+        "subregion": null,
+        "region": "brazil-south",
+        "uplink": {
+            "value": "4.09",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T00:58:48.620114Z",
+        "subregion": null,
+        "region": "brazil-south",
+        "uplink": {
+            "value": "36.66",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T00:59:36.886900Z",
+        "subregion": null,
+        "region": "canada-central",
+        "uplink": {
+            "value": "5.23",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T00:59:36.942899Z",
+        "subregion": null,
+        "region": "canada-central",
+        "uplink": {
+            "value": "38.17",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:00:15.980657Z",
+        "subregion": null,
+        "region": "canada-east",
+        "uplink": {
+            "value": "15.28",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:00:16.032643Z",
+        "subregion": null,
+        "region": "canada-east",
+        "uplink": {
+            "value": "3.93",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:00:46.911319Z",
+        "subregion": null,
+        "region": "china-north",
+        "uplink": {
+            "value": null,
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:01:11.082929Z",
+        "subregion": null,
+        "region": "china-north",
+        "uplink": {
+            "value": null,
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:01:45.394850Z",
+        "subregion": null,
+        "region": "china-north2",
+        "uplink": {
+            "value": null,
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:01:45.467100Z",
+        "subregion": null,
+        "region": "china-north2",
+        "uplink": {
+            "value": null,
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:02:36.292742Z",
+        "subregion": null,
+        "region": "eu-north",
+        "uplink": {
+            "value": "4.68",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:02:36.353741Z",
+        "subregion": null,
+        "region": "eu-north",
+        "uplink": {
+            "value": "27.57",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:03:17.903809Z",
+        "subregion": null,
+        "region": "eu-west",
+        "uplink": {
+            "value": "12.44",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:03:17.955764Z",
+        "subregion": null,
+        "region": "eu-west",
+        "uplink": {
+            "value": "3.67",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:04:11.106908Z",
+        "subregion": null,
+        "region": "france-central",
+        "uplink": {
+            "value": "4.55",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:04:11.165177Z",
+        "subregion": null,
+        "region": "france-central",
+        "uplink": {
+            "value": "36.4",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:04:50.688727Z",
+        "subregion": null,
+        "region": "france-south",
+        "uplink": {
+            "value": "13.55",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:04:50.791243Z",
+        "subregion": null,
+        "region": "france-south",
+        "uplink": {
+            "value": "5.42",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:05:39.123350Z",
+        "subregion": null,
+        "region": "india-central",
+        "uplink": {
+            "value": "5.53",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:05:39.181342Z",
+        "subregion": null,
+        "region": "india-central",
+        "uplink": {
+            "value": "36.47",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:06:35.224861Z",
+        "subregion": null,
+        "region": "india-south",
+        "uplink": {
+            "value": "25.85",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:06:35.309198Z",
+        "subregion": null,
+        "region": "india-south",
+        "uplink": {
+            "value": "6.6",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:07:14.741282Z",
+        "subregion": null,
+        "region": "india-west",
+        "uplink": {
+            "value": "43.59",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:07:14.792286Z",
+        "subregion": null,
+        "region": "india-west",
+        "uplink": {
+            "value": "6.23",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:08:00.265730Z",
+        "subregion": null,
+        "region": "japan-east",
+        "uplink": {
+            "value": "6.92",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:08:00.385736Z",
+        "subregion": null,
+        "region": "japan-east",
+        "uplink": {
+            "value": "37.57",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:08:40.618113Z",
+        "subregion": null,
+        "region": "japan-west",
+        "uplink": {
+            "value": "16.47",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:08:40.673074Z",
+        "subregion": null,
+        "region": "japan-west",
+        "uplink": {
+            "value": "6.75",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:09:33.900597Z",
+        "subregion": null,
+        "region": "korea-central",
+        "uplink": {
+            "value": "6.29",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:09:33.956583Z",
+        "subregion": null,
+        "region": "korea-central",
+        "uplink": {
+            "value": "37.48",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:10:26.528276Z",
+        "subregion": null,
+        "region": "korea-south",
+        "uplink": {
+            "value": "6.68",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:10:26.582655Z",
+        "subregion": null,
+        "region": "korea-south",
+        "uplink": {
+            "value": "35.96",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:11:21.315729Z",
+        "subregion": null,
+        "region": "uk-south",
+        "uplink": {
+            "value": "12.45",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:11:21.373708Z",
+        "subregion": null,
+        "region": "uk-south",
+        "uplink": {
+            "value": "4.28",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:12:03.056596Z",
+        "subregion": null,
+        "region": "uk-west",
+        "uplink": {
+            "value": "27.37",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:12:03.109611Z",
+        "subregion": null,
+        "region": "uk-west",
+        "uplink": {
+            "value": "3.41",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:12:48.361018Z",
+        "subregion": null,
+        "region": "us-central",
+        "uplink": {
+            "value": "4.37",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:12:48.422110Z",
+        "subregion": null,
+        "region": "us-central",
+        "uplink": {
+            "value": "37.25",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:13:27.843644Z",
+        "subregion": null,
+        "region": "us-east",
+        "uplink": {
+            "value": "15.47",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:13:27.895655Z",
+        "subregion": null,
+        "region": "us-east",
+        "uplink": {
+            "value": "4.29",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:14:18.097704Z",
+        "subregion": null,
+        "region": "us-east2",
+        "uplink": {
+            "value": "4.81",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:14:18.155708Z",
+        "subregion": null,
+        "region": "us-east2",
+        "uplink": {
+            "value": "33.39",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:15:18.997810Z",
+        "subregion": null,
+        "region": "us-northcentral",
+        "uplink": {
+            "value": "36.3",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:15:19.065582Z",
+        "subregion": null,
+        "region": "us-northcentral",
+        "uplink": {
+            "value": "5.53",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:16:18.563232Z",
+        "subregion": null,
+        "region": "us-southcentral",
+        "uplink": {
+            "value": "4.76",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:16:18.628234Z",
+        "subregion": null,
+        "region": "us-southcentral",
+        "uplink": {
+            "value": "39.61",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:17:12.761070Z",
+        "subregion": null,
+        "region": "us-west",
+        "uplink": {
+            "value": "6.31",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:17:12.819818Z",
+        "subregion": null,
+        "region": "us-west",
+        "uplink": {
+            "value": "38.53",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:18:06.607591Z",
+        "subregion": null,
+        "region": "us-westcentral",
+        "uplink": {
+            "value": "6.09",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:18:06.659176Z",
+        "subregion": null,
+        "region": "us-westcentral",
+        "uplink": {
+            "value": "35.14",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:19:07.069427Z",
+        "subregion": "us-west2-3",
+        "region": "us-west2",
+        "uplink": {
+            "value": "17.72",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:19:07.121197Z",
+        "subregion": "us-west2-3",
+        "region": "us-west2",
+        "uplink": {
+            "value": "5.6",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:20:12.058022Z",
+        "subregion": "us-west2-3",
+        "region": "us-west2",
+        "uplink": {
+            "value": "6.69",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:20:12.109018Z",
+        "subregion": "us-west2-3",
+        "region": "us-west2",
+        "uplink": {
+            "value": "28.93",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 1,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 128,
+                "unit": "KB"
+            }
+        },
+        "completion_time": "2019-03-05T01:21:11.236134Z",
+        "subregion": "us-west2-3",
+        "region": "us-west2",
+        "uplink": {
+            "value": "6.06",
+            "unit": "Mb/s"
+        }
+    },
+    {
+        "size": {
+            "lower": {
+                "value": 256,
+                "unit": "KB"
+            },
+            "upper": {
+                "value": 10,
+                "unit": "MB"
+            }
+        },
+        "completion_time": "2019-03-05T01:21:26.743970Z",
+        "subregion": "us-west2-3",
+        "region": "us-west2",
+        "uplink": {
+            "value": "37.22",
+            "unit": "Mb/s"
         }
     }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:41:22.457879Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "6.13"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:41:59.813328Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "26.24"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:41:59.860345Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "7.44"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:42:40.815973Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "38.75"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:42:40.863974Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "13.63"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:43:26.014803Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "43.55"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:43:26.067804Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "12.81"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:44:12.330402Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "13.56"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:44:12.382417Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "63.48"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:45:06.814684Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "11.42"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:45:06.864124Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "63.78"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:45:56.378765Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "4.86"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:45:56.428782Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "36.33"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:47:00.496953Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "3.89"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:47:00.559956Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "35.13"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:47:55.653226Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "17.84"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:47:55.776223Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "4.19"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:48:26.669401Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": null
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:48:50.836691Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": null
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:49:26.124920Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": null
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:49:26.262894Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": null
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:50:06.662830Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "3.18"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:50:50.238290Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "34.54"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:51:29.990905Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "12.35"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:51:30.072711Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "3.8"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:52:45.938881Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "3.44"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:52:45.992364Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "33.92"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:53:32.912772Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "13.38"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:53:33.018753Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "4.2"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:54:45.997463Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "6.27"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:54:46.077963Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "26.91"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:55:30.534930Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "21.65"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 256
-        },
-        "upper": {
-            "unit": "MB",
-            "value": 10
-        }
-    }
-},{
-    "subregion": null,
-    "completion_time": "2019-03-04T09:55:30.679385Z",
-    "uplink": {
-        "unit": "Mb/s",
-        "value": "6.29"
-    },
-    "size": {
-        "lower": {
-            "unit": "KB",
-            "value": 1
-        },
-        "upper": {
-            "unit": "KB",
-            "value": 128
-        }
-    }
-},
+]

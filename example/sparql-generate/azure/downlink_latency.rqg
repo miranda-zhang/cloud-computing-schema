@@ -66,9 +66,12 @@ WHERE {
     BIND( xsd:string(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)
     BIND( xsd:string(fun:JSONPath(?qos, '$.max_size')) AS ?max_size)
     BIND ( IF( ?type = "downlink" , qudt-unit:MegabitsPerSecond , qudt-unit:MilliSecond ) AS ?unit )
-    BIND( CONCAT("DownlinkSpeed",?min_size,"-",?max_size,"KB") AS ?downlinkMin_maxKB )
+
+    # Put dash between each word for easy parsing if needed
+    BIND( CONCAT("DownlinkSpeed-",?min_size,"-",?max_size,"-KB") AS ?downlinkMin_maxKB )
+    # <QuanlityOfService/DownlinkSpeed-{?min_size}-{?max_size}-KB> 
     BIND( IRI(CONCAT("QuanlityOfService/",?downlinkMin_maxKB)) AS ?qos_downlink_iri )
-    # <QuanlityOfService/DownlinkSpeed{?min_size}-{?max_size}KB>
+
     BIND (
         COALESCE(
             IF(?type = "downlink", ?qos_downlink_iri , 1/0),

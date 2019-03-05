@@ -3,33 +3,41 @@
 @prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl> .
 @base <https://w3id.org/cocoon/data/v1.0> .
 
-<QuanlityOfService/DownlinkSpeed/1/128/KB> a cocoon:DownlinkSpeed;
-    cocoon:transferedFileSizeMin [
-        a schema:TypeAndQuantityNode;
-        schema:amountOfThisGood "1"^^xsd:interger;
-        schema:unitText "KB";
-        schema:unitCode "2P";
-    ];
-    cocoon:transferedFileSizeMax [
-        a schema:TypeAndQuantityNode;
-        schema:amountOfThisGood "128"^^xsd:interger;
-        schema:unitText "KB";
-        schema:unitCode "2P";
-    ].
+<1-KB> a schema:TypeAndQuantityNode;
+    schema:amountOfThisGood "1"^^xsd:interger;
+    schema:unitText "KB";
+    schema:unitCode "2P".
 
-<QuanlityOfService/DownlinkSpeed/256/10240/KB> a cocoon:DownlinkSpeed;
-    cocoon:transferedFileSizeMin [
-        a schema:TypeAndQuantityNode;
-        schema:amountOfThisGood "256"^^xsd:interger;
-        schema:unitText "KB";
-        schema:unitCode "2P";
-    ];
-    cocoon:transferedFileSizeMax [
-        a schema:TypeAndQuantityNode;
-        schema:amountOfThisGood "10240"^^xsd:interger;
-        schema:unitText "KB";
-        schema:unitCode "2P";
-    ].
+<128-KB> a schema:TypeAndQuantityNode;
+    schema:amountOfThisGood "128"^^xsd:interger;
+    schema:unitText "KB";
+    schema:unitCode "2P".
+
+<256-KB> a schema:TypeAndQuantityNode;
+    schema:amountOfThisGood "256"^^xsd:interger;
+    schema:unitText "KB";
+    schema:unitCode "2P".
+
+<10240-KB> a schema:TypeAndQuantityNode;
+    schema:amountOfThisGood "256"^^xsd:interger;
+    schema:unitText "KB";
+    schema:unitCode "2P".
+
+<QuanlityOfService/DownlinkSpeed-1-128-KB> a cocoon:DownlinkSpeed;
+    cocoon:transferedFileSizeMin <1-KB>;
+    cocoon:transferedFileSizeMax <128-KB>.
+
+<QuanlityOfService/DownlinkSpeed-256-10240-KB> a cocoon:DownlinkSpeed;
+    cocoon:transferedFileSizeMin <256-KB>;
+    cocoon:transferedFileSizeMax <10240-KB>.
+
+<QuanlityOfService/UplinkSpeed-1-128-KB> a cocoon:DownlinkSpeed;
+    cocoon:transferedFileSizeMin <1-KB>;
+    cocoon:transferedFileSizeMax <128-KB>.
+
+<QuanlityOfService/UplinkSpeed-256-10240-KB> a cocoon:DownlinkSpeed;
+    cocoon:transferedFileSizeMin <256-KB>;
+    cocoon:transferedFileSizeMax <10240-KB>.
 
 <QuanlityOfService/Latency> a cocoon:Latency .
 <QuanlityOfService/DNSQueryLatency> a cocoon:DNSQueryLatency .
