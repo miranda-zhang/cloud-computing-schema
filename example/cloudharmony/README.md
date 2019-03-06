@@ -26,8 +26,8 @@ If any lib can't be found, search with
 
 # Javascript Solution
 This method is suitable for doing tests on local machine, if run tests on remote server the [Command Line Tool](#command-line-tool) would be more suitable.
-1. [google](google/)
-2. [azure](azure/)
+1. [Google](gcloud/)
+2. [Azure](azure/)
 
 ## PC used for the measurements
 IP: 150.203.213.249
