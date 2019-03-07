@@ -1,0 +1,114 @@
+{
+    "prices": {
+      "asia-pacific-east": {
+        "value": 0.00036
+      },
+      "asia-pacific-southeast": {
+        "value": 0.00036
+      },
+      "australia-central": {
+        "value": 0.00036
+      },
+      "australia-central-2": {
+        "value": 0.00036
+      },
+      "australia-east": {
+        "value": 0.00036
+      },
+      "australia-southeast": {
+        "value": 0.00036
+      },
+      "brazil-south": {
+        "value": 0.00036
+      },
+      "canada-central": {
+        "value": 0.00036
+      },
+      "canada-east": {
+        "value": 0.00036
+      },
+      "central-india": {
+        "value": 0.00036
+      },
+      "europe-north": {
+        "value": 0.00036
+      },
+      "europe-west": {
+        "value": 0.00036
+      },
+      "france-central": {
+        "value": 0.00036
+      },
+      "france-south": {
+        "value": 0.00036
+      },
+      "germany-central": {
+        "value": 0.00041
+      },
+      "germany-northeast": {
+        "value": 0.00041
+      },
+      "japan-east": {
+        "value": 0.00036
+      },
+      "japan-west": {
+        "value": 0.00036
+      },
+      "korea-central": {
+        "value": 0.00036
+      },
+      "korea-south": {
+        "value": 0.00036
+      },
+      "south-india": {
+        "value": 0.00036
+      },
+      "united-kingdom-south": {
+        "value": 0.00036
+      },
+      "united-kingdom-west": {
+        "value": 0.00036
+      },
+      "us-central": {
+        "value": 0.00036
+      },
+      "us-east": {
+        "value": 0.00036
+      },
+      "us-east-2": {
+        "value": 0.00036
+      },
+      "usgov-arizona": {
+        "value": 0.00036
+      },
+      "usgov-iowa": {
+        "value": 0.00036
+      },
+      "usgov-texas": {
+        "value": 0.00036
+      },
+      "usgov-virginia": {
+        "value": 0.00036
+      },
+      "us-north-central": {
+        "value": 0.00036
+      },
+      "us-south-central": {
+        "value": 0.00036
+      },
+      "us-west": {
+        "value": 0.00036
+      },
+      "us-west-2": {
+        "value": 0.00036
+      },
+      "us-west-central": {
+        "value": 0.00036
+      },
+      "west-india": {
+        "value": 0.00036
+      }
+    },
+    "pricingTypes": "WebDirect"
+  }
+  

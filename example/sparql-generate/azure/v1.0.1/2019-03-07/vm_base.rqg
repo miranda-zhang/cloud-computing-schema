@@ -9,28 +9,30 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 PREFIX schema: <https://schema.org/>
 
 GENERATE { 
-  <vm/azure/{?vm_key}> a cocoon:VM;
-    rdfs:label ?vm_key;
+  ?iri a cocoon:ComputeService;
+    rdfs:label ?name;
+    schema:dateModified ?date;
+    cocoon:hasProvider ?provider;
     cocoon:numberOfCores ?cores;
     cocoon:hasMemory [
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?memory;
-            cocoon:hasUnitOfMeasurement cocoon:GB;
+        a schema:TypeAndQuantityNode;
+            schema:amountOfThisGood ?memory;
+            schema:unitCode cocoon:GB
     ];
     cocoon:hasStorage [
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?diskSize;
-            cocoon:hasUnitOfMeasurement cocoon:GB;
-            cocoon:ofObjectType cocoon:LocalStorage;
+        a schema:TypeAndQuantityNode;
+            schema:amountOfThisGood ?diskSize;
+            schema:unitCode cocoon:GB;
+            schema:typeOfGood cocoon:LocalStorage;
     ];
-    gr:hasPriceSpecification <price_specification/azure/storage_transaction/vm_base>;
+    gr:hasPriceSpecification <{?updated}/price_specification/{?provider_slug}/storage_transaction/vm_base>;
 
     GENERATE {
-        <vm/azure/{?vm_key}> gr:hasPriceSpecification [ 
-            a gr:UnitPriceSpecification ; 
+        ?iri gr:hasPriceSpecification [ 
+            a cocoon:CloudServicePriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?value; 
-                cocoon:hasRegion <region/azure/{?region}>;
+                cocoon:hasRegion <{?updated}/Region/{?provider_slug}/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour ;
         ] 
     }
@@ -48,4 +50,10 @@ WHERE {
     BIND (xsd:decimal ( fun:JSONPath(?source,"$.{?vm_key}.ram") ) AS ?memory)
     BIND (xsd:decimal ( fun:JSONPath(?source,"$.{?vm_key}.diskSize") ) AS ?diskSize)
     BIND (fun:JSONPath(?source,"$.{?vm_key}.prices") AS ?prices)
+    # having signle point of change for the following
+    BIND ( "Azure" as ?provider_slug )
+    BIND ( cocoon:Azure as ?provider )
+    BIND ( "2019-03-07" as ?updated) # yr-month-day
+    BIND ( <{?updated}/ComputeService/{?provider_slug}/{?vm_key}> as ?iri )
+    BIND ( xsd:date(?updated) as ?date )
 }

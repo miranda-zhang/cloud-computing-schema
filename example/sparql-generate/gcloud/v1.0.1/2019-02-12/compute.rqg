@@ -12,6 +12,7 @@ GENERATE {
   ?iri a cocoon:ComputeService;
     rdfs:label ?name;
     schema:dateModified ?date;
+    cocoon:hasProvider ?provider;
     cocoon:numberOfCores ?cores;
     cocoon:hasMemory [
         a schema:TypeAndQuantityNode;
@@ -56,7 +57,6 @@ GENERATE {
             a cocoon:CloudServicePriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?regionalPrice; 
-                # cocoon:hasRegion ?region_iri;
                 cocoon:hasRegion <{?release_date}/Region/{?provider_slug}/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour ;
         ] 
@@ -77,8 +77,9 @@ WHERE {
     BIND ( xsd:nonNegativeInteger ( fun:JSONPath(?gcloudVM,".maxNumberOfPd") ) AS ?maxNumberOfPd )
     BIND ( xsd:nonNegativeInteger ( fun:JSONPath(?gcloudVM,".maxPdSize") ) AS ?maxPdSize )
     # having signle point of change for the following
-    BIND ( "Gcloud" as ?provider_slug)
+    BIND ( "Gcloud" as ?provider_slug )
+    BIND ( cocoon:Gcloud as ?provider )
     BIND ( "2019-02-12" as ?release_date) # yr-month-day
-    BIND ( <{?release_date}/ComputeService/{?provider_slug}/{?name}> as ?iri)
-    BIND ( xsd:date(?release_date) as ?date)
+    BIND ( <{?release_date}/ComputeService/{?provider_slug}/{?name}> as ?iri )
+    BIND ( xsd:date(?release_date) as ?date )
 }
