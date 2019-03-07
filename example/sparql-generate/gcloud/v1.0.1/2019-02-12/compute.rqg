@@ -1,56 +1,63 @@
-BASE <https://w3id.org/cocoon/> 
+BASE <https://w3id.org/cocoon/data/v1.0.1/> 
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX unit: <http://qudt.org/vocab/unit#>
-PREFIX cocoon: <https://w3id.org/cocoon/v1.0#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl#>
+PREFIX schema: <https://schema.org/>
 
 GENERATE { 
-  <data/vm/gcloud/{?name}> a cocoon:VM;
+  ?iri a cocoon:ComputeService;
     rdfs:label ?name;
+    schema:dateModified ?date;
     cocoon:numberOfCores ?cores;
     cocoon:hasMemory [
-        a cocoon:QuantityOfThings;
-            cocoon:numericValue ?memory;
-            cocoon:hasUnitOfMeasurement cocoon:GB;
+        a schema:TypeAndQuantityNode;
+            schema:amountOfThisGood ?memory;
+            schema:unitCode cocoon:GB
     ];
+
     GENERATE {
-        <data/vm/gcloud/{?name}> cocoon:hasMaxStorageSize [
-            a cocoon:QuantityOfThings;
-                cocoon:numericValue ?maxPdSize;
-                cocoon:hasUnitOfMeasurement cocoon:TB;
+        ?iri cocoon:hasMaxStorageSize [
+            a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?maxPdSize;
+                schema:unitCode cocoon:TB
         ];
     } 
     WHERE {
         FILTER( BOUND(?maxPdSize) )
     } .
+
     GENERATE {
-        <data/vm/gcloud/{?name}> cocoon:hasMaxNumberOfDisk [
-            a cocoon:QuantityOfThings;
-                cocoon:numericValue ?maxNumberOfPd;
+        ?iri cocoon:hasMaxNumberOfDisk [
+            a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?maxNumberOfPd
         ];
     } 
     WHERE {
         FILTER( BOUND(?maxNumberOfPd) )
     } .
+
     GENERATE {
-        <data/vm/gcloud/{?name}> cocoon:hasCPUcapacity[
-            a cocoon:QuantityOfThings;
-                cocoon:numericValue ?gceu;
-                cocoon:hasUnitOfMeasurement cocoon:gceu;
+        ?iri cocoon:hasCPUcapacity[
+            a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?gceu;
+                schema:unitCode cocoon:GCEU;
         ];
     } 
     WHERE {
         FILTER( BOUND(?gceu) )
     } .
+
     GENERATE {
-        <data/vm/gcloud/{?name}> gr:hasPriceSpecification [ 
-            a gr:UnitPriceSpecification ; 
+        ?iri gr:hasPriceSpecification [ 
+            a cocoon:CloudServicePriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?regionalPrice; 
-                cocoon:hasRegion <data/region/gcloud/{?region}>;
+                # cocoon:hasRegion ?region_iri;
+                cocoon:hasRegion <{?release_date}/Region/{?provider_slug}/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour ;
         ] 
     } 
@@ -58,11 +65,9 @@ GENERATE {
     WHERE {
         BIND ( xsd:float( fun:JSONPath(?price,".price") ) AS ?regionalPrice )
         BIND ( fun:JSONPath(?price,".region") AS ?region )
-    }   
-  	.
- 
+    } .
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/vm.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/compute.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudVM
 WHERE {
     BIND ( fun:JSONPath(?gcloudVM,".name") AS ?name )
@@ -71,4 +76,9 @@ WHERE {
     BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".gceu") ) AS ?gceu )
     BIND ( xsd:nonNegativeInteger ( fun:JSONPath(?gcloudVM,".maxNumberOfPd") ) AS ?maxNumberOfPd )
     BIND ( xsd:nonNegativeInteger ( fun:JSONPath(?gcloudVM,".maxPdSize") ) AS ?maxPdSize )
+    # having signle point of change for the following
+    BIND ( "Gcloud" as ?provider_slug)
+    BIND ( "2019-02-12" as ?release_date) # yr-month-day
+    BIND ( <{?release_date}/ComputeService/{?provider_slug}/{?name}> as ?iri)
+    BIND ( xsd:date(?release_date) as ?date)
 }

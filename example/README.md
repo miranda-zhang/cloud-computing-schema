@@ -1,3 +1,4 @@
+# Examples
 # Request ontology from url
 [GET rdf/ttl via Ajax](ajax.html)
 
@@ -11,9 +12,9 @@ Created with https://github.com/ariutta/json-ld-macros
 
 ## List of Cloud Service Examples:
 1. [Google Cloud Compute Service](gcloud/compute.md)
-2. [Google Cloud Storage](gcloud/storage.md)
-3. [Google Cloud OS images](gcloud/os.md)
-4. [Microsoft Azure VM instance](azure/vm.md)
+2. [Microsoft Azure Compute Service](azure/compute.md)
+3. [Google Cloud Storage](gcloud/storage.md)
+4. [Google Cloud OS images](gcloud/os.md)
 5. [Microsoft Azure Storage](azure/storage.md)
    
 ## Link Regions with GeoNames Ontology

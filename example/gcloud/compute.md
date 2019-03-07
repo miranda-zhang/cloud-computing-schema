@@ -47,11 +47,8 @@ from doc https://cloud.google.com/compute/docs/machine-types
 v1.41 https://jqplay.org/s/8bvhcfLZV4 [Cached result](../jq/gcloud/v1.41/vm.json)
 
 ## Mapping to ontology
-### Mapping Online 
-Query: [compute.rqg](../sparql-generate/gcloud/compute.rqg)
-Result: []()
-in 
-to get [Results (RDF turtle)](../sparql-generate/result/gcloud/vm.ttl)
 ```
-java -jar sparql-generate-jena.jar --output result/gcloud/uplink.ttl --query-file gcloud/uplink.rqg --log-level ERROR
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/compute.rqg --output result/gcloud/v1.0.1/2019-02-12/compute.ttl  --log-level ERROR 
 ```
+Query: [compute.rqg](../sparql-generate/gcloud/v1.0.1/2019-02-12/compute.rqg)
+Result: [compute.ttl](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/compute.ttl)

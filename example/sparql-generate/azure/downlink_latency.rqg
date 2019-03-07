@@ -8,7 +8,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX qudt: <http://qudt.org/1.1/schema/qudt#>
-PREFIX qudt-unit: <http://qudt.org/1.1/vocab/unit#>
+PREFIX unit: <http://qudt.org/1.1/vocab/unit#>
 
 GENERATE {
     GENERATE {
@@ -24,7 +24,7 @@ GENERATE {
             sosa:hasResult [
                 a qudt:QuantityValue ;
                 qudt:numericValue ?average ;
-                qudt-unit: ?unit ] ;
+                unit: ?unit ] ;
             sosa:resultTime ?dateTime .
     }
     WHERE{
@@ -44,7 +44,7 @@ GENERATE {
             sosa:hasResult [
                 a qudt:QuantityValue ;
                 qudt:numericValue ?average ;
-                qudt-unit: ?unit ] ;
+                unit: ?unit ] ;
             sosa:resultTime ?dateTime .
     }
     WHERE{
@@ -65,7 +65,7 @@ WHERE {
     BIND( xsd:dateTime( ?completion_time ) AS ?dateTime)
     BIND( xsd:string(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)
     BIND( xsd:string(fun:JSONPath(?qos, '$.max_size')) AS ?max_size)
-    BIND ( IF( ?type = "downlink" , qudt-unit:MegabitsPerSecond , qudt-unit:MilliSecond ) AS ?unit )
+    BIND ( IF( ?type = "downlink" , unit:MegabitsPerSecond , unit:MilliSecond ) AS ?unit )
 
     # Put dash between each word for easy parsing if needed
     BIND( CONCAT("DownlinkSpeed-",?min_size,"-",?max_size,"-KB") AS ?downlinkMin_maxKB )
