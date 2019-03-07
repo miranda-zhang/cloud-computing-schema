@@ -46,9 +46,9 @@ Result: [downlink_latency.ttl](../../sparql-generate/result/azure/downlink_laten
 
 # Uplink Data
 See [selenium](../selenium) about how to collect the data.
-
-Query: [uplink.rqg](../../sparql-generate/azure/uplink.rqg)
 ```
 java -jar sparql-generate-jena.jar --output result/azure/uplink.ttl --query-file azure/uplink.rqg --log-level ERROR
 ```
+Query: [uplink.rqg](../../sparql-generate/azure/uplink.rqg)
+
 Result: [downlink_latency.ttl](../../sparql-generate/result/azure/uplink.ttl)

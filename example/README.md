@@ -10,7 +10,7 @@ Created with https://github.com/ariutta/json-ld-macros
 ![Workflow](cococon_usage_workflow.png "Workflow Overview")
 
 ## List of Cloud Service Examples:
-1. [Google Cloud VM instance](gcloud/vm.md)
+1. [Google Cloud Compute Service](gcloud/compute.md)
 2. [Google Cloud Storage](gcloud/storage.md)
 3. [Google Cloud OS images](gcloud/os.md)
 4. [Microsoft Azure VM instance](azure/vm.md)

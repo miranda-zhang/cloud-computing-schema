@@ -62,7 +62,7 @@ GENERATE {
   	.
  
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/vm.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/vm.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudVM
 WHERE {
     BIND ( fun:JSONPath(?gcloudVM,".name") AS ?name )
