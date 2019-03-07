@@ -24,21 +24,22 @@ https://www.rhipe.com/azure-storage-transactions/
 ## Data extraction
 Apply transformation `jq '.offers.transactions'`
 on [input](#getting-input).
+Result:[2018-03-02](../jq/azure/2018-03-02/vm_base_storageTransactions.json)
 
-Result:
-1. [v1.0.0 2018-03-02](../jq/azure/2018-03-02/vm_base_storageTransactions.json)
-2. [2019-03-07](../jq/azure/2019-03-07/vm_base_storageTransactions.json)
-   [view on jqplay](https://jqplay.org/s/G2WY1m1bRX)
+jq: `.offers.transactions.prices`
+[view on jqplay](https://jqplay.org/s/eOI_lLytRP)
+
+Result:[2019-03-07](../jq/azure/2019-03-07/vm_base_storageTransactions.json)
 
 ## Mapping storage transactions price
 Query:[v1.0.0 2018-03-02](../sparql-generate/azure/v1.0.0/vm_base_storageTransactions.rqg)
 Result:[v1.0.0 2018-03-02](../sparql-generate/result/azure/v1.0.0/vm_base_storageTransactions.ttl)
 
 ```
-java -jar sparql-generate-jena.jar --query-file azure/2019-03-07/vm_base.rqg --output result/azure/2019-03-07/vm_base.ttl --log-level ERROR
+java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg --output result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl --log-level ERROR
 ```
 Query:[v1.0.1 2019-03-07](../sparql-generate/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg)
-Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg)
+Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl)
 
 # VM Basic
 ## Data extraction
@@ -47,7 +48,7 @@ on [input](#getting-input).
 
 Result:
 1. [2018-03-02/vm_base_offers.json](../jq/azure/2018-03-02/vm_base_offers.json)
-2. [2019-03-07/vm_base_offers.json](../jq/azure/2019-03-07/vm_base_offers.json)
+2. [2019-03-07/vm_base_offers.json](../jq/azure/2019-03-07/vm_base_offers.json),
    [view on jqplay](https://jqplay.org/s/NbdTDztQbb)
 
 ## Mapping to ontology

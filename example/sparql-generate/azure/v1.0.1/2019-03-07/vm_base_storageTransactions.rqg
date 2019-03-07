@@ -8,19 +8,26 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 PREFIX schema: <https://schema.org/>
 
 GENERATE { 
-  <price_specification/azure/storage_transaction/vm_base> a cocoon:StorageTransactionsPriceSpecification;
+  ?iri a cocoon:CloudStorageTransactionsPriceSpecification;
     rdfs:label "Azure VM Storage transactions price specification";
+    schema:dateModified ?date;
+    cocoon:hasProvider ?provider;
     gr:hasPriceSpecification [ 
-        a gr:UnitPriceSpecification ; 
+        a cocoon:CloudServicePriceSpecification ; 
             gr:hasCurrency "USD"^^xsd:string; 
             gr:hasCurrencyValue ?value; 
-            cocoon:hasRegion <region/azure/{?region_slug}>;
-    ] 
+            cocoon:hasRegion <{?updated}/Region/{?provider_slug}/{?region}>;
+    ] .
  
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/2019-03-07/vm_base_storageTransactions.json> AS ?source
-BIND (fun:JSONPath(?source,"$.prices") AS ?prices)
-ITERATOR iter:JSONListKeys(?prices) AS ?region_slug
+ITERATOR iter:JSONListKeys(?source) AS ?region
 WHERE {
-    BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region_slug}.value") / 10000 ) AS ?value)
+    BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region}.value") / 10000 ) AS ?value)
+    # having signle point of change for the following
+    BIND ( "Azure" as ?provider_slug )
+    BIND ( cocoon:Azure as ?provider )
+    BIND ( "2019-03-07" as ?updated) # yr-month-day
+    BIND ( <{?updated}/CloudStorageTransactionsPriceSpecification/{?provider_slug}/vm_base> as ?iri )
+    BIND ( xsd:date(?updated) as ?date )
 }

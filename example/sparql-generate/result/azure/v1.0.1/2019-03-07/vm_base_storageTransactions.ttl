@@ -1,0 +1,21 @@
+@prefix schema: <https://schema.org/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl#> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-03-07/CloudStorageTransactionsPriceSpecification/Azure/vm_base>
+        a                         cocoon:CloudStorageTransactionsPriceSpecification ;
+        rdfs:label                "Azure VM Storage transactions price specification" ;
+        gr:hasPriceSpecification  [ a                 cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency    "USD" ;
+                                    cocoon:hasRegion  <https://w3id.org/cocoon/data/v1.0.1/2019-03-07/Region/Azure/pricingTypes>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                 cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency    "USD" ;
+                                    cocoon:hasRegion  <https://w3id.org/cocoon/data/v1.0.1/2019-03-07/Region/Azure/prices>
+                                  ] ;
+        cocoon:hasProvider        cocoon:Azure ;
+        schema:dateModified       "2019-03-07"^^xsd:date .
