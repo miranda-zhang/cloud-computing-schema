@@ -32,9 +32,9 @@ Query:[v1.0.0 2018-03-02](../sparql-generate/azure/v1.0.0/managed-disk-transacti
 Result:[v1.0.0 2018-03-02](../sparql-generate/result/azure/v1.0.0/managed-disk-transactions.ttl)
 
 Query:[v1.0.1 2019-03-07](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg)
-Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg)
+Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl)
 ```
-java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg --output result/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg --log-level ERROR
+java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg --output result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl --log-level ERROR
 ```
 
 # Disk Snapshots
@@ -52,13 +52,21 @@ Interpreting the document:
 # Managed Disk
 ## Transform input
 Apply transformation `jq '.offers | del ( ."transactions-hdd", ."transactions-ssd")'`
-on [input](#input)
-to get [result](../jq/azure/managed-disks.json).
+on [input](#input).
+
+Result:
+1. 2018-03-02: [file](../jq/azure/2018-03-02/managed-disks.json)
+2. 2019-03-07: [file](../jq/azure/2019-03-07/managed-disks.json), https://jqplay.org/s/bMReXuJv-h
 
 ## Mapping to ontology
-Run [queries](../sparql-generate/azure/managed-disks.rqg)
-with [SPARQL-Generate Executable](https://ci.mines-stetienne.fr/sparql-generate/language-cli.html)
+Query:[v1.0.0 2018-03-02](../sparql-generate/azure/v1.0.0/managed-disks.rqg)
+Result:[v1.0.0 2018-03-02](../sparql-generate/result/azure/v1.0.0/managed-disks.ttl)
 ```
-java -jar sparql-generate-jena.jar --output result/azure/managed-disks.ttl --query-file azure/managed-disks.rqg --log-level ERROR
+java -jar sparql-generate-jena.jar --output result/azure/v1.0.0/managed-disks.ttl --query-file azure/v1.0.0/managed-disks.rqg --log-level ERROR
 ```
-to get [results (RDF turtle)](../sparql-generate/result/azure/managed-disks.ttl)
+
+Query:[v1.0.1 2019-03-07](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disks.rqg)
+Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disks.ttl)
+```
+java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disks.rqg --output result/azure/v1.0.1/2019-03-07/managed-disks.ttl --log-level ERROR
+```

@@ -8,15 +8,16 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 PREFIX schema: <https://schema.org/>
 
 GENERATE { 
-    <price_specification/azure/storage_transaction/managed_disk/{?transactions}> a cocoon:CloudStorageTransactionsPriceSpecification;
+    ?iri a cocoon:CloudStorageTransactionsPriceSpecification;
         rdfs:label ?transactions;
-
+        schema:dateModified ?date;
+        cocoon:hasProvider ?provider;
         GENERATE {
-            <price_specification/azure/storage_transaction/managed_disk/{?transactions}>  gr:hasPriceSpecification [ 
-                a gr:UnitPriceSpecification ; 
+            ?iri  gr:hasPriceSpecification [ 
+                a gr:CloudServicePriceSpecification ; 
                     gr:hasCurrency "USD"^^xsd:string; 
                     gr:hasCurrencyValue ?value;
-                    cocoon:hasRegion <region/azure/{?region}>;
+                    cocoon:hasRegion <{?updated}/Region/{?provider_slug}/{?region}>;
             ]
         }
         ITERATOR iter:JSONListKeys(?prices) AS ?region
@@ -33,6 +34,6 @@ WHERE {
     BIND ( "Azure" as ?provider_slug )
     BIND ( cocoon:Azure as ?provider )
     BIND ( "2019-03-07" as ?updated) # yr-month-day
-    BIND ( <{?updated}/CloudStorageTransactionsPriceSpecification/{?provider_slug}/vm_base> as ?iri )
+    BIND ( <{?updated}/CloudStorageTransactionsPriceSpecification/{?provider_slug}/managed_disk/{?transactions}> as ?iri )
     BIND ( xsd:date(?updated) as ?date )
 }
