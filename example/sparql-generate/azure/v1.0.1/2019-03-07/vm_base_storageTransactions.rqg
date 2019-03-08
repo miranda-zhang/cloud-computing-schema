@@ -4,7 +4,7 @@ PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl#>
 PREFIX schema: <https://schema.org/>
 
 GENERATE { 
@@ -23,7 +23,7 @@ GENERATE {
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/2019-03-07/vm_base_storageTransactions.json> AS ?source
 ITERATOR iter:JSONListKeys(?source) AS ?region
 WHERE {
-    BIND (xsd:double ( fun:JSONPath(?prices,"$.{?region}.value") / 10000 ) AS ?value)
+    BIND (xsd:double ( fun:JSONPath(?source,"$.{?region}.value") / 10000 ) AS ?value)
     # having signle point of change for the following
     BIND ( "Azure" as ?provider_slug )
     BIND ( cocoon:Azure as ?provider )

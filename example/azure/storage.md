@@ -6,7 +6,9 @@ https://azure.microsoft.com/en-au/pricing/details/managed-disks/
 Data: original json for Azure Cloud
 https://azure.microsoft.com/api/v2/pricing/managed-disks/calculator/?culture=en-au&discount=mosp
 
-[A cached version of the json input.](../data/azure/managed-disks.json)
+Recorded on:
+1. [2018-03-02](../data/azure/2018-03-02/managed-disks.json)
+2. [2019-03-07](../data/azure/2019-03-07/managed-disks.json)
 
 # Data transactions cost
 From the [doc](#doc)
@@ -21,12 +23,19 @@ Apply the following transformations on [input](#input)
     select ( .key |contains("transactions"))
 )
 ```
-Result: [managed-disk-transactions.json](../jq/azure/managed-disk-transactions.json)
+Result:
+1. 2018-03-02: [file](../jq/azure/2018-03-02/managed-disk-transactions.json)
+2. 2019-03-07: [file](../jq/azure/2019-03-07/managed-disk-transactions.json), https://jqplay.org/s/mr2judqaqw
 
-## Mapping to ontology
-In [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-run queries to [map storage transactions price spec(json)](../sparql-generate/azure/managed-disk-transactions.rqg)
-to [RDF](../sparql-generate/result/azure/managed-disk-transactions.ttl)
+## Mapping storage transactions prices
+Query:[v1.0.0 2018-03-02](../sparql-generate/azure/v1.0.0/managed-disk-transactions.rqg)
+Result:[v1.0.0 2018-03-02](../sparql-generate/result/azure/v1.0.0/managed-disk-transactions.ttl)
+
+Query:[v1.0.1 2019-03-07](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg)
+Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg)
+```
+java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg --output result/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg --log-level ERROR
+```
 
 # Disk Snapshots
 From the [doc](#doc)

@@ -1,0 +1,223 @@
+{
+    "transactions-hdd": {
+      "prices": {
+        "asia-pacific-east": {
+          "value": 0.0005
+        },
+        "asia-pacific-southeast": {
+          "value": 0.0005
+        },
+        "australia-central": {
+          "value": 0.0005
+        },
+        "australia-central-2": {
+          "value": 0.0005
+        },
+        "australia-east": {
+          "value": 0.0005
+        },
+        "australia-southeast": {
+          "value": 0.0005
+        },
+        "brazil-south": {
+          "value": 0.0005
+        },
+        "canada-central": {
+          "value": 0.0005
+        },
+        "canada-east": {
+          "value": 0.0005
+        },
+        "central-india": {
+          "value": 0.0005
+        },
+        "europe-north": {
+          "value": 0.0005
+        },
+        "europe-west": {
+          "value": 0.0005
+        },
+        "france-central": {
+          "value": 0.0005
+        },
+        "france-south": {
+          "value": 0.0005
+        },
+        "germany-central": {
+          "value": 0.000575
+        },
+        "germany-northeast": {
+          "value": 0.000575
+        },
+        "japan-east": {
+          "value": 0.0005
+        },
+        "japan-west": {
+          "value": 0.0005
+        },
+        "korea-central": {
+          "value": 0.0005
+        },
+        "korea-south": {
+          "value": 0.0005
+        },
+        "south-india": {
+          "value": 0.0005
+        },
+        "united-kingdom-south": {
+          "value": 0.0005
+        },
+        "united-kingdom-west": {
+          "value": 0.0005
+        },
+        "us-central": {
+          "value": 0.0005
+        },
+        "us-east": {
+          "value": 0.0005
+        },
+        "us-east-2": {
+          "value": 0.0005
+        },
+        "usgov-arizona": {
+          "value": 0.0005
+        },
+        "usgov-texas": {
+          "value": 0.0005
+        },
+        "usgov-virginia": {
+          "value": 0.0005
+        },
+        "us-north-central": {
+          "value": 0.0005
+        },
+        "us-south-central": {
+          "value": 0.0005
+        },
+        "us-west": {
+          "value": 0.0005
+        },
+        "us-west-2": {
+          "value": 0.0005
+        },
+        "us-west-central": {
+          "value": 0.0005
+        },
+        "west-india": {
+          "value": 0.0005
+        }
+      },
+      "pricingTypes": "WebDirect"
+    },
+    "transactions-ssd": {
+      "prices": {
+        "asia-pacific-east": {
+          "value": 0.002
+        },
+        "asia-pacific-southeast": {
+          "value": 0.002
+        },
+        "australia-central": {
+          "value": 0.002
+        },
+        "australia-central-2": {
+          "value": 0.002
+        },
+        "australia-east": {
+          "value": 0.002
+        },
+        "australia-southeast": {
+          "value": 0.002
+        },
+        "brazil-south": {
+          "value": 0.002
+        },
+        "canada-central": {
+          "value": 0.002
+        },
+        "canada-east": {
+          "value": 0.002
+        },
+        "central-india": {
+          "value": 0.002
+        },
+        "europe-north": {
+          "value": 0.002
+        },
+        "europe-west": {
+          "value": 0.002
+        },
+        "france-central": {
+          "value": 0.002
+        },
+        "france-south": {
+          "value": 0.002
+        },
+        "germany-central": {
+          "value": 0.00163
+        },
+        "germany-northeast": {
+          "value": 0.00163
+        },
+        "japan-east": {
+          "value": 0.002
+        },
+        "japan-west": {
+          "value": 0.002
+        },
+        "korea-central": {
+          "value": 0.002
+        },
+        "korea-south": {
+          "value": 0.002
+        },
+        "south-india": {
+          "value": 0.002
+        },
+        "united-kingdom-south": {
+          "value": 0.002
+        },
+        "united-kingdom-west": {
+          "value": 0.002
+        },
+        "us-central": {
+          "value": 0.002
+        },
+        "us-east": {
+          "value": 0.002
+        },
+        "us-east-2": {
+          "value": 0.002
+        },
+        "usgov-arizona": {
+          "value": 0.002
+        },
+        "usgov-texas": {
+          "value": 0.002
+        },
+        "usgov-virginia": {
+          "value": 0.002
+        },
+        "us-north-central": {
+          "value": 0.002
+        },
+        "us-south-central": {
+          "value": 0.002
+        },
+        "us-west": {
+          "value": 0.002
+        },
+        "us-west-2": {
+          "value": 0.002
+        },
+        "us-west-central": {
+          "value": 0.002
+        },
+        "west-india": {
+          "value": 0.002
+        }
+      },
+      "pricingTypes": "WebDirect"
+    }
+  }
+  

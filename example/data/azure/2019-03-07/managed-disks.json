@@ -1,0 +1,4675 @@
+{
+    "sizes": [
+        {
+            "slug": "p4",
+            "displayName": "P4"
+        },
+        {
+            "slug": "p6",
+            "displayName": "P6"
+        },
+        {
+            "slug": "p10",
+            "displayName": "P10"
+        },
+        {
+            "slug": "p15",
+            "displayName": "P15"
+        },
+        {
+            "slug": "p20",
+            "displayName": "P20"
+        },
+        {
+            "slug": "p30",
+            "displayName": "P30"
+        },
+        {
+            "slug": "p40",
+            "displayName": "P40"
+        },
+        {
+            "slug": "p50",
+            "displayName": "P50"
+        },
+        {
+            "slug": "p60",
+            "displayName": "P60 (PREVIEW)"
+        },
+        {
+            "slug": "p70",
+            "displayName": "P70 (PREVIEW)"
+        },
+        {
+            "slug": "p80",
+            "displayName": "P80 (PREVIEW)"
+        },
+        {
+            "slug": "s4",
+            "displayName": "S4"
+        },
+        {
+            "slug": "s6",
+            "displayName": "S6"
+        },
+        {
+            "slug": "s10",
+            "displayName": "S10"
+        },
+        {
+            "slug": "s15",
+            "displayName": "S15"
+        },
+        {
+            "slug": "s20",
+            "displayName": "S20"
+        },
+        {
+            "slug": "s30",
+            "displayName": "S30"
+        },
+        {
+            "slug": "s40",
+            "displayName": "S40"
+        },
+        {
+            "slug": "s50",
+            "displayName": "S50"
+        },
+        {
+            "slug": "s60",
+            "displayName": "S60 (PREVIEW)"
+        },
+        {
+            "slug": "s70",
+            "displayName": "S70 (PREVIEW)"
+        },
+        {
+            "slug": "s80",
+            "displayName": "S80 (PREVIEW)"
+        },
+        {
+            "slug": "e4",
+            "displayName": "E4"
+        },
+        {
+            "slug": "e6",
+            "displayName": "E6"
+        },
+        {
+            "slug": "e10",
+            "displayName": "E10"
+        },
+        {
+            "slug": "e15",
+            "displayName": "E15"
+        },
+        {
+            "slug": "e20",
+            "displayName": "E20"
+        },
+        {
+            "slug": "e30",
+            "displayName": "E30"
+        },
+        {
+            "slug": "e40",
+            "displayName": "E40"
+        },
+        {
+            "slug": "e50",
+            "displayName": "E50"
+        },
+        {
+            "slug": "e60",
+            "displayName": "E60 (PREVIEW)"
+        },
+        {
+            "slug": "e70",
+            "displayName": "E70 (PREVIEW)"
+        },
+        {
+            "slug": "e80",
+            "displayName": "E80 (PREVIEW)"
+        },
+        {
+            "slug": "ultraiops"
+        },
+        {
+            "slug": "ultrastored"
+        },
+        {
+            "slug": "ultrathroughput"
+        },
+        {
+            "slug": "ultravcpu"
+        }
+    ],
+    "tiers": [
+        {
+            "slug": "standardhdd",
+            "displayName": "Standard HDD"
+        },
+        {
+            "slug": "standardssd",
+            "displayName": "Standard SSD"
+        },
+        {
+            "slug": "premiumssd",
+            "displayName": "Premium SSD"
+        }
+    ],
+    "snapshotRedundancies": [
+        {
+            "slug": "lrs",
+            "displayName": "LRS"
+        },
+        {
+            "slug": "zrs",
+            "displayName": "ZRS"
+        }
+    ],
+    "offers": {
+        "transactions-hdd": {
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 0.0005
+                },
+                "asia-pacific-southeast": {
+                    "value": 0.0005
+                },
+                "australia-central": {
+                    "value": 0.0005
+                },
+                "australia-central-2": {
+                    "value": 0.0005
+                },
+                "australia-east": {
+                    "value": 0.0005
+                },
+                "australia-southeast": {
+                    "value": 0.0005
+                },
+                "brazil-south": {
+                    "value": 0.0005
+                },
+                "canada-central": {
+                    "value": 0.0005
+                },
+                "canada-east": {
+                    "value": 0.0005
+                },
+                "central-india": {
+                    "value": 0.0005
+                },
+                "europe-north": {
+                    "value": 0.0005
+                },
+                "europe-west": {
+                    "value": 0.0005
+                },
+                "france-central": {
+                    "value": 0.0005
+                },
+                "france-south": {
+                    "value": 0.0005
+                },
+                "germany-central": {
+                    "value": 0.000575
+                },
+                "germany-northeast": {
+                    "value": 0.000575
+                },
+                "japan-east": {
+                    "value": 0.0005
+                },
+                "japan-west": {
+                    "value": 0.0005
+                },
+                "korea-central": {
+                    "value": 0.0005
+                },
+                "korea-south": {
+                    "value": 0.0005
+                },
+                "south-india": {
+                    "value": 0.0005
+                },
+                "united-kingdom-south": {
+                    "value": 0.0005
+                },
+                "united-kingdom-west": {
+                    "value": 0.0005
+                },
+                "us-central": {
+                    "value": 0.0005
+                },
+                "us-east": {
+                    "value": 0.0005
+                },
+                "us-east-2": {
+                    "value": 0.0005
+                },
+                "usgov-arizona": {
+                    "value": 0.0005
+                },
+                "usgov-texas": {
+                    "value": 0.0005
+                },
+                "usgov-virginia": {
+                    "value": 0.0005
+                },
+                "us-north-central": {
+                    "value": 0.0005
+                },
+                "us-south-central": {
+                    "value": 0.0005
+                },
+                "us-west": {
+                    "value": 0.0005
+                },
+                "us-west-2": {
+                    "value": 0.0005
+                },
+                "us-west-central": {
+                    "value": 0.0005
+                },
+                "west-india": {
+                    "value": 0.0005
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "transactions-ssd": {
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 0.002
+                },
+                "asia-pacific-southeast": {
+                    "value": 0.002
+                },
+                "australia-central": {
+                    "value": 0.002
+                },
+                "australia-central-2": {
+                    "value": 0.002
+                },
+                "australia-east": {
+                    "value": 0.002
+                },
+                "australia-southeast": {
+                    "value": 0.002
+                },
+                "brazil-south": {
+                    "value": 0.002
+                },
+                "canada-central": {
+                    "value": 0.002
+                },
+                "canada-east": {
+                    "value": 0.002
+                },
+                "central-india": {
+                    "value": 0.002
+                },
+                "europe-north": {
+                    "value": 0.002
+                },
+                "europe-west": {
+                    "value": 0.002
+                },
+                "france-central": {
+                    "value": 0.002
+                },
+                "france-south": {
+                    "value": 0.002
+                },
+                "germany-central": {
+                    "value": 0.00163
+                },
+                "germany-northeast": {
+                    "value": 0.00163
+                },
+                "japan-east": {
+                    "value": 0.002
+                },
+                "japan-west": {
+                    "value": 0.002
+                },
+                "korea-central": {
+                    "value": 0.002
+                },
+                "korea-south": {
+                    "value": 0.002
+                },
+                "south-india": {
+                    "value": 0.002
+                },
+                "united-kingdom-south": {
+                    "value": 0.002
+                },
+                "united-kingdom-west": {
+                    "value": 0.002
+                },
+                "us-central": {
+                    "value": 0.002
+                },
+                "us-east": {
+                    "value": 0.002
+                },
+                "us-east-2": {
+                    "value": 0.002
+                },
+                "usgov-arizona": {
+                    "value": 0.002
+                },
+                "usgov-texas": {
+                    "value": 0.002
+                },
+                "usgov-virginia": {
+                    "value": 0.002
+                },
+                "us-north-central": {
+                    "value": 0.002
+                },
+                "us-south-central": {
+                    "value": 0.002
+                },
+                "us-west": {
+                    "value": 0.002
+                },
+                "us-west-2": {
+                    "value": 0.002
+                },
+                "us-west-central": {
+                    "value": 0.002
+                },
+                "west-india": {
+                    "value": 0.002
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-snapshot": {
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 0.145
+                },
+                "asia-pacific-southeast": {
+                    "value": 0.132
+                },
+                "australia-central": {
+                    "value": 0.165
+                },
+                "australia-central-2": {
+                    "value": 0.165
+                },
+                "australia-east": {
+                    "value": 0.132
+                },
+                "australia-southeast": {
+                    "value": 0.132
+                },
+                "brazil-south": {
+                    "value": 0.228
+                },
+                "canada-central": {
+                    "value": 0.144
+                },
+                "canada-east": {
+                    "value": 0.132
+                },
+                "central-india": {
+                    "value": 0.132
+                },
+                "europe-north": {
+                    "value": 0.132
+                },
+                "europe-west": {
+                    "value": 0.145
+                },
+                "france-central": {
+                    "value": 0.16
+                },
+                "france-south": {
+                    "value": 0.208
+                },
+                "germany-central": {
+                    "value": 0.1518
+                },
+                "germany-northeast": {
+                    "value": 0.1518
+                },
+                "japan-east": {
+                    "value": 0.152
+                },
+                "japan-west": {
+                    "value": 0.138
+                },
+                "korea-central": {
+                    "value": 0.132
+                },
+                "korea-south": {
+                    "value": 0.132
+                },
+                "south-africa-north": {
+                    "value": 0.161
+                },
+                "south-africa-west": {
+                    "value": 0.202
+                },
+                "south-india": {
+                    "value": 0.1188
+                },
+                "united-kingdom-south": {
+                    "value": 0.16
+                },
+                "united-kingdom-west": {
+                    "value": 0.16
+                },
+                "us-central": {
+                    "value": 0.132
+                },
+                "us-east": {
+                    "value": 0.132
+                },
+                "us-east-2": {
+                    "value": 0.12
+                },
+                "usgov-arizona": {
+                    "value": 0.132
+                },
+                "usgov-texas": {
+                    "value": 0.132
+                },
+                "usgov-virginia": {
+                    "value": 0.132
+                },
+                "us-north-central": {
+                    "value": 0.132
+                },
+                "us-south-central": {
+                    "value": 0.12
+                },
+                "us-west": {
+                    "value": 0.132
+                },
+                "us-west-2": {
+                    "value": 0.12
+                },
+                "us-west-central": {
+                    "value": 0.12
+                },
+                "west-india": {
+                    "value": 0.132
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p4": {
+            "size": 32,
+            "speed": 25,
+            "iops": 120,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 5.8072
+                },
+                "asia-pacific-southeast": {
+                    "value": 5.2795
+                },
+                "australia-central": {
+                    "value": 6.5994
+                },
+                "australia-central-2": {
+                    "value": 6.5994
+                },
+                "australia-east": {
+                    "value": 5.2795
+                },
+                "australia-southeast": {
+                    "value": 5.2795
+                },
+                "brazil-south": {
+                    "value": 9.1206
+                },
+                "canada-central": {
+                    "value": 5.7601
+                },
+                "canada-east": {
+                    "value": 5.2801
+                },
+                "central-india": {
+                    "value": 5.2795
+                },
+                "europe-north": {
+                    "value": 5.2795
+                },
+                "europe-west": {
+                    "value": 5.8072
+                },
+                "france-central": {
+                    "value": 6.3879
+                },
+                "france-south": {
+                    "value": 8.30427
+                },
+                "germany-central": {
+                    "value": 6.0714
+                },
+                "germany-northeast": {
+                    "value": 6.0714
+                },
+                "japan-east": {
+                    "value": 6.0724
+                },
+                "japan-west": {
+                    "value": 5.5206
+                },
+                "korea-central": {
+                    "value": 5.2795
+                },
+                "korea-south": {
+                    "value": 5.2795
+                },
+                "south-africa-north": {
+                    "value": 6.432
+                },
+                "south-africa-west": {
+                    "value": 8.064
+                },
+                "south-india": {
+                    "value": 4.7516
+                },
+                "united-kingdom-south": {
+                    "value": 6.3879
+                },
+                "united-kingdom-west": {
+                    "value": 6.3879
+                },
+                "us-central": {
+                    "value": 5.2795
+                },
+                "us-east": {
+                    "value": 5.2795
+                },
+                "us-east-2": {
+                    "value": 4.8001
+                },
+                "usgov-arizona": {
+                    "value": 5.2795
+                },
+                "usgov-texas": {
+                    "value": 5.2795
+                },
+                "usgov-virginia": {
+                    "value": 5.2795
+                },
+                "us-north-central": {
+                    "value": 5.2795
+                },
+                "us-south-central": {
+                    "value": 4.8001
+                },
+                "us-west": {
+                    "value": 5.2795
+                },
+                "us-west-2": {
+                    "value": 4.8001
+                },
+                "us-west-central": {
+                    "value": 4.8001
+                },
+                "west-india": {
+                    "value": 5.2795
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p6": {
+            "size": 64,
+            "speed": 50,
+            "iops": 240,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 11.2272
+                },
+                "asia-pacific-southeast": {
+                    "value": 10.207
+                },
+                "australia-central": {
+                    "value": 12.7587
+                },
+                "australia-central-2": {
+                    "value": 12.7587
+                },
+                "australia-east": {
+                    "value": 10.207
+                },
+                "australia-southeast": {
+                    "value": 10.207
+                },
+                "brazil-south": {
+                    "value": 17.6331
+                },
+                "canada-central": {
+                    "value": 11.1361
+                },
+                "canada-east": {
+                    "value": 10.2081
+                },
+                "central-india": {
+                    "value": 10.207
+                },
+                "europe-north": {
+                    "value": 10.207
+                },
+                "europe-west": {
+                    "value": 11.2272
+                },
+                "france-central": {
+                    "value": 12.3499
+                },
+                "france-south": {
+                    "value": 16.05487
+                },
+                "germany-central": {
+                    "value": 11.7381
+                },
+                "germany-northeast": {
+                    "value": 11.7381
+                },
+                "japan-east": {
+                    "value": 11.7399
+                },
+                "japan-west": {
+                    "value": 10.6731
+                },
+                "korea-central": {
+                    "value": 10.207
+                },
+                "korea-south": {
+                    "value": 10.207
+                },
+                "south-africa-north": {
+                    "value": 12.435
+                },
+                "south-africa-west": {
+                    "value": 15.591
+                },
+                "south-india": {
+                    "value": 9.1863
+                },
+                "united-kingdom-south": {
+                    "value": 12.3499
+                },
+                "united-kingdom-west": {
+                    "value": 12.3499
+                },
+                "us-central": {
+                    "value": 10.207
+                },
+                "us-east": {
+                    "value": 10.207
+                },
+                "us-east-2": {
+                    "value": 9.2801
+                },
+                "usgov-arizona": {
+                    "value": 10.207
+                },
+                "usgov-texas": {
+                    "value": 10.207
+                },
+                "usgov-virginia": {
+                    "value": 10.207
+                },
+                "us-north-central": {
+                    "value": 10.207
+                },
+                "us-south-central": {
+                    "value": 9.2801
+                },
+                "us-west": {
+                    "value": 10.207
+                },
+                "us-west-2": {
+                    "value": 9.2801
+                },
+                "us-west-central": {
+                    "value": 9.2801
+                },
+                "west-india": {
+                    "value": 10.207
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p10": {
+            "size": 128,
+            "speed": 100,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 21.68
+                },
+                "asia-pacific-southeast": {
+                    "value": 19.71
+                },
+                "australia-central": {
+                    "value": 24.6375
+                },
+                "australia-central-2": {
+                    "value": 24.6375
+                },
+                "australia-east": {
+                    "value": 19.71
+                },
+                "australia-southeast": {
+                    "value": 19.71
+                },
+                "brazil-south": {
+                    "value": 34.05
+                },
+                "canada-central": {
+                    "value": 21.504
+                },
+                "canada-east": {
+                    "value": 19.712
+                },
+                "central-india": {
+                    "value": 19.71
+                },
+                "europe-north": {
+                    "value": 19.71
+                },
+                "europe-west": {
+                    "value": 21.68
+                },
+                "france-central": {
+                    "value": 23.848
+                },
+                "france-south": {
+                    "value": 31.0024
+                },
+                "germany-central": {
+                    "value": 22.6665
+                },
+                "germany-northeast": {
+                    "value": 22.6665
+                },
+                "japan-east": {
+                    "value": 22.67
+                },
+                "japan-west": {
+                    "value": 20.61
+                },
+                "korea-central": {
+                    "value": 19.71
+                },
+                "korea-south": {
+                    "value": 19.71
+                },
+                "south-africa-north": {
+                    "value": 24.013
+                },
+                "south-africa-west": {
+                    "value": 30.106
+                },
+                "south-india": {
+                    "value": 17.739
+                },
+                "united-kingdom-south": {
+                    "value": 23.848
+                },
+                "united-kingdom-west": {
+                    "value": 23.848
+                },
+                "us-central": {
+                    "value": 19.71
+                },
+                "us-east": {
+                    "value": 19.71
+                },
+                "us-east-2": {
+                    "value": 17.92
+                },
+                "usgov-arizona": {
+                    "value": 19.71
+                },
+                "usgov-texas": {
+                    "value": 19.71
+                },
+                "usgov-virginia": {
+                    "value": 19.71
+                },
+                "us-north-central": {
+                    "value": 19.71
+                },
+                "us-south-central": {
+                    "value": 17.92
+                },
+                "us-west": {
+                    "value": 19.71
+                },
+                "us-west-2": {
+                    "value": 17.92
+                },
+                "us-west-central": {
+                    "value": 17.92
+                },
+                "west-india": {
+                    "value": 19.71
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p15": {
+            "size": 256,
+            "speed": 125,
+            "iops": 1100,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 41.811428
+                },
+                "asia-pacific-southeast": {
+                    "value": 38.012142
+                },
+                "australia-central": {
+                    "value": 47.5152
+                },
+                "australia-central-2": {
+                    "value": 47.5152
+                },
+                "australia-east": {
+                    "value": 38.012142
+                },
+                "australia-southeast": {
+                    "value": 38.012142
+                },
+                "brazil-south": {
+                    "value": 65.667857
+                },
+                "canada-central": {
+                    "value": 41.472
+                },
+                "canada-east": {
+                    "value": 38.016
+                },
+                "central-india": {
+                    "value": 38.012142
+                },
+                "europe-north": {
+                    "value": 38.012142
+                },
+                "europe-west": {
+                    "value": 41.811428
+                },
+                "france-central": {
+                    "value": 45.992571
+                },
+                "france-south": {
+                    "value": 59.790342
+                },
+                "germany-central": {
+                    "value": 43.713976
+                },
+                "germany-northeast": {
+                    "value": 43.713976
+                },
+                "japan-east": {
+                    "value": 43.720714
+                },
+                "japan-west": {
+                    "value": 39.747857
+                },
+                "korea-central": {
+                    "value": 38.012142
+                },
+                "korea-south": {
+                    "value": 38.012142
+                },
+                "south-africa-north": {
+                    "value": 46.31
+                },
+                "south-africa-west": {
+                    "value": 58.061
+                },
+                "south-india": {
+                    "value": 34.210928
+                },
+                "united-kingdom-south": {
+                    "value": 45.992571
+                },
+                "united-kingdom-west": {
+                    "value": 45.992571
+                },
+                "us-central": {
+                    "value": 38.012142
+                },
+                "us-east": {
+                    "value": 38.012142
+                },
+                "us-east-2": {
+                    "value": 34.56
+                },
+                "usgov-arizona": {
+                    "value": 38.012129
+                },
+                "usgov-texas": {
+                    "value": 38.012129
+                },
+                "usgov-virginia": {
+                    "value": 38.012129
+                },
+                "us-north-central": {
+                    "value": 38.012142
+                },
+                "us-south-central": {
+                    "value": 34.56
+                },
+                "us-west": {
+                    "value": 38.012142
+                },
+                "us-west-2": {
+                    "value": 34.56
+                },
+                "us-west-central": {
+                    "value": 34.56
+                },
+                "west-india": {
+                    "value": 43.713964
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p20": {
+            "size": 512,
+            "speed": 150,
+            "iops": 2300,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 80.54
+                },
+                "asia-pacific-southeast": {
+                    "value": 73.22
+                },
+                "australia-central": {
+                    "value": 91.525
+                },
+                "australia-central-2": {
+                    "value": 91.525
+                },
+                "australia-east": {
+                    "value": 73.22
+                },
+                "australia-southeast": {
+                    "value": 73.22
+                },
+                "brazil-south": {
+                    "value": 126.46
+                },
+                "canada-central": {
+                    "value": 79.872
+                },
+                "canada-east": {
+                    "value": 73.216
+                },
+                "central-india": {
+                    "value": 73.22
+                },
+                "europe-north": {
+                    "value": 73.22
+                },
+                "europe-west": {
+                    "value": 80.54
+                },
+                "france-central": {
+                    "value": 88.594
+                },
+                "france-south": {
+                    "value": 115.1722
+                },
+                "germany-central": {
+                    "value": 84.203
+                },
+                "germany-northeast": {
+                    "value": 84.203
+                },
+                "japan-east": {
+                    "value": 84.2
+                },
+                "japan-west": {
+                    "value": 76.54
+                },
+                "korea-central": {
+                    "value": 73.22
+                },
+                "korea-south": {
+                    "value": 73.22
+                },
+                "south-africa-north": {
+                    "value": 89.19
+                },
+                "south-africa-west": {
+                    "value": 111.82
+                },
+                "south-india": {
+                    "value": 65.898
+                },
+                "united-kingdom-south": {
+                    "value": 88.594
+                },
+                "united-kingdom-west": {
+                    "value": 88.594
+                },
+                "us-central": {
+                    "value": 73.22
+                },
+                "us-east": {
+                    "value": 73.22
+                },
+                "us-east-2": {
+                    "value": 66.56
+                },
+                "usgov-arizona": {
+                    "value": 73.22
+                },
+                "usgov-texas": {
+                    "value": 73.22
+                },
+                "usgov-virginia": {
+                    "value": 73.22
+                },
+                "us-north-central": {
+                    "value": 73.22
+                },
+                "us-south-central": {
+                    "value": 66.56
+                },
+                "us-west": {
+                    "value": 73.22
+                },
+                "us-west-2": {
+                    "value": 66.56
+                },
+                "us-west-central": {
+                    "value": 66.56
+                },
+                "west-india": {
+                    "value": 73.22
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p30": {
+            "size": 1024,
+            "speed": 200,
+            "iops": 5000,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 148.68
+                },
+                "asia-pacific-southeast": {
+                    "value": 135.17
+                },
+                "australia-central": {
+                    "value": 168.9625
+                },
+                "australia-central-2": {
+                    "value": 168.9625
+                },
+                "australia-east": {
+                    "value": 135.17
+                },
+                "australia-southeast": {
+                    "value": 135.17
+                },
+                "brazil-south": {
+                    "value": 233.47
+                },
+                "canada-central": {
+                    "value": 147.456
+                },
+                "canada-east": {
+                    "value": 135.168
+                },
+                "central-india": {
+                    "value": 135.17
+                },
+                "europe-north": {
+                    "value": 135.17
+                },
+                "europe-west": {
+                    "value": 148.68
+                },
+                "france-central": {
+                    "value": 163.548
+                },
+                "france-south": {
+                    "value": 212.6124
+                },
+                "germany-central": {
+                    "value": 155.4455
+                },
+                "germany-northeast": {
+                    "value": 155.4455
+                },
+                "japan-east": {
+                    "value": 155.44
+                },
+                "japan-west": {
+                    "value": 135.17
+                },
+                "korea-central": {
+                    "value": 135.17
+                },
+                "korea-south": {
+                    "value": 135.17
+                },
+                "south-africa-north": {
+                    "value": 164.66
+                },
+                "south-africa-west": {
+                    "value": 206.44
+                },
+                "south-india": {
+                    "value": 121.653
+                },
+                "united-kingdom-south": {
+                    "value": 163.548
+                },
+                "united-kingdom-west": {
+                    "value": 163.548
+                },
+                "us-central": {
+                    "value": 135.17
+                },
+                "us-east": {
+                    "value": 135.17
+                },
+                "us-east-2": {
+                    "value": 122.88
+                },
+                "usgov-arizona": {
+                    "value": 135.17
+                },
+                "usgov-texas": {
+                    "value": 135.17
+                },
+                "usgov-virginia": {
+                    "value": 135.17
+                },
+                "us-north-central": {
+                    "value": 135.17
+                },
+                "us-south-central": {
+                    "value": 122.88
+                },
+                "us-west": {
+                    "value": 135.17
+                },
+                "us-west-2": {
+                    "value": 122.88
+                },
+                "us-west-central": {
+                    "value": 122.88
+                },
+                "west-india": {
+                    "value": 135.17
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p40": {
+            "size": 2048,
+            "speed": 250,
+            "iops": 7500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 284.9371
+                },
+                "asia-pacific-southeast": {
+                    "value": 259.0457
+                },
+                "australia-central": {
+                    "value": 323.8071
+                },
+                "australia-central-2": {
+                    "value": 323.8071
+                },
+                "australia-east": {
+                    "value": 259.0457
+                },
+                "australia-southeast": {
+                    "value": 259.0457
+                },
+                "brazil-south": {
+                    "value": 447.5143
+                },
+                "canada-central": {
+                    "value": 282.624
+                },
+                "canada-east": {
+                    "value": 259.072
+                },
+                "central-india": {
+                    "value": 259.0457
+                },
+                "europe-north": {
+                    "value": 259.0457
+                },
+                "europe-west": {
+                    "value": 284.9371
+                },
+                "france-central": {
+                    "value": 313.4309
+                },
+                "france-south": {
+                    "value": 407.46017
+                },
+                "germany-central": {
+                    "value": 297.9026
+                },
+                "germany-northeast": {
+                    "value": 297.9026
+                },
+                "japan-east": {
+                    "value": 297.9486
+                },
+                "japan-west": {
+                    "value": 270.8743
+                },
+                "korea-central": {
+                    "value": 259.045714
+                },
+                "korea-south": {
+                    "value": 259.045714
+                },
+                "south-africa-north": {
+                    "value": 315.6
+                },
+                "south-africa-west": {
+                    "value": 395.67
+                },
+                "south-india": {
+                    "value": 233.1411
+                },
+                "united-kingdom-south": {
+                    "value": 313.4309
+                },
+                "united-kingdom-west": {
+                    "value": 313.4309
+                },
+                "us-central": {
+                    "value": 259.0457
+                },
+                "us-east": {
+                    "value": 259.0457
+                },
+                "us-east-2": {
+                    "value": 235.52
+                },
+                "usgov-arizona": {
+                    "value": 259.0457
+                },
+                "usgov-texas": {
+                    "value": 259.0457
+                },
+                "usgov-virginia": {
+                    "value": 259.0457
+                },
+                "us-north-central": {
+                    "value": 259.0457
+                },
+                "us-south-central": {
+                    "value": 235.52
+                },
+                "us-west": {
+                    "value": 259.0457
+                },
+                "us-west-2": {
+                    "value": 235.52
+                },
+                "us-west-central": {
+                    "value": 235.52
+                },
+                "west-india": {
+                    "value": 259.0457
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p50": {
+            "size": 4096,
+            "speed": 250,
+            "iops": 7500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 545.0971
+                },
+                "asia-pacific-southeast": {
+                    "value": 495.5657
+                },
+                "australia-central": {
+                    "value": 619.4571
+                },
+                "australia-central-2": {
+                    "value": 619.4571
+                },
+                "australia-east": {
+                    "value": 495.5657
+                },
+                "australia-southeast": {
+                    "value": 495.5657
+                },
+                "brazil-south": {
+                    "value": 856.1143
+                },
+                "canada-central": {
+                    "value": 540.672
+                },
+                "canada-east": {
+                    "value": 495.616
+                },
+                "central-india": {
+                    "value": 495.5657
+                },
+                "europe-north": {
+                    "value": 495.5657
+                },
+                "europe-west": {
+                    "value": 545.0971
+                },
+                "france-central": {
+                    "value": 599.6069
+                },
+                "france-south": {
+                    "value": 779.48897
+                },
+                "germany-central": {
+                    "value": 569.9006
+                },
+                "germany-northeast": {
+                    "value": 569.9006
+                },
+                "japan-east": {
+                    "value": 569.9886
+                },
+                "japan-west": {
+                    "value": 518.1943
+                },
+                "korea-central": {
+                    "value": 495.565714
+                },
+                "korea-south": {
+                    "value": 495.565714
+                },
+                "south-africa-north": {
+                    "value": 603.75
+                },
+                "south-africa-west": {
+                    "value": 756.94
+                },
+                "south-india": {
+                    "value": 446.0091
+                },
+                "united-kingdom-south": {
+                    "value": 599.6069
+                },
+                "united-kingdom-west": {
+                    "value": 599.6069
+                },
+                "us-central": {
+                    "value": 495.5657
+                },
+                "us-east": {
+                    "value": 495.5657
+                },
+                "us-east-2": {
+                    "value": 450.56
+                },
+                "usgov-arizona": {
+                    "value": 495.5657
+                },
+                "usgov-texas": {
+                    "value": 495.5657
+                },
+                "usgov-virginia": {
+                    "value": 495.5657
+                },
+                "us-north-central": {
+                    "value": 495.5657
+                },
+                "us-south-central": {
+                    "value": 450.56
+                },
+                "us-west": {
+                    "value": 495.5657
+                },
+                "us-west-2": {
+                    "value": 450.56
+                },
+                "us-west-central": {
+                    "value": 450.56
+                },
+                "west-india": {
+                    "value": 495.5657
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p60": {
+            "size": 8192,
+            "speed": 480,
+            "iops": 12500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 520.32
+                },
+                "asia-pacific-southeast": {
+                    "value": 473.04
+                },
+                "australia-east": {
+                    "value": 473.04
+                },
+                "australia-southeast": {
+                    "value": 473.04
+                },
+                "brazil-south": {
+                    "value": 817.2
+                },
+                "canada-central": {
+                    "value": 516.096
+                },
+                "canada-east": {
+                    "value": 473.088
+                },
+                "central-india": {
+                    "value": 473.04
+                },
+                "europe-north": {
+                    "value": 473.04
+                },
+                "europe-west": {
+                    "value": 520.32
+                },
+                "france-central": {
+                    "value": 572.352
+                },
+                "france-south": {
+                    "value": 744.0576
+                },
+                "japan-east": {
+                    "value": 544.08
+                },
+                "japan-west": {
+                    "value": 494.64
+                },
+                "korea-central": {
+                    "value": 473.04
+                },
+                "korea-south": {
+                    "value": 473.04
+                },
+                "south-india": {
+                    "value": 425.736
+                },
+                "united-kingdom-south": {
+                    "value": 572.352
+                },
+                "united-kingdom-west": {
+                    "value": 572.352
+                },
+                "us-central": {
+                    "value": 473.04
+                },
+                "us-east": {
+                    "value": 473.04
+                },
+                "us-east-2": {
+                    "value": 430.08
+                },
+                "us-north-central": {
+                    "value": 473.04
+                },
+                "us-south-central": {
+                    "value": 430.08
+                },
+                "us-west": {
+                    "value": 473.04
+                },
+                "us-west-2": {
+                    "value": 430.08
+                },
+                "us-west-central": {
+                    "value": 430.08
+                },
+                "west-india": {
+                    "value": 473.04
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p70": {
+            "size": 16384,
+            "speed": 750,
+            "iops": 15000,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 991.0857
+                },
+                "asia-pacific-southeast": {
+                    "value": 901.0285
+                },
+                "australia-east": {
+                    "value": 901.0285
+                },
+                "australia-southeast": {
+                    "value": 901.0285
+                },
+                "brazil-south": {
+                    "value": 1556.5714
+                },
+                "canada-central": {
+                    "value": 983.04
+                },
+                "canada-east": {
+                    "value": 901.12
+                },
+                "central-india": {
+                    "value": 901.0285
+                },
+                "europe-north": {
+                    "value": 901.0285
+                },
+                "europe-west": {
+                    "value": 991.0857
+                },
+                "france-central": {
+                    "value": 1090.1943
+                },
+                "france-south": {
+                    "value": 1417.2526
+                },
+                "japan-east": {
+                    "value": 1036.3428
+                },
+                "japan-west": {
+                    "value": 942.1715
+                },
+                "korea-central": {
+                    "value": 901.0286
+                },
+                "korea-south": {
+                    "value": 901.0286
+                },
+                "south-india": {
+                    "value": 810.9257
+                },
+                "united-kingdom-south": {
+                    "value": 1090.1943
+                },
+                "united-kingdom-west": {
+                    "value": 1090.1943
+                },
+                "us-central": {
+                    "value": 901.0285
+                },
+                "us-east": {
+                    "value": 901.0285
+                },
+                "us-east-2": {
+                    "value": 819.2
+                },
+                "us-north-central": {
+                    "value": 901.0285
+                },
+                "us-south-central": {
+                    "value": 819.2
+                },
+                "us-west": {
+                    "value": 901.0285
+                },
+                "us-west-2": {
+                    "value": 819.2
+                },
+                "us-west-central": {
+                    "value": 819.2
+                },
+                "west-india": {
+                    "value": 901.0285
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "premiumssd-p80": {
+            "size": 32767,
+            "speed": 750,
+            "iops": 20000,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 1982.1715
+                },
+                "asia-pacific-southeast": {
+                    "value": 1802.0572
+                },
+                "australia-east": {
+                    "value": 1802.0572
+                },
+                "australia-southeast": {
+                    "value": 1802.0572
+                },
+                "brazil-south": {
+                    "value": 3113.1429
+                },
+                "canada-central": {
+                    "value": 1966.08
+                },
+                "canada-east": {
+                    "value": 1802.24
+                },
+                "central-india": {
+                    "value": 1802.0572
+                },
+                "europe-north": {
+                    "value": 1802.0572
+                },
+                "europe-west": {
+                    "value": 1982.1715
+                },
+                "france-central": {
+                    "value": 2180.3886
+                },
+                "france-south": {
+                    "value": 2834.5051
+                },
+                "japan-east": {
+                    "value": 2072.6857
+                },
+                "japan-west": {
+                    "value": 1884.3428
+                },
+                "korea-central": {
+                    "value": 1802.0571
+                },
+                "korea-south": {
+                    "value": 1802.0571
+                },
+                "south-india": {
+                    "value": 1621.8515
+                },
+                "united-kingdom-south": {
+                    "value": 2180.3886
+                },
+                "united-kingdom-west": {
+                    "value": 2180.3886
+                },
+                "us-central": {
+                    "value": 1802.0572
+                },
+                "us-east": {
+                    "value": 1802.0572
+                },
+                "us-east-2": {
+                    "value": 1638.4
+                },
+                "us-north-central": {
+                    "value": 1802.0572
+                },
+                "us-south-central": {
+                    "value": 1638.4
+                },
+                "us-west": {
+                    "value": 1802.0572
+                },
+                "us-west-2": {
+                    "value": 1638.4
+                },
+                "us-west-central": {
+                    "value": 1638.4
+                },
+                "west-india": {
+                    "value": 1802.0572
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-snapshot-lrs": {
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 0.05
+                },
+                "asia-pacific-southeast": {
+                    "value": 0.05
+                },
+                "australia-central": {
+                    "value": 0.06875
+                },
+                "australia-central-2": {
+                    "value": 0.06875
+                },
+                "australia-east": {
+                    "value": 0.055
+                },
+                "australia-southeast": {
+                    "value": 0.055
+                },
+                "brazil-south": {
+                    "value": 0.068
+                },
+                "canada-central": {
+                    "value": 0.055
+                },
+                "canada-east": {
+                    "value": 0.055
+                },
+                "central-india": {
+                    "value": 0.05
+                },
+                "europe-north": {
+                    "value": 0.05
+                },
+                "europe-west": {
+                    "value": 0.05
+                },
+                "france-central": {
+                    "value": 0.053
+                },
+                "france-south": {
+                    "value": 0.0689
+                },
+                "germany-central": {
+                    "value": 0.10925
+                },
+                "germany-northeast": {
+                    "value": 0.10925
+                },
+                "japan-east": {
+                    "value": 0.05
+                },
+                "japan-west": {
+                    "value": 0.05
+                },
+                "korea-central": {
+                    "value": 0.05
+                },
+                "korea-south": {
+                    "value": 0.05
+                },
+                "south-africa-north": {
+                    "value": 0.067
+                },
+                "south-africa-west": {
+                    "value": 0.084
+                },
+                "south-india": {
+                    "value": 0.055
+                },
+                "united-kingdom-south": {
+                    "value": 0.053
+                },
+                "united-kingdom-west": {
+                    "value": 0.053
+                },
+                "us-central": {
+                    "value": 0.05
+                },
+                "us-east": {
+                    "value": 0.05
+                },
+                "us-east-2": {
+                    "value": 0.05
+                },
+                "usgov-arizona": {
+                    "value": 0.1045
+                },
+                "usgov-texas": {
+                    "value": 0.1045
+                },
+                "usgov-virginia": {
+                    "value": 0.1045
+                },
+                "us-north-central": {
+                    "value": 0.05
+                },
+                "us-south-central": {
+                    "value": 0.05
+                },
+                "us-west": {
+                    "value": 0.055
+                },
+                "us-west-2": {
+                    "value": 0.05
+                },
+                "us-west-central": {
+                    "value": 0.05
+                },
+                "west-india": {
+                    "value": 0.05
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-snapshot-zrs": {
+            "prices": {
+                "asia-pacific-southeast": {
+                    "value": 0.05
+                },
+                "europe-north": {
+                    "value": 0.05
+                },
+                "europe-west": {
+                    "value": 0.05
+                },
+                "france-central": {
+                    "value": 0.053
+                },
+                "japan-east": {
+                    "value": 0.05
+                },
+                "south-africa-north": {
+                    "value": 0.067
+                },
+                "south-africa-west": {
+                    "value": 0.084
+                },
+                "us-central": {
+                    "value": 0.05
+                },
+                "us-east-2": {
+                    "value": 0.05
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s4": {
+            "size": 32,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 1.536
+                },
+                "asia-pacific-southeast": {
+                    "value": 1.536
+                },
+                "australia-central": {
+                    "value": 3.072
+                },
+                "australia-central-2": {
+                    "value": 3.072
+                },
+                "australia-east": {
+                    "value": 2.4576
+                },
+                "australia-southeast": {
+                    "value": 2.4576
+                },
+                "brazil-south": {
+                    "value": 3.6864
+                },
+                "canada-central": {
+                    "value": 1.843
+                },
+                "canada-east": {
+                    "value": 1.69
+                },
+                "central-india": {
+                    "value": 1.6896
+                },
+                "europe-north": {
+                    "value": 1.536
+                },
+                "europe-west": {
+                    "value": 1.536
+                },
+                "france-central": {
+                    "value": 1.69
+                },
+                "france-south": {
+                    "value": 2.197
+                },
+                "germany-central": {
+                    "value": 1.7664
+                },
+                "germany-northeast": {
+                    "value": 1.7664
+                },
+                "japan-east": {
+                    "value": 1.536
+                },
+                "japan-west": {
+                    "value": 1.536
+                },
+                "korea-central": {
+                    "value": 1.536
+                },
+                "korea-south": {
+                    "value": 1.536
+                },
+                "south-africa-north": {
+                    "value": 2.058
+                },
+                "south-africa-west": {
+                    "value": 2.58
+                },
+                "south-india": {
+                    "value": 1.536
+                },
+                "united-kingdom-south": {
+                    "value": 1.69
+                },
+                "united-kingdom-west": {
+                    "value": 1.69
+                },
+                "us-central": {
+                    "value": 1.536
+                },
+                "us-east": {
+                    "value": 1.536
+                },
+                "us-east-2": {
+                    "value": 1.536
+                },
+                "usgov-arizona": {
+                    "value": 1.536
+                },
+                "usgov-texas": {
+                    "value": 1.536
+                },
+                "usgov-virginia": {
+                    "value": 1.68
+                },
+                "us-north-central": {
+                    "value": 1.536
+                },
+                "us-south-central": {
+                    "value": 1.536
+                },
+                "us-west": {
+                    "value": 1.536
+                },
+                "us-west-2": {
+                    "value": 1.536
+                },
+                "us-west-central": {
+                    "value": 1.536
+                },
+                "west-india": {
+                    "value": 1.6896
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s6": {
+            "size": 64,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 3.008
+                },
+                "asia-pacific-southeast": {
+                    "value": 3.008
+                },
+                "australia-central": {
+                    "value": 6.016
+                },
+                "australia-central-2": {
+                    "value": 6.016
+                },
+                "australia-east": {
+                    "value": 4.8128
+                },
+                "australia-southeast": {
+                    "value": 4.8128
+                },
+                "brazil-south": {
+                    "value": 7.2192
+                },
+                "canada-central": {
+                    "value": 3.6096
+                },
+                "canada-east": {
+                    "value": 3.309
+                },
+                "central-india": {
+                    "value": 3.3088
+                },
+                "europe-north": {
+                    "value": 3.008
+                },
+                "europe-west": {
+                    "value": 3.008
+                },
+                "france-central": {
+                    "value": 3.308
+                },
+                "france-south": {
+                    "value": 4.3004
+                },
+                "germany-central": {
+                    "value": 3.4592
+                },
+                "germany-northeast": {
+                    "value": 3.4592
+                },
+                "japan-east": {
+                    "value": 3.008
+                },
+                "japan-west": {
+                    "value": 3.008
+                },
+                "korea-central": {
+                    "value": 3.008
+                },
+                "korea-south": {
+                    "value": 3.008
+                },
+                "south-africa-north": {
+                    "value": 4.031
+                },
+                "south-africa-west": {
+                    "value": 5.053
+                },
+                "south-india": {
+                    "value": 3.008
+                },
+                "united-kingdom-south": {
+                    "value": 3.309
+                },
+                "united-kingdom-west": {
+                    "value": 3.309
+                },
+                "us-central": {
+                    "value": 3.008
+                },
+                "us-east": {
+                    "value": 3.008
+                },
+                "us-east-2": {
+                    "value": 3.008
+                },
+                "usgov-arizona": {
+                    "value": 3.3088
+                },
+                "usgov-texas": {
+                    "value": 3.3088
+                },
+                "usgov-virginia": {
+                    "value": 3.3088
+                },
+                "us-north-central": {
+                    "value": 3.008
+                },
+                "us-south-central": {
+                    "value": 3.008
+                },
+                "us-west": {
+                    "value": 3.008
+                },
+                "us-west-2": {
+                    "value": 3.008
+                },
+                "us-west-central": {
+                    "value": 3.008
+                },
+                "west-india": {
+                    "value": 3.3088
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s10": {
+            "size": 128,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 5.888
+                },
+                "asia-pacific-southeast": {
+                    "value": 5.888
+                },
+                "australia-central": {
+                    "value": 11.776
+                },
+                "australia-central-2": {
+                    "value": 11.776
+                },
+                "australia-east": {
+                    "value": 9.4208
+                },
+                "australia-southeast": {
+                    "value": 9.4208
+                },
+                "brazil-south": {
+                    "value": 14.1312
+                },
+                "canada-central": {
+                    "value": 7.0656
+                },
+                "canada-east": {
+                    "value": 6.477
+                },
+                "central-india": {
+                    "value": 6.4768
+                },
+                "europe-north": {
+                    "value": 5.888
+                },
+                "europe-west": {
+                    "value": 5.888
+                },
+                "france-central": {
+                    "value": 6.476
+                },
+                "france-south": {
+                    "value": 8.4188
+                },
+                "germany-central": {
+                    "value": 6.7712
+                },
+                "germany-northeast": {
+                    "value": 6.7712
+                },
+                "japan-east": {
+                    "value": 5.888
+                },
+                "japan-west": {
+                    "value": 5.888
+                },
+                "korea-central": {
+                    "value": 5.888
+                },
+                "korea-south": {
+                    "value": 5.888
+                },
+                "south-africa-north": {
+                    "value": 7.89
+                },
+                "south-africa-west": {
+                    "value": 9.892
+                },
+                "south-india": {
+                    "value": 5.888
+                },
+                "united-kingdom-south": {
+                    "value": 6.477
+                },
+                "united-kingdom-west": {
+                    "value": 6.477
+                },
+                "us-central": {
+                    "value": 5.888
+                },
+                "us-east": {
+                    "value": 5.888
+                },
+                "us-east-2": {
+                    "value": 5.888
+                },
+                "usgov-arizona": {
+                    "value": 6.4768
+                },
+                "usgov-texas": {
+                    "value": 6.4768
+                },
+                "usgov-virginia": {
+                    "value": 6.4768
+                },
+                "us-north-central": {
+                    "value": 5.888
+                },
+                "us-south-central": {
+                    "value": 5.888
+                },
+                "us-west": {
+                    "value": 5.888
+                },
+                "us-west-2": {
+                    "value": 5.888
+                },
+                "us-west-central": {
+                    "value": 5.888
+                },
+                "west-india": {
+                    "value": 6.4768
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s15": {
+            "size": 256,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 11.328
+                },
+                "asia-pacific-southeast": {
+                    "value": 11.328
+                },
+                "australia-central": {
+                    "value": 22.656
+                },
+                "australia-central-2": {
+                    "value": 22.656
+                },
+                "australia-east": {
+                    "value": 18.1248
+                },
+                "australia-southeast": {
+                    "value": 18.1248
+                },
+                "brazil-south": {
+                    "value": 27.1872
+                },
+                "canada-central": {
+                    "value": 13.5936
+                },
+                "canada-east": {
+                    "value": 12.4608
+                },
+                "central-india": {
+                    "value": 12.4608
+                },
+                "europe-north": {
+                    "value": 11.328
+                },
+                "europe-west": {
+                    "value": 11.328
+                },
+                "france-central": {
+                    "value": 12.45926
+                },
+                "france-south": {
+                    "value": 16.197038
+                },
+                "germany-central": {
+                    "value": 13.0272
+                },
+                "germany-northeast": {
+                    "value": 13.0272
+                },
+                "japan-east": {
+                    "value": 11.328
+                },
+                "japan-west": {
+                    "value": 11.328
+                },
+                "korea-central": {
+                    "value": 11.328
+                },
+                "korea-south": {
+                    "value": 11.328
+                },
+                "south-africa-north": {
+                    "value": 15.18
+                },
+                "south-africa-west": {
+                    "value": 19.031
+                },
+                "south-india": {
+                    "value": 11.328
+                },
+                "united-kingdom-south": {
+                    "value": 12.45926
+                },
+                "united-kingdom-west": {
+                    "value": 12.45926
+                },
+                "us-central": {
+                    "value": 11.328
+                },
+                "us-east": {
+                    "value": 11.328
+                },
+                "us-east-2": {
+                    "value": 11.328
+                },
+                "usgov-arizona": {
+                    "value": 12.45926
+                },
+                "usgov-texas": {
+                    "value": 12.45926
+                },
+                "usgov-virginia": {
+                    "value": 12.45926
+                },
+                "us-north-central": {
+                    "value": 11.328
+                },
+                "us-south-central": {
+                    "value": 11.328
+                },
+                "us-west": {
+                    "value": 11.328
+                },
+                "us-west-2": {
+                    "value": 11.328
+                },
+                "us-west-central": {
+                    "value": 11.328
+                },
+                "west-india": {
+                    "value": 14.330072
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s20": {
+            "size": 512,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 21.76
+                },
+                "asia-pacific-southeast": {
+                    "value": 21.76
+                },
+                "australia-central": {
+                    "value": 43.52
+                },
+                "australia-central-2": {
+                    "value": 43.52
+                },
+                "australia-east": {
+                    "value": 34.816
+                },
+                "australia-southeast": {
+                    "value": 34.816
+                },
+                "brazil-south": {
+                    "value": 52.224
+                },
+                "canada-central": {
+                    "value": 26.112
+                },
+                "canada-east": {
+                    "value": 23.936
+                },
+                "central-india": {
+                    "value": 23.936
+                },
+                "europe-north": {
+                    "value": 21.76
+                },
+                "europe-west": {
+                    "value": 21.76
+                },
+                "france-central": {
+                    "value": 23.936
+                },
+                "france-south": {
+                    "value": 31.1168
+                },
+                "germany-central": {
+                    "value": 25.024
+                },
+                "germany-northeast": {
+                    "value": 25.024
+                },
+                "japan-east": {
+                    "value": 21.76
+                },
+                "japan-west": {
+                    "value": 21.76
+                },
+                "korea-central": {
+                    "value": 21.76
+                },
+                "korea-south": {
+                    "value": 21.76
+                },
+                "south-africa-north": {
+                    "value": 29.158
+                },
+                "south-africa-west": {
+                    "value": 36.557
+                },
+                "south-india": {
+                    "value": 21.76
+                },
+                "united-kingdom-south": {
+                    "value": 23.936
+                },
+                "united-kingdom-west": {
+                    "value": 23.936
+                },
+                "us-central": {
+                    "value": 21.76
+                },
+                "us-east": {
+                    "value": 21.76
+                },
+                "us-east-2": {
+                    "value": 21.76
+                },
+                "usgov-arizona": {
+                    "value": 23.936
+                },
+                "usgov-texas": {
+                    "value": 23.936
+                },
+                "usgov-virginia": {
+                    "value": 23.936
+                },
+                "us-north-central": {
+                    "value": 21.76
+                },
+                "us-south-central": {
+                    "value": 21.76
+                },
+                "us-west": {
+                    "value": 21.76
+                },
+                "us-west-2": {
+                    "value": 21.76
+                },
+                "us-west-central": {
+                    "value": 21.76
+                },
+                "west-india": {
+                    "value": 23.936
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s30": {
+            "size": 1024,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 40.96
+                },
+                "asia-pacific-southeast": {
+                    "value": 40.96
+                },
+                "australia-central": {
+                    "value": 81.92
+                },
+                "australia-central-2": {
+                    "value": 81.92
+                },
+                "australia-east": {
+                    "value": 65.536
+                },
+                "australia-southeast": {
+                    "value": 65.536
+                },
+                "brazil-south": {
+                    "value": 98.304
+                },
+                "canada-central": {
+                    "value": 49.152
+                },
+                "canada-east": {
+                    "value": 45.056
+                },
+                "central-india": {
+                    "value": 45.056
+                },
+                "europe-north": {
+                    "value": 40.96
+                },
+                "europe-west": {
+                    "value": 40.96
+                },
+                "france-central": {
+                    "value": 45.056
+                },
+                "france-south": {
+                    "value": 58.5728
+                },
+                "germany-central": {
+                    "value": 47.104
+                },
+                "germany-northeast": {
+                    "value": 47.104
+                },
+                "japan-east": {
+                    "value": 40.96
+                },
+                "japan-west": {
+                    "value": 40.96
+                },
+                "korea-central": {
+                    "value": 40.96
+                },
+                "korea-south": {
+                    "value": 40.96
+                },
+                "south-africa-north": {
+                    "value": 54.886
+                },
+                "south-africa-west": {
+                    "value": 68.813
+                },
+                "south-india": {
+                    "value": 40.96
+                },
+                "united-kingdom-south": {
+                    "value": 45.056
+                },
+                "united-kingdom-west": {
+                    "value": 45.056
+                },
+                "us-central": {
+                    "value": 40.96
+                },
+                "us-east": {
+                    "value": 40.96
+                },
+                "us-east-2": {
+                    "value": 40.96
+                },
+                "usgov-arizona": {
+                    "value": 45.056
+                },
+                "usgov-texas": {
+                    "value": 45.056
+                },
+                "usgov-virginia": {
+                    "value": 45.056
+                },
+                "us-north-central": {
+                    "value": 40.96
+                },
+                "us-south-central": {
+                    "value": 40.96
+                },
+                "us-west": {
+                    "value": 40.96
+                },
+                "us-west-2": {
+                    "value": 40.96
+                },
+                "us-west-central": {
+                    "value": 40.96
+                },
+                "west-india": {
+                    "value": 45.056
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s40": {
+            "size": 2048,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 81.92
+                },
+                "asia-pacific-southeast": {
+                    "value": 81.92
+                },
+                "australia-central": {
+                    "value": 163.84
+                },
+                "australia-central-2": {
+                    "value": 163.84
+                },
+                "australia-east": {
+                    "value": 131.072
+                },
+                "australia-southeast": {
+                    "value": 131.072
+                },
+                "brazil-south": {
+                    "value": 196.608
+                },
+                "canada-central": {
+                    "value": 98.304
+                },
+                "canada-east": {
+                    "value": 90.112
+                },
+                "central-india": {
+                    "value": 90.112
+                },
+                "europe-north": {
+                    "value": 81.92
+                },
+                "europe-west": {
+                    "value": 81.92
+                },
+                "france-central": {
+                    "value": 85.595826
+                },
+                "france-south": {
+                    "value": 111.274573
+                },
+                "japan-east": {
+                    "value": 81.92
+                },
+                "japan-west": {
+                    "value": 81.92
+                },
+                "korea-central": {
+                    "value": 81.92
+                },
+                "korea-south": {
+                    "value": 81.92
+                },
+                "south-africa-north": {
+                    "value": 104.28
+                },
+                "south-africa-west": {
+                    "value": 130.74
+                },
+                "south-india": {
+                    "value": 81.92
+                },
+                "united-kingdom-south": {
+                    "value": 85.595826
+                },
+                "united-kingdom-west": {
+                    "value": 90.100868
+                },
+                "us-central": {
+                    "value": 81.92
+                },
+                "us-east": {
+                    "value": 77.824
+                },
+                "us-east-2": {
+                    "value": 81.92
+                },
+                "usgov-arizona": {
+                    "value": 90.100868
+                },
+                "usgov-texas": {
+                    "value": 90.100868
+                },
+                "usgov-virginia": {
+                    "value": 90.100868
+                },
+                "us-north-central": {
+                    "value": 77.824
+                },
+                "us-south-central": {
+                    "value": 81.92
+                },
+                "us-west": {
+                    "value": 81.92
+                },
+                "us-west-2": {
+                    "value": 77.824
+                },
+                "us-west-central": {
+                    "value": 81.92
+                },
+                "west-india": {
+                    "value": 103.629912
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s50": {
+            "size": 4096,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 163.84
+                },
+                "asia-pacific-southeast": {
+                    "value": 163.84
+                },
+                "australia-central": {
+                    "value": 327.68
+                },
+                "australia-central-2": {
+                    "value": 327.68
+                },
+                "australia-east": {
+                    "value": 262.144
+                },
+                "australia-southeast": {
+                    "value": 262.144
+                },
+                "brazil-south": {
+                    "value": 393.216
+                },
+                "canada-central": {
+                    "value": 196.608
+                },
+                "canada-east": {
+                    "value": 180.224
+                },
+                "central-india": {
+                    "value": 180.224
+                },
+                "europe-north": {
+                    "value": 163.84
+                },
+                "europe-west": {
+                    "value": 163.84
+                },
+                "france-central": {
+                    "value": 157.67652
+                },
+                "france-south": {
+                    "value": 204.979476
+                },
+                "japan-east": {
+                    "value": 163.84
+                },
+                "japan-west": {
+                    "value": 163.84
+                },
+                "korea-central": {
+                    "value": 163.84
+                },
+                "korea-south": {
+                    "value": 163.84
+                },
+                "south-africa-north": {
+                    "value": 192.1
+                },
+                "south-africa-west": {
+                    "value": 240.84
+                },
+                "south-india": {
+                    "value": 163.84
+                },
+                "united-kingdom-south": {
+                    "value": 157.67652
+                },
+                "united-kingdom-west": {
+                    "value": 180.201738
+                },
+                "us-central": {
+                    "value": 163.84
+                },
+                "us-east": {
+                    "value": 143.36
+                },
+                "us-east-2": {
+                    "value": 163.84
+                },
+                "usgov-arizona": {
+                    "value": 180.201738
+                },
+                "usgov-texas": {
+                    "value": 180.201738
+                },
+                "usgov-virginia": {
+                    "value": 180.201738
+                },
+                "us-north-central": {
+                    "value": 143.36
+                },
+                "us-south-central": {
+                    "value": 163.84
+                },
+                "us-west": {
+                    "value": 163.84
+                },
+                "us-west-2": {
+                    "value": 143.36
+                },
+                "us-west-central": {
+                    "value": 163.84
+                },
+                "west-india": {
+                    "value": 207.259826
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s60": {
+            "size": 8192,
+            "speed": 300,
+            "iops": 1300,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 163.84
+                },
+                "asia-pacific-southeast": {
+                    "value": 163.84
+                },
+                "australia-central": {
+                    "value": 327.68
+                },
+                "australia-central-2": {
+                    "value": 327.68
+                },
+                "australia-east": {
+                    "value": 262.144
+                },
+                "australia-southeast": {
+                    "value": 262.144
+                },
+                "brazil-south": {
+                    "value": 393.216
+                },
+                "canada-central": {
+                    "value": 196.608
+                },
+                "canada-east": {
+                    "value": 180.224
+                },
+                "central-india": {
+                    "value": 180.224
+                },
+                "europe-north": {
+                    "value": 163.84
+                },
+                "europe-west": {
+                    "value": 163.84
+                },
+                "france-central": {
+                    "value": 163.84
+                },
+                "france-south": {
+                    "value": 163.84
+                },
+                "japan-east": {
+                    "value": 163.84
+                },
+                "japan-west": {
+                    "value": 163.84
+                },
+                "korea-central": {
+                    "value": 163.84
+                },
+                "korea-south": {
+                    "value": 163.84
+                },
+                "south-africa-west": {
+                    "value": 220.2
+                },
+                "south-india": {
+                    "value": 163.84
+                },
+                "united-kingdom-south": {
+                    "value": 144.15872
+                },
+                "united-kingdom-west": {
+                    "value": 180.199424
+                },
+                "us-central": {
+                    "value": 163.84
+                },
+                "us-east": {
+                    "value": 131.072
+                },
+                "us-east-2": {
+                    "value": 163.84
+                },
+                "us-north-central": {
+                    "value": 131.072
+                },
+                "us-south-central": {
+                    "value": 163.84
+                },
+                "us-west": {
+                    "value": 163.84
+                },
+                "us-west-2": {
+                    "value": 131.072
+                },
+                "us-west-central": {
+                    "value": 163.84
+                },
+                "west-india": {
+                    "value": 207.2576
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s70": {
+            "size": 16384,
+            "speed": 500,
+            "iops": 2000,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 327.68
+                },
+                "asia-pacific-southeast": {
+                    "value": 327.68
+                },
+                "australia-east": {
+                    "value": 524.288
+                },
+                "australia-southeast": {
+                    "value": 524.288
+                },
+                "brazil-south": {
+                    "value": 786.432
+                },
+                "canada-central": {
+                    "value": 393.216
+                },
+                "canada-east": {
+                    "value": 360.448
+                },
+                "central-india": {
+                    "value": 360.448
+                },
+                "europe-north": {
+                    "value": 327.68
+                },
+                "europe-west": {
+                    "value": 327.68
+                },
+                "france-central": {
+                    "value": 327.68
+                },
+                "france-south": {
+                    "value": 374.819616
+                },
+                "japan-east": {
+                    "value": 327.68
+                },
+                "japan-west": {
+                    "value": 327.68
+                },
+                "korea-central": {
+                    "value": 327.68
+                },
+                "korea-south": {
+                    "value": 327.68
+                },
+                "south-india": {
+                    "value": 327.68
+                },
+                "united-kingdom-south": {
+                    "value": 288.322782
+                },
+                "united-kingdom-west": {
+                    "value": 360.403478
+                },
+                "us-central": {
+                    "value": 327.68
+                },
+                "us-east": {
+                    "value": 245.76
+                },
+                "us-east-2": {
+                    "value": 327.68
+                },
+                "us-north-central": {
+                    "value": 262.144
+                },
+                "us-south-central": {
+                    "value": 327.68
+                },
+                "us-west": {
+                    "value": 327.68
+                },
+                "us-west-2": {
+                    "value": 262.144
+                },
+                "us-west-central": {
+                    "value": 327.68
+                },
+                "west-india": {
+                    "value": 414.519652
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardhdd-s80": {
+            "size": 32767,
+            "speed": 500,
+            "iops": 2000,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 655.36
+                },
+                "asia-pacific-southeast": {
+                    "value": 655.36
+                },
+                "australia-east": {
+                    "value": 1048.576
+                },
+                "australia-southeast": {
+                    "value": 1048.576
+                },
+                "brazil-south": {
+                    "value": 1572.864
+                },
+                "canada-central": {
+                    "value": 786.432
+                },
+                "canada-east": {
+                    "value": 720.896
+                },
+                "central-india": {
+                    "value": 720.896
+                },
+                "europe-north": {
+                    "value": 655.36
+                },
+                "europe-west": {
+                    "value": 655.36
+                },
+                "france-central": {
+                    "value": 655.36
+                },
+                "france-south": {
+                    "value": 749.639232
+                },
+                "japan-east": {
+                    "value": 655.36
+                },
+                "japan-west": {
+                    "value": 655.36
+                },
+                "korea-central": {
+                    "value": 655.36
+                },
+                "korea-south": {
+                    "value": 655.36
+                },
+                "south-india": {
+                    "value": 655.36
+                },
+                "united-kingdom-south": {
+                    "value": 576.645564
+                },
+                "united-kingdom-west": {
+                    "value": 720.806956
+                },
+                "us-central": {
+                    "value": 655.36
+                },
+                "us-east": {
+                    "value": 476.774399
+                },
+                "us-east-2": {
+                    "value": 655.36
+                },
+                "us-north-central": {
+                    "value": 524.288
+                },
+                "us-south-central": {
+                    "value": 655.36
+                },
+                "us-west": {
+                    "value": 655.36
+                },
+                "us-west-2": {
+                    "value": 524.288
+                },
+                "us-west-central": {
+                    "value": 655.36
+                },
+                "west-india": {
+                    "value": 829.039304
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-snapshot": {
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 0.145
+                },
+                "asia-pacific-southeast": {
+                    "value": 0.132
+                },
+                "australia-central": {
+                    "value": 0.165
+                },
+                "australia-central-2": {
+                    "value": 0.165
+                },
+                "australia-east": {
+                    "value": 0.132
+                },
+                "australia-southeast": {
+                    "value": 0.132
+                },
+                "brazil-south": {
+                    "value": 0.228
+                },
+                "canada-central": {
+                    "value": 0.144
+                },
+                "canada-east": {
+                    "value": 0.132
+                },
+                "central-india": {
+                    "value": 0.132
+                },
+                "europe-north": {
+                    "value": 0.132
+                },
+                "europe-west": {
+                    "value": 0.145
+                },
+                "france-central": {
+                    "value": 0.16
+                },
+                "france-south": {
+                    "value": 0.208
+                },
+                "germany-central": {
+                    "value": 0.10725
+                },
+                "germany-northeast": {
+                    "value": 0.10725
+                },
+                "japan-east": {
+                    "value": 0.152
+                },
+                "japan-west": {
+                    "value": 0.138
+                },
+                "korea-central": {
+                    "value": 0.132
+                },
+                "korea-south": {
+                    "value": 0.132
+                },
+                "south-africa-north": {
+                    "value": 0.175
+                },
+                "south-africa-west": {
+                    "value": 0.202
+                },
+                "south-india": {
+                    "value": 0.1188
+                },
+                "united-kingdom-south": {
+                    "value": 0.16
+                },
+                "united-kingdom-west": {
+                    "value": 0.16
+                },
+                "us-central": {
+                    "value": 0.132
+                },
+                "us-east": {
+                    "value": 0.132
+                },
+                "us-east-2": {
+                    "value": 0.12
+                },
+                "usgov-arizona": {
+                    "value": 0.132
+                },
+                "usgov-texas": {
+                    "value": 0.132
+                },
+                "usgov-virginia": {
+                    "value": 0.132
+                },
+                "us-north-central": {
+                    "value": 0.132
+                },
+                "us-south-central": {
+                    "value": 0.12
+                },
+                "us-west": {
+                    "value": 0.132
+                },
+                "us-west-2": {
+                    "value": 0.12
+                },
+                "us-west-central": {
+                    "value": 0.12
+                },
+                "west-india": {
+                    "value": 0.132
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e4": {
+            "size": 32,
+            "speed": 25,
+            "iops": 120,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 2.4
+                },
+                "asia-pacific-southeast": {
+                    "value": 2.4
+                },
+                "australia-central": {
+                    "value": 4.08
+                },
+                "australia-central-2": {
+                    "value": 4.08
+                },
+                "australia-east": {
+                    "value": 3.264
+                },
+                "australia-southeast": {
+                    "value": 3.264
+                },
+                "brazil-south": {
+                    "value": 5.184
+                },
+                "canada-central": {
+                    "value": 2.88
+                },
+                "canada-east": {
+                    "value": 2.64
+                },
+                "central-india": {
+                    "value": 2.64
+                },
+                "europe-north": {
+                    "value": 2.4
+                },
+                "europe-west": {
+                    "value": 2.4
+                },
+                "france-central": {
+                    "value": 2.64
+                },
+                "france-south": {
+                    "value": 3.432
+                },
+                "japan-east": {
+                    "value": 2.4
+                },
+                "japan-west": {
+                    "value": 2.4
+                },
+                "korea-central": {
+                    "value": 2.4
+                },
+                "korea-south": {
+                    "value": 2.4
+                },
+                "south-africa-north": {
+                    "value": 3.504
+                },
+                "south-india": {
+                    "value": 2.4
+                },
+                "united-kingdom-south": {
+                    "value": 2.64
+                },
+                "united-kingdom-west": {
+                    "value": 2.64
+                },
+                "us-central": {
+                    "value": 2.4
+                },
+                "us-east": {
+                    "value": 2.4
+                },
+                "us-east-2": {
+                    "value": 2.4
+                },
+                "usgov-arizona": {
+                    "value": 2.64
+                },
+                "usgov-texas": {
+                    "value": 2.64
+                },
+                "us-north-central": {
+                    "value": 2.4
+                },
+                "us-south-central": {
+                    "value": 2.4
+                },
+                "us-west": {
+                    "value": 2.4
+                },
+                "us-west-2": {
+                    "value": 2.4
+                },
+                "us-west-central": {
+                    "value": 2.4
+                },
+                "west-india": {
+                    "value": 2.64
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e6": {
+            "size": 64,
+            "speed": 50,
+            "iops": 240,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 4.8
+                },
+                "asia-pacific-southeast": {
+                    "value": 4.8
+                },
+                "australia-central": {
+                    "value": 8.16
+                },
+                "australia-central-2": {
+                    "value": 8.16
+                },
+                "australia-east": {
+                    "value": 6.528
+                },
+                "australia-southeast": {
+                    "value": 6.528
+                },
+                "brazil-south": {
+                    "value": 10.368
+                },
+                "canada-central": {
+                    "value": 5.76
+                },
+                "canada-east": {
+                    "value": 5.28
+                },
+                "central-india": {
+                    "value": 5.28
+                },
+                "europe-north": {
+                    "value": 4.8
+                },
+                "europe-west": {
+                    "value": 4.8
+                },
+                "france-central": {
+                    "value": 5.28
+                },
+                "france-south": {
+                    "value": 6.864
+                },
+                "japan-east": {
+                    "value": 4.8
+                },
+                "japan-west": {
+                    "value": 4.8
+                },
+                "korea-central": {
+                    "value": 4.8
+                },
+                "korea-south": {
+                    "value": 4.8
+                },
+                "south-africa-north": {
+                    "value": 7.008
+                },
+                "south-india": {
+                    "value": 4.8
+                },
+                "united-kingdom-south": {
+                    "value": 5.28
+                },
+                "united-kingdom-west": {
+                    "value": 5.28
+                },
+                "us-central": {
+                    "value": 4.8
+                },
+                "us-east": {
+                    "value": 4.8
+                },
+                "us-east-2": {
+                    "value": 4.8
+                },
+                "usgov-arizona": {
+                    "value": 5.28
+                },
+                "usgov-texas": {
+                    "value": 5.28
+                },
+                "us-north-central": {
+                    "value": 4.8
+                },
+                "us-south-central": {
+                    "value": 4.8
+                },
+                "us-west": {
+                    "value": 4.8
+                },
+                "us-west-2": {
+                    "value": 4.8
+                },
+                "us-west-central": {
+                    "value": 4.8
+                },
+                "west-india": {
+                    "value": 5.28
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e10": {
+            "size": 128,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 9.6
+                },
+                "asia-pacific-southeast": {
+                    "value": 9.6
+                },
+                "australia-central": {
+                    "value": 16.32
+                },
+                "australia-central-2": {
+                    "value": 16.32
+                },
+                "australia-east": {
+                    "value": 13.056
+                },
+                "australia-southeast": {
+                    "value": 13.056
+                },
+                "brazil-south": {
+                    "value": 20.736
+                },
+                "canada-central": {
+                    "value": 11.52
+                },
+                "canada-east": {
+                    "value": 10.56
+                },
+                "central-india": {
+                    "value": 10.56
+                },
+                "europe-north": {
+                    "value": 9.6
+                },
+                "europe-west": {
+                    "value": 9.6
+                },
+                "france-central": {
+                    "value": 10.56
+                },
+                "france-south": {
+                    "value": 13.728
+                },
+                "germany-central": {
+                    "value": 7.28
+                },
+                "germany-northeast": {
+                    "value": 7.28
+                },
+                "japan-east": {
+                    "value": 9.6
+                },
+                "japan-west": {
+                    "value": 9.6
+                },
+                "korea-central": {
+                    "value": 9.6
+                },
+                "korea-south": {
+                    "value": 9.6
+                },
+                "south-africa-north": {
+                    "value": 14.016
+                },
+                "south-africa-west": {
+                    "value": 16.128
+                },
+                "south-india": {
+                    "value": 9.6
+                },
+                "united-kingdom-south": {
+                    "value": 10.56
+                },
+                "united-kingdom-west": {
+                    "value": 10.56
+                },
+                "us-central": {
+                    "value": 9.6
+                },
+                "us-east": {
+                    "value": 9.6
+                },
+                "us-east-2": {
+                    "value": 9.6
+                },
+                "usgov-arizona": {
+                    "value": 10.559999
+                },
+                "usgov-texas": {
+                    "value": 10.559999
+                },
+                "usgov-virginia": {
+                    "value": 10.559999
+                },
+                "us-north-central": {
+                    "value": 9.6
+                },
+                "us-south-central": {
+                    "value": 9.6
+                },
+                "us-west": {
+                    "value": 9.6
+                },
+                "us-west-2": {
+                    "value": 9.6
+                },
+                "us-west-central": {
+                    "value": 9.6
+                },
+                "west-india": {
+                    "value": 10.56
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e15": {
+            "size": 256,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 19.2
+                },
+                "asia-pacific-southeast": {
+                    "value": 19.2
+                },
+                "australia-central": {
+                    "value": 32.64
+                },
+                "australia-central-2": {
+                    "value": 32.64
+                },
+                "australia-east": {
+                    "value": 26.112
+                },
+                "australia-southeast": {
+                    "value": 26.112
+                },
+                "brazil-south": {
+                    "value": 41.472
+                },
+                "canada-central": {
+                    "value": 23.04
+                },
+                "canada-east": {
+                    "value": 21.12
+                },
+                "central-india": {
+                    "value": 21.12
+                },
+                "europe-north": {
+                    "value": 19.2
+                },
+                "europe-west": {
+                    "value": 19.2
+                },
+                "france-central": {
+                    "value": 21.12
+                },
+                "france-south": {
+                    "value": 27.456
+                },
+                "germany-central": {
+                    "value": 14.04
+                },
+                "germany-northeast": {
+                    "value": 14.04
+                },
+                "japan-east": {
+                    "value": 19.2
+                },
+                "japan-west": {
+                    "value": 19.2
+                },
+                "korea-central": {
+                    "value": 19.2
+                },
+                "korea-south": {
+                    "value": 19.2
+                },
+                "south-africa-north": {
+                    "value": 28.032
+                },
+                "south-africa-west": {
+                    "value": 32.256
+                },
+                "south-india": {
+                    "value": 19.2
+                },
+                "united-kingdom-south": {
+                    "value": 21.12
+                },
+                "united-kingdom-west": {
+                    "value": 21.12
+                },
+                "us-central": {
+                    "value": 19.2
+                },
+                "us-east": {
+                    "value": 19.2
+                },
+                "us-east-2": {
+                    "value": 19.2
+                },
+                "usgov-arizona": {
+                    "value": 21.119999
+                },
+                "usgov-texas": {
+                    "value": 21.119999
+                },
+                "usgov-virginia": {
+                    "value": 21.119999
+                },
+                "us-north-central": {
+                    "value": 19.2
+                },
+                "us-south-central": {
+                    "value": 19.2
+                },
+                "us-west": {
+                    "value": 19.2
+                },
+                "us-west-2": {
+                    "value": 19.2
+                },
+                "us-west-central": {
+                    "value": 19.2
+                },
+                "west-india": {
+                    "value": 21.12
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e20": {
+            "size": 512,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 38.4
+                },
+                "asia-pacific-southeast": {
+                    "value": 38.4
+                },
+                "australia-central": {
+                    "value": 65.28
+                },
+                "australia-central-2": {
+                    "value": 65.28
+                },
+                "australia-east": {
+                    "value": 52.224
+                },
+                "australia-southeast": {
+                    "value": 52.224
+                },
+                "brazil-south": {
+                    "value": 82.944
+                },
+                "canada-central": {
+                    "value": 46.08
+                },
+                "canada-east": {
+                    "value": 42.24
+                },
+                "central-india": {
+                    "value": 42.24
+                },
+                "europe-north": {
+                    "value": 38.4
+                },
+                "europe-west": {
+                    "value": 38.4
+                },
+                "france-central": {
+                    "value": 42.24
+                },
+                "france-south": {
+                    "value": 54.912
+                },
+                "germany-central": {
+                    "value": 27.04
+                },
+                "germany-northeast": {
+                    "value": 27.04
+                },
+                "japan-east": {
+                    "value": 38.4
+                },
+                "japan-west": {
+                    "value": 38.4
+                },
+                "korea-central": {
+                    "value": 38.4
+                },
+                "korea-south": {
+                    "value": 38.4
+                },
+                "south-africa-north": {
+                    "value": 56.064
+                },
+                "south-africa-west": {
+                    "value": 64.512
+                },
+                "south-india": {
+                    "value": 38.4
+                },
+                "united-kingdom-south": {
+                    "value": 42.24
+                },
+                "united-kingdom-west": {
+                    "value": 42.24
+                },
+                "us-central": {
+                    "value": 38.4
+                },
+                "us-east": {
+                    "value": 38.4
+                },
+                "us-east-2": {
+                    "value": 38.4
+                },
+                "usgov-arizona": {
+                    "value": 42.239999
+                },
+                "usgov-texas": {
+                    "value": 42.239999
+                },
+                "usgov-virginia": {
+                    "value": 42.239999
+                },
+                "us-north-central": {
+                    "value": 38.4
+                },
+                "us-south-central": {
+                    "value": 38.4
+                },
+                "us-west": {
+                    "value": 38.4
+                },
+                "us-west-2": {
+                    "value": 38.4
+                },
+                "us-west-central": {
+                    "value": 38.4
+                },
+                "west-india": {
+                    "value": 42.24
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e30": {
+            "size": 1024,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 76.8
+                },
+                "asia-pacific-southeast": {
+                    "value": 76.8
+                },
+                "australia-central": {
+                    "value": 130.56
+                },
+                "australia-central-2": {
+                    "value": 130.56
+                },
+                "australia-east": {
+                    "value": 104.448
+                },
+                "australia-southeast": {
+                    "value": 104.448
+                },
+                "brazil-south": {
+                    "value": 165.888
+                },
+                "canada-central": {
+                    "value": 92.16
+                },
+                "canada-east": {
+                    "value": 84.48
+                },
+                "central-india": {
+                    "value": 84.48
+                },
+                "europe-north": {
+                    "value": 76.8
+                },
+                "europe-west": {
+                    "value": 76.8
+                },
+                "france-central": {
+                    "value": 84.48
+                },
+                "france-south": {
+                    "value": 109.824
+                },
+                "germany-central": {
+                    "value": 49.92
+                },
+                "germany-northeast": {
+                    "value": 49.92
+                },
+                "japan-east": {
+                    "value": 76.8
+                },
+                "japan-west": {
+                    "value": 76.8
+                },
+                "korea-central": {
+                    "value": 76.8
+                },
+                "korea-south": {
+                    "value": 76.8
+                },
+                "south-africa-north": {
+                    "value": 112.13
+                },
+                "south-africa-west": {
+                    "value": 129.02
+                },
+                "south-india": {
+                    "value": 76.8
+                },
+                "united-kingdom-south": {
+                    "value": 84.48
+                },
+                "united-kingdom-west": {
+                    "value": 84.48
+                },
+                "us-central": {
+                    "value": 76.8
+                },
+                "us-east": {
+                    "value": 76.8
+                },
+                "us-east-2": {
+                    "value": 76.8
+                },
+                "usgov-arizona": {
+                    "value": 84.479999
+                },
+                "usgov-texas": {
+                    "value": 84.479999
+                },
+                "usgov-virginia": {
+                    "value": 84.479999
+                },
+                "us-north-central": {
+                    "value": 76.8
+                },
+                "us-south-central": {
+                    "value": 76.8
+                },
+                "us-west": {
+                    "value": 76.8
+                },
+                "us-west-2": {
+                    "value": 76.8
+                },
+                "us-west-central": {
+                    "value": 76.8
+                },
+                "west-india": {
+                    "value": 84.48
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e40": {
+            "size": 2048,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 153.6
+                },
+                "asia-pacific-southeast": {
+                    "value": 153.6
+                },
+                "australia-central": {
+                    "value": 261.12
+                },
+                "australia-central-2": {
+                    "value": 261.12
+                },
+                "australia-east": {
+                    "value": 208.896
+                },
+                "australia-southeast": {
+                    "value": 208.896
+                },
+                "brazil-south": {
+                    "value": 331.776
+                },
+                "canada-central": {
+                    "value": 184.32
+                },
+                "canada-east": {
+                    "value": 168.96
+                },
+                "central-india": {
+                    "value": 168.96
+                },
+                "europe-north": {
+                    "value": 153.6
+                },
+                "europe-west": {
+                    "value": 153.6
+                },
+                "france-central": {
+                    "value": 168.96
+                },
+                "france-south": {
+                    "value": 219.648
+                },
+                "germany-central": {
+                    "value": 95.68
+                },
+                "germany-northeast": {
+                    "value": 95.68
+                },
+                "japan-east": {
+                    "value": 153.6
+                },
+                "japan-west": {
+                    "value": 153.6
+                },
+                "korea-central": {
+                    "value": 153.6
+                },
+                "korea-south": {
+                    "value": 153.6
+                },
+                "south-africa-north": {
+                    "value": 224.26
+                },
+                "south-africa-west": {
+                    "value": 258.05
+                },
+                "south-india": {
+                    "value": 153.6
+                },
+                "united-kingdom-south": {
+                    "value": 168.96
+                },
+                "united-kingdom-west": {
+                    "value": 168.96
+                },
+                "us-central": {
+                    "value": 153.6
+                },
+                "us-east": {
+                    "value": 153.6
+                },
+                "us-east-2": {
+                    "value": 153.6
+                },
+                "usgov-arizona": {
+                    "value": 168.959999
+                },
+                "usgov-texas": {
+                    "value": 168.959999
+                },
+                "usgov-virginia": {
+                    "value": 168.959999
+                },
+                "us-north-central": {
+                    "value": 153.6
+                },
+                "us-south-central": {
+                    "value": 153.6
+                },
+                "us-west": {
+                    "value": 153.6
+                },
+                "us-west-2": {
+                    "value": 153.6
+                },
+                "us-west-central": {
+                    "value": 153.6
+                },
+                "west-india": {
+                    "value": 168.96
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e50": {
+            "size": 4096,
+            "speed": 60,
+            "iops": 500,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 307.2
+                },
+                "asia-pacific-southeast": {
+                    "value": 307.2
+                },
+                "australia-central": {
+                    "value": 522.24
+                },
+                "australia-central-2": {
+                    "value": 522.24
+                },
+                "australia-east": {
+                    "value": 417.792
+                },
+                "australia-southeast": {
+                    "value": 417.792
+                },
+                "brazil-south": {
+                    "value": 663.552
+                },
+                "canada-central": {
+                    "value": 368.64
+                },
+                "canada-east": {
+                    "value": 337.92
+                },
+                "central-india": {
+                    "value": 337.92
+                },
+                "europe-north": {
+                    "value": 307.2
+                },
+                "europe-west": {
+                    "value": 307.2
+                },
+                "france-central": {
+                    "value": 337.92
+                },
+                "france-south": {
+                    "value": 439.296
+                },
+                "germany-central": {
+                    "value": 183.04
+                },
+                "germany-northeast": {
+                    "value": 183.04
+                },
+                "japan-east": {
+                    "value": 307.2
+                },
+                "japan-west": {
+                    "value": 307.2
+                },
+                "korea-central": {
+                    "value": 307.2
+                },
+                "korea-south": {
+                    "value": 307.2
+                },
+                "south-africa-north": {
+                    "value": 448.51
+                },
+                "south-africa-west": {
+                    "value": 516.1
+                },
+                "south-india": {
+                    "value": 307.2
+                },
+                "united-kingdom-south": {
+                    "value": 337.92
+                },
+                "united-kingdom-west": {
+                    "value": 337.92
+                },
+                "us-central": {
+                    "value": 307.2
+                },
+                "us-east": {
+                    "value": 307.2
+                },
+                "us-east-2": {
+                    "value": 307.2
+                },
+                "usgov-arizona": {
+                    "value": 337.919999
+                },
+                "usgov-texas": {
+                    "value": 337.919999
+                },
+                "usgov-virginia": {
+                    "value": 337.919999
+                },
+                "us-north-central": {
+                    "value": 307.2
+                },
+                "us-south-central": {
+                    "value": 307.2
+                },
+                "us-west": {
+                    "value": 307.2
+                },
+                "us-west-2": {
+                    "value": 307.2
+                },
+                "us-west-central": {
+                    "value": 307.2
+                },
+                "west-india": {
+                    "value": 337.92
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e60": {
+            "size": 8192,
+            "speed": 300,
+            "iops": 1300,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 376.32
+                },
+                "asia-pacific-southeast": {
+                    "value": 279.552
+                },
+                "australia-central": {
+                    "value": 389.2224
+                },
+                "australia-central-2": {
+                    "value": 389.2224
+                },
+                "australia-east": {
+                    "value": 311.808
+                },
+                "australia-southeast": {
+                    "value": 311.808
+                },
+                "brazil-south": {
+                    "value": 430.08
+                },
+                "canada-central": {
+                    "value": 258.048
+                },
+                "canada-east": {
+                    "value": 258.048
+                },
+                "central-india": {
+                    "value": 301.056
+                },
+                "europe-north": {
+                    "value": 258.048
+                },
+                "europe-west": {
+                    "value": 279.552
+                },
+                "france-central": {
+                    "value": 268.8
+                },
+                "france-south": {
+                    "value": 350.5152
+                },
+                "japan-east": {
+                    "value": 311.808
+                },
+                "japan-west": {
+                    "value": 333.312
+                },
+                "korea-central": {
+                    "value": 290.304
+                },
+                "korea-south": {
+                    "value": 290.304
+                },
+                "south-india": {
+                    "value": 322.56
+                },
+                "united-kingdom-south": {
+                    "value": 268.8
+                },
+                "united-kingdom-west": {
+                    "value": 268.8
+                },
+                "us-central": {
+                    "value": 258.048
+                },
+                "us-east": {
+                    "value": 215.04
+                },
+                "us-east-2": {
+                    "value": 215.04
+                },
+                "us-north-central": {
+                    "value": 258.048
+                },
+                "us-south-central": {
+                    "value": 258.048
+                },
+                "us-west": {
+                    "value": 279.552
+                },
+                "us-west-2": {
+                    "value": 215.04
+                },
+                "us-west-central": {
+                    "value": 258.048
+                },
+                "west-india": {
+                    "value": 322.56
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e70": {
+            "size": 16384,
+            "speed": 500,
+            "iops": 2000,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 716.8
+                },
+                "asia-pacific-southeast": {
+                    "value": 532.48
+                },
+                "australia-central": {
+                    "value": 741.376
+                },
+                "australia-central-2": {
+                    "value": 741.376
+                },
+                "australia-east": {
+                    "value": 593.92
+                },
+                "australia-southeast": {
+                    "value": 593.92
+                },
+                "brazil-south": {
+                    "value": 819.2
+                },
+                "canada-central": {
+                    "value": 491.52
+                },
+                "canada-east": {
+                    "value": 491.52
+                },
+                "central-india": {
+                    "value": 573.44
+                },
+                "europe-north": {
+                    "value": 491.52
+                },
+                "europe-west": {
+                    "value": 532.48
+                },
+                "france-central": {
+                    "value": 512.0
+                },
+                "france-south": {
+                    "value": 667.648
+                },
+                "japan-east": {
+                    "value": 593.92
+                },
+                "japan-west": {
+                    "value": 634.88
+                },
+                "korea-central": {
+                    "value": 552.96
+                },
+                "korea-south": {
+                    "value": 552.96
+                },
+                "south-india": {
+                    "value": 614.4
+                },
+                "united-kingdom-south": {
+                    "value": 512.0
+                },
+                "united-kingdom-west": {
+                    "value": 512.0
+                },
+                "us-central": {
+                    "value": 491.52
+                },
+                "us-east": {
+                    "value": 409.6
+                },
+                "us-east-2": {
+                    "value": 409.6
+                },
+                "us-north-central": {
+                    "value": 491.52
+                },
+                "us-south-central": {
+                    "value": 491.52
+                },
+                "us-west": {
+                    "value": 532.48
+                },
+                "us-west-2": {
+                    "value": 409.6
+                },
+                "us-west-central": {
+                    "value": 491.52
+                },
+                "west-india": {
+                    "value": 614.4
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "standardssd-e80": {
+            "size": 32767,
+            "speed": 500,
+            "iops": 2000,
+            "prices": {
+                "asia-pacific-east": {
+                    "value": 1433.6
+                },
+                "asia-pacific-southeast": {
+                    "value": 1064.96
+                },
+                "australia-central": {
+                    "value": 1482.752
+                },
+                "australia-central-2": {
+                    "value": 1482.752
+                },
+                "australia-east": {
+                    "value": 1187.84
+                },
+                "australia-southeast": {
+                    "value": 1187.84
+                },
+                "brazil-south": {
+                    "value": 1638.4
+                },
+                "canada-central": {
+                    "value": 983.04
+                },
+                "canada-east": {
+                    "value": 983.04
+                },
+                "central-india": {
+                    "value": 1146.88
+                },
+                "europe-north": {
+                    "value": 983.04
+                },
+                "europe-west": {
+                    "value": 1064.96
+                },
+                "france-central": {
+                    "value": 1024.0
+                },
+                "france-south": {
+                    "value": 1335.296
+                },
+                "japan-east": {
+                    "value": 1187.84
+                },
+                "japan-west": {
+                    "value": 1269.76
+                },
+                "korea-central": {
+                    "value": 1105.92
+                },
+                "korea-south": {
+                    "value": 1105.92
+                },
+                "south-india": {
+                    "value": 1228.8
+                },
+                "united-kingdom-south": {
+                    "value": 1024.0
+                },
+                "united-kingdom-west": {
+                    "value": 1024.0
+                },
+                "us-central": {
+                    "value": 983.04
+                },
+                "us-east": {
+                    "value": 819.2
+                },
+                "us-east-2": {
+                    "value": 819.2
+                },
+                "us-north-central": {
+                    "value": 983.04
+                },
+                "us-south-central": {
+                    "value": 983.04
+                },
+                "us-west": {
+                    "value": 1064.96
+                },
+                "us-west-2": {
+                    "value": 819.2
+                },
+                "us-west-central": {
+                    "value": 983.04
+                },
+                "west-india": {
+                    "value": 1228.8
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "ultrassd-iops": {
+            "prices": {
+                "us-east-2": {
+                    "value": 0.000034
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "ultrassd-stored": {
+            "prices": {
+                "us-east-2": {
+                    "value": 0.000082
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "ultrassd-throughput": {
+            "prices": {
+                "us-east-2": {
+                    "value": 0.000685
+                }
+            },
+            "pricingTypes": "WebDirect"
+        },
+        "ultrassd-vcpu": {
+            "prices": {
+                "us-east-2": {
+                    "value": 0.003
+                }
+            },
+            "pricingTypes": "WebDirect"
+        }
+    },
+    "regions": [
+        {
+            "slug": "asia-pacific-east",
+            "displayName": "East Asia"
+        },
+        {
+            "slug": "asia-pacific-southeast",
+            "displayName": "Southeast Asia"
+        },
+        {
+            "slug": "australia-central",
+            "displayName": "Australia Central"
+        },
+        {
+            "slug": "australia-central-2",
+            "displayName": "Australia Central 2"
+        },
+        {
+            "slug": "australia-east",
+            "displayName": "Australia East"
+        },
+        {
+            "slug": "australia-southeast",
+            "displayName": "Australia Southeast"
+        },
+        {
+            "slug": "brazil-south",
+            "displayName": "Brazil South"
+        },
+        {
+            "slug": "canada-central",
+            "displayName": "Canada Central"
+        },
+        {
+            "slug": "canada-east",
+            "displayName": "Canada East"
+        },
+        {
+            "slug": "central-india",
+            "displayName": "Central India"
+        },
+        {
+            "slug": "south-india",
+            "displayName": "South India"
+        },
+        {
+            "slug": "west-india",
+            "displayName": "West India"
+        },
+        {
+            "slug": "europe-north",
+            "displayName": "North Europe"
+        },
+        {
+            "slug": "europe-west",
+            "displayName": "West Europe"
+        },
+        {
+            "slug": "france-central",
+            "displayName": "France Central"
+        },
+        {
+            "slug": "france-south",
+            "displayName": "France South"
+        },
+        {
+            "slug": "germany-central",
+            "displayName": "Germany Central"
+        },
+        {
+            "slug": "germany-northeast",
+            "displayName": "Germany Northeast"
+        },
+        {
+            "slug": "japan-east",
+            "displayName": "Japan East"
+        },
+        {
+            "slug": "japan-west",
+            "displayName": "Japan West"
+        },
+        {
+            "slug": "korea-central",
+            "displayName": "Korea Central"
+        },
+        {
+            "slug": "korea-south",
+            "displayName": "Korea South"
+        },
+        {
+            "slug": "south-africa-north",
+            "displayName": "South Africa North"
+        },
+        {
+            "slug": "south-africa-west",
+            "displayName": "South Africa West"
+        },
+        {
+            "slug": "united-kingdom-south",
+            "displayName": "UK South"
+        },
+        {
+            "slug": "united-kingdom-west",
+            "displayName": "UK West"
+        },
+        {
+            "slug": "us-central",
+            "displayName": "Central US"
+        },
+        {
+            "slug": "us-east",
+            "displayName": "East US"
+        },
+        {
+            "slug": "us-east-2",
+            "displayName": "East US 2"
+        },
+        {
+            "slug": "us-north-central",
+            "displayName": "North Central US"
+        },
+        {
+            "slug": "us-south-central",
+            "displayName": "South Central US"
+        },
+        {
+            "slug": "us-west-central",
+            "displayName": "West Central US"
+        },
+        {
+            "slug": "us-west",
+            "displayName": "West US"
+        },
+        {
+            "slug": "us-west-2",
+            "displayName": "West US 2"
+        },
+        {
+            "slug": "usgov-arizona",
+            "displayName": "US Gov. Arizona"
+        },
+        {
+            "slug": "usgov-texas",
+            "displayName": "US Gov. Texas"
+        },
+        {
+            "slug": "usgov-virginia",
+            "displayName": "US Gov. Virginia"
+        }
+    ],
+    "discounts": [],
+    "resources": {
+        "add_snapshot": "Add Snapshot",
+        "premiumssd": "Premium SSD",
+        "e4": "E4",
+        "e6": "E6",
+        "s6": "S6",
+        "s4": "S4",
+        "p4": "P4",
+        "p6": "P6",
+        "standardssd": "Standard SSD",
+        "standardhdd": "Standard HDD",
+        "e10": "E10",
+        "e15": "E15",
+        "e30": "E30",
+        "e20": "E20",
+        "e50": "E50",
+        "e40": "E40",
+        "e70": "E70 (PREVIEW)",
+        "e60": "E60 (PREVIEW)",
+        "e80": "E80 (PREVIEW)",
+        "lrs": "LRS",
+        "s70": "S70 (PREVIEW)",
+        "s60": "S60 (PREVIEW)",
+        "s50": "S50",
+        "s40": "S40",
+        "s30": "S30",
+        "s20": "S20",
+        "s15": "S15",
+        "s10": "S10",
+        "s80": "S80 (PREVIEW)",
+        "p50": "P50",
+        "p70": "P70 (PREVIEW)",
+        "p40": "P40",
+        "p15": "P15",
+        "p10": "P10",
+        "p60": "P60 (PREVIEW)",
+        "p30": "P30",
+        "p20": "P20",
+        "p80": "P80 (PREVIEW)",
+        "zrs": "ZRS",
+        "ultrassd": "Ultra SSD",
+        "snapshot": "Snapshot"
+    }
+}

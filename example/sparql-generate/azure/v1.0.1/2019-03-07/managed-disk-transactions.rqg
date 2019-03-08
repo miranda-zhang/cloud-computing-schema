@@ -1,0 +1,38 @@
+BASE <https://w3id.org/cocoon/data/v1.0.1/>
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
+
+GENERATE { 
+    <price_specification/azure/storage_transaction/managed_disk/{?transactions}> a cocoon:CloudStorageTransactionsPriceSpecification;
+        rdfs:label ?transactions;
+
+        GENERATE {
+            <price_specification/azure/storage_transaction/managed_disk/{?transactions}>  gr:hasPriceSpecification [ 
+                a gr:UnitPriceSpecification ; 
+                    gr:hasCurrency "USD"^^xsd:string; 
+                    gr:hasCurrencyValue ?value;
+                    cocoon:hasRegion <region/azure/{?region}>;
+            ]
+        }
+        ITERATOR iter:JSONListKeys(?prices) AS ?region
+        WHERE {
+            BIND (xsd:double( fun:JSONPath(?prices,"$.['{?region}'].value") / 10000) AS ?value )
+        } . 
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/2019-03-07/managed-disk-transactions.json> AS ?source
+ITERATOR iter:JSONListKeys(?source) AS ?transactions
+WHERE {
+    BIND (fun:JSONPath(?source,"$.['{?transactions}']") AS ?transactions_json)
+    BIND (fun:JSONPath(?transactions_json,"$.prices") AS ?prices)
+    # having signle point of change for the following
+    BIND ( "Azure" as ?provider_slug )
+    BIND ( cocoon:Azure as ?provider )
+    BIND ( "2019-03-07" as ?updated) # yr-month-day
+    BIND ( <{?updated}/CloudStorageTransactionsPriceSpecification/{?provider_slug}/vm_base> as ?iri )
+    BIND ( xsd:date(?updated) as ?date )
+}

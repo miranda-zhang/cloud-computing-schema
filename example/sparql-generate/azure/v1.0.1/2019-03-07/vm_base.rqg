@@ -10,7 +10,7 @@ PREFIX schema: <https://schema.org/>
 
 GENERATE { 
   ?iri a cocoon:ComputeService;
-    rdfs:label ?name;
+    rdfs:label ?vm_key;
     schema:dateModified ?date;
     cocoon:hasProvider ?provider;
     cocoon:numberOfCores ?cores;
@@ -25,7 +25,7 @@ GENERATE {
             schema:unitCode cocoon:GB;
             schema:typeOfGood cocoon:LocalStorage;
     ];
-    gr:hasPriceSpecification <{?updated}/price_specification/{?provider_slug}/storage_transaction/vm_base>;
+    gr:hasPriceSpecification ?CloudStorageTransactionsPriceSpecification;
 
     GENERATE {
         ?iri gr:hasPriceSpecification [ 
@@ -56,4 +56,5 @@ WHERE {
     BIND ( "2019-03-07" as ?updated) # yr-month-day
     BIND ( <{?updated}/ComputeService/{?provider_slug}/{?vm_key}> as ?iri )
     BIND ( xsd:date(?updated) as ?date )
+    BIND ( <{?updated}/CloudStorageTransactionsPriceSpecification/{?provider_slug}/vm_base> as ?CloudStorageTransactionsPriceSpecification )
 }

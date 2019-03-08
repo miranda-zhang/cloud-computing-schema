@@ -564,7 +564,7 @@ cocoon:CloudServicePriceSpecification rdf:type owl:Class ;
                                                        )
                                          ]
                        ] ;
-   rdfs:comment "gr:hasCurrencyValue seems only allow float value, extended to allow more precision with double floating-point numbers."@en
+   rdfs:comment "gr:hasCurrencyValue seems only allow float value, extended to allow more precision with double floating-point numbers (xsd:double)."@en
  ] .
 
 
