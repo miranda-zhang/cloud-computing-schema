@@ -965,12 +965,12 @@ cocoon:StorageService rdf:type owl:Class ;
                                         owl:someValuesFrom cocoon:StorageService
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasStorageSize ;
-                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onProperty cocoon:hasStorageIOMax ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass schema:TypeAndQuantityNode
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasStorageIOMax ;
+                                        owl:onProperty cocoon:hasStorageSize ;
                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass schema:TypeAndQuantityNode
                                       ] ,
@@ -1062,11 +1062,31 @@ cocoon:GBPerMonth rdf:type owl:NamedIndividual ,
                   rdfs:label "Gigabyte per Month"@en .
 
 
+cocoon:GBPerHour rdf:type owl:NamedIndividual ,
+                           <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                           cocoon:UnitOfMeasure ;
+                  rdfs:comment "Often describe 1 GB per Hour usage."@en ;
+                  rdfs:label "Gigabyte per Hour"@en .
+
+
+cocoon:MegabitsPerSecondPerHour rdf:type owl:NamedIndividual ,
+                           <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                           cocoon:UnitOfMeasure ;
+                  rdfs:comment "Often describe the throughput usage measured at MB/s within an hour."@en ;
+                  rdfs:label "MB/s/hour"@en .
+
+
 ###  https://w3id.org/cocoon/v1.0.1#GCEU
 cocoon:GCEU rdf:type owl:NamedIndividual ,
                      cocoon:UnitOfMeasure ;
             rdfs:comment "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ's to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
             rdfs:label "Google Compute Engine Unit"@en .
+
+
+cocoon:VcpuPerHour rdf:type owl:NamedIndividual ,
+                     cocoon:UnitOfMeasure ;
+            rdfs:comment "Azure Ultra SSD storage is in preview in East US 2 and is billed on vcpu/hour provisioned as reservation charge. This reservation charge is only imposed if you enable Ultra SSD capability on the VM without connecting an Ultra SSD disk."@en ;
+            rdfs:label "vcpu/hour"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#Gcloud
@@ -1084,6 +1104,12 @@ cocoon:IOPs rdf:type owl:NamedIndividual ,
             rdfs:comment "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en ;
             rdfs:label "Input/output operations per sec"@en .
 
+
+cocoon:IOPsPerHour rdf:type owl:NamedIndividual ,
+                     <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                     cocoon:UnitOfMeasure ;
+            rdfs:comment "Azure Ultra SSD Managed Disks come in different sizes that provide a configurable range of input/output operations per sec (IOPS), and are billed on an hourly rate."@en ;
+            rdfs:label "IOPS/hour"@en .
 
 ###  https://w3id.org/cocoon/v1.0.1#MirandaZhangQian
 cocoon:MirandaZhangQian rdf:type owl:NamedIndividual ,

@@ -50,6 +50,24 @@ Interpreting the document:
    `standardhdd-snapshot-lrs` `standardhdd-snapshot-zrs` `standardssd-snapshot`
 
 # Managed Disk
+## Ultra SSD Managed Disks 
+From the [doc](#doc) (8th Mar 2019)
+>Ultra SSD Managed Disks are our next-generation high-performance Solid State Drive (SSD) with configurable performance attributes that provide the lowest latency and consistent high IOPS/throughput. Ultra SSD Managed Disks offer unprecedented and extremely scalable performance with sub-millisecond latency. As a customer, you can start small on IOPS and throughput and adjust your performance as your workload becomes more IO intensive.
+>The total cost of Ultra SSD Managed Disks depends on the size of the disks and their performance configuration and will be affected by the number of disks.
+>Ultra SSD Managed Disks come in different sizes that provide a configurable range of input/output operations per sec (IOPS), and a configurable range of throughput (MB/s), and are billed on an hourly rate. You choose the option that best meets your required storage size, IOPS and throughput. All VMs that support Premium SSD can leverage Ultra SSD Managed Disks.
+>Below are the preview prices: Ultra SSD storage is in preview in East US 2 and is billed hourly at:
+* $0.000113 per GiB/hour
+* $0.000047 per provisioned IOPS/hour
+* $0.000941 per provisioned MB/s/hour
+* $0.004119 per vcpu/hour provisioned reservation charge 
+>Ultra SSD Managed Disks are billed on the provisioned sizes, provisioned IOPS and provisioned throughput. Azure maps the provisioned size (rounded up) to the nearest disk size offer. Each disk is billed accordingly on an hourly basis. For example, if you provisioned a 200 GiB Ultra SSD Disk, with 20,000 IOPS and 1,000 MB/second and deleted it after 20 hours, it will map to the disk size offer of 256 GiB and you’ll be billed for the 256 GiB, 20,000 IOPS and 1,000 MB/second for 20 hours. This is regardless of the amount of actual data and number of IOs written to the disk.
+>Ultra SSD Managed disks are only available for Locally Redundant Storage (LRS). 
+
+```jq
+|.|=with_entries(
+    select ( .key |contains("ultrassd"))
+)
+```
 ## Transform input
 Apply transformation `jq '.offers | del ( ."transactions-hdd", ."transactions-ssd")'`
 on [input](#input).

@@ -6,42 +6,45 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl>
 PREFIX schema: <https://schema.org/>
+PREFIX unit: <http://qudt.org/1.1/vocab/unit#>
 
 GENERATE { 
-  <storage/azure/{?managed_disk}> a cocoon:NetworkStorage;
-    rdfs:label ?managed_disk;
-    cocoon:hasProvider cocoon:azure;
+  ?iri a cocoon:NetworkStorage;
+    rdfs:label ?name;
+    schema:dateModified ?date;
+    cocoon:hasProvider ?provider;
     
     GENERATE {
-        <storage/azure/{?managed_disk}> gr:hasPriceSpecification [ 
-            a gr:UnitPriceSpecification ; 
+        ?iri gr:hasPriceSpecification [ 
+            a gr:CloudServicePriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?value;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
-                cocoon:hasRegion <region/azure/{?region}>;
+                cocoon:hasRegion <{?updated}/Region/{?provider_slug}/{?region}>;
         ]
     }
   	ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
+        FILTER( ! CONTAINS(?managed_disk,"ultrassd") )
         BIND (xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
     } .
 
     GENERATE {
-        <storage/azure/{?managed_disk}>
+        ?iri
         cocoon:hasStorageIOMax [
-            a cocoon:QuantityOfThings;
-                cocoon:numericValue ?iops;
-                cocoon:hasUnitOfMeasurement cocoon:IOPs;
+            a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?iops;
+                schema:unitCode cocoon:IOPs;
         ];
         cocoon:hasStorageSize [
-            a cocoon:QuantityOfThings;
-                cocoon:numericValue ?size;
-                cocoon:hasUnitOfMeasurement cocoon:GB;
+            a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?size;
+                schema:unitCode cocoon:GB;
         ];
         cocoon:hasStorageThroughputMax [
-            a cocoon:QuantityOfThings;
-                cocoon:numericValue ?speed;
-                cocoon:hasUnitOfMeasurement cocoon:MBPerSec;
+            a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?speed;
+                schema:unitCode unit:MegabitsPerSecond ;
         ];
     } WHERE {
         BIND (xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.iops") ) AS ?iops )
@@ -52,24 +55,49 @@ GENERATE {
     } .
 
     GENERATE {
-        <storage/azure/{?managed_disk}>
-            gr:hasPriceSpecification <price_specification/azure/storage_transaction/managed_disk/transactions-{?type}>;
+        ?iri
+            gr:hasPriceSpecification <{?updated}/CloudStorageTransactionsPriceSpecification/{?provider_slug}/managed_disk/transactions-{?type}>;
     } WHERE {
-        FILTER( ! CONTAINS(?managed_disk,"snapshot") )
+        FILTER( ! CONTAINS(?managed_disk,"snapshot") && ! CONTAINS(?managed_disk,"ultrassd"))
         FILTER( CONTAINS(?managed_disk,"hdd") || CONTAINS(?managed_disk,"ssd") )
         BIND ( IF( CONTAINS(?managed_disk,"hdd") , "hdd" ,"ssd" ) AS ?type )        
     } .
 
     GENERATE {
-        <storage/azure/{?managed_disk}>
-            cocoon:canHaveSnapshot <storage/azure/standardssd-snapshot>;
-            cocoon:canHaveSnapshot <storage/azure/standardhdd-snapshot-lrs>;
-            cocoon:canHaveSnapshot <storage/azure/standardhdd-snapshot-zrs>;
-            cocoon:canHaveSnapshot <storage/azure/{?premiumssd_snapshot}>;
+        ?iri
+            cocoon:canHaveSnapshot <{?updated}/NetworkStorage/{?provider_slug}/standardssd-snapshot>;
+            cocoon:canHaveSnapshot <{?updated}/NetworkStorage/{?provider_slug}/standardhdd-snapshot-lrs>;
+            cocoon:canHaveSnapshot <{?updated}/NetworkStorage/{?provider_slug}/standardhdd-snapshot-zrs>;
+            cocoon:canHaveSnapshot <{?updated}/NetworkStorage/{?provider_slug}/{?premiumssd_snapshot}>;
     } WHERE {
         FILTER( !CONTAINS(?managed_disk,"snapshot") )
         FILTER( CONTAINS(?managed_disk,"premiumssd") || CONTAINS(?managed_disk,"standardssd"))
         BIND ( IF( CONTAINS(?managed_disk, "premiumssd") , "premiumssd-snapshot" , ?undefined ) AS ?premiumssd_snapshot )    
+    } .
+
+    GENERATE {
+        ?iri gr:hasPriceSpecification [ 
+            a gr:CloudServicePriceSpecification ;
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?value;
+                gr:hasUnitOfMeasurement ?unit ;
+                cocoon:hasRegion <{?updated}/Region/{?provider_slug}/{?region}>;
+                rdfs:label ?label;
+        ].
+    }
+  	ITERATOR iter:JSONListKeys(?prices) AS ?region
+    WHERE {
+        FILTER( CONTAINS(?managed_disk,"ultrassd") ) 
+        BIND (xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
+        BIND (
+            COALESCE(
+                IF(CONTAINS(?managed_disk,"iops"), cocoon:IOPsPerHour, 1/0),
+                IF(CONTAINS(?managed_disk,"stored"), cocoon:GBPerHour, 1/0),
+                IF(CONTAINS(?managed_disk,"throughput"), cocoon:MegabitsPerSecondPerHour, 1/0),
+                cocoon:VcpuPerHour # assume "vcpu"
+            ) AS ?unit
+        )
+        BIND ( STRAFTER(?managed_disk,"-") AS ?label)      
     } .
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/2019-03-07/managed-disks.json> AS ?source
@@ -81,6 +109,7 @@ WHERE {
     BIND ( "Azure" as ?provider_slug )
     BIND ( cocoon:Azure as ?provider )
     BIND ( "2019-03-07" as ?updated) # yr-month-day
-    BIND ( <{?updated}/CloudStorageTransactionsPriceSpecification/{?provider_slug}/managed_disk/{?transactions}> as ?iri )
     BIND ( xsd:date(?updated) as ?date )
+    BIND ( IF (CONTAINS(?managed_disk,"ultrassd"), "ultrassd", ?managed_disk) AS ?name )
+    BIND ( <{?updated}/NetworkStorage/{?provider_slug}/{?name}> AS ?iri )
 }
