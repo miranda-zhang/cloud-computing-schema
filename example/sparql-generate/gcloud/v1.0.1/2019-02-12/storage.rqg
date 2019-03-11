@@ -1,0 +1,36 @@
+BASE <https://w3id.org/cocoon/data/v1.0.1/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
+PREFIX unit: <http://qudt.org/1.1/vocab/unit#>
+
+GENERATE { 
+  <storage/gcloud/{?name}> a cocoon:Storage;
+    rdfs:label ?name;
+    cocoon:hasProvider cocoon:gcloud;
+    GENERATE {
+        <storage/gcloud/{?name}> gr:hasPriceSpecification [ 
+            a gr:UnitPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double;
+                gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
+                cocoon:hasRegion <region/gcloud/{?region}>;
+        ]
+    }
+  	ITERATOR iter:JSONPath(?gcloudStorage,".prices[*]") AS ?prices
+    WHERE {
+        BIND (fun:JSONPath(?prices,".price") AS ?regionalPrice)
+        BIND (fun:JSONPath(?prices,".region") AS ?region)
+    }   
+  	.
+ 
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/storage.json> AS ?source
+ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudStorage
+WHERE {
+    BIND (fun:JSONPath(?gcloudStorage,".name") AS ?name)
+}
