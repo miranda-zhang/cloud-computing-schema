@@ -1,0 +1,24 @@
+{
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA": {
+      "destinations":["Worldwide","Hong Kong"],
+      "excludesDestinations":["China","Australia"]
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC": {
+        "destinations":["Asia"],
+        "excludesDestinations":["China"]
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-AU-AU": {
+      "destinations":["Australia"]
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-CN-CN": {
+      "destinations":["China"],
+      "excludesDestinations":["Hong Kong"]
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-ZONE": {
+      "specialRateType":"Egress between zones in the same region"
+    },
+    "CP-COMPUTEENGINE-INTERNET-EGRESS-REGION": {
+      "specialRateType":"Egress between regions within the US"
+    }
+  }
+  

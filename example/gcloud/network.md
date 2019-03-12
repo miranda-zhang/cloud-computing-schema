@@ -3,10 +3,13 @@
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 
-[A cached version of the json input.](../data/google/v1.41.json)
+Recorded
+1. [v1.41 24-July-2018](../data/gcloud/v1.41.json)
+2. [v1.58 17-January-2019](../data/gcloud/v1.58.json)
+3. [v1.62 12-February-2019](../data/gcloud/v1.62.json)
 
 ## Cleaning and Transformation
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/dtvjDF6QKj
+Apply transformation using `jq`
 ```
 .gcp_price_list | . |=with_entries
 ( 
@@ -15,44 +18,33 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/dtvj
     )
 )
 ```
-[A cached version of the result after transformation.](../jq/gcloud/internet.json)
-
-Manually add in the destination and special rate info.
-Removed duplicated entry of "CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC",
-it is the same as "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA".
-[Result after manual change.](../jq/gcloud/internet_destination.json)
-
-Apply transformation `.gcp_price_list.NETWORK_LOAD_BALANCED_INGRESS` using `jq`,
-view the live snippet https://jqplay.org/s/yP8J1oVhfs
-
-[A cached version of the result after transformation.](../jq/gcloud/load_balancing_data.json)
-
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/1Ugkd8zB3B
-```
-.gcp_price_list | . |=with_entries
-( 
-    select(
-        .key | contains("RULE")   
-    )
-)
-```
-[A cached version of the result after transformation.](../jq/gcloud/load_balancing_rule.json)
+Result
+1. 17-January-2019: [file](../jq/gcloud/v1.58/internet.json), https://jqplay.org/s/dtvjDF6QKj
+2. 12-February-2019: [file](../jq/gcloud/v1.62/internet.json), https://jqplay.org/s/Gvh3qis9pj
 
 ## Internet
 https://cloud.google.com/compute/pricing#internet_egress
 
-It is generally no charge to ingress traffic, unless there is a load balancer used. 
+>It is generally no charge to ingress traffic, unless there is a load balancer used. 
 Internet egress rates are based on usage and destination.
 
-There are 3 (monthly) usage tiers, 0-1 TB, 1-10 TB, 10+ TB;
+>There are 3 (monthly) usage tiers, 0-1 TB, 1-10 TB, 10+ TB;
 and 3 destination groups, Worldwide Destinations (excluding China & Australia,
 but including Hong Kong), China Destinations(excluding Hong Kong),
 Australia Destinations.
 
-Egress between zones in the same region (per GB)	$0.01.
-Egress between regions within the US (per GB)	$0.01.
+>Egress between zones in the same region (per GB)	$0.01.
+>Egress between regions within the US (per GB)	$0.01.
 
 [New pricing maybe applied after 2019](https://cloud.google.com/network-tiers/pricing)
+
+## Internet Destinationas
+For the v1.58 data (17-January-2019) we manually added in the destination and special rate info.
+[Result after manual change.](../jq/gcloud/v1.58/internet_destination.json)
+
+But for v1.62 data (12-February-2019), we standardised this process more.
+We change the original file to only contain the destination info, so price can be dynamically extracted from another file:
+[internet_destination.json](../jq/gcloud/v1.62/internet_destination.json)
 
 ## Load balancing
 Ingress data processed by load balancer	are charged	(Per GB) based on region.
@@ -66,6 +58,28 @@ Up to 5 forwarding rules you create are charged at $0.025/hour. For example, if 
 Each additional forwarding rule = $0.01/hour
 $0.025/hour for 5 rules + (5 additional rules * $0.01/hour) = $0.075/hour
 
+### Load balancing ingress data
+Apply transformation `.gcp_price_list.NETWORK_LOAD_BALANCED_INGRESS` using `jq` on data.
+
+Result：
+1. 24-July-2018: [file](../jq/gcloud/v1.41/load_balancing_data.json), https://jqplay.org/s/yP8J1oVhfs
+2. 12-February-2019: [file](../jq/gcloud/v1.62/load_balancing_data.json), https://jqplay.org/s/_hy6zyaSBd
+
+### Load balancing rule
+Apply `jq` transformation on data:
+```
+.gcp_price_list | . |=with_entries
+( 
+    select(
+        .key | contains("RULE")   
+    )
+)
+```
+[A cached version of the result after transformation.](../jq/gcloud/)
+Result：
+1. 24-July-2018: [file](../jq/gcloud/v1.41/load_balancing_rule.json), https://jqplay.org/s/1Ugkd8zB3B
+2. 12-February-2019: [file](../jq/gcloud/v1.62/load_balancing_rule.json), https://jqplay.org/s/95EyhhroA9
+
 ## Static external IP
 https://cloud.google.com/compute/pricing#ipaddress
 If you reserve a static external IP address but do not use it, you will be charged $0.010/Hour. 
@@ -73,12 +87,16 @@ If you reserve a static external IP address but do not use it, you will be charg
 If you reserve a static external IP address and use it with a Compute Engine resource, such as VM instance or a forwarding rule, the address is considered in use and you will not be charged for it.
 
 ## Mapping to ontology
-Internet:
-Run [queries](../sparql-generate/gcloud/internet.rqg)
-in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/internet.ttl)
+### Internet
+v1.0.0 17-January-2019:
+[Query](../sparql-generate/gcloud/v1.0.0/internet.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.0/internet.ttl)
 
-Load Balancing Data:
+v1.0.1 12-February-2019:
+[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/internet.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.1/internet.ttl)
+
+### Load Balancing Data
 Run [queries](../sparql-generate/gcloud/load_balancing_data.rqg)
 in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
 to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing_data.ttl)

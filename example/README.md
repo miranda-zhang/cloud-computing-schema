@@ -16,7 +16,8 @@ Created with https://github.com/ariutta/json-ld-macros
 3. [Google Cloud Storage](gcloud/storage.md)
 4. [Google Cloud OS images](gcloud/os.md)
 5. [Microsoft Azure Storage](azure/storage.md)
-   
+6. [Google Cloud Network Service](gcloud/network.md)
+
 ## Link Regions with GeoNames Ontology
 How regions from each Cloud provider are linked to GeoNames
 are exlained in:
