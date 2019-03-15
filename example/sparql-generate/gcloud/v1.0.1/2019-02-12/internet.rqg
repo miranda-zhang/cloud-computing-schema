@@ -8,12 +8,18 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 PREFIX schema: <https://schema.org/>
 
 GENERATE { 
-  <network/internet/gcloud/{?key}> a cocoon:Internet;
-    cocoon:hasProvider cocoon:gcloud;
+  ?iri a cocoon:InternetService;
+    cocoon:hasProvider ?provider;
+    schema:dateModified ?date;
+    rdfs:label ?key;
     cocoon:hasDirection cocoon:Egress;
     
     GENERATE {
-        <network/internet/gcloud/{?key}> cocoon:hasDestination <location/{?destinationStr}>;     
+        ?iri cocoon:hasDestination [
+            a cocoon:Location;
+            
+
+        ] <Location/{?destinationStr}>;     
     }
     ITERATOR iter:JSONPath(?gcloudInternet, "$.destinations[*]") AS ?destinationJson
     WHERE {
@@ -21,7 +27,7 @@ GENERATE {
     } .
 
     GENERATE {
-        <network/internet/gcloud/{?key}> cocoon:excludesDestination <location/{?excludesDestinationStr}>;     
+        ?iri cocoon:excludesDestination <location/{?excludesDestinationStr}>;     
     }
     ITERATOR iter:JSONPath(?gcloudInternet, "$.excludesDestinations[*]") AS ?excludesDestinationJson
     WHERE {
@@ -29,7 +35,7 @@ GENERATE {
     } .
 
     GENERATE {        
-        <network/internet/gcloud/{?key}>
+        ?iri
         gr:hasPriceSpecification [ 
             a cocoon:NetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
@@ -66,7 +72,7 @@ GENERATE {
     } .
 
     GENERATE {        
-        <network/internet/gcloud/{?key}>
+        ?iri
         gr:hasPriceSpecification [ 
             a cocoon:NetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
@@ -79,16 +85,17 @@ GENERATE {
         BIND (xsd:float(fun:JSONPath(?gcloudInternet,".us")) AS ?us)
     } .
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/internet_destination.json> AS ?source
-ITERATOR iter:JSONListKeys(?source) AS ?key
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/internet_destination.json> AS ?destinations
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/internet.json> AS ?internet
+ITERATOR iter:JSONListKeys(?internet) AS ?key
 WHERE {
-    BIND(fun:JSONPath(?source, '$.{?key}' ) AS ?gcloudInternet)
+    BIND(fun:JSONPath(?internet, '$.{?key}' ) AS ?gcloudInternet)
     BIND (fun:JSONPath(?gcloudInternet,"$.tiers") AS ?tiers)
     BIND (fun:JSONPath(?gcloudInternet,"$.specialRateType") AS ?specialRateType)
     # having signle point of change for the following
     BIND ( "Gcloud" as ?provider_slug )
     BIND ( cocoon:Gcloud as ?provider )
     BIND ( "2019-02-12" as ?release_date) # yr-month-day
-    BIND ( <{?release_date}/StorageService/{?provider_slug}/{?name}> as ?iri )
+    BIND ( <{?release_date}/InternetService/{?provider_slug}/{?key}> as ?iri )
     BIND ( xsd:date(?release_date) as ?date )
 }

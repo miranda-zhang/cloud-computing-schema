@@ -8,7 +8,7 @@ PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-
 PREFIX schema: <https://schema.org/>
 
 GENERATE { 
-  ?iri  a cocoon:StorageService;
+  ?iri  a cocoon:NetworkStorage;
     rdfs:label ?name;
     cocoon:hasProvider ?provider;
     schema:dateModified ?date;
@@ -37,6 +37,6 @@ WHERE {
     BIND ( "Gcloud" as ?provider_slug )
     BIND ( cocoon:Gcloud as ?provider )
     BIND ( "2019-02-12" as ?release_date) # yr-month-day
-    BIND ( <{?release_date}/StorageService/{?provider_slug}/{?name}> as ?iri )
+    BIND ( <{?release_date}/NetworkStorage/{?provider_slug}/{?name}> as ?iri )
     BIND ( xsd:date(?release_date) as ?date )
 }

@@ -8,20 +8,6 @@ Recorded
 2. [v1.58 17-January-2019](../data/gcloud/v1.58.json)
 3. [v1.62 12-February-2019](../data/gcloud/v1.62.json)
 
-## Cleaning and Transformation
-Apply transformation using `jq`
-```
-.gcp_price_list | . |=with_entries
-( 
-    select(
-        .key | contains("INTERNET")  
-    )
-)
-```
-Result
-1. 17-January-2019: [file](../jq/gcloud/v1.58/internet.json), https://jqplay.org/s/dtvjDF6QKj
-2. 12-February-2019: [file](../jq/gcloud/v1.62/internet.json), https://jqplay.org/s/Gvh3qis9pj
-
 ## Internet
 https://cloud.google.com/compute/pricing#internet_egress
 
@@ -38,7 +24,21 @@ Australia Destinations.
 
 [New pricing maybe applied after 2019](https://cloud.google.com/network-tiers/pricing)
 
-## Internet Destinationas
+### Egress traffic
+Apply transformation using `jq`
+```
+.gcp_price_list | . |=with_entries
+( 
+    select(
+        .key | contains("INTERNET")  
+    )
+)
+```
+Result
+1. 17-January-2019: [file](../jq/gcloud/v1.58/internet.json), https://jqplay.org/s/dtvjDF6QKj
+2. 12-February-2019: [file](../jq/gcloud/v1.62/internet.json), https://jqplay.org/s/Gvh3qis9pj
+
+### Internet Destinationas
 For the v1.58 data (17-January-2019) we manually added in the destination and special rate info.
 [Result after manual change.](../jq/gcloud/v1.58/internet_destination.json)
 
@@ -75,7 +75,6 @@ Apply `jq` transformation on data:
     )
 )
 ```
-[A cached version of the result after transformation.](../jq/gcloud/)
 Result：
 1. 24-July-2018: [file](../jq/gcloud/v1.41/load_balancing_rule.json), https://jqplay.org/s/1Ugkd8zB3B
 2. 12-February-2019: [file](../jq/gcloud/v1.62/load_balancing_rule.json), https://jqplay.org/s/95EyhhroA9
@@ -94,7 +93,7 @@ v1.0.0 17-January-2019:
 
 v1.0.1 12-February-2019:
 [Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/internet.rqg)
-[Result](../sparql-generate/result/gcloud/v1.0.1/internet.ttl)
+[Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/internet.ttl)
 
 ### Load Balancing Data
 Run [queries](../sparql-generate/gcloud/load_balancing_data.rqg)
