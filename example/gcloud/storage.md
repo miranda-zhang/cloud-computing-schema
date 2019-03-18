@@ -39,11 +39,13 @@ Result
 2. 12-February-2019: [file](../jq/gcloud/v1.62/storage.json), https://jqplay.org/s/i8blbKEmeC
 
 ## Mapping to ontology
-Query:[v1.0.0 24-July-2018](../sparql-generate/gcloud/v1.0.0/storage.rqg)
-Result:[v1.0.0 24-July-2018](../sparql-generate/result/gcloud/v1.0.0/storage.ttl)
+v1.0.0 24-July-2018:
+[Query](../sparql-generate/gcloud/v1.0.0/storage.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.0/storage.ttl)
 
-Query:[v1.0.1 12-February-2019](../sparql-generate/gcloud/v1.0.1/2019-02-12/storage.rqg)
-Result:[v1.0.1 24-July-2018](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/storage.ttl)
+v1.0.1 12-February-2019:
+[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/storage.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/storage.ttl)
 ```
 java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/storage.rqg --output result/gcloud/v1.0.1/2019-02-12/storage.ttl --log-level ERROR
 ```

@@ -1,0 +1,64 @@
+{
+    "win": {
+      "low": 0.02,
+      "high": 0.04,
+      "cores": 0.5,
+      "percore": true
+    },
+    "windows-server-core": {
+      "low": 0.02,
+      "high": 0.04,
+      "cores": 0.5,
+      "percore": true
+    },
+    "rhel": {
+      "low": 0.06,
+      "high": 0.13,
+      "cores": "4",
+      "percore": false
+    },
+    "rhel-sap": {
+      "low": 0.06,
+      "high": 0.13,
+      "cores": "4",
+      "percore": false
+    },
+    "rhel-sap-ha": {
+      "low": 0.1,
+      "high": 0.225,
+      "cores": "4",
+      "percore": false
+    },
+    "suse": {
+      "low": 0.02,
+      "high": 0.11,
+      "cores": 0.5,
+      "percore": false
+    },
+    "suse-sap": {
+      "low": 0.17,
+      "high": 0.34,
+      "highest": 0.41,
+      "cores": "2",
+      "percore": false
+    },
+    "sql-standard": {
+      "low": 0.1645,
+      "high": 0.1645,
+      "cores": "4",
+      "percore": true
+    },
+    "sql-web": {
+      "low": 0.011,
+      "high": 0.011,
+      "cores": "4",
+      "percore": true
+    },
+    "sql-enterprise": {
+      "low": 0.399,
+      "high": 0.399,
+      "cores": "4",
+      "percore": true
+    }
+  }
+  

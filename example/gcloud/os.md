@@ -3,11 +3,13 @@
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 
-[A cached version of the json input.](../data/google/v1.41.json)
+Recorded:
+1. [v1.41 24-July-2018](../data/gcloud/v1.41.json)
+2. [v1.58 17-January-2019](../data/gcloud/v1.58.json)
+3. [v1.62 12-February-2019](../data/gcloud/v1.62.json)
 
 ## Cleaning and Transformation
-
-Apply transformation using `jq`, view the live snippet https://jqplay.org/s/1s7kQ1l13V
+Apply transformation using `jq`:
 ```
 .gcp_price_list | ."CP-COMPUTEENGINE-OS" | map_values(
     if .cores == "shared" 
@@ -16,12 +18,14 @@ Apply transformation using `jq`, view the live snippet https://jqplay.org/s/1s7k
 ) | ."windows-server-core" = ."win"
 
 ```
-[A cached version of the result after transformation.](../jq/gcloud/os.json)
+Result:
+1. v1.41 24-July-2018: [file](../jq/gcloud/v1.41/os.json), https://jqplay.org/s/1s7kQ1l13V
+2. v1.62 12-February-2019: [file](../jq/gcloud/v1.62/os.json), https://jqplay.org/s/gIIdxtzkWY
 
 Replace all "shared" with 0.5. According to
 [additional info from doc](#Additional-inforamtion-from-documentation).
 
-Because [windows-server-core](#windows-server-core-mapping) has 'null' value from json input.
+Because `windows-server-core` has `null` value from json input.
 We process it separately. 
 From the [doc](#-Windows-Server-images), it seems `windows-server-core`
 and `win` have the same price spec.
@@ -44,7 +48,7 @@ All prices for premium images are in addition to charges for using a machine typ
 
 All RHEL and RHEL for SAP images are charged a 1 minute minimum. After 1 minute, RHEL images are charged in 1 second increments.
 
-### SUSE images and SLES for SAP images
+### SUSE Images and SLES for SAP Images
 
 SLES images:
 
@@ -59,7 +63,7 @@ SLES for SAP images:
 
 All SUSE images are charged a 1 minute minimum. After 1 minute, SUSE images are charged in 1 second increments.
 
-### Windows Server images
+### Windows Server Images
 Public images for several versions of Windows Server are available in either the Server Core configuration or the Server with Desktop Experience configuration. Both configurations are available at the following prices:
 
     $0.02 USD/hour for f1-micro and g1-small machine types
@@ -69,7 +73,7 @@ Standard machine types, high-CPU machine types, and high-memory machine types ar
 
 Windows Server images are charged a 1 minute minimum. After 1 minute, Windows images are charged in 1 second increments.
 
-### SQL Server images
+### SQL Server Images
 SQL Server images incur costs in addition to the base cost for normal Windows Server images.
 
     $0.399 USD per core/hour for SQL Server Enterprise
@@ -86,9 +90,16 @@ Google recommends that you do not use SQL Server images on f1-micro or g1-small 
 Unlike other premium images, SQL Server images are charged a 10 minute minimum. After 10 minutes, SQL Server images are charged in 1 minute increments.
 
 ## Mapping to ontology
-Run [queries](../sparql-generate/gcloud/os.rqg)
-in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/os.ttl)
+v1.0.0 17-January-2019:
+[Query](../sparql-generate/gcloud/v1.0.0/os.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.0/os.ttl)
+
+v1.0.1 12-February-2019:
+[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/os.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/os.ttl)
+```
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/internet.rqg --output result/gcloud/v1.0.1/2019-02-12/internet.ttl  --log-level ERROR 
+```
 
 ### suse-sap mapping
 [suse-sap](#SUSE-images-and-SLES-for-SAP-images) is charged a bit different from other images.

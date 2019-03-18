@@ -1,0 +1,184 @@
+@prefix schema: <https://schema.org/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Worldwide>
+        a            cocoon:Location ;
+        schema:name  "Worldwide" .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Hong%20Kong>
+        a            cocoon:Location ;
+        schema:name  "Hong Kong" .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/InternetService/Gcloud/CP-COMPUTEENGINE-INTERNET-EGRESS-CN-CN>
+        a                           cocoon:InternetService ;
+        rdfs:label                  "CP-COMPUTEENGINE-INTERNET-EGRESS-CN-CN" ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.2"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:90TB ;
+                                      cocoon:forUsageMoreThan   cocoon:10TB
+                                    ] ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.22"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:10TB ;
+                                      cocoon:forUsageMoreThan   cocoon:1TB
+                                    ] ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.23"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:1TB ;
+                                      cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                  schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger ;
+                                                                  schema:unitCode          cocoon:GB
+                                                                ]
+                                    ] ;
+        cocoon:excludesDestination  <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Hong%20Kong> ;
+        cocoon:hasDestination       <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/China> ;
+        cocoon:hasDirection         cocoon:Egress ;
+        cocoon:hasProvider          cocoon:Gcloud ;
+        schema:dateModified         "2019-02-12"^^xsd:date .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/InternetService/Gcloud/CP-COMPUTEENGINE-INTERNET-EGRESS-ZONE>
+        a                         cocoon:InternetService ;
+        rdfs:label                "CP-COMPUTEENGINE-INTERNET-EGRESS-ZONE" ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.01e0"^^xsd:float ;
+                                    gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
+                                    cocoon:specialRateType   "Egress between zones in the same region"
+                                  ] ;
+        cocoon:hasDirection       cocoon:Egress ;
+        cocoon:hasProvider        cocoon:Gcloud ;
+        schema:dateModified       "2019-02-12"^^xsd:date .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/China>
+        a            cocoon:Location ;
+        schema:name  "China" .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/InternetService/Gcloud/CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC>
+        a                           cocoon:InternetService ;
+        rdfs:label                  "CP-COMPUTEENGINE-INTERNET-EGRESS-APAC-APAC" ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.08"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:90TB ;
+                                      cocoon:forUsageMoreThan   cocoon:10TB
+                                    ] ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.11"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:10TB ;
+                                      cocoon:forUsageMoreThan   cocoon:1TB
+                                    ] ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.12"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:1TB ;
+                                      cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                  schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger ;
+                                                                  schema:unitCode          cocoon:GB
+                                                                ]
+                                    ] ;
+        cocoon:excludesDestination  <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/China> ;
+        cocoon:hasDestination       <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Asia> ;
+        cocoon:hasDirection         cocoon:Egress ;
+        cocoon:hasProvider          cocoon:Gcloud ;
+        schema:dateModified         "2019-02-12"^^xsd:date .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/InternetService/Gcloud/CP-COMPUTEENGINE-INTERNET-EGRESS-REGION>
+        a                         cocoon:InternetService ;
+        rdfs:label                "CP-COMPUTEENGINE-INTERNET-EGRESS-REGION" ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      "0.01e0"^^xsd:float ;
+                                    gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
+                                    cocoon:specialRateType   "Egress between regions within the US"
+                                  ] ;
+        cocoon:hasDirection       cocoon:Egress ;
+        cocoon:hasProvider        cocoon:Gcloud ;
+        schema:dateModified       "2019-02-12"^^xsd:date .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/InternetService/Gcloud/CP-COMPUTEENGINE-INTERNET-EGRESS-AU-AU>
+        a                         cocoon:InternetService ;
+        rdfs:label                "CP-COMPUTEENGINE-INTERNET-EGRESS-AU-AU" ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasCurrencyValue       "0.15"^^xsd:float ;
+                                    gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                    cocoon:forUsageLessEqual  cocoon:90TB ;
+                                    cocoon:forUsageMoreThan   cocoon:10TB
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasCurrencyValue       "0.18"^^xsd:float ;
+                                    gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                    cocoon:forUsageLessEqual  cocoon:10TB ;
+                                    cocoon:forUsageMoreThan   cocoon:1TB
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasCurrencyValue       "0.19"^^xsd:float ;
+                                    gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                    cocoon:forUsageLessEqual  cocoon:1TB ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger ;
+                                                                schema:unitCode          cocoon:GB
+                                                              ]
+                                  ] ;
+        cocoon:hasDestination     <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Australia> ;
+        cocoon:hasDirection       cocoon:Egress ;
+        cocoon:hasProvider        cocoon:Gcloud ;
+        schema:dateModified       "2019-02-12"^^xsd:date .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Asia>
+        a            cocoon:Location ;
+        schema:name  "Asia" .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/InternetService/Gcloud/CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA>
+        a                           cocoon:InternetService ;
+        rdfs:label                  "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA" ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.11"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:10TB ;
+                                      cocoon:forUsageMoreThan   cocoon:1TB
+                                    ] ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.08"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:90TB ;
+                                      cocoon:forUsageMoreThan   cocoon:10TB
+                                    ] ;
+        gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                      gr:hasCurrency            "USD" ;
+                                      gr:hasCurrencyValue       "0.12"^^xsd:float ;
+                                      gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
+                                      cocoon:forUsageLessEqual  cocoon:1TB ;
+                                      cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                  schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger ;
+                                                                  schema:unitCode          cocoon:GB
+                                                                ]
+                                    ] ;
+        cocoon:excludesDestination  <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/China> , <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Australia> ;
+        cocoon:hasDestination       <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Worldwide> , <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Hong%20Kong> ;
+        cocoon:hasDirection         cocoon:Egress ;
+        cocoon:hasProvider          cocoon:Gcloud ;
+        schema:dateModified         "2019-02-12"^^xsd:date .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/Location/Australia>
+        a            cocoon:Location ;
+        schema:name  "Australia" .

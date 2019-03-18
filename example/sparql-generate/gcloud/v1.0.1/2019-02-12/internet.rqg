@@ -15,41 +15,44 @@ GENERATE {
     cocoon:hasDirection cocoon:Egress;
     
     GENERATE {
-        ?iri cocoon:hasDestination [
-            a cocoon:Location;
-            
+        ?destination_iri a cocoon:Location;
+            schema:name ?destinationStr .
 
-        ] <Location/{?destinationStr}>;     
+        ?iri cocoon:hasDestination ?destination_iri .  
     }
-    ITERATOR iter:JSONPath(?gcloudInternet, "$.destinations[*]") AS ?destinationJson
+    ITERATOR iter:JSONPath(?destinationJson, "$.destinations[*]") AS ?destination
     WHERE {
-        BIND (fun:JSONPath(?destinationJson, "$") AS ?destinationStr)     
+        BIND (fun:JSONPath(?destination, "$") AS ?destinationStr) 
+        BIND (<{?release_date}/Location/{?destinationStr}> as ?destination_iri)  
     } .
 
     GENERATE {
-        ?iri cocoon:excludesDestination <location/{?excludesDestinationStr}>;     
+        ?excludes_destination_iri a cocoon:Location;
+            schema:name ?excludesDestinationStr .
+        ?iri cocoon:excludesDestination ?excludes_destination_iri;     
     }
-    ITERATOR iter:JSONPath(?gcloudInternet, "$.excludesDestinations[*]") AS ?excludesDestinationJson
+    ITERATOR iter:JSONPath(?destinationJson, "$.excludesDestinations[*]") AS ?excludesDestination
     WHERE {
-        BIND (fun:JSONPath(?excludesDestinationJson, "$") AS ?excludesDestinationStr)     
+        BIND (fun:JSONPath(?excludesDestination,"$") AS ?excludesDestinationStr)
+        BIND (<{?release_date}/Location/{?excludesDestinationStr}> as ?excludes_destination_iri)    
     } .
 
     GENERATE {        
         ?iri
         gr:hasPriceSpecification [ 
-            a cocoon:NetworkPriceSpecification ; 
+            a cocoon:CloudNetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?tier1;                
                 cocoon:forUsageMoreThan [
-                    a cocoon:QuantityOfThings;
-                    cocoon:hasUnitOfMeasurement cocoon:GB;
-                    cocoon:numericValue "0"^^xsd:nonNegativeInteger;
+                    a schema:TypeAndQuantityNode;
+                    schema:unitCode cocoon:GB;
+                    schema:amountOfThisGood "0"^^xsd:nonNegativeInteger;
                 ];
                 cocoon:forUsageLessEqual cocoon:1TB;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth;            
         ];
         gr:hasPriceSpecification [ 
-            a cocoon:NetworkPriceSpecification ; 
+            a cocoon:CloudNetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?tier2;                
                 cocoon:forUsageMoreThan cocoon:1TB;
@@ -57,7 +60,7 @@ GENERATE {
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth;            
         ];
         gr:hasPriceSpecification [ 
-            a cocoon:NetworkPriceSpecification ; 
+            a cocoon:CloudNetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?tier3;                
                 cocoon:forUsageMoreThan cocoon:10TB;
@@ -74,24 +77,26 @@ GENERATE {
     GENERATE {        
         ?iri
         gr:hasPriceSpecification [ 
-            a cocoon:NetworkPriceSpecification ; 
+            a cocoon:CloudNetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?us;                
                 cocoon:specialRateType ?specialRateType;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth;           
         ];    
     } WHERE {
-        FILTER( BOUND(?specialRateType) )
-        BIND (xsd:float(fun:JSONPath(?gcloudInternet,".us")) AS ?us)
+        FILTER( BOUND(?us) ) 
+        BIND ( IF( CONTAINS(?key,"ZONE"), "Egress between zones in the same region", "Egress between regions within the US") AS ?specialRateType) 
     } .
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/internet_destination.json> AS ?destinations
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/internet.json> AS ?internet
+# both source should have the same keys in data
 ITERATOR iter:JSONListKeys(?internet) AS ?key
 WHERE {
     BIND(fun:JSONPath(?internet, '$.{?key}' ) AS ?gcloudInternet)
+    BIND(fun:JSONPath(?destinations, '$.{?key}' ) AS ?destinationJson)
     BIND (fun:JSONPath(?gcloudInternet,"$.tiers") AS ?tiers)
-    BIND (fun:JSONPath(?gcloudInternet,"$.specialRateType") AS ?specialRateType)
+    BIND (xsd:float(fun:JSONPath(?gcloudInternet,"$.us")) AS ?us)
     # having signle point of change for the following
     BIND ( "Gcloud" as ?provider_slug )
     BIND ( cocoon:Gcloud as ?provider )

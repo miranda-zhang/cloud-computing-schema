@@ -3,7 +3,7 @@
 Data: original json for Google Cloud
 https://cloudpricingcalculator.appspot.com/static/data/pricelist.json
 
-Recorded
+Recorded:
 1. [v1.41 24-July-2018](../data/gcloud/v1.41.json)
 2. [v1.58 17-January-2019](../data/gcloud/v1.58.json)
 3. [v1.62 12-February-2019](../data/gcloud/v1.62.json)
@@ -94,13 +94,29 @@ v1.0.0 17-January-2019:
 v1.0.1 12-February-2019:
 [Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/internet.rqg)
 [Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/internet.ttl)
-
+```
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/internet.rqg --output result/gcloud/v1.0.1/2019-02-12/internet.ttl  --log-level ERROR 
+```
 ### Load Balancing Data
-Run [queries](../sparql-generate/gcloud/load_balancing_data.rqg)
-in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing_data.ttl)
+v1.0.0 17-January-2019:
+[Query](../sparql-generate/gcloud/v1.0.0/load_balancing_data.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.0/load_balancing_data.ttl)
 
-Load Balancing Forwarding Rule:
-Run [queries](../sparql-generate/gcloud/load_balancing_rule.rqg)
-in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/sparql-generate/playground.html)
-to get [results (RDF turtle)](../sparql-generate/result/gcloud/load_balancing_rule.ttl)
+v1.0.1 12-February-2019:
+[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/load_balancing_data.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/load_balancing_data.ttl)
+```
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/load_balancing_data.rqg --output result/gcloud/v1.0.1/2019-02-12/load_balancing_data.ttl  --log-level ERROR 
+```
+
+### Load Balancing Forwarding Rule
+v1.0.0 17-January-2019:
+[Query](../sparql-generate/gcloud/v1.0.0/load_balancing_rule.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.0/load_balancing_rule.ttl)
+
+v1.0.1 12-February-2019:
+[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/load_balancing_rule.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/load_balancing_rule.ttl)
+```
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/load_balancing_rule.rqg --output result/gcloud/v1.0.1/2019-02-12/load_balancing_rule.ttl  --log-level ERROR 
+```

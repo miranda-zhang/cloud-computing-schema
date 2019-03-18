@@ -528,8 +528,7 @@ cocoon:CloudServicePriceSpecification rdf:type owl:Class ;
                                       rdfs:subClassOf gr:UnitPriceSpecification ,
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty cocoon:inRegion ;
-                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                        owl:onClass cocoon:Region
+                                                        owl:someValuesFrom cocoon:Region
                                                       ] ,
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty cocoon:hasCurrencyValue ;
@@ -546,8 +545,7 @@ cocoon:CloudServicePriceSpecification rdf:type owl:Class ;
    owl:annotatedProperty rdfs:subClassOf ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
                          owl:onProperty cocoon:inRegion ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass cocoon:Region
+                         owl:someValuesFrom cocoon:Region
                        ] ;
    rdfs:comment "CloudNetworkPriceSpecification use other properties to sepecify destination"@en
  ] .
@@ -1054,6 +1052,14 @@ cocoon:GB rdf:type owl:NamedIndividual ,
           rdfs:label "Gigabyte"@en .
 
 
+###  https://w3id.org/cocoon/v1.0.1#GBPerHour
+cocoon:GBPerHour rdf:type owl:NamedIndividual ,
+                          <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                          cocoon:UnitOfMeasure ;
+                 rdfs:comment "Often describe 1 GB per Hour usage."@en ;
+                 rdfs:label "Gigabyte per Hour"@en .
+
+
 ###  https://w3id.org/cocoon/v1.0.1#GBPerMonth
 cocoon:GBPerMonth rdf:type owl:NamedIndividual ,
                            <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
@@ -1062,31 +1068,11 @@ cocoon:GBPerMonth rdf:type owl:NamedIndividual ,
                   rdfs:label "Gigabyte per Month"@en .
 
 
-cocoon:GBPerHour rdf:type owl:NamedIndividual ,
-                           <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
-                           cocoon:UnitOfMeasure ;
-                  rdfs:comment "Often describe 1 GB per Hour usage."@en ;
-                  rdfs:label "Gigabyte per Hour"@en .
-
-
-cocoon:MegabitsPerSecondPerHour rdf:type owl:NamedIndividual ,
-                           <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
-                           cocoon:UnitOfMeasure ;
-                  rdfs:comment "Often describe the throughput usage measured at MB/s within an hour."@en ;
-                  rdfs:label "MB/s/hour"@en .
-
-
 ###  https://w3id.org/cocoon/v1.0.1#GCEU
 cocoon:GCEU rdf:type owl:NamedIndividual ,
                      cocoon:UnitOfMeasure ;
             rdfs:comment "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ's to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en ;
             rdfs:label "Google Compute Engine Unit"@en .
-
-
-cocoon:VcpuPerHour rdf:type owl:NamedIndividual ,
-                     cocoon:UnitOfMeasure ;
-            rdfs:comment "Azure Ultra SSD storage is in preview in East US 2 and is billed on vcpu/hour provisioned as reservation charge. This reservation charge is only imposed if you enable Ultra SSD capability on the VM without connecting an Ultra SSD disk."@en ;
-            rdfs:label "vcpu/hour"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#Gcloud
@@ -1105,11 +1091,21 @@ cocoon:IOPs rdf:type owl:NamedIndividual ,
             rdfs:label "Input/output operations per sec"@en .
 
 
+###  https://w3id.org/cocoon/v1.0.1#IOPsPerHour
 cocoon:IOPsPerHour rdf:type owl:NamedIndividual ,
-                     <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
-                     cocoon:UnitOfMeasure ;
-            rdfs:comment "Azure Ultra SSD Managed Disks come in different sizes that provide a configurable range of input/output operations per sec (IOPS), and are billed on an hourly rate."@en ;
-            rdfs:label "IOPS/hour"@en .
+                            <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                            cocoon:UnitOfMeasure ;
+                   rdfs:comment "Azure Ultra SSD Managed Disks come in different sizes that provide a configurable range of input/output operations per sec (IOPS), and are billed on an hourly rate."@en ;
+                   rdfs:label "IOPS/hour"@en .
+
+
+###  https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour
+cocoon:MegabitsPerSecondPerHour rdf:type owl:NamedIndividual ,
+                                         <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                                         cocoon:UnitOfMeasure ;
+                                rdfs:comment "Often describe the throughput usage measured at MB/s within an hour."@en ;
+                                rdfs:label "MB/s/hour"@en .
+
 
 ###  https://w3id.org/cocoon/v1.0.1#MirandaZhangQian
 cocoon:MirandaZhangQian rdf:type owl:NamedIndividual ,
@@ -1131,6 +1127,13 @@ cocoon:TB rdf:type owl:NamedIndividual ,
                    cocoon:UnitOfMeasure ;
           rdfs:comment "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
           rdfs:label "Terabyte"@en .
+
+
+###  https://w3id.org/cocoon/v1.0.1#VcpuPerHour
+cocoon:VcpuPerHour rdf:type owl:NamedIndividual ,
+                            cocoon:UnitOfMeasure ;
+                   rdfs:comment "Azure Ultra SSD storage is in preview in East US 2 and is billed on vcpu/hour provisioned as reservation charge. This reservation charge is only imposed if you enable Ultra SSD capability on the VM without connecting an Ultra SSD disk."@en ;
+                   rdfs:label "vcpu/hour"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#1TB

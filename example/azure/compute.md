@@ -32,11 +32,13 @@ jq: `.offers.transactions.prices`
 Result:[2019-03-07](../jq/azure/2019-03-07/vm_base_storageTransactions.json)
 
 ## Mapping storage transactions prices
-Query:[v1.0.0 2018-03-02](../sparql-generate/azure/v1.0.0/vm_base_storageTransactions.rqg)
-Result:[v1.0.0 2018-03-02](../sparql-generate/result/azure/v1.0.0/vm_base_storageTransactions.ttl)
+v1.0.0 2018-03-02:
+[Query](../sparql-generate/azure/v1.0.0/vm_base_storageTransactions.rqg)
+[Result](../sparql-generate/result/azure/v1.0.0/vm_base_storageTransactions.ttl)
 
-Query:[v1.0.1 2019-03-07](../sparql-generate/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg)
-Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl)
+v1.0.1 2019-03-07:
+[Query](../sparql-generate/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg)
+[Result](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl)
 ```
 java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg --output result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl --log-level ERROR
 ```
@@ -51,11 +53,13 @@ Result:
    [view on jqplay](https://jqplay.org/s/NbdTDztQbb)
 
 ## Mapping virtual machine prices
-Query:[v1.0.0 2018-03-02 vm_base.rqg](../sparql-generate/azure/v1.0.0/vm_base.rqg)
-Result:[v1.0.0 2018-03-02 vm_base.ttl](../sparql-generate/result/azure/v1.0.0/vm_base.ttl)
+v1.0.0 2018-03-02:
+[Query](../sparql-generate/azure/v1.0.0/vm_base.rqg)
+[Result](../sparql-generate/result/azure/v1.0.0/vm_base.ttl)
 
+v1.0.1 2019-03-07:
+[Query](../sparql-generate/azure/v1.0.1/2019-03-07/vm_base.rqg)
+[Result](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base.ttl)
 ```
 java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/vm_base.rqg --output result/azure/v1.0.1/2019-03-07/vm_base.ttl --log-level ERROR
 ```
-Query:[v1.0.1/2019-03-07/vm_base.rqg](../sparql-generate/azure/v1.0.1/2019-03-07/vm_base.rqg)
-Result:[v1.0.1/2019-03-07/vm_base.ttl](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base.ttl)

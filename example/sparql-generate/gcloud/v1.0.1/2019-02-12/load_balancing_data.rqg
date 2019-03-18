@@ -1,0 +1,32 @@
+BASE <https://w3id.org/cocoon/data/v1.0.1/>
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
+
+GENERATE { 
+  ?iri a cocoon:LoadBalancingData;
+    cocoon:hasProvider ?provider;
+    schema:dateModified ?date;
+    cocoon:hasDirection cocoon:Ingress;
+    gr:hasPriceSpecification [ 
+        a gr:CloudServicePriceSpecification ; 
+            gr:hasCurrency "USD"^^xsd:string; 
+            gr:hasCurrencyValue ?price; 
+            cocoon:hasRegion <{?release_date}/Region/{?provider_slug}/{?region}>;
+            gr:hasUnitOfMeasurement cocoon:GB;
+    ];
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/load_balancing_data.json> AS ?source
+ITERATOR iter:JSONListKeys( ?source) AS ?region
+WHERE {
+    BIND(xsd:float(fun:JSONPath(?source, "$.{?region}" )) AS ?price)
+    # having signle point of change for the following
+    BIND ( "Gcloud" as ?provider_slug )
+    BIND ( cocoon:Gcloud as ?provider )
+    BIND ( "2019-02-12" as ?release_date) # yr-month-day
+    BIND ( <{?release_date}/LoadBalancingData/{?provider_slug}> as ?iri )
+    BIND ( xsd:date(?release_date) as ?date )
+}

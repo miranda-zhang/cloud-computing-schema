@@ -1,0 +1,66 @@
+BASE <https://w3id.org/cocoon/data/v1.0.1/>
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX unit: <http://qudt.org/vocab/unit#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
+
+GENERATE {
+    GENERATE { 
+        ?iri_5 a schema:TypeAndQuantityNode;
+            schema:amountOfThisGood "5"^^xsd:nonNegativeInteger;
+    }
+    WHERE{
+        FILTER(?type="base")
+    }.
+
+    GENERATE { 
+        ?iri a cocoon:ForwardingRule;
+        cocoon:hasProvider ?provider;
+        schema:dateModified ?date;
+        rdfs:label ?key;
+        rdfs:comment ?comment;
+        gr:hasPriceSpecification [ 
+            a cocoon:CloudNetworkPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                cocoon:hasCurrencyValue ?price; 
+                cocoon:inRegion <{?release_date}/Region/{?provider_slug}/{?region}>;
+                gr:hasUnitOfMeasurement unit:Hour;
+                cocoon:forUsageMoreThan [
+                    a schema:TypeAndQuantityNode;
+                    schema:amountOfThisGood ?lower_bound;
+                ];
+                cocoon:forUsageLessEqual ?optional
+        ] .      
+        
+    }
+    ITERATOR iter:JSONListKeys( ?charge ) AS ?region
+    WHERE {
+        BIND(xsd:float(fun:JSONPath(?charge, "$.{?region}" )) AS ?price)
+        BIND( xsd:nonNegativeInteger(IF(?type="base", 0, 5)) AS ?lower_bound)
+        BIND( (IF(?type="base", ?iri_5, ?undefined)) AS ?optional)
+    } .
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/load_balancing_rule.json> AS ?source
+ITERATOR iter:JSONListKeys( ?source) AS ?key
+WHERE {
+    BIND(fun:JSONPath(?source, "$.{?key}" ) AS ?charge)
+    BIND ( IF( CONTAINS(?key,"BASE"), "base", "extra") AS ?type) 
+    BIND ( 
+        IF ( 
+            ?type="base", 
+            "Google Lord Balancing Forwarding Rule Base Rate. Flat rate price, regardless 1 rule or 5 rules used, charged the same per hour.", 
+            "Google Lord Balancing Forwarding Rule Extra Rate. Extra charged per rule per hour."
+        ) AS ?comment
+    )
+    # having signle point of change for the following
+    BIND ( "Gcloud" as ?provider_slug )
+    BIND ( cocoon:Gcloud as ?provider )
+    BIND ( "2019-02-12" as ?release_date) # yr-month-day
+    BIND ( xsd:date(?release_date) as ?date )
+    BIND ( <{?release_date}/ForwardingRule/{?provider_slug}/{?type}> as ?iri )
+    BIND ( <TypeAndQuantityNode/5> as ?iri_5 )
+}
