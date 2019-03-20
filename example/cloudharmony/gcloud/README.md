@@ -51,4 +51,4 @@ java -jar sparql-generate-jena.jar --output result/gcloud/uplink.ttl --query-fil
 ```
 Query: [uplink.rqg](../../sparql-generate/gcloud/uplink.rqg)
 
-Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/uplink.ttl)
+Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/v1.0.1/uplink.ttl)

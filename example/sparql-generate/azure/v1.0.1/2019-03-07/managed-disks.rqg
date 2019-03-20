@@ -20,7 +20,7 @@ GENERATE {
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?value;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
-                cocoon:inRegion <{?updated}/Region/{?provider_slug}/{?region}>;
+                cocoon:inRegion <Region/{?provider_slug}/{?region}>;
         ]
     }
   	ITERATOR iter:JSONListKeys(?prices) AS ?region
@@ -81,7 +81,7 @@ GENERATE {
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?value;
                 gr:hasUnitOfMeasurement ?unit ;
-                cocoon:inRegion <{?updated}/Region/{?provider_slug}/{?region}>;
+                cocoon:inRegion <Region/{?provider_slug}/{?region}>;
                 rdfs:label ?label;
         ].
     }

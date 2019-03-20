@@ -16,12 +16,12 @@ And test it online in [SPARQL-Generat Playground](https://ci.mines-stetienne.fr/
 # Documentations
 A list of documentations explaining the scripts.
 1. [Google Cloud Compute Service](../gcloud/compute.md)
-2. [Microsoft Azure Compute Service](../azure/compute.md)
-3. [Microsoft Azure Storage Service](../azure/storage.md)
-4. [Google Cloud Storage Service](../gcloud/storage.md)
-5. [Google Cloud Network Service](../gcloud/network.md)
-6. [Google Cloud OS images](../gcloud/os.md)
-7. 
-8. [CloudHarmony Network Test: Google Cloud](../cloudharmony/google/README.md#sparql-generate)
-9.  [Google Cloud Region](gcloud/region.md)
-10. [Microsoft Azure Cloud Region](azure/region.md) 
+2. [Google Cloud OS images](../gcloud/os.md)
+3. [Google Cloud Storage Service](../gcloud/storage.md)
+4. [Google Cloud Network Service](../gcloud/network.md)
+5. [Microsoft Azure Compute Service](../azure/compute.md)
+6. [Microsoft Azure Storage Service](../azure/storage.md)
+7. [Google Cloud Region](../gcloud/region.md)
+8. 
+9.  [CloudHarmony Network Test: Google Cloud](../cloudharmony/google/README.md#sparql-generate) 
+11. [Microsoft Azure Cloud Region](azure/region.md) 

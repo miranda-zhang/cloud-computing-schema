@@ -1,0 +1,42 @@
+BASE <https://w3id.org/cocoon/data/v1.0.1/>
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
+
+GENERATE {
+    ?iri a cocoon:Region;
+        rdfs:label ?region ;
+        cocoon:hasProvider cocoon:gcloud ;
+        schema:dateModified ?date .
+    GENERATE {
+        ?iri
+            cocoon:city ?city;
+            schema:geo [
+                a schema:GeoCoordinates;
+                schema:latitude ?lat ;
+                schema:longitude ?long ;
+                schema:addressCountry ?country
+            ] .
+    }
+    WHERE {
+        FILTER( BOUND(?city) ) 
+        # location is not null
+    } .
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/region/1.json> AS ?source
+ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
+WHERE {
+    BIND(fun:JSONPath(?qos, '$.location.city' ) AS ?city)
+    BIND(fun:JSONPath(?qos, '$.location.country' ) AS ?country)
+    BIND(fun:JSONPath(?qos, '$.location.lat' ) AS ?lat)
+    BIND(fun:JSONPath(?qos, '$.location.long' ) AS ?long)
+    BIND(fun:JSONPath(?qos, '$.region' ) AS ?region)
+    # having signle point of change for the following
+    BIND ( "Gcloud" as ?provider_slug )
+    BIND ( cocoon:Gcloud as ?provider )
+    BIND ( "2019-02-12" as ?release_date) # yr-month-day
+    BIND ( <Region/{?provider_slug}/{?region}> as ?iri )
+    BIND ( xsd:date(?release_date) as ?date )
+}

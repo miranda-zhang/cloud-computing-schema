@@ -32,7 +32,7 @@ GENERATE {
             a cocoon:CloudServicePriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?value; 
-                cocoon:inRegion <{?updated}/Region/{?provider_slug}/{?region}>;
+                cocoon:inRegion <Region/{?provider_slug}/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour ;
         ] 
     }

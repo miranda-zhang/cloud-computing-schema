@@ -17,7 +17,7 @@ GENERATE {
                 a gr:CloudServicePriceSpecification ; 
                     gr:hasCurrency "USD"^^xsd:string; 
                     gr:hasCurrencyValue ?value;
-                    cocoon:hasRegion <{?updated}/Region/{?provider_slug}/{?region}>;
+                    cocoon:inRegion <Region/{?provider_slug}/{?region}>;
             ]
         }
         ITERATOR iter:JSONListKeys(?prices) AS ?region

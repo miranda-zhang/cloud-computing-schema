@@ -1,36 +1,36 @@
-BASE <https://w3id.org/cocoon/data/> 
+BASE <https://w3id.org/cocoon/data/v1.0.1/>
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX cocoon: <https://w3id.org/cocoon/v1.0#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
 
 GENERATE { 
-    <os/glcoud/{?key}> a cocoon:SystemImage;
+    ?iri a cocoon:SystemImage;
         rdfs:label ?key;
-        cocoon:hasProvider cocoon:gcloud .
-
-    <os/glcoud/{?key}> gr:hasPriceSpecification [ 
-        a cocoon:OSPriceSpecification ; 
-            gr:hasCurrency "USD"^^xsd:string; 
-            gr:hasCurrencyValue ?low;
-            cocoon:forCoresLessEqual ?cores;
-            cocoon:chargedPerCore ?percore;
-    ] .
-
-    <os/glcoud/{?key}> gr:hasPriceSpecification [ 
-        a cocoon:OSPriceSpecification ; 
-            gr:hasCurrency "USD"^^xsd:string; 
-            gr:hasCurrencyValue ?high;
-            cocoon:forCoresMoreThan ?cores;
-            cocoon:chargedPerCore ?percore;
-            cocoon:forCoresLessEqual ?cores2Times;
-    ] .
+        cocoon:hasProvider ?provider;
+        schema:dateModified ?date;
+        gr:hasPriceSpecification [ 
+            a cocoon:CloudOSPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?low;
+                cocoon:forCoresLessEqual ?cores;
+                cocoon:chargedPerCore ?percore
+        ];
+        gr:hasPriceSpecification [ 
+            a cocoon:CloudOSPriceSpecification ; 
+                gr:hasCurrency "USD"^^xsd:string; 
+                gr:hasCurrencyValue ?high;
+                cocoon:forCoresMoreThan ?cores;
+                cocoon:chargedPerCore ?percore;
+                cocoon:forCoresLessEqual ?cores2Times;
+        ] .
 
     GENERATE {
-        <os/glcoud/{?key}> gr:hasPriceSpecification [ 
-            a cocoon:OSPriceSpecification ; 
+        ?iri gr:hasPriceSpecification [ 
+            a cocoon:CloudOSPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 gr:hasCurrencyValue ?highest;
                 cocoon:forCoresMoreThan ?cores2Times;
@@ -51,4 +51,10 @@ WHERE {
     BIND( xsd:decimal( fun:JSONPath(?OSPriceSpec, '.cores' ) ) AS ?cores)
     BIND( xsd:float( fun:JSONPath(?OSPriceSpec, '.highest' ) ) AS ?highest)
     BIND( xsd:decimal( IF( BOUND(?highest) , ?cores * 2 , ?undef ) ) AS ?cores2Times)
+    # having signle point of change for the following
+    BIND ( "Gcloud" as ?provider_slug )
+    BIND ( cocoon:Gcloud as ?provider )
+    BIND ( "2019-02-12" as ?release_date) # yr-month-day
+    BIND ( <{?release_date}/SystemImage/{?provider_slug}/{?key}> as ?iri )
+    BIND ( xsd:date(?release_date) as ?date )
 }

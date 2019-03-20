@@ -27,16 +27,6 @@ Result:
 1. 2018-03-02: [file](../jq/azure/2018-03-02/managed-disk-transactions.json)
 2. 2019-03-07: [file](../jq/azure/2019-03-07/managed-disk-transactions.json), https://jqplay.org/s/mr2judqaqw
 
-## Mapping storage transactions prices
-Query:[v1.0.0 2018-03-02](../sparql-generate/azure/v1.0.0/managed-disk-transactions.rqg)
-Result:[v1.0.0 2018-03-02](../sparql-generate/result/azure/v1.0.0/managed-disk-transactions.ttl)
-
-Query:[v1.0.1 2019-03-07](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg)
-Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl)
-```
-java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg --output result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl --log-level ERROR
-```
-
 # Disk Snapshots
 From the [doc](#doc)
 >You can store Managed Disk snapshots and images for **Premium SSD Managed Disks** on Standard storage. You can choose between locally redundant (LRS) and Zone redundant (ZRS) options. These snapshots and images are charged at **$0.05/GB** per month for both Standard LRS and ZRS options based on the used portion of the disk. For example, if you create a snapshot of a managed disk with provisioned capacity of 64 GB and actual used data size of 10 GB, the snapshot will only be billed for the used data size of 10 GB. If you choose to store them on **Premium SSD** Managed Disk storage, you’ll be charged at $0.132/GB per month.
@@ -76,7 +66,7 @@ Result:
 1. 2018-03-02: [file](../jq/azure/2018-03-02/managed-disks.json)
 2. 2019-03-07: [file](../jq/azure/2019-03-07/managed-disks.json), https://jqplay.org/s/bMReXuJv-h
 
-## Mapping to ontology
+# Storage Prices
 v1.0.0 2018-03-02:
 [Query](../sparql-generate/azure/v1.0.0/managed-disks.rqg)
 [Result](../sparql-generate/result/azure/v1.0.0/managed-disks.ttl)
@@ -89,4 +79,14 @@ v1.0.1 2019-03-07:
 [Result](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disks.ttl)
 ```
 java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disks.rqg --output result/azure/v1.0.1/2019-03-07/managed-disks.ttl --log-level ERROR
+```
+
+# Storage Transactions Prices on Managed Disk
+Query:[v1.0.0 2018-03-02](../sparql-generate/azure/v1.0.0/managed-disk-transactions.rqg)
+Result:[v1.0.0 2018-03-02](../sparql-generate/result/azure/v1.0.0/managed-disk-transactions.ttl)
+
+Query:[v1.0.1 2019-03-07](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg)
+Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl)
+```
+java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg --output result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl --log-level ERROR
 ```

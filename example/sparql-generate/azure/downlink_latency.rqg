@@ -1,0 +1,90 @@
+BASE <https://w3id.org/cocoon/data/> 
+PREFIX iter: <http://w3id.org/sparql-generate/iter/>
+PREFIX fun: <http://w3id.org/sparql-generate/fn/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX qudt: <http://qudt.org/1.1/schema/qudt#>
+PREFIX unit: <http://qudt.org/1.1/vocab/unit#>
+
+GENERATE {
+    GENERATE {
+        <{?type_slug}/{?service_type_slug}/Azure/{?region}{?optional_zone}> a ?service_type_class ;
+            cocoon:hasProvider cocoon:Azure;
+            ssn:hasProperty ?property_url;
+            cocoon:inRegion <Region/Azure/{?region}> ;
+            cocoon:inZone ?zone .
+
+        <Measurement/{?type_slug}/{?service_type_slug}/Azure/{?region}{?optional_zone}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+            sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+            sosa:hasFeatureOfInterest  <{?type_slug}/{?service_type_slug}/Azure/{?region}{?optional_zone}> ;
+            sosa:hasResult [
+                a qudt:QuantityValue ;
+                qudt:numericValue ?average ;
+                unit: ?unit ] ;
+            sosa:resultTime ?dateTime .
+    }
+    WHERE{
+        FILTER (?service_type = "compute" || ?service_type = "storage") 
+        BIND ( IF( ?service_type = "compute", "ComputeService", "StorageService") AS ?service_type_slug )
+        BIND ( IF( ?service_type = "compute", cocoon:ComputeService, cocoon:StorageService) AS ?service_type_class )  
+    }.
+
+    GENERATE {
+        <{?type_slug}/{?service_type_slug}/Azure> a  ?service_type_class ;
+            cocoon:hasProvider cocoon:Azure;
+            ssn:hasProperty ?property_url.
+
+        <Measurement/{?type_slug}/{?service_type_slug}/Azure/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+            sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+            sosa:hasFeatureOfInterest  <{?type_slug}/{?service_type_slug}/Azure> ;
+            sosa:hasResult [
+                a qudt:QuantityValue ;
+                qudt:numericValue ?average ;
+                unit: ?unit ] ;
+            sosa:resultTime ?dateTime .
+    }
+    WHERE{
+        FILTER (?service_type = "dns" || ?service_type = "cdn")
+        BIND ( IF( ?service_type = "dns", "DNSService", "CDNService") AS ?service_type_slug )
+        BIND ( IF( ?service_type = "dns", cocoon:DNSService, cocoon:CDNService) AS ?service_type_class )
+    }.
+}
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/downlink_latency.json> AS ?source
+ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
+WHERE {
+    BIND( fun:JSONPath(?qos, '$.region' ) AS ?region)
+    BIND( fun:JSONPath(?qos, '$.service_type' ) AS ?service_type)
+    BIND( fun:JSONPath(?qos, '$.zone' ) AS ?zone)
+    BIND( fun:JSONPath(?qos, '$.type' ) AS ?type)
+    BIND( xsd:double( fun:JSONPath(?qos, '$.average') ) AS ?average)
+    BIND( fun:JSONPath(?qos, '$.completion_time') AS ?completion_time)
+    BIND( xsd:dateTime( ?completion_time ) AS ?dateTime)
+    BIND( xsd:string(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)
+    BIND( xsd:string(fun:JSONPath(?qos, '$.max_size')) AS ?max_size)
+    BIND ( IF( ?type = "downlink" , unit:MegabitsPerSecond , unit:MilliSecond ) AS ?unit )
+
+    # Put dash between each word for easy parsing if needed
+    BIND( CONCAT("DownlinkSpeed-",?min_size,"-",?max_size,"-KB") AS ?downlinkMin_maxKB )
+    # <QuanlityOfService/DownlinkSpeed-{?min_size}-{?max_size}-KB> 
+    BIND( IRI(CONCAT("QuanlityOfService/",?downlinkMin_maxKB)) AS ?qos_downlink_iri )
+
+    BIND (
+        COALESCE(
+            IF(?type = "downlink", ?qos_downlink_iri , 1/0),
+            IF(?type = "latency", <QuanlityOfService/Latency>, 1/0),
+            <QuanlityOfService/DNSQueryLatency> # assume "dns"
+        ) AS ?property_url
+    )
+    BIND (
+        COALESCE(
+            IF(?type = "downlink", ?downlinkMin_maxKB , 1/0),
+            IF(?type = "latency", "Latency", 1/0),
+            "DNSQueryLatency" # assume "dns"
+        ) AS ?type_slug
+    )
+    BIND( IF(BOUND(?zone),CONCAT("-",?zone), "") AS ?optional_zone)
+}

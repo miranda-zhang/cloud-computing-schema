@@ -25,9 +25,9 @@ If any lib can't be found, search with
     ./run.sh --test downlink --test_endpoint us-central1.gce.cloudharmony.net/probe --test_service_id google:compute 
 
 # Javascript Solution
-This method is suitable for doing tests on local machine, if run tests on remote server the [Command Line Tool](#command-line-tool) would be more suitable.
-1. [Google](gcloud/)
-2. [Azure](azure/)
+This method is suitable for doing tests on local machine, if run tests on remote server the [Command Line Tool](#command-line-tool) maybe more suitable.
+1. [Google](gcloud/README.md)
+2. [Azure](azure/README.md)
 
 ## PC used for the measurements
 IP: 150.203.213.249

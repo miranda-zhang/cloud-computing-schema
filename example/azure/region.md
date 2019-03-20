@@ -23,7 +23,7 @@ Try live on jq playground https://jqplay.org/s/eRBisoYbDb
 Result: [region.json](../jq/azure/region.json)
 
 ## Geonames Mapping
-See example in [geonames_rdf](../geonames_rdf/azure/) directory.
+See example in [geonames_rdf](../geonames_rdf/azure/README.md) directory.
 
 ## SPARQL-Generate
 Run [queries](../sparql-generate/azure/region.rqg)

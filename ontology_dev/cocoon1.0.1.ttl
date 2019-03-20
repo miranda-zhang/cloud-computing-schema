@@ -408,7 +408,8 @@ cocoon:CloudNetworkPriceSpecification rdf:type owl:Class ;
                                                         owl:onProperty cocoon:specialRateType ;
                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                         owl:onDataRange xsd:string
-                                                      ] .
+                                                      ] ;
+                                      rdfs:comment "This class can be used to model network services prices, including internet egress traffic, load balancing forwarding rules."@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource cocoon:CloudNetworkPriceSpecification ;
@@ -873,7 +874,7 @@ cocoon:Region rdf:type owl:Class ;
               rdfs:subClassOf cocoon:Location ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:inJurisdiction ;
-                                owl:someValuesFrom gn:Feature
+                                owl:someValuesFrom cocoon:Location
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:hasProvider ;
@@ -883,7 +884,7 @@ cocoon:Region rdf:type owl:Class ;
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:inPhysicalLocation ;
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass gn:Feature
+                                owl:onClass cocoon:Location
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:city ;
@@ -906,7 +907,7 @@ cocoon:Region rdf:type owl:Class ;
    owl:annotatedProperty rdfs:subClassOf ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
                          owl:onProperty cocoon:inJurisdiction ;
-                         owl:someValuesFrom gn:Feature
+                         owl:someValuesFrom cocoon:Location
                        ] ;
    rdfs:comment "Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
  ] .
@@ -917,7 +918,7 @@ cocoon:Region rdf:type owl:Class ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
                          owl:onProperty cocoon:inPhysicalLocation ;
                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass gn:Feature
+                         owl:onClass cocoon:Location
                        ] ;
    rdfs:comment "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately. The intended usage of this is record the known most precise location."@en
  ] .

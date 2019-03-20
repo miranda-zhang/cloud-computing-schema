@@ -89,20 +89,8 @@ Google recommends that you do not use SQL Server images on f1-micro or g1-small 
 
 Unlike other premium images, SQL Server images are charged a 10 minute minimum. After 10 minutes, SQL Server images are charged in 1 minute increments.
 
-## Mapping to ontology
-v1.0.0 17-January-2019:
-[Query](../sparql-generate/gcloud/v1.0.0/os.rqg)
-[Result](../sparql-generate/result/gcloud/v1.0.0/os.ttl)
-
-v1.0.1 12-February-2019:
-[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/os.rqg)
-[Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/os.ttl)
-```
-java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/internet.rqg --output result/gcloud/v1.0.1/2019-02-12/internet.ttl  --log-level ERROR 
-```
-
-### suse-sap mapping
-[suse-sap](#SUSE-images-and-SLES-for-SAP-images) is charged a bit different from other images.
+## About suse-sap mapping
+Most images has two tiers of prices, but `suse-sap` has an additional tier, we treated it as a special case during mapping.
 jq
 ```
 .gcp_price_list."CP-COMPUTEENGINE-OS"."suse-sap"
@@ -142,4 +130,16 @@ sparql result
                                     cocoon:forCoresLessEqual  "2"^^xsd:decimal
                                   ] ;
         cocoon:hasProvider        cocoon:gcloud .
+```
+
+## Mapping OS
+v1.0.0 17-January-2019:
+[Query](../sparql-generate/gcloud/v1.0.0/os.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.0/os.ttl)
+
+v1.0.1 12-February-2019:
+[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/os.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/os.ttl)
+```
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/os.rqg --output result/gcloud/v1.0.1/2019-02-12/os.ttl  --log-level ERROR 
 ```

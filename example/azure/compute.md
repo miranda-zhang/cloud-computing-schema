@@ -21,7 +21,7 @@ The only exception to Storage Transactions is when Premium Storage (persistent S
 Further reading
 https://www.rhipe.com/azure-storage-transactions/
 
-## Data extraction
+## Storage transactions Data Extraction
 Apply transformation `jq '.offers.transactions'`
 on [input](#getting-input).
 Result:[2018-03-02](../jq/azure/2018-03-02/vm_base_storageTransactions.json)
@@ -31,19 +31,7 @@ jq: `.offers.transactions.prices`
 
 Result:[2019-03-07](../jq/azure/2019-03-07/vm_base_storageTransactions.json)
 
-## Mapping storage transactions prices
-v1.0.0 2018-03-02:
-[Query](../sparql-generate/azure/v1.0.0/vm_base_storageTransactions.rqg)
-[Result](../sparql-generate/result/azure/v1.0.0/vm_base_storageTransactions.ttl)
-
-v1.0.1 2019-03-07:
-[Query](../sparql-generate/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg)
-[Result](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl)
-```
-java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg --output result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl --log-level ERROR
-```
-# VM Basic
-## Data extraction
+# VM Data extraction
 Apply transformation `jq '.offers | del( .transactions)'`
 on [input](#getting-input).
 
@@ -52,7 +40,7 @@ Result:
 2. [2019-03-07/vm_base_offers.json](../jq/azure/2019-03-07/vm_base_offers.json),
    [view on jqplay](https://jqplay.org/s/NbdTDztQbb)
 
-## Mapping virtual machine prices
+# Mapping virtual machine prices
 v1.0.0 2018-03-02:
 [Query](../sparql-generate/azure/v1.0.0/vm_base.rqg)
 [Result](../sparql-generate/result/azure/v1.0.0/vm_base.ttl)
@@ -62,4 +50,15 @@ v1.0.1 2019-03-07:
 [Result](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base.ttl)
 ```
 java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/vm_base.rqg --output result/azure/v1.0.1/2019-03-07/vm_base.ttl --log-level ERROR
+```
+# Storage Transactions Prices on VM Local Disk
+v1.0.0 2018-03-02:
+[Query](../sparql-generate/azure/v1.0.0/vm_base_storageTransactions.rqg)
+[Result](../sparql-generate/result/azure/v1.0.0/vm_base_storageTransactions.ttl)
+
+v1.0.1 2019-03-07:
+[Query](../sparql-generate/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg)
+[Result](../sparql-generate/result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl)
+```
+java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/vm_base_storageTransactions.rqg --output result/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl --log-level ERROR
 ```

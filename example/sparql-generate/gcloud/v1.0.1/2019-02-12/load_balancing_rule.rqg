@@ -27,7 +27,7 @@ GENERATE {
             a cocoon:CloudNetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
                 cocoon:hasCurrencyValue ?price; 
-                cocoon:inRegion <{?release_date}/Region/{?provider_slug}/{?region}>;
+                cocoon:inRegion <Region/{?provider_slug}/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour;
                 cocoon:forUsageMoreThan [
                     a schema:TypeAndQuantityNode;

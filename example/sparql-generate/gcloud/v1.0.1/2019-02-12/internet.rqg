@@ -23,7 +23,7 @@ GENERATE {
     ITERATOR iter:JSONPath(?destinationJson, "$.destinations[*]") AS ?destination
     WHERE {
         BIND (fun:JSONPath(?destination, "$") AS ?destinationStr) 
-        BIND (<{?release_date}/Location/{?destinationStr}> as ?destination_iri)  
+        BIND (<Location/{?destinationStr}> as ?destination_iri)  
     } .
 
     GENERATE {
@@ -34,7 +34,7 @@ GENERATE {
     ITERATOR iter:JSONPath(?destinationJson, "$.excludesDestinations[*]") AS ?excludesDestination
     WHERE {
         BIND (fun:JSONPath(?excludesDestination,"$") AS ?excludesDestinationStr)
-        BIND (<{?release_date}/Location/{?excludesDestinationStr}> as ?excludes_destination_iri)    
+        BIND (<Location/{?excludesDestinationStr}> as ?excludes_destination_iri)    
     } .
 
     GENERATE {        
