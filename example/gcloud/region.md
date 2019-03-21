@@ -130,7 +130,7 @@ Run jq query on [data collected via CloudHarmony](../cloudharmony/gcloud/README.
 
 See live https://jqplay.org/s/aajIEQqBjy
 
-[Cached Result.](../jq/gcloud/region/1.json)
+[Cached Result.](../jq/gcloud/cloudharmony/region/1.json)
 
 ```
 java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/region/1.rqg --output result/gcloud/v1.0.1/region/1.ttl --log-level ERROR

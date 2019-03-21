@@ -34,13 +34,13 @@ Run jq query on [data](#collect-data)
 ```
 See live https://jqplay.org/s/A5tzRAzOnW
 
-[Cached Result.](../../jq/gcloud/downlink_latency.json)
+[Cached Result.](../../jq/gcloud/cloudharmony/downlink_latency.json)
 
-# SPARQL-Generate
+# Downlink Speed and Latency
 ```
 java -jar sparql-generate-jena.jar --output result/gcloud/downlink_latency.ttl --query-file gcloud/downlink_latency.rqg --log-level ERROR
 ```
-Query: [downlink_latency.rqg](../../sparql-generate/gcloud/downlink_latency.rqg)
+Query: [downlink_latency.rqg](../../sparql-generate/gcloud/v1.0.1/downlink_latency.rqg)
 
 Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/downlink_latency.ttl)
 

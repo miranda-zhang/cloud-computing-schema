@@ -1,354 +1,422 @@
 @prefix schema: <https://schema.org/> .
-@prefix iter: <http://w3id.org/sparql-generate/iter/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl> .
-@prefix fun: <http://w3id.org/sparql-generate/fn/> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
 
-<https://w3id.org/cocoon/data/Region/gcloud/eu-west>
-          a                     cocoon:Region ;
-          rdfs:label            "eu-west" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Amsterdam" ;
-          schema:geo            _:b0 .
-_:b0      a                     schema:GeoCoordinates ;
-          schema:latitude       52.35e0 ;
-          schema:longitude      4.916667e0 ;
-          schema:addressCountry  "NL".
-<https://w3id.org/cocoon/data/Region/gcloud/china-north>
-          a                     cocoon:Region ;
-          rdfs:label            "china-north" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Beijing" ;
-          schema:geo            _:b1 .
-_:b1      a                     schema:GeoCoordinates ;
-          schema:latitude       30.822638e0 ;
-          schema:longitude      114.047944e0 ;
-          schema:addressCountry  "CN".
-<https://w3id.org/cocoon/data/Region/gcloud/china-north2>
-          a                     cocoon:Region ;
-          rdfs:label            "china-north2" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Beijing" ;
-          schema:geo            _:b2 .
-_:b2      a                     schema:GeoCoordinates ;
-          schema:latitude       30.822638e0 ;
-          schema:longitude      114.047944e0 ;
-          schema:addressCountry  "CN".
-<https://w3id.org/cocoon/data/Region/gcloud/korea-south>
-          a                     cocoon:Region ;
-          rdfs:label            "korea-south" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Busan" ;
-          schema:geo            _:b3 .
-_:b3      a                     schema:GeoCoordinates ;
-          schema:latitude       37.1525e0 ;
-          schema:longitude      127.095e0 ;
-          schema:addressCountry  "KR".
-<https://w3id.org/cocoon/data/Region/gcloud/australia-central>
-          a                     cocoon:Region ;
-          rdfs:label            "australia-central" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Canberra" ;
-          schema:geo            _:b4 .
-_:b4      a                     schema:GeoCoordinates ;
-          schema:latitude       -35.27603e0 ;
-          schema:longitude      149.13435e0 ;
-          schema:addressCountry  "AU".
-<https://w3id.org/cocoon/data/Region/gcloud/australia-central2>
-          a                     cocoon:Region ;
-          rdfs:label            "australia-central2" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Canberra" ;
-          schema:geo            _:b5 .
-_:b5      a                     schema:GeoCoordinates ;
-          schema:latitude       -35.27603e0 ;
-          schema:longitude      149.13435e0 ;
-          schema:addressCountry  "AU".
-<https://w3id.org/cocoon/data/Region/gcloud/uk-west>
-          a                     cocoon:Region ;
-          rdfs:label            "uk-west" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Cardiff" ;
-          schema:geo            _:b6 .
-_:b6      a                     schema:GeoCoordinates ;
-          schema:latitude       51.5e0 ;
-          schema:longitude      -3.2e0 ;
-          schema:addressCountry  "GB".
-<https://w3id.org/cocoon/data/Region/gcloud/india-south>
-          a                     cocoon:Region ;
-          rdfs:label            "india-south" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Chennai" ;
-          schema:geo            _:b7 .
-_:b7      a                     schema:GeoCoordinates ;
-          schema:latitude       13.083333e0 ;
-          schema:longitude      80.283333e0 ;
-          schema:addressCountry  "IN".
-<https://w3id.org/cocoon/data/Region/gcloud/eu-north>
-          a                     cocoon:Region ;
-          rdfs:label            "eu-north" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Dublin" ;
-          schema:geo            _:b8 .
-_:b8      a                     schema:GeoCoordinates ;
-          schema:latitude       53.3330556e0 ;
-          schema:longitude      -6.2488889e0 ;
-          schema:addressCountry  "IE".
-<https://w3id.org/cocoon/data/Region/gcloud/asia-east>
-          a                     cocoon:Region ;
-          rdfs:label            "asia-east" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Hong Kong" ;
-          schema:geo            _:b9 .
-_:b9      a                     schema:GeoCoordinates ;
-          schema:latitude       22.2833333e0 ;
-          schema:longitude      114.15e0 ;
-          schema:addressCountry  "HK".
-<https://w3id.org/cocoon/data/Region/gcloud/uk-south>
-          a                     cocoon:Region ;
-          rdfs:label            "uk-south" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "London" ;
-          schema:geo            _:b10 .
-_:b10     a                     schema:GeoCoordinates ;
-          schema:latitude       51.514125e0 ;
-          schema:longitude      -0.093689e0 ;
-          schema:addressCountry  "GB".
-<https://w3id.org/cocoon/data/Region/gcloud/france-south>
-          a                     cocoon:Region ;
-          rdfs:label            "france-south" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Marseille" ;
-          schema:geo            _:b11 .
-_:b11     a                     schema:GeoCoordinates ;
-          schema:latitude       43.285413e0 ;
-          schema:longitude      5.37606e0 ;
-          schema:addressCountry  "FR".
-<https://w3id.org/cocoon/data/Region/gcloud/australia-southeast>
-          a                     cocoon:Region ;
-          rdfs:label            "australia-southeast" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Melbourne" ;
-          schema:geo            _:b12 .
-_:b12     a                     schema:GeoCoordinates ;
-          schema:latitude       -37.813938e0 ;
-          schema:longitude      144.963425e0 ;
-          schema:addressCountry  "AU".
-<https://w3id.org/cocoon/data/Region/gcloud/india-west>
-          a                     cocoon:Region ;
-          rdfs:label            "india-west" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Mumbai" ;
-          schema:geo            _:b13 .
-_:b13     a                     schema:GeoCoordinates ;
-          schema:latitude       18.975e0 ;
-          schema:longitude      72.825833e0 ;
-          schema:addressCountry  "IN".
-<https://w3id.org/cocoon/data/Region/gcloud/japan-west>
-          a                     cocoon:Region ;
-          rdfs:label            "japan-west" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Osaka" ;
-          schema:geo            _:b14 .
-_:b14     a                     schema:GeoCoordinates ;
-          schema:latitude       34.516855e0 ;
-          schema:longitude      135.562978e0 ;
-          schema:addressCountry  "JP".
-<https://w3id.org/cocoon/data/Region/gcloud/france-central>
-          a                     cocoon:Region ;
-          rdfs:label            "france-central" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Paris" ;
-          schema:geo            _:b15 .
-_:b15     a                     schema:GeoCoordinates ;
-          schema:latitude       48.866667e0 ;
-          schema:longitude      2.333333e0 ;
-          schema:addressCountry  "FR".
-<https://w3id.org/cocoon/data/Region/gcloud/india-central>
-          a                     cocoon:Region ;
-          rdfs:label            "india-central" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Pune" ;
-          schema:geo            _:b16 .
-_:b16     a                     schema:GeoCoordinates ;
-          schema:latitude       18.533333e0 ;
-          schema:longitude      73.866667e0 ;
-          schema:addressCountry  "IN".
-<https://w3id.org/cocoon/data/Region/gcloud/canada-east>
-          a                     cocoon:Region ;
-          rdfs:label            "canada-east" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Quebec City" ;
-          schema:geo            _:b17 .
-_:b17     a                     schema:GeoCoordinates ;
-          schema:latitude       46.8167e0 ;
-          schema:longitude      -71.2167e0 ;
-          schema:addressCountry  "CA".
-<https://w3id.org/cocoon/data/Region/gcloud/japan-east>
-          a                     cocoon:Region ;
-          rdfs:label            "japan-east" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Saitama" ;
-          schema:geo            _:b18 .
-_:b18     a                     schema:GeoCoordinates ;
-          schema:latitude       35.895534e0 ;
-          schema:longitude      139.67747e0 ;
-          schema:addressCountry  "JP".
-<https://w3id.org/cocoon/data/Region/gcloud/brazil-south>
-          a                     cocoon:Region ;
-          rdfs:label            "brazil-south" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Sao Paulo" ;
-          schema:geo            _:b19 .
-_:b19     a                     schema:GeoCoordinates ;
-          schema:latitude       -23.53e0 ;
-          schema:longitude      -46.63e0 ;
-          schema:addressCountry  "BR".
-<https://w3id.org/cocoon/data/Region/gcloud/korea-central>
-          a                     cocoon:Region ;
-          rdfs:label            "korea-central" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Seoul" ;
-          schema:geo            _:b20 .
-_:b20     a                     schema:GeoCoordinates ;
-          schema:latitude       37.5985e0 ;
-          schema:longitude      126.9783e0 ;
-          schema:addressCountry  "KR".
-<https://w3id.org/cocoon/data/Region/gcloud/china-east>
-          a                     cocoon:Region ;
-          rdfs:label            "china-east" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Shanghai" ;
-          schema:geo            _:b21 .
-_:b21     a                     schema:GeoCoordinates ;
-          schema:latitude       31.045556e0 ;
-          schema:longitude      121.399722e0 ;
-          schema:addressCountry  "CN".
-<https://w3id.org/cocoon/data/Region/gcloud/china-east2>
-          a                     cocoon:Region ;
-          rdfs:label            "china-east2" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Shanghai" ;
-          schema:geo            _:b22 .
-_:b22     a                     schema:GeoCoordinates ;
-          schema:latitude       31.045556e0 ;
-          schema:longitude      121.399722e0 ;
-          schema:addressCountry  "CN".
-<https://w3id.org/cocoon/data/Region/gcloud/asia-southeast>
-          a                     cocoon:Region ;
-          rdfs:label            "asia-southeast" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Singapore" ;
-          schema:geo            _:b23 .
-_:b23     a                     schema:GeoCoordinates ;
-          schema:latitude       1.2930556e0 ;
-          schema:longitude      103.8558333e0 ;
-          schema:addressCountry  "SG".
-<https://w3id.org/cocoon/data/Region/gcloud/australia-east>
-          a                     cocoon:Region ;
-          rdfs:label            "australia-east" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Sydney" ;
-          schema:geo            _:b24 .
-_:b24     a                     schema:GeoCoordinates ;
-          schema:latitude       -33.861481e0 ;
-          schema:longitude      151.205475e0 ;
-          schema:addressCountry  "AU".
-<https://w3id.org/cocoon/data/Region/gcloud/canada-central>
-          a                     cocoon:Region ;
-          rdfs:label            "canada-central" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Toronto" ;
-          schema:geo            _:b25 .
-_:b25     a                     schema:GeoCoordinates ;
-          schema:latitude       43.666667e0 ;
-          schema:longitude      -79.416667e0 ;
-          schema:addressCountry  "CA".
-<https://w3id.org/cocoon/data/Region/gcloud/us-east>
-          a                     cocoon:Region ;
-          rdfs:label            "us-east" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Ashburn" ;
-          cocoon:state          "VA" ;
-          schema:geo            _:b26 .
-_:b26     a                     schema:GeoCoordinates ;
-          schema:latitude       39.0708333e0 ;
-          schema:longitude      -77.48e0 ;
-          schema:addressCountry  "US".
-<https://w3id.org/cocoon/data/Region/gcloud/us-east2>
-          a                     cocoon:Region ;
-          rdfs:label            "us-east2" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Ashburn" ;
-          cocoon:state          "VA" ;
-          schema:geo            _:b27 .
-_:b27     a                     schema:GeoCoordinates ;
-          schema:latitude       39.0708333e0 ;
-          schema:longitude      -77.48e0 ;
-          schema:addressCountry  "US".
-<https://w3id.org/cocoon/data/Region/gcloud/us-westcentral>
-          a                     cocoon:Region ;
-          rdfs:label            "us-westcentral" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Cheyenne" ;
-          cocoon:state          "WY" ;
-          schema:geo            _:b28 .
-_:b28     a                     schema:GeoCoordinates ;
-          schema:latitude       41.14e0 ;
-          schema:longitude      -104.8197222e0 ;
-          schema:addressCountry  "US".
-<https://w3id.org/cocoon/data/Region/gcloud/us-northcentral>
-          a                     cocoon:Region ;
-          rdfs:label            "us-northcentral" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Chicago" ;
-          cocoon:state          "IL" ;
-          schema:geo            _:b29 .
-_:b29     a                     schema:GeoCoordinates ;
-          schema:latitude       41.85e0 ;
-          schema:longitude      -87.65e0 ;
-          schema:addressCountry  "US".
-<https://w3id.org/cocoon/data/Region/gcloud/us-west2>
-          a                     cocoon:Region ;
-          rdfs:label            "us-west2" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "Quincy" ;
-          cocoon:state          "WA" ;
-          schema:geo            _:b30 .
-_:b30     a                     schema:GeoCoordinates ;
-          schema:latitude       47.2344444e0 ;
-          schema:longitude      -119.8513889e0 ;
-          schema:addressCountry  "US".
-<https://w3id.org/cocoon/data/Region/gcloud/us-southcentral>
-          a                     cocoon:Region ;
-          rdfs:label            "us-southcentral" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "San Antonio" ;
-          cocoon:state          "TX" ;
-          schema:geo            _:b31 .
-_:b31     a                     schema:GeoCoordinates ;
-          schema:latitude       29.4238889e0 ;
-          schema:longitude      -98.4933333e0 ;
-          schema:addressCountry  "US".
-<https://w3id.org/cocoon/data/Region/gcloud/us-west>
-          a                     cocoon:Region ;
-          rdfs:label            "us-west" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "San Francisco" ;
-          cocoon:state          "CA" ;
-          schema:geo            _:b32 .
-_:b32     a                     schema:GeoCoordinates ;
-          schema:latitude       37.775e0 ;
-          schema:longitude      -122.4183333e0 ;
-          schema:addressCountry  "US".
-<https://w3id.org/cocoon/data/Region/gcloud/us-central>
-          a                     cocoon:Region ;
-          rdfs:label            "us-central" ;
-          cocoon:hasProvider    cocoon:gcloud ;
-          cocoon:city           "West Des Moines" ;
-          cocoon:state          "IA" ;
-          schema:geo            _:b33 .
-_:b33     a                     schema:GeoCoordinates ;
-          schema:latitude       41.5772222e0 ;
-          schema:longitude      -93.7111111e0 ;
-          schema:addressCountry  "US".
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-central>
+        a                    cocoon:Region ;
+        rdfs:label           "us-central" ;
+        cocoon:city          "West Des Moines" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        cocoon:state         "IA" ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "US" ;
+                               schema:latitude        41.5772222e0 ;
+                               schema:longitude       -93.7111111e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/india-central>
+        a                    cocoon:Region ;
+        rdfs:label           "india-central" ;
+        cocoon:city          "Pune" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "IN" ;
+                               schema:latitude        18.533333e0 ;
+                               schema:longitude       73.866667e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/india-south>
+        a                    cocoon:Region ;
+        rdfs:label           "india-south" ;
+        cocoon:city          "Chennai" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "IN" ;
+                               schema:latitude        13.083333e0 ;
+                               schema:longitude       80.283333e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/canada-east>
+        a                    cocoon:Region ;
+        rdfs:label           "canada-east" ;
+        cocoon:city          "Quebec City" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "CA" ;
+                               schema:latitude        46.8167e0 ;
+                               schema:longitude       -71.2167e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/japan-west>
+        a                    cocoon:Region ;
+        rdfs:label           "japan-west" ;
+        cocoon:city          "Osaka" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "JP" ;
+                               schema:latitude        34.516855e0 ;
+                               schema:longitude       135.562978e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/china-north>
+        a                    cocoon:Region ;
+        rdfs:label           "china-north" ;
+        cocoon:city          "Beijing" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "CN" ;
+                               schema:latitude        30.822638e0 ;
+                               schema:longitude       114.047944e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/brazil-south>
+        a                    cocoon:Region ;
+        rdfs:label           "brazil-south" ;
+        cocoon:city          "Sao Paulo" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "BR" ;
+                               schema:latitude        -23.53e0 ;
+                               schema:longitude       -46.63e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-northcentral>
+        a                    cocoon:Region ;
+        rdfs:label           "us-northcentral" ;
+        cocoon:city          "Chicago" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        cocoon:state         "IL" ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "US" ;
+                               schema:latitude        41.85e0 ;
+                               schema:longitude       -87.65e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/asia-east>
+        a                    cocoon:Region ;
+        rdfs:label           "asia-east" ;
+        cocoon:city          "Hong Kong" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "HK" ;
+                               schema:latitude        22.2833333e0 ;
+                               schema:longitude       114.15e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-west2>
+        a                    cocoon:Region ;
+        rdfs:label           "us-west2" ;
+        cocoon:city          "Quincy" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        cocoon:state         "WA" ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "US" ;
+                               schema:latitude        47.2344444e0 ;
+                               schema:longitude       -119.8513889e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/france-central>
+        a                    cocoon:Region ;
+        rdfs:label           "france-central" ;
+        cocoon:city          "Paris" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "FR" ;
+                               schema:latitude        48.866667e0 ;
+                               schema:longitude       2.333333e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-east>
+        a                    cocoon:Region ;
+        rdfs:label           "us-east" ;
+        cocoon:city          "Ashburn" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        cocoon:state         "VA" ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "US" ;
+                               schema:latitude        39.0708333e0 ;
+                               schema:longitude       -77.48e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/china-north2>
+        a                    cocoon:Region ;
+        rdfs:label           "china-north2" ;
+        cocoon:city          "Beijing" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "CN" ;
+                               schema:latitude        30.822638e0 ;
+                               schema:longitude       114.047944e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-westcentral>
+        a                    cocoon:Region ;
+        rdfs:label           "us-westcentral" ;
+        cocoon:city          "Cheyenne" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        cocoon:state         "WY" ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "US" ;
+                               schema:latitude        41.14e0 ;
+                               schema:longitude       -104.8197222e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/canada-central>
+        a                    cocoon:Region ;
+        rdfs:label           "canada-central" ;
+        cocoon:city          "Toronto" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "CA" ;
+                               schema:latitude        43.666667e0 ;
+                               schema:longitude       -79.416667e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/australia-east>
+        a                    cocoon:Region ;
+        rdfs:label           "australia-east" ;
+        cocoon:city          "Sydney" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "AU" ;
+                               schema:latitude        -33.861481e0 ;
+                               schema:longitude       151.205475e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/france-south>
+        a                    cocoon:Region ;
+        rdfs:label           "france-south" ;
+        cocoon:city          "Marseille" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "FR" ;
+                               schema:latitude        43.285413e0 ;
+                               schema:longitude       5.37606e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/eu-north>
+        a                    cocoon:Region ;
+        rdfs:label           "eu-north" ;
+        cocoon:city          "Dublin" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "IE" ;
+                               schema:latitude        53.3330556e0 ;
+                               schema:longitude       -6.2488889e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-southcentral>
+        a                    cocoon:Region ;
+        rdfs:label           "us-southcentral" ;
+        cocoon:city          "San Antonio" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        cocoon:state         "TX" ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "US" ;
+                               schema:latitude        29.4238889e0 ;
+                               schema:longitude       -98.4933333e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-west>
+        a                    cocoon:Region ;
+        rdfs:label           "us-west" ;
+        cocoon:city          "San Francisco" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        cocoon:state         "CA" ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "US" ;
+                               schema:latitude        37.775e0 ;
+                               schema:longitude       -122.4183333e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/china-east>
+        a                    cocoon:Region ;
+        rdfs:label           "china-east" ;
+        cocoon:city          "Shanghai" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "CN" ;
+                               schema:latitude        31.045556e0 ;
+                               schema:longitude       121.399722e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/australia-central>
+        a                    cocoon:Region ;
+        rdfs:label           "australia-central" ;
+        cocoon:city          "Canberra" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "AU" ;
+                               schema:latitude        -35.27603e0 ;
+                               schema:longitude       149.13435e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/india-west>
+        a                    cocoon:Region ;
+        rdfs:label           "india-west" ;
+        cocoon:city          "Mumbai" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "IN" ;
+                               schema:latitude        18.975e0 ;
+                               schema:longitude       72.825833e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-east2>
+        a                    cocoon:Region ;
+        rdfs:label           "us-east2" ;
+        cocoon:city          "Ashburn" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        cocoon:state         "VA" ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "US" ;
+                               schema:latitude        39.0708333e0 ;
+                               schema:longitude       -77.48e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/australia-southeast>
+        a                    cocoon:Region ;
+        rdfs:label           "australia-southeast" ;
+        cocoon:city          "Melbourne" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "AU" ;
+                               schema:latitude        -37.813938e0 ;
+                               schema:longitude       144.963425e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/australia-central2>
+        a                    cocoon:Region ;
+        rdfs:label           "australia-central2" ;
+        cocoon:city          "Canberra" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "AU" ;
+                               schema:latitude        -35.27603e0 ;
+                               schema:longitude       149.13435e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/korea-central>
+        a                    cocoon:Region ;
+        rdfs:label           "korea-central" ;
+        cocoon:city          "Seoul" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "KR" ;
+                               schema:latitude        37.5985e0 ;
+                               schema:longitude       126.9783e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/korea-south>
+        a                    cocoon:Region ;
+        rdfs:label           "korea-south" ;
+        cocoon:city          "Busan" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "KR" ;
+                               schema:latitude        37.1525e0 ;
+                               schema:longitude       127.095e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/uk-south>
+        a                    cocoon:Region ;
+        rdfs:label           "uk-south" ;
+        cocoon:city          "London" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "GB" ;
+                               schema:latitude        51.514125e0 ;
+                               schema:longitude       -0.093689e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/asia-southeast>
+        a                    cocoon:Region ;
+        rdfs:label           "asia-southeast" ;
+        cocoon:city          "Singapore" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "SG" ;
+                               schema:latitude        1.2930556e0 ;
+                               schema:longitude       103.8558333e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/china-east2>
+        a                    cocoon:Region ;
+        rdfs:label           "china-east2" ;
+        cocoon:city          "Shanghai" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "CN" ;
+                               schema:latitude        31.045556e0 ;
+                               schema:longitude       121.399722e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/uk-west>
+        a                    cocoon:Region ;
+        rdfs:label           "uk-west" ;
+        cocoon:city          "Cardiff" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "GB" ;
+                               schema:latitude        51.5e0 ;
+                               schema:longitude       -3.2e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/eu-west>
+        a                    cocoon:Region ;
+        rdfs:label           "eu-west" ;
+        cocoon:city          "Amsterdam" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "NL" ;
+                               schema:latitude        52.35e0 ;
+                               schema:longitude       4.916667e0
+                             ] .
+
+<https://w3id.org/cocoon/data/v1.0.1/Region/Azure/japan-east>
+        a                    cocoon:Region ;
+        rdfs:label           "japan-east" ;
+        cocoon:city          "Saitama" ;
+        cocoon:hasProvider   cocoon:Azure ;
+        schema:dateModified  "2019-03-07"^^xsd:date ;
+        schema:geo           [ a                      schema:GeoCoordinates ;
+                               schema:addressCountry  "JP" ;
+                               schema:latitude        35.895534e0 ;
+                               schema:longitude       139.67747e0
+                             ] .

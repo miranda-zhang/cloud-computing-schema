@@ -71,7 +71,7 @@ GENERATE {
     }.
 
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/downlink_latency.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/cloudharmony/downlink_latency.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
 WHERE {
     BIND( fun:JSONPath(?qos, '$.region' ) AS ?region)
