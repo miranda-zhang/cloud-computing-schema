@@ -22,6 +22,6 @@ A list of documentations explaining the scripts.
 5. [Microsoft Azure Compute Service](../azure/compute.md)
 6. [Microsoft Azure Storage Service](../azure/storage.md)
 7. [Google Cloud Region](../gcloud/region.md)
-8. 
-9.  [CloudHarmony Network Test: Google Cloud](../cloudharmony/google/README.md#sparql-generate) 
-11. [Microsoft Azure Cloud Region](azure/region.md) 
+8. [Microsoft Azure Cloud Region](../azure/region.md) 
+9. 
+10. [CloudHarmony Network Test: Google Cloud](../cloudharmony/google/README.md#sparql-generate)

@@ -137,4 +137,4 @@ java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/region/1.rqg --out
 ```
 v1.0.1:
 [Query](../sparql-generate/gcloud/v1.0.1/region/1.rqg)
-[Result](../sparql-generate/result/gcloud/v1.0.1/region/region_geo_coord.ttl)
+[Result](../sparql-generate/result/gcloud/v1.0.1/region/1.ttl)

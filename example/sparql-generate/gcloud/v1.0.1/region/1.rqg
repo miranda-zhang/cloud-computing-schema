@@ -4,11 +4,12 @@ PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl>
 PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 GENERATE {
     ?iri a cocoon:Region;
         rdfs:label ?region ;
-        cocoon:hasProvider cocoon:gcloud ;
+        cocoon:hasProvider ?provider;
         schema:dateModified ?date .
     GENERATE {
         ?iri

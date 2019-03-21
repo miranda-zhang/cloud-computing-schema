@@ -19,7 +19,7 @@ GENERATE {
         ] .
 
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/region_geo_coord.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/cloudharmony/region/1.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
 WHERE {
     BIND(fun:JSONPath(?qos, '$.location.city' ) AS ?city)
@@ -28,4 +28,11 @@ WHERE {
     BIND(fun:JSONPath(?qos, '$.location.long' ) AS ?long)
     BIND(fun:JSONPath(?qos, '$.location.state' ) AS ?state)
     BIND(fun:JSONPath(?qos, '$.region' ) AS ?region)
+    # having signle point of change for the following
+    BIND ( "Azure" as ?provider_slug )
+    BIND ( cocoon:Azure as ?provider )
+    BIND ( "2019-03-07" as ?updated) # yr-month-day
+    BIND ( <Region/{?provider_slug}/{?region}> as ?iri )
+    BIND ( xsd:date(?updated) as ?date )
+    BIND ( <{?updated}/CloudStorageTransactionsPriceSpecification/{?provider_slug}/vm_base> as ?CloudStorageTransactionsPriceSpecification )
 }

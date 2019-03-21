@@ -14,6 +14,7 @@
 @prefix cocoon: <https://w3id.org/cocoon/v1.0.1#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
 @base <https://w3id.org/cocoon/v1.0.1> .
 
 <https://w3id.org/cocoon/v1.0.1> rdf:type owl:Ontology ;
@@ -356,14 +357,9 @@ sosa:Sensor rdf:type owl:Class ;
             owl:equivalentClass cocoon:Device .
 
 
-###  http://www.w3.org/ns/ssn/Property
-<http://www.w3.org/ns/ssn/Property> rdf:type owl:Class ;
-                                    owl:equivalentClass cocoon:QuanlityOfService .
-
-
 ###  http://www.w3.org/ns/ssn/systems/Latency
-<http://www.w3.org/ns/ssn/systems/Latency> rdf:type owl:Class ;
-                                           owl:equivalentClass cocoon:Latency .
+ssn-system:Latency rdf:type owl:Class ;
+                   rdfs:subClassOf cocoon:QuanlityOfService .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -701,7 +697,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
 
 ###  https://w3id.org/cocoon/v1.0.1#DNSQueryLatency
 cocoon:DNSQueryLatency rdf:type owl:Class ;
-                       rdfs:subClassOf cocoon:Latency .
+                       rdfs:subClassOf ssn-system:Latency .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#DNSService
@@ -809,11 +805,6 @@ cocoon:InternetService rdf:type owl:Class ;
                                        ] .
 
 
-###  https://w3id.org/cocoon/v1.0.1#Latency
-cocoon:Latency rdf:type owl:Class ;
-               rdfs:subClassOf cocoon:QuanlityOfService .
-
-
 ###  https://w3id.org/cocoon/v1.0.1#LoadBalancing
 cocoon:LoadBalancing rdf:type owl:Class ;
                      rdfs:subClassOf cocoon:NetworkService .
@@ -866,8 +857,8 @@ cocoon:PaaS rdf:type owl:Class ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#QuanlityOfService
-cocoon:QuanlityOfService rdf:type owl:Class .
-
+cocoon:QuanlityOfService rdf:type owl:Class;
+                         owl:equivalentClass ssn-system:SystemProperty.
 
 ###  https://w3id.org/cocoon/v1.0.1#Region
 cocoon:Region rdf:type owl:Class ;
