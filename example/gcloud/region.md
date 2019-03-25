@@ -130,11 +130,11 @@ Run jq query on [data collected via CloudHarmony](../cloudharmony/gcloud/README.
 
 See live https://jqplay.org/s/aajIEQqBjy
 
-[Cached Result.](../jq/gcloud/cloudharmony/region/1.json)
+[Cached Result.](../jq/gcloud/cloudharmony/region_geo_coord.json)
 
 ```
-java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/region/1.rqg --output result/gcloud/v1.0.1/region/1.ttl --log-level ERROR
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/region_geo_coord.rqg --output result/gcloud/v1.0.1/region_geo_coord.ttl --log-level ERROR
 ```
 v1.0.1:
-[Query](../sparql-generate/gcloud/v1.0.1/region/1.rqg)
-[Result](../sparql-generate/result/gcloud/v1.0.1/region/1.ttl)
+[Query](../sparql-generate/gcloud/v1.0.1/region_geo_coord.rqg)
+[Result](../sparql-generate/result/gcloud/v1.0.1/region_geo_coord.ttl)

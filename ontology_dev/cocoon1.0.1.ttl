@@ -7,7 +7,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix qudt: <http://qudt.org/schema/qudt#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -15,6 +14,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
 @base <https://w3id.org/cocoon/v1.0.1> .
 
 <https://w3id.org/cocoon/v1.0.1> rdf:type owl:Ontology ;
@@ -324,19 +324,6 @@ gr:BusinessEntity rdf:type owl:Class .
 
 ###  http://purl.org/goodrelations/v1#UnitPriceSpecification
 gr:UnitPriceSpecification rdf:type owl:Class .
-
-
-###  http://qudt.org/1.1/schema/qudt#DataRateUnit
-<http://qudt.org/1.1/schema/qudt#DataRateUnit> rdf:type owl:Class .
-
-
-###  http://qudt.org/1.1/schema/qudt#InformationEntropyUnit
-<http://qudt.org/1.1/schema/qudt#InformationEntropyUnit> rdf:type owl:Class .
-
-
-###  http://qudt.org/1.1/schema/qudt#Unit
-<http://qudt.org/1.1/schema/qudt#Unit> rdf:type owl:Class ;
-                                       owl:equivalentClass cocoon:UnitOfMeasure .
 
 
 ###  http://www.geonames.org/ontology#Feature
@@ -1016,7 +1003,8 @@ cocoon:TrafficDirection rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0.1#UnitOfMeasure
 cocoon:UnitOfMeasure rdf:type owl:Class ;
-                     rdfs:comment "Defines custome units."@en .
+                     rdfs:comment "Defines custome units."@en ;
+                     owl:equivalentClass qudt:Unit .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#UplinkSpeed
@@ -1038,7 +1026,7 @@ cocoon:Azure rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0.1#GB
 cocoon:GB rdf:type owl:NamedIndividual ,
-                   <http://qudt.org/1.1/schema/qudt#InformationEntropyUnit> ,
+                   qudt:InformationEntropyUnit ,
                    cocoon:UnitOfMeasure ;
           rdfs:comment "Gigabyte (GB): There are 1024MB in one gigabyte."@en ;
           rdfs:label "Gigabyte"@en .
@@ -1046,7 +1034,7 @@ cocoon:GB rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0.1#GBPerHour
 cocoon:GBPerHour rdf:type owl:NamedIndividual ,
-                          <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                          qudt:DataRateUnit ,
                           cocoon:UnitOfMeasure ;
                  rdfs:comment "Often describe 1 GB per Hour usage."@en ;
                  rdfs:label "Gigabyte per Hour"@en .
@@ -1054,7 +1042,7 @@ cocoon:GBPerHour rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0.1#GBPerMonth
 cocoon:GBPerMonth rdf:type owl:NamedIndividual ,
-                           <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                           qudt:DataRateUnit ,
                            cocoon:UnitOfMeasure ;
                   rdfs:comment "Often describe 1 GB per Month usage."@en ;
                   rdfs:label "Gigabyte per Month"@en .
@@ -1077,7 +1065,7 @@ cocoon:Gcloud rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0.1#IOPs
 cocoon:IOPs rdf:type owl:NamedIndividual ,
-                     <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                     qudt:DataRateUnit ,
                      cocoon:UnitOfMeasure ;
             rdfs:comment "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en ;
             rdfs:label "Input/output operations per sec"@en .
@@ -1085,7 +1073,7 @@ cocoon:IOPs rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0.1#IOPsPerHour
 cocoon:IOPsPerHour rdf:type owl:NamedIndividual ,
-                            <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                            qudt:DataRateUnit ,
                             cocoon:UnitOfMeasure ;
                    rdfs:comment "Azure Ultra SSD Managed Disks come in different sizes that provide a configurable range of input/output operations per sec (IOPS), and are billed on an hourly rate."@en ;
                    rdfs:label "IOPS/hour"@en .
@@ -1093,7 +1081,7 @@ cocoon:IOPsPerHour rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour
 cocoon:MegabitsPerSecondPerHour rdf:type owl:NamedIndividual ,
-                                         <http://qudt.org/1.1/schema/qudt#DataRateUnit> ,
+                                         qudt:DataRateUnit ,
                                          cocoon:UnitOfMeasure ;
                                 rdfs:comment "Often describe the throughput usage measured at MB/s within an hour."@en ;
                                 rdfs:label "MB/s/hour"@en .
@@ -1115,7 +1103,7 @@ cocoon:MirandaZhangQian rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/cocoon/v1.0.1#TB
 cocoon:TB rdf:type owl:NamedIndividual ,
-                   <http://qudt.org/1.1/schema/qudt#InformationEntropyUnit> ,
+                   qudt:InformationEntropyUnit ,
                    cocoon:UnitOfMeasure ;
           rdfs:comment "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en ;
           rdfs:label "Terabyte"@en .
@@ -1129,24 +1117,24 @@ cocoon:VcpuPerHour rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/cocoon/v1.0.1#1TB
-<https://w3id.org/cocoon/v1.0.1#1TB> rdf:type owl:NamedIndividual ,
-                                              schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood "1024"^^xsd:nonNegativeInteger ;
-                                     schema:unitCode cocoon:GB .
+cocoon:1TB rdf:type owl:NamedIndividual ,
+                    schema:TypeAndQuantityNode ;
+           schema:amountOfThisGood "1024"^^xsd:nonNegativeInteger ;
+           schema:unitCode cocoon:GB .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#10TB
-<https://w3id.org/cocoon/v1.0.1#10TB> rdf:type owl:NamedIndividual ,
-                                               schema:TypeAndQuantityNode ;
-                                      schema:amountOfThisGood "10240"^^xsd:nonNegativeInteger ;
-                                      schema:unitCode cocoon:GB .
+cocoon:10TB rdf:type owl:NamedIndividual ,
+                     schema:TypeAndQuantityNode ;
+            schema:amountOfThisGood "10240"^^xsd:nonNegativeInteger ;
+            schema:unitCode cocoon:GB .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#90TB
-<https://w3id.org/cocoon/v1.0.1#90TB> rdf:type owl:NamedIndividual ,
-                                               schema:TypeAndQuantityNode ;
-                                      schema:amountOfThisGood "92160"^^xsd:nonNegativeInteger ;
-                                      schema:unitCode cocoon:GB .
+cocoon:90TB rdf:type owl:NamedIndividual ,
+                     schema:TypeAndQuantityNode ;
+            schema:amountOfThisGood "92160"^^xsd:nonNegativeInteger ;
+            schema:unitCode cocoon:GB .
 
 
 #################################################################

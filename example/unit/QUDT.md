@@ -2,11 +2,14 @@
 Schema Doc
 http://www.qudt.org/qudt/owl/1.0.0/qudt/index.html
 
-Vocabulary Version 1.1
+Unit Vocabulary
 http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
 
-    @prefix qudt:      <http://qudt.org/schema/qudt#> .
-    @prefix unit:    <http://qudt.org/1.1/vocab/unit#> .
+    @prefix qudt:    <http://qudt.org/schema/qudt#> .
+    @prefix unit:    <http://qudt.org/vocab/unit#> .
+    @prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .
+    @prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .
+
 
 ## Relevant Vocabularies
 Individuals
@@ -100,11 +103,18 @@ unit:MegabitsPerSecond
       qudt:code "3015"^^xsd:string ;
       qudt:symbol "mbps"^^xsd:string .
 ```
-Classes
-1. qudt:DataRateUnit
-2. qudt:TimeUnit
-3. qudt:DerivedUnit
-4. qudt:VolumePerTimeUnit
+Classes:
+1. qudt:Unit
+2. qudt:DataRateUnit
+3. qudt:TimeUnit
+4. qudt:DerivedUnit
+5. qudt:VolumePerTimeUnit
+
+Properties:   
+1. qudt:quantityValue
+2. qudt:numericValue
+3. qudt:unit
+
 
 # Release 2.0
 Although there is QUDT second release, but we find that version 1.1 fits our needs better, also there are too many 2.0 Vocabularies are in progress like http://qudt.org/2.0/vocab/quantitykind/communications and http://qudt.org/2.0/schema/qudt/engineering, which could be what we meed.

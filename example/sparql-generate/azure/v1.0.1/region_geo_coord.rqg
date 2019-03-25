@@ -21,7 +21,7 @@ GENERATE {
         ] .
 
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/cloudharmony/region/1.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/cloudharmony/region_geo_coord.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
 WHERE {
     BIND(fun:JSONPath(?qos, '$.location.city' ) AS ?city)

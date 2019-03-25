@@ -1,75 +1,78 @@
-BASE <https://w3id.org/cocoon/data/> 
+BASE <https://w3id.org/cocoon/data/v1.0.1/> 
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl>
+PREFIX cocoon: <http://w3id.org/cocoon/v1.0.1#>
 PREFIX schema: <https://schema.org/>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
-PREFIX qudt: <http://qudt.org/1.1/schema/qudt#>
-PREFIX qudt-unit: <http://qudt.org/1.1/vocab/unit#>
+PREFIX unit: <http://qudt.org/vocab/unit#>
 
 GENERATE {
     GENERATE {
-        <{?type_slug}/ComputeService/Gcloud/{?region}-{?zone}/> a cocoon:ComputeService ;
-            cocoon:hasProvider cocoon:Gcloud;
+        ?feature_iri a ?service_type_class ;
+            cocoon:hasProvider ?provider;
             ssn:hasProperty ?property_url;
-            cocoon:inRegion <Region/Gcloud/{?region}> ;
+            cocoon:inRegion ?region_iri ;
             cocoon:inZone ?zone .
 
-        <Measurement/{?type_slug}/ComputeService/Gcloud/{?region}-{?zone}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
+        <Measurement/{?type_slug}/{?service_type_slug}/{?provider_slug}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}/{?region_zone}> a cocoon:Measurement ;
             sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-            sosa:hasFeatureOfInterest  <{?type_slug}/ComputeService/Gcloud/{?region}-{?zone}/> ;
+            sosa:hasFeatureOfInterest  ?feature_iri ;
             sosa:hasResult [
-                a qudt:QuantityValue ;
-                qudt:numericValue ?average ;
-                qudt-unit: ?unit ] ;
+                a schema:TypeAndQuantityNode;
+                schema:amountOfThisGood ?average;
+                schema:unitCode ?unit ] ;
             sosa:resultTime ?dateTime .
     }
     WHERE{
-        FILTER (?service_type = "compute")        
-    }.
-
-    GENERATE {
-        <{?type_slug}/StorageService/Gcloud/{?region}> a cocoon:StorageService ;
-            cocoon:hasProvider cocoon:Gcloud;
-            ssn:hasProperty ?property_url;
-            cocoon:inRegion <Region/Gcloud/{?region}> .
-
-        <Measurement/{?type_slug}/StorageService/Gcloud/{?region}/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
-            sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-            sosa:hasFeatureOfInterest  <{?type_slug}/StorageService/Gcloud/{?region}/> ;
-            sosa:hasResult [
-                a qudt:QuantityValue ;
-                qudt:numericValue ?average ;
-                qudt-unit: ?unit ] ;
-            sosa:resultTime ?dateTime .
-    }
-    WHERE{
-        FILTER (?service_type = "storage")
-    }.
-
-    GENERATE {
-        <{?type_slug}/{?service_type_slug}/Gcloud/> a  ?service_type_class ;
-            cocoon:hasProvider cocoon:Gcloud;
-            ssn:hasProperty ?property_url.
-
-        <Measurement/{?type_slug}/{?service_type_slug}/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/{?completion_time}> a cocoon:Measurement ;
-            sosa:madeBySensor <Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-            sosa:hasFeatureOfInterest  <{?type_slug}/{?service_type_slug}/Gcloud> ;
-            sosa:hasResult [
-                a qudt:QuantityValue ;
-                qudt:numericValue ?average ;
-                qudt-unit: ?unit ] ;
-            sosa:resultTime ?dateTime .
-    }
-    WHERE{
-        FILTER (?service_type = "dns" || ?service_type = "cdn")
-        BIND ( IF( ?service_type = "dns", "DNSService", "CDNService") AS ?service_type_slug )
-        BIND ( IF( ?service_type = "dns", cocoon:DNSService, cocoon:CDNService) AS ?service_type_class )
-    }.
-
+        BIND (
+            COALESCE(
+                IF(?type = "downlink", ?qos_downlink_iri , 1/0),
+                IF(?type = "latency", <QuanlityOfService/Latency>, 1/0),
+                <QuanlityOfService/DNSQueryLatency> # assume "dns"
+            ) AS ?property_url
+        )
+        BIND (
+            COALESCE(
+                IF(?type = "downlink", ?downlinkMin_maxKB , 1/0),
+                IF(?type = "latency", "Latency", 1/0),
+                "DNSQueryLatency" # assume "dns"
+            ) AS ?type_slug
+        )
+        BIND (
+            COALESCE(
+                IF(?service_type = "compute", "ComputeService", 1/0),
+                IF(?service_type = "storage", "StorageService", 1/0),
+                IF( ?service_type = "dns", "DNSService", 1/0),
+                "CDNService" 
+            ) AS ?service_type_slug
+        )
+        BIND (
+            COALESCE(
+                IF(?service_type = "compute", cocoon:ComputeService, 1/0),
+                IF(?service_type = "storage", cocoon:StorageService, 1/0),
+                IF( ?service_type = "dns", cocoon:DNSService, 1/0),
+                cocoon:CDNService
+            ) AS ?service_type_class
+        )
+        BIND (
+            COALESCE(
+                IF(?service_type = "compute", CONCAT(?region,"-",?zone), 1/0),
+                IF(?service_type = "storage", ?region, 1/0),
+                "" # dns or cdn
+            ) AS ?region_zone
+        )
+        BIND ( 
+            IF(
+                ?service_type = "compute" || ?service_type = "storage",
+                <Region/{?provider_slug}/{?region}>,
+                ?undefined
+            ) AS ?region_iri
+        )
+        BIND ( <{?type_slug}/{?service_type_slug}/{?provider_slug}/{?region_zone}> as ?feature_iri )
+    } .
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/cloudharmony/downlink_latency.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
@@ -83,25 +86,14 @@ WHERE {
     BIND( xsd:dateTime( ?completion_time ) AS ?dateTime)
     BIND( xsd:string(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)
     BIND( xsd:string(fun:JSONPath(?qos, '$.max_size')) AS ?max_size)
-    BIND ( IF( ?type = "downlink" , qudt-unit:MegabitsPerSecond , qudt-unit:MilliSecond ) AS ?unit )
+    BIND ( IF( ?type = "downlink" , unit:MegabitsPerSecond , unit:MilliSecond ) AS ?unit)
     
     # Put dash between each word for easy parsing if needed
     BIND( CONCAT("DownlinkSpeed-",?min_size,"-",?max_size,"-KB") AS ?downlinkMin_maxKB )
     # <QuanlityOfService/DownlinkSpeed-{?min_size}-{?max_size}-KB> 
     BIND( IRI(CONCAT("QuanlityOfService/",?downlinkMin_maxKB)) AS ?qos_downlink_iri )
-    
-    BIND (
-        COALESCE(
-            IF(?type = "downlink", ?qos_downlink_iri , 1/0),
-            IF(?type = "latency", <QuanlityOfService/Latency>, 1/0),
-            <QuanlityOfService/DNSQueryLatency> # assume "dns"
-        ) AS ?property_url
-    )
-    BIND (
-        COALESCE(
-            IF(?type = "downlink", ?downlinkMin_maxKB , 1/0),
-            IF(?type = "latency", "Latency", 1/0),
-            "DNSQueryLatency" # assume "dns"
-        ) AS ?type_slug
-    )
+
+    # having signle point of change for the following
+    BIND ( "Gcloud" as ?provider_slug )
+    BIND ( cocoon:Gcloud as ?provider )
 }

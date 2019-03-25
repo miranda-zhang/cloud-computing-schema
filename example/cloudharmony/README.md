@@ -1,4 +1,13 @@
 # CloudHarmony
+# Old Data
+The [Javascript method](#javascript-solution) wasn't available in 2014, that's when the old data were collected.
+So it's different from the current data.
+See [Old Data Archive](old_data_archive/).
+
+# Alternatives
+http://www.azurespeed.com provide tests for Azure services only.
+We choose to use CloudHarmony because it features more providers.
+
 # Command Line Tool
 https://github.com/cloudharmony/network
 
@@ -29,17 +38,6 @@ This method is suitable for doing tests on local machine, if run tests on remote
 1. [Google](gcloud/README.md)
 2. [Azure](azure/README.md)
 
-## PC used for the measurements
-IP: 150.203.213.249
-
-Latitude: -35.271475
-
-Longitude: 149.121434
-
-Hanna Neumann Building #145, Science Road, Canberra ACT 2601
-
-The above information can be captured with this [device.ttl](../sparql-generate/result/device.ttl)
-
 ## Uplink
 I have [problem with API uplink option](https://github.com/cloudharmony/network/issues/1),
 Javascript tag also failed to get results. Some commands I tired, or used to investigate the issue:
@@ -51,15 +49,15 @@ Javascript tag also failed to get results. Some commands I tired, or used to inv
 
 Alternativly, browser automation with [selenium](selenium/) is possible.
 
-## Test Types
-The tests properties can be described using the `cocoon:QuanlityOfService` class.
+## Device
+Desktop computer is used to collect the measurements:
+1. IP: 150.203.213.249
+2. Latitude: -35.271475
+3. Longitude: 149.121434
+4. Address: Hanna Neumann Building #145, Science Road, Canberra ACT 2601
+
+The above information can be captured with this [device.ttl](../sparql-generate/result/device.ttl)
+
+## QoS Properties
+The tests properties can be described using the `cocoon:QuanlityOfService` sub classes.
 The full example is available here: [qos_property](../sparql-generate/result/qos_property.ttl)
-
-# Old Data
-The [Javascript method](#javascript-solution) wasn't available in 2014, that's when the old data were collected.
-So it's different from the current data.
-See [Old Data Archive](old_data_archive/).
-
-# Alternatives
-http://www.azurespeed.com provide tests for Azure services only.
-We choose to use CloudHarmony because it features more providers.

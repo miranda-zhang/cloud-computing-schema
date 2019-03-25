@@ -1,5 +1,5 @@
 # Uplink Stats
-Uplink tests are only for Compute services from CloudHarmony (last checked on 4th March 2019 on Google, Azure).
+Uplink tests are only available for Compute services from CloudHarmony (last checked on 4th March 2019 on Google, Azure).
 
 # Dependencies
 We used Selenium version 3.5.0, it can be installed with `pip`.

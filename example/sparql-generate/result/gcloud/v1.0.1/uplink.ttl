@@ -1,0 +1,675 @@
+@prefix schema: <https://schema.org/> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix unit:  <http://qudt.org/1.1/vocab/unit#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix cocoon: <http://w3id.org/cocoon/v1.0.1> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+@prefix ssn:   <http://www.w3.org/ns/ssn/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-east1-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/southamerica-east1-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A02%3A38.640124Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/southamerica-east1-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "3.93"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:02:38.640124Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east2-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-central1-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A03%3A49.452874Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-central1-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "29.28"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:03:49.452874Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west4-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A00%3A44.781740Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west4-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.38"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:00:44.781740Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east4-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A05%3A58.161984Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east4-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "13.13"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:05:58.161984Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/southamerica-east1-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/northamerica-northeast1-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-north1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/australia-southeast1-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-south1-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A53%3A39.607876Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-south1-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.18"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:53:39.607876Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west1-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A58%3A01.533028Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west1-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "35.52"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:58:01.533028Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east2-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A51%3A45.239626Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east2-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "7.1"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:51:45.239626Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A50%3A45.073291Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.31"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:50:45.073291Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west3-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A59%3A55.533480Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west3-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "12.4"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:59:55.533480Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A50%3A45.126292Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "11.8"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:50:45.126292Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/australia-southeast1-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A56%3A08.030929Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/australia-southeast1-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "46.03"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:56:08.030929Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-central1-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A08%3A01.655438Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.67"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:08:01.655438Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-south1-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east1-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A04%3A55.647811Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east1-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "32.56"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:04:55.647811Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-central1-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A03%3A49.392870Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-central1-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.67"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:03:49.392870Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-east4-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west3-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west4-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A00%3A44.730745Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west4-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "7.52"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:00:44.730745Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-southeast1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A09%3A06.253958Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.01"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:09:06.253958Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west1-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-northeast1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A52%3A54.954835Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-northeast1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.67"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:52:54.954835Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-southeast1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A55%3A02.391165Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-southeast1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "12.15"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:55:02.391165Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-north1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/northamerica-northeast1-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A08%3A38.613067Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "12.37"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:08:38.613067Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west4-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east2-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A51%3A45.137262Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east2-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "18.22"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:51:45.137262Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/australia-southeast1-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A56%3A08.085932Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/australia-southeast1-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "13.8"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:56:08.085932Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A07%3A09.683640Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "6.48"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:07:09.683640Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west2-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A59%3A06.666020Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west2-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "8.07"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:59:06.666020Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A06%3A45.482509Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "14.25"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:06:45.482509Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east1-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/southamerica-east1-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A02%3A38.585584Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/southamerica-east1-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.26"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:02:38.585584Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west3-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-southeast1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A55%3A02.333164Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-southeast1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "8.28"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:55:02.333164Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-east1-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A04%3A55.596819Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-east1-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.04"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:04:55.596819Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-north1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A57%3A07.704732Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-north1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "3.41"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:57:07.704732Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west2-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-east4-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A05%3A58.216486Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-east4-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.44"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:05:58.216486Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/northamerica-northeast1-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A01%3A31.009634Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/northamerica-northeast1-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "18.4"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:01:31.009634Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west1-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west4-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east2-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east4-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A09%3A46.384746Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "15.93"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:09:46.384746Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-north1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A57%3A07.759403Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-north1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "7.33"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:57:07.759403Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A09%3A46.434973Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.56"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:09:46.434973Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west3-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A59%3A55.480616Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west3-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.24"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:59:55.480616Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west2-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A59%3A06.718438Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west2-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "3.16"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:59:06.718438Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/southamerica-east1-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-south1-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A53%3A39.551864Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-south1-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "20.31"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:53:39.551864Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-northeast1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west1-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A58%3A01.480005Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west1-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "4.24"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:58:01.480005Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A08%3A01.706622Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "15.11"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:08:01.706622Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/australia-southeast1-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-central1-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-1-128-KB/ComputeService/Gcloud/northamerica-northeast1-a/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T02%3A01%3A30.916656Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/northamerica-northeast1-a> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "5.37"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T02:01:30.916656Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-northeast1-b/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A52%3A54.870835Z>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-northeast1-b> ;
+        sosa:hasResult             [ a                  qudt:QuantityValue ;
+                                     qudt:numericValue  "16.83"^^xsd:double ;
+                                     unit:              unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-03-05T01:52:54.870835Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-southeast1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-northeast1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/us-west1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-1-128-KB/ComputeService/Gcloud/asia-south1-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/UplinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west2-a>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2> ;
+        cocoon:inZone       "a" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/UplinkSpeed-256-10240-KB> .

@@ -1,7 +1,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl> .
-@base <https://w3id.org/cocoon/data/v1.0> .
+@prefix cocoon: <https://w3id.org/cocoon/v1.0.1> .
+@base <https://w3id.org/cocoon/data/v1.0.1> .
 
 <1-KB> a schema:TypeAndQuantityNode;
     schema:amountOfThisGood "1"^^xsd:interger;
@@ -31,11 +31,11 @@
     cocoon:transferedFileSizeMin <256-KB>;
     cocoon:transferedFileSizeMax <10240-KB>.
 
-<QuanlityOfService/UplinkSpeed-1-128-KB> a cocoon:DownlinkSpeed;
+<QuanlityOfService/UplinkSpeed-1-128-KB> a cocoon:UplinkSpeed;
     cocoon:transferedFileSizeMin <1-KB>;
     cocoon:transferedFileSizeMax <128-KB>.
 
-<QuanlityOfService/UplinkSpeed-256-10240-KB> a cocoon:DownlinkSpeed;
+<QuanlityOfService/UplinkSpeed-256-10240-KB> a cocoon:UplinkSpeed;
     cocoon:transferedFileSizeMin <256-KB>;
     cocoon:transferedFileSizeMax <10240-KB>.
 

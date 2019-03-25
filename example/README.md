@@ -33,7 +33,7 @@ So we used vocabularies from QUDT in our schema, and used available CDT units in
 3. Schema.org used [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) for Units of Measurement. Appart from not having the units we need, there is no support for unit conversion like CDT.
 
 ## Network QoS
-Used http://cloudharmony.com to collect data, details explained in [cloudharmony](cloudharmony/).
+Used http://cloudharmony.com to collect data, details explained in [cloudharmony](cloudharmony/README.md).
 
 # SPARQL
 Tested with Protégé.

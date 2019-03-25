@@ -38,17 +38,17 @@ See live https://jqplay.org/s/A5tzRAzOnW
 
 # Downlink Speed and Latency
 ```
-java -jar sparql-generate-jena.jar --output result/gcloud/downlink_latency.ttl --query-file gcloud/downlink_latency.rqg --log-level ERROR
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/downlink_latency.rqg --output result/gcloud/v1.0.1/downlink_latency.ttl --log-level ERROR
 ```
 Query: [downlink_latency.rqg](../../sparql-generate/gcloud/v1.0.1/downlink_latency.rqg)
 
-Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/downlink_latency.ttl)
+Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/v1.0.1/downlink_latency.ttl)
 
 # Uplink Data
-See [selenium](../selenium) about how to collect the data.
+See [selenium](../selenium/README.md) about how to collect the data.
 ```
-java -jar sparql-generate-jena.jar --output result/gcloud/uplink.ttl --query-file gcloud/uplink.rqg --log-level ERROR
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/uplink.rqg --output result/gcloud/v1.0.1/uplink.ttl --log-level ERROR
 ```
-Query: [uplink.rqg](../../sparql-generate/gcloud/uplink.rqg)
+Query: [uplink.rqg](../../sparql-generate/gcloud/v1.0.1/uplink.rqg)
 
 Result: [downlink_latency.ttl](../../sparql-generate/result/gcloud/v1.0.1/uplink.ttl)
