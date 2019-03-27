@@ -1,9 +1,13 @@
 # QUDT Units
-Schema Doc
+Schema Doc:
 http://www.qudt.org/qudt/owl/1.0.0/qudt/index.html
 
-Unit Vocabulary
+Unit Vocabulary:
 http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
+
+Quantity:
+http://qudt.org/1.1/schema/OSG_quantity-(v1.1).ttl
+
 
     @prefix qudt:    <http://qudt.org/schema/qudt#> .
     @prefix unit:    <http://qudt.org/vocab/unit#> .
