@@ -1,0 +1,945 @@
+<https://w3id.org/cocoon/v1.0.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/cocoon/v1.0.1> <http://creativecommons.org/ns#attributionURL> <http://w3id.org/cocoon/v1.0.1> .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/created> "2012-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/creator> <https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/description> "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/issued> "2019-02-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/modified> "2019-03-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/rights> "Copyright © 2018 Qian ZHANG"@en .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/title> "Vocabulary in Cloud Computing Services"@en .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cocoon" .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/cocoon/v1.0.1#" .
+<https://w3id.org/cocoon/v1.0.1> <http://www.w3.org/2000/01/rdf-schema#label> "Cloud Computing Services Ontology"@en .
+<https://w3id.org/cocoon/v1.0.1> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/miranda-zhang/cloud-computing-schema> .
+<https://w3id.org/cocoon/v1.0.1> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1"@en .
+<https://w3id.org/cocoon/v1.0.1> <https://schema.org/creator> <https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#attributionURL
+<http://creativecommons.org/ns#attributionURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/goodrelations/v1#name
+<http://purl.org/goodrelations/v1#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/givenname
+<http://xmlns.com/foaf/0.1/givenname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/lastName
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/nick
+<http://xmlns.com/foaf/0.1/nick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/page
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/title
+<http://xmlns.com/foaf/0.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/workInfoHomepage
+<http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/amountOfThisGood
+<https://schema.org/amountOfThisGood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/creator
+<https://schema.org/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/unitCode
+<https://schema.org/unitCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/url
+<https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/goodrelations/v1#hasPriceSpecification
+<http://purl.org/goodrelations/v1#hasPriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#canHaveSnapshot
+<https://w3id.org/cocoon/v1.0.1#canHaveSnapshot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#canHaveSnapshot> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#excludesDestination
+<https://w3id.org/cocoon/v1.0.1#excludesDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#forUsageLessEqual
+<https://w3id.org/cocoon/v1.0.1#forUsageLessEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#forUsageMoreThan
+<https://w3id.org/cocoon/v1.0.1#forUsageMoreThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasCPUcapacity
+<https://w3id.org/cocoon/v1.0.1#hasCPUcapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasCPUcapacity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasCPUcapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "The power or capacity of CPU available for this type of VM."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasDestination
+<https://w3id.org/cocoon/v1.0.1#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasDirection
+<https://w3id.org/cocoon/v1.0.1#hasDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk
+<https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize
+<https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasMemory
+<https://w3id.org/cocoon/v1.0.1#hasMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasMemory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasProvider
+<https://w3id.org/cocoon/v1.0.1#hasProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasProvider> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasRegion
+<https://w3id.org/cocoon/v1.0.1#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasRegion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasServiceLevelAgreement
+<https://w3id.org/cocoon/v1.0.1#hasServiceLevelAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasServiceLevelAgreement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasStorage
+<https://w3id.org/cocoon/v1.0.1#hasStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasStorage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasStorageIOMax
+<https://w3id.org/cocoon/v1.0.1#hasStorageIOMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasStorageIOMax> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasStorageSize
+<https://w3id.org/cocoon/v1.0.1#hasStorageSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasStorageSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasStorageThroughputMax
+<https://w3id.org/cocoon/v1.0.1#hasStorageThroughputMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasStorageThroughputMax> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#inJurisdiction
+<https://w3id.org/cocoon/v1.0.1#inJurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#inJurisdiction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#inPhysicalLocation
+<https://w3id.org/cocoon/v1.0.1#inPhysicalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#inPhysicalLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#inRegion
+<https://w3id.org/cocoon/v1.0.1#inRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax
+<https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin
+<https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/cocoon/v1.0.1#chargedPerCore
+<https://w3id.org/cocoon/v1.0.1#chargedPerCore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#chargedPerCore> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/cocoon/v1.0.1#chargedPerCore> <http://www.w3.org/2000/01/rdf-schema#comment> "For Google Cloud, cost of SQL server image is charged on per core basis."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#city
+<https://w3id.org/cocoon/v1.0.1#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#continent
+<https://w3id.org/cocoon/v1.0.1#continent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#continent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/cocoon/v1.0.1#continent> <http://www.w3.org/2000/01/rdf-schema#comment> "Similar to location, this property specifies the continent."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#forCoresLessEqual
+<https://w3id.org/cocoon/v1.0.1#forCoresLessEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/cocoon/v1.0.1#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\nIt is used to describe price for machines with less than or\nequal to the specified number of cores."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#forCoresMoreThan
+<https://w3id.org/cocoon/v1.0.1#forCoresMoreThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/cocoon/v1.0.1#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\nThis is used to describe the price for machines with more than specified\nnumber of cores."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#hasCurrencyValue
+<https://w3id.org/cocoon/v1.0.1#hasCurrencyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#inUse
+<https://w3id.org/cocoon/v1.0.1#inUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#inZone
+<https://w3id.org/cocoon/v1.0.1#inZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#ipv4
+<https://w3id.org/cocoon/v1.0.1#ipv4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#numberOfCores
+<https://w3id.org/cocoon/v1.0.1#numberOfCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#numberOfCores> <http://www.w3.org/2000/01/rdf-schema#comment> "For Google Cloud, cores and vCPU referes to the same thing." .
+# 
+# https://w3id.org/cocoon/v1.0.1#specialRateType
+<https://w3id.org/cocoon/v1.0.1#specialRateType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/v1.0.1#state
+<https://w3id.org/cocoon/v1.0.1#state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/goodrelations/v1#BusinessEntity
+<http://purl.org/goodrelations/v1#BusinessEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/goodrelations/v1#UnitPriceSpecification
+<http://purl.org/goodrelations/v1#UnitPriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt#DataRateUnit
+<http://qudt.org/schema/qudt#DataRateUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt#InformationEntropyUnit
+<http://qudt.org/schema/qudt#InformationEntropyUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt#Unit
+<http://qudt.org/schema/qudt#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/schema/qudt#Unit> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+# 
+# http://www.geonames.org/ontology#Feature
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/cocoon/v1.0.1#Measurement> .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/cocoon/v1.0.1#Device> .
+# 
+# http://www.w3.org/ns/ssn/systems/Latency
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#QuanlityOfService> .
+# 
+# http://www.w3.org/ns/ssn/systems/SystemProperty
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/cocoon/v1.0.1#QuanlityOfService> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Person
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Place
+<https://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Service
+<https://schema.org/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/TypeAndQuantityNode
+<https://schema.org/TypeAndQuantityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/v1.0.1#CDNService
+<https://w3id.org/cocoon/v1.0.1#CDNService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#CDNService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#PaaS> .
+# 
+# https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification
+<https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> .
+<https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#forUsageLessEqual> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#forUsageMoreThan> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#specialRateType> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "This class can be used to model network services prices, including internet egress traffic, load balancing forwarding rules."@en .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid4 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification> .
+_:genid4 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid4 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid3 .
+_:genid4 <http://www.w3.org/2000/01/rdf-schema#comment> "i.e. Egress between zones in the same region; Egress between regions within the US; Egress to Google products (such as YouTube, Maps, Drive)"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification
+<https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> .
+<https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#chargedPerCore> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#forCoresLessEqual> .
+_:genid7 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#forCoresMoreThan> .
+_:genid9 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid10 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> .
+_:genid10 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid10 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid9 .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#comment> "Describe  the price  for  machines  with  more  than  specified  number  of  cores."@en .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid6 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> .
+_:genid6 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid6 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid5 .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "For example on Google Cloud, Windows Server images on some machine types are charged based on the number of CPUs, i.e., n1-standard-4, n1-highcpu-4, and n1-highmem-4 are machine-types with 4 vCPUs,\nand are charged at $0.16 USD/hour (4 times $0.04 USD/hour).\n\nhttps://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gcloud/os.md#windows-server-images"@en .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid8 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> .
+_:genid8 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid8 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid7 .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#comment> "Describe price for machines with less than orequal to the specified number of cores."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#CloudService
+<https://w3id.org/cocoon/v1.0.1#CloudService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#CloudService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#Service> .
+<https://w3id.org/cocoon/v1.0.1#CloudService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/goodrelations/v1#hasPriceSpecification> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/goodrelations/v1#UnitPriceSpecification> .
+<https://w3id.org/cocoon/v1.0.1#CloudService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasProvider> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<https://w3id.org/cocoon/v1.0.1#CloudService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#inRegion> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/v1.0.1#Region> .
+<https://w3id.org/cocoon/v1.0.1#CloudService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#inZone> .
+_:genid16 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid12 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudService> .
+_:genid12 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid12 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid11 .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#comment> "Price specification for Cloud Service"@en .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid15 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudService> .
+_:genid15 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid15 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid14 .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#comment> "Region can either be associated with price or a type of service. So hasRegion can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification
+<https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/goodrelations/v1#UnitPriceSpecification> .
+<https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#inRegion> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/v1.0.1#Region> .
+<https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasCurrencyValue> .
+_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDataRange> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid20 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid18 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> .
+_:genid18 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid18 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid17 .
+_:genid18 <http://www.w3.org/2000/01/rdf-schema#comment> "CloudNetworkPriceSpecification use other properties to sepecify destination"@en .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid23 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> .
+_:genid23 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid23 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid19 .
+_:genid23 <http://www.w3.org/2000/01/rdf-schema#comment> "gr:hasCurrencyValue seems only allow float value, extended to allow more precision with double floating-point numbers (xsd:double)."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification
+<https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> .
+<https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/goodrelations/v1#hasPriceSpecification> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/goodrelations/v1#UnitPriceSpecification> .
+<https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Can be used to define a common price spec for multiple cloud service individuals,\ni.e. the storage transaction spec has a different price in a different region,\nbut there is a common transaction price spec for a group of cloud storage offers."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#ComputeService
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#IaaS> .
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasStorage> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasMemory> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/goodrelations/v1#hasPriceSpecification> .
+_:genid29 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> .
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasCPUcapacity> .
+_:genid31 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk> .
+_:genid33 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize> .
+_:genid35 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#numberOfCores> .
+_:genid37 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid26 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
+_:genid26 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid26 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid25 .
+_:genid26 <http://www.w3.org/2000/01/rdf-schema#comment> "Local storage   available on this VM, or netowrk storage attached to this VM."@en .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid28 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
+_:genid28 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid28 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid27 .
+_:genid28 <http://www.w3.org/2000/01/rdf-schema#comment> "Size of Memory"@en .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid30 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
+_:genid30 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid30 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid29 .
+_:genid30 <http://www.w3.org/2000/01/rdf-schema#comment> "VM storage transaction price specification.\nThere is a data access fees on local disk of Azure VM.\nFor example, every single block access incurs a transaction. The default block size is 4 Megabytes, meaning uploading a 32Mb file will incur 8 Storage Transactions. Deleting the file will also incur 8 transactions, so will updating it, and any other time the file is touched. The transactions are charged at a cost of around $0.00036 USD per 10,000 transactions. So 32Mb file will cost $0.000000368 AUD.\nThe only exception to Storage Transactions is when Premium Storage (persistent SSD storage) is used. That is, when you provision a P10, P20 or a P30 disk for your Virtual Machine those disks are exempt from Storage Transactions.\n\nhttps://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azure/vm.md#storage-transactions"@en .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid32 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
+_:genid32 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid32 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid31 .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#comment> "CPU power of VM"@en .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid34 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
+_:genid34 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid34 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid33 .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#comment> "Google specifies the maximum number of disk allowed to attach to a VM."@en .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid36 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
+_:genid36 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid36 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid35 .
+_:genid36 <http://www.w3.org/2000/01/rdf-schema#comment> "Google also specifies the maximum total disk size allowed to attach to a VM."@en .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid38 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
+_:genid38 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid38 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid37 .
+_:genid38 <http://www.w3.org/2000/01/rdf-schema#comment> "The number of cores available on this VM."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#DNSQueryLatency
+<https://w3id.org/cocoon/v1.0.1#DNSQueryLatency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#DNSQueryLatency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/Latency> .
+# 
+# https://w3id.org/cocoon/v1.0.1#DNSService
+<https://w3id.org/cocoon/v1.0.1#DNSService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#DNSService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#NetworkService> .
+# 
+# https://w3id.org/cocoon/v1.0.1#DataTransferSpeed
+<https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#QuanlityOfService> .
+<https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+# 
+# https://w3id.org/cocoon/v1.0.1#Database
+<https://w3id.org/cocoon/v1.0.1#Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#Database> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#SaaS> .
+# 
+# https://w3id.org/cocoon/v1.0.1#Device
+<https://w3id.org/cocoon/v1.0.1#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#inPhysicalLocation> .
+_:genid41 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/v1.0.1#Location> .
+<https://w3id.org/cocoon/v1.0.1#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#ipv4> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid42 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#Device> .
+_:genid42 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid42 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid41 .
+_:genid42 <http://www.w3.org/2000/01/rdf-schema#comment> "Exact location take precedence over large area, i.e. Geo coordinates is better than city and country name."@en .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid44 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#Device> .
+_:genid44 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid44 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid43 .
+_:genid44 <http://purl.org/dc/terms/modified> "We store the string representation of ipv4 for human readability, instead of unsigned 32 bit numbers."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#DownlinkSpeed
+<https://w3id.org/cocoon/v1.0.1#DownlinkSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#DownlinkSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> .
+<https://w3id.org/cocoon/v1.0.1#DownlinkSpeed> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/cocoon/v1.0.1#UplinkSpeed> .
+# 
+# https://w3id.org/cocoon/v1.0.1#Egress
+<https://w3id.org/cocoon/v1.0.1#Egress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#Egress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#TrafficDirection> .
+<https://w3id.org/cocoon/v1.0.1#Egress> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/cocoon/v1.0.1#Ingress> .
+# 
+# https://w3id.org/cocoon/v1.0.1#ForwardingRule
+<https://w3id.org/cocoon/v1.0.1#ForwardingRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#ForwardingRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#LoadBalancing> .
+# 
+# https://w3id.org/cocoon/v1.0.1#IaaS
+<https://w3id.org/cocoon/v1.0.1#IaaS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#IaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#CloudService> .
+<https://w3id.org/cocoon/v1.0.1#IaaS> <http://www.w3.org/2000/01/rdf-schema#comment> "Infrastructure as a Service"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#Ingress
+<https://w3id.org/cocoon/v1.0.1#Ingress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#Ingress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#TrafficDirection> .
+# 
+# https://w3id.org/cocoon/v1.0.1#InternetService
+<https://w3id.org/cocoon/v1.0.1#InternetService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#InternetService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#NetworkService> .
+<https://w3id.org/cocoon/v1.0.1#InternetService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#excludesDestination> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/v1.0.1#Location> .
+<https://w3id.org/cocoon/v1.0.1#InternetService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasDestination> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/v1.0.1#Location> .
+<https://w3id.org/cocoon/v1.0.1#InternetService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasDirection> .
+_:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/v1.0.1#TrafficDirection> .
+# 
+# https://w3id.org/cocoon/v1.0.1#LoadBalancing
+<https://w3id.org/cocoon/v1.0.1#LoadBalancing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#LoadBalancing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#NetworkService> .
+# 
+# https://w3id.org/cocoon/v1.0.1#LoadBalancingData
+<https://w3id.org/cocoon/v1.0.1#LoadBalancingData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#LoadBalancingData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#LoadBalancing> .
+<https://w3id.org/cocoon/v1.0.1#LoadBalancingData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasDirection> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/v1.0.1#TrafficDirection> .
+# 
+# https://w3id.org/cocoon/v1.0.1#LocalStorage
+<https://w3id.org/cocoon/v1.0.1#LocalStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#LocalStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#StorageService> .
+<https://w3id.org/cocoon/v1.0.1#LocalStorage> <http://www.w3.org/2000/01/rdf-schema#comment> "Storage that is not detachable from VM"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#Location
+<https://w3id.org/cocoon/v1.0.1#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#Location> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid49 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.geonames.org/ontology#Feature> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Place> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/cocoon/v1.0.1#Measurement
+<https://w3id.org/cocoon/v1.0.1#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/v1.0.1#NetworkService
+<https://w3id.org/cocoon/v1.0.1#NetworkService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#NetworkService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#IaaS> .
+# 
+# https://w3id.org/cocoon/v1.0.1#NetworkStorage
+<https://w3id.org/cocoon/v1.0.1#NetworkStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#NetworkStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#StorageService> .
+<https://w3id.org/cocoon/v1.0.1#NetworkStorage> <http://www.w3.org/2000/01/rdf-schema#comment> "Storage can exist independent from VM"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#PaaS
+<https://w3id.org/cocoon/v1.0.1#PaaS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#PaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#CloudService> .
+<https://w3id.org/cocoon/v1.0.1#PaaS> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform as a Service, i.e. Google App Engine, Heroku."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#QuanlityOfService
+<https://w3id.org/cocoon/v1.0.1#QuanlityOfService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/v1.0.1#Region
+<https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#Location> .
+<https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#inJurisdiction> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/v1.0.1#Location> .
+<https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasProvider> .
+_:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#inPhysicalLocation> .
+_:genid55 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/v1.0.1#Location> .
+<https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#city> .
+_:genid57 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#continent> .
+_:genid58 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#state> .
+_:genid59 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid53 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#Region> .
+_:genid53 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid53 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid52 .
+_:genid53 <http://www.w3.org/2000/01/rdf-schema#comment> "Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it." .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid56 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#Region> .
+_:genid56 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid56 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid55 .
+_:genid56 <http://www.w3.org/2000/01/rdf-schema#comment> "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately. The intended usage of this is record the known most precise location."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#SaaS
+<https://w3id.org/cocoon/v1.0.1#SaaS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#SaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#CloudService> .
+<https://w3id.org/cocoon/v1.0.1#SaaS> <http://www.w3.org/2000/01/rdf-schema#comment> "Software as a Service"@en .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid60 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#SaaS> .
+_:genid60 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid60 <http://www.w3.org/2002/07/owl#annotatedTarget> "Software as a Service"@en .
+_:genid60 <http://www.w3.org/2000/01/rdf-schema#comment> "For example, Google Cloud Composer."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#Service
+<https://w3id.org/cocoon/v1.0.1#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#Service> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid61 <http://www.w3.org/2002/07/owl#unionOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Service> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://w3id.org/cocoon/v1.0.1#StaticIPService
+<https://w3id.org/cocoon/v1.0.1#StaticIPService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#StaticIPService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#NetworkService> .
+<https://w3id.org/cocoon/v1.0.1#StaticIPService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#inUse> .
+_:genid64 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/cocoon/v1.0.1#StorageService
+<https://w3id.org/cocoon/v1.0.1#StorageService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#StorageService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#IaaS> .
+<https://w3id.org/cocoon/v1.0.1#StorageService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#canHaveSnapshot> .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/v1.0.1#StorageService> .
+<https://w3id.org/cocoon/v1.0.1#StorageService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasStorageIOMax> .
+_:genid67 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#StorageService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasStorageSize> .
+_:genid69 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid69 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#StorageService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasStorageThroughputMax> .
+_:genid70 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid70 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid66 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#StorageService> .
+_:genid66 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid66 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid65 .
+_:genid66 <http://www.w3.org/2000/01/rdf-schema#comment> "Available snapshot options."@en .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid68 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#StorageService> .
+_:genid68 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid68 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid67 .
+_:genid68 <http://www.w3.org/2000/01/rdf-schema#comment> "Disks can have different input/output operations per sec (IOPs)."@en .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid71 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#StorageService> .
+_:genid71 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid71 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid70 .
+_:genid71 <http://www.w3.org/2000/01/rdf-schema#comment> "Disks can have different throughput caps, i.e. 200 MB/second"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#SystemImage
+<https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#SaaS> .
+<https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A system image is a serialized copy of the entire state of a computer system.\nSystem images can be used for backup." .
+# 
+# https://w3id.org/cocoon/v1.0.1#TrafficDirection
+<https://w3id.org/cocoon/v1.0.1#TrafficDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/v1.0.1#UnitOfMeasure
+<https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines custome units."@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#UplinkSpeed
+<https://w3id.org/cocoon/v1.0.1#UplinkSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#UplinkSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/cocoon/v1.0.1#Azure
+<https://w3id.org/cocoon/v1.0.1#Azure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#Azure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<https://w3id.org/cocoon/v1.0.1#Azure> <http://purl.org/goodrelations/v1#name> "Microsoft Azure Cloud" .
+<https://w3id.org/cocoon/v1.0.1#Azure> <http://www.w3.org/2000/01/rdf-schema#label> "Azure"@en .
+<https://w3id.org/cocoon/v1.0.1#Azure> <http://xmlns.com/foaf/0.1/page> <https://azure.microsoft.com/> .
+# 
+# https://w3id.org/cocoon/v1.0.1#GB
+<https://w3id.org/cocoon/v1.0.1#GB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#GB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#InformationEntropyUnit> .
+<https://w3id.org/cocoon/v1.0.1#GB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#GB> <http://www.w3.org/2000/01/rdf-schema#comment> "Gigabyte (GB): There are 1024MB in one gigabyte."@en .
+<https://w3id.org/cocoon/v1.0.1#GB> <http://www.w3.org/2000/01/rdf-schema#label> "Gigabyte"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#GBPerHour
+<https://w3id.org/cocoon/v1.0.1#GBPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#GBPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#DataRateUnit> .
+<https://w3id.org/cocoon/v1.0.1#GBPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#GBPerHour> <http://www.w3.org/2000/01/rdf-schema#comment> "Often describe 1 GB per Hour usage."@en .
+<https://w3id.org/cocoon/v1.0.1#GBPerHour> <http://www.w3.org/2000/01/rdf-schema#label> "Gigabyte per Hour"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#GBPerMonth
+<https://w3id.org/cocoon/v1.0.1#GBPerMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#GBPerMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#DataRateUnit> .
+<https://w3id.org/cocoon/v1.0.1#GBPerMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#GBPerMonth> <http://www.w3.org/2000/01/rdf-schema#comment> "Often describe 1 GB per Month usage."@en .
+<https://w3id.org/cocoon/v1.0.1#GBPerMonth> <http://www.w3.org/2000/01/rdf-schema#label> "Gigabyte per Month"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#GCEU
+<https://w3id.org/cocoon/v1.0.1#GCEU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#GCEU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#GCEU> <http://www.w3.org/2000/01/rdf-schema#comment> "GCEU (Google Compute Engine Unit), or GQ for short, is a unit of CPU capacity that we use to describe the compute power of our instance types. We chose 2.75 GQ's to represent the minimum power of one logical core (a hardware hyper-thread) on our Sandy Bridge platform."@en .
+<https://w3id.org/cocoon/v1.0.1#GCEU> <http://www.w3.org/2000/01/rdf-schema#label> "Google Compute Engine Unit"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#Gcloud
+<https://w3id.org/cocoon/v1.0.1#Gcloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#Gcloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<https://w3id.org/cocoon/v1.0.1#Gcloud> <http://purl.org/goodrelations/v1#name> "Google Cloud" .
+<https://w3id.org/cocoon/v1.0.1#Gcloud> <http://www.w3.org/2000/01/rdf-schema#label> "Gcloud"@en .
+<https://w3id.org/cocoon/v1.0.1#Gcloud> <http://xmlns.com/foaf/0.1/page> <https://cloud.google.com/> .
+# 
+# https://w3id.org/cocoon/v1.0.1#IOPs
+<https://w3id.org/cocoon/v1.0.1#IOPs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#IOPs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#DataRateUnit> .
+<https://w3id.org/cocoon/v1.0.1#IOPs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#IOPs> <http://www.w3.org/2000/01/rdf-schema#comment> "Azure Managed Disks provide different input/output operations per sec (IOPs)"@en .
+<https://w3id.org/cocoon/v1.0.1#IOPs> <http://www.w3.org/2000/01/rdf-schema#label> "Input/output operations per sec"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#IOPsPerHour
+<https://w3id.org/cocoon/v1.0.1#IOPsPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#IOPsPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#DataRateUnit> .
+<https://w3id.org/cocoon/v1.0.1#IOPsPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#IOPsPerHour> <http://www.w3.org/2000/01/rdf-schema#comment> "Azure Ultra SSD Managed Disks come in different sizes that provide a configurable range of input/output operations per sec (IOPS), and are billed on an hourly rate."@en .
+<https://w3id.org/cocoon/v1.0.1#IOPsPerHour> <http://www.w3.org/2000/01/rdf-schema#label> "IOPS/hour"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour
+<https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#DataRateUnit> .
+<https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour> <http://www.w3.org/2000/01/rdf-schema#comment> "Often describe the throughput usage measured at MB/s within an hour."@en .
+<https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour> <http://www.w3.org/2000/01/rdf-schema#label> "MB/s/hour"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#MirandaZhangQian
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://xmlns.com/foaf/0.1/givenname> "Qian" .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://xmlns.com/foaf/0.1/homepage> <https://github.com/miranda-zhang> .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://xmlns.com/foaf/0.1/lastName> "Zhang" .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://xmlns.com/foaf/0.1/mbox> <mailto:miranda.zhang.q@gmail.com> .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://xmlns.com/foaf/0.1/nick> "Miranda" .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://xmlns.com/foaf/0.1/title> "Miss" .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <http://xmlns.com/foaf/0.1/workInfoHomepage> <https://www.linkedin.com/in/mirandazhangq/> .
+<https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> <https://schema.org/url> <https://github.com/miranda-zhang> .
+# 
+# https://w3id.org/cocoon/v1.0.1#TB
+<https://w3id.org/cocoon/v1.0.1#TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#InformationEntropyUnit> .
+<https://w3id.org/cocoon/v1.0.1#TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#TB> <http://www.w3.org/2000/01/rdf-schema#comment> "Terabyte is more precisely defined as 1,024 gigabytes (GB)"@en .
+<https://w3id.org/cocoon/v1.0.1#TB> <http://www.w3.org/2000/01/rdf-schema#label> "Terabyte"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#VcpuPerHour
+<https://w3id.org/cocoon/v1.0.1#VcpuPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#VcpuPerHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> .
+<https://w3id.org/cocoon/v1.0.1#VcpuPerHour> <http://www.w3.org/2000/01/rdf-schema#comment> "Azure Ultra SSD storage is in preview in East US 2 and is billed on vcpu/hour provisioned as reservation charge. This reservation charge is only imposed if you enable Ultra SSD capability on the VM without connecting an Ultra SSD disk."@en .
+<https://w3id.org/cocoon/v1.0.1#VcpuPerHour> <http://www.w3.org/2000/01/rdf-schema#label> "vcpu/hour"@en .
+# 
+# https://w3id.org/cocoon/v1.0.1#1TB
+<https://w3id.org/cocoon/v1.0.1#1TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#1TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#1TB> <https://schema.org/amountOfThisGood> "1024"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/cocoon/v1.0.1#1TB> <https://schema.org/unitCode> <https://w3id.org/cocoon/v1.0.1#GB> .
+# 
+# https://w3id.org/cocoon/v1.0.1#10TB
+<https://w3id.org/cocoon/v1.0.1#10TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#10TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#10TB> <https://schema.org/amountOfThisGood> "10240"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/cocoon/v1.0.1#10TB> <https://schema.org/unitCode> <https://w3id.org/cocoon/v1.0.1#GB> .
+# 
+# https://w3id.org/cocoon/v1.0.1#90TB
+<https://w3id.org/cocoon/v1.0.1#90TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cocoon/v1.0.1#90TB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/TypeAndQuantityNode> .
+<https://w3id.org/cocoon/v1.0.1#90TB> <https://schema.org/amountOfThisGood> "92160"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/cocoon/v1.0.1#90TB> <https://schema.org/unitCode> <https://w3id.org/cocoon/v1.0.1#GB> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid72 <http://www.w3.org/2002/07/owl#members> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid76 <http://www.w3.org/2002/07/owl#members> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#NetworkService> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#StorageService> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid80 <http://www.w3.org/2002/07/owl#members> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#InternetService> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#LoadBalancing> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cocoon/v1.0.1#StaticIPService> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

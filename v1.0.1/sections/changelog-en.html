@@ -1,0 +1,631 @@
+<html>
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<p><u>Added classes</u></p>
+<ul><li><a href="#http://purl.org/goodrelations/v1#BusinessEntity">http://purl.org/goodrelations/v1#BusinessEntity</a>
+</li>
+<li><a href="#http://purl.org/goodrelations/v1#UnitPriceSpecification">http://purl.org/goodrelations/v1#UnitPriceSpecification</a>
+</li>
+<li><a href="#http://qudt.org/schema/qudt#DataRateUnit">http://qudt.org/schema/qudt#DataRateUnit</a>
+</li>
+<li><a href="#http://qudt.org/schema/qudt#InformationEntropyUnit">http://qudt.org/schema/qudt#InformationEntropyUnit</a>
+</li>
+<li><a href="#http://qudt.org/schema/qudt#Unit">http://qudt.org/schema/qudt#Unit</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://qudt.org/schema/qudt#Unit&gt; &lt;https://w3id.org/cocoon/v1.0.1#UnitOfMeasure&gt; )</li>
+</ul>
+</li>
+<li><a href="#http://www.geonames.org/ontology#Feature">http://www.geonames.org/ontology#Feature</a>
+</li>
+<li><a href="#http://www.w3.org/ns/sosa/FeatureOfInterest">http://www.w3.org/ns/sosa/FeatureOfInterest</a>
+</li>
+<li><a href="#http://www.w3.org/ns/sosa/Observation">http://www.w3.org/ns/sosa/Observation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://www.w3.org/ns/sosa/Observation&gt; &lt;https://w3id.org/cocoon/v1.0.1#Measurement&gt; )</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/sosa/Sensor">http://www.w3.org/ns/sosa/Sensor</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://www.w3.org/ns/sosa/Sensor&gt; &lt;https://w3id.org/cocoon/v1.0.1#Device&gt; )</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/ssn/systems/Latency">http://www.w3.org/ns/ssn/systems/Latency</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#QuanlityOfService</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/ssn/systems/SystemProperty">http://www.w3.org/ns/ssn/systems/SystemProperty</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://www.w3.org/ns/ssn/systems/SystemProperty&gt; &lt;https://w3id.org/cocoon/v1.0.1#QuanlityOfService&gt; )</li>
+</ul>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/Person">http://xmlns.com/foaf/0.1/Person</a>
+</li>
+<li><a href="#https://schema.org/Person">https://schema.org/Person</a>
+</li>
+<li><a href="#https://schema.org/Place">https://schema.org/Place</a>
+</li>
+<li><a href="#https://schema.org/Service">https://schema.org/Service</a>
+</li>
+<li><a href="#https://schema.org/TypeAndQuantityNode">https://schema.org/TypeAndQuantityNode</a>
+</li>
+<li><a href="#CDNService">https://w3id.org/cocoon/v1.0.1#CDNService</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#PaaS</li>
+</ul>
+</li>
+<li><a href="#CloudNetworkPriceSpecification">https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification</a>
+<ul>
+<li><li><li><li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification&gt; &lt;https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification&gt; &lt;https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification&gt;)</li>
+</ul>
+</li>
+<li><a href="#CloudOSPriceSpecification">https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification</a>
+<ul>
+<li><li><li><li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification&gt; &lt;https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification&gt; &lt;https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification&gt;)</li>
+</ul>
+</li>
+<li><a href="#CloudService">https://w3id.org/cocoon/v1.0.1#CloudService</a>
+<ul>
+<li><li><li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#Service</li>
+<li><li></ul>
+</li>
+<li><a href="#CloudServicePriceSpecification">https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification</a>
+<ul>
+<li><li><li>Added: SubClass of http://purl.org/goodrelations/v1#UnitPriceSpecification</li>
+</ul>
+</li>
+<li><a href="#CloudStorageTransactionsPriceSpecification">https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification&gt; &lt;https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification&gt; &lt;https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification&gt;)</li>
+<li></ul>
+</li>
+<li><a href="#ComputeService">https://w3id.org/cocoon/v1.0.1#ComputeService</a>
+<ul>
+<li><li><li><li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#ComputeService&gt; &lt;https://w3id.org/cocoon/v1.0.1#NetworkService&gt; &lt;https://w3id.org/cocoon/v1.0.1#StorageService&gt;)</li>
+<li><li><li><li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#IaaS</li>
+<li></ul>
+</li>
+<li><a href="#DNSQueryLatency">https://w3id.org/cocoon/v1.0.1#DNSQueryLatency</a>
+<ul>
+<li>Added: SubClass of http://www.w3.org/ns/ssn/systems/Latency</li>
+</ul>
+</li>
+<li><a href="#DNSService">https://w3id.org/cocoon/v1.0.1#DNSService</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#NetworkService</li>
+</ul>
+</li>
+<li><a href="#DataTransferSpeed">https://w3id.org/cocoon/v1.0.1#DataTransferSpeed</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#QuanlityOfService</li>
+<li><li></ul>
+</li>
+<li><a href="#Database">https://w3id.org/cocoon/v1.0.1#Database</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#SaaS</li>
+</ul>
+</li>
+<li><a href="#Device">https://w3id.org/cocoon/v1.0.1#Device</a>
+<ul>
+<li><li>Added: EquivalentClasses EquivalentClasses(&lt;http://www.w3.org/ns/sosa/Sensor&gt; &lt;https://w3id.org/cocoon/v1.0.1#Device&gt; )</li>
+<li></ul>
+</li>
+<li><a href="#DownlinkSpeed">https://w3id.org/cocoon/v1.0.1#DownlinkSpeed</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#DownlinkSpeed&gt; &lt;https://w3id.org/cocoon/v1.0.1#UplinkSpeed&gt;)</li>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#DataTransferSpeed</li>
+</ul>
+</li>
+<li><a href="#Egress">https://w3id.org/cocoon/v1.0.1#Egress</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#Egress&gt; &lt;https://w3id.org/cocoon/v1.0.1#Ingress&gt;)</li>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#TrafficDirection</li>
+</ul>
+</li>
+<li><a href="#ForwardingRule">https://w3id.org/cocoon/v1.0.1#ForwardingRule</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#LoadBalancing</li>
+</ul>
+</li>
+<li><a href="#IaaS">https://w3id.org/cocoon/v1.0.1#IaaS</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#CloudService</li>
+</ul>
+</li>
+<li><a href="#Ingress">https://w3id.org/cocoon/v1.0.1#Ingress</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#Egress&gt; &lt;https://w3id.org/cocoon/v1.0.1#Ingress&gt;)</li>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#TrafficDirection</li>
+</ul>
+</li>
+<li><a href="#InternetService">https://w3id.org/cocoon/v1.0.1#InternetService</a>
+<ul>
+<li><li><li><li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#InternetService&gt; &lt;https://w3id.org/cocoon/v1.0.1#LoadBalancing&gt; &lt;https://w3id.org/cocoon/v1.0.1#StaticIPService&gt;)</li>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#NetworkService</li>
+</ul>
+</li>
+<li><a href="#LoadBalancing">https://w3id.org/cocoon/v1.0.1#LoadBalancing</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#NetworkService</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#InternetService&gt; &lt;https://w3id.org/cocoon/v1.0.1#LoadBalancing&gt; &lt;https://w3id.org/cocoon/v1.0.1#StaticIPService&gt;)</li>
+</ul>
+</li>
+<li><a href="#LoadBalancingData">https://w3id.org/cocoon/v1.0.1#LoadBalancingData</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#LoadBalancing</li>
+<li></ul>
+</li>
+<li><a href="#LocalStorage">https://w3id.org/cocoon/v1.0.1#LocalStorage</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#StorageService</li>
+</ul>
+</li>
+<li><a href="#Location">https://w3id.org/cocoon/v1.0.1#Location</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://w3id.org/cocoon/v1.0.1#Location&gt; ObjectUnionOf(&lt;http://www.geonames.org/ontology#Feature&gt; &lt;https://schema.org/Place&gt;) )</li>
+</ul>
+</li>
+<li><a href="#Measurement">https://w3id.org/cocoon/v1.0.1#Measurement</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://www.w3.org/ns/sosa/Observation&gt; &lt;https://w3id.org/cocoon/v1.0.1#Measurement&gt; )</li>
+</ul>
+</li>
+<li><a href="#NetworkService">https://w3id.org/cocoon/v1.0.1#NetworkService</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#IaaS</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#ComputeService&gt; &lt;https://w3id.org/cocoon/v1.0.1#NetworkService&gt; &lt;https://w3id.org/cocoon/v1.0.1#StorageService&gt;)</li>
+</ul>
+</li>
+<li><a href="#NetworkStorage">https://w3id.org/cocoon/v1.0.1#NetworkStorage</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#StorageService</li>
+</ul>
+</li>
+<li><a href="#PaaS">https://w3id.org/cocoon/v1.0.1#PaaS</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#CloudService</li>
+</ul>
+</li>
+<li><a href="#QuanlityOfService">https://w3id.org/cocoon/v1.0.1#QuanlityOfService</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://www.w3.org/ns/ssn/systems/SystemProperty&gt; &lt;https://w3id.org/cocoon/v1.0.1#QuanlityOfService&gt; )</li>
+</ul>
+</li>
+<li><a href="#Region">https://w3id.org/cocoon/v1.0.1#Region</a>
+<ul>
+<li><li><li><li><li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#Location</li>
+<li><li></ul>
+</li>
+<li><a href="#SaaS">https://w3id.org/cocoon/v1.0.1#SaaS</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#CloudService</li>
+</ul>
+</li>
+<li><a href="#Service">https://w3id.org/cocoon/v1.0.1#Service</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://w3id.org/cocoon/v1.0.1#Service&gt; ObjectUnionOf(&lt;http://www.w3.org/ns/sosa/FeatureOfInterest&gt; &lt;https://schema.org/Service&gt;) )</li>
+</ul>
+</li>
+<li><a href="#StaticIPService">https://w3id.org/cocoon/v1.0.1#StaticIPService</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#NetworkService</li>
+<li><li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#InternetService&gt; &lt;https://w3id.org/cocoon/v1.0.1#LoadBalancing&gt; &lt;https://w3id.org/cocoon/v1.0.1#StaticIPService&gt;)</li>
+</ul>
+</li>
+<li><a href="#StorageService">https://w3id.org/cocoon/v1.0.1#StorageService</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#IaaS</li>
+<li><li><li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#ComputeService&gt; &lt;https://w3id.org/cocoon/v1.0.1#NetworkService&gt; &lt;https://w3id.org/cocoon/v1.0.1#StorageService&gt;)</li>
+<li><li></ul>
+</li>
+<li><a href="#SystemImage">https://w3id.org/cocoon/v1.0.1#SystemImage</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#SaaS</li>
+</ul>
+</li>
+<li><a href="#TrafficDirection">https://w3id.org/cocoon/v1.0.1#TrafficDirection</a>
+</li>
+<li><a href="#UnitOfMeasure">https://w3id.org/cocoon/v1.0.1#UnitOfMeasure</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://qudt.org/schema/qudt#Unit&gt; &lt;https://w3id.org/cocoon/v1.0.1#UnitOfMeasure&gt; )</li>
+</ul>
+</li>
+<li><a href="#UplinkSpeed">https://w3id.org/cocoon/v1.0.1#UplinkSpeed</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/cocoon/v1.0.1#DataTransferSpeed</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/cocoon/v1.0.1#DownlinkSpeed&gt; &lt;https://w3id.org/cocoon/v1.0.1#UplinkSpeed&gt;)</li>
+</ul>
+</li>
+</ul><p><u>Deleted classes</u></p>
+<ul><li><a href="#https://w3id.org/cocoon/def#AccessControl">https://w3id.org/cocoon/def#AccessControl</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Appliance">https://w3id.org/cocoon/def#Appliance</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Application">https://w3id.org/cocoon/def#Application</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Attribute">https://w3id.org/cocoon/def#Attribute</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#BLOBStorage">https://w3id.org/cocoon/def#BLOBStorage</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#BlockDeviceStorage">https://w3id.org/cocoon/def#BlockDeviceStorage</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Bus">https://w3id.org/cocoon/def#Bus</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#CIFS">https://w3id.org/cocoon/def#CIFS</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#CPU">https://w3id.org/cocoon/def#CPU</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#CloudResource">https://w3id.org/cocoon/def#CloudResource</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#ClusteredCPU">https://w3id.org/cocoon/def#ClusteredCPU</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#CommunityCloud">https://w3id.org/cocoon/def#CommunityCloud</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Compute">https://w3id.org/cocoon/def#Compute</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Credential">https://w3id.org/cocoon/def#Credential</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#CustomizableAppliance">https://w3id.org/cocoon/def#CustomizableAppliance</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#DeploymentModel">https://w3id.org/cocoon/def#DeploymentModel</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#FTP">https://w3id.org/cocoon/def#FTP</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#HTTP">https://w3id.org/cocoon/def#HTTP</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#HybridCloud">https://w3id.org/cocoon/def#HybridCloud</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#IP">https://w3id.org/cocoon/def#IP</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#IPv4">https://w3id.org/cocoon/def#IPv4</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#IPv6">https://w3id.org/cocoon/def#IPv6</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#IaaS">https://w3id.org/cocoon/def#IaaS</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Input">https://w3id.org/cocoon/def#Input</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Interface">https://w3id.org/cocoon/def#Interface</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#LocalStorage">https://w3id.org/cocoon/def#LocalStorage</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Location">https://w3id.org/cocoon/def#Location</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#MeasurableAttribute">https://w3id.org/cocoon/def#MeasurableAttribute</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Metric">https://w3id.org/cocoon/def#Metric</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Network">https://w3id.org/cocoon/def#Network</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#NetworkStorage">https://w3id.org/cocoon/def#NetworkStorage</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#NonFunctionalProperty">https://w3id.org/cocoon/def#NonFunctionalProperty</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#OperatingSystem">https://w3id.org/cocoon/def#OperatingSystem</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Operation">https://w3id.org/cocoon/def#Operation</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Output">https://w3id.org/cocoon/def#Output</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#PaaS">https://w3id.org/cocoon/def#PaaS</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Password">https://w3id.org/cocoon/def#Password</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#PhysicalQuantity">https://w3id.org/cocoon/def#PhysicalQuantity</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#PrivateCloud">https://w3id.org/cocoon/def#PrivateCloud</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Protocol">https://w3id.org/cocoon/def#Protocol</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Provider">https://w3id.org/cocoon/def#Provider</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#PublicCloud">https://w3id.org/cocoon/def#PublicCloud</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#QualityOfService">https://w3id.org/cocoon/def#QualityOfService</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#RDP">https://w3id.org/cocoon/def#RDP</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#REST">https://w3id.org/cocoon/def#REST</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#RSync">https://w3id.org/cocoon/def#RSync</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Region">https://w3id.org/cocoon/def#Region</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#SCP">https://w3id.org/cocoon/def#SCP</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#SSH">https://w3id.org/cocoon/def#SSH</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#SaaS">https://w3id.org/cocoon/def#SaaS</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Script">https://w3id.org/cocoon/def#Script</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Service">https://w3id.org/cocoon/def#Service</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#ServiceLevelAgreement">https://w3id.org/cocoon/def#ServiceLevelAgreement</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Software">https://w3id.org/cocoon/def#Software</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#SoftwareFunctionality">https://w3id.org/cocoon/def#SoftwareFunctionality</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#SoftwareType">https://w3id.org/cocoon/def#SoftwareType</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Storage">https://w3id.org/cocoon/def#Storage</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Telnet">https://w3id.org/cocoon/def#Telnet</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#UnitOfMeasure">https://w3id.org/cocoon/def#UnitOfMeasure</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#UnmeasurableAttribute">https://w3id.org/cocoon/def#UnmeasurableAttribute</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#User">https://w3id.org/cocoon/def#User</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#VNC">https://w3id.org/cocoon/def#VNC</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Virtualization">https://w3id.org/cocoon/def#Virtualization</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#VirtualizationFormat">https://w3id.org/cocoon/def#VirtualizationFormat</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#WSDL">https://w3id.org/cocoon/def#WSDL</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#Zone">https://w3id.org/cocoon/def#Zone</a>
+</li>
+</ul><h3 id="changeProp" class="list">Object Properties</h3>
+<p><u>Added properties</u></p>
+<ul><li><a href="#http://purl.org/goodrelations/v1#hasPriceSpecification">http://purl.org/goodrelations/v1#hasPriceSpecification</a>
+</li>
+<li><a href="#http://www.w3.org/2002/07/owl#topObjectProperty">http://www.w3.org/2002/07/owl#topObjectProperty</a>
+</li>
+<li><a href="#canHaveSnapshot">https://w3id.org/cocoon/v1.0.1#canHaveSnapshot</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#excludesDestination">https://w3id.org/cocoon/v1.0.1#excludesDestination</a>
+</li>
+<li><a href="#forUsageLessEqual">https://w3id.org/cocoon/v1.0.1#forUsageLessEqual</a>
+</li>
+<li><a href="#forUsageMoreThan">https://w3id.org/cocoon/v1.0.1#forUsageMoreThan</a>
+</li>
+<li><a href="#hasCPUcapacity">https://w3id.org/cocoon/v1.0.1#hasCPUcapacity</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasDestination">https://w3id.org/cocoon/v1.0.1#hasDestination</a>
+</li>
+<li><a href="#hasDirection">https://w3id.org/cocoon/v1.0.1#hasDirection</a>
+</li>
+<li><a href="#hasMaxNumberOfDisk">https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasMaxStorageSize">https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasMemory">https://w3id.org/cocoon/v1.0.1#hasMemory</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasProvider">https://w3id.org/cocoon/v1.0.1#hasProvider</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasRegion">https://w3id.org/cocoon/v1.0.1#hasRegion</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasServiceLevelAgreement">https://w3id.org/cocoon/v1.0.1#hasServiceLevelAgreement</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasStorage">https://w3id.org/cocoon/v1.0.1#hasStorage</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasStorageIOMax">https://w3id.org/cocoon/v1.0.1#hasStorageIOMax</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasStorageSize">https://w3id.org/cocoon/v1.0.1#hasStorageSize</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#hasStorageThroughputMax">https://w3id.org/cocoon/v1.0.1#hasStorageThroughputMax</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#inJurisdiction">https://w3id.org/cocoon/v1.0.1#inJurisdiction</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#inPhysicalLocation">https://w3id.org/cocoon/v1.0.1#inPhysicalLocation</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#inRegion">https://w3id.org/cocoon/v1.0.1#inRegion</a>
+</li>
+<li><a href="#transferedFileSizeMax">https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax</a>
+</li>
+<li><a href="#transferedFileSizeMin">https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin</a>
+</li>
+</ul><p><u>Deleted properties</u></p>
+<ul><li><a href="#https://w3id.org/cocoon/def#hasApplianceType">https://w3id.org/cocoon/def#hasApplianceType</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasBandwidth">https://w3id.org/cocoon/def#hasBandwidth</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasBenchmark">https://w3id.org/cocoon/def#hasBenchmark</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasCPU">https://w3id.org/cocoon/def#hasCPU</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasCapacity">https://w3id.org/cocoon/def#hasCapacity</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasClockRate">https://w3id.org/cocoon/def#hasClockRate</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasCommunicationBus">https://w3id.org/cocoon/def#hasCommunicationBus</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasCredential">https://w3id.org/cocoon/def#hasCredential</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasDeploymentModel">https://w3id.org/cocoon/def#hasDeploymentModel</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasFunctionality">https://w3id.org/cocoon/def#hasFunctionality</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasIOConfiguration">https://w3id.org/cocoon/def#hasIOConfiguration</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasLocalStorage">https://w3id.org/cocoon/def#hasLocalStorage</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasLocation">https://w3id.org/cocoon/def#hasLocation</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasMemory">https://w3id.org/cocoon/def#hasMemory</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasMemoryAddressSize">https://w3id.org/cocoon/def#hasMemoryAddressSize</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasMetric">https://w3id.org/cocoon/def#hasMetric</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasNetworkStorage">https://w3id.org/cocoon/def#hasNetworkStorage</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasNonFunctionalProperty">https://w3id.org/cocoon/def#hasNonFunctionalProperty</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasOperatingSystem">https://w3id.org/cocoon/def#hasOperatingSystem</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasOrchestrationInterface">https://w3id.org/cocoon/def#hasOrchestrationInterface</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasPassword">https://w3id.org/cocoon/def#hasPassword</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasPhysicalLocation">https://w3id.org/cocoon/def#hasPhysicalLocation</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasProtocol">https://w3id.org/cocoon/def#hasProtocol</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasProvider">https://w3id.org/cocoon/def#hasProvider</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasQuantity">https://w3id.org/cocoon/def#hasQuantity</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasScript">https://w3id.org/cocoon/def#hasScript</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasServiceLevelAgreement">https://w3id.org/cocoon/def#hasServiceLevelAgreement</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasStorage">https://w3id.org/cocoon/def#hasStorage</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasSupportedProtocol">https://w3id.org/cocoon/def#hasSupportedProtocol</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasUnitOfMeasurement">https://w3id.org/cocoon/def#hasUnitOfMeasurement</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasUser">https://w3id.org/cocoon/def#hasUser</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasVirtualization">https://w3id.org/cocoon/def#hasVirtualization</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hasVirtualizationFormat">https://w3id.org/cocoon/def#hasVirtualizationFormat</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#isAvailableIn">https://w3id.org/cocoon/def#isAvailableIn</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#isSoftware">https://w3id.org/cocoon/def#isSoftware</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#isSoftwareType">https://w3id.org/cocoon/def#isSoftwareType</a>
+</li>
+</ul><h3 id="changeDataProp" class="list">Data Properties</h3>
+<p><u>Added data properties</u></p>
+<ul><li><a href="#http://www.w3.org/2002/07/owl#topDataProperty">http://www.w3.org/2002/07/owl#topDataProperty</a>
+</li>
+<li><a href="#chargedPerCore">https://w3id.org/cocoon/v1.0.1#chargedPerCore</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topDataProperty</li>
+</ul>
+</li>
+<li><a href="#city">https://w3id.org/cocoon/v1.0.1#city</a>
+</li>
+<li><a href="#continent">https://w3id.org/cocoon/v1.0.1#continent</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topDataProperty</li>
+</ul>
+</li>
+<li><a href="#forCoresLessEqual">https://w3id.org/cocoon/v1.0.1#forCoresLessEqual</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topDataProperty</li>
+</ul>
+</li>
+<li><a href="#forCoresMoreThan">https://w3id.org/cocoon/v1.0.1#forCoresMoreThan</a>
+<ul>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topDataProperty</li>
+</ul>
+</li>
+<li><a href="#hasCurrencyValue">https://w3id.org/cocoon/v1.0.1#hasCurrencyValue</a>
+</li>
+<li><a href="#inUse">https://w3id.org/cocoon/v1.0.1#inUse</a>
+</li>
+<li><a href="#inZone">https://w3id.org/cocoon/v1.0.1#inZone</a>
+</li>
+<li><a href="#ipv4">https://w3id.org/cocoon/v1.0.1#ipv4</a>
+</li>
+<li><a href="#numberOfCores">https://w3id.org/cocoon/v1.0.1#numberOfCores</a>
+</li>
+<li><a href="#specialRateType">https://w3id.org/cocoon/v1.0.1#specialRateType</a>
+</li>
+<li><a href="#state">https://w3id.org/cocoon/v1.0.1#state</a>
+</li>
+</ul><p><u>Deleted data properties</u></p>
+<ul><li><a href="#https://w3id.org/cocoon/def#CPUClockSpeed">https://w3id.org/cocoon/def#CPUClockSpeed</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#CPUFamily">https://w3id.org/cocoon/def#CPUFamily</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#URI">https://w3id.org/cocoon/def#URI</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#accessNumber">https://w3id.org/cocoon/def#accessNumber</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#bandwidth">https://w3id.org/cocoon/def#bandwidth</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#description">https://w3id.org/cocoon/def#description</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#fileSystem">https://w3id.org/cocoon/def#fileSystem</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#genericName">https://w3id.org/cocoon/def#genericName</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#hash">https://w3id.org/cocoon/def#hash</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#latency">https://w3id.org/cocoon/def#latency</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#method">https://w3id.org/cocoon/def#method</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#numberOfCores">https://w3id.org/cocoon/def#numberOfCores</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#numericValue">https://w3id.org/cocoon/def#numericValue</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#onChip">https://w3id.org/cocoon/def#onChip</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#persistence">https://w3id.org/cocoon/def#persistence</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#protocolVersion">https://w3id.org/cocoon/def#protocolVersion</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#providerDescription">https://w3id.org/cocoon/def#providerDescription</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#providerName">https://w3id.org/cocoon/def#providerName</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#requestPayload">https://w3id.org/cocoon/def#requestPayload</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#resourceRecord">https://w3id.org/cocoon/def#resourceRecord</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#responsePayload">https://w3id.org/cocoon/def#responsePayload</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#storageFormat">https://w3id.org/cocoon/def#storageFormat</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#storageSizeMax">https://w3id.org/cocoon/def#storageSizeMax</a>
+</li>
+<li><a href="#https://w3id.org/cocoon/def#storageSizeMin">https://w3id.org/cocoon/def#storageSizeMin</a>
+</li>
+</ul></div>
+<html>

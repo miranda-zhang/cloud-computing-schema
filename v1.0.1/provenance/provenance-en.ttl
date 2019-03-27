@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/cocoon/v1.0.1#> a prov:Entity;
+	 dc:title "Vocabulary in Cloud Computing Services";
+	 prov:wasAttributedTo <https://github.com/miranda-zhang>;
+	 dc:creator <https://github.com/miranda-zhang>;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://w3id.org/cocoon/v1.0.1#>;
+	 prov:wasRevisionOf <https://miranda-zhang.github.io/cloud-computing-schema/v0.1/ontology/cocoon.owl>;
+	 prov:wasGeneratedAt "2019-03-27";
+.
+:agent0 a prov:Agent; foaf:name "Armin Haller".
