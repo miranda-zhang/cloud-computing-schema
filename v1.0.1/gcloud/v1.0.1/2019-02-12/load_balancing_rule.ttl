@@ -1,0 +1,454 @@
+@prefix schema: <https://schema.org/> .
+@prefix unit:  <http://qudt.org/vocab/unit#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5>
+        a                        schema:TypeAndQuantityNode ;
+        schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/ForwardingRule/Gcloud/base>
+        a                         cocoon:ForwardingRule ;
+        rdfs:comment              "Google Lord Balancing Forwarding Rule Base Rate. Flat rate price, regardless 1 rule or 5 rules used, charged the same per hour." ;
+        rdfs:label                "FORWARDING_RULE_CHARGE_BASE" ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.03e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.03e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.038e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.038e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.034e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.03e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.035e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "1.0E0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/fixed>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.025e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.034e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                         cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency            "USD" ;
+                                    gr:hasUnitOfMeasurement   unit:Hour ;
+                                    cocoon:forUsageLessEqual  <https://w3id.org/cocoon/data/v1.0.1/TypeAndQuantityNode/5> ;
+                                    cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
+                                                                schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                    cocoon:hasCurrencyValue   "0.028e0"^^xsd:float ;
+                                    cocoon:inRegion           <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4>
+                                  ] ;
+        cocoon:hasProvider        cocoon:Gcloud ;
+        schema:dateModified       "2019-02-12"^^xsd:date .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/ForwardingRule/Gcloud/extra>
+        a                         cocoon:ForwardingRule ;
+        rdfs:comment              "Google Lord Balancing Forwarding Rule Extra Rate. Extra charged per rule per hour." ;
+        rdfs:label                "FORWARDING_RULE_CHARGE_EXTRA" ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.014e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.014e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.014e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.015e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.011e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.012e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasUnitOfMeasurement  unit:Hour ;
+                                    cocoon:forUsageMoreThan  [ a                        schema:TypeAndQuantityNode ;
+                                                               schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                    cocoon:hasCurrencyValue  "0.01e0"^^xsd:float ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe>
+                                  ] ;
+        cocoon:hasProvider        cocoon:Gcloud ;
+        schema:dateModified       "2019-02-12"^^xsd:date .

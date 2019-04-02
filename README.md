@@ -1,6 +1,9 @@
 # Linked Data Fragments Server
 https://github.com/LinkedDataFragments/Server.js
 
+# Config file examples
+ https://github.com/LinkedDataFragments/Server.js/blob/master/config/
+
 # Ubuntu
 Ubuntu 16.04.5 LTS
 
@@ -96,10 +99,10 @@ Find the version of globally installed packages
 
     sudo npm list -g
 
-# Multiple files as a datasource 
-
-https://github.com/LinkedDataFragments/Server.js/blob/master/config/config-composite.json
-
 # Issue
 https://github.com/LinkedDataFragments/Server.js/issues/89
+
 It's recomanded to load the data.ttl locally (i.e. using Protoge) and search with SPARQL.
+
+# Generate config
+[generate_ldfserver_config.py](generate_ldfserver_config.py)

@@ -1,0 +1,421 @@
+@base          <http://example.org/> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cocoon: <https://w3id.org/cocoon/v1.0#> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/region/azure/usgov-iowa>
+        a                      cocoon:Region ;
+        rdfs:label             "US Gov. Iowa" ;
+        cocoon:continent       "North America" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255149/> ;
+        cocoon:location        "Iowa" .
+
+<https://w3id.org/cocoon/data/region/azure/US%20Sec%20West>
+        a                      cocoon:Region ;
+        rdfs:label             "US Sec West" ;
+        cocoon:continent       "North America" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255149/> ;
+        cocoon:location        "Undisclosed" .
+
+<https://w3id.org/cocoon/data/region/azure/us-central>
+        a                      cocoon:Region ;
+        rdfs:label             "Central US" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/10861432/> ;
+        cocoon:location        "Iowa" .
+
+<https://w3id.org/cocoon/data/region/azure/west-india>
+        a                      cocoon:Region ;
+        rdfs:label             "West India" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Mumbai" .
+
+<https://w3id.org/cocoon/data/region/azure/europe-west>
+        a                      cocoon:Region ;
+        rdfs:label             "West Europe" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/2750405/> ;
+        cocoon:location        "Netherlands" .
+
+<https://w3id.org/cocoon/data/region/azure/us-west>
+        a                      cocoon:Region ;
+        rdfs:label             "West US" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/5332921/> ;
+        cocoon:location        "California" .
+
+<https://w3id.org/cocoon/data/region/azure/japan-west>
+        a                      cocoon:Region ;
+        rdfs:label             "Japan West" ;
+        cocoon:continent       "Asia Pacific" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/1853909/> ;
+        cocoon:location        "Osaka" .
+
+<https://w3id.org/cocoon/data/region/azure/Switzerland%20West>
+        a                      cocoon:Region ;
+        rdfs:label             "Switzerland West" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255148/> ;
+        cocoon:location        "Geneva" .
+
+<https://w3id.org/cocoon/data/region/azure/united-kingdom-south>
+        a                      cocoon:Region ;
+        rdfs:label             "UK South" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255148/> ;
+        cocoon:location        "London" .
+
+<https://w3id.org/cocoon/data/region/azure/france-south>
+        a                      cocoon:Region ;
+        rdfs:label             "France South" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/2995469/> ;
+        cocoon:location        "Marseille" .
+
+<https://w3id.org/cocoon/data/region/azure/us-west-2>
+        a                      cocoon:Region ;
+        rdfs:label             "West US 2" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/10861432/> ;
+        cocoon:location        "Washington" .
+
+<https://w3id.org/cocoon/data/region/azure/UAE%20North>
+        a                      cocoon:Region ;
+        rdfs:label             "UAE North" ;
+        cocoon:continent       "Middle East" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6269133/> ;
+        cocoon:location        "Dubai" .
+
+<https://w3id.org/cocoon/data/region/azure/korea-south>
+        a                      cocoon:Region ;
+        rdfs:label             "Korea South" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Busan" .
+
+<https://w3id.org/cocoon/data/region/azure/US%20DoD%20East>
+        a                      cocoon:Region ;
+        rdfs:label             "US DoD East" ;
+        cocoon:continent       "North America" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255149/> ;
+        cocoon:location        "Virginia" .
+
+<https://w3id.org/cocoon/data/region/azure/us-north-central>
+        a                      cocoon:Region ;
+        rdfs:label             "North Central US" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/4896861/> ;
+        cocoon:location        "Illinois" .
+
+<https://w3id.org/cocoon/data/region/azure/US%20DoD%20Central>
+        a                      cocoon:Region ;
+        rdfs:label             "US DoD Central" ;
+        cocoon:continent       "North America" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255149/> ;
+        cocoon:location        "Iowa" .
+
+<https://w3id.org/cocoon/data/region/azure/usgov-texas>
+        a                      cocoon:Region ;
+        rdfs:label             "US Gov. Texas" ;
+        cocoon:continent       "North America" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/4736286/> ;
+        cocoon:location        "Texas" .
+
+<https://w3id.org/cocoon/data/region/azure/South%20Africa%20North>
+        a                      cocoon:Region ;
+        rdfs:label             "South Africa North" ;
+        cocoon:continent       "Middle East and Africa" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/993800/> ;
+        cocoon:location        "Johannesburg" .
+
+<https://w3id.org/cocoon/data/region/azure/Germany%20West%20Central>
+        a                      cocoon:Region ;
+        rdfs:label             "Germany West Central" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255148/> ;
+        cocoon:location        "Germany West Central" .
+
+<https://w3id.org/cocoon/data/region/azure/China%20East%202>
+        a                      cocoon:Region ;
+        rdfs:label             "China East 2" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Shanghai" .
+
+<https://w3id.org/cocoon/data/region/azure/China%20North%202>
+        a                      cocoon:Region ;
+        rdfs:label             "China North 2" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Beijing" .
+
+<https://w3id.org/cocoon/data/region/azure/central-india>
+        a                      cocoon:Region ;
+        rdfs:label             "Central India" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Pune" .
+
+<https://w3id.org/cocoon/data/region/azure/China%20North>
+        a                      cocoon:Region ;
+        rdfs:label             "China North" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Beijing" .
+
+<https://w3id.org/cocoon/data/region/azure/Germany%20North>
+        a                      cocoon:Region ;
+        rdfs:label             "Germany North" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255148/> ;
+        cocoon:location        "Germany North" .
+
+<https://w3id.org/cocoon/data/region/azure/germany-central>
+        a                      cocoon:Region ;
+        rdfs:label             "Germany Central" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255148/> ;
+        cocoon:location        "Frankfurt" .
+
+<https://w3id.org/cocoon/data/region/azure/canada-east>
+        a                      cocoon:Region ;
+        rdfs:label             "Canada East" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/10861432/> ;
+        cocoon:location        "Quebec City" .
+
+<https://w3id.org/cocoon/data/region/azure/korea-central>
+        a                      cocoon:Region ;
+        rdfs:label             "Korea Central" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Seoul" .
+
+<https://w3id.org/cocoon/data/region/azure/australia-central>
+        a                      cocoon:Region ;
+        rdfs:label             "Australia Central" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Canberra" .
+
+<https://w3id.org/cocoon/data/region/azure/UAE%20Central>
+        a                      cocoon:Region ;
+        rdfs:label             "UAE Central" ;
+        cocoon:continent       "Middle East and Africa" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/292968/> ;
+        cocoon:location        "Abu Dhabi" .
+
+<https://w3id.org/cocoon/data/region/azure/usgov-arizona>
+        a                      cocoon:Region ;
+        rdfs:label             "US Gov. Arizona" ;
+        cocoon:continent       "North America" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/5551752/> ;
+        cocoon:location        "Arizona" .
+
+<https://w3id.org/cocoon/data/region/azure/South%20Africa%20West>
+        a                      cocoon:Region ;
+        rdfs:label             "South Africa West" ;
+        cocoon:continent       "Middle East and Africa" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/3369157/> ;
+        cocoon:location        "Cape Town" .
+
+<https://w3id.org/cocoon/data/region/azure/China%20East>
+        a                      cocoon:Region ;
+        rdfs:label             "China East" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Shanghai" .
+
+<https://w3id.org/cocoon/data/region/azure/us-west-central>
+        a                      cocoon:Region ;
+        rdfs:label             "West Central US" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/10861432/> ;
+        cocoon:location        "Wyoming" .
+
+<https://w3id.org/cocoon/data/region/azure/asia-pacific-east>
+        a                      cocoon:Region ;
+        rdfs:label             "East Asia" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Hong Kong" .
+
+<https://w3id.org/cocoon/data/region/azure/europe-north>
+        a                      cocoon:Region ;
+        rdfs:label             "North Europe" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/2963597/> ;
+        cocoon:location        "Ireland" .
+
+<https://w3id.org/cocoon/data/region/azure/south-india>
+        a                      cocoon:Region ;
+        rdfs:label             "South India" ;
+        cocoon:continent       "Asia Pacific" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/1264527/> ;
+        cocoon:location        "Chennai" .
+
+<https://w3id.org/cocoon/data/region/azure/australia-southeast>
+        a                      cocoon:Region ;
+        rdfs:label             "Australia Southeast" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Victoria" .
+
+<https://w3id.org/cocoon/data/region/azure/Switzerland%20North>
+        a                      cocoon:Region ;
+        rdfs:label             "Switzerland North" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255148/> ;
+        cocoon:location        "Zurich" .
+
+<https://w3id.org/cocoon/data/region/azure/france-central>
+        a                      cocoon:Region ;
+        rdfs:label             "France Central" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/2988507/> ;
+        cocoon:location        "Paris" .
+
+<https://w3id.org/cocoon/data/region/azure/Norway%20East>
+        a                      cocoon:Region ;
+        rdfs:label             "Norway East" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/3144096/> ;
+        cocoon:location        "Norway" .
+
+<https://w3id.org/cocoon/data/region/azure/brazil-south>
+        a                      cocoon:Region ;
+        rdfs:label             "Brazil South" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/10861432/> ;
+        cocoon:location        "Sao Paulo State" .
+
+<https://w3id.org/cocoon/data/region/azure/us-south-central>
+        a                      cocoon:Region ;
+        rdfs:label             "South Central US" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/4736286/> ;
+        cocoon:location        "Texas" .
+
+<https://w3id.org/cocoon/data/region/azure/US%20Sec%20East>
+        a                      cocoon:Region ;
+        rdfs:label             "US Sec East" ;
+        cocoon:continent       "North America" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255149/> ;
+        cocoon:location        "Undisclosed" .
+
+<https://w3id.org/cocoon/data/region/azure/usgov-virginia>
+        a                      cocoon:Region ;
+        rdfs:label             "US Gov. Virginia" ;
+        cocoon:continent       "North America" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255149/> ;
+        cocoon:location        "Virginia" .
+
+<https://w3id.org/cocoon/data/region/azure/australia-central-2>
+        a                      cocoon:Region ;
+        rdfs:label             "Australia Central 2" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Canberra" .
+
+<https://w3id.org/cocoon/data/region/azure/australia-east>
+        a                      cocoon:Region ;
+        rdfs:label             "Australia East" ;
+        cocoon:continent       "Asia Pacific" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/2155400/> ;
+        cocoon:location        "New South Wales" .
+
+<https://w3id.org/cocoon/data/region/azure/canada-central>
+        a                      cocoon:Region ;
+        rdfs:label             "Canada Central" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/10861432/> ;
+        cocoon:location        "Toronto" .
+
+<https://w3id.org/cocoon/data/region/azure/us-east-2>
+        a                      cocoon:Region ;
+        rdfs:label             "East US 2" ;
+        cocoon:continent       "Americas" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/10861432/> ;
+        cocoon:location        "Virginia" .
+
+<https://w3id.org/cocoon/data/region/azure/united-kingdom-west>
+        a                      cocoon:Region ;
+        rdfs:label             "UK West" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255148/> ;
+        cocoon:location        "Cardiff" .
+
+<https://w3id.org/cocoon/data/region/azure/germany-northeast>
+        a                      cocoon:Region ;
+        rdfs:label             "Germany Northeast" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/2874545/> ;
+        cocoon:location        "Magdeburg" .
+
+<https://w3id.org/cocoon/data/region/azure/japan-east>
+        a                      cocoon:Region ;
+        rdfs:label             "Japan East" ;
+        cocoon:continent       "Asia" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/6255147/> ;
+        cocoon:location        "Tokyo, Saitama" .
+
+<https://w3id.org/cocoon/data/region/azure/Norway%20West>
+        a                      cocoon:Region ;
+        rdfs:label             "Norway West" ;
+        cocoon:continent       "Europe" ;
+        cocoon:hasProvider     cocoon:azure ;
+        cocoon:inJurisdiction  <http://sws.geonames.org/3144096/> ;
+        cocoon:location        "Norway" .
