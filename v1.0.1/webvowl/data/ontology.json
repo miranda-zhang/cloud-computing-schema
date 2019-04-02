@@ -172,10 +172,10 @@
     "id" : "48",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "38",
+    "id" : "62",
     "type" : "owl:Class"
   }, {
-    "id" : "62",
+    "id" : "38",
     "type" : "owl:Class"
   }, {
     "id" : "61",
@@ -187,7 +187,7 @@
     "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
+    "id" : "52",
     "type" : "owl:Class"
   }, {
     "id" : "92",
@@ -268,7 +268,7 @@
     "id" : "45",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "52",
+    "id" : "50",
     "type" : "owl:Class"
   }, {
     "id" : "110",
@@ -633,16 +633,6 @@
     "attributes" : [ "equivalent" ],
     "id" : "48"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#DataTransferSpeed",
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DataTransferSpeed"
-    },
-    "subClasses" : [ "46", "37" ],
-    "id" : "38",
-    "superClasses" : [ "40" ]
-  }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
@@ -671,17 +661,17 @@
           "value" : "Qian",
           "type" : "label"
         } ],
-        "workInfoHomepage" : [ {
-          "identifier" : "workInfoHomepage",
-          "language" : "undefined",
-          "value" : "https://www.linkedin.com/in/mirandazhangq/",
-          "type" : "iri"
-        } ],
         "title" : [ {
           "identifier" : "title",
           "language" : "undefined",
           "value" : "Miss",
           "type" : "label"
+        } ],
+        "workInfoHomepage" : [ {
+          "identifier" : "workInfoHomepage",
+          "language" : "undefined",
+          "value" : "https://www.linkedin.com/in/mirandazhangq/",
+          "type" : "iri"
         } ],
         "mbox" : [ {
           "identifier" : "mbox",
@@ -708,6 +698,16 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/cocoon/v1.0.1#DataTransferSpeed",
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataTransferSpeed"
+    },
+    "subClasses" : [ "46", "37" ],
+    "id" : "38",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -742,7 +742,7 @@
     "label" : {
       "IRI-based" : "InternetService"
     },
-    "id" : "50",
+    "id" : "52",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.geonames.org/ontology#Feature",
@@ -972,7 +972,7 @@
       "IRI-based" : "CloudStorageTransactionsPriceSpecification"
     },
     "comment" : {
-      "en" : "Can be used to define a common price spec for multiple cloud service individuals,\ni.e. the storage transaction spec has a different price in a different region,\nbut there is a common transaction price spec for a group of cloud storage offers."
+      "en" : "Can be used to define a common price spec for multiple cloud service individuals,\r\ni.e. the storage transaction spec has a different price in a different region,\r\nbut there is a common transaction price spec for a group of cloud storage offers."
     },
     "id" : "83",
     "superClasses" : [ "66" ]
@@ -1036,17 +1036,17 @@
           "value" : "Qian",
           "type" : "label"
         } ],
-        "workInfoHomepage" : [ {
-          "identifier" : "workInfoHomepage",
-          "language" : "undefined",
-          "value" : "https://www.linkedin.com/in/mirandazhangq/",
-          "type" : "iri"
-        } ],
         "title" : [ {
           "identifier" : "title",
           "language" : "undefined",
           "value" : "Miss",
           "type" : "label"
+        } ],
+        "workInfoHomepage" : [ {
+          "identifier" : "workInfoHomepage",
+          "language" : "undefined",
+          "value" : "https://www.linkedin.com/in/mirandazhangq/",
+          "type" : "iri"
         } ],
         "mbox" : [ {
           "identifier" : "mbox",
@@ -1080,7 +1080,7 @@
     "label" : {
       "IRI-based" : "NetworkService"
     },
-    "subClasses" : [ "52", "50", "12", "9" ],
+    "subClasses" : [ "50", "52", "12", "9" ],
     "id" : "10",
     "superClasses" : [ "75" ]
   }, {
@@ -1142,7 +1142,7 @@
     "label" : {
       "IRI-based" : "StaticIPService"
     },
-    "id" : "52",
+    "id" : "50",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
@@ -1201,7 +1201,7 @@
       "IRI-based" : "SystemImage"
     },
     "comment" : {
-      "undefined" : "A system image is a serialized copy of the entire state of a computer system.\nSystem images can be used for backup."
+      "undefined" : "A system image is a serialized copy of the entire state of a computer system.\r\nSystem images can be used for backup."
     },
     "id" : "124",
     "superClasses" : [ "76" ]
@@ -1313,17 +1313,17 @@
     "id" : "31",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "32",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "26",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "35",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "49",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "51",
     "type" : "owl:disjointWith"
@@ -1341,7 +1341,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "59",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "60",
     "type" : "owl:someValuesFrom"
@@ -1500,7 +1500,7 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "133",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "134",
     "type" : "owl:disjointWith"
@@ -1509,7 +1509,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "137",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "138",
     "type" : "owl:objectProperty"
@@ -1591,17 +1591,6 @@
     "attributes" : [ "someValues", "object" ],
     "id" : "31"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#specialRateType",
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "range" : "33",
-    "label" : {
-      "IRI-based" : "specialRateType"
-    },
-    "cardinality" : "1",
-    "domain" : "3",
-    "attributes" : [ "datatype" ],
-    "id" : "32"
-  }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#inPhysicalLocation",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
     "range" : "3",
@@ -1613,6 +1602,17 @@
     "attributes" : [ "object" ],
     "id" : "26"
   }, {
+    "iri" : "https://w3id.org/cocoon/v1.0.1#specialRateType",
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "specialRateType"
+    },
+    "cardinality" : "1",
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#forCoresMoreThan",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
     "range" : "27",
@@ -1622,23 +1622,18 @@
     "maxCardinality" : "1",
     "domain" : "3",
     "comment" : {
-      "en" : "Google Cloud OS price for VM with different number of cores are different.\nThis is used to describe the price for machines with more than specified\nnumber of cores."
+      "en" : "Google Cloud OS price for VM with different number of cores are different.\r\nThis is used to describe the price for machines with more than specified\r\nnumber of cores."
     },
     "attributes" : [ "datatype" ],
     "id" : "35"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#excludesDestination",
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "excludesDestination"
-    },
-    "domain" : "50",
-    "attributes" : [ "someValues", "object" ],
+    "range" : "50",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "49"
   }, {
-    "range" : "52",
-    "domain" : "12",
+    "range" : "50",
+    "domain" : "52",
     "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
@@ -1653,13 +1648,13 @@
     "attributes" : [ "someValues", "object" ],
     "id" : "53"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#hasDestination",
+    "iri" : "https://w3id.org/cocoon/v1.0.1#excludesDestination",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
     "range" : "43",
     "label" : {
-      "IRI-based" : "hasDestination"
+      "IRI-based" : "excludesDestination"
     },
-    "domain" : "50",
+    "domain" : "52",
     "attributes" : [ "someValues", "object" ],
     "id" : "54"
   }, {
@@ -1668,14 +1663,19 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "55"
   }, {
-    "range" : "52",
-    "domain" : "50",
+    "range" : "12",
+    "domain" : "52",
     "attributes" : [ "object", "anonymous" ],
     "id" : "58"
   }, {
-    "range" : "12",
-    "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "https://w3id.org/cocoon/v1.0.1#hasDestination",
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasDestination"
+    },
+    "domain" : "52",
+    "attributes" : [ "someValues", "object" ],
     "id" : "59"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#ipv4",
@@ -1777,7 +1777,7 @@
     "maxCardinality" : "1",
     "domain" : "3",
     "comment" : {
-      "en" : "Google Cloud OS price for VM with different number of cores are different.\nIt is used to describe price for machines with less than or\nequal to the specified number of cores."
+      "en" : "Google Cloud OS price for VM with different number of cores are different.\r\nIt is used to describe price for machines with less than or\r\nequal to the specified number of cores."
     },
     "attributes" : [ "datatype" ],
     "id" : "89"
@@ -1978,7 +1978,7 @@
     "id" : "120"
   }, {
     "range" : "10",
-    "domain" : "50",
+    "domain" : "52",
     "attributes" : [ "object", "anonymous" ],
     "id" : "121"
   }, {
@@ -1998,7 +1998,7 @@
     "id" : "125"
   }, {
     "range" : "10",
-    "domain" : "52",
+    "domain" : "50",
     "attributes" : [ "object", "anonymous" ],
     "id" : "126"
   }, {
@@ -2063,21 +2063,6 @@
     "attributes" : [ "someValues", "object", "external" ],
     "id" : "132"
   }, {
-    "range" : "10",
-    "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "133"
-  }, {
-    "range" : "1",
-    "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "134"
-  }, {
-    "range" : "1",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "136"
-  }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#hasStorage",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
     "range" : "100",
@@ -2087,6 +2072,21 @@
     "superproperty" : [ "4" ],
     "domain" : "94",
     "attributes" : [ "someValues", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "10",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "1",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin",

@@ -216,12 +216,12 @@
 # https://w3id.org/cocoon/v1.0.1#forCoresLessEqual
 <https://w3id.org/cocoon/v1.0.1#forCoresLessEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/cocoon/v1.0.1#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://w3id.org/cocoon/v1.0.1#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\nIt is used to describe price for machines with less than or\nequal to the specified number of cores."@en .
+<https://w3id.org/cocoon/v1.0.1#forCoresLessEqual> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\r\nIt is used to describe price for machines with less than or\r\nequal to the specified number of cores."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#forCoresMoreThan
 <https://w3id.org/cocoon/v1.0.1#forCoresMoreThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/cocoon/v1.0.1#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://w3id.org/cocoon/v1.0.1#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\nThis is used to describe the price for machines with more than specified\nnumber of cores."@en .
+<https://w3id.org/cocoon/v1.0.1#forCoresMoreThan> <http://www.w3.org/2000/01/rdf-schema#comment> "Google Cloud OS price for VM with different number of cores are different.\r\nThis is used to describe the price for machines with more than specified\r\nnumber of cores."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#hasCurrencyValue
 <https://w3id.org/cocoon/v1.0.1#hasCurrencyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -363,7 +363,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid6 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> .
 _:genid6 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
 _:genid6 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid5 .
-_:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "For example on Google Cloud, Windows Server images on some machine types are charged based on the number of CPUs, i.e., n1-standard-4, n1-highcpu-4, and n1-highmem-4 are machine-types with 4 vCPUs,\nand are charged at $0.16 USD/hour (4 times $0.04 USD/hour).\n\nhttps://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gcloud/os.md#windows-server-images"@en .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "For example on Google Cloud, Windows Server images on some machine types are charged based on the number of CPUs, i.e., n1-standard-4, n1-highcpu-4, and n1-highmem-4 are machine-types with 4 vCPUs,\r\nand are charged at $0.16 USD/hour (4 times $0.04 USD/hour).\r\n\r\nhttps://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gcloud/os.md#windows-server-images"@en .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid8 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification> .
 _:genid8 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
@@ -441,7 +441,7 @@ _:genid23 <http://www.w3.org/2000/01/rdf-schema#comment> "gr:hasCurrencyValue se
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/goodrelations/v1#hasPriceSpecification> .
 _:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/goodrelations/v1#UnitPriceSpecification> .
-<https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Can be used to define a common price spec for multiple cloud service individuals,\ni.e. the storage transaction spec has a different price in a different region,\nbut there is a common transaction price spec for a group of cloud storage offers."@en .
+<https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Can be used to define a common price spec for multiple cloud service individuals,\r\ni.e. the storage transaction spec has a different price in a different region,\r\nbut there is a common transaction price spec for a group of cloud storage offers."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#ComputeService
 <https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -494,7 +494,7 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid30 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
 _:genid30 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
 _:genid30 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid29 .
-_:genid30 <http://www.w3.org/2000/01/rdf-schema#comment> "VM storage transaction price specification.\nThere is a data access fees on local disk of Azure VM.\nFor example, every single block access incurs a transaction. The default block size is 4 Megabytes, meaning uploading a 32Mb file will incur 8 Storage Transactions. Deleting the file will also incur 8 transactions, so will updating it, and any other time the file is touched. The transactions are charged at a cost of around $0.00036 USD per 10,000 transactions. So 32Mb file will cost $0.000000368 AUD.\nThe only exception to Storage Transactions is when Premium Storage (persistent SSD storage) is used. That is, when you provision a P10, P20 or a P30 disk for your Virtual Machine those disks are exempt from Storage Transactions.\n\nhttps://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azure/vm.md#storage-transactions"@en .
+_:genid30 <http://www.w3.org/2000/01/rdf-schema#comment> "VM storage transaction price specification.\r\nThere is a data access fees on local disk of Azure VM.\r\nFor example, every single block access incurs a transaction. The default block size is 4 Megabytes, meaning uploading a 32Mb file will incur 8 Storage Transactions. Deleting the file will also incur 8 transactions, so will updating it, and any other time the file is touched. The transactions are charged at a cost of around $0.00036 USD per 10,000 transactions. So 32Mb file will cost $0.000000368 AUD.\r\nThe only exception to Storage Transactions is when Premium Storage (persistent SSD storage) is used. That is, when you provision a P10, P20 or a P30 disk for your Virtual Machine those disks are exempt from Storage Transactions.\r\n\r\nhttps://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azure/vm.md#storage-transactions"@en .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid32 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
 _:genid32 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
@@ -769,7 +769,7 @@ _:genid71 <http://www.w3.org/2000/01/rdf-schema#comment> "Disks can have differe
 # https://w3id.org/cocoon/v1.0.1#SystemImage
 <https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#SaaS> .
-<https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A system image is a serialized copy of the entire state of a computer system.\nSystem images can be used for backup." .
+<https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A system image is a serialized copy of the entire state of a computer system.\r\nSystem images can be used for backup." .
 # 
 # https://w3id.org/cocoon/v1.0.1#TrafficDirection
 <https://w3id.org/cocoon/v1.0.1#TrafficDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
