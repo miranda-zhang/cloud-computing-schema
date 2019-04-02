@@ -6,12 +6,12 @@ version="1.0.1"
 previous_version="0.1"
 
 # backword slash for windows style dir, put qoutation around
-# "C:\Users\admin-u5214628\Documents\cloud-computing-schema\ontology_dev\cocoon1.0.1.ttl"
 ontFile='C:\Users\admin-u5214628\Documents\cloud-computing-schema\ontology_dev\cocoon'$version'.ttl'
 
 configFileDir="config_file/"
 configFile=$configFileDir$version
 
+sed -i '\|^dateOfRelease=.*|d' $configFile
 today=$(date +%F)
 echo "dateOfRelease=$today" >> $configFile
 
@@ -28,7 +28,9 @@ sed -i '\|^latestVersionURI=.*|d' $configFile
 echo "latestVersionURI=$ontologyNamespaceURI" >> $configFile
 
 sed -i '\|^previousVersionURI=.*|d' $configFile
-echo "previousVersionURI=https://miranda-zhang.github.io/cloud-computing-schema/v0.1/ontology/cocoon.owl" >> $configFile
+# need the owl file for changelog generation
+previousVersionURI="https://miranda-zhang.github.io/cloud-computing-schema/v$previous_version/ontology/cocoon.owl"
+echo "previousVersionURI=$previousVersionURI" >> $configFile
 
 sed -i '\|^ontologyRevisionNumber=.*|d' $configFile
 echo "ontologyRevisionNumber=$version" >> $configFile
@@ -41,7 +43,7 @@ java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile $ontFile -outFolder $f
 index="v$version/index-en.html"
 echo "Fix page:"$index
 echo "Change url to use permalink"
-sed -i 's$https://miranda-zhang.github.io/cloud-computing-schema/v0.1/ontology/cocoon.owl$https://w3id.org/cocoon/v'$previous_version'#$g' $index
+sed -i 's|'$previousVersionURI'|https://w3id.org/cocoon/v'$previous_version'|g' $index
 
 introduction="v$version/sections/introduction-en.html"
 echo "Fix page:"$introduction
