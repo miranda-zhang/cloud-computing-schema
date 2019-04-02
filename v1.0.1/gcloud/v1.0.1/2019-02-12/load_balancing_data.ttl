@@ -2,7 +2,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix iter:  <http://w3id.org/sparql-generate/iter/> .
 @prefix gr:    <http://purl.org/goodrelations/v1#> .
-@prefix cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl> .
+@prefix cocoon: <http://w3id.org/cocoon/v1.0.1#> .
 @prefix fun:   <http://w3id.org/sparql-generate/fn/> .
 
 <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/LoadBalancingData/Gcloud>

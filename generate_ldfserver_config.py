@@ -7,7 +7,7 @@ config = {
   "datasources": {}
 }
 config["datasources"][prefix]={
-    "title": "CoCoOn dataset for " + version,
+    "title": "CoCoOn "+version+" dataset",
     "type": "CompositeDatasource",
     "description": "A composite datasource for CoCoOn " + version,
     "settings": {
