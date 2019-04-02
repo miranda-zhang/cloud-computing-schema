@@ -22,7 +22,7 @@ Source code is in the [gh-page branch](https://github.com/miranda-zhang/cloud-co
 See [widoco](widoco/README.md) about documentation generation.
 
 Linked Data Fragments Server hosted on Google Cloud:
-http://35.231.131.100:5000/cocoon_v1.0
+http://35.231.131.100:5000
 (Permalink:https://w3id.org/cocoon/data)
 
 Source code is in the [ldf-server branch](https://github.com/miranda-zhang/cloud-computing-schema/tree/ldf-server).

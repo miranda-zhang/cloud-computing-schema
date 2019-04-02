@@ -3,8 +3,6 @@ https://w3id.org entry for this project:
 
 https://github.com/perma-id/w3id.org/tree/master/cocoon
 
-[How to submit pull requests](https://gist.github.com/miranda-zhang/4fd587c2a793e85667c1938eda782217#submitting-a-pull-request)
-
 # Issues with w3id
 https://github.com/perma-id/w3id.org/issues/1063
 
@@ -21,3 +19,9 @@ https://github.com/perma-id/w3id.org/issues/1063
     service apache2 reload
 
 Test local url, like http://localhost/cocoon/v1.0.1
+
+# Pulish change
+[How to submit pull requests](https://gist.github.com/miranda-zhang/4fd587c2a793e85667c1938eda782217#submitting-a-pull-request)
+
+    git fetch upstream
+    git merge upstream/master
