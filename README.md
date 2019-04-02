@@ -4,28 +4,22 @@ The development version of the ontology is in [ontology_dev](ontology_dev/) fold
 We have also registerd an entry at http://prefix.cc
 
 # Permalink with w3id
-https://w3id.org/cocoon/v1.0
+https://w3id.org/cocoon/v1.0.1
 
 Prefered to be used as:
 
-    @prefix cocoon: <https://w3id.org/cocoon/v1.0#>
-
-https://w3id.org entry for this project:
-
-https://github.com/perma-id/w3id.org/tree/master/cocoon
-
-[How to submit pull requests](https://gist.github.com/miranda-zhang/4fd587c2a793e85667c1938eda782217#submitting-a-pull-request)
+    @prefix cocoon: <https://w3id.org/cocoon/v1.0.1#>
 
 Some example data published at: https://w3id.org/cocoon/data
 
 Old Version https://w3id.org/cocoon/v0.1
 
-## Issues with w3id
-https://github.com/perma-id/w3id.org/issues/1063
+[Notes on deployment to w3id.](w3id.md)
 
 # Sites
 The documentation site is hosted via Github page.
 Source code is in the [gh-page branch](https://github.com/miranda-zhang/cloud-computing-schema/tree/gh-pages).
+See [widoco](widoco/README.md) about documentation generation.
 
 Linked Data Fragments Server hosted on Google Cloud:
 http://35.231.131.100:5000/cocoon_v1.0
