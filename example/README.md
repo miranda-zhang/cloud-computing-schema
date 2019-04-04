@@ -36,7 +36,7 @@ So we used vocabularies from QUDT in our schema, and used available CDT units in
 Used http://cloudharmony.com to collect data, details explained in [cloudharmony](cloudharmony/README.md).
 
 # SPARQL
-Tested with Protégé.
+Queries can be tested with Protégé.
 Default Example:
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

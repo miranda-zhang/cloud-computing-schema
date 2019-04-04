@@ -324,7 +324,8 @@ Egress to Google products (such as YouTube, Maps, Drive), whether from a VM in G
 
 ###  https://w3id.org/cocoon/v1.0.1#state
 cocoon:state rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty .
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:comment """State Abbreviations can be described using this property, like Azure/us-west region is in CA"""@en .
 
 
 #################################################################

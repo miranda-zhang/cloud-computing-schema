@@ -16,7 +16,7 @@ http://qudt.org/1.1/schema/OSG_quantity-(v1.1).ttl
 
 
 ## Relevant Vocabularies
-Individuals
+
 ```
 unit:Kilo
       rdf:type qudt:DecimalPrefixUnit ;
@@ -45,17 +45,7 @@ unit:Giga
               "0.0"^^xsd:double ;
       qudt:symbol "G"^^xsd:string ;
       skos:exactMatch <http://dbpedia.org/resource/Giga-> .
-unit:Hour
-      rdf:type qudt:UsedWithSIUnit , qudt:TimeUnit ;
-      rdfs:label "Hour"^^xsd:string ;
-      qudt:abbreviation "hr"^^xsd:string ;
-      qudt:code "0830"^^xsd:string ;
-      qudt:conversionMultiplier
-              "3600.0"^^xsd:double ;
-      qudt:conversionOffset
-              "0.0"^^xsd:double ;
-      qudt:symbol "hr"^^xsd:string ;
-      skos:exactMatch <http://dbpedia.org/resource/Hour> .
+
 unit:Day
       rdf:type qudt:TimeUnit , qudt:UsedWithSIUnit ;
       rdfs:label "Day"^^xsd:string ;
@@ -119,6 +109,18 @@ Properties:
 2. qudt:numericValue
 3. qudt:unit
 
+## Hour
+   unit:Hour
+         rdf:type qudt:UsedWithSIUnit , qudt:TimeUnit ;
+         rdfs:label "Hour"^^xsd:string ;
+         qudt:abbreviation "hr"^^xsd:string ;
+         qudt:code "0830"^^xsd:string ;
+         qudt:conversionMultiplier
+                 "3600.0"^^xsd:double ;
+         qudt:conversionOffset
+                 "0.0"^^xsd:double ;
+         qudt:symbol "hr"^^xsd:string ;
+         skos:exactMatch <http://dbpedia.org/resource/Hour> .
 
 # Release 2.0
 Although there is QUDT second release, but we find that version 1.1 fits our needs better, also there are too many 2.0 Vocabularies are in progress like http://qudt.org/2.0/vocab/quantitykind/communications and http://qudt.org/2.0/schema/qudt/engineering, which could be what we meed.

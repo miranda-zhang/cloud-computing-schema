@@ -16,7 +16,7 @@ https://github.com/perma-id/w3id.org/issues/1063
     cp /mnt/c/Users/admin-u5214628/Documents/w3id.org/cocoon/.htaccess .
     
     service apache2 status
-    service apache2 restart
+    service apache2 start
     service apache2 reload
 
 Urls should be test with `curl` command to avoid caching interference, or 
@@ -25,6 +25,7 @@ Chrome "Incognito mode" (**Ctl+Shift+N**).
 1. http://localhost/cocoon/v1.0.1
 2. http://localhost/cocoon/data/v1.0.1
 3. http://localhost/cocoon/data/v1.0.1/2019-03-07/CloudStorageTransactionsPriceSpecification/Azure/managed_disk/transactions-ssd
+4. http://localhost/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A14%3A19.932Z/australia-southeast1
 
 ## Debug
 1. https://serverfault.com/questions/96421/why-does-my-rewritelog-not-work/96435
