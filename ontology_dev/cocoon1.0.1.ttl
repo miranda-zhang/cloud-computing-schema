@@ -349,11 +349,6 @@ qudt:DataRateUnit rdf:type owl:Class .
 qudt:InformationEntropyUnit rdf:type owl:Class .
 
 
-###  http://qudt.org/schema/qudt#Unit
-qudt:Unit rdf:type owl:Class ;
-          owl:equivalentClass cocoon:UnitOfMeasure .
-
-
 ###  http://www.geonames.org/ontology#Feature
 gn:Feature rdf:type owl:Class .
 
@@ -362,23 +357,9 @@ gn:Feature rdf:type owl:Class .
 sosa:FeatureOfInterest rdf:type owl:Class .
 
 
-###  http://www.w3.org/ns/sosa/Observation
-sosa:Observation rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/sosa/Sensor
-sosa:Sensor rdf:type owl:Class ;
-            owl:equivalentClass cocoon:Device .
-
-
 ###  http://www.w3.org/ns/ssn/systems/Latency
 ssn-system:Latency rdf:type owl:Class ;
                    rdfs:subClassOf cocoon:QuanlityOfService .
-
-
-###  http://www.w3.org/ns/ssn/systems/SystemProperty
-ssn-system:SystemProperty rdf:type owl:Class ;
-                          owl:equivalentClass cocoon:QuanlityOfService .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -746,6 +727,8 @@ cocoon:Database rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#Device
 cocoon:Device rdf:type owl:Class ;
+              owl:equivalentClass sosa:Sensor;
+              rdfs:comment "This is an equivalent class to sosa:Sensor."@en ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:inPhysicalLocation ;
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -857,7 +840,7 @@ cocoon:Location rdf:type owl:Class ;
 ###  https://w3id.org/cocoon/v1.0.1#Measurement
 cocoon:Measurement rdf:type owl:Class ;
                    owl:equivalentClass sosa:Observation ;
-                   rdfs:comment "QoS stats can be stored as Measurements"@en .
+                   rdfs:comment "QoS stats can be stored as Measurements. This is an equivalent class to sosa:Observation."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#NetworkService
@@ -879,7 +862,9 @@ cocoon:PaaS rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#QuanlityOfService
 cocoon:QuanlityOfService rdf:type owl:Class ;
-                         rdfs:comment "We defined this class as it is more understandable as QoS in our context, and we can group related classed under this base class."@en .
+                         owl:equivalentClass ssn-system:SystemProperty;
+                         rdfs:comment """This is an equivalent class to ssn-system:SystemProperty.
+QoS is more understandable in our context, and we can group related classed under this base class."""@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#Region
@@ -1039,7 +1024,8 @@ cocoon:TrafficDirection rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#UnitOfMeasure
 cocoon:UnitOfMeasure rdf:type owl:Class ;
-                     rdfs:comment "Defines custome units."@en .
+                     owl:equivalentClass qudt:Unit;
+                     rdfs:comment "Defines custome units. This is an equivalent class to qudt:Unit."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#UplinkSpeed
