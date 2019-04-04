@@ -34,7 +34,7 @@ Run jq query on [data](#collect-data)
 ```
 See live https://jqplay.org/s/ZdLvSR_Fyj
 
-[Cached Result.](../../jq/azure/downlink_latency.json)
+[Cached Result.](../../jq/azure/cloudharmony/downlink_latency.json)
 
 # SPARQL-Generate
 ```
@@ -42,7 +42,7 @@ java -jar sparql-generate-jena.jar --output result/azure/downlink_latency.ttl --
 ```
 Query: [downlink_latency.rqg](../../sparql-generate/azure/v1.0.1/downlink_latency.rqg)
 
-Result: [downlink_latency.ttl](../../sparql-generate/result/azure/downlink_latency.ttl)
+Result: [downlink_latency.ttl](../../sparql-generate/result/azure/v1.0.1/downlink_latency.ttl)
 
 # Uplink Data
 See [selenium](../selenium) about how to collect the data.
@@ -51,4 +51,4 @@ java -jar sparql-generate-jena.jar --output result/azure/uplink.ttl --query-file
 ```
 Query: [uplink.rqg](../../sparql-generate/azure/uplink.rqg)
 
-Result: [downlink_latency.ttl](../../sparql-generate/result/azure/uplink.ttl)
+Result: [downlink_latency.ttl](../../sparql-generate/result/azure/v1.0.1/uplink.ttl)

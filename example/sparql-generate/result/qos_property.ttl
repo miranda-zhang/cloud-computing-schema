@@ -19,7 +19,7 @@
     schema:unitCode "2P".
 
 <10240-KB> a schema:TypeAndQuantityNode;
-    schema:amountOfThisGood "256"^^xsd:interger;
+    schema:amountOfThisGood "10240"^^xsd:interger;
     schema:unitText "KB";
     schema:unitCode "2P".
 
