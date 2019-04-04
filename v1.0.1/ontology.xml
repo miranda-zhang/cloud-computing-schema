@@ -1164,6 +1164,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This is an equivalent class to sosa:Sensor.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/cocoon/v1.0.1#Device"/>
@@ -1322,7 +1323,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
 
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#Measurement">
-        <rdfs:comment xml:lang="en">QoS stats can be stored as Measurements</rdfs:comment>
+        <rdfs:comment xml:lang="en">QoS stats can be stored as Measurements. This is an equivalent class to sosa:Observation.</rdfs:comment>
     </owl:Class>
     
 
@@ -1360,7 +1361,8 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
 
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#QuanlityOfService">
-        <rdfs:comment xml:lang="en">We defined this class as it is more understandable as QoS in our context, and we can group related classed under this base class.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is an equivalent class to ssn-system:SystemProperty.
+QoS is more understandable in our context, and we can group related classed under this base class.</rdfs:comment>
     </owl:Class>
     
 
@@ -1581,7 +1583,7 @@ System images can be used for backup.</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#UnitOfMeasure">
-        <rdfs:comment xml:lang="en">Defines custome units.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Defines custome units. This is an equivalent class to qudt:Unit.</rdfs:comment>
     </owl:Class>
     
 

@@ -1264,6 +1264,10 @@
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an equivalent class to sosa:Sensor."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid41"
   }, {
@@ -1435,7 +1439,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "QoS stats can be stored as Measurements"
+    "@value" : "QoS stats can be stored as Measurements. This is an equivalent class to sosa:Observation."
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour",
@@ -1506,7 +1510,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "We defined this class as it is more understandable as QoS in our context, and we can group related classed under this base class."
+    "@value" : "This is an equivalent class to ssn-system:SystemProperty.\r\nQoS is more understandable in our context, and we can group related classed under this base class."
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#Region",
@@ -1596,7 +1600,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Defines custome units."
+    "@value" : "Defines custome units. This is an equivalent class to qudt:Unit."
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#UplinkSpeed",

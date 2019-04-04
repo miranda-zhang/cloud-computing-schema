@@ -566,6 +566,7 @@ _:genid41 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/v1.0.
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#ipv4> .
 _:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/v1.0.1#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an equivalent class to sosa:Sensor."@en .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid42 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#Device> .
 _:genid42 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
@@ -649,7 +650,7 @@ _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/cocoon/v1.0.1#Measurement
 <https://w3id.org/cocoon/v1.0.1#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cocoon/v1.0.1#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "QoS stats can be stored as Measurements"@en .
+<https://w3id.org/cocoon/v1.0.1#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "QoS stats can be stored as Measurements. This is an equivalent class to sosa:Observation."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#NetworkService
 <https://w3id.org/cocoon/v1.0.1#NetworkService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -667,7 +668,7 @@ _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/cocoon/v1.0.1#QuanlityOfService
 <https://w3id.org/cocoon/v1.0.1#QuanlityOfService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cocoon/v1.0.1#QuanlityOfService> <http://www.w3.org/2000/01/rdf-schema#comment> "We defined this class as it is more understandable as QoS in our context, and we can group related classed under this base class."@en .
+<https://w3id.org/cocoon/v1.0.1#QuanlityOfService> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an equivalent class to ssn-system:SystemProperty.\r\nQoS is more understandable in our context, and we can group related classed under this base class."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#Region
 <https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -792,7 +793,7 @@ _:genid71 <http://www.w3.org/2000/01/rdf-schema#comment> "Disks can have differe
 # 
 # https://w3id.org/cocoon/v1.0.1#UnitOfMeasure
 <https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines custome units."@en .
+<https://w3id.org/cocoon/v1.0.1#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines custome units. This is an equivalent class to qudt:Unit."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#UplinkSpeed
 <https://w3id.org/cocoon/v1.0.1#UplinkSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
