@@ -77,15 +77,15 @@ References:
 2. [Check disk space ubuntu](https://askubuntu.com/questions/432836/how-can-i-check-disk-space-used-in-a-partition-using-the-terminal-in-ubuntu-12-0/432842)
 3. [Tee](https://stackoverflow.com/questions/84882/sudo-echo-something-etc-privilegedfile-doesnt-work)
 
-
-    free -h
-    sudo swapon --show
-    df -Th
-    sudo fallocate -l 1G /swapfile
-    sudo chmod 600 /swapfile
-    sudo mkswap /swapfile
-    sudo nano /etc/fstab
-
+```bash
+ free -h
+ sudo swapon --show
+ df -Th
+ sudo fallocate -l 1G /swapfile
+ sudo chmod 600 /swapfile
+ sudo mkswap /swapfile
+ sudo nano /etc/fstab
+```
 Add `/swapfile swap swap defaults 0 0`
 
     sudo swapon --show
