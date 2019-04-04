@@ -296,7 +296,9 @@
     <!-- https://w3id.org/cocoon/v1.0.1#hasDirection -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasDirection"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasDirection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -539,14 +541,23 @@ number of cores.</rdfs:comment>
     <!-- https://w3id.org/cocoon/v1.0.1#specialRateType -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#specialRateType"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#specialRateType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment xml:lang="en">Some examples of spetial rates from Google:
+Egress between zones in the same region (per GB) is 0.01.
+Egress between regions within the US (per GB) is 0.01.
+Egress to Google products (such as YouTube, Maps, Drive), whether from a VM in GCP with an external IP address or an internal IP address is no charge.</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0.1#state -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#state"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#state">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment xml:lang="en">State Abbreviations can be described using this property, like Azure/us-west region is in CA</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -1310,7 +1321,9 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
     <!-- https://w3id.org/cocoon/v1.0.1#Measurement -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#Measurement"/>
+    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#Measurement">
+        <rdfs:comment xml:lang="en">QoS stats can be stored as Measurements</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1346,7 +1359,9 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
     <!-- https://w3id.org/cocoon/v1.0.1#QuanlityOfService -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#QuanlityOfService"/>
+    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#QuanlityOfService">
+        <rdfs:comment xml:lang="en">We defined this class as it is more understandable as QoS in our context, and we can group related classed under this base class.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1556,7 +1571,9 @@ System images can be used for backup.</rdfs:comment>
     <!-- https://w3id.org/cocoon/v1.0.1#TrafficDirection -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#TrafficDirection"/>
+    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#TrafficDirection">
+        <rdfs:comment xml:lang="en">Directions of internet data tranfer, or load balancing data. Can be either Ingress or Egress.</rdfs:comment>
+    </owl:Class>
     
 
 

@@ -1432,7 +1432,11 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#Measurement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "QoS stats can be stored as Measurements"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#MegabitsPerSecondPerHour",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://qudt.org/schema/qudt#DataRateUnit", "https://w3id.org/cocoon/v1.0.1#UnitOfMeasure" ],
@@ -1499,7 +1503,11 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#QuanlityOfService",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "We defined this class as it is more understandable as QoS in our context, and we can group related classed under this base class."
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#Region",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1578,7 +1586,11 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#TrafficDirection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Directions of internet data tranfer, or load balancing data. Can be either Ingress or Egress."
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#UnitOfMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1697,7 +1709,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#hasDirection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1796,10 +1811,24 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#specialRateType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Some examples of spetial rates from Google:\r\nEgress between zones in the same region (per GB) is 0.01.\r\nEgress between regions within the US (per GB) is 0.01.\r\nEgress to Google products (such as YouTube, Maps, Drive), whether from a VM in GCP with an external IP address or an internal IP address is no charge."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#state",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State Abbreviations can be described using this property, like Azure/us-west region is in CA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],

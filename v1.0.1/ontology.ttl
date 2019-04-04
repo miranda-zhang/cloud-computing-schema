@@ -178,7 +178,8 @@ cocoon:hasDestination rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasDirection
-cocoon:hasDirection rdf:type owl:ObjectProperty .
+cocoon:hasDirection rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk
@@ -314,11 +315,18 @@ cocoon:numberOfCores rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#specialRateType
-cocoon:specialRateType rdf:type owl:DatatypeProperty .
+cocoon:specialRateType rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:comment """Some examples of spetial rates from Google:
+Egress between zones in the same region (per GB) is 0.01.
+Egress between regions within the US (per GB) is 0.01.
+Egress to Google products (such as YouTube, Maps, Drive), whether from a VM in GCP with an external IP address or an internal IP address is no charge."""@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#state
-cocoon:state rdf:type owl:DatatypeProperty .
+cocoon:state rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:comment """State Abbreviations can be described using this property, like Azure/us-west region is in CA"""@en .
 
 
 #################################################################
@@ -355,8 +363,7 @@ sosa:FeatureOfInterest rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/sosa/Observation
-sosa:Observation rdf:type owl:Class ;
-                 owl:equivalentClass cocoon:Measurement .
+sosa:Observation rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/sosa/Sensor
@@ -848,7 +855,9 @@ cocoon:Location rdf:type owl:Class ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#Measurement
-cocoon:Measurement rdf:type owl:Class .
+cocoon:Measurement rdf:type owl:Class ;
+                   owl:equivalentClass sosa:Observation ;
+                   rdfs:comment "QoS stats can be stored as Measurements"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#NetworkService
@@ -869,7 +878,8 @@ cocoon:PaaS rdf:type owl:Class ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#QuanlityOfService
-cocoon:QuanlityOfService rdf:type owl:Class .
+cocoon:QuanlityOfService rdf:type owl:Class ;
+                         rdfs:comment "We defined this class as it is more understandable as QoS in our context, and we can group related classed under this base class."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#Region
@@ -1023,7 +1033,8 @@ System images can be used for backup.""" .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#TrafficDirection
-cocoon:TrafficDirection rdf:type owl:Class .
+cocoon:TrafficDirection rdf:type owl:Class ;
+                        rdfs:comment "Directions of internet data tranfer, or load balancing data. Can be either Ingress or Egress."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#UnitOfMeasure
