@@ -178,7 +178,8 @@ cocoon:hasDestination rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasDirection
-cocoon:hasDirection rdf:type owl:ObjectProperty .
+cocoon:hasDirection rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk
@@ -855,7 +856,8 @@ cocoon:Location rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#Measurement
 cocoon:Measurement rdf:type owl:Class ;
-                   owl:equivalentClass sosa:Observation .
+                   owl:equivalentClass sosa:Observation ;
+                   rdfs:comment "QoS stats can be stored as Measurements"@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#NetworkService
@@ -1031,7 +1033,8 @@ System images can be used for backup.""" .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#TrafficDirection
-cocoon:TrafficDirection rdf:type owl:Class .
+cocoon:TrafficDirection rdf:type owl:Class ;
+                        rdfs:comment "Directions of internet data tranfer, or load balancing data. Can be either Ingress or Egress."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#UnitOfMeasure

@@ -67,15 +67,15 @@ Result:
 2. 2019-03-07: [file](../jq/azure/2019-03-07/managed-disks.json), https://jqplay.org/s/bMReXuJv-h
 
 # Storage Prices
-v1.0.0 2018-03-02:
-[Query](../sparql-generate/azure/v1.0.0/managed-disks.rqg)
+CoCoOn v1.0.0 2018-03-02:
+[Query](../sparql-generate/azure/v1.0.0/managed-disks.rqg) ->
 [Result](../sparql-generate/result/azure/v1.0.0/managed-disks.ttl)
 ```
 java -jar sparql-generate-jena.jar --output result/azure/v1.0.0/managed-disks.ttl --query-file azure/v1.0.0/managed-disks.rqg --log-level ERROR
 ```
 
-v1.0.1 2019-03-07:
-[Query](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disks.rqg)
+CoCoOn v1.0.1 2019-03-07:
+[Query](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disks.rqg) ->
 [Result](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disks.ttl)
 ```
 java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disks.rqg --output result/azure/v1.0.1/2019-03-07/managed-disks.ttl --log-level ERROR

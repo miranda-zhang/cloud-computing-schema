@@ -1,7 +1,7 @@
 # Google Platform Network QoS
 43 services: http://cloudharmony.com/speedtest-for-google
 
-# Collect Data
+# Collect Data for Downlink Speed and Latency
 Download [test.html](test.html) [speedtest-googlecompute.js](speedtest-googlecompute.js) 
 
 View test.html in browser, a live demo is also [available here](https://miranda-zhang.github.io/cloud-computing-schema/cloudharmony/google/test.html).
