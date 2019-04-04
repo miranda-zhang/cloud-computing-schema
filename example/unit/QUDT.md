@@ -79,23 +79,6 @@ unit:Byte
               "0.0"^^xsd:double ;
       qudt:symbol "B"^^xsd:string ;
       skos:exactMatch <http://dbpedia.org/resource/Byte> .
-unit:MilliSecond
-      rdf:type qudt:DerivedUnit , qudt:TimeUnit ;
-      rdfs:label "Millisecond"^^xsd:string ;
-      qudt:abbreviation "ms"^^xsd:string ;
-      qudt:code "1616"^^xsd:string ;
-      qudt:conversionMultiplier
-              "0.001"^^xsd:double ;
-      qudt:conversionOffset
-              "0.0"^^xsd:double ;
-      qudt:symbol "ms"^^xsd:string ;
-      skos:exactMatch <http://dbpedia.org/resource/Millisecond> .
-unit:MegabitsPerSecond
-      rdf:type qudt:DerivedUnit , qudt:DataRateUnit ;
-      rdfs:label "Megabit per Second"^^xsd:string ;
-      qudt:abbreviation "mbps"^^xsd:string ;
-      qudt:code "3015"^^xsd:string ;
-      qudt:symbol "mbps"^^xsd:string .
 ```
 Classes:
 1. qudt:Unit
@@ -110,17 +93,43 @@ Properties:
 3. qudt:unit
 
 ## Hour
-   unit:Hour
-         rdf:type qudt:UsedWithSIUnit , qudt:TimeUnit ;
-         rdfs:label "Hour"^^xsd:string ;
-         qudt:abbreviation "hr"^^xsd:string ;
-         qudt:code "0830"^^xsd:string ;
-         qudt:conversionMultiplier
-                 "3600.0"^^xsd:double ;
-         qudt:conversionOffset
-                 "0.0"^^xsd:double ;
-         qudt:symbol "hr"^^xsd:string ;
-         skos:exactMatch <http://dbpedia.org/resource/Hour> .
+```
+unit:Hour
+      rdf:type qudt:UsedWithSIUnit , qudt:TimeUnit ;
+      rdfs:label "Hour"^^xsd:string ;
+      qudt:abbreviation "hr"^^xsd:string ;
+      qudt:code "0830"^^xsd:string ;
+      qudt:conversionMultiplier
+              "3600.0"^^xsd:double ;
+      qudt:conversionOffset
+              "0.0"^^xsd:double ;
+      qudt:symbol "hr"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Hour> .
+```
 
+## MegabitsPerSecond
+```
+unit:MegabitsPerSecond
+      rdf:type qudt:DerivedUnit , qudt:DataRateUnit ;
+      rdfs:label "Megabit per Second"^^xsd:string ;
+      qudt:abbreviation "mbps"^^xsd:string ;
+      qudt:code "3015"^^xsd:string ;
+      qudt:symbol "mbps"^^xsd:string .
+```
+
+## MilliSecond
+```
+unit:MilliSecond
+      rdf:type qudt:DerivedUnit , qudt:TimeUnit ;
+      rdfs:label "Millisecond"^^xsd:string ;
+      qudt:abbreviation "ms"^^xsd:string ;
+      qudt:code "1616"^^xsd:string ;
+      qudt:conversionMultiplier
+              "0.001"^^xsd:double ;
+      qudt:conversionOffset
+              "0.0"^^xsd:double ;
+      qudt:symbol "ms"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Millisecond> .
+```
 # Release 2.0
 Although there is QUDT second release, but we find that version 1.1 fits our needs better, also there are too many 2.0 Vocabularies are in progress like http://qudt.org/2.0/vocab/quantitykind/communications and http://qudt.org/2.0/schema/qudt/engineering, which could be what we meed.

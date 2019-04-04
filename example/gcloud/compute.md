@@ -48,7 +48,7 @@ v1.41 https://jqplay.org/s/8bvhcfLZV4 [Cached result](../jq/gcloud/v1.41/vm.json
 
 ## Mapping to ontology
 v1.0.1 2019-02-12:
-[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/compute.rqg)
+[Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/compute.rqg) ->
 [Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/compute.ttl)
 ```
 java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/compute.rqg --output result/gcloud/v1.0.1/2019-02-12/compute.ttl  --log-level ERROR 
