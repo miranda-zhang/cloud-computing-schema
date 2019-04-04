@@ -83,7 +83,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Region can either be associated with price or a type of service. So hasRegion can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service."
+    "@value" : "Region can either be associated with price or a type of service. So Region can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service."
   } ],
   "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
@@ -1621,7 +1621,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#city",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#continent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -1634,7 +1637,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#excludesDestination",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#forCoresLessEqual",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -1657,10 +1663,16 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#forUsageLessEqual",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#forUsageMoreThan",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#hasCPUcapacity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1673,10 +1685,16 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#hasCurrencyValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#hasDestination",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#hasDirection",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
@@ -1700,12 +1718,6 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#hasProvider",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://w3id.org/cocoon/v1.0.1#hasRegion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -1754,16 +1766,28 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#inRegion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#inUse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#inZone",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#ipv4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#numberOfCores",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -1778,8 +1802,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
 } ]

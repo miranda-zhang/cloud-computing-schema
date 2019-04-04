@@ -116,12 +116,15 @@
 # 
 # https://w3id.org/cocoon/v1.0.1#excludesDestination
 <https://w3id.org/cocoon/v1.0.1#excludesDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#excludesDestination> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#forUsageLessEqual
 <https://w3id.org/cocoon/v1.0.1#forUsageLessEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#forUsageLessEqual> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#forUsageMoreThan
 <https://w3id.org/cocoon/v1.0.1#forUsageMoreThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#forUsageMoreThan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#hasCPUcapacity
 <https://w3id.org/cocoon/v1.0.1#hasCPUcapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -130,6 +133,7 @@
 # 
 # https://w3id.org/cocoon/v1.0.1#hasDestination
 <https://w3id.org/cocoon/v1.0.1#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasDestination> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#hasDirection
 <https://w3id.org/cocoon/v1.0.1#hasDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -149,10 +153,6 @@
 # https://w3id.org/cocoon/v1.0.1#hasProvider
 <https://w3id.org/cocoon/v1.0.1#hasProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/cocoon/v1.0.1#hasProvider> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-# 
-# https://w3id.org/cocoon/v1.0.1#hasRegion
-<https://w3id.org/cocoon/v1.0.1#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cocoon/v1.0.1#hasRegion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#hasServiceLevelAgreement
 <https://w3id.org/cocoon/v1.0.1#hasServiceLevelAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -184,12 +184,15 @@
 # 
 # https://w3id.org/cocoon/v1.0.1#inRegion
 <https://w3id.org/cocoon/v1.0.1#inRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#inRegion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax
 <https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin
 <https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # 
 # 
@@ -207,6 +210,7 @@
 # 
 # https://w3id.org/cocoon/v1.0.1#city
 <https://w3id.org/cocoon/v1.0.1#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#city> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#continent
 <https://w3id.org/cocoon/v1.0.1#continent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -225,15 +229,19 @@
 # 
 # https://w3id.org/cocoon/v1.0.1#hasCurrencyValue
 <https://w3id.org/cocoon/v1.0.1#hasCurrencyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#inUse
 <https://w3id.org/cocoon/v1.0.1#inUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#inUse> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#inZone
 <https://w3id.org/cocoon/v1.0.1#inZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#inZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#ipv4
 <https://w3id.org/cocoon/v1.0.1#ipv4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/v1.0.1#ipv4> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#numberOfCores
 <https://w3id.org/cocoon/v1.0.1#numberOfCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -401,7 +409,7 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid15 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudService> .
 _:genid15 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
 _:genid15 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid14 .
-_:genid15 <http://www.w3.org/2000/01/rdf-schema#comment> "Region can either be associated with price or a type of service. So hasRegion can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service."@en .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#comment> "Region can either be associated with price or a type of service. So Region can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification
 <https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -7,6 +7,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -14,7 +15,6 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
-@prefix qudt: <http://qudt.org/schema/qudt#> .
 @base <https://w3id.org/cocoon/v1.0.1> .
 
 <https://w3id.org/cocoon/v1.0.1> rdf:type owl:Ontology ;
@@ -152,15 +152,18 @@ cocoon:canHaveSnapshot rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#excludesDestination
-cocoon:excludesDestination rdf:type owl:ObjectProperty .
+cocoon:excludesDestination rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#forUsageLessEqual
-cocoon:forUsageLessEqual rdf:type owl:ObjectProperty .
+cocoon:forUsageLessEqual rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#forUsageMoreThan
-cocoon:forUsageMoreThan rdf:type owl:ObjectProperty .
+cocoon:forUsageMoreThan rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasCPUcapacity
@@ -170,7 +173,8 @@ cocoon:hasCPUcapacity rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasDestination
-cocoon:hasDestination rdf:type owl:ObjectProperty .
+cocoon:hasDestination rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasDirection
@@ -195,11 +199,6 @@ cocoon:hasMemory rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/cocoon/v1.0.1#hasProvider
 cocoon:hasProvider rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty .
-
-
-###  https://w3id.org/cocoon/v1.0.1#hasRegion
-cocoon:hasRegion rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasServiceLevelAgreement
@@ -238,15 +237,18 @@ cocoon:inPhysicalLocation rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#inRegion
-cocoon:inRegion rdf:type owl:ObjectProperty .
+cocoon:inRegion rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax
-cocoon:transferedFileSizeMax rdf:type owl:ObjectProperty .
+cocoon:transferedFileSizeMax rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin
-cocoon:transferedFileSizeMin rdf:type owl:ObjectProperty .
+cocoon:transferedFileSizeMin rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty .
 
 
 #################################################################
@@ -260,7 +262,8 @@ cocoon:chargedPerCore rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#city
-cocoon:city rdf:type owl:DatatypeProperty .
+cocoon:city rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#continent
@@ -286,19 +289,23 @@ number of cores."""@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasCurrencyValue
-cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty .
+cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#inUse
-cocoon:inUse rdf:type owl:DatatypeProperty .
+cocoon:inUse rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#inZone
-cocoon:inZone rdf:type owl:DatatypeProperty .
+cocoon:inZone rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#ipv4
-cocoon:ipv4 rdf:type owl:DatatypeProperty .
+cocoon:ipv4 rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#numberOfCores
@@ -326,6 +333,19 @@ gr:BusinessEntity rdf:type owl:Class .
 gr:UnitPriceSpecification rdf:type owl:Class .
 
 
+###  http://qudt.org/schema/qudt#DataRateUnit
+qudt:DataRateUnit rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt#InformationEntropyUnit
+qudt:InformationEntropyUnit rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt#Unit
+qudt:Unit rdf:type owl:Class ;
+          owl:equivalentClass cocoon:UnitOfMeasure .
+
+
 ###  http://www.geonames.org/ontology#Feature
 gn:Feature rdf:type owl:Class .
 
@@ -347,6 +367,11 @@ sosa:Sensor rdf:type owl:Class ;
 ###  http://www.w3.org/ns/ssn/systems/Latency
 ssn-system:Latency rdf:type owl:Class ;
                    rdfs:subClassOf cocoon:QuanlityOfService .
+
+
+###  http://www.w3.org/ns/ssn/systems/SystemProperty
+ssn-system:SystemProperty rdf:type owl:Class ;
+                          owl:equivalentClass cocoon:QuanlityOfService .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -503,7 +528,7 @@ cocoon:CloudService rdf:type owl:Class ;
                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onClass cocoon:Region
                        ] ;
-   rdfs:comment "Region can either be associated with price or a type of service. So hasRegion can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service."@en
+   rdfs:comment "Region can either be associated with price or a type of service. So Region can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service."@en
  ] .
 
 
@@ -844,8 +869,8 @@ cocoon:PaaS rdf:type owl:Class ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#QuanlityOfService
-cocoon:QuanlityOfService rdf:type owl:Class;
-                         owl:equivalentClass ssn-system:SystemProperty.
+cocoon:QuanlityOfService rdf:type owl:Class .
+
 
 ###  https://w3id.org/cocoon/v1.0.1#Region
 cocoon:Region rdf:type owl:Class ;
@@ -1003,8 +1028,7 @@ cocoon:TrafficDirection rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0.1#UnitOfMeasure
 cocoon:UnitOfMeasure rdf:type owl:Class ;
-                     rdfs:comment "Defines custome units."@en ;
-                     owl:equivalentClass qudt:Unit .
+                     rdfs:comment "Defines custome units."@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#UplinkSpeed
@@ -1117,24 +1141,24 @@ cocoon:VcpuPerHour rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/cocoon/v1.0.1#1TB
-cocoon:1TB rdf:type owl:NamedIndividual ,
-                    schema:TypeAndQuantityNode ;
-           schema:amountOfThisGood "1024"^^xsd:nonNegativeInteger ;
-           schema:unitCode cocoon:GB .
+<https://w3id.org/cocoon/v1.0.1#1TB> rdf:type owl:NamedIndividual ,
+                                              schema:TypeAndQuantityNode ;
+                                     schema:amountOfThisGood "1024"^^xsd:nonNegativeInteger ;
+                                     schema:unitCode cocoon:GB .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#10TB
-cocoon:10TB rdf:type owl:NamedIndividual ,
-                     schema:TypeAndQuantityNode ;
-            schema:amountOfThisGood "10240"^^xsd:nonNegativeInteger ;
-            schema:unitCode cocoon:GB .
+<https://w3id.org/cocoon/v1.0.1#10TB> rdf:type owl:NamedIndividual ,
+                                               schema:TypeAndQuantityNode ;
+                                      schema:amountOfThisGood "10240"^^xsd:nonNegativeInteger ;
+                                      schema:unitCode cocoon:GB .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#90TB
-cocoon:90TB rdf:type owl:NamedIndividual ,
-                     schema:TypeAndQuantityNode ;
-            schema:amountOfThisGood "92160"^^xsd:nonNegativeInteger ;
-            schema:unitCode cocoon:GB .
+<https://w3id.org/cocoon/v1.0.1#90TB> rdf:type owl:NamedIndividual ,
+                                               schema:TypeAndQuantityNode ;
+                                      schema:amountOfThisGood "92160"^^xsd:nonNegativeInteger ;
+                                      schema:unitCode cocoon:GB .
 
 
 #################################################################

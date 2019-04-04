@@ -250,21 +250,27 @@
     <!-- https://w3id.org/cocoon/v1.0.1#excludesDestination -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#excludesDestination"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#excludesDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0.1#forUsageLessEqual -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#forUsageLessEqual"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#forUsageLessEqual">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0.1#forUsageMoreThan -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#forUsageMoreThan"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#forUsageMoreThan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -281,7 +287,9 @@
     <!-- https://w3id.org/cocoon/v1.0.1#hasDestination -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasDestination"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -323,15 +331,6 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasProvider">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/cocoon/v1.0.1#hasRegion -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasRegion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -403,21 +402,27 @@
     <!-- https://w3id.org/cocoon/v1.0.1#inRegion -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#inRegion"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#inRegion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -446,7 +451,9 @@
     <!-- https://w3id.org/cocoon/v1.0.1#city -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#city"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#city">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -487,28 +494,36 @@ number of cores.</rdfs:comment>
     <!-- https://w3id.org/cocoon/v1.0.1#hasCurrencyValue -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasCurrencyValue"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasCurrencyValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0.1#inUse -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#inUse"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#inUse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0.1#inZone -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#inZone"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#inZone">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/cocoon/v1.0.1#ipv4 -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#ipv4"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cocoon/v1.0.1#ipv4">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -844,7 +859,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gclo
                 <owl:onClass rdf:resource="https://w3id.org/cocoon/v1.0.1#Region"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <rdfs:comment xml:lang="en">Region can either be associated with price or a type of service. So hasRegion can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Region can either be associated with price or a type of service. So Region can be specified either within CloudService class and subclasses, or in UnitPriceSpecification. For example, when the service has different priced in different regions, regions are associated with price; when there are lots of measurements for the service in a region, region can be associated with service.</rdfs:comment>
     </owl:Axiom>
     
 
