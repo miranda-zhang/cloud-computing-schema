@@ -105,8 +105,9 @@ Check whether a static external IP address is in use
 
     gcloud compute addresses list
 
-# Issue
-https://github.com/LinkedDataFragments/Server.js/issues/89
+# Issues
+1. https://github.com/LinkedDataFragments/Server.js/issues/89
+2. https://github.com/LinkedDataFragments/Server.js/issues/91
 
 It's recomanded to load the data.ttl locally (i.e. using Protoge) and search with SPARQL.
 
