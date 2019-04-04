@@ -152,15 +152,18 @@ cocoon:canHaveSnapshot rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#excludesDestination
-cocoon:excludesDestination rdf:type owl:ObjectProperty .
+cocoon:excludesDestination rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#forUsageLessEqual
-cocoon:forUsageLessEqual rdf:type owl:ObjectProperty .
+cocoon:forUsageLessEqual rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#forUsageMoreThan
-cocoon:forUsageMoreThan rdf:type owl:ObjectProperty .
+cocoon:forUsageMoreThan rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasCPUcapacity
@@ -170,7 +173,8 @@ cocoon:hasCPUcapacity rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasDestination
-cocoon:hasDestination rdf:type owl:ObjectProperty .
+cocoon:hasDestination rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasDirection
@@ -233,15 +237,18 @@ cocoon:inPhysicalLocation rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#inRegion
-cocoon:inRegion rdf:type owl:ObjectProperty .
+cocoon:inRegion rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax
-cocoon:transferedFileSizeMax rdf:type owl:ObjectProperty .
+cocoon:transferedFileSizeMax rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin
-cocoon:transferedFileSizeMin rdf:type owl:ObjectProperty .
+cocoon:transferedFileSizeMin rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty .
 
 
 #################################################################
@@ -255,7 +262,8 @@ cocoon:chargedPerCore rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#city
-cocoon:city rdf:type owl:DatatypeProperty .
+cocoon:city rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#continent
@@ -281,19 +289,23 @@ number of cores."""@en .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasCurrencyValue
-cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty .
+cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#inUse
-cocoon:inUse rdf:type owl:DatatypeProperty .
+cocoon:inUse rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#inZone
-cocoon:inZone rdf:type owl:DatatypeProperty .
+cocoon:inZone rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#ipv4
-cocoon:ipv4 rdf:type owl:DatatypeProperty .
+cocoon:ipv4 rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#numberOfCores
@@ -302,11 +314,13 @@ cocoon:numberOfCores rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#specialRateType
-cocoon:specialRateType rdf:type owl:DatatypeProperty .
+cocoon:specialRateType rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#state
-cocoon:state rdf:type owl:DatatypeProperty .
+cocoon:state rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
 
 
 #################################################################
