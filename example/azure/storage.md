@@ -82,11 +82,13 @@ java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-
 ```
 
 # Storage Transactions Prices on Managed Disk
-Query:[v1.0.0 2018-03-02](../sparql-generate/azure/v1.0.0/managed-disk-transactions.rqg)
-Result:[v1.0.0 2018-03-02](../sparql-generate/result/azure/v1.0.0/managed-disk-transactions.ttl)
+CoCoOn v1.0.0 2018-03-02:
+[Query](../sparql-generate/azure/v1.0.0/managed-disk-transactions.rqg) ->
+[Result](../sparql-generate/result/azure/v1.0.0/managed-disk-transactions.ttl)
 
-Query:[v1.0.1 2019-03-07](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg)
-Result:[v1.0.1 2019-03-07](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl)
+CoCoOn v1.0.1 2019-03-07:
+[Query](../sparql-generate/azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg) ->
+[Result](../sparql-generate/result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl)
 ```
 java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/2019-03-07/managed-disk-transactions.rqg --output result/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl --log-level ERROR
 ```
