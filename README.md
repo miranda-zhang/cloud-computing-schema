@@ -72,9 +72,11 @@ https://github.com/LinkedDataFragments/Server.js/wiki/Deployment-as-Linux-servic
     git clone --single-branch -b ldf-server git@github.com:miranda-zhang/cloud-computing-schema.git ldf-server
 
 ## Add Swap Space
+References:
 1. [Swap Space Ubuntu-18-04](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/)
 2. [Check disk space ubuntu](https://askubuntu.com/questions/432836/how-can-i-check-disk-space-used-in-a-partition-using-the-terminal-in-ubuntu-12-0/432842)
 3. [Tee](https://stackoverflow.com/questions/84882/sudo-echo-something-etc-privilegedfile-doesnt-work)
+
 
     free -h
     sudo swapon --show
@@ -93,7 +95,7 @@ Add `/swapfile swap swap defaults 0 0`
     cat /etc/sysctl.conf
     sudo nano /etc/sysctl.conf
 
-Add `vm.swappiness=10`
+Add `vm.swappiness=10`, high swappiness = more likely for system to use swap, hence less responsive.
 
 ## Reserve a static IP
 When instance become unresponsive, need to stop then start instance,
@@ -106,10 +108,12 @@ Check whether a static external IP address is in use
     gcloud compute addresses list
 
 # Issues
-1. https://github.com/LinkedDataFragments/Server.js/issues/89
-2. https://github.com/LinkedDataFragments/Server.js/issues/91
+https://github.com/LinkedDataFragments/Server.js/issues/89
 
 It's recomanded to load the data.ttl locally (i.e. using Protoge) and search with SPARQL.
+
+Other questions:
+1. [View Blank node](https://github.com/LinkedDataFragments/Server.js/issues/91)
 
 # Generate config
 [generate_ldfserver_config.py](generate_ldfserver_config.py)
@@ -138,7 +142,7 @@ Find the version of globally installed packages
 
     sudo npm list -g
 
-## Data updates
+## Update data
  
     git pull
     sudo systemctl restart ldf
