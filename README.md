@@ -29,6 +29,7 @@ Source code is in the [ldf-server branch](https://github.com/miranda-zhang/cloud
 
 # Examples
 Code in [example folder](example/README.md) shows some ways to access and use this ontology.
+Or you can read the [Quick Start](example/quickstart.md), which listed simple examples for most use cases.
 
 # Publications
 [BibTeX](BibTeX.md)
