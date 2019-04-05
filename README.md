@@ -28,8 +28,8 @@ http://35.231.131.100:5000
 Source code is in the [ldf-server branch](https://github.com/miranda-zhang/cloud-computing-schema/tree/ldf-server).
 
 # Examples
-Code in [example folder](example/README.md) shows some ways to access and use this ontology.
-Or you can read the [Quick Start](example/quickstart.md), which listed simple examples for most use cases.
+1. [Quick Start](example/quickstart.md) listed some short examples for the simplest use cases.
+2. For advanced modelling, see [the complete examples](example/README.md), which shows various ways to access and use this ontology.
 
 # Publications
 [BibTeX](BibTeX.md)
