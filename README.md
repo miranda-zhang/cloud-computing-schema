@@ -27,21 +27,22 @@ http://35.231.131.100:5000
 
 Source code is in the [ldf-server branch](https://github.com/miranda-zhang/cloud-computing-schema/tree/ldf-server).
 
-# Examples
+# Docuemtation
 1. [Quick Start](example/quickstart.md) listed some short examples for the simplest use cases.
-2. For advanced modelling, see [the complete examples](example/README.md), which shows various ways to access and use this ontology.
+2. [Vocabularies](vocabularies.md)
+3. For advanced modelling, see [the complete examples](example/README.md), which shows various ways to access and use this ontology.
 
 # Publications
 [BibTeX](BibTeX.md)
 
 # Dependencies
 This project used solutions from the following projects:
-* https://github.com/perma-id/w3id.org/
-* https://github.com/stedolan/jq
-  * https://stedolan.github.io/jq/manual/
-* https://github.com/sparql-generate/sparql-generate
-  * https://ci.mines-stetienne.fr/sparql-generate/apidocs/allclasses-noframe.html
-* https://github.com/dgarijo/Widoco
-* https://github.com/LinkedDataFragments/Server.js/
-* https://github.com/schemaorg/schemaorg
-  * https://schema.org/docs/developers.html
+1. https://github.com/perma-id/w3id.org/
+2. https://github.com/stedolan/jq
+   - https://stedolan.github.io/jq/manual/
+3. https://github.com/sparql-generate/sparql-generate
+   - https://ci.mines-stetienne.fr/sparql-generate/apidocs/allclasses-noframe.html
+4. https://github.com/dgarijo/Widoco
+5. https://github.com/LinkedDataFragments/Server.js/
+6. https://github.com/schemaorg/schemaorg
+   - https://schema.org/docs/developers.html
