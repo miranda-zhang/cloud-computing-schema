@@ -39,16 +39,16 @@
         "value" : "2012-10-01",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "cocoon",
-        "type" : "label"
-      } ],
       "rights" : [ {
         "identifier" : "rights",
         "language" : "en",
         "value" : "Copyright © 2018 Qian ZHANG",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "cocoon",
         "type" : "label"
       } ],
       "modified" : [ {
@@ -161,7 +161,7 @@
     "type" : "owl:Class"
   }, {
     "id" : "51",
-    "type" : "owl:equivalentClass"
+    "type" : "owl:Class"
   }, {
     "id" : "53",
     "type" : "owl:Class"
@@ -172,10 +172,10 @@
     "id" : "55",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "69",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
     "id" : "68",
@@ -187,7 +187,7 @@
     "id" : "79",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
     "id" : "99",
@@ -253,7 +253,7 @@
     "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "140",
+    "id" : "141",
     "type" : "owl:Class"
   }, {
     "id" : "10",
@@ -262,23 +262,23 @@
     "id" : "81",
     "type" : "owl:Class"
   }, {
-    "id" : "143",
+    "id" : "144",
     "type" : "owl:Class"
   }, {
     "id" : "52",
-    "type" : "owl:equivalentClass"
+    "type" : "owl:Class"
   }, {
-    "id" : "57",
+    "id" : "59",
     "type" : "owl:Class"
   }, {
     "id" : "116",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
-    "type" : "owl:Class"
-  }, {
     "id" : "47",
     "type" : "owl:equivalentClass"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
   }, {
     "id" : "101",
     "type" : "owl:Class"
@@ -286,20 +286,20 @@
     "id" : "50",
     "type" : "owl:unionOf"
   }, {
-    "id" : "130",
-    "type" : "owl:Class"
-  }, {
-    "id" : "147",
+    "id" : "131",
     "type" : "owl:Class"
   }, {
     "id" : "148",
     "type" : "owl:Class"
   }, {
     "id" : "149",
-    "type" : "owl:equivalentClass"
+    "type" : "owl:Class"
   }, {
     "id" : "92",
     "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:equivalentClass"
   } ],
   "classAttribute" : [ {
     "iri" : "https://w3id.org/cocoon/v1.0.1#LocalStorage",
@@ -328,27 +328,6 @@
       "IRI-based" : "BusinessEntity"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/cocoon/v1.0.1#Azure",
-      "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-      "annotations" : {
-        "name" : [ {
-          "identifier" : "name",
-          "language" : "undefined",
-          "value" : "Microsoft Azure Cloud",
-          "type" : "label"
-        } ],
-        "page" : [ {
-          "identifier" : "page",
-          "language" : "undefined",
-          "value" : "https://azure.microsoft.com/",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Azure",
-        "en" : "Azure"
-      }
-    }, {
       "iri" : "https://w3id.org/cocoon/v1.0.1#Gcloud",
       "baseIri" : "https://w3id.org/cocoon/v1.0.1",
       "annotations" : {
@@ -368,6 +347,27 @@
       "labels" : {
         "IRI-based" : "Gcloud",
         "en" : "Gcloud"
+      }
+    }, {
+      "iri" : "https://w3id.org/cocoon/v1.0.1#Azure",
+      "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Microsoft Azure Cloud",
+          "type" : "label"
+        } ],
+        "page" : [ {
+          "identifier" : "page",
+          "language" : "undefined",
+          "value" : "https://azure.microsoft.com/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Azure",
+        "en" : "Azure"
       }
     } ],
     "attributes" : [ "external" ],
@@ -404,7 +404,7 @@
     "label" : {
       "IRI-based" : "Observation"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "14"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -469,7 +469,7 @@
     "label" : {
       "IRI-based" : "SystemProperty"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "43"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#DownlinkSpeed",
@@ -502,17 +502,13 @@
     "superClasses" : [ "50" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#Device",
-    "equivalent" : [ "52" ],
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Device"
     },
-    "comment" : {
-      "en" : "This is an equivalent class to sosa:Sensor."
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "51"
+    "id" : "51",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#UplinkSpeed",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -529,7 +525,7 @@
     "label" : {
       "IRI-based" : "Unit"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "54"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#UnitOfMeasure",
@@ -636,6 +632,16 @@
     "attributes" : [ "equivalent" ],
     "id" : "55"
   }, {
+    "iri" : "https://w3id.org/cocoon/v1.0.1#DataTransferSpeed",
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataTransferSpeed"
+    },
+    "subClasses" : [ "53", "44" ],
+    "id" : "45",
+    "superClasses" : [ "47" ]
+  }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
@@ -664,17 +670,17 @@
           "value" : "Qian",
           "type" : "label"
         } ],
-        "title" : [ {
-          "identifier" : "title",
-          "language" : "undefined",
-          "value" : "Miss",
-          "type" : "label"
-        } ],
         "workInfoHomepage" : [ {
           "identifier" : "workInfoHomepage",
           "language" : "undefined",
           "value" : "https://www.linkedin.com/in/mirandazhangq/",
           "type" : "iri"
+        } ],
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "undefined",
+          "value" : "Miss",
+          "type" : "label"
         } ],
         "mbox" : [ {
           "identifier" : "mbox",
@@ -701,16 +707,6 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "69"
-  }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#DataTransferSpeed",
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DataTransferSpeed"
-    },
-    "subClasses" : [ "53", "44" ],
-    "id" : "45",
-    "superClasses" : [ "47" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -745,7 +741,7 @@
     "label" : {
       "IRI-based" : "InternetService"
     },
-    "id" : "59",
+    "id" : "57",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.geonames.org/ontology#Feature",
@@ -998,7 +994,7 @@
     "label" : {
       "IRI-based" : "SaaS"
     },
-    "subClasses" : [ "130", "117" ],
+    "subClasses" : [ "131", "117" ],
     "comment" : {
       "en" : "For example, Google Cloud Composer."
     },
@@ -1042,17 +1038,17 @@
           "value" : "Qian",
           "type" : "label"
         } ],
-        "title" : [ {
-          "identifier" : "title",
-          "language" : "undefined",
-          "value" : "Miss",
-          "type" : "label"
-        } ],
         "workInfoHomepage" : [ {
           "identifier" : "workInfoHomepage",
           "language" : "undefined",
           "value" : "https://www.linkedin.com/in/mirandazhangq/",
           "type" : "iri"
+        } ],
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "undefined",
+          "value" : "Miss",
+          "type" : "label"
         } ],
         "mbox" : [ {
           "identifier" : "mbox",
@@ -1078,7 +1074,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "140"
+    "id" : "141"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#NetworkService",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -1086,7 +1082,7 @@
     "label" : {
       "IRI-based" : "NetworkService"
     },
-    "subClasses" : [ "57", "59", "12", "9" ],
+    "subClasses" : [ "59", "57", "12", "9" ],
     "id" : "10",
     "superClasses" : [ "82" ]
   }, {
@@ -1131,7 +1127,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "143"
+    "id" : "144"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/Sensor",
     "baseIri" : "http://www.w3.org/ns/sosa",
@@ -1139,7 +1135,8 @@
     "label" : {
       "IRI-based" : "Sensor"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "subClasses" : [ "51" ],
+    "attributes" : [ "external" ],
     "id" : "52"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#StaticIPService",
@@ -1148,7 +1145,7 @@
     "label" : {
       "IRI-based" : "StaticIPService"
     },
-    "id" : "57",
+    "id" : "59",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
@@ -1159,15 +1156,6 @@
     },
     "attributes" : [ "external" ],
     "id" : "116"
-  }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#Ingress",
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Ingress"
-    },
-    "id" : "64",
-    "superClasses" : [ "75" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#QuanlityOfService",
     "equivalent" : [ "43" ],
@@ -1182,6 +1170,15 @@
     },
     "attributes" : [ "equivalent" ],
     "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/cocoon/v1.0.1#Ingress",
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ingress"
+    },
+    "id" : "64",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#ComputeService",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -1198,7 +1195,7 @@
     "label" : {
       "IRI-based" : "Location"
     },
-    "union" : [ "99", "147" ],
+    "union" : [ "99", "148" ],
     "subClasses" : [ "49" ],
     "attributes" : [ "union" ],
     "id" : "50"
@@ -1212,7 +1209,7 @@
     "comment" : {
       "undefined" : "A system image is a serialized copy of the entire state of a computer system.\r\nSystem images can be used for backup."
     },
-    "id" : "130",
+    "id" : "131",
     "superClasses" : [ "83" ]
   }, {
     "iri" : "https://schema.org/Place",
@@ -1222,7 +1219,7 @@
       "IRI-based" : "Place"
     },
     "attributes" : [ "external" ],
-    "id" : "147"
+    "id" : "148"
   }, {
     "iri" : "http://qudt.org/schema/qudt#DataRateUnit",
     "baseIri" : "http://qudt.org/schema/qudt",
@@ -1282,19 +1279,6 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "148"
-  }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#Measurement",
-    "equivalent" : [ "14" ],
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Measurement"
-    },
-    "comment" : {
-      "en" : "QoS stats can be stored as Measurements. This is an equivalent class to sosa:Observation."
-    },
-    "attributes" : [ "equivalent" ],
     "id" : "149"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#NetworkStorage",
@@ -1308,6 +1292,19 @@
     },
     "id" : "92",
     "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/cocoon/v1.0.1#Measurement",
+    "equivalent" : [ "14" ],
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measurement"
+    },
+    "comment" : {
+      "en" : "QoS stats can be stored as Measurements. This is an equivalent class to sosa:Observation."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "150"
   } ],
   "property" : [ {
     "id" : "2",
@@ -1325,17 +1322,17 @@
     "id" : "38",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "39",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "33",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "42",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "56",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "58",
     "type" : "owl:disjointWith"
@@ -1353,7 +1350,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "66",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "67",
     "type" : "owl:someValuesFrom"
@@ -1446,10 +1443,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "119",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "120",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "121",
     "type" : "rdfs:SubClassOf"
@@ -1458,19 +1455,19 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "123",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "124",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "24",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "126",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "127",
     "type" : "rdfs:SubClassOf"
@@ -1481,7 +1478,7 @@
     "id" : "129",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "131",
+    "id" : "130",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "132",
@@ -1490,17 +1487,17 @@
     "id" : "133",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "17",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "134",
+    "id" : "135",
     "type" : "owl:disjointWith"
   }, {
     "id" : "19",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "135",
-    "type" : "owl:someValuesFrom"
   }, {
     "id" : "136",
     "type" : "owl:someValuesFrom"
@@ -1509,36 +1506,39 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "138",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "139",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "141",
+    "id" : "140",
     "type" : "owl:disjointWith"
   }, {
     "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "28",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "144",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "145",
     "type" : "owl:disjointWith"
   }, {
     "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "21",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "23",
+    "id" : "26",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "26",
+    "id" : "23",
     "type" : "owl:objectProperty"
   }, {
     "id" : "27",
@@ -1597,8 +1597,19 @@
     },
     "superproperty" : [ "4" ],
     "domain" : "1",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/cocoon/v1.0.1#inPhysicalLocation",
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "inPhysicalLocation"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "33"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#specialRateType",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -1614,17 +1625,6 @@
     "attributes" : [ "datatype" ],
     "id" : "39"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#inPhysicalLocation",
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "inPhysicalLocation"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "3",
-    "attributes" : [ "object" ],
-    "id" : "33"
-  }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#forCoresMoreThan",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
     "range" : "34",
@@ -1639,14 +1639,20 @@
     "attributes" : [ "datatype" ],
     "id" : "42"
   }, {
-    "range" : "57",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://w3id.org/cocoon/v1.0.1#hasDestination",
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasDestination"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "57",
+    "attributes" : [ "object", "someValues" ],
     "id" : "56"
   }, {
-    "range" : "57",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "59",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "58"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#inJurisdiction",
@@ -1657,7 +1663,7 @@
     },
     "superproperty" : [ "4" ],
     "domain" : "49",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "60"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#excludesDestination",
@@ -1667,29 +1673,23 @@
       "IRI-based" : "excludesDestination"
     },
     "superproperty" : [ "4" ],
-    "domain" : "59",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "57",
+    "attributes" : [ "object", "someValues" ],
     "id" : "61"
   }, {
     "range" : "64",
     "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "62"
   }, {
-    "range" : "12",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "59",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#hasDestination",
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "range" : "50",
-    "label" : {
-      "IRI-based" : "hasDestination"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "59",
-    "attributes" : [ "someValues", "object" ],
+    "range" : "12",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "66"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#ipv4",
@@ -1699,27 +1699,27 @@
       "IRI-based" : "ipv4"
     },
     "domain" : "51",
-    "attributes" : [ "someValues", "datatype" ],
+    "attributes" : [ "datatype", "someValues" ],
     "id" : "67"
   }, {
     "range" : "53",
     "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "70"
   }, {
     "range" : "73",
     "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "71"
   }, {
     "range" : "75",
     "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "74"
   }, {
     "range" : "73",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "76"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#continent",
@@ -1749,37 +1749,37 @@
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "86"
   }, {
     "range" : "12",
     "domain" : "88",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "87"
   }, {
     "range" : "73",
     "domain" : "90",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "89"
   }, {
     "range" : "1",
     "domain" : "92",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "91"
   }, {
     "range" : "82",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "93"
   }, {
     "range" : "82",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "94"
   }, {
     "range" : "12",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "95"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#forCoresLessEqual",
@@ -1798,17 +1798,17 @@
   }, {
     "range" : "80",
     "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "98"
   }, {
     "range" : "82",
     "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "100"
   }, {
     "range" : "79",
     "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "102"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#chargedPerCore",
@@ -1863,7 +1863,7 @@
   }, {
     "range" : "79",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "107"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
@@ -1873,32 +1873,32 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "3",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "108"
   }, {
     "range" : "45",
     "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "110"
   }, {
     "range" : "45",
     "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "111"
   }, {
     "range" : "79",
     "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "113"
   }, {
     "range" : "78",
     "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "114"
   }, {
     "range" : "46",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "115"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#state",
@@ -1915,6 +1915,11 @@
     "attributes" : [ "datatype" ],
     "id" : "118"
   }, {
+    "range" : "50",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#inZone",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
     "range" : "35",
@@ -1924,22 +1929,22 @@
     "maxCardinality" : "1",
     "domain" : "3",
     "attributes" : [ "datatype" ],
-    "id" : "119"
-  }, {
-    "range" : "47",
-    "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "120"
+  }, {
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
   }, {
     "range" : "81",
     "domain" : "105",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "121"
-  }, {
-    "range" : "50",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "122"
+  }, {
+    "range" : "47",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#hasCurrencyValue",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -1950,12 +1955,12 @@
     "cardinality" : "1",
     "domain" : "3",
     "attributes" : [ "datatype" ],
-    "id" : "123"
+    "id" : "124"
   }, {
     "range" : "47",
-    "domain" : "45",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "124"
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#inUse",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -1966,7 +1971,7 @@
     "cardinality" : "1",
     "domain" : "3",
     "attributes" : [ "datatype" ],
-    "id" : "125"
+    "id" : "126"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#hasProvider",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -1981,38 +1986,38 @@
   }, {
     "range" : "10",
     "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "126"
-  }, {
-    "range" : "10",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "127"
   }, {
     "range" : "10",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "128"
   }, {
-    "range" : "83",
-    "domain" : "130",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "129"
+  }, {
+    "range" : "83",
+    "domain" : "131",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
   }, {
     "range" : "75",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "131"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
   }, {
     "range" : "10",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "132"
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
   }, {
     "range" : "83",
     "domain" : "117",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "133"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -2027,8 +2032,8 @@
   }, {
     "range" : "90",
     "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "134"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -2048,8 +2053,8 @@
       "IRI-based" : "hasPriceSpecification"
     },
     "domain" : "79",
-    "attributes" : [ "someValues", "external", "object" ],
-    "id" : "135"
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "136"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#inRegion",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -2059,8 +2064,8 @@
     },
     "superproperty" : [ "4" ],
     "domain" : "73",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "136"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "137"
   }, {
     "iri" : "http://purl.org/goodrelations/v1#hasPriceSpecification",
     "baseIri" : "http://purl.org/goodrelations/v1",
@@ -2069,23 +2074,23 @@
       "IRI-based" : "hasPriceSpecification"
     },
     "domain" : "90",
-    "attributes" : [ "someValues", "external", "object" ],
-    "id" : "137"
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "138"
   }, {
     "range" : "10",
     "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "138"
-  }, {
-    "range" : "1",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "139"
   }, {
     "range" : "1",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "1",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "141"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#hasStorage",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -2095,8 +2100,8 @@
     },
     "superproperty" : [ "4" ],
     "domain" : "101",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "142"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "143"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -2111,13 +2116,13 @@
   }, {
     "range" : "72",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "144"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
   }, {
     "range" : "90",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "145"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#numberOfCores",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -2131,7 +2136,7 @@
       "undefined" : "For Google Cloud, cores and vCPU referes to the same thing."
     },
     "attributes" : [ "datatype" ],
-    "id" : "146"
+    "id" : "147"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
@@ -2144,17 +2149,6 @@
     "attributes" : [ "object" ],
     "id" : "21"
   }, {
-    "iri" : "https://w3id.org/cocoon/v1.0.1#hasDirection",
-    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "hasDirection"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "3",
-    "attributes" : [ "object" ],
-    "id" : "23"
-  }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#hasStorageThroughputMax",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",
     "range" : "3",
@@ -2165,6 +2159,17 @@
     "domain" : "3",
     "attributes" : [ "object" ],
     "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/cocoon/v1.0.1#hasDirection",
+    "baseIri" : "https://w3id.org/cocoon/v1.0.1",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasDirection"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "23"
   }, {
     "iri" : "https://w3id.org/cocoon/v1.0.1#forUsageLessEqual",
     "baseIri" : "https://w3id.org/cocoon/v1.0.1",

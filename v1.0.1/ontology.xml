@@ -636,9 +636,7 @@ Egress to Google products (such as YouTube, Maps, Drive), whether from a VM in G
     <!-- http://www.w3.org/ns/sosa/Sensor -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
-        <owl:equivalentClass rdf:resource="https://w3id.org/cocoon/v1.0.1#Device"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
     
 
 
@@ -1151,6 +1149,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
 
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#Device">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0.1#inPhysicalLocation"/>
@@ -1164,7 +1163,6 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">This is an equivalent class to sosa:Sensor.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/cocoon/v1.0.1#Device"/>

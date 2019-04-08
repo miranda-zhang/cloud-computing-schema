@@ -244,7 +244,7 @@ cocoon:inRegion rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax
 cocoon:transferedFileSizeMax rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf owl:topObjectProperty .
+                             rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin
@@ -291,7 +291,7 @@ number of cores."""@en .
 
 ###  https://w3id.org/cocoon/v1.0.1#hasCurrencyValue
 cocoon:hasCurrencyValue rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty .
+                        rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#inUse
@@ -301,12 +301,12 @@ cocoon:inUse rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/cocoon/v1.0.1#inZone
 cocoon:inZone rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty .
+              rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#ipv4
 cocoon:ipv4 rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty .
+            rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#numberOfCores
@@ -326,7 +326,7 @@ Egress to Google products (such as YouTube, Maps, Drive), whether from a VM in G
 ###  https://w3id.org/cocoon/v1.0.1#state
 cocoon:state rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:comment """State Abbreviations can be described using this property, like Azure/us-west region is in CA"""@en .
+             rdfs:comment "State Abbreviations can be described using this property, like Azure/us-west region is in CA"@en .
 
 
 #################################################################
@@ -349,6 +349,11 @@ qudt:DataRateUnit rdf:type owl:Class .
 qudt:InformationEntropyUnit rdf:type owl:Class .
 
 
+###  http://qudt.org/schema/qudt#Unit
+qudt:Unit rdf:type owl:Class ;
+          owl:equivalentClass cocoon:UnitOfMeasure .
+
+
 ###  http://www.geonames.org/ontology#Feature
 gn:Feature rdf:type owl:Class .
 
@@ -357,9 +362,23 @@ gn:Feature rdf:type owl:Class .
 sosa:FeatureOfInterest rdf:type owl:Class .
 
 
+###  http://www.w3.org/ns/sosa/Observation
+sosa:Observation rdf:type owl:Class ;
+                 owl:equivalentClass cocoon:Measurement .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+sosa:Sensor rdf:type owl:Class .
+
+
 ###  http://www.w3.org/ns/ssn/systems/Latency
 ssn-system:Latency rdf:type owl:Class ;
                    rdfs:subClassOf cocoon:QuanlityOfService .
+
+
+###  http://www.w3.org/ns/ssn/systems/SystemProperty
+ssn-system:SystemProperty rdf:type owl:Class ;
+                          owl:equivalentClass cocoon:QuanlityOfService .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -727,9 +746,8 @@ cocoon:Database rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#Device
 cocoon:Device rdf:type owl:Class ;
-              owl:equivalentClass sosa:Sensor;
-              rdfs:comment "This is an equivalent class to sosa:Sensor."@en ;
-              rdfs:subClassOf [ rdf:type owl:Restriction ;
+              rdfs:subClassOf sosa:Sensor ,
+                              [ rdf:type owl:Restriction ;
                                 owl:onProperty cocoon:inPhysicalLocation ;
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass cocoon:Location
@@ -839,7 +857,6 @@ cocoon:Location rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#Measurement
 cocoon:Measurement rdf:type owl:Class ;
-                   owl:equivalentClass sosa:Observation ;
                    rdfs:comment "QoS stats can be stored as Measurements. This is an equivalent class to sosa:Observation."@en .
 
 
@@ -862,7 +879,6 @@ cocoon:PaaS rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#QuanlityOfService
 cocoon:QuanlityOfService rdf:type owl:Class ;
-                         owl:equivalentClass ssn-system:SystemProperty;
                          rdfs:comment """This is an equivalent class to ssn-system:SystemProperty.
 QoS is more understandable in our context, and we can group related classed under this base class."""@en .
 
@@ -1024,7 +1040,6 @@ cocoon:TrafficDirection rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#UnitOfMeasure
 cocoon:UnitOfMeasure rdf:type owl:Class ;
-                     owl:equivalentClass qudt:Unit;
                      rdfs:comment "Defines custome units. This is an equivalent class to qudt:Unit."@en .
 
 

@@ -295,7 +295,6 @@
 # 
 # http://www.w3.org/ns/sosa/Sensor
 <http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/cocoon/v1.0.1#Device> .
 # 
 # http://www.w3.org/ns/ssn/systems/Latency
 <http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -557,6 +556,7 @@ _:genid40 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQua
 # 
 # https://w3id.org/cocoon/v1.0.1#Device
 <https://w3id.org/cocoon/v1.0.1#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
 <https://w3id.org/cocoon/v1.0.1#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#inPhysicalLocation> .
@@ -566,7 +566,6 @@ _:genid41 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/v1.0.
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#ipv4> .
 _:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/cocoon/v1.0.1#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an equivalent class to sosa:Sensor."@en .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
 _:genid42 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#Device> .
 _:genid42 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
