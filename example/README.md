@@ -1,11 +1,8 @@
 # Examples
-# Request ontology from url
-[GET rdf/ttl via Ajax](ajax.html)
-
 # JSON-LD Macros example
 https://miranda-zhang.github.io/cloud-computing-schema/json-ld-macros/gcloud.html
 
-Created with https://github.com/ariutta/json-ld-macros
+Created with https://github.com/ariutta/json-ld-macros, see [source code](https://github.com/miranda-zhang/cloud-computing-schema/tree/gh-pages/json-ld-macros).
 
 # Mapping data to ontology
 ![Workflow](https://raw.githubusercontent.com/miranda-zhang/draw.io/master/cocoon_usecase.jpg "Workflow Overview")

@@ -29,9 +29,9 @@ Source code is in the [ldf-server branch](https://github.com/miranda-zhang/cloud
 
 # Docuemtation
 1. [Quick Start](example/quickstart.md) listed some short examples for the simplest use cases.
-2. [Vocabularies](vocabularies.md)
-3. For advanced modelling, see [the complete examples](example/README.md), which shows various ways to access and use this ontology.
-4. [Latest Change](revision_history.md).
+2. [Vocabularies](vocabularies.md).
+3. For advanced modelling, see the [complete examples](example/README.md), which shows various ways to access and use this ontology.
+4. [Latest Changes](revision_history.md).
 
 # Publications
 [BibTeX](BibTeX.md)

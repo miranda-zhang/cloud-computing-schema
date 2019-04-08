@@ -9,5 +9,3 @@ Website and result set probably hasn't been updated accordingly.
 The following schema.org extensions maybe helpfull, but can't be used until they are included into the core.
 1. https://pending.schema.org/geospatiallyWithin
 2. https://pending.schema.org/QuantitativeValueDistribution
-
-
