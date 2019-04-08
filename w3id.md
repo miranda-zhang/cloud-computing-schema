@@ -32,7 +32,7 @@ Chrome "Incognito mode" (**Ctl+Shift+N**).
 2. https://stackoverflow.com/questions/9632852/how-to-debug-apache-mod-rewrite#
 3. https://serverfault.com/questions/935361/regex-rewriterule-in-apache-2-4-htaccess
 
-    nano +131 /etc/apache2/apache2.conf
+    nano +138 /etc/apache2/apache2.conf
     tail --follow /var/log/apache2/error.log
 
 # Publish change

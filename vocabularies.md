@@ -23,3 +23,8 @@ Name: Description. `namespace` [URI](#)
     -  SSN is an ontology for describing sensors and their observations, the studied features of interest, the samples used to do so, and the observed properties. `ssn`  http://www.w3.org/ns/ssn/
     -  System capabilities terms of SSN ontology. `ssn-system` http://www.w3.org/ns/ssn/systems/
     -  Sample Observation and Actuator. `sosa` http://www.w3.org/ns/sosa/
+
+## Other Vocabularies Considered
+We have also considered a number of other vocabularies, but decided they are not suitable for our case:
+1. [OWL-S](https://www.w3.org/Submission/OWL-S/): It is more useful when defining the input, output and interactions between web services, but CoCoOn is not modeling those, as the purpose is not to execute services, but to compare their price specifications.
+2. [Unified Code for Units of Measure (UCUM)](http://unitsofmeasure.org/ucum.html) and [Custom Datatypes (CDT)](https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html): The ontology does not include the units needed for our use case, see [documentation on Unit](example/README.md#units-of-measure).

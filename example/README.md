@@ -8,7 +8,7 @@ https://miranda-zhang.github.io/cloud-computing-schema/json-ld-macros/gcloud.htm
 Created with https://github.com/ariutta/json-ld-macros
 
 # Mapping data to ontology
-![Workflow](cococon_usage_workflow.png "Workflow Overview")
+![Workflow](https://raw.githubusercontent.com/miranda-zhang/draw.io/master/cocoon_usecase.jpg "Workflow Overview")
 
 ## List of Cloud Service Examples:
 1. [Google Cloud Compute Service](gcloud/compute.md)

@@ -2,16 +2,12 @@
 Ontology Schema definition in this folder contains the latest (experimental) change.
 Website and result set probably hasn't been updated accordingly.
 
+## CoCoOn V1.0.1
+![CoCoOn V1.0.1](ontology.jpg "CoCoOn V1.0.1")
+
 # Future Work
-The following schema.org extensions maybe helpfull, but can't be used until it made into core.
+The following schema.org extensions maybe helpfull, but can't be used until they are included into the core.
 1. https://pending.schema.org/geospatiallyWithin
 2. https://pending.schema.org/QuantitativeValueDistribution
 
-# References
-OWL Specifications
-* OWL2 https://www.w3.org/TR/owl2-overview/
-* OWL https://www.w3.org/TR/owl-ref/
 
-Documentations of Some Referenced Vocabularies 
-* http://www.heppnetz.de/ontologies/goodrelations/v1.html
-* https://www.w3.org/TR/vocab-ssn/#intro
