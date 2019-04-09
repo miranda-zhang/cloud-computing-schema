@@ -33,7 +33,10 @@ So we used vocabularies from QUDT in our schema, and used available CDT units in
 Used http://cloudharmony.com to collect data, details explained in [cloudharmony](cloudharmony/README.md).
 
 # SPARQL
-Queries can be tested with Protégé.
+Queries can be tested with：
+1. Protégé for small data size
+2. Stardog for large data
+
 Default Example:
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -43,6 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?subject ?object
 WHERE { ?subject rdfs:subClassOf ?object }
 ```
+[SPARQL Documentation](https://www.w3.org/TR/sparql11-query/).
 
 Examples with the following keywords:
 1. [SELECT FILTER ORDER BY LIMIT](sparql/filter_vm_order_desc_limit.md)
@@ -53,5 +57,7 @@ Examples with the following keywords:
 Additional external examples
 https://www.w3.org/2009/Talks/0615-qbe/
 
-## SPARQL Documentation
-https://www.w3.org/TR/sparql11-query/
+## Issues
+1. Increase heap size of Protégé with java options: Change `-Xmx1500M` in `run.bat`.
+2. [Sparql tab not shown anything](https://stackoverflow.com/questions/44328191/sparql-query-tab-in-protege-doesnt-show-anything): open tab before open ontology.
+3. Verify that the 64-bit version of Java V1.6 or later is installed `java -d64`
