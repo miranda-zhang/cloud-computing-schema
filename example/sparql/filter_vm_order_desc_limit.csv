@@ -1,0 +1,6 @@
+VM,cores
+https://w3id.org/cocoon/data/v1.0.1/2019-02-12/ComputeService/Gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160,160.0
+https://w3id.org/cocoon/data/v1.0.1/2019-02-12/ComputeService/Gcloud/CP-COMPUTEENGINE-VMIMAGE-N1-ULTRAMEM-160-PREEMPTIBLE,160.0
+https://w3id.org/cocoon/data/v1.0.1/2019-03-07/ComputeService/Azure/linux-m128-lowpriority,128.0
+https://w3id.org/cocoon/data/v1.0.1/2019-03-07/ComputeService/Azure/windows-m128ms-standard,128.0
+https://w3id.org/cocoon/data/v1.0.1/2019-03-07/ComputeService/Azure/windows-m128-lowpriority,128.0

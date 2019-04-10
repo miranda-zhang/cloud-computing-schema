@@ -48,6 +48,8 @@ WHERE { ?subject rdfs:subClassOf ?object }
 ```
 [SPARQL Documentation](https://www.w3.org/TR/sparql11-query/).
 
+Stardog dump combined all [v1.0.1 data sets](../stardog/v1_0_1.ttl).
+
 Examples with the following keywords:
 1. [SELECT FILTER ORDER BY LIMIT](sparql/filter_vm_order_desc_limit.md)
 2. [DISTINCT](sparql/vm_less_or_equal_4cores.md)

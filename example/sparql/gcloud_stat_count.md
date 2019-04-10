@@ -1,8 +1,9 @@
 # SPARQL example
-## Data set 
+## v1.0.0
+Data set:
 [gcloud.ttl](../sparql-generate/result/gcloud/gcloud.ttl)
 
-## Query
+Query
 ```
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 SELECT (COUNT(?VM) AS ?count_VM)
@@ -44,7 +45,7 @@ WHERE {
 }
 ```
 
-### Nested query
+Nested query
 ```
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 select * { 
@@ -59,7 +60,7 @@ select * {
 }
 ```
 
-### VALUES
+VALUES
 ```
 PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
 select ?cls (count(?s) AS ?count)
@@ -67,7 +68,7 @@ select ?cls (count(?s) AS ?count)
 group by ?cls
 ```
 
-## Result
+Result
 
 | Class                    | Count         |
 | -------------------------|:-------------:| 
@@ -76,3 +77,37 @@ group by ?cls
 | Region                   | 30            |
 | SystemImage              | 9             |
 | gr:UnitPriceSpecification| 1340          |
+## v1.0.1
+```
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0.1#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+select ?cls (count(?s) AS ?count)
+{
+    VALUES ?cls {
+        cocoon:ComputeService
+        cocoon:SystemImage
+        cocoon:StorageService
+        cocoon:NetworkStorage
+        cocoon:NetworkService
+        cocoon:InternetService
+        cocoon:Region
+        cocoon:Location
+        gr:BusinessEntity
+    } ?s a ?cls
+}
+group by ?cls
+```
+Result: [stat_count.csv](stat_count.csv)
+
+```
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0.1#>
+PREFIX schema: <https://schema.org/>
+SELECT (COUNT(*) AS ?count)
+WHERE {
+    ?s schema:typeOfGood cocoon:LocalStorage .
+}
+```
+```
+count
+1412
+```

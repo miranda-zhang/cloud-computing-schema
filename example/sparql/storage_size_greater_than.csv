@@ -1,0 +1,6 @@
+storage,size,unit
+https://w3id.org/cocoon/data/v1.0.1/2019-03-07/NetworkStorage/Azure/premiumssd-p4,32,https://w3id.org/cocoon/v1.0.1#GB
+https://w3id.org/cocoon/data/v1.0.1/2019-03-07/NetworkStorage/Azure/standardssd-e4,32,https://w3id.org/cocoon/v1.0.1#GB
+https://w3id.org/cocoon/data/v1.0.1/2019-03-07/NetworkStorage/Azure/standardhdd-s4,32,https://w3id.org/cocoon/v1.0.1#GB
+https://w3id.org/cocoon/data/v1.0.1/2019-03-07/NetworkStorage/Azure/standardhdd-s6,64,https://w3id.org/cocoon/v1.0.1#GB
+https://w3id.org/cocoon/data/v1.0.1/2019-03-07/NetworkStorage/Azure/premiumssd-p6,64,https://w3id.org/cocoon/v1.0.1#GB
