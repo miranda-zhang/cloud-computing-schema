@@ -34,8 +34,8 @@ Used http://cloudharmony.com to collect data, details explained in [cloudharmony
 
 # SPARQL
 Queries can be tested with：
-1. Protégé for small data size
-2. Stardog for large data
+1. [Protégé](#protege) for small data size.
+2. [Stardog]{#stardog}for large data.
 
 Default Example:
 ```
@@ -59,7 +59,26 @@ Examples with the following keywords:
 Additional external examples
 https://www.w3.org/2009/Talks/0615-qbe/
 
-## Issues
+# Protege
+Issues
 1. Increase heap size of Protégé with java options: Change `-Xmx1500M` in `run.bat`.
 2. [Sparql tab not shown anything](https://stackoverflow.com/questions/44328191/sparql-query-tab-in-protege-doesnt-show-anything): open tab before open ontology.
-3. Verify that the 64-bit version of Java V1.6 or later is installed `java -d64`
+
+# Stardog
+https://www.stardog.com/docs/#_windows
+
+Verify that the 64-bit version of Java V1.6 or later is installed `java -d64`
+
+```
+SET PATH=%PATH%;C:\Users\admin-u5214628\Documents\programs\stardog-6.1.3\bin
+stardog-admin.bat server start
+```
+https://www.stardog.com/docs/man/data-export
+```
+stardog data export --named-graph ALL -- v1_0_1 export.ttl
+```
+
+# Gephi
+1. https://github.com/gephi/gephi/issues/1218
+2. https://github.com/gephi/gephi/issues/1478#issuecomment-220834617
+3. https://stackoverflow.com/questions/42121080/gephi-preview-export-pdf-cuts-off-label-at-left-and-right-margin

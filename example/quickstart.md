@@ -167,6 +167,9 @@ Load Balancing Forwarding Rules Price:
         a                        schema:TypeAndQuantityNode ;
         schema:amountOfThisGood  "5"^^xsd:nonNegativeInteger .
 ```
+For example, pricing for rules on theGoogle Cloud are:
+>Up to 5 forwarding rules are charged at 0.025 USD/hour. That means,if you create one forwarding rule, you will be charged 0.025/hour. If youhave 3 forwarding rules, you will still be charged 0.025/hour. However,if you have 10 rules, you will be charged: 5 forwarding rules = 0.025/hour. Each additional forwarding rule = 0.01/hour. 0.025/hour for 5 rules + (5 additional   rules * 0.01/hour) =0.075/hour.
+
 ## Cloud Service Price Specification
 [cocoon:CloudServicePriceSpecification](https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification)
 
@@ -234,6 +237,8 @@ Price specification for a Compute service from Azure:
                                     cocoon:inRegion      <Region/Azure/brazil-south>
                                   ] .
 ```
+An example from Microsoft Azure, data access fees on local disk:
+>Every single block access incurs a transaction. The default block size is4 Megabytes, meaning uploading a 32Mb file will incur 8 Storage Trans-actions. Deleting the file will also incur 8 transactions, so will updatingit, and any other time the file is touched. The transactions are chargedat a cost of around $0.00036 AUD per 10,000 transactions. As such, a32Mb file will cost $0.000000368 AUD. The only exception to StorageTransactions is when Premium Storage (persistent SSD storage) is used.That is, when you provision a P10, P20 or a P30 disk for your VirtualMachine those disks are exempt from Storage Transactions.
 ### Cloud Network Price Specification
 [cocoon:CloudNetworkPriceSpecification](https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification)
 
