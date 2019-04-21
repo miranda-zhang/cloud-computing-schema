@@ -35,7 +35,7 @@ Used http://cloudharmony.com to collect data, details explained in [cloudharmony
 # SPARQL
 Queries can be tested with：
 1. [Protégé](#protege) for small data size.
-2. [Stardog]{#stardog}for large data.
+2. [Stardog](#stardog) for large data.
 
 Default Example:
 ```
@@ -79,6 +79,7 @@ stardog data export --named-graph ALL -- v1_0_1 export.ttl
 ```
 
 # Gephi
+Gephi can be used for data visulization, but need to write custom scripts for changeing data formats.
 1. https://github.com/gephi/gephi/issues/1218
 2. https://github.com/gephi/gephi/issues/1478#issuecomment-220834617
 3. https://stackoverflow.com/questions/42121080/gephi-preview-export-pdf-cuts-off-label-at-left-and-right-margin
