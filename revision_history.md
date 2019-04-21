@@ -1,7 +1,7 @@
 # Latest Changes
 # v1.0.1
 
-We areaware of the popularity of schema.org, and hence made this version compatible with its vocabularies, in the hope that CoCoOn can become an extension to schema.org, as there are no existing definitions within schema.org that cover the Cloud service domain.
+We are aware of the popularity of schema.org, and hence made this version compatible with its' vocabularies, in the hope that CoCoOn can become an extension to schema.org, as there are no existing definitions within schema.org that cover the Cloud service domain.
 
 Some major changes:
 1. Additional external vocabularies. 
