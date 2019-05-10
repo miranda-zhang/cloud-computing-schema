@@ -25,9 +25,6 @@ Attribution 4.0 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/
 ```
 
-# OOPs
-https://miranda-zhang.github.io/cloud-computing-schema/v1.0/OOPSevaluation/oopsEval.html
-
 # Ontology Diff
 http://www.ebi.ac.uk/efo/bubastis/bubastis.html
 
