@@ -4,7 +4,7 @@ PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl>
+PREFIX cocoon: <http://w3id.org/cocoon/v1.0.1#>
 PREFIX schema: <https://schema.org/>
 
 GENERATE { 
