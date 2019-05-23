@@ -19,9 +19,8 @@ External Examples:
 
 Licenses example:
 ```
-licenseURI=https://creativecommons.org/licenses/by/4.0/
-licenseName=Attribution 4.0 International (CC BY 4.0)
-licenseIconURL=https://i.creativecommons.org/l/by/4.0/88x31.png
+licenseURI=https://opensource.org/licenses/MIT
+licenseName=MIT License
 ```
 
 **Example with CoCoOn v0.1 files**
