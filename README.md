@@ -1,7 +1,11 @@
 # Cloud IaaS Schema
 The development version of the ontology is in [ontology_dev](ontology_dev/README.md).
 
-We have also registerd an entry at http://prefix.cc
+We have also registerd an entry at http://prefix.cc for `cocoon`.
+
+# Data
+A dump of v1.0.1 data [v1.0.1 data](data/v1_0_1.ttl)
+Data seperated in files can be find in [this folder](example/sparql-generate/result/)
 
 # Permalink with w3id
 https://w3id.org/cocoon/v1.0.1
@@ -10,7 +14,7 @@ Prefered to be used as:
 
     @prefix cocoon: <https://w3id.org/cocoon/v1.0.1#>
 
-Some example data published at: https://w3id.org/cocoon/data
+Linked Data Fragments Server: https://w3id.org/cocoon/data
 
 Old Version https://w3id.org/cocoon/v0.1
 

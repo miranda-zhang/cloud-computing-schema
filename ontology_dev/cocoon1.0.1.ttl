@@ -23,7 +23,7 @@
                                   dcterms:creator cocoon:MirandaZhangQian ;
                                   dcterms:description "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en ;
                                   dcterms:issued "2019-02-04"^^xsd:date ;
-                                  dcterms:license <http://creativecommons.org/licenses/by-nc/4.0/> ;
+                                  dcterms:license <https://github.com/miranda-zhang/cloud-computing-schema/blob/master/LICENSE> ;
                                   dcterms:modified "2019-03-04"^^xsd:date ;
                                   dcterms:rights "Copyright © 2018 Qian ZHANG"@en ;
                                   dcterms:title "Vocabulary in Cloud Computing Services"@en ;
