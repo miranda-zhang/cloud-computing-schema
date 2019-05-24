@@ -4,8 +4,8 @@ The development version of the ontology is in [ontology_dev](ontology_dev/README
 We have also registerd an entry at http://prefix.cc for `cocoon`.
 
 # Data
-- [v1.0.1 data dump](data/v1_0_1.ttl)
-- Data seperated into small files can be find in [this folder](example/sparql-generate/result/)
+1. [Data dump v1.0.1](data/v1_0_1.ttl)
+2. [Data seperated into smaller files](example/sparql-generate/result/)
 
 # Permalink with w3id
 https://w3id.org/cocoon/v1.0.1
