@@ -979,13 +979,13 @@
   "@id" : "http://www.w3.org/ns/ssn/systems/Latency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#QuanlityOfService"
+    "@id" : "https://w3id.org/cocoon/v1.0.1#QualityOfService"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/ssn/systems/SystemProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#QuanlityOfService"
+    "@id" : "https://w3id.org/cocoon/v1.0.1#QualityOfService"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",
@@ -1063,7 +1063,7 @@
     "@value" : "2019-02-04"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://creativecommons.org/licenses/by-nc/4.0/"
+    "@id" : "https://github.com/miranda-zhang/cloud-computing-schema/blob/master/LICENSE"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1246,7 +1246,7 @@
   "@id" : "https://w3id.org/cocoon/v1.0.1#DataTransferSpeed",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#QuanlityOfService"
+    "@id" : "https://w3id.org/cocoon/v1.0.1#QualityOfService"
   }, {
     "@id" : "_:genid39"
   }, {
@@ -1501,7 +1501,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#CloudService"
   } ]
 }, {
-  "@id" : "https://w3id.org/cocoon/v1.0.1#QuanlityOfService",
+  "@id" : "https://w3id.org/cocoon/v1.0.1#QualityOfService",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",

@@ -18,7 +18,7 @@
         <terms:creator rdf:resource="https://w3id.org/cocoon/v1.0.1#MirandaZhangQian"/>
         <terms:description xml:lang="en">Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. </terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-04</terms:issued>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
+        <terms:license rdf:resource="https://github.com/miranda-zhang/cloud-computing-schema/blob/master/LICENSE"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-04</terms:modified>
         <terms:rights xml:lang="en">Copyright © 2018 Qian ZHANG</terms:rights>
         <terms:title xml:lang="en">Vocabulary in Cloud Computing Services</terms:title>
@@ -644,7 +644,7 @@ Egress to Google products (such as YouTube, Maps, Drive), whether from a VM in G
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Latency">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0.1#QuanlityOfService"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0.1#QualityOfService"/>
     </owl:Class>
     
 
@@ -653,7 +653,7 @@ Egress to Google products (such as YouTube, Maps, Drive), whether from a VM in G
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemProperty">
-        <owl:equivalentClass rdf:resource="https://w3id.org/cocoon/v1.0.1#QuanlityOfService"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/cocoon/v1.0.1#QualityOfService"/>
     </owl:Class>
     
 
@@ -1117,7 +1117,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
 
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#DataTransferSpeed">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0.1#QuanlityOfService"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0.1#QualityOfService"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax"/>
@@ -1355,10 +1355,10 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
     
 
 
-    <!-- https://w3id.org/cocoon/v1.0.1#QuanlityOfService -->
+    <!-- https://w3id.org/cocoon/v1.0.1#QualityOfService -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#QuanlityOfService">
+    <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#QualityOfService">
         <rdfs:comment xml:lang="en">This is an equivalent class to ssn-system:SystemProperty.
 QoS is more understandable in our context, and we can group related classed under this base class.</rdfs:comment>
     </owl:Class>

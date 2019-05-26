@@ -4,7 +4,7 @@
 <https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/creator> <https://w3id.org/cocoon/v1.0.1#MirandaZhangQian> .
 <https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/description> "Simple ontology for Cloud Computing Services. This ontology allows to define model of prices used in large cloud computing providers such as Google, Amazon, Azure, etc., including options for regions, type of instances, prices specification, etc. "@en .
 <https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/issued> "2019-02-04"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/license> <https://github.com/miranda-zhang/cloud-computing-schema/blob/master/LICENSE> .
 <https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/modified> "2019-03-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/rights> "Copyright © 2018 Qian ZHANG"@en .
 <https://w3id.org/cocoon/v1.0.1> <http://purl.org/dc/terms/title> "Vocabulary in Cloud Computing Services"@en .
@@ -298,11 +298,11 @@
 # 
 # http://www.w3.org/ns/ssn/systems/Latency
 <http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#QuanlityOfService> .
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#QualityOfService> .
 # 
 # http://www.w3.org/ns/ssn/systems/SystemProperty
 <http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/cocoon/v1.0.1#QuanlityOfService> .
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/cocoon/v1.0.1#QualityOfService> .
 # 
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -538,7 +538,7 @@ _:genid38 <http://www.w3.org/2000/01/rdf-schema#comment> "The number of cores av
 # 
 # https://w3id.org/cocoon/v1.0.1#DataTransferSpeed
 <https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#QuanlityOfService> .
+<https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#QualityOfService> .
 <https://w3id.org/cocoon/v1.0.1#DataTransferSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#transferedFileSizeMax> .
@@ -665,9 +665,9 @@ _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/cocoon/v1.0.1#PaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#CloudService> .
 <https://w3id.org/cocoon/v1.0.1#PaaS> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform as a Service, i.e. Google App Engine, Heroku."@en .
 # 
-# https://w3id.org/cocoon/v1.0.1#QuanlityOfService
-<https://w3id.org/cocoon/v1.0.1#QuanlityOfService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cocoon/v1.0.1#QuanlityOfService> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an equivalent class to ssn-system:SystemProperty.\r\nQoS is more understandable in our context, and we can group related classed under this base class."@en .
+# https://w3id.org/cocoon/v1.0.1#QualityOfService
+<https://w3id.org/cocoon/v1.0.1#QualityOfService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/v1.0.1#QualityOfService> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an equivalent class to ssn-system:SystemProperty.\r\nQoS is more understandable in our context, and we can group related classed under this base class."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#Region
 <https://w3id.org/cocoon/v1.0.1#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
