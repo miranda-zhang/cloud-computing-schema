@@ -13,12 +13,12 @@ GENERATE {
     rdfs:label ?name;
     schema:dateModified ?date;
     cocoon:hasProvider ?provider;
-    
+
     GENERATE {
         ?iri gr:hasPriceSpecification [ 
             a gr:CloudServicePriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?value;
+                gr:hasCurrencyValue ?value_normalized;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
                 cocoon:inRegion <Region/{?provider_slug}/{?region}>;
         ]
@@ -26,7 +26,9 @@ GENERATE {
   	ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
         FILTER( ! CONTAINS(?managed_disk,"ultrassd") )
-        BIND (xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
+        BIND ( xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
+        BIND ( xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.size") ) AS ?size)
+        BIND ( xsd:double( IF( BOUND(?size) , ?value/?size , ?value ) ) AS ?value_normalized )
     } .
 
     GENERATE {
@@ -105,7 +107,7 @@ ITERATOR iter:JSONListKeys(?source) AS ?managed_disk
 WHERE {
     BIND (fun:JSONPath(?source,"$.['{?managed_disk}']") AS ?managed_disk_json)
     BIND (fun:JSONPath(?managed_disk_json,"$.prices") AS ?prices)
-    # having signle point of change for the following
+    # having single point of change for the following
     BIND ( "Azure" as ?provider_slug )
     BIND ( cocoon:Azure as ?provider )
     BIND ( "2019-03-07" as ?updated) # yr-month-day

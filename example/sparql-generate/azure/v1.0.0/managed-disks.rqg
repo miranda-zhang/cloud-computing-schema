@@ -4,7 +4,7 @@ PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX cocoon: <https://w3id.org/cocoon/v1.0#>
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0.0#>
 
 GENERATE { 
   <storage/azure/{?managed_disk}> a cocoon:NetworkStorage;
@@ -22,7 +22,8 @@ GENERATE {
     }
   	ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
-        BIND (xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
+        BIND (xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?monthlyValue )
+        BIND (xsd:float( ?monthlyValue/?size ) AS ?value )
     } .
 
     GENERATE {
@@ -44,7 +45,6 @@ GENERATE {
         ];
     } WHERE {
         BIND (xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.iops") ) AS ?iops )
-        BIND (xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.size") ) AS ?size)
         BIND (xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.speed") ) AS ?speed)        
         FILTER( BOUND(?iops) )
         # either ?iops ?size ?speed are all bound or non is bound
@@ -76,4 +76,5 @@ ITERATOR iter:JSONListKeys(?source) AS ?managed_disk
 WHERE {
     BIND (fun:JSONPath(?source,"$.['{?managed_disk}']") AS ?managed_disk_json)
     BIND (fun:JSONPath(?managed_disk_json,"$.prices") AS ?prices)
+    BIND (xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.size") ) AS ?size)
 }
