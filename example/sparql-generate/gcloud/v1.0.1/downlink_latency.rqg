@@ -30,8 +30,8 @@ GENERATE {
         BIND (
             COALESCE(
                 IF(?type = "downlink", ?qos_downlink_iri , 1/0),
-                IF(?type = "latency", <QuanlityOfService/Latency>, 1/0),
-                <QuanlityOfService/DNSQueryLatency> # assume "dns"
+                IF(?type = "latency", <QualityOfService/Latency>, 1/0),
+                <QualityOfService/DNSQueryLatency> # assume "dns"
             ) AS ?property_url
         )
         BIND (
@@ -90,8 +90,8 @@ WHERE {
     
     # Put dash between each word for easy parsing if needed
     BIND( CONCAT("DownlinkSpeed-",?min_size,"-",?max_size,"-KB") AS ?downlinkMin_maxKB )
-    # <QuanlityOfService/DownlinkSpeed-{?min_size}-{?max_size}-KB> 
-    BIND( IRI(CONCAT("QuanlityOfService/",?downlinkMin_maxKB)) AS ?qos_downlink_iri )
+    # <QualityOfService/DownlinkSpeed-{?min_size}-{?max_size}-KB> 
+    BIND( IRI(CONCAT("QualityOfService/",?downlinkMin_maxKB)) AS ?qos_downlink_iri )
 
     # having signle point of change for the following
     BIND ( "Gcloud" as ?provider_slug )

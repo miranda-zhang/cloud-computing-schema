@@ -38,7 +38,7 @@ See live https://jqplay.org/s/ZdLvSR_Fyj
 
 # SPARQL-Generate
 ```
-java -jar sparql-generate-jena.jar --output result/azure/downlink_latency.ttl --query-file azure/downlink_latency.rqg --log-level ERROR
+java -jar sparql-generate-jena.jar --output result/azure/v1.0.1/downlink_latency.ttl --query-file azure/v1.0.1/downlink_latency.rqg --log-level ERROR
 ```
 Query: [downlink_latency.rqg](../../sparql-generate/azure/v1.0.1/downlink_latency.rqg)
 
@@ -47,8 +47,8 @@ Result: [downlink_latency.ttl](../../sparql-generate/result/azure/v1.0.1/downlin
 # Uplink Data
 See [selenium](../selenium) about how to collect the data.
 ```
-java -jar sparql-generate-jena.jar --output result/azure/uplink.ttl --query-file azure/uplink.rqg --log-level ERROR
+java -jar sparql-generate-jena.jar --output result/azure/v1.0.1/uplink.ttl --query-file azure/v1.0.1/uplink.rqg --log-level ERROR
 ```
-Query: [uplink.rqg](../../sparql-generate/azure/uplink.rqg)
+Query: [uplink.rqg](../../sparql-generate/azure/v1.0.1/uplink.rqg)
 
 Result: [downlink_latency.ttl](../../sparql-generate/result/azure/v1.0.1/uplink.ttl)

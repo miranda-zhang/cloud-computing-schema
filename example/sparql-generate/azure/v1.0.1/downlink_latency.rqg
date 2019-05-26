@@ -3,12 +3,12 @@ PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl>
 PREFIX schema: <https://schema.org/>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX qudt: <http://qudt.org/1.1/schema/qudt#>
 PREFIX unit: <http://qudt.org/1.1/vocab/unit#>
+PREFIX cocoon: <http://w3id.org/cocoon/v1.0.1#>
 
 GENERATE {
     GENERATE {
@@ -53,7 +53,7 @@ GENERATE {
         BIND ( IF( ?service_type = "dns", cocoon:DNSService, cocoon:CDNService) AS ?service_type_class )
     }.
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/downlink_latency.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/azure/cloudharmony/downlink_latency.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
 WHERE {
     BIND( fun:JSONPath(?qos, '$.region' ) AS ?region)
@@ -69,14 +69,14 @@ WHERE {
 
     # Put dash between each word for easy parsing if needed
     BIND( CONCAT("DownlinkSpeed-",?min_size,"-",?max_size,"-KB") AS ?downlinkMin_maxKB )
-    # <QuanlityOfService/DownlinkSpeed-{?min_size}-{?max_size}-KB> 
-    BIND( IRI(CONCAT("QuanlityOfService/",?downlinkMin_maxKB)) AS ?qos_downlink_iri )
+    # <QualityOfService/DownlinkSpeed-{?min_size}-{?max_size}-KB> 
+    BIND( IRI(CONCAT("QualityOfService/",?downlinkMin_maxKB)) AS ?qos_downlink_iri )
 
     BIND (
         COALESCE(
             IF(?type = "downlink", ?qos_downlink_iri , 1/0),
-            IF(?type = "latency", <QuanlityOfService/Latency>, 1/0),
-            <QuanlityOfService/DNSQueryLatency> # assume "dns"
+            IF(?type = "latency", <QualityOfService/Latency>, 1/0),
+            <QualityOfService/DNSQueryLatency> # assume "dns"
         ) AS ?property_url
     )
     BIND (

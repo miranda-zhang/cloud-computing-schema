@@ -3,7 +3,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix iter:  <http://w3id.org/sparql-generate/iter/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cocoon: <https://w3id.org/cocoon/v1.0.1#> .
+@prefix cocoon: <http://w3id.org/cocoon/v1.0.1#> .
 @prefix fun:   <http://w3id.org/sparql-generate/fn/> .
 @prefix ssn:   <http://www.w3.org/ns/ssn/> .
 @prefix sosa:  <http://www.w3.org/ns/sosa/> .
@@ -43,7 +43,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A10%3A22.948Z/us-central1-c>
         a                          cocoon:Measurement ;
@@ -60,7 +60,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A24%3A20.763Z/us>
         a                          cocoon:Measurement ;
@@ -146,53 +146,53 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east1-c>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-south1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/southamerica-east1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west2-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east2-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-east2>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A37%3A24.600Z/us-west2>
         a                          cocoon:Measurement ;
@@ -228,7 +228,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A25%3A22.850Z/asia-east2>
         a                          cocoon:Measurement ;
@@ -244,7 +244,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A29%3A06.255Z/asia-east1>
         a                          cocoon:Measurement ;
@@ -265,16 +265,6 @@
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:30:24.623Z"^^xsd:dateTime .
-
-<https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A33%3A52.592Z/us-west1>
-        a                          cocoon:Measurement ;
-        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-west1> ;
-        sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  138.47e0 ;
-                                     schema:unitCode          unit:MegabitsPerSecond
-                                   ] ;
-        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-        sosa:resultTime            "2019-02-26T07:33:52.592Z"^^xsd:dateTime .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A15%3A26.007Z/us-west2-b>
         a                          cocoon:Measurement ;
@@ -306,24 +296,34 @@
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:21:35.120Z"^^xsd:dateTime .
 
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A33%3A52.592Z/us-west1>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-west1> ;
+        sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
+                                     schema:amountOfThisGood  138.47e0 ;
+                                     schema:unitCode          unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-26T07:33:52.592Z"^^xsd:dateTime .
+
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-east1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/eu>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/eu> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/australia-southeast1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A27%3A53.621Z/europe-west4-b>
         a                          cocoon:Measurement ;
@@ -359,13 +359,13 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/northamerica-northeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A21%3A30.869Z/us-west2-c>
         a                          cocoon:Measurement ;
@@ -381,14 +381,14 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/southamerica-east1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A28%3A07.926Z/europe-west3>
         a                          cocoon:Measurement ;
@@ -425,7 +425,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A13%3A38.527Z/southamerica-east1-a>
         a                          cocoon:Measurement ;
@@ -442,14 +442,14 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-northeast1-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A26%3A56.126Z/europe-west3>
         a                          cocoon:Measurement ;
@@ -466,14 +466,14 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-west2-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A25%3A40.018Z/asia-east2>
         a                          cocoon:Measurement ;
@@ -500,13 +500,13 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-northeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A11%3A58.884Z/us-east1-c>
         a                          cocoon:Measurement ;
@@ -533,19 +533,19 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-east1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A28%3A20.688Z/northamerica-northeast1>
         a                          cocoon:Measurement ;
@@ -560,7 +560,7 @@
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/CDNService/Gcloud/>
         a                   cocoon:CDNService ;
         cocoon:hasProvider  cocoon:Gcloud ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A21%3A19.463Z/us-west2-c>
         a                          cocoon:Measurement ;
@@ -576,13 +576,13 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-east1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A31%3A48.037Z/europe-west4>
         a                          cocoon:Measurement ;
@@ -599,13 +599,13 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-east2>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A25%3A44.533Z/asia-east1-b>
         a                          cocoon:Measurement ;
@@ -631,13 +631,13 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/eu> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-south1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A25%3A12.673Z/eu>
         a                          cocoon:Measurement ;
@@ -654,7 +654,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A20%3A00.518Z/asia-south1-a>
         a                          cocoon:Measurement ;
@@ -690,7 +690,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A32%3A13.413Z/europe-west2>
         a                          cocoon:Measurement ;
@@ -747,14 +747,14 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A37%3A10.953Z/asia-southeast1>
         a                          cocoon:Measurement ;
@@ -771,52 +771,52 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/australia-southeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-east1-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-west2-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-central1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-west1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west4-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A34%3A00.738Z/us-west1>
         a                          cocoon:Measurement ;
@@ -833,19 +833,19 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-east1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/southamerica-east1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A24%3A09.011Z/us>
         a                          cocoon:Measurement ;
@@ -861,7 +861,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A11%3A13.606Z/us-east4-a>
         a                          cocoon:Measurement ;
@@ -877,21 +877,21 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-east1-c>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west2-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A18%3A05.890Z/us-west2-a>
         a                          cocoon:Measurement ;
@@ -917,14 +917,14 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-central1-c>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A23%3A58.318Z/asia-southeast1-b>
         a                          cocoon:Measurement ;
@@ -941,7 +941,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A16%3A53.738Z/europe-west1-c>
         a                          cocoon:Measurement ;
@@ -958,7 +958,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DNSQueryLatency/DNSService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A10%3A09.835Z/>
         a                          cocoon:Measurement ;
@@ -985,7 +985,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A26%3A43.998Z/europe-west4-b>
         a                          cocoon:Measurement ;
@@ -1002,7 +1002,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A15%3A21.759Z/us-west2-b>
         a                          cocoon:Measurement ;
@@ -1038,19 +1038,19 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east1-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DNSQueryLatency/DNSService/Gcloud/>
         a                   cocoon:DNSService ;
         cocoon:hasProvider  cocoon:Gcloud ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DNSQueryLatency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DNSQueryLatency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A34%3A36.427Z/europe-west1>
         a                          cocoon:Measurement ;
@@ -1067,7 +1067,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A30%3A38.004Z/europe-north1>
         a                          cocoon:Measurement ;
@@ -1083,20 +1083,20 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-east1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/northamerica-northeast1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A14%3A17.456Z/australia-southeast1>
         a                          cocoon:Measurement ;
@@ -1113,13 +1113,13 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/australia-southeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A23%3A39.533Z/eu>
         a                          cocoon:Measurement ;
@@ -1166,13 +1166,13 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A37%3A04.365Z/asia-southeast1>
         a                          cocoon:Measurement ;
@@ -1189,32 +1189,32 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-northeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-west2-c>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-west2>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A20%3A08.220Z/asia-south1-a>
         a                          cocoon:Measurement ;
@@ -1231,7 +1231,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A25%3A50.693Z/asia-east1-b>
         a                          cocoon:Measurement ;
@@ -1247,7 +1247,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A16%3A05.760Z/europe-west1-c>
         a                          cocoon:Measurement ;
@@ -1283,7 +1283,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A32%3A27.670Z/europe-west2>
         a                          cocoon:Measurement ;
@@ -1299,7 +1299,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A14%3A13.420Z/australia-southeast1>
         a                          cocoon:Measurement ;
@@ -1336,7 +1336,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A25%3A33.827Z/asia-east2>
         a                          cocoon:Measurement ;
@@ -1363,7 +1363,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A28%3A34.612Z/northamerica-northeast1>
         a                          cocoon:Measurement ;
@@ -1419,51 +1419,51 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/australia-southeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-west1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-southeast1-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-east2>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/australia-southeast1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-west1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A37%3A53.227Z/us-west2>
         a                          cocoon:Measurement ;
@@ -1510,7 +1510,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/CDNService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A09%3A35.054Z/>
         a                          cocoon:Measurement ;
@@ -1536,14 +1536,14 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west4-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A36%3A55.234Z/asia-southeast1>
         a                          cocoon:Measurement ;
@@ -1565,17 +1565,17 @@
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:11:05.576Z"^^xsd:dateTime .
 
-<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/CDNService/Gcloud/>
-        a                   cocoon:CDNService ;
-        cocoon:hasProvider  cocoon:Gcloud ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
-
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/CDNService/Gcloud/>
+        a                   cocoon:CDNService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A30%3A49.893Z/europe-west4>
         a                          cocoon:Measurement ;
@@ -1592,7 +1592,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A17%3A38.827Z/europe-north1-b>
         a                          cocoon:Measurement ;
@@ -1628,7 +1628,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A20%3A38.710Z/us-west1-b>
         a                          cocoon:Measurement ;
@@ -1665,39 +1665,39 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-east4>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
-
-<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west4>
-        a                   cocoon:StorageService ;
-        cocoon:hasProvider  cocoon:Gcloud ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/northamerica-northeast1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west4>
+        a                   cocoon:StorageService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-southeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-west1-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A22%3A27.078Z/northamerica-northeast1-a>
         a                          cocoon:Measurement ;
@@ -1733,27 +1733,27 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/australia-southeast1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-northeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/europe-west4-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A28%3A52.644Z/asia-east1>
         a                          cocoon:Measurement ;
@@ -1780,7 +1780,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A22%3A09.969Z/northamerica-northeast1-a>
         a                          cocoon:Measurement ;
@@ -1797,7 +1797,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A29%3A12.594Z/asia-east1>
         a                          cocoon:Measurement ;
@@ -1814,7 +1814,7 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1> ;
         cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A34%3A19.647Z/us-west1>
         a                          cocoon:Measurement ;
@@ -1850,7 +1850,7 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A22%3A59.940Z/asia-east2-b>
         a                          cocoon:Measurement ;
@@ -1876,13 +1876,13 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/eu> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-east1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A33%3A00.425Z/southamerica-east1>
         a                          cocoon:Measurement ;
@@ -1898,13 +1898,13 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-west2>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A26%3A32.196Z/asia-east1-b>
         a                          cocoon:Measurement ;
@@ -1920,14 +1920,14 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-southeast1-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A36%3A27.819Z/us-east1>
         a                          cocoon:Measurement ;
@@ -1983,58 +1983,58 @@
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-west4>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/northamerica-northeast1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
         cocoon:inZone       "a" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-east4>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
-
-<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c>
-        a                   cocoon:ComputeService ;
-        cocoon:hasProvider  cocoon:Gcloud ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
-        cocoon:inZone       "c" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
-
-<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-south1>
-        a                   cocoon:StorageService ;
-        cocoon:hasProvider  cocoon:Gcloud ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-1-128-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/DownlinkSpeed-256-10240-KB> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
+        cocoon:inZone       "c" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-south1>
+        a                   cocoon:StorageService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-east2-b>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/CDNService/Gcloud/>
         a                   cocoon:CDNService ;
         cocoon:hasProvider  cocoon:Gcloud ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QuanlityOfService/Latency> .
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A29%3A01.987Z/us-central1>
         a                          cocoon:Measurement ;

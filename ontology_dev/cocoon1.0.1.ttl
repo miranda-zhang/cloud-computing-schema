@@ -373,12 +373,12 @@ sosa:Sensor rdf:type owl:Class .
 
 ###  http://www.w3.org/ns/ssn/systems/Latency
 ssn-system:Latency rdf:type owl:Class ;
-                   rdfs:subClassOf cocoon:QuanlityOfService .
+                   rdfs:subClassOf cocoon:QualityOfService .
 
 
 ###  http://www.w3.org/ns/ssn/systems/SystemProperty
 ssn-system:SystemProperty rdf:type owl:Class ;
-                          owl:equivalentClass cocoon:QuanlityOfService .
+                          owl:equivalentClass cocoon:QualityOfService .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -726,7 +726,7 @@ cocoon:DNSService rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#DataTransferSpeed
 cocoon:DataTransferSpeed rdf:type owl:Class ;
-                         rdfs:subClassOf cocoon:QuanlityOfService ,
+                         rdfs:subClassOf cocoon:QualityOfService ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty cocoon:transferedFileSizeMax ;
                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -877,9 +877,9 @@ cocoon:PaaS rdf:type owl:Class ;
             rdfs:comment "Platform as a Service, i.e. Google App Engine, Heroku."@en .
 
 
-###  https://w3id.org/cocoon/v1.0.1#QuanlityOfService
-cocoon:QuanlityOfService rdf:type owl:Class ;
-                         rdfs:comment """This is an equivalent class to ssn-system:SystemProperty.
+###  https://w3id.org/cocoon/v1.0.1#QualityOfService
+cocoon:QualityOfService rdf:type owl:Class ;
+                        rdfs:comment """This is an equivalent class to ssn-system:SystemProperty.
 QoS is more understandable in our context, and we can group related classed under this base class."""@en .
 
 

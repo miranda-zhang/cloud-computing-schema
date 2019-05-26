@@ -2,17 +2,17 @@
 @prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix cocoon: <http://w3id.org/cocoon/v1.0.1#> .
 @prefix qudt-unit: <http://qudt.org/1.1/vocab/unit#> .
-@prefix cocoon: <https://w3id.org/cocoon/v1.0.1#> .
 @prefix fun:   <http://w3id.org/sparql-generate/fn/> .
 @prefix ssn:   <http://www.w3.org/ns/ssn/> .
 @prefix sosa:  <http://www.w3.org/ns/sosa/> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/japan-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A57%3A02.320042Z>
         a                          cocoon:Measurement ;
@@ -36,15 +36,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-southcentral>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-southcentral> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-southcentral> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A13%3A27.843644Z>
         a                          cocoon:Measurement ;
@@ -77,15 +77,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-southeast>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-southeast> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-southeast> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-northcentral>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-northcentral> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-northcentral> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A14%3A18.155708Z>
         a                          cocoon:Measurement ;
@@ -119,15 +119,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A20%3A12.058022Z>
         a                          cocoon:Measurement ;
@@ -161,22 +161,22 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west2-3>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west2> ;
-        cocoon:inZone       "3" .
+        cocoon:inZone       "3" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-northcentral>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-northcentral> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-northcentral> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/brazil-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A58%3A48.563941Z>
         a                          cocoon:Measurement ;
@@ -210,9 +210,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-southcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A16%3A18.563232Z>
         a                          cocoon:Measurement ;
@@ -226,9 +226,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A57%3A02.373726Z>
         a                          cocoon:Measurement ;
@@ -262,9 +262,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A12%3A48.361018Z>
         a                          cocoon:Measurement ;
@@ -308,9 +308,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/france-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A04%3A50.791243Z>
         a                          cocoon:Measurement ;
@@ -324,21 +324,21 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-southeast>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-southeast> .
-
-<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-southeast>
-        a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
-        cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-southeast> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-southeast> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/brazil-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/brazil-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/brazil-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
+
+<https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-southeast>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Azure ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-southeast> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A11%3A21.315729Z>
         a                          cocoon:Measurement ;
@@ -372,15 +372,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/france-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-southeast/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A57%3A55.095971Z>
         a                          cocoon:Measurement ;
@@ -394,21 +394,21 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/japan-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-southcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A16%3A18.628234Z>
         a                          cocoon:Measurement ;
@@ -422,9 +422,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A13%3A27.895655Z>
         a                          cocoon:Measurement ;
@@ -457,21 +457,21 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/china-north>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A53%3A35.042984Z>
         a                          cocoon:Measurement ;
@@ -485,21 +485,21 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east2>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east2> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east2> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A10%3A26.582655Z>
         a                          cocoon:Measurement ;
@@ -533,9 +533,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/eu-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A08%3A00.385736Z>
         a                          cocoon:Measurement ;
@@ -549,15 +549,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A01%3A11.082929Z>
         a                          cocoon:Measurement ;
@@ -590,15 +590,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/france-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/china-north2>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north2> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north2> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A12%3A03.056596Z>
         a                          cocoon:Measurement ;
@@ -642,33 +642,33 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-north>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-north> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-north> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/korea-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/korea-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/china-north2>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north2> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/china-north2> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A55%3A47.941746Z>
         a                          cocoon:Measurement ;
@@ -701,15 +701,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/eu-north>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-north> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/eu-north> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/japan-west>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-west> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/japan-west> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-northcentral/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A15%3A18.997810Z>
         a                          cocoon:Measurement ;
@@ -723,9 +723,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/eu-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A03%3A17.955764Z>
         a                          cocoon:Measurement ;
@@ -759,9 +759,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/france-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/us-east2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A14%3A18.097704Z>
         a                          cocoon:Measurement ;
@@ -775,15 +775,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central2/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A56%3A12.195731Z>
         a                          cocoon:Measurement ;
@@ -807,15 +807,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-southeast>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-southeast> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-southeast> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central2>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central2> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central2> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-west/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A12%3A03.109611Z>
         a                          cocoon:Measurement ;
@@ -829,34 +829,34 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/asia-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/asia-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-westcentral>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-westcentral> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-westcentral> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-west2-3>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-west2> ;
-        cocoon:inZone       "3" .
+        cocoon:inZone       "3" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-westcentral>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-westcentral> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-westcentral> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/uk-south/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A11%3A21.373708Z>
         a                          cocoon:Measurement ;
@@ -910,39 +910,39 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central2>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central2> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central2> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/brazil-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/brazil-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/brazil-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/canada-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east2>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east2> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east2> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/us-east>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-east> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/canada-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A59%3A36.886900Z>
         a                          cocoon:Measurement ;
@@ -956,9 +956,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/australia-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/australia-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/australia-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A55%3A15.926929Z>
         a                          cocoon:Measurement ;
@@ -982,9 +982,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/canada-east/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A00%3A15.980657Z>
         a                          cocoon:Measurement ;
@@ -1018,9 +1018,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/france-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/france-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-256-10240-KB/ComputeService/Azure/india-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A05%3A39.181342Z>
         a                          cocoon:Measurement ;
@@ -1034,15 +1034,15 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/india-central>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-central> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/india-central> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/UplinkSpeed-256-10240-KB/ComputeService/Azure/uk-south>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-256-10240-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-south> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/uk-south> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/asia-southeast/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T00%3A54%3A31.987540Z>
         a                          cocoon:Measurement ;
@@ -1056,9 +1056,9 @@
 
 <https://w3id.org/cocoon/data/UplinkSpeed-1-128-KB/ComputeService/Azure/us-southcentral>
         a                   cocoon:ComputeService ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/QuanlityOfService/UplinkSpeed-1-128-KB> ;
         cocoon:hasProvider  cocoon:Azure ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-southcentral> .
+        cocoon:inRegion     <https://w3id.org/cocoon/data/Region/Azure/us-southcentral> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/QualityOfService/UplinkSpeed1-128-KB> .
 
 <https://w3id.org/cocoon/data/Measurement/UplinkSpeed-1-128-KB/ComputeService/Azure/korea-central/150.203.213.249/lat=-35.271475/long=149.121434/2019-03-05T01%3A09%3A33.900597Z>
         a                          cocoon:Measurement ;

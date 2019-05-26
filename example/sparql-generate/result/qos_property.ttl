@@ -23,21 +23,21 @@
     schema:unitText "KB";
     schema:unitCode "2P".
 
-<QuanlityOfService/DownlinkSpeed-1-128-KB> a cocoon:DownlinkSpeed;
+<QualityOfService/DownlinkSpeed-1-128-KB> a cocoon:DownlinkSpeed;
     cocoon:transferedFileSizeMin <1-KB>;
     cocoon:transferedFileSizeMax <128-KB>.
 
-<QuanlityOfService/DownlinkSpeed-256-10240-KB> a cocoon:DownlinkSpeed;
+<QualityOfService/DownlinkSpeed-256-10240-KB> a cocoon:DownlinkSpeed;
     cocoon:transferedFileSizeMin <256-KB>;
     cocoon:transferedFileSizeMax <10240-KB>.
 
-<QuanlityOfService/UplinkSpeed-1-128-KB> a cocoon:UplinkSpeed;
+<QualityOfService/UplinkSpeed-1-128-KB> a cocoon:UplinkSpeed;
     cocoon:transferedFileSizeMin <1-KB>;
     cocoon:transferedFileSizeMax <128-KB>.
 
-<QuanlityOfService/UplinkSpeed-256-10240-KB> a cocoon:UplinkSpeed;
+<QualityOfService/UplinkSpeed-256-10240-KB> a cocoon:UplinkSpeed;
     cocoon:transferedFileSizeMin <256-KB>;
     cocoon:transferedFileSizeMax <10240-KB>.
 
-<QuanlityOfService/Latency> a cocoon:Latency .
-<QuanlityOfService/DNSQueryLatency> a cocoon:DNSQueryLatency .
+<QualityOfService/Latency> a cocoon:Latency .
+<QualityOfService/DNSQueryLatency> a cocoon:DNSQueryLatency .

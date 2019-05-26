@@ -2,12 +2,12 @@ BASE <https://w3id.org/cocoon/data/>
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl>
 PREFIX schema: <https://schema.org/>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX qudt: <http://qudt.org/1.1/schema/qudt#>
 PREFIX qudt-unit: <http://qudt.org/1.1/vocab/unit#>
+PREFIX cocoon: <http://w3id.org/cocoon/v1.0.1#>
 
 GENERATE {
     <{?type_slug}/{?service_type_slug}/{?provider_slug}/{?region_zone_slug}> a cocoon:ComputeService ;
@@ -40,7 +40,7 @@ WHERE {
     # BIND( xsd:string(fun:JSONPath(?qos, '$.size.upper.value')) AS ?max_size)
     # BIND( xsd:string(fun:JSONPath(?qos, '$.size.lower.unit')) AS ?lower_unit)
     # BIND( xsd:string(fun:JSONPath(?qos, '$.size.upper.unit')) AS ?upper_unit)
-    BIND ( IF( ?min_size = 1 , <QuanlityOfService/UplinkSpeed-1-128-KB>, <QuanlityOfService/UplinkSpeed-256-10240-KB> ) AS ?property_url )
+    BIND ( IF( ?min_size = 1 , <QualityOfService/UplinkSpeed1-128-KB>, <QualityOfService/UplinkSpeed-256-10240-KB> ) AS ?property_url )
     BIND ( IF( ?min_size = 1 , "UplinkSpeed-1-128-KB", "UplinkSpeed-256-10240-KB" ) AS ?type_slug )
     BIND ( qudt-unit:MegabitsPerSecond AS ?unit ) # also know it is going to be Mb/s
     # Use var so change can be made in one place

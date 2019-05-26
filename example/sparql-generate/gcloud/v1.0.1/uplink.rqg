@@ -40,7 +40,7 @@ WHERE {
     # BIND( xsd:string(fun:JSONPath(?qos, '$.size.upper.value')) AS ?max_size)
     # BIND( xsd:string(fun:JSONPath(?qos, '$.size.lower.unit')) AS ?lower_unit)
     # BIND( xsd:string(fun:JSONPath(?qos, '$.size.upper.unit')) AS ?upper_unit)
-    BIND ( IF( ?min_size = 1 , <QuanlityOfService/UplinkSpeed-1-128-KB>, <QuanlityOfService/UplinkSpeed-256-10240-KB> ) AS ?property_url )
+    BIND ( IF( ?min_size = 1 , <QualityOfService/UplinkSpeed-1-128-KB>, <QualityOfService/UplinkSpeed-256-10240-KB> ) AS ?property_url )
     BIND ( IF( ?min_size = 1 , "UplinkSpeed-1-128-KB", "UplinkSpeed-256-10240-KB" ) AS ?type_slug )
     BIND ( unit:MegabitsPerSecond AS ?unit ) # also known it is going to be Mb/s
     # having signle point of change for the following
