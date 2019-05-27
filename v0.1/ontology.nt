@@ -1,0 +1,690 @@
+<https://w3id.org/cocoon/def> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/cocoon/def#hasApplianceType
+<https://w3id.org/cocoon/def#hasApplianceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasBandwidth
+<https://w3id.org/cocoon/def#hasBandwidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasBenchmark
+<https://w3id.org/cocoon/def#hasBenchmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasCPU
+<https://w3id.org/cocoon/def#hasCPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasCapacity
+<https://w3id.org/cocoon/def#hasCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasClockRate
+<https://w3id.org/cocoon/def#hasClockRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasCommunicationBus
+<https://w3id.org/cocoon/def#hasCommunicationBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasCredential
+<https://w3id.org/cocoon/def#hasCredential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasDeploymentModel
+<https://w3id.org/cocoon/def#hasDeploymentModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasFunctionality
+<https://w3id.org/cocoon/def#hasFunctionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasIOConfiguration
+<https://w3id.org/cocoon/def#hasIOConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasLocalStorage
+<https://w3id.org/cocoon/def#hasLocalStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasLocation
+<https://w3id.org/cocoon/def#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasMemory
+<https://w3id.org/cocoon/def#hasMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasMemoryAddressSize
+<https://w3id.org/cocoon/def#hasMemoryAddressSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasMetric
+<https://w3id.org/cocoon/def#hasMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasNetworkStorage
+<https://w3id.org/cocoon/def#hasNetworkStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasNonFunctionalProperty
+<https://w3id.org/cocoon/def#hasNonFunctionalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasOperatingSystem
+<https://w3id.org/cocoon/def#hasOperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasOrchestrationInterface
+<https://w3id.org/cocoon/def#hasOrchestrationInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasPassword
+<https://w3id.org/cocoon/def#hasPassword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasPhysicalLocation
+<https://w3id.org/cocoon/def#hasPhysicalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasProtocol
+<https://w3id.org/cocoon/def#hasProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasProvider
+<https://w3id.org/cocoon/def#hasProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasQuantity
+<https://w3id.org/cocoon/def#hasQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasScript
+<https://w3id.org/cocoon/def#hasScript> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasServiceLevelAgreement
+<https://w3id.org/cocoon/def#hasServiceLevelAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasStorage
+<https://w3id.org/cocoon/def#hasStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasSupportedProtocol
+<https://w3id.org/cocoon/def#hasSupportedProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasUnitOfMeasurement
+<https://w3id.org/cocoon/def#hasUnitOfMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasUser
+<https://w3id.org/cocoon/def#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasVirtualization
+<https://w3id.org/cocoon/def#hasVirtualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#hasVirtualizationFormat
+<https://w3id.org/cocoon/def#hasVirtualizationFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#isAvailableIn
+<https://w3id.org/cocoon/def#isAvailableIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#isSoftware
+<https://w3id.org/cocoon/def#isSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/cocoon/def#isSoftwareType
+<https://w3id.org/cocoon/def#isSoftwareType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/cocoon/def#CPUClockSpeed
+<https://w3id.org/cocoon/def#CPUClockSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#CPUFamily
+<https://w3id.org/cocoon/def#CPUFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#URI
+<https://w3id.org/cocoon/def#URI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/cocoon/def#URI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/cocoon/def#accessNumber
+<https://w3id.org/cocoon/def#accessNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#bandwidth
+<https://w3id.org/cocoon/def#bandwidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#description
+<https://w3id.org/cocoon/def#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#fileSystem
+<https://w3id.org/cocoon/def#fileSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#genericName
+<https://w3id.org/cocoon/def#genericName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#hash
+<https://w3id.org/cocoon/def#hash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#latency
+<https://w3id.org/cocoon/def#latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#method
+<https://w3id.org/cocoon/def#method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#numberOfCores
+<https://w3id.org/cocoon/def#numberOfCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#numericValue
+<https://w3id.org/cocoon/def#numericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#onChip
+<https://w3id.org/cocoon/def#onChip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#persistence
+<https://w3id.org/cocoon/def#persistence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#protocolVersion
+<https://w3id.org/cocoon/def#protocolVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#providerDescription
+<https://w3id.org/cocoon/def#providerDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#providerName
+<https://w3id.org/cocoon/def#providerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#requestPayload
+<https://w3id.org/cocoon/def#requestPayload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#resourceRecord
+<https://w3id.org/cocoon/def#resourceRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#responsePayload
+<https://w3id.org/cocoon/def#responsePayload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#storageFormat
+<https://w3id.org/cocoon/def#storageFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#storageSizeMax
+<https://w3id.org/cocoon/def#storageSizeMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/cocoon/def#storageSizeMin
+<https://w3id.org/cocoon/def#storageSizeMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/cocoon/def#AccessControl
+<https://w3id.org/cocoon/def#AccessControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#Appliance
+<https://w3id.org/cocoon/def#Appliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Appliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#PaaS> .
+<https://w3id.org/cocoon/def#Appliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasApplianceType> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#SaaS> .
+<https://w3id.org/cocoon/def#Appliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#genericName> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/cocoon/def#Application
+<https://w3id.org/cocoon/def#Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Application> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#SoftwareType> .
+# 
+# https://w3id.org/cocoon/def#Attribute
+<https://w3id.org/cocoon/def#Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#BLOBStorage
+<https://w3id.org/cocoon/def#BLOBStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#BLOBStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#NetworkStorage> .
+# 
+# https://w3id.org/cocoon/def#BlockDeviceStorage
+<https://w3id.org/cocoon/def#BlockDeviceStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#BlockDeviceStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#NetworkStorage> .
+# 
+# https://w3id.org/cocoon/def#Bus
+<https://w3id.org/cocoon/def#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#onChip> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/cocoon/def#CIFS
+<https://w3id.org/cocoon/def#CIFS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#CIFS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#CPU
+<https://w3id.org/cocoon/def#CPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasBenchmark> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#PhysicalQuantity> .
+<https://w3id.org/cocoon/def#CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasClockRate> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#PhysicalQuantity> .
+<https://w3id.org/cocoon/def#CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasLocalStorage> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#LocalStorage> .
+<https://w3id.org/cocoon/def#CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasMemory> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#PhysicalQuantity> .
+<https://w3id.org/cocoon/def#CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#CPUFamily> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/def#CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#numberOfCores> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/cocoon/def#CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#resourceRecord> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/cocoon/def#CloudResource
+<https://w3id.org/cocoon/def#CloudResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#CloudResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasCredential> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Credential> .
+<https://w3id.org/cocoon/def#CloudResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasDeploymentModel> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#DeploymentModel> .
+<https://w3id.org/cocoon/def#CloudResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasLocation> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Location> .
+<https://w3id.org/cocoon/def#CloudResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasPhysicalLocation> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Location> .
+<https://w3id.org/cocoon/def#CloudResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasProvider> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Provider> .
+<https://w3id.org/cocoon/def#CloudResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#isAvailableIn> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Location> .
+# 
+# https://w3id.org/cocoon/def#ClusteredCPU
+<https://w3id.org/cocoon/def#ClusteredCPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#ClusteredCPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#CPU> .
+<https://w3id.org/cocoon/def#ClusteredCPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasCommunicationBus> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Bus> .
+<https://w3id.org/cocoon/def#ClusteredCPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#CPUClockSpeed> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/cocoon/def#CommunityCloud
+<https://w3id.org/cocoon/def#CommunityCloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#CommunityCloud> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#DeploymentModel> .
+# 
+# https://w3id.org/cocoon/def#Compute
+<https://w3id.org/cocoon/def#Compute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Compute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#IaaS> .
+<https://w3id.org/cocoon/def#Compute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasCPU> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#CPU> .
+<https://w3id.org/cocoon/def#Compute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasIOConfiguration> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Attribute> .
+<https://w3id.org/cocoon/def#Compute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasMemoryAddressSize> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#PhysicalQuantity> .
+<https://w3id.org/cocoon/def#Compute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasNetworkStorage> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Storage> .
+<https://w3id.org/cocoon/def#Compute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasVirtualization> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Virtualization> .
+# 
+# https://w3id.org/cocoon/def#Credential
+<https://w3id.org/cocoon/def#Credential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Credential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#AccessControl> .
+<https://w3id.org/cocoon/def#Credential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasPassword> .
+_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/def#Password> .
+<https://w3id.org/cocoon/def#Credential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasUser> .
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/def#User> .
+# 
+# https://w3id.org/cocoon/def#CustomizableAppliance
+<https://w3id.org/cocoon/def#CustomizableAppliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#CustomizableAppliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Appliance> .
+<https://w3id.org/cocoon/def#CustomizableAppliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasScript> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Script> .
+<https://w3id.org/cocoon/def#CustomizableAppliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasVirtualizationFormat> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#VirtualizationFormat> .
+<https://w3id.org/cocoon/def#CustomizableAppliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasOperatingSystem> .
+_:genid28 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/def#OperatingSystem> .
+# 
+# https://w3id.org/cocoon/def#DeploymentModel
+<https://w3id.org/cocoon/def#DeploymentModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#FTP
+<https://w3id.org/cocoon/def#FTP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#FTP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#HTTP
+<https://w3id.org/cocoon/def#HTTP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#HTTP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#HybridCloud
+<https://w3id.org/cocoon/def#HybridCloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#HybridCloud> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#DeploymentModel> .
+# 
+# https://w3id.org/cocoon/def#IP
+<https://w3id.org/cocoon/def#IP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#IP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#IPv4
+<https://w3id.org/cocoon/def#IPv4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#IPv4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#IP> .
+# 
+# https://w3id.org/cocoon/def#IPv6
+<https://w3id.org/cocoon/def#IPv6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#IPv6> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#IP> .
+# 
+# https://w3id.org/cocoon/def#IaaS
+<https://w3id.org/cocoon/def#IaaS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#IaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#CloudResource> .
+<https://w3id.org/cocoon/def#IaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasStorage> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Storage> .
+<https://w3id.org/cocoon/def#IaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#fileSystem> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/def#IaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#persistence> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/def#IaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#storageFormat> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/cocoon/def#IaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#storageSizeMax> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/cocoon/def#Input
+<https://w3id.org/cocoon/def#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Operation> .
+# 
+# https://w3id.org/cocoon/def#Interface
+<https://w3id.org/cocoon/def#Interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#LocalStorage
+<https://w3id.org/cocoon/def#LocalStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#LocalStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Compute> .
+# 
+# https://w3id.org/cocoon/def#Location
+<https://w3id.org/cocoon/def#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#NonFunctionalProperty> .
+# 
+# https://w3id.org/cocoon/def#MeasurableAttribute
+<https://w3id.org/cocoon/def#MeasurableAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#MeasurableAttribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Attribute> .
+<https://w3id.org/cocoon/def#MeasurableAttribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasMetric> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Metric> .
+# 
+# https://w3id.org/cocoon/def#Metric
+<https://w3id.org/cocoon/def#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasQuantity> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#PhysicalQuantity> .
+# 
+# https://w3id.org/cocoon/def#Network
+<https://w3id.org/cocoon/def#Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#IaaS> .
+<https://w3id.org/cocoon/def#Network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasBandwidth> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#PhysicalQuantity> .
+<https://w3id.org/cocoon/def#Network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#bandwidth> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/def#Network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#latency> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/cocoon/def#NetworkStorage
+<https://w3id.org/cocoon/def#NetworkStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#NetworkStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Network> .
+<https://w3id.org/cocoon/def#NetworkStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasCapacity> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#PhysicalQuantity> .
+<https://w3id.org/cocoon/def#NetworkStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasProtocol> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#NonFunctionalProperty
+<https://w3id.org/cocoon/def#NonFunctionalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#OperatingSystem
+<https://w3id.org/cocoon/def#OperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#SoftwareType> .
+# 
+# https://w3id.org/cocoon/def#Operation
+<https://w3id.org/cocoon/def#Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#Output
+<https://w3id.org/cocoon/def#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Output> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Operation> .
+# 
+# https://w3id.org/cocoon/def#PaaS
+<https://w3id.org/cocoon/def#PaaS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#PaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#CloudResource> .
+# 
+# https://w3id.org/cocoon/def#Password
+<https://w3id.org/cocoon/def#Password> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Password> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hash> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/cocoon/def#PhysicalQuantity
+<https://w3id.org/cocoon/def#PhysicalQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#PhysicalQuantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasUnitOfMeasurement> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cocoon/def#UnitOfMeasure> .
+<https://w3id.org/cocoon/def#PhysicalQuantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#numericValue> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/cocoon/def#PrivateCloud
+<https://w3id.org/cocoon/def#PrivateCloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#PrivateCloud> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#DeploymentModel> .
+# 
+# https://w3id.org/cocoon/def#Protocol
+<https://w3id.org/cocoon/def#Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Protocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#protocolVersion> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/cocoon/def#Provider
+<https://w3id.org/cocoon/def#Provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Provider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#NonFunctionalProperty> .
+<https://w3id.org/cocoon/def#Provider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#URI> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/cocoon/def#Provider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#providerDescription> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/cocoon/def#Provider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#providerName> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/cocoon/def#PublicCloud
+<https://w3id.org/cocoon/def#PublicCloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#PublicCloud> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#DeploymentModel> .
+# 
+# https://w3id.org/cocoon/def#QualityOfService
+<https://w3id.org/cocoon/def#QualityOfService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#RDP
+<https://w3id.org/cocoon/def#RDP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#RDP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#REST
+<https://w3id.org/cocoon/def#REST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#REST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Interface> .
+<https://w3id.org/cocoon/def#REST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#method> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/def#REST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#requestPayload> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/cocoon/def#REST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#responsePayload> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/cocoon/def#RSync
+<https://w3id.org/cocoon/def#RSync> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#RSync> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#Region
+<https://w3id.org/cocoon/def#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Location> .
+# 
+# https://w3id.org/cocoon/def#SCP
+<https://w3id.org/cocoon/def#SCP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#SCP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#SSH
+<https://w3id.org/cocoon/def#SSH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#SSH> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#SaaS
+<https://w3id.org/cocoon/def#SaaS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#SaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#CloudResource> .
+<https://w3id.org/cocoon/def#SaaS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#isSoftware> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Software> .
+# 
+# https://w3id.org/cocoon/def#Script
+<https://w3id.org/cocoon/def#Script> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Script> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#SoftwareType> .
+# 
+# https://w3id.org/cocoon/def#Service
+<https://w3id.org/cocoon/def#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasNonFunctionalProperty> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#NonFunctionalProperty> .
+<https://w3id.org/cocoon/def#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasOrchestrationInterface> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Interface> .
+<https://w3id.org/cocoon/def#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasServiceLevelAgreement> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#ServiceLevelAgreement> .
+<https://w3id.org/cocoon/def#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasSupportedProtocol> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#ServiceLevelAgreement
+<https://w3id.org/cocoon/def#ServiceLevelAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#Software
+<https://w3id.org/cocoon/def#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#hasFunctionality> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#SoftwareFunctionality> .
+<https://w3id.org/cocoon/def#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#isSoftwareType> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cocoon/def#SoftwareType> .
+# 
+# https://w3id.org/cocoon/def#SoftwareFunctionality
+<https://w3id.org/cocoon/def#SoftwareFunctionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#SoftwareType
+<https://w3id.org/cocoon/def#SoftwareType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#Storage
+<https://w3id.org/cocoon/def#Storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Storage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#IaaS> .
+<https://w3id.org/cocoon/def#Storage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/def#storageSizeMin> .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/cocoon/def#Telnet
+<https://w3id.org/cocoon/def#Telnet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Telnet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#UnitOfMeasure
+<https://w3id.org/cocoon/def#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#UnmeasurableAttribute
+<https://w3id.org/cocoon/def#UnmeasurableAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#UnmeasurableAttribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Attribute> .
+# 
+# https://w3id.org/cocoon/def#User
+<https://w3id.org/cocoon/def#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#VNC
+<https://w3id.org/cocoon/def#VNC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#VNC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Protocol> .
+# 
+# https://w3id.org/cocoon/def#Virtualization
+<https://w3id.org/cocoon/def#Virtualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Virtualization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Compute> .
+# 
+# https://w3id.org/cocoon/def#VirtualizationFormat
+<https://w3id.org/cocoon/def#VirtualizationFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cocoon/def#WSDL
+<https://w3id.org/cocoon/def#WSDL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#WSDL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Interface> .
+# 
+# https://w3id.org/cocoon/def#Zone
+<https://w3id.org/cocoon/def#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cocoon/def#Zone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/def#Region> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

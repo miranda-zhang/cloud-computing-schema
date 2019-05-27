@@ -888,14 +888,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gclo
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0.1#hasCurrencyValue"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange>
-                    <rdfs:Datatype>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
-                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
-                        </owl:unionOf>
-                    </rdfs:Datatype>
-                </owl:onDataRange>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -917,17 +910,10 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gclo
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0.1#hasCurrencyValue"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange>
-                    <rdfs:Datatype>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
-                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
-                        </owl:unionOf>
-                    </rdfs:Datatype>
-                </owl:onDataRange>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <rdfs:comment xml:lang="en">gr:hasCurrencyValue seems only allow float value, extended to allow more precision with double floating-point numbers (xsd:double).</rdfs:comment>
+        <rdfs:comment xml:lang="en">gr:hasCurrencyValue seems only allow float value, change to use xs:decimal to allow exact representation of monetary value. Floats can introduce cumulative rounding errors.</rdfs:comment>
     </owl:Axiom>
     
 

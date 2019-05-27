@@ -549,11 +549,7 @@ cocoon:CloudServicePriceSpecification rdf:type owl:Class ;
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty cocoon:hasCurrencyValue ;
                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                        owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                                                          owl:unionOf ( xsd:double
-                                                                                        xsd:float
-                                                                                      )
-                                                                        ]
+                                                        owl:onDataRange xsd:decimal
                                                       ] .
 
 [ rdf:type owl:Axiom ;
@@ -572,13 +568,9 @@ cocoon:CloudServicePriceSpecification rdf:type owl:Class ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
                          owl:onProperty cocoon:hasCurrencyValue ;
                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                           owl:unionOf ( xsd:double
-                                                         xsd:float
-                                                       )
-                                         ]
+                         owl:onDataRange xsd:decimal
                        ] ;
-   rdfs:comment "gr:hasCurrencyValue seems only allow float value, extended to allow more precision with double floating-point numbers (xsd:double)."@en
+   rdfs:comment "gr:hasCurrencyValue seems only allow float value, change to use xs:decimal to allow exact representation of monetary value. Floats can introduce cumulative rounding errors."@en
  ] .
 
 

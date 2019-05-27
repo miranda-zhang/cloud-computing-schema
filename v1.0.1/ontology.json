@@ -136,7 +136,7 @@
   "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid20"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#hasCurrencyValue"
@@ -160,20 +160,10 @@
   } ]
 }, {
   "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#double"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#float"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "gr:hasCurrencyValue seems only allow float value, extended to allow more precision with double floating-point numbers (xsd:double)."
+    "@value" : "gr:hasCurrencyValue seems only allow float value, change to use xs:decimal to allow exact representation of monetary value. Floats can introduce cumulative rounding errors."
   } ],
   "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
@@ -185,7 +175,7 @@
     "@id" : "_:genid19"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/goodrelations/v1#hasPriceSpecification"
@@ -194,7 +184,7 @@
     "@id" : "http://purl.org/goodrelations/v1#UnitPriceSpecification"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#hasStorage"
@@ -203,7 +193,7 @@
     "@id" : "https://schema.org/TypeAndQuantityNode"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -216,10 +206,10 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid25"
+    "@id" : "_:genid22"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://schema.org/TypeAndQuantityNode"
@@ -232,7 +222,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -245,10 +235,10 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid27"
+    "@id" : "_:genid24"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -259,6 +249,51 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/goodrelations/v1#hasPriceSpecification"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "VM storage transaction price specification.\r\nThere is a data access fees on local disk of Azure VM.\r\nFor example, every single block access incurs a transaction. The default block size is 4 Megabytes, meaning uploading a 32Mb file will incur 8 Storage Transactions. Deleting the file will also incur 8 transactions, so will updating it, and any other time the file is touched. The transactions are charged at a cost of around $0.00036 USD per 10,000 transactions. So 32Mb file will cost $0.000000368 AUD.\r\nThe only exception to Storage Transactions is when Premium Storage (persistent SSD storage) is used. That is, when you provision a P10, P20 or a P30 disk for your Virtual Machine those disks are exempt from Storage Transactions.\r\n\r\nhttps://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azure/vm.md#storage-transactions"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://schema.org/TypeAndQuantityNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#hasCPUcapacity"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "CPU power of VM"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "_:genid28"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -275,51 +310,6 @@
   } ]
 }, {
   "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "VM storage transaction price specification.\r\nThere is a data access fees on local disk of Azure VM.\r\nFor example, every single block access incurs a transaction. The default block size is 4 Megabytes, meaning uploading a 32Mb file will incur 8 Storage Transactions. Deleting the file will also incur 8 transactions, so will updating it, and any other time the file is touched. The transactions are charged at a cost of around $0.00036 USD per 10,000 transactions. So 32Mb file will cost $0.000000368 AUD.\r\nThe only exception to Storage Transactions is when Premium Storage (persistent SSD storage) is used. That is, when you provision a P10, P20 or a P30 disk for your Virtual Machine those disks are exempt from Storage Transactions.\r\n\r\nhttps://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azure/vm.md#storage-transactions"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid29"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://schema.org/TypeAndQuantityNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#hasCPUcapacity"
-  } ]
-}, {
-  "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "CPU power of VM"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid31"
-  } ]
-}, {
-  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -332,7 +322,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -345,10 +335,10 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid33"
+    "@id" : "_:genid30"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -361,7 +351,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize"
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -374,10 +364,10 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid35"
+    "@id" : "_:genid32"
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -390,7 +380,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#numberOfCores"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -403,10 +393,10 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid37"
+    "@id" : "_:genid34"
   } ]
 }, {
-  "@id" : "_:genid39",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://schema.org/TypeAndQuantityNode"
@@ -417,6 +407,48 @@
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://schema.org/TypeAndQuantityNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#inPhysicalLocation"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Exact location take precedence over large area, i.e. Geo coordinates is better than city and country name."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "_:genid38"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -437,48 +469,6 @@
 }, {
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://schema.org/TypeAndQuantityNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#transferedFileSizeMin"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#Location"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#inPhysicalLocation"
-  } ]
-}, {
-  "@id" : "_:genid42",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Exact location take precedence over large area, i.e. Geo coordinates is better than city and country name."
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#Device"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid41"
-  } ]
-}, {
-  "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#ipv4"
   } ],
@@ -486,7 +476,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://purl.org/dc/terms/modified" : [ {
     "@language" : "en",
@@ -499,10 +489,10 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#Device"
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid43"
+    "@id" : "_:genid40"
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#excludesDestination"
@@ -511,7 +501,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#Location"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#hasDestination"
@@ -520,7 +510,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#Location"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#TrafficDirection"
@@ -533,7 +523,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#TrafficDirection"
@@ -546,7 +536,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -554,6 +544,15 @@
     }, {
       "@id" : "https://schema.org/Place"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#inJurisdiction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#Location"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -569,19 +568,52 @@
     "@value" : "1"
   } ]
 }, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#Region"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#hasProvider"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
   "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#inJurisdiction"
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#inPhysicalLocation"
   } ]
 }, {
   "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Some regions can be in multiple locations, i.e. nam-eur-asia1, they can be in multiple jurisdictions. Other region should have at most 1 phisical location associated with it."
+    "@language" : "en",
+    "@value" : "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately. The intended usage of this is record the known most precise location."
   } ],
   "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
@@ -595,48 +627,6 @@
 }, {
   "@id" : "_:genid54",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://purl.org/goodrelations/v1#BusinessEntity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#hasProvider"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid55",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#Location"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#inPhysicalLocation"
-  } ]
-}, {
-  "@id" : "_:genid56",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "If a definite location or address is known, physical location can be set, otherwise cocoon:inJurisdiction can be used to describe where it is in approximately. The intended usage of this is record the known most precise location."
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#Region"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid55"
-  } ]
-}, {
-  "@id" : "_:genid57",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -648,7 +638,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#city"
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -661,7 +651,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#continent"
   } ]
 }, {
-  "@id" : "_:genid59",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -672,6 +662,33 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#state"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "For example, Google Cloud Composer."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#SaaS"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "Software as a Service"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+    }, {
+      "@id" : "https://schema.org/Service"
+    } ]
   } ]
 }, {
   "@id" : "_:genid6",
@@ -690,34 +707,7 @@
     "@id" : "_:genid5"
   } ]
 }, {
-  "@id" : "_:genid60",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "For example, Google Cloud Composer."
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#SaaS"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@language" : "en",
-    "@value" : "Software as a Service"
-  } ]
-}, {
   "@id" : "_:genid61",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
-    }, {
-      "@id" : "https://schema.org/Service"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -730,7 +720,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid65",
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#canHaveSnapshot"
@@ -739,7 +729,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#StorageService"
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -752,10 +742,10 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#StorageService"
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid65"
+    "@id" : "_:genid62"
   } ]
 }, {
-  "@id" : "_:genid67",
+  "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -768,7 +758,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#hasStorageIOMax"
   } ]
 }, {
-  "@id" : "_:genid68",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -781,10 +771,10 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#StorageService"
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid67"
+    "@id" : "_:genid64"
   } ]
 }, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -795,6 +785,47 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#hasStorageSize"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://schema.org/TypeAndQuantityNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#hasStorageThroughputMax"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Disks can have different throughput caps, i.e. 200 MB/second"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://w3id.org/cocoon/v1.0.1#StorageService"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "_:genid67"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification"
+    }, {
+      "@id" : "https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification"
+    }, {
+      "@id" : "https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification"
+    } ]
   } ]
 }, {
   "@id" : "_:genid7",
@@ -810,48 +841,7 @@
     "@id" : "https://w3id.org/cocoon/v1.0.1#forCoresLessEqual"
   } ]
 }, {
-  "@id" : "_:genid70",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://schema.org/TypeAndQuantityNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#hasStorageThroughputMax"
-  } ]
-}, {
-  "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Disks can have different throughput caps, i.e. 200 MB/second"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#StorageService"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@id" : "_:genid70"
-  } ]
-}, {
-  "@id" : "_:genid72",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/cocoon/v1.0.1#CloudNetworkPriceSpecification"
-    }, {
-      "@id" : "https://w3id.org/cocoon/v1.0.1#CloudOSPriceSpecification"
-    }, {
-      "@id" : "https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid76",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -860,6 +850,18 @@
       "@id" : "https://w3id.org/cocoon/v1.0.1#NetworkService"
     }, {
       "@id" : "https://w3id.org/cocoon/v1.0.1#StorageService"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/cocoon/v1.0.1#InternetService"
+    }, {
+      "@id" : "https://w3id.org/cocoon/v1.0.1#LoadBalancing"
+    }, {
+      "@id" : "https://w3id.org/cocoon/v1.0.1#StaticIPService"
     } ]
   } ]
 }, {
@@ -877,18 +879,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
     "@id" : "_:genid7"
-  } ]
-}, {
-  "@id" : "_:genid80",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/cocoon/v1.0.1#InternetService"
-    }, {
-      "@id" : "https://w3id.org/cocoon/v1.0.1#LoadBalancing"
-    }, {
-      "@id" : "https://w3id.org/cocoon/v1.0.1#StaticIPService"
-    } ]
   } ]
 }, {
   "@id" : "_:genid9",
@@ -1208,7 +1198,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification"
   }, {
-    "@id" : "_:genid24"
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService",
@@ -1216,19 +1206,19 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#IaaS"
   }, {
-    "@id" : "_:genid25"
+    "@id" : "_:genid22"
   }, {
-    "@id" : "_:genid27"
+    "@id" : "_:genid24"
   }, {
-    "@id" : "_:genid29"
+    "@id" : "_:genid26"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid28"
   }, {
-    "@id" : "_:genid33"
+    "@id" : "_:genid30"
   }, {
-    "@id" : "_:genid35"
+    "@id" : "_:genid32"
   }, {
-    "@id" : "_:genid37"
+    "@id" : "_:genid34"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#DNSQueryLatency",
@@ -1248,9 +1238,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#QualityOfService"
   }, {
-    "@id" : "_:genid39"
+    "@id" : "_:genid36"
   }, {
-    "@id" : "_:genid40"
+    "@id" : "_:genid37"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#Database",
@@ -1264,9 +1254,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/sosa/Sensor"
   }, {
-    "@id" : "_:genid41"
+    "@id" : "_:genid38"
   }, {
-    "@id" : "_:genid43"
+    "@id" : "_:genid40"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#DownlinkSpeed",
@@ -1393,11 +1383,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#NetworkService"
   }, {
-    "@id" : "_:genid45"
+    "@id" : "_:genid42"
   }, {
-    "@id" : "_:genid46"
+    "@id" : "_:genid43"
   }, {
-    "@id" : "_:genid47"
+    "@id" : "_:genid44"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#LoadBalancing",
@@ -1411,7 +1401,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#LoadBalancing"
   }, {
-    "@id" : "_:genid48"
+    "@id" : "_:genid45"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#LocalStorage",
@@ -1427,7 +1417,7 @@
   "@id" : "https://w3id.org/cocoon/v1.0.1#Location",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid49"
+    "@id" : "_:genid46"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#Measurement",
@@ -1513,17 +1503,17 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#Location"
   }, {
+    "@id" : "_:genid49"
+  }, {
+    "@id" : "_:genid51"
+  }, {
     "@id" : "_:genid52"
   }, {
     "@id" : "_:genid54"
   }, {
     "@id" : "_:genid55"
   }, {
-    "@id" : "_:genid57"
-  }, {
-    "@id" : "_:genid58"
-  }, {
-    "@id" : "_:genid59"
+    "@id" : "_:genid56"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#SaaS",
@@ -1539,7 +1529,7 @@
   "@id" : "https://w3id.org/cocoon/v1.0.1#Service",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid61"
+    "@id" : "_:genid58"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#StaticIPService",
@@ -1547,7 +1537,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#NetworkService"
   }, {
-    "@id" : "_:genid64"
+    "@id" : "_:genid61"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#StorageService",
@@ -1555,13 +1545,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cocoon/v1.0.1#IaaS"
   }, {
-    "@id" : "_:genid65"
+    "@id" : "_:genid62"
+  }, {
+    "@id" : "_:genid64"
+  }, {
+    "@id" : "_:genid66"
   }, {
     "@id" : "_:genid67"
-  }, {
-    "@id" : "_:genid69"
-  }, {
-    "@id" : "_:genid70"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#SystemImage",
