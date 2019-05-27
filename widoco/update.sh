@@ -3,7 +3,8 @@
 # set -o xtrace
 
 # -------------------------------Configurable Parameters-------------------------------------------
-version="1.0.1"
+# version="1.0.1"
+version="0.1"
 previous_version="0.1"
 
 # backword slash for windows style dir, put qoutation around
