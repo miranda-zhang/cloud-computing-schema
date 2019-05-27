@@ -59,9 +59,9 @@ GENERATE {
         ];      
     } WHERE {
         FILTER( BOUND(?tiers) )
-        BIND (xsd:float(fun:JSONPath(?tiers,".1024")) AS ?tier1)
-        BIND (xsd:float(fun:JSONPath(?tiers,".10240")) AS ?tier2)
-        BIND (xsd:float(fun:JSONPath(?tiers,".92160")) AS ?tier3)
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".1024")) AS ?tier1)
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".10240")) AS ?tier2)
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".92160")) AS ?tier3)
     } .
 
     GENERATE {        
@@ -75,7 +75,7 @@ GENERATE {
         ];    
     } WHERE {
         FILTER( BOUND(?specialRateType) )
-        BIND (xsd:float(fun:JSONPath(?gcloudInternet,".us")) AS ?us)
+        BIND (xsd:decimal(fun:JSONPath(?gcloudInternet,".us")) AS ?us)
     } .
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/internet_destination.json> AS ?source

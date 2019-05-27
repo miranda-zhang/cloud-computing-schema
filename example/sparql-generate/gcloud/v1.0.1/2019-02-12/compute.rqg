@@ -63,14 +63,14 @@ GENERATE {
     } 
   	ITERATOR iter:JSONPath(?gcloudVM,".price[*]") AS ?price
     WHERE {
-        BIND ( xsd:float( fun:JSONPath(?price,".price") ) AS ?regionalPrice )
+        BIND ( xsd:decimal( fun:JSONPath(?price,".price") ) AS ?regionalPrice )
         BIND ( fun:JSONPath(?price,".region") AS ?region )
     } .
 }
 SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/v1.62/compute.json> AS ?source
-ITERATOR iter:JSONPath(?source,"$[*]") AS ?gcloudVM
+ITERATOR iter:JSONPath( ?source,"$[*]") AS ?gcloudVM
 WHERE {
-    BIND ( fun:JSONPath(?gcloudVM,".name") AS ?name )
+    BIND ( fun:JSONPath( ?gcloudVM,".name") AS ?name )
     BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".cores" ) ) AS ?cores )
     BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".memory") ) AS ?memory )
     BIND ( xsd:decimal( fun:JSONPath(?gcloudVM,".gceu") ) AS ?gceu )

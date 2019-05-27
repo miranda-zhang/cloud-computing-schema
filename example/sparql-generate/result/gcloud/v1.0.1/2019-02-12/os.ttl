@@ -3,7 +3,7 @@
 @prefix iter:  <http://w3id.org/sparql-generate/iter/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix gr:    <http://purl.org/goodrelations/v1#> .
-@prefix cocoon: <https://w3id.org/cocoon/v1.0.1#> .
+@prefix cocoon: <http://w3id.org/cocoon/v1.0.1#> .
 @prefix fun:   <http://w3id.org/sparql-generate/fn/> .
 
 <https://w3id.org/cocoon/data/v1.0.1/2019-02-12/SystemImage/Gcloud/suse-sap>
@@ -11,20 +11,20 @@
         rdfs:label                "suse-sap" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.41"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.41 ;
                                     cocoon:chargedPerCore    false ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.34"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.34 ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal ;
                                     cocoon:forCoresMoreThan   "2"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.17"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.17 ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "2"^^xsd:decimal
                                   ] ;
@@ -36,13 +36,13 @@
         rdfs:label                "suse" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.11"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.11 ;
                                     cocoon:chargedPerCore    false ;
                                     cocoon:forCoresMoreThan  0.5
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.02"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.02 ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  0.5
                                   ] ;
@@ -54,13 +54,13 @@
         rdfs:label                "rhel-sap-ha" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.225"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.225 ;
                                     cocoon:chargedPerCore    false ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.1"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.1 ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal
                                   ] ;
@@ -72,13 +72,13 @@
         rdfs:label                "sql-standard" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.1645"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.1645 ;
                                     cocoon:chargedPerCore    true ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.1645"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.1645 ;
                                     cocoon:chargedPerCore     true ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal
                                   ] ;
@@ -90,13 +90,13 @@
         rdfs:label                "sql-enterprise" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.399"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.399 ;
                                     cocoon:chargedPerCore    true ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.399"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.399 ;
                                     cocoon:chargedPerCore     true ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal
                                   ] ;
@@ -108,13 +108,13 @@
         rdfs:label                "rhel" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.13"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.13 ;
                                     cocoon:chargedPerCore    false ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.06"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.06 ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal
                                   ] ;
@@ -126,13 +126,13 @@
         rdfs:label                "rhel-sap" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.13"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.13 ;
                                     cocoon:chargedPerCore    false ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.06"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.06 ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal
                                   ] ;
@@ -144,13 +144,13 @@
         rdfs:label                "win" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.04"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.04 ;
                                     cocoon:chargedPerCore    true ;
                                     cocoon:forCoresMoreThan  0.5
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.02"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.02 ;
                                     cocoon:chargedPerCore     true ;
                                     cocoon:forCoresLessEqual  0.5
                                   ] ;
@@ -162,13 +162,13 @@
         rdfs:label                "sql-web" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.011"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.011 ;
                                     cocoon:chargedPerCore    true ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.011"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.011 ;
                                     cocoon:chargedPerCore     true ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal
                                   ] ;
@@ -180,13 +180,13 @@
         rdfs:label                "windows-server-core" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.04"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.04 ;
                                     cocoon:chargedPerCore    true ;
                                     cocoon:forCoresMoreThan  0.5
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.02"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.02 ;
                                     cocoon:chargedPerCore     true ;
                                     cocoon:forCoresLessEqual  0.5
                                   ] ;

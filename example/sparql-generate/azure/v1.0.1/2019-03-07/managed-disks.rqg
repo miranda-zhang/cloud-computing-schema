@@ -25,10 +25,10 @@ GENERATE {
     }
   	ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
-        FILTER( ! CONTAINS(?managed_disk,"ultrassd") )
+        FILTER( !CONTAINS(?managed_disk,"ultrassd") )
         BIND ( xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
         BIND ( xsd:nonNegativeInteger( fun:JSONPath(?managed_disk_json,"$.size") ) AS ?size)
-        BIND ( xsd:double( IF( BOUND(?size) , ?value/?size , ?value ) ) AS ?value_normalized )
+        BIND ( xsd:decimal( IF( BOUND(?size) , ?value/?size , ?value ) ) AS ?value_normalized )
     } .
 
     GENERATE {
@@ -90,7 +90,7 @@ GENERATE {
   	ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
         FILTER( CONTAINS(?managed_disk,"ultrassd") ) 
-        BIND (xsd:float( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
+        BIND (xsd:decimal( fun:JSONPath(?prices,"$.['{?region}'].value") ) AS ?value )
         BIND (
             COALESCE(
                 IF(CONTAINS(?managed_disk,"iops"), cocoon:IOPsPerHour, 1/0),

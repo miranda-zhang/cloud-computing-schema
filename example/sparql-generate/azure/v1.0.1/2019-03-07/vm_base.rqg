@@ -5,7 +5,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX unit: <http://qudt.org/vocab/unit#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.v1.0.1.ttl#>
+PREFIX cocoon: <https://w3id.org/cocoon/v1.0.1/#>
 PREFIX schema: <https://schema.org/>
 
 GENERATE { 
@@ -38,7 +38,7 @@ GENERATE {
     }
     ITERATOR iter:JSONListKeys(?prices) AS ?region
     WHERE {
-        BIND (xsd:float ( fun:JSONPath(?prices,"$.{?region}.value") ) AS ?value)
+        BIND ( xsd:decimal( fun:JSONPath(?prices,"$.{?region}.value") ) AS ?value)
     }   
   	.
  

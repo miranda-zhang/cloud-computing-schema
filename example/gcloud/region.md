@@ -132,9 +132,9 @@ See live https://jqplay.org/s/aajIEQqBjy
 
 [Cached Result.](../jq/gcloud/cloudharmony/region_geo_coord.json)
 
-```
-java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/region_geo_coord.rqg --output result/gcloud/v1.0.1/region_geo_coord.ttl --log-level ERROR
-```
 v1.0.1:
 [Query](../sparql-generate/gcloud/v1.0.1/region_geo_coord.rqg)
 [Result](../sparql-generate/result/gcloud/v1.0.1/region_geo_coord.ttl)
+```
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/region_geo_coord.rqg --output result/gcloud/v1.0.1/region_geo_coord.ttl --log-level ERROR
+```

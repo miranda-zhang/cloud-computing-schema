@@ -49,10 +49,9 @@ Run jq query on [data collected via CloudHarmony](../cloudharmony/azure/README.m
 
 ### CoCoOn v1.0.1
 [json](../jq/azure/cloudharmony/region/1.json), https://jqplay.org/s/8Hd1vD-PmF
-
 ```
-java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/region_geo_coord.rqg --output result/azure/v1.0.1/region/1.ttl --log-level ERROR
+java -jar sparql-generate-jena.jar --query-file azure/v1.0.1/region_geo_coord.rqg --output result/azure/v1.0.1/region_geo_coord.ttl --log-level ERROR
 ```
-[Query](../sparql-generate/azure/v1.0.1/region_geo_coord.rqg)
+[Query](../sparql-generate/azure/v1.0.1/region_geo_coord.rqg) ->
 
-[Result](../sparql-generate/result/azure/v1.0.1/region/1.ttl)
+[Result](../sparql-generate/result/azure/v1.0.1/region_geo_coord.ttl)

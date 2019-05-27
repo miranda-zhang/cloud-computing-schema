@@ -95,7 +95,7 @@ v1.0.1 12-February-2019:
 [Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/internet.rqg)
 [Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/internet.ttl)
 ```
-java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/internet.rqg --output result/gcloud/v1.0.1/2019-02-12/internet.ttl  --log-level ERROR 
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/internet.rqg --output result/gcloud/v1.0.1/2019-02-12/internet.ttl --log-level ERROR 
 ```
 ### Load Balancing Data
 v1.0.0 17-January-2019:
@@ -106,7 +106,7 @@ v1.0.1 12-February-2019:
 [Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/load_balancing_data.rqg)
 [Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/load_balancing_data.ttl)
 ```
-java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/load_balancing_data.rqg --output result/gcloud/v1.0.1/2019-02-12/load_balancing_data.ttl  --log-level ERROR 
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/load_balancing_data.rqg --output result/gcloud/v1.0.1/2019-02-12/load_balancing_data.ttl --log-level ERROR 
 ```
 
 ### Load Balancing Forwarding Rule
@@ -118,5 +118,5 @@ v1.0.1 12-February-2019:
 [Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/load_balancing_rule.rqg)
 [Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/load_balancing_rule.ttl)
 ```
-java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/load_balancing_rule.rqg --output result/gcloud/v1.0.1/2019-02-12/load_balancing_rule.ttl  --log-level ERROR 
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/load_balancing_rule.rqg --output result/gcloud/v1.0.1/2019-02-12/load_balancing_rule.ttl --log-level ERROR 
 ```

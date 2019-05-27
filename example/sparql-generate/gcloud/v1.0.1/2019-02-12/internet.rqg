@@ -69,9 +69,9 @@ GENERATE {
         ];      
     } WHERE {
         FILTER( BOUND(?tiers) )
-        BIND (xsd:float(fun:JSONPath(?tiers,".1024")) AS ?tier1)
-        BIND (xsd:float(fun:JSONPath(?tiers,".10240")) AS ?tier2)
-        BIND (xsd:float(fun:JSONPath(?tiers,".92160")) AS ?tier3)
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".1024")) AS ?tier1)
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".10240")) AS ?tier2)
+        BIND (xsd:decimal(fun:JSONPath(?tiers,".92160")) AS ?tier3)
     } .
 
     GENERATE {        
@@ -96,7 +96,7 @@ WHERE {
     BIND(fun:JSONPath(?internet, '$.{?key}' ) AS ?gcloudInternet)
     BIND(fun:JSONPath(?destinations, '$.{?key}' ) AS ?destinationJson)
     BIND (fun:JSONPath(?gcloudInternet,"$.tiers") AS ?tiers)
-    BIND (xsd:float(fun:JSONPath(?gcloudInternet,"$.us")) AS ?us)
+    BIND (xsd:decimal(fun:JSONPath(?gcloudInternet,"$.us")) AS ?us)
     # having signle point of change for the following
     BIND ( "Gcloud" as ?provider_slug )
     BIND ( cocoon:Gcloud as ?provider )

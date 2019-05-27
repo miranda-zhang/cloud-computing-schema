@@ -2,9 +2,9 @@ BASE <https://w3id.org/cocoon/data/v1.0.1/>
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon1.0.1.ttl>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cocoon: <http://w3id.org/cocoon/v1.0.1#>
 
 GENERATE {
     ?iri a cocoon:Region;
@@ -26,14 +26,14 @@ GENERATE {
         # location is not null
     } .
 }
-SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/cloudharmony/region/1.json> AS ?source
+SOURCE <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/example/jq/gcloud/cloudharmony/region_geo_coord.json> AS ?source
 ITERATOR iter:JSONPath(?source,"$[*]") AS ?qos
 WHERE {
-    BIND(fun:JSONPath(?qos, '$.location.city' ) AS ?city)
-    BIND(fun:JSONPath(?qos, '$.location.country' ) AS ?country)
-    BIND(fun:JSONPath(?qos, '$.location.lat' ) AS ?lat)
-    BIND(fun:JSONPath(?qos, '$.location.long' ) AS ?long)
-    BIND(fun:JSONPath(?qos, '$.region' ) AS ?region)
+    BIND( fun:JSONPath(?qos, '$.location.city' ) AS ?city)
+    BIND( fun:JSONPath(?qos, '$.location.country' ) AS ?country)
+    BIND( xsd:decimal( fun:JSONPath(?qos, '$.location.lat' ) ) AS ?lat)
+    BIND( xsd:decimal( fun:JSONPath(?qos, '$.location.long' ) ) AS ?long)
+    BIND( fun:JSONPath(?qos, '$.region' ) AS ?region)
     # having signle point of change for the following
     BIND ( "Gcloud" as ?provider_slug )
     BIND ( cocoon:Gcloud as ?provider )

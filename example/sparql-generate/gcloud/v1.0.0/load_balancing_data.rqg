@@ -3,7 +3,7 @@ PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fun: <http://w3id.org/sparql-generate/fn/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX cocoon: <https://raw.githubusercontent.com/miranda-zhang/cloud-computing-schema/master/ontology_dev/cocoon.ttl>
+PREFIX cocoon: <http://w3id.org/cocoon/v1.0.1#>
 
 GENERATE { 
 
