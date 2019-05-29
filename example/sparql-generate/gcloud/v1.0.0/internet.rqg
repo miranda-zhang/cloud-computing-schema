@@ -32,7 +32,7 @@ GENERATE {
         gr:hasPriceSpecification [ 
             a cocoon:NetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?tier1;                
+                cocoon:hasCurrencyValue ?tier1;                
                 cocoon:forUsageMoreThan [
                     a cocoon:QuantityOfThings;
                     cocoon:hasUnitOfMeasurement cocoon:GB;
@@ -44,7 +44,7 @@ GENERATE {
         gr:hasPriceSpecification [ 
             a cocoon:NetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?tier2;                
+                cocoon:hasCurrencyValue ?tier2;                
                 cocoon:forUsageMoreThan cocoon:1TB;
                 cocoon:forUsageLessEqual cocoon:10TB;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth;            
@@ -52,7 +52,7 @@ GENERATE {
         gr:hasPriceSpecification [ 
             a cocoon:NetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?tier3;                
+                cocoon:hasCurrencyValue ?tier3;                
                 cocoon:forUsageMoreThan cocoon:10TB;
                 cocoon:forUsageLessEqual cocoon:90TB;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth;            
@@ -69,7 +69,7 @@ GENERATE {
         gr:hasPriceSpecification [ 
             a cocoon:NetworkPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?us;                
+                cocoon:hasCurrencyValue ?us;                
                 cocoon:specialRateType ?specialRateType;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth;           
         ];    

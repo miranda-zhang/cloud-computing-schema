@@ -14,7 +14,7 @@ GENERATE {
         <storage/gcloud/{?name}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue "{?regionalPrice}"^^xsd:double;
+                cocoon:hasCurrencyValue "{?regionalPrice}"^^xsd:double;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
                 cocoon:hasRegion <region/gcloud/{?region}>;
         ]

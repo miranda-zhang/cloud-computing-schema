@@ -51,6 +51,5 @@ CoCoOn v1.0.1 2019-02-12:
 [Query](../sparql-generate/gcloud/v1.0.1/2019-02-12/compute.rqg) ->
 [Result](../sparql-generate/result/gcloud/v1.0.1/2019-02-12/compute.ttl)
 ```
-java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/compute.rqg --output result/gcloud/v1.0.1/2019-02-12/compute.ttl  --log-level ERROR 
+java -jar sparql-generate-jena.jar --query-file gcloud/v1.0.1/2019-02-12/compute.rqg --output result/gcloud/v1.0.1/2019-02-12/compute.ttl --log-level ERROR 
 ```
-

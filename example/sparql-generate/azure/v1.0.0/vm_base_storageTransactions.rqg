@@ -12,7 +12,7 @@ GENERATE {
     gr:hasPriceSpecification [ 
         a gr:UnitPriceSpecification ; 
             gr:hasCurrency "USD"^^xsd:string; 
-            gr:hasCurrencyValue ?value; 
+            cocoon:hasCurrencyValue ?value; 
             cocoon:hasRegion <region/azure/{?region_slug}>;
     ] 
  

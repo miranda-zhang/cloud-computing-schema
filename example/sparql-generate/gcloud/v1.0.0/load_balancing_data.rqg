@@ -13,7 +13,7 @@ GENERATE {
     gr:hasPriceSpecification [ 
         a gr:UnitPriceSpecification ; 
             gr:hasCurrency "USD"^^xsd:string; 
-            gr:hasCurrencyValue ?price; 
+            cocoon:hasCurrencyValue ?price; 
             cocoon:hasRegion <region/gcloud/{?region}>;
             gr:hasUnitOfMeasurement cocoon:GB;
     ];

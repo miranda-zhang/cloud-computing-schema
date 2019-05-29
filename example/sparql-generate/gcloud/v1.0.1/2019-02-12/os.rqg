@@ -15,14 +15,14 @@ GENERATE {
         gr:hasPriceSpecification [ 
             a cocoon:CloudOSPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?low;
+                cocoon:hasCurrencyValue ?low;
                 cocoon:forCoresLessEqual ?cores;
                 cocoon:chargedPerCore ?percore
         ];
         gr:hasPriceSpecification [ 
             a cocoon:CloudOSPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?high;
+                cocoon:hasCurrencyValue ?high;
                 cocoon:forCoresMoreThan ?cores;
                 cocoon:chargedPerCore ?percore;
                 cocoon:forCoresLessEqual ?cores2Times;
@@ -32,7 +32,7 @@ GENERATE {
         ?iri gr:hasPriceSpecification [ 
             a cocoon:CloudOSPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?highest;
+                cocoon:hasCurrencyValue ?highest;
                 cocoon:forCoresMoreThan ?cores2Times;
                 cocoon:chargedPerCore ?percore;
         ] .

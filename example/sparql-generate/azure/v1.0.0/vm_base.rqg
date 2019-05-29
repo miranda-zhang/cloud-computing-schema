@@ -28,7 +28,7 @@ GENERATE {
         <vm/azure/{?vm_key}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?value; 
+                cocoon:hasCurrencyValue ?value; 
                 cocoon:hasRegion <region/azure/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour ;
         ] 

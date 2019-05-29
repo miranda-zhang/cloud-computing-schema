@@ -43,7 +43,7 @@ There are other usecase scenarios listed in [examples page](README.md).
         rdfs:label                "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-96-PREEMPTIBLE" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudServicePriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.72"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.72"^^xsd:float ;
                                     gr:hasUnitOfMeasurement  unit:Hour ;
                                     cocoon:inRegion         <Region/Gcloud/us-east1>
                                   ] ;
@@ -66,7 +66,7 @@ There are other usecase scenarios listed in [examples page](README.md).
         gr:hasPriceSpecification        <CloudStorageTransactionsPriceSpecification/Azure/managed_disk/transactions-ssd> ;
         gr:hasPriceSpecification        [ a                        gr:CloudServicePriceSpecification ;
                                           gr:hasCurrency           "USD" ;
-                                          gr:hasCurrencyValue      "135.17e0"^^xsd:float ;
+                                          cocoon:hasCurrencyValue      "135.17e0"^^xsd:float ;
                                           gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
                                           cocoon:inRegion         <Region/Azure/australia-east>
                                         ] ;
@@ -96,21 +96,21 @@ Google Cloud Network Price Worldwide Egress:
         rdfs:label                  "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA" ;
         gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.11"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.11"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:10TB ;
                                       cocoon:forUsageMoreThan   cocoon:1TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.08"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.08"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:90TB ;
                                       cocoon:forUsageMoreThan   cocoon:10TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.12"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.12"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:1TB ;
                                       cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
@@ -134,7 +134,7 @@ Load Balancing Data Price Specification:
         a                         cocoon:LoadBalancingData ;
         gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.008e0"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.008e0"^^xsd:float ;
                                     gr:hasUnitOfMeasurement  cocoon:GB ;
                                     cocoon:inRegion         <Region/Gcloud/us>
                                   ] ;
@@ -181,7 +181,7 @@ Price specification for a Compute service from Azure:
         gr:hasPriceSpecification  <CloudStorageTransactionsPriceSpecification/Azure/vm_base> ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudServicePriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.317e0"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.317e0"^^xsd:float ;
                                     gr:hasUnitOfMeasurement  unit:Hour ;
                                     cocoon:inRegion          <Region/Azure/us-west-2>
                                   ] ;
@@ -206,20 +206,20 @@ Price specification for a Compute service from Azure:
         rdfs:label                "suse-sap" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.41"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.41"^^xsd:float ;
                                     cocoon:chargedPerCore    false ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.34"^^xsd:float ;
+                                    cocoon:hasCurrencyValue       "0.34"^^xsd:float ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal ;
                                     cocoon:forCoresMoreThan   "2"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.17"^^xsd:float ;
+                                    cocoon:hasCurrencyValue       "0.17"^^xsd:float ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "2"^^xsd:decimal
                                   ] .
@@ -233,7 +233,7 @@ Price specification for a Compute service from Azure:
         rdfs:label                "transactions-ssd" ;
         gr:hasPriceSpecification  [ a                    gr:CloudServicePriceSpecification ;
                                     gr:hasCurrency       "USD" ;
-                                    gr:hasCurrencyValue  2.0E-7 ;
+                                    cocoon:hasCurrencyValue  2.0E-7 ;
                                     cocoon:inRegion      <Region/Azure/brazil-south>
                                   ] .
 ```
@@ -250,7 +250,7 @@ Price for Google Internet Egress between Zones in the Same Region:
         rdfs:label                "CP-COMPUTEENGINE-INTERNET-EGRESS-ZONE" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.01e0"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.01e0"^^xsd:float ;
                                     gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
                                     cocoon:specialRateType   "Egress between zones in the same region"
                                   ] ;

@@ -12,6 +12,7 @@ https://github.com/perma-id/w3id.org/issues/1063
 
 `.htaccess` url rewrite rules can be tested in an Apache server local enviroment.
 
+    sudo su
     cd /var/www/html/cocoon
     cp /mnt/c/Users/admin-u5214628/Documents/w3id.org/cocoon/.htaccess .
     

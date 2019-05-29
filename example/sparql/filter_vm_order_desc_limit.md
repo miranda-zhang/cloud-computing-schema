@@ -50,7 +50,7 @@ construct {
         rdfs:label                ?label ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudServicePriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      ?price ;
+                                    cocoon:hasCurrencyValue      ?price ;
                                     gr:hasUnitOfMeasurement  ?unit ;
                                     cocoon:inRegion          ?region
                                   ]  ;
@@ -73,7 +73,7 @@ construct {
         rdfs:label                ?label ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudServicePriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      ?price ;
+                                    cocoon:hasCurrencyValue      ?price ;
                                     gr:hasUnitOfMeasurement  ?unit ;
                                     cocoon:inRegion          ?region
                                   ] ;

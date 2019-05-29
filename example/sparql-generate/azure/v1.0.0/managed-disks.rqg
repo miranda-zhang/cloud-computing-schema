@@ -15,7 +15,7 @@ GENERATE {
         <storage/azure/{?managed_disk}> gr:hasPriceSpecification [ 
             a gr:UnitPriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?value;
+                cocoon:hasCurrencyValue ?value;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
                 cocoon:hasRegion <region/azure/{?region}>;
         ]

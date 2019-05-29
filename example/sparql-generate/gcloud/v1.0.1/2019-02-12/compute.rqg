@@ -56,7 +56,7 @@ GENERATE {
         ?iri gr:hasPriceSpecification [ 
             a cocoon:CloudServicePriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?regionalPrice; 
+                cocoon:hasCurrencyValue ?regionalPrice; 
                 cocoon:inRegion <Region/{?provider_slug}/{?region}>;
                 gr:hasUnitOfMeasurement unit:Hour ;
         ] 

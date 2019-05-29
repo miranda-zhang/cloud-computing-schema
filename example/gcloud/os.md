@@ -112,20 +112,20 @@ sparql result
         rdfs:label                "suse-sap" ;
         gr:hasPriceSpecification  [ a                        cocoon:OSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      0.41 ;
+                                    cocoon:hasCurrencyValue      0.41 ;
                                     cocoon:chargedPerCore    false ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:OSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.34"^^xsd:double ;
+                                    cocoon:hasCurrencyValue       "0.34"^^xsd:double ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal ;
                                     cocoon:forCoresMoreThan   "2"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:OSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.17"^^xsd:double ;
+                                    cocoon:hasCurrencyValue       "0.17"^^xsd:double ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "2"^^xsd:decimal
                                   ] ;

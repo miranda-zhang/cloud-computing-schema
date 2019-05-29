@@ -18,7 +18,7 @@ GENERATE {
         ?iri gr:hasPriceSpecification [ 
             a gr:CloudServicePriceSpecification ; 
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?value_normalized;
+                cocoon:hasCurrencyValue ?value_normalized;
                 gr:hasUnitOfMeasurement cocoon:GBPerMonth ;
                 cocoon:inRegion <Region/{?provider_slug}/{?region}>;
         ]
@@ -81,7 +81,7 @@ GENERATE {
         ?iri gr:hasPriceSpecification [ 
             a gr:CloudServicePriceSpecification ;
                 gr:hasCurrency "USD"^^xsd:string; 
-                gr:hasCurrencyValue ?value;
+                cocoon:hasCurrencyValue ?value;
                 gr:hasUnitOfMeasurement ?unit ;
                 cocoon:inRegion <Region/{?provider_slug}/{?region}>;
                 rdfs:label ?label;

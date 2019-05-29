@@ -10,21 +10,21 @@
         a                         cocoon:Internet ;
         gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.15"^^xsd:float ;
+                                    cocoon:hasCurrencyValue       "0.15"^^xsd:float ;
                                     gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                     cocoon:forUsageLessEqual  cocoon:90TB ;
                                     cocoon:forUsageMoreThan   cocoon:10TB
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.18"^^xsd:float ;
+                                    cocoon:hasCurrencyValue       "0.18"^^xsd:float ;
                                     gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                     cocoon:forUsageLessEqual  cocoon:10TB ;
                                     cocoon:forUsageMoreThan   cocoon:1TB
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.19"^^xsd:float ;
+                                    cocoon:hasCurrencyValue       "0.19"^^xsd:float ;
                                     gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                     cocoon:forUsageLessEqual  cocoon:1TB ;
                                     cocoon:forUsageMoreThan   [ a                            cocoon:QuantityOfThings ;
@@ -40,7 +40,7 @@
         a                         cocoon:Internet ;
         gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.01"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.01"^^xsd:float ;
                                     gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
                                     cocoon:specialRateType   "Egress between zones in the same region"
                                   ] ;
@@ -51,7 +51,7 @@
         a                         cocoon:Internet ;
         gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.01"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.01"^^xsd:float ;
                                     gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
                                     cocoon:specialRateType   "Egress between regions within the US"
                                   ] ;
@@ -62,7 +62,7 @@
         a                           cocoon:Internet ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.12"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.12"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:1TB ;
                                       cocoon:forUsageMoreThan   [ a                            cocoon:QuantityOfThings ;
@@ -72,14 +72,14 @@
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.11"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.11"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:10TB ;
                                       cocoon:forUsageMoreThan   cocoon:1TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.08"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.08"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:90TB ;
                                       cocoon:forUsageMoreThan   cocoon:10TB
@@ -93,21 +93,21 @@
         a                           cocoon:Internet ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.2"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.2"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:90TB ;
                                       cocoon:forUsageMoreThan   cocoon:10TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.22"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.22"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:10TB ;
                                       cocoon:forUsageMoreThan   cocoon:1TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.23"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.23"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:1TB ;
                                       cocoon:forUsageMoreThan   [ a                            cocoon:QuantityOfThings ;
@@ -131,21 +131,21 @@
         a                         cocoon:Internet ;
         gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.15"^^xsd:float ;
+                                    cocoon:hasCurrencyValue       "0.15"^^xsd:float ;
                                     gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                     cocoon:forUsageLessEqual  cocoon:90TB ;
                                     cocoon:forUsageMoreThan   cocoon:10TB
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.18"^^xsd:float ;
+                                    cocoon:hasCurrencyValue       "0.18"^^xsd:float ;
                                     gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                     cocoon:forUsageLessEqual  cocoon:10TB ;
                                     cocoon:forUsageMoreThan   cocoon:1TB
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    gr:hasCurrencyValue       "0.19"^^xsd:float ;
+                                    cocoon:hasCurrencyValue       "0.19"^^xsd:float ;
                                     gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                     cocoon:forUsageLessEqual  cocoon:1TB ;
                                     cocoon:forUsageMoreThan   [ a                            cocoon:QuantityOfThings ;
@@ -161,7 +161,7 @@
         a                         cocoon:Internet ;
         gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.01"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.01"^^xsd:float ;
                                     gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
                                     cocoon:specialRateType   "Egress between zones in the same region"
                                   ] ;
@@ -172,7 +172,7 @@
         a                         cocoon:Internet ;
         gr:hasPriceSpecification  [ a                        cocoon:NetworkPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    gr:hasCurrencyValue      "0.01"^^xsd:float ;
+                                    cocoon:hasCurrencyValue      "0.01"^^xsd:float ;
                                     gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
                                     cocoon:specialRateType   "Egress between regions within the US"
                                   ] ;
@@ -183,7 +183,7 @@
         a                           cocoon:Internet ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.12"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.12"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:1TB ;
                                       cocoon:forUsageMoreThan   [ a                            cocoon:QuantityOfThings ;
@@ -193,14 +193,14 @@
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.11"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.11"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:10TB ;
                                       cocoon:forUsageMoreThan   cocoon:1TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.08"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.08"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:90TB ;
                                       cocoon:forUsageMoreThan   cocoon:10TB
@@ -214,21 +214,21 @@
         a                           cocoon:Internet ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.2"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.2"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:90TB ;
                                       cocoon:forUsageMoreThan   cocoon:10TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.22"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.22"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:10TB ;
                                       cocoon:forUsageMoreThan   cocoon:1TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:NetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      gr:hasCurrencyValue       "0.23"^^xsd:float ;
+                                      cocoon:hasCurrencyValue       "0.23"^^xsd:float ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:1TB ;
                                       cocoon:forUsageMoreThan   [ a                            cocoon:QuantityOfThings ;
