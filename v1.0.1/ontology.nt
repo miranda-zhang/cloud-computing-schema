@@ -436,7 +436,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid20 <http://www.w3.org/2002/07/owl#annotatedSource> <https://w3id.org/cocoon/v1.0.1#CloudServicePriceSpecification> .
 _:genid20 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
 _:genid20 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid19 .
-_:genid20 <http://www.w3.org/2000/01/rdf-schema#comment> "gr:hasCurrencyValue seems only allow float value, change to use xs:decimal to allow exact representation of monetary value. Floats can introduce cumulative rounding errors."@en .
+_:genid20 <http://www.w3.org/2000/01/rdf-schema#comment> "gr:hasCurrencyValue seems only allow float value, extend to allow xs:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors."@en .
 # 
 # https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification
 <https://w3id.org/cocoon/v1.0.1#CloudStorageTransactionsPriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -775,7 +775,7 @@ _:genid68 <http://www.w3.org/2000/01/rdf-schema#comment> "Disks can have differe
 # 
 # https://w3id.org/cocoon/v1.0.1#SystemImage
 <https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#SaaS> .
+<https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cocoon/v1.0.1#ComputeService> .
 <https://w3id.org/cocoon/v1.0.1#SystemImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A system image is a serialized copy of the entire state of a computer system.\r\nSystem images can be used for backup." .
 # 
 # https://w3id.org/cocoon/v1.0.1#TrafficDirection

@@ -570,7 +570,7 @@ cocoon:CloudServicePriceSpecification rdf:type owl:Class ;
                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onDataRange xsd:decimal
                        ] ;
-   rdfs:comment "gr:hasCurrencyValue seems only allow float value, change to use xs:decimal to allow exact representation of monetary value. Floats can introduce cumulative rounding errors."@en
+   rdfs:comment "gr:hasCurrencyValue seems only allow float value, extend to allow xs:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors."@en
  ] .
 
 
@@ -1020,7 +1020,7 @@ cocoon:StorageService rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#SystemImage
 cocoon:SystemImage rdf:type owl:Class ;
-                   rdfs:subClassOf cocoon:SaaS ;
+                   rdfs:subClassOf cocoon:ComputeService ;
                    rdfs:comment """A system image is a serialized copy of the entire state of a computer system.
 System images can be used for backup.""" .
 

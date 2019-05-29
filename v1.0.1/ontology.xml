@@ -913,7 +913,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gclo
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <rdfs:comment xml:lang="en">gr:hasCurrencyValue seems only allow float value, change to use xs:decimal to allow exact representation of monetary value. Floats can introduce cumulative rounding errors.</rdfs:comment>
+        <rdfs:comment xml:lang="en">gr:hasCurrencyValue seems only allow float value, extend to allow xs:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors.</rdfs:comment>
     </owl:Axiom>
     
 
@@ -1547,7 +1547,7 @@ QoS is more understandable in our context, and we can group related classed unde
 
 
     <owl:Class rdf:about="https://w3id.org/cocoon/v1.0.1#SystemImage">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0.1#SaaS"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cocoon/v1.0.1#ComputeService"/>
         <rdfs:comment>A system image is a serialized copy of the entire state of a computer system.
 System images can be used for backup.</rdfs:comment>
     </owl:Class>

@@ -163,7 +163,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "gr:hasCurrencyValue seems only allow float value, change to use xs:decimal to allow exact representation of monetary value. Floats can introduce cumulative rounding errors."
+    "@value" : "gr:hasCurrencyValue seems only allow float value, extend to allow xs:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors."
   } ],
   "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
@@ -1560,7 +1560,7 @@
     "@value" : "A system image is a serialized copy of the entire state of a computer system.\r\nSystem images can be used for backup."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#SaaS"
+    "@id" : "https://w3id.org/cocoon/v1.0.1#ComputeService"
   } ]
 }, {
   "@id" : "https://w3id.org/cocoon/v1.0.1#TB",
