@@ -3,9 +3,11 @@
 # set -o xtrace
 
 # -------------------------------Configurable Parameters-------------------------------------------
-# version="1.0.1"
-version="0.1"
+
+
 previous_version="0.1"
+# version="0.1"
+version="1.0.1"
 
 # backword slash for windows style dir, put qoutation around
 ontFile='C:\Users\admin-u5214628\Documents\cloud-computing-schema\ontology_dev\cocoon'$version'.ttl'

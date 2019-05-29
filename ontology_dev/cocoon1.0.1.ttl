@@ -1020,7 +1020,7 @@ cocoon:StorageService rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0.1#SystemImage
 cocoon:SystemImage rdf:type owl:Class ;
-                   rdfs:subClassOf cocoon:SaaS ;
+                   rdfs:subClassOf cocoon:ComputeService ;
                    rdfs:comment """A system image is a serialized copy of the entire state of a computer system.
 System images can be used for backup.""" .
 
