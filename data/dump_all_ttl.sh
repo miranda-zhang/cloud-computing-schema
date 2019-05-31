@@ -1,33 +1,38 @@
 #!/bin/bash
 # chmod +x dump_all_ttl.sh
 # Usage:
-# $ source dump_all_ttl.sh > v1_0_1.ttl
+# $ source dump_all_ttl.sh > test_v1_0_1.ttl
 
-data_dirs_exclude_subfolder=("/mnt/c/Users/admin-u5214628/Documents/cloud-computing-schema/example/sparql-generate/result")
-
-data_dirs_include_subfolder=(
-    "/mnt/c/Users/admin-u5214628/Documents/cloud-computing-schema/example/sparql-generate/result/azure/v1.0.1"
-    "/mnt/c/Users/admin-u5214628/Documents/cloud-computing-schema/example/sparql-generate/result/gcloud/v1.0.1"
+#set -o xtrace
+current_dir=$(pwd)
+base_dir="/mnt/c/Users/admin-u5214628/Documents/cloud-computing-schema/"
+input_dirs_exclude_subfolder=("example/sparql-generate/result")
+input_dirs_include_subfolder=(
+    "example/sparql-generate/result/azure/v1.0.1"
+    "example/sparql-generate/result/gcloud/v1.0.1"
 )
 
-for d in ${data_dirs_exclude_subfolder[@]}
+concat_files=""
+
+for d in ${input_dirs_exclude_subfolder[@]}
 do
-    cd $d
-    files=$(ls $d/*.ttl)
+    files=$(ls $base_dir$d/*.ttl)
     for f in $files
     do
-        rdfproc temp_store parse $f turtle
-    done   
+        concat_files="$concat_files $f"
+    done  
 done
 
-for d in ${data_dirs_include_subfolder[@]}
+for d in ${input_dirs_include_subfolder[@]}
 do
     #  finds all files ( -type f ) in directory $1 and in all sub directories
-    files=$(find "$d" -type f)
+    files=$(find "$base_dir$d" -type f)
     for f in $files
     do
-        rdfproc temp_store parse $f turtle
+        concat_files="$concat_files $f"
     done
 done
 
-rdfproc temp_store serialize turtle
+time riot --formatted=Turtle $concat_files
+cd $current_dir
+#set +o xtrace
