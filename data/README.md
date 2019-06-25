@@ -36,7 +36,7 @@ $ rdfcat -out Turtle file_1 file_2 ... file_n > merged_file.ttl
 ```
 
 ## rapper
-`rapper` is faster at serilization compare to `rdfproc`, but dosen't seem to do combine files.
+`rapper` is faster at serilization compare to `rdfproc`, but dosen't seem to combine files.
 - http://arademaker.github.io/blog/2015/08/18/combine-rdf.html
 ```
 $ rapper -i turtle vm_base.ttl

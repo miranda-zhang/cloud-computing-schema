@@ -301,7 +301,7 @@
                                      schema:amountOfThisGood  "440"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -461,7 +461,7 @@
                                      schema:amountOfThisGood  1.38 ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -770,7 +770,7 @@
                                      schema:amountOfThisGood  "11"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -1079,7 +1079,7 @@
                                      schema:amountOfThisGood  "22"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -1239,7 +1239,7 @@
                                      schema:amountOfThisGood  5.5 ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -1399,7 +1399,7 @@
                                      schema:amountOfThisGood  "220"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -1559,7 +1559,7 @@
                                      schema:amountOfThisGood  "176"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -1719,7 +1719,7 @@
                                      schema:amountOfThisGood  "220"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -1879,7 +1879,7 @@
                                      schema:amountOfThisGood  "22"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -2188,7 +2188,7 @@
                                      schema:amountOfThisGood  "264"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -2497,7 +2497,7 @@
                                      schema:amountOfThisGood  5.5 ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -2657,7 +2657,7 @@
                                      schema:amountOfThisGood  "44"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -2966,7 +2966,7 @@
                                      schema:amountOfThisGood  "264"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -3126,7 +3126,7 @@
                                      schema:amountOfThisGood  2.75 ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -3286,7 +3286,7 @@
                                      schema:amountOfThisGood  "44"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -3446,7 +3446,7 @@
                                      schema:amountOfThisGood  "110"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -3606,7 +3606,7 @@
                                      schema:amountOfThisGood  "88"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -3911,7 +3911,7 @@
                                      cocoon:hasCurrencyValue  0.009 ;
                                      cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1>
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -4071,7 +4071,7 @@
                                      schema:amountOfThisGood  "88"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -4231,7 +4231,7 @@
                                      schema:amountOfThisGood  5.5 ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -5136,7 +5136,7 @@
                                      schema:amountOfThisGood  "264"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -5445,7 +5445,7 @@
                                      schema:amountOfThisGood  "264"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -5903,7 +5903,7 @@
                                      schema:amountOfThisGood  "44"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -6659,7 +6659,7 @@
                                      schema:amountOfThisGood  "110"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -6819,7 +6819,7 @@
                                      schema:amountOfThisGood  "88"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -6979,7 +6979,7 @@
                                      schema:amountOfThisGood  "264"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -7139,7 +7139,7 @@
                                      schema:amountOfThisGood  "11"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -7299,7 +7299,7 @@
                                      schema:amountOfThisGood  "440"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -7906,7 +7906,7 @@
                                      schema:amountOfThisGood  "176"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -8215,7 +8215,7 @@
                                      schema:amountOfThisGood  "176"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -8524,7 +8524,7 @@
                                      schema:amountOfThisGood  "11"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;
@@ -8684,7 +8684,7 @@
                                      schema:amountOfThisGood  "22"^^xsd:decimal ;
                                      schema:unitCode          cocoon:GCEU
                                    ] ;
-        cocoon:hasMaxNumberOfDisk  [ a                        schema:TypeAndQuantityNode ;
+        cocoon:hasMaxNumberOfDisks  [ a                        schema:TypeAndQuantityNode ;
                                      schema:amountOfThisGood  "16"^^xsd:nonNegativeInteger
                                    ] ;
         cocoon:hasMaxStorageSize   [ a                        schema:TypeAndQuantityNode ;

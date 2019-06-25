@@ -32,7 +32,7 @@ GENERATE {
     } .
 
     GENERATE {
-        ?iri cocoon:hasMaxNumberOfDisk [
+        ?iri cocoon:hasMaxNumberOfDisks [
             a schema:TypeAndQuantityNode;
                 schema:amountOfThisGood ?maxNumberOfPd
         ];

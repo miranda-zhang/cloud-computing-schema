@@ -1,5 +1,5 @@
 # w3id
-https://w3id.org entry for this project:
+https://w3id.org entry for this project is:
 
 https://github.com/perma-id/w3id.org/tree/master/cocoon
 

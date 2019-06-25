@@ -5,7 +5,7 @@ We have also registerd an entry at http://prefix.cc for `cocoon`.
 
 # Data
 1. [Most updated data in seperated files](example/sparql-generate/result/)
-2. [Single data dump of all v1.0.1 files](data/v1_0_1.ttl)
+2. [Single dump file for all v1.0.1 data](data/v1_0_1.ttl)
 
 # Permalink with w3id
 https://w3id.org/cocoon/v1.0.1
