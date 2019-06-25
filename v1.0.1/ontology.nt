@@ -139,9 +139,9 @@
 <https://w3id.org/cocoon/v1.0.1#hasDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/cocoon/v1.0.1#hasDirection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
-# https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk
-<https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks
+<https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
 # https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize
 <https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -471,7 +471,7 @@ _:genid28 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://w
 _:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
 <https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks> .
 _:genid30 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid30 <http://www.w3.org/2002/07/owl#onClass> <https://schema.org/TypeAndQuantityNode> .
 <https://w3id.org/cocoon/v1.0.1#ComputeService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .

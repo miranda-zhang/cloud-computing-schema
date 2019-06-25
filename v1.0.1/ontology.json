@@ -319,7 +319,7 @@
     "@id" : "https://schema.org/TypeAndQuantityNode"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk"
+    "@id" : "https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks"
   } ]
 }, {
   "@id" : "_:genid31",
@@ -1703,7 +1703,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk",
+  "@id" : "https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"

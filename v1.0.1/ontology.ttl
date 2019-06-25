@@ -183,7 +183,7 @@ cocoon:hasDirection rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk
-cocoon:hasMaxNumberOfDisk rdf:type owl:ObjectProperty ;
+cocoon:hasMaxNumberOfDisks rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf owl:topObjectProperty .
 
 
@@ -609,7 +609,7 @@ cocoon:ComputeService rdf:type owl:Class ;
                                         owl:onClass schema:TypeAndQuantityNode
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty cocoon:hasMaxNumberOfDisk ;
+                                        owl:onProperty cocoon:hasMaxNumberOfDisks ;
                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass schema:TypeAndQuantityNode
                                       ] ,
@@ -676,7 +676,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
    owl:annotatedSource cocoon:ComputeService ;
    owl:annotatedProperty rdfs:subClassOf ;
    owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty cocoon:hasMaxNumberOfDisk ;
+                         owl:onProperty cocoon:hasMaxNumberOfDisks ;
                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onClass schema:TypeAndQuantityNode
                        ] ;

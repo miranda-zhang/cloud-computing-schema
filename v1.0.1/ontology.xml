@@ -302,10 +302,10 @@
     
 
 
-    <!-- https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk -->
+    <!-- https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk">
+    <owl:ObjectProperty rdf:about="https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -970,7 +970,7 @@ but there is a common transaction price spec for a group of cloud storage offers
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://schema.org/TypeAndQuantityNode"/>
             </owl:Restriction>
@@ -1047,7 +1047,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/azur
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://schema.org/TypeAndQuantityNode"/>
             </owl:Restriction>
