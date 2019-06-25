@@ -22,27 +22,27 @@ Licenses example:
 licenseURI=https://opensource.org/licenses/MIT
 licenseName=MIT License
 ```
+# Commands for CoCoOn
+**v1.0.1**
+```bash
+java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile "C:\Users\admin-u5214628\Documents\cloud-computing-schema\ontology_dev\cocoon1.0.1.ttl" -outFolder v1.0.1 -oops -rewriteAll -includeImportedOntologies -webVowl -includeAnnotationProperties -confFile config_file/1.0.1 
+```
+```
+java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile ~/Documents/cloud-computing-schema/ontology_dev/cocoon1.0.1.ttl -outFolder v1.0.1 -oops -rewriteAll -includeImportedOntologies -webVowl -includeAnnotationProperties -confFile config_file/1.0.1.bak
+```
 
-**Example with CoCoOn v0.1 files**
+**v1.0** 
+```
+java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile "C:\Users\admin-u5214628\Documents\cloud-computing-schema\ontology_dev\cocoon.ttl" -outFolder v1.0 -oops -rewriteAll -includeImportedOntologies -webVowl -includeAnnotationProperties -confFile propertiesFile 
+```
+
+**v0.1**
 ```
 java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile cocoon0.1.owl -outFolder v0.1 -getOntologyMetadata -rewriteAll -includeImportedOntologies -htaccess -webVowl -saveConfig configOutFile0.1 -includeAnnotationProperties
 ```
 
 ```
 java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile cocoon0.1.owl -outFolder v0.1 -rewriteAll -includeImportedOntologies -webVowl -includeAnnotationProperties -confFile confFile0.1
-```
-
-**Example with CoCoOn v1.0 files** 
-```
-java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile "C:\Users\admin-u5214628\Documents\cloud-computing-schema\ontology_dev\cocoon.ttl" -outFolder v1.0 -oops -rewriteAll -includeImportedOntologies -webVowl -includeAnnotationProperties -confFile propertiesFile 
-```
-
-**Example with CoCoOn v1.0.1 files **
-```bash
-java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile "C:\Users\admin-u5214628\Documents\cloud-computing-schema\ontology_dev\cocoon1.0.1.ttl" -outFolder v1.0.1 -oops -rewriteAll -includeImportedOntologies -webVowl -includeAnnotationProperties -confFile config_file/1.0.1 
-```
-```
-java -jar widoco-1.4.8-jar-with-dependencies.jar -ontFile ~/Documents/cloud-computing-schema/ontology_dev/cocoon1.0.1.ttl -outFolder v1.0.1 -oops -rewriteAll -includeImportedOntologies -webVowl -includeAnnotationProperties -confFile config_file/1.0.1.bak
 ```
 
 # Ontology Diff
@@ -57,4 +57,4 @@ The script [update.sh](update.sh) will do the following in summary:
 1. Update the `dateOfRelease` in configuration file to today.
 2. Call the Widoco commands to generate documents.
 3. Adjust some urls and namespaces.
-4. Use the original supplied input `ttl` file instead of the re-generated one by Widoco for displaying to users.
+4. Use the original supplied input `ttl` file instead of the re-generated one by Widoco for `ttl` serialization format.
