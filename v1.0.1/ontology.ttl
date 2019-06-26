@@ -182,9 +182,9 @@ cocoon:hasDirection rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisk
+###  https://w3id.org/cocoon/v1.0.1#hasMaxNumberOfDisks
 cocoon:hasMaxNumberOfDisks rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf owl:topObjectProperty .
+                           rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/cocoon/v1.0.1#hasMaxStorageSize
@@ -570,7 +570,7 @@ cocoon:CloudServicePriceSpecification rdf:type owl:Class ;
                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onDataRange xsd:decimal
                        ] ;
-   rdfs:comment "gr:hasCurrencyValue seems only allow float value, extend to allow xs:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors."@en
+   rdfs:comment "gr:hasCurrencyValue seems only allow float value, extend to allow xsd:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors."@en
  ] .
 
 

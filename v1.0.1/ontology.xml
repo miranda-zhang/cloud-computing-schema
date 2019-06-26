@@ -913,7 +913,7 @@ https://github.com/miranda-zhang/cloud-computing-schema/blob/master/example/gclo
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <rdfs:comment xml:lang="en">gr:hasCurrencyValue seems only allow float value, extend to allow xs:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors.</rdfs:comment>
+        <rdfs:comment xml:lang="en">gr:hasCurrencyValue seems only allow float value, extend to allow xsd:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors.</rdfs:comment>
     </owl:Axiom>
     
 

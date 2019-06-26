@@ -163,7 +163,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "gr:hasCurrencyValue seems only allow float value, extend to allow xs:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors."
+    "@value" : "gr:hasCurrencyValue seems only allow float value, extend to allow xsd:decimal, which can represent exact monetary values. Floats can introduce cumulative rounding errors."
   } ],
   "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
