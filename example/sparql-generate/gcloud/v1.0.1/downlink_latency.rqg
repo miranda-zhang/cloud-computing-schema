@@ -81,7 +81,7 @@ WHERE {
     BIND( fun:JSONPath(?qos, '$.service_type' ) AS ?service_type)
     BIND( fun:JSONPath(?qos, '$.zone' ) AS ?zone)
     BIND( fun:JSONPath(?qos, '$.type' ) AS ?type)
-    BIND( xsd:double( fun:JSONPath(?qos, '$.average') ) AS ?average)
+    BIND( xsd:decimal( fun:JSONPath(?qos, '$.average') ) AS ?average)
     BIND( fun:JSONPath(?qos, '$.completion_time') AS ?completion_time)
     BIND( xsd:dateTime( ?completion_time ) AS ?dateTime)
     BIND( xsd:string(fun:JSONPath(?qos, '$.min_size')) AS ?min_size)

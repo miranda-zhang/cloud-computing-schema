@@ -3,26 +3,26 @@ This page contains some simple modelling examples for classes in the CoCoOn v1.0
 There are other usecase scenarios listed in [examples page](README.md).
 
 # Table of contents
-- [CoCoOn v1.0.1](#cocoon-v101)
-- [Table of contents](#table-of-contents)
-  - [Prifix](#prifix)
-  - [Compute Service](#compute-service)
-  - [Storage Service](#storage-service)
-  - [Internet Service](#internet-service)
-    - [Load Balancing Data](#load-balancing-data)
-    - [Forwarding Rule](#forwarding-rule)
-  - [Cloud Service Price Specification](#cloud-service-price-specification)
-    - [Cloud OS Price Specification](#cloud-os-price-specification)
-    - [Cloud Storage Transactions Price Specification](#cloud-storage-transactions-price-specification)
-    - [Cloud Network Price Specification](#cloud-network-price-specification)
-  - [Quanlity Of Service](#quanlity-of-service)
-    - [Downlink Speed](#downlink-speed)
-    - [Latency](#latency)
-  - [Measurement](#measurement)
-  - [Device](#device)
-  - [Location and Region](#location-and-region)
+- [CoCoOn v1.0.1](#CoCoOn-v101)
+- [Table of contents](#Table-of-contents)
+  - [Prefix](#Prefix)
+  - [Compute Service](#Compute-Service)
+  - [Storage Service](#Storage-Service)
+  - [Internet Service](#Internet-Service)
+    - [Load Balancing Data](#Load-Balancing-Data)
+    - [Forwarding Rule](#Forwarding-Rule)
+  - [Cloud Service Price Specification](#Cloud-Service-Price-Specification)
+    - [Cloud OS Price Specification](#Cloud-OS-Price-Specification)
+    - [Cloud Storage Transactions Price Specification](#Cloud-Storage-Transactions-Price-Specification)
+    - [Cloud Network Price Specification](#Cloud-Network-Price-Specification)
+  - [Quality Of Service](#Quality-Of-Service)
+    - [Downlink Speed](#Downlink-Speed)
+    - [Latency](#Latency)
+  - [Measurement](#Measurement)
+  - [Device](#Device)
+  - [Location and Region](#Location-and-Region)
 
-## Prifix
+## Prefix
 ```
 @prefix schema: <https://schema.org/> .
 @prefix unit:  <http://qudt.org/vocab/unit#> .
@@ -43,7 +43,7 @@ There are other usecase scenarios listed in [examples page](README.md).
         rdfs:label                "CP-COMPUTEENGINE-VMIMAGE-N1-HIGHCPU-96-PREEMPTIBLE" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudServicePriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    cocoon:hasCurrencyValue      "0.72"^^xsd:float ;
+                                    cocoon:hasCurrencyValue  0.72 ;
                                     gr:hasUnitOfMeasurement  unit:Hour ;
                                     cocoon:inRegion         <Region/Gcloud/us-east1>
                                   ] ;
@@ -66,7 +66,7 @@ There are other usecase scenarios listed in [examples page](README.md).
         gr:hasPriceSpecification        <CloudStorageTransactionsPriceSpecification/Azure/managed_disk/transactions-ssd> ;
         gr:hasPriceSpecification        [ a                        gr:CloudServicePriceSpecification ;
                                           gr:hasCurrency           "USD" ;
-                                          cocoon:hasCurrencyValue      "135.17e0"^^xsd:float ;
+                                          gr:hasCurrencyValue      0.13200195133686066 ;
                                           gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
                                           cocoon:inRegion         <Region/Azure/australia-east>
                                         ] ;
@@ -96,21 +96,21 @@ Google Cloud Network Price Worldwide Egress:
         rdfs:label                  "CP-COMPUTEENGINE-INTERNET-EGRESS-NA-NA" ;
         gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      cocoon:hasCurrencyValue       "0.11"^^xsd:float ;
+                                      gr:hasCurrencyValue       0.11 ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:10TB ;
                                       cocoon:forUsageMoreThan   cocoon:1TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      cocoon:hasCurrencyValue       "0.08"^^xsd:float ;
+                                      gr:hasCurrencyValue       0.08 ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:90TB ;
                                       cocoon:forUsageMoreThan   cocoon:10TB
                                     ] ;
         gr:hasPriceSpecification    [ a                         cocoon:CloudNetworkPriceSpecification ;
                                       gr:hasCurrency            "USD" ;
-                                      cocoon:hasCurrencyValue       "0.12"^^xsd:float ;
+                                      gr:hasCurrencyValue       0.12 ;
                                       gr:hasUnitOfMeasurement   cocoon:GBPerMonth ;
                                       cocoon:forUsageLessEqual  cocoon:1TB ;
                                       cocoon:forUsageMoreThan   [ a                        schema:TypeAndQuantityNode ;
@@ -134,7 +134,7 @@ Load Balancing Data Price Specification:
         a                         cocoon:LoadBalancingData ;
         gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    cocoon:hasCurrencyValue      "0.008e0"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.008 ;
                                     gr:hasUnitOfMeasurement  cocoon:GB ;
                                     cocoon:inRegion         <Region/Gcloud/us>
                                   ] ;
@@ -160,7 +160,7 @@ Load Balancing Forwarding Rules Price:
                                         a                        schema:TypeAndQuantityNode ;
                                         schema:amountOfThisGood  "0"^^xsd:nonNegativeInteger
                                                               ] ;
-                                    cocoon:hasCurrencyValue   "0.038e0"^^xsd:float ;
+                                    cocoon:hasCurrencyValue   0.038 ;
                                     cocoon:inRegion          <Region/Gcloud/asia-northeast>
                                   ] .
 <TypeAndQuantityNode/5>
@@ -181,7 +181,7 @@ Price specification for a Compute service from Azure:
         gr:hasPriceSpecification  <CloudStorageTransactionsPriceSpecification/Azure/vm_base> ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudServicePriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    cocoon:hasCurrencyValue      "0.317e0"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.317 ;
                                     gr:hasUnitOfMeasurement  unit:Hour ;
                                     cocoon:inRegion          <Region/Azure/us-west-2>
                                   ] ;
@@ -206,20 +206,20 @@ Price specification for a Compute service from Azure:
         rdfs:label                "suse-sap" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    cocoon:hasCurrencyValue      "0.41"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.41 ;
                                     cocoon:chargedPerCore    false ;
                                     cocoon:forCoresMoreThan  "4"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    cocoon:hasCurrencyValue       "0.34"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.34 ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "4"^^xsd:decimal ;
                                     cocoon:forCoresMoreThan   "2"^^xsd:decimal
                                   ] ;
         gr:hasPriceSpecification  [ a                         cocoon:CloudOSPriceSpecification ;
                                     gr:hasCurrency            "USD" ;
-                                    cocoon:hasCurrencyValue       "0.17"^^xsd:float ;
+                                    gr:hasCurrencyValue       0.17 ;
                                     cocoon:chargedPerCore     false ;
                                     cocoon:forCoresLessEqual  "2"^^xsd:decimal
                                   ] .
@@ -233,7 +233,7 @@ Price specification for a Compute service from Azure:
         rdfs:label                "transactions-ssd" ;
         gr:hasPriceSpecification  [ a                    gr:CloudServicePriceSpecification ;
                                     gr:hasCurrency       "USD" ;
-                                    cocoon:hasCurrencyValue  2.0E-7 ;
+                                    gr:hasCurrencyValue  0.0000002 ;
                                     cocoon:inRegion      <Region/Azure/brazil-south>
                                   ] .
 ```
@@ -250,14 +250,14 @@ Price for Google Internet Egress between Zones in the Same Region:
         rdfs:label                "CP-COMPUTEENGINE-INTERNET-EGRESS-ZONE" ;
         gr:hasPriceSpecification  [ a                        cocoon:CloudNetworkPriceSpecification ;
                                     gr:hasCurrency           "USD" ;
-                                    cocoon:hasCurrencyValue      "0.01e0"^^xsd:float ;
+                                    gr:hasCurrencyValue      0.01 ;
                                     gr:hasUnitOfMeasurement  cocoon:GBPerMonth ;
                                     cocoon:specialRateType   "Egress between zones in the same region"
                                   ] ;
         cocoon:hasDirection       cocoon:Egress .
 ```
-## Quanlity Of Service
-[cocoon:QuanlityOfService](https://w3id.org/cocoon/v1.0.1#QuanlityOfService)
+## Quality Of Service
+[cocoon:QualityOfService](https://w3id.org/cocoon/v1.0.1#QualityOfService)
 ### Downlink Speed
 [cocoon:DownlinkSpeed](https://w3id.org/cocoon/v1.0.1#DownlinkSpeed)
 
@@ -269,7 +269,7 @@ Downlink speed measured with file sizes between 256 KB and 10240 KB:
     schema:unitText "KB";
     schema:unitCode "2P".
 
-<QuanlityOfService/DownlinkSpeed-256-10240-KB> a cocoon:DownlinkSpeed;
+<QualityOfService/DownlinkSpeed-256-10240-KB> a cocoon:DownlinkSpeed;
     cocoon:transferedFileSizeMin <256-KB>;
     cocoon:transferedFileSizeMax <10240-KB>.
 ```
@@ -292,9 +292,9 @@ Downlink speed measured with file sizes between 256 KB and 10240 KB:
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <Region/Gcloud/europe-north1> ;
         cocoon:inZone       "b" ;
-        ssn:hasProperty     <QuanlityOfService/Latency> .
+        ssn:hasProperty     <QualityOfService/Latency> .
 
-<QuanlityOfService/Latency> a cocoon:Latency .
+<QualityOfService/Latency> a cocoon:Latency .
 ```
 ## Measurement
 [cocoon:Measurement](https://w3id.org/cocoon/v1.0.1#Measurement)
@@ -321,8 +321,8 @@ Downlink speed measured with file sizes between 256 KB and 10240 KB:
         cocoon:inPhisicalLocation  [ a           schema:Place ;
                                      schema:geo  [ a                 schema:GeoCoordinates ;
                                                    schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
-                                                   schema:latitude   "-35.271475" ;
-                                                   schema:longitude  "149.121434"
+                                                   schema:latitude   -35.271475 ;
+                                                   schema:longitude  149.121434
                                                  ]
                                    ] ;
         cocoon:ipv4                "150.203.213.249" .
@@ -349,7 +349,7 @@ Downlink speed measured with file sizes between 256 KB and 10240 KB:
         schema:dateModified  "2019-02-12"^^xsd:date ;
         schema:geo           [ a                      schema:GeoCoordinates ;
                                schema:addressCountry  "SG" ;
-                               schema:latitude        1.3521e0 ;
-                               schema:longitude       103.8198e0
+                               schema:latitude        1.3521 ;
+                               schema:longitude       103.8198
                              ] .
 ```
