@@ -117,7 +117,10 @@ Other questions:
 
 # Generate config
 [generate_ldfserver_config.py](generate_ldfserver_config.py)
-
+```
+mv config.json config.json.bak
+python generate_ldfserver_config.py > config.json
+```
 # Update commands
 
     gcloud compute --project "cocoon-ldf-server" ssh --zone "us-east1-b" "instance-1"
