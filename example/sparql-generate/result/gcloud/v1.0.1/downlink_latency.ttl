@@ -12,7 +12,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/australia-southeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  11.22e0 ;
+                                     schema:amountOfThisGood  11.22 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -22,7 +22,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/southamerica-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.17e0 ;
+                                     schema:amountOfThisGood  1.17 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -32,7 +32,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/southamerica-east1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.6e0 ;
+                                     schema:amountOfThisGood  5.6 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -49,7 +49,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-central1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  240.83e0 ;
+                                     schema:amountOfThisGood  240.83 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -66,7 +66,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  288.83e0 ;
+                                     schema:amountOfThisGood  288.83 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -76,7 +76,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  "611"^^xsd:double ;
+                                     schema:amountOfThisGood  "611"^^xsd:decimal ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -86,7 +86,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  188.34e0 ;
+                                     schema:amountOfThisGood  188.34 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -96,7 +96,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west3-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.24e0 ;
+                                     schema:amountOfThisGood  2.24 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -106,7 +106,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-northeast1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.49e0 ;
+                                     schema:amountOfThisGood  5.49 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -116,7 +116,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-east4-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  258.92e0 ;
+                                     schema:amountOfThisGood  258.92 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -126,7 +126,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-west1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  613.83e0 ;
+                                     schema:amountOfThisGood  613.83 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -136,7 +136,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-north1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.37e0 ;
+                                     schema:amountOfThisGood  1.37 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -198,7 +198,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-west2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.02e0 ;
+                                     schema:amountOfThisGood  2.02 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -208,7 +208,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/australia-southeast1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  26.92e0 ;
+                                     schema:amountOfThisGood  26.92 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -218,7 +218,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/northamerica-northeast1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.36e0 ;
+                                     schema:amountOfThisGood  2.36 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -234,7 +234,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-east2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.99e0 ;
+                                     schema:amountOfThisGood  1.99 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -250,7 +250,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  205.92e0 ;
+                                     schema:amountOfThisGood  205.92 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -260,7 +260,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west4> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.35e0 ;
+                                     schema:amountOfThisGood  1.35 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -270,7 +270,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-west2-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  203.92e0 ;
+                                     schema:amountOfThisGood  203.92 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -280,7 +280,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-north1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  56.03e0 ;
+                                     schema:amountOfThisGood  56.03 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -290,7 +290,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-west2-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  204.25e0 ;
+                                     schema:amountOfThisGood  204.25 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -300,7 +300,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-west1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  138.47e0 ;
+                                     schema:amountOfThisGood  138.47 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -329,7 +329,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/europe-west4-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  330.83e0 ;
+                                     schema:amountOfThisGood  330.83 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -339,7 +339,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/northamerica-northeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  472.75e0 ;
+                                     schema:amountOfThisGood  472.75 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -349,7 +349,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.18e0 ;
+                                     schema:amountOfThisGood  2.18 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -367,21 +367,21 @@
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
-<https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A21%3A30.869Z/us-west2-c>
-        a                          cocoon:Measurement ;
-        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c> ;
-        sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  3.4e0 ;
-                                     schema:unitCode          unit:MegabitsPerSecond
-                                   ] ;
-        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-        sosa:resultTime            "2019-02-26T07:21:30.869Z"^^xsd:dateTime .
-
 <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-north1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1> ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A21%3A30.869Z/us-west2-c>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-c> ;
+        sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
+                                     schema:amountOfThisGood  3.4 ;
+                                     schema:unitCode          unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-26T07:21:30.869Z"^^xsd:dateTime .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/southamerica-east1-a>
         a                   cocoon:ComputeService ;
@@ -394,7 +394,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west3> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.64e0 ;
+                                     schema:amountOfThisGood  1.64 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -404,7 +404,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-north1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.23e0 ;
+                                     schema:amountOfThisGood  2.23 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -414,7 +414,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  30.23e0 ;
+                                     schema:amountOfThisGood  30.23 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -431,7 +431,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/southamerica-east1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.32e0 ;
+                                     schema:amountOfThisGood  2.32 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -455,7 +455,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-west3> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  628.17e0 ;
+                                     schema:amountOfThisGood  628.17 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -479,7 +479,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-east2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  309.42e0 ;
+                                     schema:amountOfThisGood  309.42 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -489,7 +489,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-northeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  3.91e0 ;
+                                     schema:amountOfThisGood  3.91 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -512,7 +512,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-east1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.52e0 ;
+                                     schema:amountOfThisGood  2.52 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -522,7 +522,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/eu> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.85e0 ;
+                                     schema:amountOfThisGood  1.85 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -551,7 +551,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/northamerica-northeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  110.19e0 ;
+                                     schema:amountOfThisGood  110.19 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -566,7 +566,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  34.44e0 ;
+                                     schema:amountOfThisGood  34.44 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -588,7 +588,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west4> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  55.46e0 ;
+                                     schema:amountOfThisGood  55.46 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -611,7 +611,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-east1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  203.17e0 ;
+                                     schema:amountOfThisGood  203.17 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -621,7 +621,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-south1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  182.86e0 ;
+                                     schema:amountOfThisGood  182.86 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -643,7 +643,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/eu> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  620.25e0 ;
+                                     schema:amountOfThisGood  620.25 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -660,7 +660,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-south1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  12.67e0 ;
+                                     schema:amountOfThisGood  12.67 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -670,7 +670,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west3> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  63.47e0 ;
+                                     schema:amountOfThisGood  63.47 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -680,7 +680,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-east4> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  130.61e0 ;
+                                     schema:amountOfThisGood  130.61 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -696,7 +696,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-west2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  617.58e0 ;
+                                     schema:amountOfThisGood  617.58 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -706,7 +706,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-south1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.14e0 ;
+                                     schema:amountOfThisGood  2.14 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -716,7 +716,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/europe-west2-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  311.75e0 ;
+                                     schema:amountOfThisGood  311.75 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -726,7 +726,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-central1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.6e0 ;
+                                     schema:amountOfThisGood  1.6 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -736,7 +736,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/australia-southeast1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  49.58e0 ;
+                                     schema:amountOfThisGood  49.58 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -760,7 +760,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-southeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.06e0 ;
+                                     schema:amountOfThisGood  5.06 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -822,7 +822,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-west1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  418.75e0 ;
+                                     schema:amountOfThisGood  418.75 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -851,7 +851,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.31e0 ;
+                                     schema:amountOfThisGood  2.31 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -867,7 +867,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-east4-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  3.7e0 ;
+                                     schema:amountOfThisGood  3.7 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -897,7 +897,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  21.13e0 ;
+                                     schema:amountOfThisGood  21.13 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -907,7 +907,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/CDNService/Gcloud/> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  "50"^^xsd:double ;
+                                     schema:amountOfThisGood  "50"^^xsd:decimal ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -930,7 +930,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-southeast1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  153.25e0 ;
+                                     schema:amountOfThisGood  153.25 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -947,7 +947,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.47e0 ;
+                                     schema:amountOfThisGood  2.47 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -964,7 +964,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DNSQueryLatency/DNSService/Gcloud/> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  149.08e0 ;
+                                     schema:amountOfThisGood  149.08 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -974,7 +974,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.09e0 ;
+                                     schema:amountOfThisGood  2.09 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -991,7 +991,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west4-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.17e0 ;
+                                     schema:amountOfThisGood  2.17 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1008,7 +1008,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.33e0 ;
+                                     schema:amountOfThisGood  5.33 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1018,7 +1018,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-west2-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  199.08e0 ;
+                                     schema:amountOfThisGood  199.08 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1028,7 +1028,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/southamerica-east1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  362.92e0 ;
+                                     schema:amountOfThisGood  362.92 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1047,20 +1047,20 @@
         cocoon:inZone       "b" ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
-<https://w3id.org/cocoon/data/v1.0.1/DNSQueryLatency/DNSService/Gcloud/>
-        a                   cocoon:DNSService ;
-        cocoon:hasProvider  cocoon:Gcloud ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DNSQueryLatency> .
-
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A34%3A36.427Z/europe-west1>
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  58.95e0 ;
+                                     schema:amountOfThisGood  58.95 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:34:36.427Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/DNSQueryLatency/DNSService/Gcloud/>
+        a                   cocoon:DNSService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DNSQueryLatency> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/europe-west2-a>
         a                   cocoon:ComputeService ;
@@ -1073,7 +1073,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-north1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  680.5e0 ;
+                                     schema:amountOfThisGood  680.5 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1102,7 +1102,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/australia-southeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  455.88e0 ;
+                                     schema:amountOfThisGood  455.88 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1125,7 +1125,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/eu> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  60.39e0 ;
+                                     schema:amountOfThisGood  60.39 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1135,7 +1135,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  240.65e0 ;
+                                     schema:amountOfThisGood  240.65 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1145,7 +1145,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-east4> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.04e0 ;
+                                     schema:amountOfThisGood  2.04 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1155,7 +1155,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west2-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  8.03e0 ;
+                                     schema:amountOfThisGood  8.03 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1178,7 +1178,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-southeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  182.97e0 ;
+                                     schema:amountOfThisGood  182.97 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1220,7 +1220,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-south1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  4.8e0 ;
+                                     schema:amountOfThisGood  4.8 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1237,7 +1237,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  3.98e0 ;
+                                     schema:amountOfThisGood  3.98 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1253,7 +1253,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/europe-west1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  328.92e0 ;
+                                     schema:amountOfThisGood  328.92 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1263,7 +1263,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  11.42e0 ;
+                                     schema:amountOfThisGood  11.42 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1273,7 +1273,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-east4-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  14.27e0 ;
+                                     schema:amountOfThisGood  14.27 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1289,7 +1289,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/europe-west2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  104.46e0 ;
+                                     schema:amountOfThisGood  104.46 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1305,7 +1305,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/australia-southeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  54.5e0 ;
+                                     schema:amountOfThisGood  54.5 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1315,7 +1315,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-central1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  111.95e0 ;
+                                     schema:amountOfThisGood  111.95 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1325,7 +1325,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/CDNService/Gcloud/> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  427.58e0 ;
+                                     schema:amountOfThisGood  427.58 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1342,7 +1342,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-east2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  166.33e0 ;
+                                     schema:amountOfThisGood  166.33 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1352,7 +1352,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  4.09e0 ;
+                                     schema:amountOfThisGood  4.09 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1369,7 +1369,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/northamerica-northeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.59e0 ;
+                                     schema:amountOfThisGood  1.59 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1379,7 +1379,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-northeast1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  151.83e0 ;
+                                     schema:amountOfThisGood  151.83 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1389,7 +1389,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-east1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  297.92e0 ;
+                                     schema:amountOfThisGood  297.92 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1399,7 +1399,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-east2-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.01e0 ;
+                                     schema:amountOfThisGood  5.01 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1409,7 +1409,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/europe-west3-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  347.58e0 ;
+                                     schema:amountOfThisGood  347.58 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1469,7 +1469,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-west2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  23.43e0 ;
+                                     schema:amountOfThisGood  23.43 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1479,7 +1479,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  9.63e0 ;
+                                     schema:amountOfThisGood  9.63 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1489,7 +1489,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-west2> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  476.33e0 ;
+                                     schema:amountOfThisGood  476.33 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1499,7 +1499,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-southeast1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.99e0 ;
+                                     schema:amountOfThisGood  5.99 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1516,7 +1516,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/CDNService/Gcloud/> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  "29"^^xsd:double ;
+                                     schema:amountOfThisGood  "29"^^xsd:decimal ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1526,7 +1526,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/us-west1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  204.17e0 ;
+                                     schema:amountOfThisGood  204.17 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1549,7 +1549,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-southeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  151.08e0 ;
+                                     schema:amountOfThisGood  151.08 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1559,11 +1559,16 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-central1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  18.59e0 ;
+                                     schema:amountOfThisGood  18.59 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
         sosa:resultTime            "2019-02-26T07:11:05.576Z"^^xsd:dateTime .
+
+<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/CDNService/Gcloud/>
+        a                   cocoon:CDNService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-b>
         a                   cocoon:ComputeService ;
@@ -1572,16 +1577,11 @@
         cocoon:inZone       "b" ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
-<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/CDNService/Gcloud/>
-        a                   cocoon:CDNService ;
-        cocoon:hasProvider  cocoon:Gcloud ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
-
 <https://w3id.org/cocoon/data/v1.0.1/Measurement/Latency/StorageService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A30%3A49.893Z/europe-west4>
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/europe-west4> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  618.5e0 ;
+                                     schema:amountOfThisGood  618.5 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1598,7 +1598,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-north1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.83e0 ;
+                                     schema:amountOfThisGood  5.83 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1608,7 +1608,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-central1-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  3.38e0 ;
+                                     schema:amountOfThisGood  3.38 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1618,7 +1618,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-south1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  203.42e0 ;
+                                     schema:amountOfThisGood  203.42 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1634,7 +1634,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  18.93e0 ;
+                                     schema:amountOfThisGood  18.93 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1644,7 +1644,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  201.75e0 ;
+                                     schema:amountOfThisGood  201.75 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1654,7 +1654,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-south1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  361.42e0 ;
+                                     schema:amountOfThisGood  361.42 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1673,18 +1673,18 @@
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
+<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west4>
+        a                   cocoon:StorageService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
+
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/northamerica-northeast1-a>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1> ;
         cocoon:inZone       "a" ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
-
-<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west4>
-        a                   cocoon:StorageService ;
-        cocoon:hasProvider  cocoon:Gcloud ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4> ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-southeast1>
         a                   cocoon:StorageService ;
@@ -1703,7 +1703,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/northamerica-northeast1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  255.25e0 ;
+                                     schema:amountOfThisGood  255.25 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1713,7 +1713,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/us-west2-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.39e0 ;
+                                     schema:amountOfThisGood  5.39 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1723,7 +1723,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west4-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  5.64e0 ;
+                                     schema:amountOfThisGood  5.64 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1759,7 +1759,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  202.21e0 ;
+                                     schema:amountOfThisGood  202.21 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1769,7 +1769,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-northeast1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  40.2e0 ;
+                                     schema:amountOfThisGood  40.2 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1786,7 +1786,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/northamerica-northeast1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  14.01e0 ;
+                                     schema:amountOfThisGood  14.01 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1803,7 +1803,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  4.02e0 ;
+                                     schema:amountOfThisGood  4.02 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1820,7 +1820,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/us-west1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.21e0 ;
+                                     schema:amountOfThisGood  2.21 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1830,7 +1830,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-east4> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  462.33e0 ;
+                                     schema:amountOfThisGood  462.33 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1840,7 +1840,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-southeast1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  41.91e0 ;
+                                     schema:amountOfThisGood  41.91 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1856,7 +1856,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-east2-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  185.25e0 ;
+                                     schema:amountOfThisGood  185.25 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1866,7 +1866,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/europe-west3-c> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  7.72e0 ;
+                                     schema:amountOfThisGood  7.72 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1888,7 +1888,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/southamerica-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  660.83e0 ;
+                                     schema:amountOfThisGood  660.83 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1906,21 +1906,21 @@
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2> ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/Latency> .
 
-<https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A26%3A32.196Z/asia-east1-b>
-        a                          cocoon:Measurement ;
-        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b> ;
-        sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  29.22e0 ;
-                                     schema:unitCode          unit:MegabitsPerSecond
-                                   ] ;
-        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
-        sosa:resultTime            "2019-02-26T07:26:32.196Z"^^xsd:dateTime .
-
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia-southeast1>
         a                   cocoon:StorageService ;
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast1> ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Measurement/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/150.203.213.249/lat=-35.271475/long=149.121434/2019-02-26T07%3A26%3A32.196Z/asia-east1-b>
+        a                          cocoon:Measurement ;
+        sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b> ;
+        sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
+                                     schema:amountOfThisGood  29.22 ;
+                                     schema:unitCode          unit:MegabitsPerSecond
+                                   ] ;
+        sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
+        sosa:resultTime            "2019-02-26T07:26:32.196Z"^^xsd:dateTime .
 
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/asia-southeast1-b>
         a                   cocoon:ComputeService ;
@@ -1933,7 +1933,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/us-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  63.91e0 ;
+                                     schema:amountOfThisGood  63.91 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1943,7 +1943,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/asia> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  4.22e0 ;
+                                     schema:amountOfThisGood  4.22 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1953,7 +1953,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/StorageService/Gcloud/europe-west1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  1.37e0 ;
+                                     schema:amountOfThisGood  1.37 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1963,7 +1963,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/asia-northeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  305.83e0 ;
+                                     schema:amountOfThisGood  305.83 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -1973,7 +1973,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/asia-northeast1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  232.16e0 ;
+                                     schema:amountOfThisGood  232.16 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -2004,13 +2004,6 @@
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4> ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
 
-<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b>
-        a                   cocoon:ComputeService ;
-        cocoon:hasProvider  cocoon:Gcloud ;
-        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
-        cocoon:inZone       "b" ;
-        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
-
 <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/us-west2-c>
         a                   cocoon:ComputeService ;
         cocoon:hasProvider  cocoon:Gcloud ;
@@ -2023,6 +2016,13 @@
         cocoon:hasProvider  cocoon:Gcloud ;
         cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1> ;
         ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-1-128-KB> .
+
+<https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east1-b>
+        a                   cocoon:ComputeService ;
+        cocoon:hasProvider  cocoon:Gcloud ;
+        cocoon:inRegion     <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1> ;
+        cocoon:inZone       "b" ;
+        ssn:hasProperty     <https://w3id.org/cocoon/data/v1.0.1/QualityOfService/DownlinkSpeed-256-10240-KB> .
 
 <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/asia-east2-b>
         a                   cocoon:ComputeService ;
@@ -2040,7 +2040,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/StorageService/Gcloud/us-central1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  482.17e0 ;
+                                     schema:amountOfThisGood  482.17 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -2050,7 +2050,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-1-128-KB/ComputeService/Gcloud/europe-west2-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  2.77e0 ;
+                                     schema:amountOfThisGood  2.77 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -2060,7 +2060,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/Latency/ComputeService/Gcloud/europe-north1-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  361.33e0 ;
+                                     schema:amountOfThisGood  361.33 ;
                                      schema:unitCode          unit:MilliSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -2070,7 +2070,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/australia-southeast1-a> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  308.12e0 ;
+                                     schema:amountOfThisGood  308.12 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -2080,7 +2080,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/ComputeService/Gcloud/asia-east2-b> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  36.75e0 ;
+                                     schema:amountOfThisGood  36.75 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;
@@ -2090,7 +2090,7 @@
         a                          cocoon:Measurement ;
         sosa:hasFeatureOfInterest  <https://w3id.org/cocoon/data/v1.0.1/DownlinkSpeed-256-10240-KB/StorageService/Gcloud/southamerica-east1> ;
         sosa:hasResult             [ a                        schema:TypeAndQuantityNode ;
-                                     schema:amountOfThisGood  56.3e0 ;
+                                     schema:amountOfThisGood  56.3 ;
                                      schema:unitCode          unit:MegabitsPerSecond
                                    ] ;
         sosa:madeBySensor          <https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434> ;

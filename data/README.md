@@ -2,6 +2,12 @@
 # Script for merge all files
 [dump_all_ttl.sh](dump_all_ttl.sh)
 
+```
+cd /mnt/c/Users/admin-u5214628/Documents/github/cloud-computing-schema/data
+mv v1_0_1.ttl v1_0_1.ttl.bak
+source dump_all_ttl.sh > v1_0_1.ttl
+```
+
 # Tools review
 In case runing out of memory, try Jena TDB, Virtuoso, Stardog, GraphDB.
 Otherwise riot is a good in memory solution.
