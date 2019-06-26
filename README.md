@@ -1,8 +1,9 @@
 # Linked Data Fragments Server
 https://github.com/LinkedDataFragments/Server.js
 
-# Config file examples
- https://github.com/LinkedDataFragments/Server.js/blob/master/config/
+Config file examples:
+
+https://github.com/LinkedDataFragments/Server.js/blob/master/config/
 
 # Ubuntu
 Installation (need `sudo` access):
@@ -120,6 +121,7 @@ Other questions:
 ```
 mv config.json config.json.bak
 python generate_ldfserver_config.py > config.json
+ldf-server config.json 5000 1
 ```
 # Update commands
 
