@@ -11,6 +11,7 @@ Installation (need `sudo` access):
     apt update
     apt upgrade
     apt install npm nano
+    sudo npm view ldf-server version
     npm install -g ldf-server
 
 Start the server
@@ -42,6 +43,8 @@ Make sure firewall rules allow `tcp:5000`
     which ldf-server
     sudo nano /lib/systemd/system/ldf.service
 
+Home dir setup is optional, i.e. my home dir is `admin-u5214628`.
+You can also put everything in `/home`, so your working directory will be `/home/ldf-server`.
 ```
 [Unit]
 Description=LDF - Linked Data Fragments Server
