@@ -122,7 +122,7 @@ Other questions:
 # Generate config
 [generate_ldfserver_config.py](generate_ldfserver_config.py)
 
-This script requres python version 3 for the `recursive` option in `glob` to work:
+This script requires python version 3 for the `recursive` option in `glob` to work:
 ```
 mv config.json config.json.bak
 python3 generate_ldfserver_config.py > config.json
