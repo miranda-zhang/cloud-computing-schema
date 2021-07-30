@@ -1,0 +1,193 @@
+@prefix schema: <https://schema.org/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix cocoon: <https://w3id.org/cocoon/v1.0.1/#> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-03-07/CloudStorageTransactionsPriceSpecification/Azure/vm_base>
+        a                         cocoon:CloudStorageTransactionsPriceSpecification ;
+        rdfs:label                "Azure VM Storage transactions price specification" ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/france-central>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/australia-central>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-west>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/south-india>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/japan-west>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000040999999999999997 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/germany-northeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/usgov-iowa>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/japan-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/europe-west>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/europe-north>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/france-south>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/usgov-texas>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-west-central>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-west-2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-east-2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/west-india>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/usgov-arizona>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/korea-south>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000040999999999999997 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/germany-central>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/brazil-south>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/united-kingdom-south>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/asia-pacific-southeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/australia-central-2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-north-central>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/australia-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/asia-pacific-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-south-central>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/central-india>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/united-kingdom-west>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/korea-central>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/canada-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/canada-central>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/usgov-virginia>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/australia-southeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                    cocoon:CloudServicePriceSpecification ;
+                                    gr:hasCurrency       "USD" ;
+                                    gr:hasCurrencyValue  0.000000036000000000000005 ;
+                                    cocoon:inRegion      <https://w3id.org/cocoon/data/v1.0.1/Region/Azure/us-central>
+                                  ] ;
+        schema:dateModified       "2019-03-07"^^xsd:date ;
+        cocoon:hasProvider        cocoon:Azure .

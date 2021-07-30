@@ -1,0 +1,144 @@
+@prefix schema: <https://schema.org/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix cocoon: <http://w3id.org/cocoon/v1.0.1#> .
+@prefix fun:   <http://w3id.org/sparql-generate/fn/> .
+
+<https://w3id.org/cocoon/data/v1.0.1/2019-02-12/LoadBalancingData/Gcloud>
+        a                         cocoon:LoadBalancingData ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.009 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-north1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.008 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.008 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.012 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-northeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.008 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.011 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.01 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west3>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.008 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.009 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.009 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-east4>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.009 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-southeast>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.009 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/northamerica-northeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.009 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.008 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-east1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.008 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.01 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/europe-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.01 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-west2>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.011 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/australia-southeast1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.008 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us-central1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.01 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/asia-south1>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.008 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/us>
+                                  ] ;
+        gr:hasPriceSpecification  [ a                        gr:CloudServicePriceSpecification ;
+                                    gr:hasCurrency           "USD" ;
+                                    gr:hasCurrencyValue      0.012 ;
+                                    gr:hasUnitOfMeasurement  cocoon:GB ;
+                                    cocoon:inRegion          <https://w3id.org/cocoon/data/v1.0.1/Region/Gcloud/southamerica-east1>
+                                  ] ;
+        cocoon:hasDirection       cocoon:Ingress ;
+        cocoon:hasProvider        cocoon:Gcloud ;
+        schema:dateModified       "2019-02-12"^^xsd:date .

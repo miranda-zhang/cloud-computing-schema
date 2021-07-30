@@ -1,22 +1,166 @@
 {
+    "title": "CoCoOn Linked Data Fragments server",
     "datasources": {
         "cocoon_v1.0.1": {
+            "title": "CoCoOn v1.0.1 dataset",
             "type": "CompositeDatasource",
+            "description": "A composite datasource for CoCoOn v1.0.1",
             "settings": {
                 "references": [
-                    "v1.0.1_v1_0_1.ttl"
+                    "v1.0.1_v1_0_1.ttl",
+                    "v1.0.1_qos_property.ttl",
+                    "v1.0.1_device.ttl",
+                    "v1.0.1_gcloud_v1.0.1_downlink_latency.ttl",
+                    "v1.0.1_gcloud_v1.0.1_uplink.ttl",
+                    "v1.0.1_gcloud_v1.0.1_region_geo_coord.ttl",
+                    "v1.0.1_gcloud_v1.0.1_2019-02-12_load_balancing_data.ttl",
+                    "v1.0.1_gcloud_v1.0.1_2019-02-12_compute.ttl",
+                    "v1.0.1_gcloud_v1.0.1_2019-02-12_internet.ttl",
+                    "v1.0.1_gcloud_v1.0.1_2019-02-12_load_balancing_rule.ttl",
+                    "v1.0.1_gcloud_v1.0.1_2019-02-12_os.ttl",
+                    "v1.0.1_gcloud_v1.0.1_2019-02-12_storage.ttl",
+                    "v1.0.1_azure_v1.0.1_downlink_latency.ttl",
+                    "v1.0.1_azure_v1.0.1_uplink.ttl",
+                    "v1.0.1_azure_v1.0.1_region_geo_coord.ttl",
+                    "v1.0.1_azure_v1.0.1_2019-03-07_vm_base.ttl",
+                    "v1.0.1_azure_v1.0.1_2019-03-07_managed-disk-transactions.ttl",
+                    "v1.0.1_azure_v1.0.1_2019-03-07_managed-disks.ttl",
+                    "v1.0.1_azure_v1.0.1_2019-03-07_vm_base_storageTransactions.ttl"
                 ]
-            },
-            "description": "A composite datasource for CoCoOn v1.0.1",
-            "title": "CoCoOn v1.0.1 dataset"
+            }
         },
         "v1.0.1_v1_0_1.ttl": {
             "hide": true,
+            "type": "TurtleDatasource",
             "settings": {
                 "file": "v1.0.1/v1_0_1.ttl"
-            },
-            "type": "TurtleDatasource"
+            }
+        },
+        "v1.0.1_qos_property.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/qos_property.ttl"
+            }
+        },
+        "v1.0.1_device.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/device.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_downlink_latency.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/downlink_latency.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_uplink.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/uplink.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_region_geo_coord.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/region_geo_coord.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_2019-02-12_load_balancing_data.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/2019-02-12/load_balancing_data.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_2019-02-12_compute.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/2019-02-12/compute.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_2019-02-12_internet.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/2019-02-12/internet.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_2019-02-12_load_balancing_rule.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/2019-02-12/load_balancing_rule.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_2019-02-12_os.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/2019-02-12/os.ttl"
+            }
+        },
+        "v1.0.1_gcloud_v1.0.1_2019-02-12_storage.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/gcloud/v1.0.1/2019-02-12/storage.ttl"
+            }
+        },
+        "v1.0.1_azure_v1.0.1_downlink_latency.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/azure/v1.0.1/downlink_latency.ttl"
+            }
+        },
+        "v1.0.1_azure_v1.0.1_uplink.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/azure/v1.0.1/uplink.ttl"
+            }
+        },
+        "v1.0.1_azure_v1.0.1_region_geo_coord.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/azure/v1.0.1/region_geo_coord.ttl"
+            }
+        },
+        "v1.0.1_azure_v1.0.1_2019-03-07_vm_base.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/azure/v1.0.1/2019-03-07/vm_base.ttl"
+            }
+        },
+        "v1.0.1_azure_v1.0.1_2019-03-07_managed-disk-transactions.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/azure/v1.0.1/2019-03-07/managed-disk-transactions.ttl"
+            }
+        },
+        "v1.0.1_azure_v1.0.1_2019-03-07_managed-disks.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/azure/v1.0.1/2019-03-07/managed-disks.ttl"
+            }
+        },
+        "v1.0.1_azure_v1.0.1_2019-03-07_vm_base_storageTransactions.ttl": {
+            "hide": true,
+            "type": "TurtleDatasource",
+            "settings": {
+                "file": "v1.0.1/azure/v1.0.1/2019-03-07/vm_base_storageTransactions.ttl"
+            }
         }
-    },
-    "title": "CoCoOn Linked Data Fragments server"
+    }
 }

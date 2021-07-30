@@ -1,0 +1,43 @@
+@prefix schema: <https://schema.org/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix cocoon: <https://w3id.org/cocoon/v1.0.1#> .
+@base <https://w3id.org/cocoon/data/v1.0.1/> .
+
+<1-KB> a schema:TypeAndQuantityNode;
+    schema:amountOfThisGood "1"^^xsd:interger;
+    schema:unitText "KB";
+    schema:unitCode "2P".
+
+<128-KB> a schema:TypeAndQuantityNode;
+    schema:amountOfThisGood "128"^^xsd:interger;
+    schema:unitText "KB";
+    schema:unitCode "2P".
+
+<256-KB> a schema:TypeAndQuantityNode;
+    schema:amountOfThisGood "256"^^xsd:interger;
+    schema:unitText "KB";
+    schema:unitCode "2P".
+
+<10240-KB> a schema:TypeAndQuantityNode;
+    schema:amountOfThisGood "10240"^^xsd:interger;
+    schema:unitText "KB";
+    schema:unitCode "2P".
+
+<QualityOfService/DownlinkSpeed-1-128-KB> a cocoon:DownlinkSpeed;
+    cocoon:transferedFileSizeMin <1-KB>;
+    cocoon:transferedFileSizeMax <128-KB>.
+
+<QualityOfService/DownlinkSpeed-256-10240-KB> a cocoon:DownlinkSpeed;
+    cocoon:transferedFileSizeMin <256-KB>;
+    cocoon:transferedFileSizeMax <10240-KB>.
+
+<QualityOfService/UplinkSpeed-1-128-KB> a cocoon:UplinkSpeed;
+    cocoon:transferedFileSizeMin <1-KB>;
+    cocoon:transferedFileSizeMax <128-KB>.
+
+<QualityOfService/UplinkSpeed-256-10240-KB> a cocoon:UplinkSpeed;
+    cocoon:transferedFileSizeMin <256-KB>;
+    cocoon:transferedFileSizeMax <10240-KB>.
+
+<QualityOfService/Latency> a cocoon:Latency .
+<QualityOfService/DNSQueryLatency> a cocoon:DNSQueryLatency .

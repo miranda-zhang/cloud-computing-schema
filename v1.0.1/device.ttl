@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cocoon: <https://w3id.org/cocoon/v1.0.1#> .
+
+<https://w3id.org/cocoon/data/v1.0.1/Device/150.203.213.249/lat=-35.271475/long=149.121434>
+        a                          cocoon:Device ;
+        rdfs:comment               "The computer used to conduct the tests, belongs to Australian National University College of Engineering & Computer Science."@en ;
+        rdfs:label                 "CECS-030929"@en ;
+        cocoon:inPhisicalLocation  [ a           schema:Place ;
+                                     schema:geo  [ a                 schema:GeoCoordinates ;
+                                                   schema:address    "Hanna Neumann Building #145, Science Road, Canberra ACT 2601" ;
+                                                   schema:latitude   -35.271475 ;
+                                                   schema:longitude  149.121434
+                                                 ]
+                                   ] ;
+        cocoon:ipv4                "150.203.213.249" .
