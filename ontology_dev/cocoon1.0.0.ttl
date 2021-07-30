@@ -384,7 +384,7 @@ sosa:Sensor rdf:type owl:Class ;
 
 ###  http://www.w3.org/ns/ssn/Property
 <http://www.w3.org/ns/ssn/Property> rdf:type owl:Class ;
-                                    owl:equivalentClass cocoon:QuanlityOfService .
+                                    owl:equivalentClass cocoon:QualityOfService .
 
 
 ###  http://www.w3.org/ns/ssn/systems/SystemProperty
@@ -443,7 +443,7 @@ cocoon:Device rdf:type owl:Class .
 
 ###  https://w3id.org/cocoon/v1.0#DownlinkSpeed
 cocoon:DownlinkSpeed rdf:type owl:Class ;
-                     rdfs:subClassOf cocoon:QuanlityOfService .
+                     rdfs:subClassOf cocoon:QualityOfService .
 
 
 ###  https://w3id.org/cocoon/v1.0#Egress
@@ -488,7 +488,7 @@ cocoon:InternetService rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0#Latency
 cocoon:Latency rdf:type owl:Class ;
-               rdfs:subClassOf cocoon:QuanlityOfService .
+               rdfs:subClassOf cocoon:QualityOfService .
 
 
 ###  https://w3id.org/cocoon/v1.0#LoadBalancing
@@ -625,8 +625,8 @@ cocoon:PaaS rdf:type owl:Class ;
             rdfs:comment "Platform as a Service, i.e. Google App Engine, Heroku."@en .
 
 
-###  https://w3id.org/cocoon/v1.0#QuanlityOfService
-cocoon:QuanlityOfService rdf:type owl:Class .
+###  https://w3id.org/cocoon/v1.0#QualityOfService
+cocoon:QualityOfService rdf:type owl:Class .
 
 
 ###  https://w3id.org/cocoon/v1.0#QuantityOfThings
@@ -829,7 +829,7 @@ cocoon:UnitOfMeasure rdf:type owl:Class ;
 
 ###  https://w3id.org/cocoon/v1.0#UplinkSpeed
 cocoon:UplinkSpeed rdf:type owl:Class ;
-                   rdfs:subClassOf cocoon:QuanlityOfService .
+                   rdfs:subClassOf cocoon:QualityOfService .
 
 
 ###  https://w3id.org/cocoon/v1.0#VirtualMachine

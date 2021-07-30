@@ -59,5 +59,5 @@ Desktop computer is used to collect the measurements:
 The above information can be captured with this [device.ttl](../sparql-generate/result/device.ttl)
 
 ## QoS Properties
-The tests properties can be described using the `cocoon:QuanlityOfService` sub classes.
+The tests properties can be described using the `cocoon:QualityOfService` sub classes.
 The full example is available here: [qos_property](../sparql-generate/result/qos_property.ttl)
