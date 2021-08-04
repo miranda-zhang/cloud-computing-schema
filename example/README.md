@@ -79,7 +79,7 @@ stardog data export --named-graph ALL -- v1_0_1 export.ttl
 ```
 
 # Gephi
-Gephi can be used for data visulization, but need to write custom scripts for changeing data formats.
+Gephi can be used for data visulization, but need to write custom scripts for changing data formats.
 1. https://github.com/gephi/gephi/issues/1218
 2. https://github.com/gephi/gephi/issues/1478#issuecomment-220834617
 3. https://stackoverflow.com/questions/42121080/gephi-preview-export-pdf-cuts-off-label-at-left-and-right-margin
